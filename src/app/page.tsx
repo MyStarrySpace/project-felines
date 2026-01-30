@@ -18,13 +18,13 @@ const slides: SlideConfig[] = [
   },
   {
     id: "problem",
-    steps: 3,
+    steps: 4,
     bg: "bg-[#0a0a12]",
     content: <ProblemSection />,
   },
   {
     id: "framework",
-    steps: 3,
+    steps: 4,
     bg: "bg-navy-900",
     content: <FrameworkSection />,
   },

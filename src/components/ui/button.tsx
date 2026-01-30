@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "ghost";
+type ButtonVariant = "primary" | "primary-inverse" | "secondary" | "secondary-inverse" | "ghost";
 type ButtonSize = "sm" | "md" | "lg";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -12,8 +12,12 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
     "bg-navy-900 text-white hover:bg-navy-800 active:bg-navy-700",
+  "primary-inverse":
+    "bg-white text-navy-900 hover:bg-gray-100 active:bg-gray-200",
   secondary:
     "bg-transparent text-navy-900 border border-gray-300 hover:border-navy-900 hover:bg-gray-100 active:bg-gray-200",
+  "secondary-inverse":
+    "bg-transparent text-white border border-white/20 hover:border-white/40 hover:bg-white/10 active:bg-white/15",
   ghost:
     "bg-transparent text-navy-900 hover:bg-gray-100 active:bg-gray-200",
 };

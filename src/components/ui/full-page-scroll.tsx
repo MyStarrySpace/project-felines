@@ -392,7 +392,20 @@ export function FullPageScroll({
   return (
     <FullPageContext.Provider value={ctxValue}>
       {/* Fixed viewport for slides */}
-      <div className="fixed inset-0 z-0 overflow-hidden">
+      <div className="fixed inset-0 z-0 overflow-hidden bg-[#0a0a12]">
+        {/* Background layer — crossfade only, no scale/blur */}
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={`bg-${currentIndex}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: transitionData.duration, ease: EASE }}
+            className={`absolute inset-0 ${current.bg}`}
+          />
+        </AnimatePresence>
+
+        {/* Content layer — scale/blur/position transitions */}
         <AnimatePresence
           custom={transitionData}
           initial={false}
@@ -408,7 +421,7 @@ export function FullPageScroll({
             initial="enter"
             animate="center"
             exit="exit"
-            className={`absolute inset-0 ${current.bg}`}
+            className="absolute inset-0"
           >
             <div className="h-full w-full" id={current.id}>
               {current.content}

@@ -44,18 +44,16 @@ export function CtaSection() {
 
           <motion.div variants={fadeInUp} className="mt-10 flex gap-4">
             <Button
-              variant="primary"
+              variant="primary-inverse"
               size="lg"
-              className="bg-white text-navy-900 hover:bg-gray-100 active:bg-gray-200"
               onClick={() => goToSlideById("framework")}
             >
               Explore the Framework
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button
-              variant="secondary"
+              variant="secondary-inverse"
               size="lg"
-              className="border-white/20 text-white hover:border-white/40 hover:bg-white/10"
               onClick={() => goToSlide(0)}
             >
               Back to Top

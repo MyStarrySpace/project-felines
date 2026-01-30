@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AlertCircle } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { ScrollRevealText } from "@/components/ui/scroll-reveal-text";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
@@ -90,7 +89,7 @@ function DiseaseCard({ disease }: { disease: (typeof diseases)[number] }) {
       : parseStatForCounter(disease.stat);
 
   return (
-    <div className="glass-card glass-card-hover h-full p-[var(--space-card)]">
+    <div className="h-full pt-6 border-t border-white/10">
       <div className="mb-3">
         <span className="text-gradient-teal font-serif text-[32px] leading-none tracking-tight">
           {counter ? (
@@ -149,7 +148,7 @@ export function EvidenceSection({ part }: { part: "a" | "b" }) {
               animate={{ opacity: 1, scale: 1 }}
               transition={STEP_TRANSITION}
             >
-              <div className="glass-card p-8">
+              <div className="pb-8 mb-8 border-b border-white/10">
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
                   <div className="shrink-0">
                     <span className="text-gradient-teal font-serif text-[64px] leading-none sm:text-[80px]">
@@ -217,10 +216,7 @@ export function EvidenceSection({ part }: { part: "a" | "b" }) {
             }}
             transition={STEP_TRANSITION}
           >
-            <div className="glass-card glow-teal flex gap-4 p-6">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-teal-600/20 text-teal-400">
-                <AlertCircle className="h-5 w-5" />
-              </div>
+            <div className="flex gap-4 border-l-2 border-teal-600 pl-6">
               <div>
                 <span className="mb-0.5 inline-block bg-teal-600/20 px-2.5 py-0.5 text-xs font-medium text-teal-400">
                   Clinical implication

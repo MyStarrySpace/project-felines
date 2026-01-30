@@ -38,8 +38,9 @@ export function HeroSection() {
           {/* Kicker badge */}
           <motion.div
             animate={{
-              opacity: step >= 1 ? 1 : 0,
+              opacity: step < 1 ? 0 : step >= 2 ? 0.15 : 1,
               y: step >= 1 ? 0 : -10,
+              filter: step >= 2 ? "blur(4px)" : "blur(0px)",
             }}
             transition={STEP_TRANSITION}
           >
@@ -54,6 +55,8 @@ export function HeroSection() {
             animate={{
               scale: step >= 1 ? 1 : 1.4,
               y: step >= 1 ? 0 : 60,
+              opacity: step >= 1 ? 0.15 : 1,
+              filter: step >= 1 ? "blur(4px)" : "blur(0px)",
             }}
             transition={STEP_TRANSITION}
           >
@@ -69,8 +72,9 @@ export function HeroSection() {
           <motion.div
             className="mt-8"
             animate={{
-              opacity: step >= 1 ? 1 : 0,
+              opacity: step < 1 ? 0 : step >= 2 ? 0.15 : 1,
               y: step >= 1 ? 0 : 30,
+              filter: step >= 2 ? "blur(4px)" : "blur(0px)",
             }}
             transition={STEP_TRANSITION}
           >
@@ -105,18 +109,16 @@ export function HeroSection() {
             transition={{ ...STEP_TRANSITION, delay: step >= 2 ? 0.1 : 0 }}
           >
             <Button
-              variant="primary"
+              variant="primary-inverse"
               size="lg"
-              className="bg-white text-navy-900 hover:bg-gray-100 active:bg-gray-200"
               onClick={() => goToSlideById("framework")}
             >
               Explore the Framework
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button
-              variant="secondary"
+              variant="secondary-inverse"
               size="lg"
-              className="border-white/20 text-white hover:border-white/40 hover:bg-white/10"
               onClick={() => goToSlideById("evidence")}
             >
               View the Evidence

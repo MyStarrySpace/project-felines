@@ -16,7 +16,8 @@
       "WebFetch(domain:tympanus.net)",
       "WebFetch(domain:codepen.io)",
       "WebFetch(domain:motion.dev)",
-      "WebFetch(domain:dev.to)"
+      "WebFetch(domain:dev.to)",
+      "Bash(npx next build:*)"
     ]
   }
 }

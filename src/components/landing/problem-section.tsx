@@ -111,7 +111,7 @@ export function ProblemSection() {
             }}
             transition={STEP_TRANSITION}
           >
-            <div className="glass-card border-l-4 border-l-teal-600 p-6">
+            <div className="border-l-2 border-teal-600 pl-6">
               <p className="mb-2 font-semibold text-white">
                 The wrong model, not the wrong drugs
               </p>
