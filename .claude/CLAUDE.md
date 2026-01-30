@@ -64,7 +64,29 @@ When adding a new source:
 3. Follow the `Source` interface structure from `types.ts`
 4. Include at least one `Citation` with an exact quote
 5. Verify quotes by fetching the actual source URL
-6. Run `npx tsx scripts/dump-network-data.ts` to verify citations
+6. Run `npm run verify-bib` to check sources against PubMed/CrossRef APIs
+
+### Required Source Fields
+
+Every source MUST have:
+- **Exact title** as it appears on the publication (verified via PubMed or DOI lookup)
+- **Authors** in abbreviated format: `"Armulik A, Genové G, Mäe M, et al."`
+- **Journal** full name (not abbreviated)
+- **Year** of publication
+- **DOI** (without `https://doi.org/` prefix) when available
+- **PMID** when the source is indexed in PubMed
+- **URL** direct link to the source (PubMed, PMC, or publisher page)
+
+### Required Citation Fields
+
+Every citation MUST have:
+- **`quote`**: Exact text from the paper (Ctrl+F verifiable in the original)
+- **`projectRef`**: What text, section, or content in this project uses or references this quote. Format: `"[Section]: [specific content description]"`. Examples:
+  - `"Framework summary: Why every major trial has failed (FAIRPARK-II)"`
+  - `"Kinetics model Step 2: AQP4 depolarization onset timeline"`
+  - `"Cross-disease: ALS/FTD ferroptosis pillar evidence"`
+
+The `projectRef` field ensures traceability between our site content and its supporting evidence.
 
 **Citation Verification Protocol:**
 
@@ -72,6 +94,7 @@ When adding a new source:
 - Copy quotes EXACTLY as they appear in the source
 - If a URL redirects, follow the redirect to get the actual content
 - Mark any unverified citations with `// UNVERIFIED` comment until confirmed
+- Run `npm run verify-bib` after adding sources to check against PubMed/CrossRef APIs
 
 ### Citation Quality Rules
 
