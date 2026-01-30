@@ -20,6 +20,7 @@ type FullPageContextType = {
   totalSlides: number;
   currentStep: number;
   totalSteps: number;
+  isTransitioning: boolean;
   goToSlide: (index: number) => void;
   goToSlideById: (id: string) => void;
   sectionIds: string[];
@@ -36,6 +37,7 @@ export function useFullPage(): FullPageContextType {
       totalSlides: 0,
       currentStep: 0,
       totalSteps: 1,
+      isTransitioning: false,
       goToSlide: () => {},
       goToSlideById: () => {},
       sectionIds: [],
@@ -199,6 +201,7 @@ export function FullPageScroll({
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentStep, setCurrentStep] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const isAnimating = useRef(false);
   const isStepAnimating = useRef(false);
   const accumulatedDelta = useRef(0);
@@ -249,6 +252,7 @@ export function FullPageScroll({
         return;
 
       isAnimating.current = true;
+      setIsTransitioning(true);
       setTransitionData(computeTransition(currentIndex, index));
       setCurrentIndex(index);
       setCurrentStep(0);
@@ -298,6 +302,7 @@ export function FullPageScroll({
       const prevIndex = currentIndex - 1;
       if (prevIndex < 0) return;
       isAnimating.current = true;
+      setIsTransitioning(true);
       setTransitionData(computeTransition(currentIndex, prevIndex));
       setCurrentIndex(prevIndex);
       setCurrentStep(getSteps(prevIndex) - 1);
@@ -384,6 +389,7 @@ export function FullPageScroll({
     totalSlides: sections.length,
     currentStep,
     totalSteps: getSteps(currentIndex),
+    isTransitioning,
     goToSlide,
     goToSlideById,
     sectionIds: sections.map((s) => s.id),
@@ -412,6 +418,7 @@ export function FullPageScroll({
           onExitComplete={() => {
             isAnimating.current = false;
             accumulatedDelta.current = 0;
+            setIsTransitioning(false);
           }}
         >
           <motion.div

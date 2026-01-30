@@ -36,7 +36,7 @@ export function CtaSection() {
           <motion.div variants={fadeInUp}>
             <ScrollRevealText
               text="The PLIG framework predicts that multi-pillar interventions targeting pericyte protection, lysosomal support, iron redistribution, and glial resilience will outperform any single-target approach. A companion paper with full kinetic modeling and citations will be published on Zenodo."
-              className="mt-6 block text-lg leading-relaxed"
+              className="mt-6 block text-xl leading-relaxed sm:text-2xl sm:leading-relaxed"
               dimColor="rgba(107,114,128,1)"
               brightColor="rgba(209,213,219,1)"
             />

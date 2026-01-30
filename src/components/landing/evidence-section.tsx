@@ -1,13 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Container } from "@/components/ui/container";
-import { ScrollRevealText } from "@/components/ui/scroll-reveal-text";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { ParallaxOrb } from "@/components/ui/parallax-orb";
+import { StepFragment } from "@/components/ui/step-fragment";
 import { useFullPage } from "@/components/ui/full-page-scroll";
-
-const STEP_TRANSITION = { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const };
 
 const featured = {
   name: "Alzheimer's Disease",
@@ -126,68 +122,50 @@ export function EvidenceSection({ part }: { part: "a" | "b" }) {
           speed={0.2}
         />
 
-        <Container width="full" section className="relative z-10 h-full flex items-center">
-          <div className="w-full">
-            {/* Header */}
-            <motion.div
-              className="mb-12"
-              animate={{ opacity: 1, y: 0 }}
-              transition={STEP_TRANSITION}
-            >
-              <span className="text-sm font-medium uppercase tracking-[0.05em] text-teal-400">
-                The Evidence
-              </span>
-              <h2 className="mt-4 font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[42px]">
-                One framework. Six diseases.
-              </h2>
-            </motion.div>
+        {/* Step 0: Section header + featured Alzheimer's card */}
+        <StepFragment step={step} appear={0} recede={1}>
+          <div className="flex flex-col items-center px-6 max-w-3xl">
+            <span className="text-sm font-medium uppercase tracking-[0.05em] text-teal-400">
+              The Evidence
+            </span>
+            <h2 className="mt-4 font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[42px] text-center">
+              One framework. Six diseases.
+            </h2>
 
-            {/* Featured: Alzheimer's — always visible on this slide */}
-            <motion.div
-              className="mb-8"
-              animate={{ opacity: 1, scale: 1 }}
-              transition={STEP_TRANSITION}
-            >
-              <div className="pb-8 mb-8 border-b border-white/10">
-                <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                  <div className="shrink-0">
-                    <span className="text-gradient-teal font-serif text-[64px] leading-none sm:text-[80px]">
-                      <AnimatedCounter
-                        value={featured.stat}
-                        suffix={featured.statSuffix}
-                      />
-                    </span>
-                    <p className="mt-1 text-xs font-medium text-gray-400">
-                      {featured.statLabel}
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="mb-2 font-serif text-2xl text-white">
-                      {featured.name}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-gray-300">
-                      {featured.explanation}
-                    </p>
-                  </div>
+            <div className="mt-12 w-full">
+              <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center">
+                <div className="shrink-0">
+                  <span className="text-gradient-teal font-serif text-[64px] leading-none sm:text-[80px]">
+                    <AnimatedCounter
+                      value={featured.stat}
+                      suffix={featured.statSuffix}
+                    />
+                  </span>
+                  <p className="mt-1 text-xs font-medium text-gray-400">
+                    {featured.statLabel}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="mb-2 font-serif text-2xl text-white">
+                    {featured.name}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-gray-300">
+                    {featured.explanation}
+                  </p>
                 </div>
               </div>
-            </motion.div>
-
-            {/* Part A diseases: Parkinson's + Long COVID — step 1 */}
-            <motion.div
-              className="grid gap-6 sm:grid-cols-2"
-              animate={{
-                opacity: step >= 1 ? 1 : 0,
-                y: step >= 1 ? 0 : 30,
-              }}
-              transition={STEP_TRANSITION}
-            >
-              {partADiseases.map((disease) => (
-                <DiseaseCard key={disease.name} disease={disease} />
-              ))}
-            </motion.div>
+            </div>
           </div>
-        </Container>
+        </StepFragment>
+
+        {/* Step 1: Parkinson's + Long COVID cards */}
+        <StepFragment step={step} appear={1}>
+          <div className="grid gap-6 sm:grid-cols-2 max-w-3xl px-6">
+            {partADiseases.map((disease) => (
+              <DiseaseCard key={disease.name} disease={disease} />
+            ))}
+          </div>
+        </StepFragment>
       </div>
     );
   }
@@ -195,47 +173,33 @@ export function EvidenceSection({ part }: { part: "a" | "b" }) {
   // Part B
   return (
     <div className="h-full relative overflow-hidden">
-      <Container width="full" section className="relative z-10 h-full flex items-center">
-        <div className="w-full">
-          {/* Part B diseases: ALS + MS + Prion — always visible */}
-          <motion.div
-            className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-            animate={{ opacity: 1, y: 0 }}
-            transition={STEP_TRANSITION}
-          >
-            {partBDiseases.map((disease) => (
-              <DiseaseCard key={disease.name} disease={disease} />
-            ))}
-          </motion.div>
-
-          {/* Clinical implication callout — step 1 */}
-          <motion.div
-            animate={{
-              opacity: step >= 1 ? 1 : 0,
-              y: step >= 1 ? 0 : 20,
-            }}
-            transition={STEP_TRANSITION}
-          >
-            <div className="flex gap-4 border-l-2 border-teal-600 pl-6">
-              <div>
-                <span className="mb-0.5 inline-block bg-teal-600/20 px-2.5 py-0.5 text-xs font-medium text-teal-400">
-                  Clinical implication
-                </span>
-                <p className="mt-1 font-medium text-white">
-                  The recovery illusion
-                </p>
-                <div className="mt-1 text-sm leading-relaxed text-gray-300">
-                  <ScrollRevealText
-                    text="After viral infection, serum inflammatory markers normalize within weeks. Patients feel better. But brain iron redistribution persists. MRI studies show elevated iron years after infection resolves. The serum says recovery. The brain says otherwise."
-                    dimColor="rgba(107,114,128,1)"
-                    brightColor="rgba(209,213,219,1)"
-                  />
-                </div>
-              </div>
-            </div>
-          </motion.div>
+      {/* Step 0: ALS + MS + Prion disease cards (3-col grid) */}
+      <StepFragment step={step} appear={0} recede={1}>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl px-6">
+          {partBDiseases.map((disease) => (
+            <DiseaseCard key={disease.name} disease={disease} />
+          ))}
         </div>
-      </Container>
+      </StepFragment>
+
+      {/* Step 1: Clinical implication callout */}
+      <StepFragment step={step} appear={1}>
+        <div className="max-w-2xl px-6">
+          <div className="flex gap-4 border-l-2 border-teal-600 pl-6">
+            <div>
+              <span className="mb-0.5 inline-block bg-teal-600/20 px-2.5 py-0.5 text-xs font-medium text-teal-400">
+                Clinical implication
+              </span>
+              <p className="mt-1 font-medium text-white">
+                The recovery illusion
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-gray-300">
+                After viral infection, serum inflammatory markers normalize within weeks. Patients feel better. But brain iron redistribution persists. MRI studies show elevated iron years after infection resolves. The serum says recovery. The brain says otherwise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </StepFragment>
     </div>
   );
 }
