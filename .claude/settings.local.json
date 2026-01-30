@@ -8,7 +8,15 @@
       "WebSearch",
       "WebFetch(domain:pudding.cool)",
       "WebFetch(domain:www.whitehouse.gov)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(tree:*)",
+      "WebFetch(domain:americabydesign.gov)",
+      "WebFetch(domain:realfood.gov)",
+      "WebFetch(domain:www.trapti.dev)",
+      "WebFetch(domain:tympanus.net)",
+      "WebFetch(domain:codepen.io)",
+      "WebFetch(domain:motion.dev)",
+      "WebFetch(domain:dev.to)"
     ]
   }
 }

@@ -33,7 +33,7 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors duration-[var(--duration-fast)] ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`inline-flex items-center justify-center gap-2 font-medium transition-colors duration-[var(--duration-fast)] ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
       {...props}
     >
       {children}

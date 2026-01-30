@@ -17,7 +17,7 @@ export function PathwayCard({
 }: PathwayCardProps) {
   return (
     <div
-      className={`rounded-lg bg-surface p-6 shadow-sm transition-all duration-[var(--duration-fast)] hover:-translate-y-1 hover:shadow-md ${className}`}
+      className={`bg-surface p-6 shadow-sm transition-all duration-[var(--duration-fast)] hover:-translate-y-1 hover:shadow-md ${className}`}
     >
       <div className="mb-3">
         <Badge variant="default" size="md">

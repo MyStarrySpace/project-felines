@@ -31,7 +31,7 @@ export function DataCard({
 }: DataCardProps) {
   return (
     <div
-      className={`rounded-lg bg-surface p-6 shadow-sm ${className}`}
+      className={`bg-surface p-6 shadow-sm ${className}`}
     >
       <div className="mb-2 flex items-baseline gap-1.5">
         <span className="font-serif text-[40px] leading-none tracking-tight text-navy-900">

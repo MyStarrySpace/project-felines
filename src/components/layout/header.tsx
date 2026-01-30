@@ -1,47 +1,56 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Container } from "../ui/container";
+import { useFullPage } from "../ui/full-page-scroll";
 
 const navLinks = [
-  { label: "Framework", href: "#framework" },
-  { label: "Evidence", href: "#evidence" },
-  { label: "Kinetics", href: "#kinetics" },
-  { label: "Showcase", href: "/showcase" },
+  { label: "Problem", sectionId: "problem" },
+  { label: "Framework", sectionId: "framework" },
+  { label: "Evidence", sectionId: "evidence" },
 ];
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { goToSlideById, currentIndex } = useFullPage();
+  const scrolled = currentIndex > 0;
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const handleNav = (sectionId: string) => {
+    goToSlideById(sectionId);
+    setMobileOpen(false);
+  };
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-[var(--duration-base)] ${scrolled ? "bg-white/80 shadow-sm backdrop-blur-md" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-[var(--duration-base)] ${scrolled ? "bg-navy-900/80 shadow-sm backdrop-blur-md border-b border-white/5" : "bg-transparent"}`}
     >
       <Container>
         <div className="flex h-16 items-center justify-between">
-          <a href="/" className="font-serif text-xl text-navy-900">
+          <button
+            onClick={() => goToSlideById("hero")}
+            className="font-serif text-xl text-white transition-colors"
+          >
             PLIG Framework
-          </a>
+          </button>
 
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-text-secondary transition-colors hover:text-navy-900"
+              <button
+                key={link.sectionId}
+                onClick={() => handleNav(link.sectionId)}
+                className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
+            <a
+              href="/showcase"
+              className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+            >
+              Showcase
+            </a>
           </nav>
 
           <button
@@ -50,9 +59,9 @@ export function Header() {
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
             {mobileOpen ? (
-              <X className="h-5 w-5 text-navy-900" />
+              <X className="h-5 w-5 text-white" />
             ) : (
-              <Menu className="h-5 w-5 text-navy-900" />
+              <Menu className="h-5 w-5 text-white" />
             )}
           </button>
         </div>
@@ -65,20 +74,25 @@ export function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="overflow-hidden border-t border-gray-200 bg-white md:hidden"
+            className="overflow-hidden border-t border-white/5 bg-navy-800 md:hidden"
           >
             <Container>
               <div className="flex flex-col gap-1 py-4">
                 {navLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="rounded-lg px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:bg-gray-100 hover:text-navy-900"
+                  <button
+                    key={link.sectionId}
+                    onClick={() => handleNav(link.sectionId)}
+                    className="px-3 py-2 text-left text-sm font-medium text-gray-300 transition-colors hover:bg-white/5 hover:text-white"
                   >
                     {link.label}
-                  </a>
+                  </button>
                 ))}
+                <a
+                  href="/showcase"
+                  className="px-3 py-2 text-sm font-medium text-gray-300 transition-colors hover:bg-white/5 hover:text-white"
+                >
+                  Showcase
+                </a>
               </div>
             </Container>
           </motion.nav>
