@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollRevealText } from "@/components/ui/scroll-reveal-text";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
@@ -32,14 +32,14 @@ export function HeroSection() {
       <StepFragment step={step} appear={0} recede={1}>
         <div className="flex flex-col items-center text-center">
           <motion.span
-            className="text-white font-serif text-[120px] leading-none tracking-tight sm:text-[160px]"
+            className="text-white font-serif text-[140px] leading-none tracking-tight sm:text-[200px]"
             initial={{ scale: 1.4, y: 60 }}
             animate={{ scale: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
             <AnimatedCounter value={99} suffix="%" />
           </motion.span>
-          <p className="mt-2 text-lg font-medium text-gray-400">
+          <p className="mt-2 text-2xl font-medium text-gray-400 sm:text-3xl">
             of 400+ Alzheimer&apos;s drugs failed
           </p>
         </div>
@@ -51,7 +51,7 @@ export function HeroSection() {
           <span className="inline-flex items-center border border-white/10 bg-white/5 px-3 py-1 text-sm font-medium text-teal-400 backdrop-blur-sm">
             A new framework for neurodegeneration
           </span>
-          <h1 className="mt-8 max-w-3xl font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[42px] sm:leading-[1.15] sm:tracking-[-0.02em]">
+          <h1 className="mt-8 max-w-3xl font-serif text-[38px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[52px] sm:leading-[1.15] sm:tracking-[-0.02em]">
             Single-target drugs can&apos;t fix a multi-system disease
           </h1>
         </div>
@@ -62,7 +62,7 @@ export function HeroSection() {
         <div className="flex flex-col items-center text-center">
           <ScrollRevealText
             text="The PLIG framework proposes that neurodegeneration emerges from the convergence of four damage pathways: pericyte loss, lysosomal failure, iron dysregulation, and glial collapse. No single-target drug can address this."
-            className="block max-w-[var(--width-reading)] text-center text-xl leading-relaxed sm:text-2xl sm:leading-relaxed"
+            className="block max-w-[var(--width-reading)] text-center text-2xl leading-relaxed sm:text-3xl sm:leading-relaxed"
             dimColor="rgba(107,114,128,1)"
             brightColor="rgba(209,213,219,1)"
           />
@@ -85,6 +85,24 @@ export function HeroSection() {
           </div>
         </div>
       </StepFragment>
+
+      {/* Scroll hint — only visible on step 0 */}
+      <motion.div
+        className="absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-1"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: step === 0 ? 1 : 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <span className="text-sm font-medium tracking-wide text-gray-400">
+          Scroll to explore
+        </span>
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <ChevronDown className="h-5 w-5 text-teal-400" />
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

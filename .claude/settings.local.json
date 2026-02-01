@@ -17,7 +17,15 @@
       "WebFetch(domain:codepen.io)",
       "WebFetch(domain:motion.dev)",
       "WebFetch(domain:dev.to)",
-      "Bash(npx next build:*)"
+      "Bash(npx next build:*)",
+      "Bash(ls:*)",
+      "Bash(dir /B \"C:\\\\Users\\\\quest\\\\Programming\\\\plig-framework\\\\src\\\\data\")",
+      "Bash(dir /b \"C:\\\\Users\\\\quest\\\\Programming\\\\plig-framework\\\\src\\\\data\")",
+      "Bash(dir /b \"C:\\\\Users\\\\quest\\\\Programming\\\\plig-framework\\\\framework-docs\")",
+      "Bash(npx tsx:*)",
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

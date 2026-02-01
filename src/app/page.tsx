@@ -7,6 +7,7 @@ import { FrameworkSection } from "@/components/landing/framework-section";
 import { EvidenceSection } from "@/components/landing/evidence-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { SectionIndicator } from "@/components/ui/section-indicator";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { FullPageScroll, type SlideConfig } from "@/components/ui/full-page-scroll";
 
 const slides: SlideConfig[] = [
@@ -53,6 +54,7 @@ export default function Home() {
     <FullPageScroll sections={slides}>
       <Header />
       <SectionIndicator />
+      <ScrollProgress />
     </FullPageScroll>
   );
 }

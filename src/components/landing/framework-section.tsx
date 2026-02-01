@@ -3,6 +3,7 @@
 import { ParallaxOrb } from "@/components/ui/parallax-orb";
 import { StepFragment } from "@/components/ui/step-fragment";
 import { useFullPage } from "@/components/ui/full-page-scroll";
+import { AnimatedShape } from "@/components/ui/animated-shape";
 
 const pillars = [
   {
@@ -52,13 +53,43 @@ export function FrameworkSection() {
         speed={0.15}
       />
 
+      {/* Corner bracket decorations for PLIG letters step */}
+      <AnimatedShape
+        direction="left"
+        shape="bracket"
+        className="top-[15%] left-[10%]"
+        delay={0.1}
+        visible={step === 0}
+      />
+      <AnimatedShape
+        direction="right"
+        shape="bracket"
+        className="top-[15%] right-[10%] rotate-90"
+        delay={0.15}
+        visible={step === 0}
+      />
+      <AnimatedShape
+        direction="left"
+        shape="bracket"
+        className="bottom-[15%] left-[10%] -rotate-90"
+        delay={0.2}
+        visible={step === 0}
+      />
+      <AnimatedShape
+        direction="right"
+        shape="bracket"
+        className="bottom-[15%] right-[10%] rotate-180"
+        delay={0.25}
+        visible={step === 0}
+      />
+
       {/* Step 0: Large PLIG letters — centered */}
       <StepFragment step={step} appear={0} recede={1}>
         <div className="flex items-center gap-8 sm:gap-12">
           {pillars.map((pillar) => (
             <span
               key={pillar.letter}
-              className="glow-letter font-serif text-[100px] leading-none text-teal-400 sm:text-[120px]"
+              className="glow-letter font-serif text-[120px] leading-none text-teal-400 sm:text-[160px]"
             >
               {pillar.letter}
             </span>
@@ -72,7 +103,7 @@ export function FrameworkSection() {
           <span className="text-sm font-medium uppercase tracking-[0.05em] text-teal-400">
             The Framework
           </span>
-          <h2 className="mt-4 font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[42px]">
+          <h2 className="mt-4 font-serif text-[38px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[52px]">
             Four pillars. One disease.
           </h2>
           <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-4 sm:gap-12">
@@ -102,7 +133,7 @@ export function FrameworkSection() {
                 <h3 className="mt-2 text-lg font-semibold text-white">
                   {pillar.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-300">
+                <p className="mt-2 text-lg leading-relaxed text-gray-300">
                   {pillar.description}
                 </p>
               </div>
@@ -117,7 +148,7 @@ export function FrameworkSection() {
                     <div className="flex h-8 w-8 items-center justify-center border border-teal-600 text-sm font-medium text-teal-400">
                       {ps.num}
                     </div>
-                    <span className="mt-2 max-w-[90px] text-center text-xs leading-tight text-gray-400">
+                    <span className="mt-2 max-w-[90px] text-center text-sm leading-tight text-gray-400">
                       {ps.title}
                     </span>
                   </div>
@@ -133,21 +164,21 @@ export function FrameworkSection() {
             <span className="font-serif text-[32px] text-gradient-teal leading-none">
               10–35 years
             </span>
-            <span className="ml-3 text-sm text-gray-400">
+            <span className="ml-3 text-base text-gray-400">
               latent period before clinical symptoms
             </span>
           </p>
         </div>
       </StepFragment>
 
-      {/* Step 3: Convergence insight callout */}
-      <StepFragment step={step} appear={3}>
+      {/* Step 3: Convergence insight callout — bottom-left anchored */}
+      <StepFragment step={step} appear={3} className="!items-end !justify-start pb-20 pl-10 sm:pb-28 sm:pl-16">
         <div className="max-w-2xl px-6">
           <div className="border-l-2 border-teal-600 pl-6">
             <p className="mb-2 font-semibold text-teal-400">
               Convergence, not single cause
             </p>
-            <p className="text-sm leading-relaxed text-gray-300">
+            <p className="text-lg leading-relaxed text-gray-300">
               GBA1 mutations are the strongest genetic risk factor for Parkinson&apos;s, yet only 10–30% of carriers develop disease. This incomplete penetrance is a key clue: lysosomal dysfunction alone isn&apos;t sufficient. The PLIG framework explains what additional factors are required.
             </p>
           </div>
