@@ -2,30 +2,36 @@ import type { PillarData } from "./types";
 
 export const pillars: PillarData[] = [
   {
-    letter: "P",
-    title: "Pericyte",
+    letter: "Fe",
+    title: "Iron",
     description:
-      "Pericytes wrap brain capillaries and regulate blood-brain barrier integrity. Their death is among the earliest detectable events in neurodegeneration, preceding amyloid plaques by years.",
+      "The core pathogenic element. Iron is essential for myelin synthesis but toxic when mislocalized. Fenton chemistry generates hydroxyl radicals that destroy PUFA-rich membranes.",
   },
   {
     letter: "L",
-    title: "Lysosomal",
+    title: "Lysosome",
     description:
-      "Lysosomes are the cell's recycling centers. GBA1 mutations impair lysosomal function, driving alpha-synuclein accumulation. But GBA1 is only 10-30% penetrant, meaning cofactors are required.",
+      "GPX4, the NAD+/SIRT3 axis, and glutathione protect membranes from peroxidation. When these defenses fail, PUFA-rich oligodendrocyte membranes become vulnerable to ferroptotic death.",
   },
   {
     letter: "I",
-    title: "Iron",
+    title: "Insulation",
     description:
-      "Iron is essential for myelin synthesis but toxic when mislocalized. After BBB breakdown, iron redistributes from oligodendrocytes to astrocytes, starving myelin repair and fueling Fenton chemistry.",
+      "Myelin sheaths, lysosomes, ferritin, tau, and alpha-synuclein. Oligodendrocytes provide both electrical insulation (myelin) and iron insulation (FTH1 export to neurons). When insulation fails, labile iron triggers Fenton chemistry.",
   },
   {
-    letter: "G",
-    title: "Glia",
+    letter: "N",
+    title: "Neurovascular",
     description:
-      "Oligodendrocytes are the most iron-dependent and peroxidation-vulnerable cells in the brain. Their death strips axons of myelin, producing the white matter damage seen across neurodegenerative diseases.",
+      "Pericytes, BBB, astrocyte endfeet, and Schwann cell vasculature. Pericyte death is among the earliest events in neurodegeneration, breaching the barrier that controls brain iron entry.",
+  },
+  {
+    letter: "E",
+    title: "Export",
+    description:
+      "Brain-level (ferroportin/Cp on endfeet, glymphatic, AQP4) and systemic (liver hepcidin/bile, spleen recycling, gut absorption/microbiome) iron export. When export fails, iron accumulates even at normal intake levels.",
   },
 ];
 
 export const frameworkInsight =
-  "GBA1 mutations are the strongest genetic risk factor for Parkinson's, yet only 10-30% of carriers develop disease. This incomplete penetrance is a key clue: lysosomal dysfunction alone isn't sufficient. The PLIG framework explains what additional factors are required.";
+  "GBA1 mutations are the strongest genetic risk factor for Parkinson's, yet only 10-30% of carriers develop disease. This incomplete penetrance is a key clue: one compromised defense layer isn't sufficient. The FELINE framework explains why multiple layers must fail simultaneously.";

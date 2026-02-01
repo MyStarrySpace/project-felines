@@ -32,7 +32,7 @@ export function Header() {
             onClick={() => goToSlideById("hero")}
             className="font-serif text-xl text-white transition-colors"
           >
-            PLIG Framework
+            FELINE Framework
           </button>
 
           <nav className="hidden items-center gap-8 md:flex">

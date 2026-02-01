@@ -142,8 +142,24 @@ const BOUNDARY_TRANSITIONS: {
   },
 
   // -----------------------------------------------------------------------
-  // 4  Evidence B → CTA — "Dissolve Rise"
-  //    Evidence shrinks and dissolves; CTA rises from slight offset with
+  // 4  Evidence B → PNS — "Gentle Cross"
+  //    Soft crossfade with subtle scale for continuity.
+  // -----------------------------------------------------------------------
+  {
+    forward: {
+      exit: { opacity: 0, scale: 1.03, filter: "blur(4px)" },
+      initial: { opacity: 0, scale: 0.97, filter: "blur(4px)" },
+    },
+    backward: {
+      exit: { opacity: 0, scale: 0.97, filter: "blur(4px)" },
+      initial: { opacity: 0, scale: 1.03, filter: "blur(4px)" },
+    },
+    duration: 0.6,
+  },
+
+  // -----------------------------------------------------------------------
+  // 5  PNS → CTA — "Dissolve Rise"
+  //    PNS shrinks and dissolves; CTA rises from slight offset with
   //    a clearing blur.
   // -----------------------------------------------------------------------
   {

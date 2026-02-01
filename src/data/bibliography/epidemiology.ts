@@ -114,7 +114,7 @@ export const epidemiologySources: Source[] = [
         quote:
           "Recombinant vaccine: 17% increase in diagnosis-free time, translating to 164 additional days without dementia diagnosis",
         context:
-          "Shingles vaccination reduces dementia risk; vaccine prevents VZV-driven PLIG cascade",
+          "Shingles vaccination reduces dementia risk; vaccine prevents VZV-driven FELINE cascade",
         projectRef:
           "Cross-disease: VZV vaccination reduces dementia risk",
       },

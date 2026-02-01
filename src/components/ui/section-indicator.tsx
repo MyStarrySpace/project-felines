@@ -8,7 +8,8 @@ const INDICATOR_SECTIONS = [
   { label: "Problem", slideIndex: 1 },
   { label: "Framework", slideIndex: 2 },
   { label: "Evidence", slideIndex: 3 },
-  { label: "Conclusion", slideIndex: 5 },
+  { label: "PNS", slideIndex: 5 },
+  { label: "Conclusion", slideIndex: 6 },
 ];
 
 function getActiveIndicator(currentSlide: number): number {

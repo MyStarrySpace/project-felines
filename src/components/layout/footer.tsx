@@ -8,9 +8,9 @@ export function Footer() {
           <div>
             <h3 className="mb-3 font-serif text-lg text-white">About</h3>
             <p className="text-sm leading-relaxed text-gray-400">
-              The PLIG Framework proposes a causal pathway linking
-              pericyte/lysosomal dysfunction to neurodegeneration through iron
-              dysregulation and lipid peroxidation.
+              The FELINE Framework models neurodegeneration as multi-layer
+              defense failure: iron homeostasis, lysosomal defenses, iron
+              insulation, neurovascular integrity, and export pathways.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/5 py-6 text-center text-xs text-gray-400">
-          PLIG Framework. For research and educational purposes.
+          FELINE Framework. For research and educational purposes.
         </div>
       </Container>
     </footer>

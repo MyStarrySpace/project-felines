@@ -1,10 +1,12 @@
-# PLIG Framework Project
+# FELINE Framework Project
 
 ## Overview
 
-This is the presentation site for the **PLIG (Pericyte-Lysosome-Iron-Glia) Framework**, a novel biological framework proposing a causal pathway for latent neurodegeneration:
+This is the presentation site for the **FELINE (Fe-Lysosome-Insulation-Neurovascular-Export) Framework**, a novel biological framework modeling neurodegeneration as multi-layer defense failure:
 
-**Causal chain:** Pericyte/lysosomal dysfunction → astrocyte endfoot depolarization → vascular system effects → iron dysregulation → Fenton chemistry → peroxidation of PUFA-PLs → oligodendrocyte damage → neurodegeneration
+**Defense layers:** Fe (iron homeostasis) · Lysosome (GPX4, NAD+/SIRT3, GSH) · Insulation (myelin sheaths, lysosomes, ferritin, tau, alpha-synuclein; oligodendrocytes provide both electrical insulation and iron insulation via FTH1 export) · Neurovascular (pericytes, BBB, astrocyte endfeet, Schwann cell vasculature) · Export (brain-level: ferroportin/Cp, glymphatic, AQP4; systemic: liver hepcidin/bile, spleen recycling, gut absorption/microbiome)
+
+When multiple defense layers fail simultaneously, iron-driven ferroptosis cascades through oligodendrocytes, producing the white matter damage seen across neurodegenerative diseases.
 
 The framework is motivated by connecting long COVID to neurodegenerative biomarkers, supported by mechanistic rationale, data, and rough kinetic calculations. Parallels are also drawn to EBV and MS. A companion paper will eventually be published on Zenodo.
 

@@ -35,7 +35,7 @@ export function CtaSection() {
 
           <motion.div variants={fadeInUp}>
             <ScrollRevealText
-              text="The PLIG framework predicts that multi-pillar interventions targeting pericyte protection, lysosomal support, iron redistribution, and glial resilience will outperform any single-target approach. A companion paper with full kinetic modeling and citations will be published on Zenodo."
+              text="Multi-layer interventions will outperform single-target drugs. The FELINE framework identifies which layers to target and why. A companion paper with full kinetic modeling is forthcoming on Zenodo."
               className="mt-6 block text-xl leading-relaxed sm:text-2xl sm:leading-relaxed"
               dimColor="rgba(107,114,128,1)"
               brightColor="rgba(209,213,219,1)"
@@ -64,7 +64,7 @@ export function CtaSection() {
 
       {/* Inline footer */}
       <div className="relative z-10 border-t border-white/5 py-4 text-center text-xs text-gray-400">
-        PLIG Framework. For research and educational purposes.
+        FELINE Framework. For research and educational purposes.
       </div>
     </div>
   );

@@ -39,5 +39,5 @@ export interface FailedTrial {
   trial: string;
   target: string;
   result: string;
-  pligExplanation: string;
+  felineExplanation: string;
 }

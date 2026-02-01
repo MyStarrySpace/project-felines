@@ -6,7 +6,7 @@ export const heroData: HeroData = {
   statLabel: "of 400+ Alzheimer's drugs failed",
   headline: "Single-target drugs can't fix a multi-system disease",
   subtitle:
-    "The PLIG framework proposes that neurodegeneration emerges from the convergence of four damage pathways: pericyte loss, lysosomal failure, iron dysregulation, and glial collapse. No single-target drug can address this.",
+    "The brain has five defense layers against iron toxicity. Neurodegeneration begins when multiple layers fail at once. No single-target drug can fix that.",
   primaryCta: "Explore the Framework",
   secondaryCta: "View the Evidence",
 };

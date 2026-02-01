@@ -25,7 +25,9 @@
       "Bash(npx tsx:*)",
       "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:academic.oup.com)"
     ]
   }
 }

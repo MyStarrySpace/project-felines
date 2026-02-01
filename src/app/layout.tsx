@@ -20,9 +20,9 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "PLIG Framework",
+  title: "FELINE Framework",
   description:
-    "Pericyte-Lysosome-Iron-Glia: A causal framework for latent neurodegeneration",
+    "Fe-Lysosome-Insulation-Neurovascular-Export: A multi-layer defense model for neurodegeneration",
 };
 
 export default function RootLayout({

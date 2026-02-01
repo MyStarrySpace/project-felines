@@ -5,40 +5,46 @@ import { StepFragment } from "@/components/ui/step-fragment";
 import { useFullPage } from "@/components/ui/full-page-scroll";
 import { AnimatedShape } from "@/components/ui/animated-shape";
 
-const pillars = [
+const layers = [
   {
-    letter: "P",
-    title: "Pericyte",
+    letter: "Fe",
+    title: "Iron",
     description:
-      "Brain capillary gatekeepers. Their death is among the earliest detectable events, preceding amyloid plaques by years.",
+      "The core pathogenic element. Essential for myelin but toxic when mislocalized. Fenton chemistry generates hydroxyl radicals that destroy PUFA-rich membranes.",
   },
   {
     letter: "L",
-    title: "Lysosomal",
+    title: "Lysosome",
     description:
-      "The cell's recycling system. GBA1 mutations impair lysosomal function, but only 10-30% of carriers develop disease.",
+      "GPX4, the NAD+/SIRT3 axis, and glutathione protect membranes from peroxidation. Failure here exposes oligodendrocytes to ferroptotic death.",
   },
   {
     letter: "I",
-    title: "Iron",
+    title: "Insulation",
     description:
-      "Essential for myelin but toxic when mislocalized. After BBB breakdown, iron fuels Fenton chemistry and peroxidation.",
+      "Myelin sheaths, lysosomes, ferritin, tau, and alpha-synuclein. Oligodendrocytes provide both electrical insulation (myelin) and iron insulation (FTH1 export to neurons). When insulation fails, labile iron triggers Fenton chemistry.",
   },
   {
-    letter: "G",
-    title: "Glia",
+    letter: "N",
+    title: "Neurovascular",
     description:
-      "Oligodendrocytes are the most iron-dependent and peroxidation-vulnerable cells. Their death strips axons of myelin.",
+      "Pericytes, BBB, astrocyte endfeet, and Schwann cell vasculature. Pericyte death breaches the barrier that controls brain iron entry.",
+  },
+  {
+    letter: "E",
+    title: "Export",
+    description:
+      "Brain-level (ferroportin/Cp on endfeet, glymphatic, AQP4) and systemic (liver hepcidin/bile, spleen recycling, gut absorption/microbiome) iron export. Failure here means iron accumulates at normal intake.",
   },
 ];
 
-const pathwaySteps = [
-  { num: 1, title: "Pericyte loss" },
-  { num: 2, title: "BBB breakdown" },
-  { num: 3, title: "Astrocyte depolarization" },
-  { num: 4, title: "Iron maldistribution" },
-  { num: 5, title: "Fenton chemistry" },
-  { num: 6, title: "Lipid peroxidation" },
+const defenseSteps = [
+  { num: 1, title: "Neurovascular breach" },
+  { num: 2, title: "Iron entry" },
+  { num: 3, title: "Insulation overload" },
+  { num: 4, title: "Lysosome failure" },
+  { num: 5, title: "Export stall" },
+  { num: 6, title: "Ferroptosis cascade" },
   { num: 7, title: "Oligodendrocyte death" },
 ];
 
@@ -53,7 +59,7 @@ export function FrameworkSection() {
         speed={0.15}
       />
 
-      {/* Corner bracket decorations for PLIG letters step */}
+      {/* Corner bracket decorations for FELINE letters step */}
       <AnimatedShape
         direction="left"
         shape="bracket"
@@ -83,37 +89,37 @@ export function FrameworkSection() {
         visible={step === 0}
       />
 
-      {/* Step 0: Large PLIG letters — centered */}
+      {/* Step 0: Large FELINE letters — centered */}
       <StepFragment step={step} appear={0} recede={1}>
-        <div className="flex items-center gap-8 sm:gap-12">
-          {pillars.map((pillar) => (
+        <div className="flex items-center gap-6 sm:gap-10">
+          {layers.map((layer) => (
             <span
-              key={pillar.letter}
-              className="glow-letter font-serif text-[120px] leading-none text-teal-400 sm:text-[160px]"
+              key={layer.letter}
+              className="glow-letter font-serif text-[100px] leading-none text-teal-400 sm:text-[140px]"
             >
-              {pillar.letter}
+              {layer.letter}
             </span>
           ))}
         </div>
       </StepFragment>
 
-      {/* Step 1: Section header + pillar letter+title grid */}
+      {/* Step 1: Section header + layer letter+title grid */}
       <StepFragment step={step} appear={1} recede={2}>
         <div className="flex flex-col items-center text-center px-6">
           <span className="text-sm font-medium uppercase tracking-[0.05em] text-teal-400">
             The Framework
           </span>
           <h2 className="mt-4 font-serif text-[38px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[52px]">
-            Four pillars. One disease.
+            Five defense layers. One threshold.
           </h2>
-          <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-4 sm:gap-12">
-            {pillars.map((pillar) => (
-              <div key={pillar.letter} className="text-center">
-                <span className="glow-letter inline-block font-serif text-[64px] leading-none text-teal-400 sm:text-[80px]">
-                  {pillar.letter}
+          <div className="mt-12 grid grid-cols-3 gap-8 sm:grid-cols-5 sm:gap-10">
+            {layers.map((layer) => (
+              <div key={layer.letter} className="text-center">
+                <span className="glow-letter inline-block font-serif text-[56px] leading-none text-teal-400 sm:text-[72px]">
+                  {layer.letter}
                 </span>
                 <h3 className="mt-2 text-lg font-semibold text-white">
-                  {pillar.title}
+                  {layer.title}
                 </h3>
               </div>
             ))}
@@ -121,20 +127,20 @@ export function FrameworkSection() {
         </div>
       </StepFragment>
 
-      {/* Step 2: Pillar descriptions + pathway chain + "10–35 years" */}
+      {/* Step 2: Layer descriptions + defense chain + "10–35 years" */}
       <StepFragment step={step} appear={2} recede={3}>
-        <div className="flex flex-col items-center px-6 max-w-5xl">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {pillars.map((pillar) => (
-              <div key={pillar.letter} className="text-center">
-                <span className="glow-letter inline-block font-serif text-[48px] leading-none text-teal-400">
-                  {pillar.letter}
+        <div className="flex flex-col items-center px-6 max-w-6xl">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+            {layers.map((layer) => (
+              <div key={layer.letter} className="text-center">
+                <span className="glow-letter inline-block font-serif text-[40px] leading-none text-teal-400">
+                  {layer.letter}
                 </span>
                 <h3 className="mt-2 text-lg font-semibold text-white">
-                  {pillar.title}
+                  {layer.title}
                 </h3>
-                <p className="mt-2 text-lg leading-relaxed text-gray-300">
-                  {pillar.description}
+                <p className="mt-2 text-base leading-relaxed text-gray-300">
+                  {layer.description}
                 </p>
               </div>
             ))}
@@ -142,7 +148,7 @@ export function FrameworkSection() {
 
           <div className="mt-12 w-full overflow-x-auto pb-4">
             <div className="flex items-start gap-0 min-w-[700px] justify-center">
-              {pathwaySteps.map((ps, i) => (
+              {defenseSteps.map((ps, i) => (
                 <div key={ps.num} className="flex items-start">
                   <div className="flex flex-col items-center">
                     <div className="flex h-8 w-8 items-center justify-center border border-teal-600 text-sm font-medium text-teal-400">
@@ -152,7 +158,7 @@ export function FrameworkSection() {
                       {ps.title}
                     </span>
                   </div>
-                  {i < pathwaySteps.length - 1 && (
+                  {i < defenseSteps.length - 1 && (
                     <div className="mt-4 h-px w-12 bg-gradient-to-r from-teal-600/60 to-teal-600/20 sm:w-16" />
                   )}
                 </div>
@@ -171,15 +177,15 @@ export function FrameworkSection() {
         </div>
       </StepFragment>
 
-      {/* Step 3: Convergence insight callout — bottom-left anchored */}
+      {/* Step 3: Defense failure insight callout — bottom-left anchored */}
       <StepFragment step={step} appear={3} className="!items-end !justify-start pb-20 pl-10 sm:pb-28 sm:pl-16">
         <div className="max-w-2xl px-6">
           <div className="border-l-2 border-teal-600 pl-6">
             <p className="mb-2 font-semibold text-teal-400">
-              Convergence, not single cause
+              Multi-layer failure, not single cause
             </p>
             <p className="text-lg leading-relaxed text-gray-300">
-              GBA1 mutations are the strongest genetic risk factor for Parkinson&apos;s, yet only 10–30% of carriers develop disease. This incomplete penetrance is a key clue: lysosomal dysfunction alone isn&apos;t sufficient. The PLIG framework explains what additional factors are required.
+              GBA1 mutations are the strongest genetic risk factor for Parkinson&apos;s, yet only 10–30% of carriers develop disease. One compromised layer isn&apos;t enough.
             </p>
           </div>
         </div>

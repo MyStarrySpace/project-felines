@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/landing/hero-section";
 import { ProblemSection } from "@/components/landing/problem-section";
 import { FrameworkSection } from "@/components/landing/framework-section";
 import { EvidenceSection } from "@/components/landing/evidence-section";
+import { PnsSection } from "@/components/landing/pns-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { SectionIndicator } from "@/components/ui/section-indicator";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
@@ -40,6 +41,12 @@ const slides: SlideConfig[] = [
     steps: 2,
     bg: "bg-navy-800",
     content: <EvidenceSection part="b" />,
+  },
+  {
+    id: "pns",
+    steps: 3,
+    bg: "bg-navy-800",
+    content: <PnsSection />,
   },
   {
     id: "cta",

@@ -8,14 +8,15 @@ import { useFullPage } from "./full-page-scroll";
  * Slide configs mirrored from page.tsx so we can compute global progress.
  * Each entry is the number of steps for that slide index.
  */
-const SLIDE_STEPS = [3, 4, 4, 2, 2, 1];
+const SLIDE_STEPS = [3, 4, 4, 2, 2, 3, 1];
 
 const SECTION_META = [
   { label: "Hero", desc: "The 99% failure rate" },
   { label: "Problem", desc: "Why trials keep failing" },
-  { label: "Framework", desc: "The PLIG pathway" },
+  { label: "Framework", desc: "The FELINE model" },
   { label: "Evidence", desc: "AD, PD, Long COVID" },
   { label: "Evidence B", desc: "ALS, MS, Prion disease" },
+  { label: "PNS", desc: "Peripheral neuropathy" },
   { label: "Conclusion", desc: "Clinical implications" },
 ];
 

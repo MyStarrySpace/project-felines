@@ -61,7 +61,7 @@ export function HeroSection() {
       <StepFragment step={step} appear={2}>
         <div className="flex flex-col items-center text-center">
           <ScrollRevealText
-            text="The PLIG framework proposes that neurodegeneration emerges from the convergence of four damage pathways: pericyte loss, lysosomal failure, iron dysregulation, and glial collapse. No single-target drug can address this."
+            text="The brain has five defense layers against iron toxicity. Neurodegeneration begins when multiple layers fail at once. No single-target drug can fix that."
             className="block max-w-[var(--width-reading)] text-center text-2xl leading-relaxed sm:text-3xl sm:leading-relaxed"
             dimColor="rgba(107,114,128,1)"
             brightColor="rgba(209,213,219,1)"

@@ -154,7 +154,7 @@ export const glialSources: Source[] = [
         quote:
           "GFAP shows biphasic pattern: initial spike, decline, then secondary increase months-years later",
         context:
-          "Biphasic GFAP in TBI matches PLIG prediction of acute damage then chronic reactive astrogliosis",
+          "Biphasic GFAP in TBI matches FELINE prediction of acute damage then chronic reactive astrogliosis",
         projectRef:
           "Cross-disease biomarker: TBI GFAP biphasic profile",
       },

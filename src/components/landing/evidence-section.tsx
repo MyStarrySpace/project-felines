@@ -12,7 +12,7 @@ const featured = {
   statSuffix: "%",
   statLabel: "drug failure rate",
   explanation:
-    "Hippocampal pericyte loss precedes amyloid plaques. The PLIG framework positions amyloid as a downstream response to iron-mediated damage, not the root cause.",
+    "Pericyte loss breaches the neurovascular barrier. Iron accumulates in brain tissue. Amyloid plaques and tau tangles form as protective iron-buffering responses. Removing them with drugs makes things worse.",
 };
 
 const diseases = [
@@ -21,7 +21,7 @@ const diseases = [
     stat: "10-30%",
     statLabel: "GBA1 penetrance",
     explanation:
-      "Substantia nigra has the highest brain iron concentration. GBA1 lysosomal dysfunction plus iron maldistribution explains why most carriers never develop PD.",
+      "Substantia nigra has the highest brain iron concentration. GBA1 compromises the insulation layer, but disease requires concurrent failure of lysosomal defenses or neurovascular integrity.",
   },
   {
     name: "Long COVID",
@@ -29,7 +29,7 @@ const diseases = [
     statSuffix: "M+",
     statLabel: "estimated cases globally",
     explanation:
-      "SARS-CoV-2 directly infects pericytes via CD147. Persistent neuroinflammation and pericyte loss trigger the same cascade.",
+      "SARS-CoV-2 directly infects pericytes via CD147, breaching the neurovascular barrier. Viral persistence degrades lysosomal integrity and export pathways, producing neurodegenerative biomarkers within months.",
   },
   {
     name: "ALS",
@@ -37,7 +37,7 @@ const diseases = [
     statSuffix: "%",
     statLabel: "sporadic (no genetic cause)",
     explanation:
-      "Motor cortex and spinal cord oligodendrocytes show early degeneration. Iron accumulation follows the PLIG pathway.",
+      "Motor cortex iron accumulation reflects defense layer failure. Lysosomal defenses (GPX4) and insulation (ferritin) are overwhelmed.",
   },
   {
     name: "Multiple Sclerosis",
@@ -45,7 +45,7 @@ const diseases = [
     statSuffix: "M",
     statLabel: "people affected worldwide",
     explanation:
-      "EBV infection triggers pericyte damage. Iron rim lesions and oligodendrocyte loss fit the PLIG causal chain.",
+      "EBV persistence is a lysosome and export problem, not active viral reactivation. Iron rim lesions mark zones where insulation and export have both collapsed.",
   },
   {
     name: "Prion Disease",
@@ -53,7 +53,7 @@ const diseases = [
     statSuffix: "%",
     statLabel: "fatal",
     explanation:
-      "PrP misfolding disrupts lysosomal degradation. Iron dysregulation and rapid oligodendrocyte loss follow.",
+      "PrP misfolding collapses the insulation layer. Lysosomal integrity fails, iron floods the cytosol, and export cannot compensate. The fastest cascade across all five layers.",
   },
 ];
 
@@ -215,13 +215,13 @@ export function EvidenceSection({ part }: { part: "a" | "b" }) {
           <div className="flex gap-4 border-l-2 border-teal-600 pl-6">
             <div>
               <span className="mb-0.5 inline-block bg-teal-600/20 px-2.5 py-0.5 text-xs font-medium text-teal-400">
-                Clinical implication
+                Paradigm shift
               </span>
               <p className="mt-1 font-medium text-white">
-                The recovery illusion
+                &ldquo;Viral reactivation&rdquo; is lysosome and export failure
               </p>
               <p className="mt-1 text-lg leading-relaxed text-gray-300">
-                After viral infection, serum inflammatory markers normalize within weeks. Patients feel better. But brain iron redistribution persists. MRI studies show elevated iron years after infection resolves. The serum says recovery. The brain says otherwise.
+                Researchers spent decades hunting for active virus in diseased brains and found almost nothing. FELINE explains why: the virus doesn&apos;t need to wake up. Latent viral proteins sabotage iron-buffering (tau, alpha-synuclein), while lysosomal disruption releases stored iron. No reactivation required.
               </p>
             </div>
           </div>

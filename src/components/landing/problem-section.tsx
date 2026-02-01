@@ -1,10 +1,9 @@
 "use client";
 
-import { Container } from "@/components/ui/container";
-import { ProblemBars } from "./problem-bars";
+import { useEffect, useState } from "react";
+import { motion, useMotionValue, useTransform, animate, AnimatePresence } from "framer-motion";
 import { StepFragment } from "@/components/ui/step-fragment";
 import { useFullPage } from "@/components/ui/full-page-scroll";
-import { AnimatedShape } from "@/components/ui/animated-shape";
 
 const stats = [
   {
@@ -23,34 +22,163 @@ const stats = [
   },
 ];
 
-const trialFailures = [
-  "Solanezumab — cleared amyloid, no benefit",
-  "Verubecestat — BACE inhibitor, cognition worsened",
-  "Deferiprone — chelation backfired",
+/**
+ * Clinical trial success rates (Phase I → approval) by therapeutic area.
+ * Bar widths are proportional to the success rate, scaled so the largest
+ * value (33.4%) maps to 100%.
+ */
+const MAX_RATE = 33.4;
+
+const barData = [
+  {
+    area: "Infectious disease",
+    rate: 33.4,
+    source: "Wong CH, Siah KW, Lo AW. Biostatistics. 2019;20(2):273-286.",
+    sourceId: "wong-2019-biostatistics",
+  },
+  {
+    area: "Cardiovascular",
+    rate: 25.5,
+    source: "Wong CH, Siah KW, Lo AW. Biostatistics. 2019;20(2):273-286.",
+    sourceId: "wong-2019-biostatistics",
+  },
+  {
+    area: "All drugs (industry avg.)",
+    rate: 13.8,
+    source: "Wong CH, Siah KW, Lo AW. Biostatistics. 2019;20(2):273-286.",
+    sourceId: "wong-2019-biostatistics",
+  },
+  {
+    area: "Oncology",
+    rate: 3.4,
+    source: "Wong CH, Siah KW, Lo AW. Biostatistics. 2019;20(2):273-286.",
+    sourceId: "wong-2019-biostatistics",
+  },
+  {
+    area: "Alzheimer's disease",
+    rate: 0.4,
+    source: "Cummings JL, Morstorf T, Zhong K. Alzheimers Res Ther. 2014;6(4):37.",
+    sourceId: "cummings-2014-alzrt",
+  },
 ];
+
+function TickingNumber({
+  value,
+  visible,
+  delay,
+}: {
+  value: number;
+  visible: boolean;
+  delay: number;
+}) {
+  const progress = useMotionValue(0);
+  const displayValue = useTransform(progress, (v) =>
+    value < 1 ? v.toFixed(1) : value % 1 !== 0 ? v.toFixed(1) : Math.round(v).toString()
+  );
+
+  useEffect(() => {
+    if (visible) {
+      animate(progress, value, {
+        duration: 1.2,
+        delay: delay + 0.3,
+        ease: [0.16, 1, 0.3, 1],
+      });
+    } else {
+      progress.set(0);
+    }
+  }, [visible, progress, value, delay]);
+
+  return (
+    <>
+      <motion.span>{displayValue}</motion.span>%
+    </>
+  );
+}
+
+function SuccessRateBar({
+  area,
+  rate,
+  source,
+  index,
+  visible,
+}: {
+  area: string;
+  rate: number;
+  source: string;
+  index: number;
+  visible: boolean;
+}) {
+  const [hovered, setHovered] = useState(false);
+  const delay = index * 0.1;
+  // Scale: max rate maps to 85% container width; minimum bar width for visibility
+  const widthPercent = Math.max((rate / MAX_RATE) * 85, 1.5);
+  const isAlzheimers = rate < 1;
+
+  return (
+    <div
+      className="group relative"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className="flex items-center gap-4">
+        {/* Bar */}
+        <motion.div
+          className={`h-10 sm:h-14 ${isAlzheimers ? "bg-teal-400/30" : "bg-teal-600/20"}`}
+          initial={{ width: 0 }}
+          animate={visible ? { width: `${widthPercent}%` } : { width: 0 }}
+          transition={{
+            duration: 1.0,
+            delay,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+        />
+
+        {/* Rate number */}
+        <motion.span
+          className={`font-mono text-[28px] font-bold tracking-tight whitespace-nowrap sm:text-[36px] ${isAlzheimers ? "text-teal-300" : "text-teal-400"}`}
+          initial={{ opacity: 0 }}
+          animate={visible ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.3, delay: delay + 0.2 }}
+        >
+          <TickingNumber value={rate} visible={visible} delay={delay} />
+        </motion.span>
+      </div>
+
+      {/* Area label */}
+      <motion.p
+        className={`mt-1 text-sm font-medium sm:text-base ${isAlzheimers ? "text-gray-300" : "text-gray-500"}`}
+        initial={{ opacity: 0 }}
+        animate={visible ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 0.3, delay: delay + 0.4 }}
+      >
+        {area}
+      </motion.p>
+
+      {/* Source tooltip on hover */}
+      <AnimatePresence>
+        {hovered && visible && (
+          <motion.div
+            initial={{ opacity: 0, y: 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 4 }}
+            transition={{ duration: 0.15 }}
+            className="absolute left-0 top-full z-10 mt-1 max-w-sm rounded bg-navy-900/95 px-3 py-2 text-xs leading-relaxed text-gray-400 shadow-lg backdrop-blur-sm border border-white/10"
+          >
+            {source}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 export function ProblemSection() {
   const { currentStep } = useFullPage();
   const step = currentStep;
+  const barsVisible = step >= 2;
 
   return (
     <div className="h-full relative overflow-hidden">
-      {/* Decorative lines for bars step */}
-      <AnimatedShape
-        direction="left"
-        shape="line"
-        className="top-[30%] left-0 w-[40%]"
-        delay={0}
-        visible={step === 2}
-      />
-      <AnimatedShape
-        direction="left"
-        shape="line"
-        className="top-[50%] left-0 w-[25%]"
-        delay={0.1}
-        visible={step === 2}
-      />
-
       {/* Step 0: Section kicker + heading — top-left anchored */}
       <StepFragment step={step} appear={0} recede={1} className="!items-start !justify-start pt-24 pl-10 sm:pt-32 sm:pl-16">
         <div className="flex flex-col items-start text-left max-w-3xl px-6">
@@ -81,38 +209,88 @@ export function ProblemSection() {
         </div>
       </StepFragment>
 
-      {/* Step 2: ProblemBars chart — centered, full width */}
-      <StepFragment step={step} appear={2} recede={3}>
-        <Container width="full" className="px-6">
-          <ProblemBars />
-        </Container>
-      </StepFragment>
+      {/* Steps 2–3: Success rate bars + swappable right-side text */}
+      <motion.div
+        className="absolute inset-0 z-[2] flex items-center"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: barsVisible ? 1 : 0,
+          y: step >= 3 ? "-8%" : "0%",
+        }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        style={{ pointerEvents: barsVisible ? "auto" : "none" }}
+      >
+        <div className="flex w-full items-start gap-6 sm:gap-10 px-8 sm:px-16">
+          {/* Left: success rate bars */}
+          <div className="flex flex-col gap-3 flex-1 min-w-0">
+            {/* Chart title */}
+            <motion.p
+              className="mb-2 text-sm font-medium uppercase tracking-wide text-gray-500"
+              initial={{ opacity: 0 }}
+              animate={barsVisible ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              Clinical trial success rate (Phase I → approval)
+            </motion.p>
 
-      {/* Step 3: Insight callout + trial failures — bottom-right anchored */}
-      <StepFragment step={step} appear={3} className="!items-end !justify-end pb-20 pr-10 sm:pb-28 sm:pr-16">
-        <div className="max-w-2xl px-6">
-          <div className="border-l-2 border-teal-600 pl-6">
-            <p className="mb-2 font-semibold text-white">
-              The wrong model, not the wrong drugs
-            </p>
-            <p className="text-lg leading-relaxed text-gray-300">
-              Every failed Alzheimer&apos;s drug targeted a single molecule: amyloid, tau, BACE. The PLIG framework explains why: neurodegeneration involves four converging systems. Blocking one protein can&apos;t stop a cascade that spans the vascular, lysosomal, iron, and glial networks.
-            </p>
+            {barData.map((bar, i) => (
+              <SuccessRateBar
+                key={bar.area}
+                area={bar.area}
+                rate={bar.rate}
+                source={bar.source}
+                index={i}
+                visible={barsVisible}
+              />
+            ))}
           </div>
 
-          <ul className="mt-8 flex flex-col gap-2">
-            {trialFailures.map((trial) => (
-              <li
-                key={trial}
-                className="flex items-center gap-3 text-base text-gray-400"
-              >
-                <span className="h-px w-2 shrink-0 bg-teal-600" />
-                {trial}
-              </li>
-            ))}
-          </ul>
+          {/* Right: text that swaps between steps 2 and 3 */}
+          <div className="relative hidden w-[33%] shrink-0 self-center sm:block">
+            {/* Text A — step 2: what the bars mean */}
+            <motion.div
+              className="absolute inset-0 flex flex-col justify-center"
+              animate={{
+                opacity: step === 2 ? 1 : 0,
+                y: step === 2 ? 0 : -20,
+              }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <p className="text-[22px] font-semibold leading-snug text-white sm:text-[26px]">
+                244 compounds tested. One approval.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-gray-300">
+                Alzheimer&apos;s drug development is 9x riskier, 40% slower,
+                and 2.2x more expensive than the industry average.
+              </p>
+              <p className="mt-3 text-sm text-gray-500">
+                Hover bars for sources
+              </p>
+            </motion.div>
+
+            {/* Text B — step 3: the insight */}
+            <motion.div
+              className="absolute inset-0 flex flex-col justify-center"
+              animate={{
+                opacity: step >= 3 ? 1 : 0,
+                y: step >= 3 ? 0 : 20,
+              }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <div className="border-l-2 border-teal-600 pl-6">
+                <p className="text-[22px] font-semibold leading-snug text-white sm:text-[26px]">
+                  Causation is backwards
+                </p>
+                <p className="mt-4 text-lg leading-relaxed text-gray-300">
+                  Plaques and tangles aren&apos;t causing disease. They&apos;re
+                  protective responses to iron accumulation. 400+ drugs targeted
+                  these downstream markers. That&apos;s why they failed.
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </StepFragment>
+      </motion.div>
     </div>
   );
 }

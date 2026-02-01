@@ -5,43 +5,43 @@ export const failedTrials: FailedTrial[] = [
     trial: "Solanezumab (Eli Lilly)",
     target: "Amyloid-beta clearance",
     result: "No cognitive benefit in 3 Phase III trials",
-    pligExplanation:
-      "Amyloid is downstream of iron-mediated damage. Clearing it doesn't address the upstream pericyte loss or iron maldistribution driving the disease.",
+    felineExplanation:
+      "Amyloid is downstream of iron-mediated damage. Clearing it doesn't address the upstream defense layer failures (neurovascular breach, export dysfunction) driving the disease.",
   },
   {
     trial: "Verubecestat (Merck)",
     target: "BACE1 inhibitor",
     result: "Cognitive worsening; trial halted early",
-    pligExplanation:
-      "BACE1 has neuroprotective roles beyond amyloid processing. Inhibiting it removed a compensatory mechanism while leaving the iron cascade intact.",
+    felineExplanation:
+      "BACE1 has neuroprotective roles beyond amyloid processing. Inhibiting it removed a compensatory mechanism while leaving all five defense layers unaddressed.",
   },
   {
     trial: "Aducanumab (Biogen)",
     target: "Amyloid plaque removal",
     result: "Plaques cleared; no consistent clinical benefit",
-    pligExplanation:
-      "Demonstrated that amyloid removal is achievable but insufficient. The PLIG framework predicts this: plaques are a marker, not the mechanism.",
+    felineExplanation:
+      "Demonstrated that amyloid removal is achievable but counterproductive. Dense-core plaques are granulomas that sequester toxic iron. Removing them releases that iron back into brain tissue.",
   },
   {
     trial: "Semorinemab (Genentech)",
     target: "Tau protein",
     result: "No effect on cognitive decline",
-    pligExplanation:
-      "Tau tangles, like amyloid, are downstream consequences. The framework predicts that targeting any single downstream marker will fail.",
+    felineExplanation:
+      "Tau has an iron-binding motif and mediates iron efflux. Tangles are a protective iron-buffering response. Targeting tau removes a defense mechanism while leaving iron accumulation unaddressed.",
   },
   {
     trial: "GV-971 (Green Valley)",
     target: "Gut-brain axis / neuroinflammation",
     result: "Conditional approval in China; no Western replication",
-    pligExplanation:
-      "Anti-inflammatory approaches address one branch of the cascade but miss the structural damage: pericyte loss and iron redistribution are not inflammatory processes.",
+    felineExplanation:
+      "Anti-inflammatory approaches address one contributor but miss the structural defense failures: neurovascular breach and iron export dysfunction are not inflammatory processes.",
   },
   {
     trial: "Deferiprone (various)",
     target: "Iron chelation",
     result: "Worsened Parkinson's motor symptoms",
-    pligExplanation:
-      "Iron is maldistributed, not simply elevated. Systemic chelation removes iron from cells that need it (oligodendrocytes) while failing to address the redistribution problem.",
+    felineExplanation:
+      "Iron is maldistributed, not simply elevated. Systemic chelation depletes iron from cells that need it (oligodendrocytes) while failing to restore the insulation and export layers.",
   },
 ];
 

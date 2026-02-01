@@ -93,7 +93,7 @@ export const crossDiseaseSources: Source[] = [
         quote:
           "Brain atrophy continues for years even after mild TBI",
         context:
-          "Progressive neurodegeneration after TBI matches PLIG downstream cascade model",
+          "Progressive neurodegeneration after TBI matches FELINE downstream cascade model",
         projectRef:
           "Cross-disease biomarker: TBI progressive neurodegeneration",
       },

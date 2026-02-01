@@ -110,7 +110,7 @@ export const clinicalTrialsSources: Source[] = [
         quote:
           "Iron redistribution therapy showed slower brain atrophy, reduced basal ganglia iron, stable NfL; 43% participants stable, 30% improved on clinical scales",
         context:
-          "Iron REDISTRIBUTION (not chelation) shows benefit in MSA. Validates PLIG iron maldistribution model",
+          "Iron REDISTRIBUTION (not chelation) shows benefit in MSA. Validates FELINE iron maldistribution model",
         projectRef:
           "Cross-disease: MSA iron redistribution therapy validation",
       },
@@ -188,5 +188,100 @@ export const clinicalTrialsSources: Source[] = [
       },
     ],
     verificationStatus: "unverifiable",
+  },
+  {
+    id: "cummings-2014-alzrt",
+    title:
+      "Alzheimer's disease drug-development pipeline: few candidates, frequent failures",
+    authors: "Cummings JL, Morstorf T, Zhong K.",
+    journal: "Alzheimer's Research & Therapy",
+    year: 2014,
+    doi: "10.1186/alzrt269",
+    pmid: "25024750",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25024750/",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "cummings-2014-alzrt-c1",
+        sourceId: "cummings-2014-alzrt",
+        quote:
+          "Overall, 244 compounds were assessed in the decade of 2002 through 2012 and one was approved for marketing; excluding the 14 compounds currently in Phase 3, the success rate for advancing agents for regulatory approval is 0.4% (99.6% attrition).",
+        context:
+          "Landmark figure establishing AD as the hardest therapeutic area in drug development",
+        projectRef:
+          "Problem section: clinical trial success rate comparison bar chart (Alzheimer's bar)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "wong-2019-biostatistics",
+    title:
+      "Estimation of clinical trial success rates and related parameters",
+    authors: "Wong CH, Siah KW, Lo AW.",
+    journal: "Biostatistics",
+    year: 2019,
+    doi: "10.1093/biostatistics/kxx069",
+    pmid: "29394327",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29394327/",
+    tags: ["clinical-trials"],
+    citations: [
+      {
+        citationId: "wong-2019-biostatistics-c1",
+        sourceId: "wong-2019-biostatistics",
+        quote:
+          "The overall POS ranges from a minimum of 3.4% for oncology to a maximum of 33.4% for vaccines (infectious disease).",
+        context:
+          "Cross-therapeutic-area comparison showing oncology at 3.4% Phase I-to-approval success",
+        projectRef:
+          "Problem section: clinical trial success rate comparison bar chart (oncology, infectious disease bars)",
+      },
+      {
+        citationId: "wong-2019-biostatistics-c2",
+        sourceId: "wong-2019-biostatistics",
+        quote:
+          "13.8% of all drug development programs eventually lead to approval",
+        context:
+          "Industry-wide baseline success rate across all therapeutic areas",
+        projectRef:
+          "Problem section: clinical trial success rate comparison bar chart (all drugs bar)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "kim-2022-jad",
+    title:
+      "Alzheimer's Disease: Key Insights from Two Decades of Clinical Trial Failures",
+    authors: "Kim CK, Lee YR, Ong L, Gold M, Kalali A, Sarkar J.",
+    journal: "Journal of Alzheimer's Disease",
+    year: 2022,
+    doi: "10.3233/JAD-215699",
+    pmid: "35342092",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35342092/",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "kim-2022-jad-c1",
+        sourceId: "kim-2022-jad",
+        quote:
+          "These two successes against the 98 failures gives a 2.0% phase II and III success rate since 2003, when the previous novel compound was approved.",
+        context:
+          "Updated AD success rate (2003-2022): 2% at Phase II/III level",
+        projectRef:
+          "Problem section: clinical trial success rate context",
+      },
+      {
+        citationId: "kim-2022-jad-c2",
+        sourceId: "kim-2022-jad",
+        quote:
+          "risk (measured by probability of success) is almost 9 times higher (2.0% versus 17.8%); time for development is almost 40% longer (7.6 years versus 5.5 years); and cost is over 2.2 times greater ($5.69 billion versus $2.56 billion)",
+        context:
+          "AD drug development is 9x riskier, 40% slower, and 2.2x more expensive than industry average",
+        projectRef:
+          "Problem section: right-side explanatory text",
+      },
+    ],
+    verificationStatus: "verified",
   },
 ];
