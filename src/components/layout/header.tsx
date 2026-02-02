@@ -46,6 +46,12 @@ export function Header() {
               </button>
             ))}
             <a
+              href="/kinetics"
+              className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+            >
+              Kinetics
+            </a>
+            <a
               href="/showcase"
               className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
             >
@@ -87,6 +93,12 @@ export function Header() {
                     {link.label}
                   </button>
                 ))}
+                <a
+                  href="/kinetics"
+                  className="px-3 py-2 text-sm font-medium text-gray-300 transition-colors hover:bg-white/5 hover:text-white"
+                >
+                  Kinetics
+                </a>
                 <a
                   href="/showcase"
                   className="px-3 py-2 text-sm font-medium text-gray-300 transition-colors hover:bg-white/5 hover:text-white"
