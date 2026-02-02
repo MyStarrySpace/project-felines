@@ -6,7 +6,7 @@ export type NumericSeries = {
   data: readonly { x: number; y: number }[];
 };
 
-/** Shared Nivo theme matching the FELINE design system */
+/** Shared Nivo theme for kinetics charts */
 export const felineTheme: PartialTheme = {
   background: "transparent",
   text: {
@@ -77,7 +77,14 @@ export const SCENARIO_COLORS = {
   severe: "#0E7490", // teal-800
 } as const;
 
-/** Colors for FELINE defense layers */
+/** Colors for APOE genotype scenarios (spontaneous mode) */
+export const APOE_COLORS = {
+  "e3e3": "#06B6D4", // teal-400
+  "e3e4": "#0891B2", // teal-600
+  "e4e4": "#0E7490", // teal-800
+} as const;
+
+/** Colors for defense layers */
 export const LAYER_COLORS = {
   Export: "#0891B2", // teal-600
   Neurovascular: "#06B6D4", // teal-400

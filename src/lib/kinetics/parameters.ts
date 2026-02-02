@@ -1,10 +1,19 @@
-import type { ModelParameters, Scenario, TherapeuticWindow } from "./types";
+import type { ModelParameters, Scenario, TherapeuticWindow, CascadeMode } from "./types";
 
 /** Default parameters for the FELINE kinetics model */
 export const defaultParameters: ModelParameters = {
+  cascade_mode: "post_injury",
+
   damage_severity: 0.4,
   apoe_genotype: "e3/e3",
   repeated_insults: 1,
+
+  // Aging parameters (used in spontaneous mode)
+  k_age_export: 0.008,
+  k_age_lysosome: 0.006,
+  k_age_insulation: 0.007,
+  k_age_neurovascular: 0.005,
+  k_age_floor: 0.25,
 
   // Iron dynamics (per year)
   k_release: 5.0,
@@ -73,24 +82,132 @@ export function buildParameters(
 export const scenarios: Scenario[] = [
   {
     id: "mild",
-    label: "Mild",
+    label: "Mild (20%)",
     description:
-      "Single mild insult, 30% clearance damage. Many individuals never reach nucleation threshold.",
+      "Single minor event (mild concussion, flu with high fever). 20% clearance damage. Many individuals never reach the plaque threshold.",
+    realWorldExample: "Single mild concussion, flu with high fever",
+    damagePercent: 20,
     parameters: { damage_severity: 0.2, repeated_insults: 1 },
   },
   {
     id: "moderate",
-    label: "Moderate",
+    label: "Moderate (40%)",
     description:
-      "Moderate insult (e.g., COVID with neurological involvement), 55% clearance damage.",
+      "Significant neurological event (COVID with brain fog, moderate TBI). 40% clearance damage. Slow progression toward threshold over decades.",
+    realWorldExample: "COVID with brain fog, moderate TBI",
+    damagePercent: 40,
     parameters: { damage_severity: 0.4, repeated_insults: 1 },
   },
   {
     id: "severe",
-    label: "Severe",
+    label: "Severe (60%)",
     description:
-      "Severe or repeated insults, 70% clearance damage. Fastest progression to threshold.",
+      "Repeated or severe insults (3+ concussions, severe COVID + reinfection). 60% clearance damage. Fastest progression to plaque threshold.",
+    realWorldExample: "3+ concussions, severe COVID + reinfection",
+    damagePercent: 60,
     parameters: { damage_severity: 0.6, repeated_insults: 3 },
+  },
+];
+
+/** Pre-defined scenarios for spontaneous AD mode */
+export const spontaneousScenarios: Scenario[] = [
+  {
+    id: "e3e3",
+    label: "APOE e3/e3",
+    description:
+      "Most common genotype (60% of population). Normal clearance speed. Lowest AD risk.",
+    realWorldExample: "60% of population, normal clearance",
+    parameters: {
+      cascade_mode: "spontaneous",
+      damage_severity: 0,
+      repeated_insults: 0,
+      apoe_genotype: "e3/e3",
+    },
+  },
+  {
+    id: "e3e4",
+    label: "APOE e3/e4",
+    description:
+      "One risk allele (25% of population). Clearance reduced ~18%. 3x Alzheimer's risk.",
+    realWorldExample: "25% of population, 3x AD risk",
+    parameters: {
+      cascade_mode: "spontaneous",
+      damage_severity: 0,
+      repeated_insults: 0,
+      apoe_genotype: "e3/e4",
+    },
+  },
+  {
+    id: "e4e4",
+    label: "APOE e4/e4",
+    description:
+      "Two risk alleles (2-3% of population). Clearance reduced ~35%. 12x Alzheimer's risk. Fastest progression.",
+    realWorldExample: "2-3% of population, 12x AD risk",
+    parameters: {
+      cascade_mode: "spontaneous",
+      damage_severity: 0,
+      repeated_insults: 0,
+      apoe_genotype: "e4/e4",
+    },
+  },
+];
+
+/** Therapeutic windows for spontaneous AD mode */
+export const spontaneousWindows: TherapeuticWindow[] = [
+  {
+    id: 1,
+    label: "Lifestyle Prevention",
+    startYear: 0,
+    endYear: 15,
+    target: "Delay layer decline",
+    intervention: "Exercise, sleep, vascular health, diet",
+    efficacy: "highest",
+    estimatedEffect: "30-50% risk reduction",
+    color: "#059669",
+  },
+  {
+    id: 2,
+    label: "Early Detection",
+    startYear: 10,
+    endYear: 20,
+    target: "Identify pre-clinical decline",
+    intervention: "Biomarker screening, risk assessment",
+    efficacy: "high",
+    estimatedEffect: "Enables early intervention",
+    color: "#0891B2",
+  },
+  {
+    id: 3,
+    label: "Anti-amyloid",
+    startYear: 15,
+    endYear: 30,
+    target: "Reduce amyloid burden",
+    intervention: "Lecanemab, donanemab, aducanumab",
+    efficacy: "moderate",
+    estimatedEffect: "27% slowing of decline",
+    color: "#D97706",
+  },
+  {
+    id: 4,
+    label: "Clearance Support",
+    startYear: 20,
+    endYear: 40,
+    target: "Restore glymphatic/lysosomal function",
+    intervention: "Sleep optimization, TREM2 agonists, chelation",
+    efficacy: "low",
+    estimatedEffect: "Under investigation",
+    color: "#9CA3AF",
+  },
+  {
+    id: 5,
+    label: "Symptomatic",
+    startYear: 30,
+    endYear: 50,
+    target: "Manage symptoms",
+    intervention: "Cholinesterase inhibitors, supportive care",
+    efficacy: "unknown",
+    estimatedEffect: "Symptom management only",
+    color: "#6B7280",
   },
 ];
 
@@ -104,6 +221,7 @@ export const therapeuticWindows: TherapeuticWindow[] = [
     target: "Avoid/mitigate insult",
     intervention: "Vaccines, antivirals, neuroprotection",
     efficacy: "highest",
+    estimatedEffect: "Prevents cascade entirely",
     color: "#059669", // green-600
   },
   {
@@ -114,6 +232,7 @@ export const therapeuticWindows: TherapeuticWindow[] = [
     target: "Limit pericyte death, ferroptosis",
     intervention: "Imatinib, ferroptosis inhibitors, iron chelation",
     efficacy: "high",
+    estimatedEffect: "50-80% damage reduction",
     color: "#0891B2", // teal-600
   },
   {
@@ -124,6 +243,7 @@ export const therapeuticWindows: TherapeuticWindow[] = [
     target: "Iron redistribution, AQP4 restoration",
     intervention: "Extended chelation, acetazolamide, sleep",
     efficacy: "moderate",
+    estimatedEffect: "30-50% improved clearance",
     color: "#D97706", // amber-600
   },
   {
@@ -134,6 +254,7 @@ export const therapeuticWindows: TherapeuticWindow[] = [
     target: "Support clearance, prevent accumulation",
     intervention: "Sleep, exercise, anti-inflammatory",
     efficacy: "low",
+    estimatedEffect: "10-30% slowing",
     color: "#9CA3AF", // gray-400
   },
   {
@@ -144,6 +265,7 @@ export const therapeuticWindows: TherapeuticWindow[] = [
     target: "Prevent nucleation",
     intervention: "Clearance enhancement, TREM2 agonists",
     efficacy: "unknown",
+    estimatedEffect: "Under investigation",
     color: "#6B7280", // gray-500
   },
   {
@@ -154,6 +276,7 @@ export const therapeuticWindows: TherapeuticWindow[] = [
     target: "Slow progression",
     intervention: "TREM2 agonists, ferroptosis inhibitors",
     efficacy: "unknown",
+    estimatedEffect: "Limited evidence",
     color: "#374151", // gray-700
   },
 ];

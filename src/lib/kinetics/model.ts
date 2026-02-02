@@ -46,6 +46,9 @@ function clamp(v: number, min: number, max: number): number {
  * Returns release rate in iron-units per year.
  */
 function ironReleasePulse(t: number, p: ModelParameters): number {
+  // No iron pulse in spontaneous mode
+  if (p.cascade_mode === "spontaneous") return 0;
+
   // Iron release peaks at ~1 week, with a long tail over months
   // as microglial overload causes secondary release.
   const peakYears = 0.02; // ~1 week
@@ -81,7 +84,10 @@ function derivatives(
 
   const apoeClear = p.apoe_clearance_modifier;
   const apoeRecov = p.apoe_recovery_modifier;
-  const cumDamage = Math.min(0.9, p.damage_severity * (1 + 0.5 * (p.repeated_insults - 1)));
+  const isSpontaneous = p.cascade_mode === "spontaneous";
+  const cumDamage = isSpontaneous
+    ? 0
+    : Math.min(0.9, p.damage_severity * (1 + 0.5 * (p.repeated_insults - 1)));
 
   // === IRON DYNAMICS ===
 
@@ -126,9 +132,10 @@ function derivatives(
       p.k_clearance_insulation * s.Insulation_fx) *
     apoeClear;
 
-  // Iron-driven Aβ production (oxidative stress → increased APP processing)
-  // Persistent as long as brain iron is elevated above baseline (~1.1)
-  const ironAbeta = p.k_iron_abeta * Math.max(0, s.Fe_brain - 1.1);
+  // Iron-driven Aβ production: zero in spontaneous mode (amyloid driven by clearance decline)
+  const ironAbeta = isSpontaneous
+    ? 0
+    : p.k_iron_abeta * Math.max(0, s.Fe_brain - 1.1);
 
   // Autocatalytic seeding above threshold (prion-like)
   let seedingTerm = 0;
@@ -153,9 +160,11 @@ function derivatives(
     tauSeed = p.k_tau_seed * (s.Abeta - p.seed_threshold);
   }
 
-  // Tau also driven by ferroptosis-related damage and persistent iron
-  const ferroptTauDrive = ferroptosisRate * 0.05;
-  const ironTauDrive = 0.002 * Math.max(0, s.Fe_brain - 1.1);
+  // In spontaneous mode, tau is purely amyloid-dependent (no ferroptosis/iron drive)
+  const ferroptTauDrive = isSpontaneous ? 0 : ferroptosisRate * 0.05;
+  const ironTauDrive = isSpontaneous
+    ? 0
+    : 0.002 * Math.max(0, s.Fe_brain - 1.1);
 
   d[4] =
     p.k_tau_production +
@@ -170,33 +179,34 @@ function derivatives(
   const gpx4Pressure = 2.0 * s.Fe_free; // high iron depletes GPX4
   d[5] = p.k_gpx4_recovery * (1 - s.GPX4) - gpx4Pressure * s.GPX4;
 
-  // === FELINE LAYER RECOVERY ===
-  //
-  // Layers are initialized to their post-damage values (see initialState).
-  // They recover toward asymptotic targets that are BELOW 1.0 because
-  // some damage is permanent (clasmatodendrosis, pericyte loss).
-  // Recovery is slow (months-years for neurovascular/export).
+  // === FELINE LAYER DYNAMICS ===
 
-  // Export function (AQP4 + glymphatic)
-  //   Permanent deficit from clasmatodendrosis means target < 1.0
-  //   AQP4 depolarization and glymphatic damage are among the most persistent
-  const exportTarget = 1 - cumDamage * 0.55;
-  d[6] = p.k_export_recovery * apoeRecov * (exportTarget - s.Export_fx);
+  if (isSpontaneous) {
+    // Spontaneous mode: layers track a slowly declining age-dependent target
+    const floor = p.k_age_floor;
+    const exportTarget = Math.max(floor, 1.0 - p.k_age_export * t);
+    const lysoTarget = Math.max(floor, 1.0 - p.k_age_lysosome * t);
+    const insulTarget = Math.max(floor, 1.0 - p.k_age_insulation * t);
+    const nvsTarget = Math.max(floor, 1.0 - p.k_age_neurovascular * t);
 
-  // Lysosomal function
-  //   Recovers partially but iron overload impairs lysosomes long-term
-  const lysoTarget = 1 - cumDamage * 0.45;
-  d[7] = p.k_lysosome_recovery * apoeRecov * (lysoTarget - s.Lysosome_fx);
+    d[6] = p.k_export_recovery * apoeRecov * (exportTarget - s.Export_fx);
+    d[7] = p.k_lysosome_recovery * apoeRecov * (lysoTarget - s.Lysosome_fx);
+    d[8] = p.k_insulation_recovery * apoeRecov * (insulTarget - s.Insulation_fx);
+    d[9] = p.k_neurovascular_recovery * apoeRecov * (nvsTarget - s.Neurovascular_fx);
+  } else {
+    // Post-injury mode: layers recover toward damage-limited targets
+    const exportTarget = 1 - cumDamage * 0.55;
+    d[6] = p.k_export_recovery * apoeRecov * (exportTarget - s.Export_fx);
 
-  // Insulation function (ferritin buffering + myelin)
-  //   Myelin recovery requires OPC differentiation; ferritin capacity reduced
-  const insulTarget = 1 - cumDamage * 0.35;
-  d[8] = p.k_insulation_recovery * apoeRecov * (insulTarget - s.Insulation_fx);
+    const lysoTarget = 1 - cumDamage * 0.45;
+    d[7] = p.k_lysosome_recovery * apoeRecov * (lysoTarget - s.Lysosome_fx);
 
-  // Neurovascular function (pericytes)
-  //   Pericytes regenerate slowly; significant permanent loss
-  const nvsTarget = 1 - cumDamage * 0.45;
-  d[9] = p.k_neurovascular_recovery * apoeRecov * (nvsTarget - s.Neurovascular_fx);
+    const insulTarget = 1 - cumDamage * 0.35;
+    d[8] = p.k_insulation_recovery * apoeRecov * (insulTarget - s.Insulation_fx);
+
+    const nvsTarget = 1 - cumDamage * 0.45;
+    d[9] = p.k_neurovascular_recovery * apoeRecov * (nvsTarget - s.Neurovascular_fx);
+  }
 
   return d;
 }
@@ -231,36 +241,43 @@ function rk4Step(
 }
 
 /**
- * Initial state — layers are set to post-damage values immediately.
+ * Initial state — depends on cascade mode.
  *
- * Rationale: The acute damage (pericyte death, AQP4 depolarization,
- * OL ferroptosis) happens in hours-days. At the timescale of this
- * model (years), the acute drop is effectively instantaneous. We
- * start the simulation at "1 week post-insult" with layers already
- * degraded proportional to damage_severity.
+ * Post-injury: layers set to post-damage values immediately.
+ * Spontaneous: all layers start at 1.0, iron at baseline.
  */
 function initialState(p: ModelParameters): ModelState {
+  if (p.cascade_mode === "spontaneous") {
+    return {
+      Fe_free: 0.1,
+      Fe_stored: 1.0,
+      Fe_brain: 1.1,
+      Abeta: 0.8,
+      Tau: 1.0,
+      GPX4: 0.95,
+      Export_fx: 1.0,
+      Lysosome_fx: 1.0,
+      Insulation_fx: 1.0,
+      Neurovascular_fx: 1.0,
+    };
+  }
+
+  // Post-injury mode
   const sev = p.damage_severity;
   const insults = p.repeated_insults;
-  // Cumulative damage: diminishing returns for repeated insults
   const cumDamage = Math.min(0.9, sev * (1 + 0.5 * (insults - 1)));
 
   return {
-    // Iron: free iron elevated from acute release, stored at baseline
-    Fe_free: 0.1 + cumDamage * 4.0, // significant acute iron load
+    Fe_free: 0.1 + cumDamage * 4.0,
     Fe_stored: 1.0,
     Fe_brain: 1.1 + cumDamage * 4.0,
-    // Amyloid & tau: at baseline
     Abeta: 0.8,
     Tau: 1.0,
-    // GPX4: partially depleted by acute ferroptosis
     GPX4: Math.max(0.2, 0.95 - cumDamage * 0.6),
-    // FELINE layers: acutely damaged
-    //   Values from the framework doc for post-insult states
-    Export_fx: Math.max(0.1, 1.0 - cumDamage * 0.7),     // AQP4/glymphatic: 0.5 at severe
-    Lysosome_fx: Math.max(0.2, 1.0 - cumDamage * 0.5),   // lysosomal: 0.6 at severe
-    Insulation_fx: Math.max(0.2, 1.0 - cumDamage * 0.45), // ferritin/myelin: 0.7 at severe
-    Neurovascular_fx: Math.max(0.1, 1.0 - cumDamage * 0.6), // pericytes: 0.5 at severe
+    Export_fx: Math.max(0.1, 1.0 - cumDamage * 0.7),
+    Lysosome_fx: Math.max(0.2, 1.0 - cumDamage * 0.5),
+    Insulation_fx: Math.max(0.2, 1.0 - cumDamage * 0.45),
+    Neurovascular_fx: Math.max(0.1, 1.0 - cumDamage * 0.6),
   };
 }
 
@@ -314,6 +331,9 @@ export function simulate(
   return {
     timePoints,
     parameters: p,
-    label: `${p.damage_severity * 100}% damage, ${p.apoe_genotype}, ${p.repeated_insults} insult(s)`,
+    label:
+      p.cascade_mode === "spontaneous"
+        ? `Spontaneous AD, ${p.apoe_genotype}`
+        : `${p.damage_severity * 100}% damage, ${p.apoe_genotype}, ${p.repeated_insults} insult(s)`,
   };
 }

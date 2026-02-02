@@ -1,5 +1,8 @@
 /** FELINE Kinetics Model — Type Definitions */
 
+/** Cascade mode: post-injury (acute insult) or spontaneous (age-related AD) */
+export type CascadeMode = "post_injury" | "spontaneous";
+
 /** State variables tracked by the ODE system */
 export interface ModelState {
   /** Free labile iron in brain (arbitrary units, normalized to baseline = 1.0) */
@@ -26,10 +29,20 @@ export interface ModelState {
 
 /** Rate constants and model parameters */
 export interface ModelParameters {
-  // Damage parameters
+  // Cascade mode
+  cascade_mode: CascadeMode;
+
+  // Damage parameters (post-injury mode)
   damage_severity: number; // 0-1 scale
   apoe_genotype: "e3/e3" | "e3/e4" | "e4/e4";
   repeated_insults: number;
+
+  // Aging parameters (spontaneous mode)
+  k_age_export: number; // annual decline rate for export function
+  k_age_lysosome: number;
+  k_age_insulation: number;
+  k_age_neurovascular: number;
+  k_age_floor: number; // minimum layer value from aging alone
 
   // Iron dynamics
   k_release: number;
@@ -100,6 +113,10 @@ export interface Scenario {
   id: string;
   label: string;
   description: string;
+  /** Plain-language example of what this scenario represents */
+  realWorldExample?: string;
+  /** Damage percentage for display (post-injury mode) */
+  damagePercent?: number;
   parameters: Partial<ModelParameters>;
 }
 
@@ -112,5 +129,7 @@ export interface TherapeuticWindow {
   target: string;
   intervention: string;
   efficacy: "highest" | "high" | "moderate" | "low" | "unknown";
+  /** Plain-language estimated effect size */
+  estimatedEffect?: string;
   color: string;
 }

@@ -30,7 +30,9 @@
       "WebFetch(domain:academic.oup.com)",
       "Bash(config \")",
       "Bash(node -e:*)",
-      "WebFetch(domain:www.nature.com)"
+      "WebFetch(domain:www.nature.com)",
+      "WebFetch(domain:alz-journals.onlinelibrary.wiley.com)",
+      "Bash(npx tsc:*)"
     ]
   }
 }
