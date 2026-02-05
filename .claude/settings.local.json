@@ -32,7 +32,20 @@
       "Bash(node -e:*)",
       "WebFetch(domain:www.nature.com)",
       "WebFetch(domain:alz-journals.onlinelibrary.wiley.com)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:www.frontiersin.org)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:onlinelibrary.wiley.com)",
+      "Bash(powershell -Command \"\\(Get-Content ''c:\\\\Users\\\\quest\\\\Downloads\\\\FELINE_supporting_evidence_v2_54.md''\\).Count\")",
+      "Bash(test:*)",
+      "WebFetch(domain:link.springer.com)",
+      "WebFetch(domain:www.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:www.sciencedirect.com)",
+      "WebFetch(domain:linkinghub.elsevier.com)",
+      "Bash(unzip:*)",
+      "WebFetch(domain:www.nejm.org)"
     ]
   }
 }
