@@ -20,9 +20,9 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "FELINE Framework",
+  title: "FELINE",
   description:
-    "Fe-Lysosome-Insulation-Neurovascular-Export: A multi-layer defense model for neurodegeneration",
+    "How the brain's iron defenses fail in neurodegeneration",
 };
 
 export default function RootLayout({

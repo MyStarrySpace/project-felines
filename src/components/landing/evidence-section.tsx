@@ -7,21 +7,21 @@ import { useFullPage } from "@/components/ui/full-page-scroll";
 import { AnimatedShape } from "@/components/ui/animated-shape";
 
 const featured = {
-  name: "Alzheimer's Disease",
+  name: "Alzheimer\u2019s Disease",
   stat: 99,
   statSuffix: "%",
   statLabel: "drug failure rate",
   explanation:
-    "Pericyte loss breaches the neurovascular barrier. Iron accumulates in brain tissue. Amyloid plaques and tau tangles form as protective iron-buffering responses. Removing them with drugs makes things worse.",
+    "Pericyte loss breaches the blood-brain barrier. Iron accumulates. Plaques and tangles form to buffer that iron. Remove them with drugs, and the iron has nowhere to go.",
 };
 
 const diseases = [
   {
-    name: "Parkinson's Disease",
+    name: "Parkinson\u2019s Disease",
     stat: "10-30%",
     statLabel: "GBA1 penetrance",
     explanation:
-      "Substantia nigra has the highest brain iron concentration. GBA1 compromises the insulation layer, but disease requires concurrent failure of lysosomal defenses or neurovascular integrity.",
+      "The substantia nigra has the highest iron concentration in the brain. GBA1 mutations compromise iron containment, but disease only develops when antioxidant defenses or the blood-brain barrier also fail.",
   },
   {
     name: "Long COVID",
@@ -29,7 +29,7 @@ const diseases = [
     statSuffix: "M+",
     statLabel: "estimated cases globally",
     explanation:
-      "SARS-CoV-2 directly infects pericytes via CD147, breaching the neurovascular barrier. Viral persistence degrades lysosomal integrity and export pathways, producing neurodegenerative biomarkers within months.",
+      "SARS-CoV-2 infects pericytes via CD147, breaching the blood-brain barrier. Viral persistence degrades antioxidant and iron export pathways. Patients develop neurodegenerative biomarkers within months.",
   },
   {
     name: "ALS",
@@ -37,7 +37,7 @@ const diseases = [
     statSuffix: "%",
     statLabel: "sporadic (no genetic cause)",
     explanation:
-      "Motor cortex iron accumulation reflects defense layer failure. Lysosomal defenses (GPX4) and insulation (ferritin) are overwhelmed.",
+      "Motor cortex iron accumulates as antioxidant defenses (GPX4) and iron-buffering proteins (ferritin) are overwhelmed. 90% of cases have no genetic explanation.",
   },
   {
     name: "Multiple Sclerosis",
@@ -45,7 +45,7 @@ const diseases = [
     statSuffix: "M",
     statLabel: "people affected worldwide",
     explanation:
-      "EBV persistence is a lysosome and export problem, not active viral reactivation. Iron rim lesions mark zones where insulation and export have both collapsed.",
+      "EBV doesn\u2019t need to reactivate. Latent viral proteins disrupt iron buffering and export. Iron rim lesions mark where these systems have collapsed, driving oligodendrocyte death.",
   },
   {
     name: "Prion Disease",
@@ -53,7 +53,7 @@ const diseases = [
     statSuffix: "%",
     statLabel: "fatal",
     explanation:
-      "PrP misfolding collapses the insulation layer. Lysosomal integrity fails, iron floods the cytosol, and export cannot compensate. The fastest cascade across all five layers.",
+      "PrP misfolding destroys iron-buffering capacity. Antioxidant defenses fail, iron floods cells, and export can\u2019t compensate. The fastest progression of any neurodegenerative disease.",
   },
 ];
 
@@ -143,10 +143,10 @@ export function EvidenceSection({ part }: { part: "a" | "b" }) {
         <StepFragment step={step} appear={0} recede={1}>
           <div className="flex flex-col items-center px-6 max-w-3xl">
             <span className="text-sm font-medium uppercase tracking-[0.05em] text-teal-400">
-              The Evidence
+              The Pattern
             </span>
             <h2 className="mt-4 font-serif text-[38px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[52px] text-center">
-              One framework. Six diseases.
+              Same iron signature. Six diseases.
             </h2>
 
             <div className="mt-12 w-full">
@@ -212,18 +212,16 @@ export function EvidenceSection({ part }: { part: "a" | "b" }) {
       {/* Step 1: Clinical implication callout — bottom-right anchored */}
       <StepFragment step={step} appear={1} className="!items-end !justify-end pb-20 pr-10 sm:pb-28 sm:pr-16">
         <div className="max-w-2xl px-6">
-          <div className="flex gap-4 border-l-2 border-teal-600 pl-6">
-            <div>
-              <span className="mb-0.5 inline-block bg-teal-600/20 px-2.5 py-0.5 text-xs font-medium text-teal-400">
-                Paradigm shift
-              </span>
-              <p className="mt-1 font-medium text-white">
-                &ldquo;Viral reactivation&rdquo; is lysosome and export failure
-              </p>
-              <p className="mt-1 text-lg leading-relaxed text-gray-300">
-                Researchers spent decades hunting for active virus in diseased brains and found almost nothing. FELINE explains why: the virus doesn&apos;t need to wake up. Latent viral proteins sabotage iron-buffering (tau, alpha-synuclein), while lysosomal disruption releases stored iron. No reactivation required.
-              </p>
-            </div>
+          <div className="border-l-2 border-teal-600 pl-6">
+            <p className="mb-2 font-semibold text-teal-400">
+              Viruses don&apos;t need to reactivate
+            </p>
+            <p className="text-lg leading-relaxed text-gray-300">
+              Researchers spent decades hunting for active virus in diseased
+              brains. They found almost nothing. Latent viral proteins
+              sabotage iron-buffering systems while disrupting the antioxidant
+              defenses that contain stored iron. No reactivation required.
+            </p>
           </div>
         </div>
       </StepFragment>

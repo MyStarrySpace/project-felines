@@ -29,13 +29,13 @@ export function CtaSection() {
         >
           <motion.div variants={fadeInUp}>
             <h2 className="font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[42px]">
-              This framework changes what we should test next
+              Iron biology needs more attention
             </h2>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
             <ScrollRevealText
-              text="Multi-layer interventions will outperform single-target drugs. The FELINE framework identifies which layers to target and why. A companion paper with full kinetic modeling is forthcoming on Zenodo."
+              text="Single-target drugs keep failing. Interventions that address iron distribution, glial cell health, and export pathways together may do better. A companion paper with detailed evidence and kinetic modeling is forthcoming."
               className="mt-6 block text-xl leading-relaxed sm:text-2xl sm:leading-relaxed"
               dimColor="rgba(107,114,128,1)"
               brightColor="rgba(209,213,219,1)"
@@ -46,9 +46,9 @@ export function CtaSection() {
             <Button
               variant="primary-inverse"
               size="lg"
-              onClick={() => goToSlideById("framework")}
+              onClick={() => goToSlideById("evidence")}
             >
-              Explore the Framework
+              Read the evidence
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button
@@ -64,7 +64,7 @@ export function CtaSection() {
 
       {/* Inline footer */}
       <div className="relative z-10 border-t border-white/5 py-4 text-center text-xs text-gray-400">
-        FELINE Framework. For research and educational purposes.
+        FELINE. For research and educational purposes.
       </div>
     </div>
   );

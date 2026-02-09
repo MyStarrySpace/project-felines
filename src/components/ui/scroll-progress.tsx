@@ -13,7 +13,7 @@ const SLIDE_STEPS = [3, 4, 4, 2, 2, 3, 1];
 const SECTION_META = [
   { label: "Hero", desc: "The 99% failure rate" },
   { label: "Problem", desc: "Why trials keep failing" },
-  { label: "Framework", desc: "The FELINE model" },
+  { label: "Biology", desc: "Five iron defenses" },
   { label: "Evidence", desc: "AD, PD, Long COVID" },
   { label: "Evidence B", desc: "ALS, MS, Prion disease" },
   { label: "PNS", desc: "Peripheral neuropathy" },

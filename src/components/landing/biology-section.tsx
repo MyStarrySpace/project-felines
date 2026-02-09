@@ -10,31 +10,31 @@ const layers = [
     letter: "Fe",
     title: "Iron",
     description:
-      "The core pathogenic element. Essential for myelin but toxic when mislocalized. Fenton chemistry generates hydroxyl radicals that destroy PUFA-rich membranes.",
+      "Essential for myelin but toxic when mislocalized. Free iron generates hydroxyl radicals that destroy cell membranes.",
   },
   {
     letter: "L",
     title: "Lysosome",
     description:
-      "GPX4, the NAD+/SIRT3 axis, and glutathione protect membranes from peroxidation. Failure here exposes oligodendrocytes to ferroptotic death.",
+      "GPX4 and glutathione protect cell membranes from iron-driven oxidation. When these defenses fail, glial cells die by ferroptosis.",
   },
   {
     letter: "I",
     title: "Insulation",
     description:
-      "Myelin sheaths, lysosomes, ferritin, tau, and alpha-synuclein. Oligodendrocytes provide both electrical insulation (myelin) and iron insulation (FTH1 export to neurons). When insulation fails, labile iron triggers Fenton chemistry.",
+      "Myelin, ferritin, tau, and alpha-synuclein all sequester iron. Oligodendrocytes provide both electrical and iron insulation. When these buffers fail, free iron triggers damage.",
   },
   {
     letter: "N",
     title: "Neurovascular",
     description:
-      "Pericytes, BBB, astrocyte endfeet, and Schwann cell vasculature. Pericyte death breaches the barrier that controls brain iron entry.",
+      "Pericytes, the blood-brain barrier, and astrocyte endfeet. Pericyte death breaches the barrier that controls brain iron entry.",
   },
   {
     letter: "E",
     title: "Export",
     description:
-      "Brain-level (ferroportin/Cp on endfeet, glymphatic, AQP4) and systemic (liver hepcidin/bile, spleen recycling, gut absorption/microbiome) iron export. Failure here means iron accumulates at normal intake.",
+      "Brain-level (ferroportin, glymphatic, AQP4) and systemic (liver, spleen, gut) iron export. When export fails, iron accumulates even at normal dietary intake.",
   },
 ];
 
@@ -48,7 +48,7 @@ const defenseSteps = [
   { num: 7, title: "Oligodendrocyte death" },
 ];
 
-export function FrameworkSection() {
+export function BiologySection() {
   const { currentStep } = useFullPage();
   const step = currentStep;
 
@@ -100,6 +100,7 @@ export function FrameworkSection() {
               {layer.letter}
             </span>
           ))}
+          <p className="mt-6 text-lg text-gray-400">Five points of vulnerability</p>
         </div>
       </StepFragment>
 
@@ -107,10 +108,10 @@ export function FrameworkSection() {
       <StepFragment step={step} appear={1} recede={2}>
         <div className="flex flex-col items-center text-center px-6">
           <span className="text-sm font-medium uppercase tracking-[0.05em] text-teal-400">
-            The Framework
+            The Biology
           </span>
           <h2 className="mt-4 font-serif text-[38px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[52px]">
-            Five defense layers. One threshold.
+            Five systems protect the brain from iron.
           </h2>
           <div className="mt-12 grid grid-cols-3 gap-8 sm:grid-cols-5 sm:gap-10">
             {layers.map((layer) => (
@@ -127,7 +128,7 @@ export function FrameworkSection() {
         </div>
       </StepFragment>
 
-      {/* Step 2: Layer descriptions + defense chain + "10–35 years" */}
+      {/* Step 2: Layer descriptions + defense chain + latent period */}
       <StepFragment step={step} appear={2} recede={3}>
         <div className="flex flex-col items-center px-6 max-w-6xl">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
@@ -168,7 +169,7 @@ export function FrameworkSection() {
 
           <p className="mt-6 text-center">
             <span className="font-serif text-[32px] text-gradient-teal leading-none">
-              10–35 years
+              10 to 35 years
             </span>
             <span className="ml-3 text-base text-gray-400">
               latent period before clinical symptoms
@@ -182,10 +183,13 @@ export function FrameworkSection() {
         <div className="max-w-2xl px-6">
           <div className="border-l-2 border-teal-600 pl-6">
             <p className="mb-2 font-semibold text-teal-400">
-              Multi-layer failure, not single cause
+              One break isn&apos;t enough
             </p>
             <p className="text-lg leading-relaxed text-gray-300">
-              GBA1 mutations are the strongest genetic risk factor for Parkinson&apos;s, yet only 10–30% of carriers develop disease. One compromised layer isn&apos;t enough.
+              GBA1 mutations are the strongest genetic risk factor for
+              Parkinson&apos;s. Yet only 10 to 30% of carriers develop disease.
+              One compromised system isn&apos;t enough. Multiple defenses have
+              to fail.
             </p>
           </div>
         </div>

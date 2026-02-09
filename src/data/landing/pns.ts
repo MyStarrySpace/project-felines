@@ -5,9 +5,9 @@ export interface PnsComparisonRow {
 }
 
 export const pnsHeadline = {
-  kicker: "Peripheral Extension",
-  heading: "FELINE maps onto peripheral nerves.",
-  body: "Every defense layer has a peripheral counterpart. Schwann cells replace oligodendrocytes. The blood-nerve barrier replaces the BBB. Ferroptosis drives peripheral neuropathy through the same cascade.",
+  kicker: "Beyond the brain",
+  heading: "The same biology runs through every nerve.",
+  body: "Every defense system in the brain has a peripheral counterpart. Schwann cells replace oligodendrocytes. The blood-nerve barrier replaces the BBB. Ferroptosis drives peripheral neuropathy through the same iron-driven cascade.",
   stat: 3,
   statLabel: "peripheral diseases with confirmed ferroptosis",
 };
@@ -41,6 +41,6 @@ export const pnsComparison: PnsComparisonRow[] = [
 ];
 
 export const pnsInsight = {
-  title: "The N layer divides two diseases",
-  body: "The neurovascular unit, including pericytes, astrocyte endfeet, and the BBB, is the compartment boundary between CNS and PNS disease. Peripheral nerves can regenerate because repair signals cross the blood-nerve barrier. The BBB blocks those same signals in the CNS.",
+  title: "One barrier separates two outcomes",
+  body: "Peripheral nerves regenerate. The brain cannot. The difference is the blood-brain barrier. Repair signals cross the blood-nerve barrier freely. The BBB blocks those same signals. Same iron biology, different outcomes.",
 };

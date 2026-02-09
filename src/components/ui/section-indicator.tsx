@@ -6,7 +6,7 @@ import { useFullPage } from "./full-page-scroll";
 const INDICATOR_SECTIONS = [
   { label: "Hero", slideIndex: 0 },
   { label: "Problem", slideIndex: 1 },
-  { label: "Framework", slideIndex: 2 },
+  { label: "Biology", slideIndex: 2 },
   { label: "Evidence", slideIndex: 3 },
   { label: "PNS", slideIndex: 5 },
   { label: "Conclusion", slideIndex: 6 },

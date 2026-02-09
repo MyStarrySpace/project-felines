@@ -3,7 +3,7 @@
 import { Header } from "@/components/layout/header";
 import { HeroSection } from "@/components/landing/hero-section";
 import { ProblemSection } from "@/components/landing/problem-section";
-import { FrameworkSection } from "@/components/landing/framework-section";
+import { BiologySection } from "@/components/landing/biology-section";
 import { EvidenceSection } from "@/components/landing/evidence-section";
 import { PnsSection } from "@/components/landing/pns-section";
 import { CtaSection } from "@/components/landing/cta-section";
@@ -25,10 +25,10 @@ const slides: SlideConfig[] = [
     content: <ProblemSection />,
   },
   {
-    id: "framework",
+    id: "biology",
     steps: 4,
     bg: "bg-navy-900",
-    content: <FrameworkSection />,
+    content: <BiologySection />,
   },
   {
     id: "evidence",

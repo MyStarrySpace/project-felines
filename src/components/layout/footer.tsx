@@ -8,9 +8,9 @@ export function Footer() {
           <div>
             <h3 className="mb-3 font-serif text-lg text-white">About</h3>
             <p className="text-sm leading-relaxed text-gray-400">
-              The FELINE Framework models neurodegeneration as multi-layer
-              defense failure: iron homeostasis, lysosomal defenses, iron
-              insulation, neurovascular integrity, and export pathways.
+              FELINE names the five systems that protect the brain from iron:
+              homeostasis, lysosomal defenses, insulation barriers,
+              neurovascular integrity, and export pathways.
             </p>
           </div>
 
@@ -19,10 +19,10 @@ export function Footer() {
             <ul className="flex flex-col gap-2 text-sm text-gray-400">
               <li>
                 <a
-                  href="#framework"
+                  href="#biology"
                   className="transition-colors hover:text-teal-400"
                 >
-                  Framework
+                  Biology
                 </a>
               </li>
               <li>
@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/5 py-6 text-center text-xs text-gray-400">
-          FELINE Framework. For research and educational purposes.
+          FELINE. For research and educational purposes.
         </div>
       </Container>
     </footer>

@@ -8,7 +8,7 @@ import { useFullPage } from "../ui/full-page-scroll";
 
 const navLinks = [
   { label: "Problem", sectionId: "problem" },
-  { label: "Framework", sectionId: "framework" },
+  { label: "Biology", sectionId: "biology" },
   { label: "Evidence", sectionId: "evidence" },
 ];
 
@@ -32,7 +32,7 @@ export function Header() {
             onClick={() => goToSlideById("hero")}
             className="font-serif text-xl text-white transition-colors"
           >
-            FELINE Framework
+            FELINE
           </button>
 
           <nav className="hidden items-center gap-8 md:flex">
