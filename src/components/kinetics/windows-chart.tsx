@@ -156,7 +156,7 @@ export function WindowsChart({
         <ResponsiveLine<NumericSeries>
           data={series}
           theme={felineTheme}
-          colors={["#0D132D", "#7C3AED"]}
+          colors={["#1A0F0A", "#7C3AED"]}
           margin={{ top: 24, right: 24, bottom: 56, left: 60 }}
           xScale={{ type: "linear", min: xMin, max: xMax }}
           yScale={{ type: "linear", min: 0, max: 3.5 }}

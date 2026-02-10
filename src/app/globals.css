@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  /* Navy hierarchy */
-  --navy-900: #0D132D;
-  --navy-800: #141F4D;
-  --navy-700: #1B2951;
-  --charcoal: #293340;
+  /* Iron hierarchy */
+  --navy-900: #1A0F0A;
+  --navy-800: #2A1A10;
+  --navy-700: #3D2516;
+  --charcoal: #3A2E26;
 
   /* Grays */
   --gray-700: #374151;
@@ -16,11 +16,11 @@
   --gray-100: #F3F4F6;
   --off-white: #FAFBFC;
 
-  /* Teal accent */
-  --teal-800: #0E7490;
-  --teal-600: #0891B2;
-  --teal-400: #06B6D4;
-  --teal-50: #CFFAFE;
+  /* Gold accent */
+  --teal-800: #92400E;
+  --teal-600: #D97706;
+  --teal-400: #FBBF24;
+  --teal-50: #FFFBEB;
 
   /* Semantic */
   --background: var(--off-white);
@@ -43,9 +43,9 @@
   --width-narrow: 640px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(13, 19, 45, 0.04);
-  --shadow-md: 0 2px 8px rgba(13, 19, 45, 0.06);
-  --shadow-lg: 0 4px 16px rgba(13, 19, 45, 0.08);
+  --shadow-sm: 0 1px 2px rgba(26, 15, 10, 0.04);
+  --shadow-md: 0 2px 8px rgba(26, 15, 10, 0.06);
+  --shadow-lg: 0 4px 16px rgba(26, 15, 10, 0.08);
 
   /* Animation */
   --duration-fast: 200ms;
@@ -98,7 +98,6 @@
 }
 
 body {
-  overflow: hidden;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
@@ -126,7 +125,7 @@ body {
 
 /* Ambient glow */
 .glow-teal {
-  box-shadow: 0 0 80px rgba(8, 145, 178, 0.15);
+  box-shadow: 0 0 80px rgba(217, 119, 6, 0.15);
 }
 
 /* Ambient gradient orb */
@@ -163,5 +162,5 @@ body {
 
 /* Glow letter effect */
 .glow-letter {
-  filter: drop-shadow(0 0 16px rgba(8, 145, 178, 0.4));
+  filter: drop-shadow(0 0 16px rgba(217, 119, 6, 0.4));
 }

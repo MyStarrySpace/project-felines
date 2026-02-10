@@ -101,7 +101,7 @@ export function TauChart({ data, mode = "post_injury" }: TauChartProps) {
       <ResponsiveLine<NumericSeries>
         data={series}
         theme={felineTheme}
-        colors={["#7C3AED", "#0891B2"]}
+        colors={["#7C3AED", "#D97706"]}
         margin={{ top: 24, right: 24, bottom: 56, left: 60 }}
         xScale={{ type: "linear", min: 0, max: xMax }}
         yScale={{ type: "linear", min: 0, max: 3.5 }}

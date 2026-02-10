@@ -53,11 +53,11 @@ export const felineTheme: PartialTheme = {
   },
   tooltip: {
     container: {
-      background: "rgba(13, 19, 45, 0.92)",
+      background: "rgba(26, 15, 10, 0.92)",
       color: "#ffffff",
       fontSize: 12,
       borderRadius: "6px",
-      boxShadow: "0 2px 8px rgba(13, 19, 45, 0.15)",
+      boxShadow: "0 2px 8px rgba(26, 15, 10, 0.15)",
       padding: "8px 12px",
       fontFamily: "var(--font-sans), system-ui, sans-serif",
     },
@@ -72,22 +72,22 @@ export const felineTheme: PartialTheme = {
 
 /** Colors for the three damage scenarios */
 export const SCENARIO_COLORS = {
-  mild: "#06B6D4", // teal-400
-  moderate: "#0891B2", // teal-600
-  severe: "#0E7490", // teal-800
+  mild: "#FBBF24", // amber-400
+  moderate: "#D97706", // amber-600
+  severe: "#92400E", // amber-800
 } as const;
 
 /** Colors for APOE genotype scenarios (spontaneous mode) */
 export const APOE_COLORS = {
-  "e3e3": "#06B6D4", // teal-400
-  "e3e4": "#0891B2", // teal-600
-  "e4e4": "#0E7490", // teal-800
+  "e3e3": "#FBBF24", // amber-400
+  "e3e4": "#D97706", // amber-600
+  "e4e4": "#92400E", // amber-800
 } as const;
 
 /** Colors for defense layers */
 export const LAYER_COLORS = {
-  Export: "#0891B2", // teal-600
-  Neurovascular: "#06B6D4", // teal-400
+  Export: "#D97706", // amber-600
+  Neurovascular: "#FBBF24", // amber-400
   Insulation: "#D97706", // amber-600
   Lysosome: "#DC2626", // red-600
   GPX4: "#059669", // green-600

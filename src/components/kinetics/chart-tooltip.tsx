@@ -48,10 +48,10 @@ export function ChartSliceTooltip({ slice }: SliceTooltipProps<NumericSeries>) {
   return (
     <div
       style={{
-        background: "rgba(13, 19, 45, 0.95)",
+        background: "rgba(26, 15, 10, 0.95)",
         borderRadius: 6,
         padding: "10px 14px",
-        boxShadow: "0 2px 8px rgba(13, 19, 45, 0.2)",
+        boxShadow: "0 2px 8px rgba(26, 15, 10, 0.2)",
         fontFamily: "var(--font-sans), system-ui, sans-serif",
         minWidth: 200,
       }}

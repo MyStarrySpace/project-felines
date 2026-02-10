@@ -47,31 +47,31 @@ export default function ShowcasePage() {
           {/* Colors */}
           <ComponentSection
             title="Colors"
-            description="Navy hierarchy for text, teal for accents, neutral grays for structure."
+            description="Iron hierarchy for backgrounds, gold for accents, neutral grays for structure."
           >
             <div className="space-y-6">
               <div>
                 <Label uppercase className="mb-3 block">
-                  Navy
+                  Iron
                 </Label>
                 <div className="flex gap-3">
-                  <ColorSwatch color="bg-navy-900" label="#0D132D" />
-                  <ColorSwatch color="bg-navy-800" label="#141F4D" />
-                  <ColorSwatch color="bg-navy-700" label="#1B2951" />
-                  <ColorSwatch color="bg-charcoal" label="#293340" />
+                  <ColorSwatch color="bg-navy-900" label="#1A0F0A" />
+                  <ColorSwatch color="bg-navy-800" label="#2A1A10" />
+                  <ColorSwatch color="bg-navy-700" label="#3D2516" />
+                  <ColorSwatch color="bg-charcoal" label="#3A2E26" />
                 </div>
               </div>
               <div>
                 <Label uppercase className="mb-3 block">
-                  Teal Accent
+                  Gold Accent
                 </Label>
                 <div className="flex gap-3">
-                  <ColorSwatch color="bg-teal-800" label="#0E7490" />
-                  <ColorSwatch color="bg-teal-600" label="#0891B2" />
-                  <ColorSwatch color="bg-teal-400" label="#06B6D4" />
+                  <ColorSwatch color="bg-teal-800" label="#92400E" />
+                  <ColorSwatch color="bg-teal-600" label="#D97706" />
+                  <ColorSwatch color="bg-teal-400" label="#FBBF24" />
                   <ColorSwatch
                     color="bg-teal-50"
-                    label="#CFFAFE"
+                    label="#FFFBEB"
                     dark={false}
                   />
                 </div>

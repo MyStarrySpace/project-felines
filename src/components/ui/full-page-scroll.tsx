@@ -23,7 +23,10 @@ type FullPageContextType = {
   isTransitioning: boolean;
   goToSlide: (index: number) => void;
   goToSlideById: (id: string) => void;
+  navigateUp: () => void;
+  navigateDown: () => void;
   sectionIds: string[];
+  setScrollLocked: (locked: boolean) => void;
 };
 
 const FullPageContext = createContext<FullPageContextType | null>(null);
@@ -40,7 +43,10 @@ export function useFullPage(): FullPageContextType {
       isTransitioning: false,
       goToSlide: () => {},
       goToSlideById: () => {},
+      navigateUp: () => {},
+      navigateDown: () => {},
       sectionIds: [],
+      setScrollLocked: () => {},
     };
   }
   return ctx;
@@ -75,9 +81,40 @@ const BOUNDARY_TRANSITIONS: {
   duration: number;
 }[] = [
   // -----------------------------------------------------------------------
-  // 0  Hero → Problem  — "Deep Zoom"
-  //    Hero scales way up and blurs into nothing; Problem coalesces from
-  //    a deep, blurry state.
+  // 0  Hero → Iron  — "Dissolve Rise"
+  //    Soft continuation — same dark bg, gentle blur + y shift.
+  // -----------------------------------------------------------------------
+  {
+    forward: {
+      exit: { scale: 0.95, filter: "blur(8px)", opacity: 0 },
+      initial: { y: 30, filter: "blur(10px)", opacity: 0 },
+    },
+    backward: {
+      exit: { y: 30, filter: "blur(10px)", opacity: 0 },
+      initial: { scale: 0.95, filter: "blur(8px)", opacity: 0 },
+    },
+    duration: 0.7,
+  },
+
+  // -----------------------------------------------------------------------
+  // 1  Iron → Ferroptosis — "Cross Dissolve"
+  //    Pure opacity, no motion — seamless diagram continuation.
+  // -----------------------------------------------------------------------
+  {
+    forward: {
+      exit: { opacity: 0, filter: "blur(4px)" },
+      initial: { opacity: 0, filter: "blur(4px)" },
+    },
+    backward: {
+      exit: { opacity: 0, filter: "blur(4px)" },
+      initial: { opacity: 0, filter: "blur(4px)" },
+    },
+    duration: 0.6,
+  },
+
+  // -----------------------------------------------------------------------
+  // 2  Ferroptosis → Problem — "Deep Zoom"
+  //    Dramatic break — ferroptosis "zooms into" the problem.
   // -----------------------------------------------------------------------
   {
     forward: {
@@ -92,8 +129,8 @@ const BOUNDARY_TRANSITIONS: {
   },
 
   // -----------------------------------------------------------------------
-  // 1  Problem → Framework — "Vertical Slide"
-  //    Classic full‑screen slide; old section exits upward, new enters
+  // 3  Problem → Findings — "Vertical Slide"
+  //    Classic full-screen slide; old section exits upward, new enters
   //    from below.
   // -----------------------------------------------------------------------
   {
@@ -109,8 +146,8 @@ const BOUNDARY_TRANSITIONS: {
   },
 
   // -----------------------------------------------------------------------
-  // 2  Framework → Evidence A — "Scale Punch"
-  //    Framework compresses and blurs away; Evidence punches in from a
+  // 4  Findings → Evidence — "Scale Punch"
+  //    Findings compresses and blurs away; Evidence punches in from a
   //    large, blurred state.
   // -----------------------------------------------------------------------
   {
@@ -126,40 +163,8 @@ const BOUNDARY_TRANSITIONS: {
   },
 
   // -----------------------------------------------------------------------
-  // 3  Evidence A → Evidence B — "Gentle Cross"
-  //    Soft crossfade with a subtle scale shift for continuity.
-  // -----------------------------------------------------------------------
-  {
-    forward: {
-      exit: { opacity: 0, scale: 1.03, filter: "blur(4px)" },
-      initial: { opacity: 0, scale: 0.97, filter: "blur(4px)" },
-    },
-    backward: {
-      exit: { opacity: 0, scale: 0.97, filter: "blur(4px)" },
-      initial: { opacity: 0, scale: 1.03, filter: "blur(4px)" },
-    },
-    duration: 0.6,
-  },
-
-  // -----------------------------------------------------------------------
-  // 4  Evidence B → PNS — "Gentle Cross"
-  //    Soft crossfade with subtle scale for continuity.
-  // -----------------------------------------------------------------------
-  {
-    forward: {
-      exit: { opacity: 0, scale: 1.03, filter: "blur(4px)" },
-      initial: { opacity: 0, scale: 0.97, filter: "blur(4px)" },
-    },
-    backward: {
-      exit: { opacity: 0, scale: 0.97, filter: "blur(4px)" },
-      initial: { opacity: 0, scale: 1.03, filter: "blur(4px)" },
-    },
-    duration: 0.6,
-  },
-
-  // -----------------------------------------------------------------------
-  // 5  PNS → CTA — "Dissolve Rise"
-  //    PNS shrinks and dissolves; CTA rises from slight offset with
+  // 5  Evidence → CTA — "Dissolve Rise"
+  //    Evidence shrinks and dissolves; CTA rises from slight offset with
   //    a clearing blur.
   // -----------------------------------------------------------------------
   {
@@ -208,19 +213,38 @@ const sectionVariants: Record<string, (data: any) => any> = {
 // FullPageScroll component
 // ---------------------------------------------------------------------------
 
+export type FullPageScrollProps = {
+  sections: SlideConfig[];
+  children?: ReactNode;
+  /** When false, disables wheel/touch/keyboard listeners (used during morph transitions) */
+  active?: boolean;
+  /** Restore slide index on remount */
+  initialIndex?: number;
+  /** Restore step within slide on remount */
+  initialStep?: number;
+  /** Called whenever current slide or step changes */
+  onSlideChange?: (index: number, step: number) => void;
+};
+
 export function FullPageScroll({
   sections,
   children,
-}: {
-  sections: SlideConfig[];
-  children?: ReactNode;
-}) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentStep, setCurrentStep] = useState(0);
+  active = true,
+  initialIndex = 0,
+  initialStep = 0,
+  onSlideChange,
+}: FullPageScrollProps) {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [currentStep, setCurrentStep] = useState(initialStep);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const isAnimating = useRef(false);
   const isStepAnimating = useRef(false);
   const accumulatedDelta = useRef(0);
+  const scrollLocked = useRef(false);
+
+  const setScrollLocked = useCallback((locked: boolean) => {
+    scrollLocked.current = locked;
+  }, []);
 
   // Track transition data for AnimatePresence custom prop
   const [transitionData, setTransitionData] = useState<TransitionData>({
@@ -233,6 +257,11 @@ export function FullPageScroll({
     (index: number) => sections[index]?.steps ?? 1,
     [sections]
   );
+
+  // Notify parent of slide/step changes
+  useEffect(() => {
+    onSlideChange?.(currentIndex, currentStep);
+  }, [currentIndex, currentStep, onSlideChange]);
 
   // ------- Navigation helpers -------
 
@@ -286,7 +315,7 @@ export function FullPageScroll({
 
   // Step-aware navigation: scroll down
   const navigateDown = useCallback(() => {
-    if (isAnimating.current || isStepAnimating.current) return;
+    if (scrollLocked.current || isAnimating.current || isStepAnimating.current) return;
 
     const maxStep = getSteps(currentIndex) - 1;
     if (currentStep < maxStep) {
@@ -304,7 +333,7 @@ export function FullPageScroll({
 
   // Step-aware navigation: scroll up
   const navigateUp = useCallback(() => {
-    if (isAnimating.current || isStepAnimating.current) return;
+    if (scrollLocked.current || isAnimating.current || isStepAnimating.current) return;
 
     if (currentStep > 0) {
       // Go back one step within current slide
@@ -328,6 +357,8 @@ export function FullPageScroll({
   // ------- Wheel / Touch / Keyboard -------
 
   useEffect(() => {
+    if (!active) return;
+
     const THRESHOLD = 50;
 
     const handleWheel = (e: WheelEvent) => {
@@ -383,7 +414,7 @@ export function FullPageScroll({
       window.removeEventListener("touchend", handleTouchEnd);
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [navigateDown, navigateUp]);
+  }, [active, navigateDown, navigateUp]);
 
   // ------- Hash on load -------
 
@@ -408,13 +439,21 @@ export function FullPageScroll({
     isTransitioning,
     goToSlide,
     goToSlideById,
+    navigateUp,
+    navigateDown,
     sectionIds: sections.map((s) => s.id),
+    setScrollLocked,
   };
 
   return (
     <FullPageContext.Provider value={ctxValue}>
-      {/* Fixed viewport for slides */}
-      <div className="fixed inset-0 z-0 overflow-hidden bg-[#0a0a12]">
+      {/* Viewport for slides — absolute so parent can control positioning */}
+      <div
+        className="absolute inset-0 z-0 overflow-hidden bg-[#110B07]"
+        role="region"
+        aria-label="Presentation slides, use arrow keys to navigate"
+        aria-roledescription="presentation"
+      >
         {/* Background layer — crossfade only, no scale/blur */}
         <AnimatePresence initial={false}>
           <motion.div

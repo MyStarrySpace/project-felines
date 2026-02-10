@@ -174,7 +174,7 @@ export const spontaneousWindows: TherapeuticWindow[] = [
     intervention: "Biomarker screening, risk assessment",
     efficacy: "high",
     estimatedEffect: "Enables early intervention",
-    color: "#0891B2",
+    color: "#D97706",
   },
   {
     id: 3,
@@ -233,7 +233,7 @@ export const therapeuticWindows: TherapeuticWindow[] = [
     intervention: "Imatinib, ferroptosis inhibitors, iron chelation",
     efficacy: "high",
     estimatedEffect: "50-80% damage reduction",
-    color: "#0891B2", // teal-600
+    color: "#D97706", // teal-600
   },
   {
     id: 3,

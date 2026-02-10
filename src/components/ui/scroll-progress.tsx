@@ -5,18 +5,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useFullPage } from "./full-page-scroll";
 
 /**
- * Slide configs mirrored from page.tsx so we can compute global progress.
+ * Slide configs mirrored from layout.tsx so we can compute global progress.
  * Each entry is the number of steps for that slide index.
  */
-const SLIDE_STEPS = [3, 4, 4, 2, 2, 3, 1];
+const SLIDE_STEPS = [3, 4, 3, 4, 3, 4, 1];
 
 const SECTION_META = [
-  { label: "Hero", desc: "The 99% failure rate" },
+  { label: "Hero", desc: "The pattern" },
+  { label: "Iron", desc: "Essential and dangerous" },
+  { label: "Ferroptosis", desc: "Iron-driven cell death" },
   { label: "Problem", desc: "Why trials keep failing" },
-  { label: "Biology", desc: "Five iron defenses" },
-  { label: "Evidence", desc: "AD, PD, Long COVID" },
-  { label: "Evidence B", desc: "ALS, MS, Prion disease" },
-  { label: "PNS", desc: "Peripheral neuropathy" },
+  { label: "Findings", desc: "What the research shows" },
+  { label: "Evidence", desc: "Cross-disease evidence" },
   { label: "Conclusion", desc: "Clinical implications" },
 ];
 
@@ -50,13 +50,23 @@ export function ScrollProgress() {
   const boundaries = getSlideBoundaries();
 
   return (
-    <div className="fixed right-3 top-0 z-40 flex h-screen w-3 items-center sm:right-4">
+    <nav
+      className="fixed right-3 top-0 z-40 hidden h-screen w-3 items-center sm:right-4 md:flex"
+      role="navigation"
+      aria-label={`Presentation progress: ${Math.round(progress * 100)}%`}
+    >
       {/* Track */}
-      <div className="relative h-[60vh] w-[3px] rounded-full bg-white/10">
+      <div
+        className="relative h-[60vh] w-[3px] rounded-full bg-white/10"
+        role="progressbar"
+        aria-valuenow={Math.round(progress * 100)}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      >
         {/* Fill */}
         <motion.div
           className="absolute left-0 top-0 w-full origin-top rounded-full bg-teal-400"
-          style={{ boxShadow: "0 0 8px rgba(45,212,191,0.5)" }}
+          style={{ boxShadow: "0 0 8px rgba(251,191,36,0.5)" }}
           initial={false}
           animate={{ scaleY: progress }}
           transition={{ duration: 0.4, ease: "easeOut" }}
@@ -85,11 +95,13 @@ export function ScrollProgress() {
                 className="group flex h-6 w-6 -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center"
                 style={{ position: "absolute", left: "50%", top: "50%" }}
                 aria-label={`Go to ${meta?.label ?? `section ${i + 1}`}`}
+                aria-current={isCurrent ? "step" : undefined}
+                aria-describedby={hoveredIndex === i ? `scroll-tooltip-${i}` : undefined}
               >
                 <span
                   className={`block h-1.5 w-1.5 rounded-full transition-all duration-300 ${
                     isActive ? "bg-teal-400" : "bg-white/30"
-                  } ${isCurrent ? "shadow-[0_0_6px_2px_rgba(45,212,191,0.5)]" : ""}`}
+                  } ${isCurrent ? "shadow-[0_0_6px_2px_rgba(251,191,36,0.5)]" : ""}`}
                 />
               </button>
 
@@ -97,6 +109,8 @@ export function ScrollProgress() {
               <AnimatePresence>
                 {hoveredIndex === i && meta && (
                   <motion.div
+                    id={`scroll-tooltip-${i}`}
+                    role="tooltip"
                     initial={{ opacity: 0, x: 4 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 4 }}
@@ -118,6 +132,6 @@ export function ScrollProgress() {
           );
         })}
       </div>
-    </div>
+    </nav>
   );
 }

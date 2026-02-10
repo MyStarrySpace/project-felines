@@ -7,51 +7,69 @@ import { ScrollRevealText } from "@/components/ui/scroll-reveal-text";
 import { ParallaxOrb } from "@/components/ui/parallax-orb";
 import { StepFragment } from "@/components/ui/step-fragment";
 import { useFullPage } from "@/components/ui/full-page-scroll";
-import { heroData } from "@/data/landing/hero";
+
+const mainQuote = {
+  text: "A scheme of AD pathogenesis where brain iron is center stage and is involved in every step of the sequence of events that produce characteristic AD pathology.",
+  source: "Streit, Phan & Bechmann",
+  journal: "Pharmacological Reviews",
+  year: 2024,
+  doi: "10.1124/pharmrev.123.000823",
+};
+
+const supportingQuotes = [
+  {
+    text: "Future developments directed to non-amyloid targets that might have more clinical efficacy and less adverse effects.",
+    source: "Frisoni et al.",
+    journal: "The Lancet",
+    year: 2025,
+    doi: "10.1016/S0140-6736(25)01389-3",
+  },
+  {
+    text: "Neurons have an exceptionally large surface area and metabolic demand, which necessitates specific mechanisms to engage constantly to protect the plasma membrane against lipid peroxidation.",
+    source: "Lei et al.",
+    journal: "Nature Reviews Neuroscience",
+    year: 2025,
+    doi: "10.1038/s41583-025-00930-5",
+  },
+];
 
 export function HeroSection() {
   const { goToSlideById, currentStep } = useFullPage();
   const step = currentStep;
-  const mainQuote = heroData.quotes[0];
-  const supportingQuotes = heroData.quotes.slice(1);
 
   return (
-    <div className="h-full relative overflow-hidden">
-      <div className="dot-pattern absolute inset-0" />
+    <div className="h-full relative overflow-hidden" role="region" aria-label="Hero">
+      <div className="dot-pattern absolute inset-0" aria-hidden="true" />
 
       <ParallaxOrb
         className="left-[10%] top-[20%] h-[600px] w-[600px] bg-teal-600 opacity-10"
         speed={0.1}
       />
       <ParallaxOrb
-        className="right-[15%] bottom-[25%] h-[500px] w-[500px] bg-[#2a1f5e] opacity-15"
+        className="right-[15%] bottom-[25%] h-[500px] w-[500px] bg-[#4A2510] opacity-15"
         speed={0.2}
       />
 
       {/* ── Step 0: THE PATTERN ─────────────────────────────────── */}
-      {/* The core fact, stated plainly at full-screen scale.       */}
-      {/* Disease names ground it. Tag line creates the gap.        */}
       <StepFragment step={step} appear={0} recede={1}>
-        <div className="flex flex-col items-center text-center px-6 sm:px-12 lg:px-20">
-          {heroData.openingLines.map((line, i) => (
-            <motion.p
-              key={i}
-              className={`font-serif leading-[1.1] tracking-[-0.03em] text-[clamp(2.25rem,7vw,5.5rem)] ${
-                i === heroData.openingLines.length - 1
-                  ? "text-teal-400"
-                  : "text-white"
-              }`}
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.3 + i * 0.25,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-            >
-              {line}
-            </motion.p>
-          ))}
+        <div className="flex flex-col items-center text-center px-6 sm:px-12 lg:px-20 max-w-5xl mx-auto">
+          <motion.p
+            className="font-serif leading-[1.15] tracking-[-0.03em] text-[clamp(2rem,5.5vw,4rem)] text-gray-300"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          >
+            Your brain&apos;s designed to manage iron until you&apos;re finished
+            raising your children.
+          </motion.p>
+          <motion.p
+            className="font-serif leading-[1.15] tracking-[-0.03em] text-[clamp(2rem,5.5vw,4rem)] text-white mt-2"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          >
+            You&apos;re asking it to work when they start raising theirs.
+          </motion.p>
 
           <motion.p
             className="mt-8 text-lg text-gray-400 sm:text-xl"
@@ -59,7 +77,7 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.9 }}
           >
-            {heroData.openingDiseases}
+            Alzheimer&apos;s. Parkinson&apos;s. ALS. MS. Long COVID. Prion disease.
           </motion.p>
 
           <motion.p
@@ -68,14 +86,12 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.3 }}
           >
-            {heroData.openingTag}
+            This has been known for decades.
           </motion.p>
         </div>
       </StepFragment>
 
       {/* ── Step 1: THE SHIFT ───────────────────────────────────── */}
-      {/* The field is converging on iron. One pivotal quote proves */}
-      {/* this isn't a fringe idea. Supporting refs show momentum.  */}
       <StepFragment step={step} appear={1} recede={2}>
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto px-6 sm:px-12">
           <blockquote>
@@ -98,42 +114,32 @@ export function HeroSection() {
             </footer>
           </blockquote>
 
-          {supportingQuotes.length > 0 && (
-            <>
-              <div className="mt-8 h-px w-16 bg-gray-700" />
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-x-1 gap-y-1 text-sm text-gray-500">
-                <span>See also</span>
-                {supportingQuotes.map((q, i) => (
-                  <span key={i}>
-                    {i > 0 && <span className="mx-1">&middot;</span>}
-                    <a
-                      href={`https://doi.org/${q.doi}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline underline-offset-2 decoration-gray-700 hover:text-teal-400 hover:decoration-teal-400 transition-colors"
-                    >
-                      {q.source}, {q.journal} {q.year}
-                    </a>
-                  </span>
-                ))}
-              </div>
-            </>
-          )}
+          <div className="mt-8 h-px w-16 bg-gray-700" />
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-1 gap-y-1 text-sm text-gray-500">
+            <span>See also</span>
+            {supportingQuotes.map((q, i) => (
+              <span key={i}>
+                {i > 0 && <span className="mx-1">&middot;</span>}
+                <a
+                  href={`https://doi.org/${q.doi}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2 decoration-gray-700 hover:text-teal-400 hover:decoration-teal-400 transition-colors"
+                >
+                  {q.source}, {q.journal} {q.year}
+                </a>
+              </span>
+            ))}
+          </div>
         </div>
       </StepFragment>
 
       {/* ── Step 2: THE CALL ────────────────────────────────────── */}
-      {/* Name the specific biology that needs attention. Position  */}
-      {/* FELINE as a lens, not the main event.                     */}
       <StepFragment step={step} appear={2}>
         <div className="flex flex-col items-center text-center px-6">
-          <span className="inline-flex items-center border border-white/10 bg-white/5 px-3 py-1 text-sm font-medium text-teal-400 backdrop-blur-sm">
-            {heroData.kicker}
-          </span>
-
           <ScrollRevealText
-            text={heroData.subtitle}
-            className="mt-10 block max-w-[var(--width-reading)] text-center text-[clamp(1.375rem,3.2vw,2rem)] leading-relaxed"
+            text="How the brain handles iron. How glial cells distribute it. What happens when those systems fail."
+            className="block max-w-[var(--width-reading)] text-center text-[clamp(1.375rem,3.2vw,2rem)] leading-relaxed"
             dimColor="rgba(107,114,128,1)"
             brightColor="rgba(209,213,219,1)"
           />
@@ -144,15 +150,15 @@ export function HeroSection() {
               size="lg"
               onClick={() => goToSlideById("evidence")}
             >
-              {heroData.primaryCta}
+              Explore the evidence
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button
               variant="secondary-inverse"
               size="lg"
-              onClick={() => goToSlideById("biology")}
+              onClick={() => goToSlideById("findings")}
             >
-              {heroData.secondaryCta}
+              See key findings
             </Button>
           </div>
         </div>
@@ -164,9 +170,10 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: step === 0 ? 1 : 0 }}
         transition={{ duration: 0.4 }}
+        aria-hidden="true"
       >
         <span className="text-sm font-medium tracking-wide text-gray-400">
-          Scroll to explore
+          Scroll or tap to explore
         </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}

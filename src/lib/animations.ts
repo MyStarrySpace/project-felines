@@ -48,6 +48,6 @@ export const fadeInScaleBlur: Variants = {
 
 export const hoverLift = {
   y: -4,
-  boxShadow: "0 4px 16px rgba(13, 19, 45, 0.08)",
+  boxShadow: "0 4px 16px rgba(26, 15, 10, 0.08)",
   transition: { duration: 0.2 },
 };
