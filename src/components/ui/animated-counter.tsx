@@ -35,9 +35,9 @@ export function AnimatedCounter({
   }, [isInView, motionValue, value]);
 
   return (
-    <span ref={ref} className={className}>
+    <span ref={ref} className={className} aria-label={`${prefix}${decimals > 0 ? value.toFixed(decimals) : value}${suffix}`}>
       {prefix}
-      <motion.span>{rounded}</motion.span>
+      <motion.span aria-hidden="true">{rounded}</motion.span>
       {suffix}
     </span>
   );

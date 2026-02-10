@@ -8,12 +8,11 @@ import { useFullPage } from "./full-page-scroll";
  * Slide configs mirrored from layout.tsx so we can compute global progress.
  * Each entry is the number of steps for that slide index.
  */
-const SLIDE_STEPS = [3, 4, 3, 4, 3, 4, 1];
+const SLIDE_STEPS = [1, 7, 4, 3, 4, 1];
 
 const SECTION_META = [
   { label: "Hero", desc: "The pattern" },
-  { label: "Iron", desc: "Essential and dangerous" },
-  { label: "Ferroptosis", desc: "Iron-driven cell death" },
+  { label: "Iron", desc: "Iron to ferroptosis" },
   { label: "Problem", desc: "Why trials keep failing" },
   { label: "Findings", desc: "What the research shows" },
   { label: "Evidence", desc: "Cross-disease evidence" },
@@ -45,19 +44,24 @@ function getSlideBoundaries(): number[] {
 export function ScrollProgress() {
   const { currentIndex, currentStep, goToSlide } = useFullPage();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [trackHovered, setTrackHovered] = useState(false);
 
   const progress = getProgress(currentIndex, currentStep);
   const boundaries = getSlideBoundaries();
+  const showLabels = currentIndex === 0 || trackHovered;
 
   return (
     <nav
-      className="fixed right-3 top-0 z-40 hidden h-screen w-3 items-center sm:right-4 md:flex"
+      className="fixed right-0 top-0 z-40 hidden h-screen items-center pr-3 sm:pr-4 md:flex"
+      style={{ width: 180 }}
       role="navigation"
       aria-label={`Presentation progress: ${Math.round(progress * 100)}%`}
+      onMouseEnter={() => setTrackHovered(true)}
+      onMouseLeave={() => setTrackHovered(false)}
     >
-      {/* Track */}
+      {/* Track — pinned to right edge */}
       <div
-        className="relative h-[60vh] w-[3px] rounded-full bg-white/10"
+        className="relative ml-auto h-[60vh] w-[3px] rounded-full bg-white/10"
         role="progressbar"
         aria-valuenow={Math.round(progress * 100)}
         aria-valuemin={0}
@@ -96,7 +100,6 @@ export function ScrollProgress() {
                 style={{ position: "absolute", left: "50%", top: "50%" }}
                 aria-label={`Go to ${meta?.label ?? `section ${i + 1}`}`}
                 aria-current={isCurrent ? "step" : undefined}
-                aria-describedby={hoveredIndex === i ? `scroll-tooltip-${i}` : undefined}
               >
                 <span
                   className={`block h-1.5 w-1.5 rounded-full transition-all duration-300 ${
@@ -105,26 +108,30 @@ export function ScrollProgress() {
                 />
               </button>
 
-              {/* Tooltip */}
+              {/* Label — persistent on hero, shown on track hover otherwise */}
               <AnimatePresence>
-                {hoveredIndex === i && meta && (
+                {(showLabels || hoveredIndex === i) && meta && (
                   <motion.div
-                    id={`scroll-tooltip-${i}`}
-                    role="tooltip"
                     initial={{ opacity: 0, x: 4 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 4 }}
                     transition={{ duration: 0.15 }}
-                    className="pointer-events-none absolute right-full top-1/2 mr-3 -translate-y-1/2 whitespace-nowrap rounded-lg bg-navy-900/90 px-3 py-2 backdrop-blur-sm"
+                    className="pointer-events-none absolute right-full top-1/2 mr-3 -translate-y-1/2 whitespace-nowrap"
                   >
-                    {/* Arrow pointing right */}
-                    <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full">
-                      <div className="h-0 w-0 border-y-[5px] border-l-[5px] border-y-transparent border-l-navy-900/90" />
-                    </div>
-                    <p className="text-xs font-semibold text-white">
+                    <p
+                      className={`text-xs font-medium transition-colors duration-200 ${
+                        isCurrent
+                          ? "text-teal-400"
+                          : isActive
+                            ? "text-white/50"
+                            : "text-white/30"
+                      }`}
+                    >
                       {meta.label}
                     </p>
-                    <p className="text-[11px] text-white/50">{meta.desc}</p>
+                    {hoveredIndex === i && (
+                      <p className="text-[11px] text-white/40">{meta.desc}</p>
+                    )}
                   </motion.div>
                 )}
               </AnimatePresence>

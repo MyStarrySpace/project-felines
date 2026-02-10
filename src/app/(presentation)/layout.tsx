@@ -4,7 +4,7 @@ import { useEffect, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { HeroSection } from "@/components/landing/hero-section";
 import { IronBuildupSection } from "@/components/landing/iron-buildup-section";
-import { FerroptosisSection } from "@/components/landing/ferroptosis-section";
+
 import { ProblemSection } from "@/components/landing/problem-section";
 import { FindingsSection } from "@/components/landing/findings-section";
 import { EvidenceSection } from "@/components/landing/evidence-section";
@@ -18,21 +18,15 @@ import { TransitionProvider, useExploreTransition } from "@/components/providers
 const slides: SlideConfig[] = [
   {
     id: "hero",
-    steps: 3,
+    steps: 1,
     bg: "bg-gradient-to-b from-navy-900 to-[#110B07]",
     content: <HeroSection />,
   },
   {
     id: "iron",
-    steps: 4,
+    steps: 7,
     bg: "bg-[#110B07]",
     content: <IronBuildupSection />,
-  },
-  {
-    id: "ferroptosis",
-    steps: 3,
-    bg: "bg-[#110B07]",
-    content: <FerroptosisSection />,
   },
   {
     id: "problem",

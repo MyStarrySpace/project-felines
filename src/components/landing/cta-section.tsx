@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
@@ -13,7 +14,7 @@ export function CtaSection() {
   const { goToSlideById, goToSlide } = useFullPage();
 
   return (
-    <div className="h-full relative overflow-hidden flex flex-col">
+    <div className="h-full relative overflow-hidden flex flex-col" role="region" aria-label="Conclusion">
       <ParallaxOrb
         className="left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 bg-teal-600 opacity-10"
         speed={0.15}
@@ -28,7 +29,7 @@ export function CtaSection() {
           variants={staggerContainer}
         >
           <motion.div variants={fadeInUp}>
-            <h2 className="font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[42px]">
+            <h2 id="cta-heading" className="font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[42px]">
               Iron biology needs more attention
             </h2>
           </motion.div>
@@ -43,14 +44,15 @@ export function CtaSection() {
           </motion.div>
 
           <motion.div variants={fadeInUp} className="mt-10 flex gap-4">
-            <Button
-              variant="primary-inverse"
-              size="lg"
-              onClick={() => goToSlideById("evidence")}
-            >
-              Read the evidence
-              <ArrowRight className="h-4 w-4" />
-            </Button>
+            <Link href="/explore/biology">
+              <Button
+                variant="primary-inverse"
+                size="lg"
+              >
+                Explore the research
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
             <Button
               variant="secondary-inverse"
               size="lg"
@@ -63,8 +65,8 @@ export function CtaSection() {
       </Container>
 
       {/* Inline footer */}
-      <div className="relative z-10 border-t border-white/5 py-4 text-center text-xs text-gray-400">
-        FELINE. For research and educational purposes.
+      <div className="relative z-10 border-t border-white/5 py-4 text-center text-xs text-gray-400" role="contentinfo">
+        Project FELINE. For research and educational purposes.
       </div>
     </div>
   );

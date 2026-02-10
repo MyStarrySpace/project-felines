@@ -30,6 +30,7 @@ export function ParallaxOrb({ className, speed = 0.15 }: ParallaxOrbProps) {
     <motion.div
       className={`ambient-orb ${className ?? ""}`}
       style={{ x, y }}
+      aria-hidden="true"
     />
   );
 }

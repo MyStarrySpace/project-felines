@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { motion, useMotionValue, useTransform, animate, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { StepFragment } from "@/components/ui/step-fragment";
 import { useFullPage } from "@/components/ui/full-page-scroll";
+import { TrialExplorer } from "@/components/landing/trial-explorer";
 
 const stats = [
   {
@@ -117,6 +119,8 @@ function SuccessRateBar({
   return (
     <div
       className="group relative"
+      role="figure"
+      aria-label={`${area}: ${rate}% success rate`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -176,18 +180,18 @@ export function ProblemSection() {
   const { currentStep } = useFullPage();
   const step = currentStep;
   const barsVisible = step >= 2;
+  const [explorerOpen, setExplorerOpen] = useState(false);
 
   return (
-    <div className="h-full relative overflow-hidden">
+    <div className="h-full relative overflow-hidden" role="region" aria-label="Problem">
       {/* Step 0: Section kicker + heading — top-left anchored */}
       <StepFragment step={step} appear={0} recede={1} className="!items-start !justify-start pt-24 pl-10 sm:pt-32 sm:pl-16">
         <div className="flex flex-col items-start text-left max-w-3xl px-6">
-          <span className="text-sm font-medium uppercase tracking-[0.05em] text-teal-400">
-            The Problem
-          </span>
-          <h2 className="mt-4 text-[48px] font-bold leading-[1.1] tracking-[-0.02em] text-white sm:text-[64px]">
+          <h2 id="problem-heading" className="text-[48px] font-bold leading-[1.1] tracking-[-0.02em] text-white sm:text-[64px]">
             Every major trial has failed.{" "}
-            <span className="text-gray-400">The model is wrong.</span>
+            <span className="text-gray-400">
+              We targeted symptoms, not causes.
+            </span>
           </h2>
         </div>
       </StepFragment>
@@ -222,10 +226,11 @@ export function ProblemSection() {
       >
         <div className="flex w-full items-start gap-6 sm:gap-10 px-8 sm:px-16">
           {/* Left: success rate bars */}
-          <div className="flex flex-col gap-3 flex-1 min-w-0">
+          <div className="flex flex-col gap-3 flex-1 min-w-0" role="group" aria-labelledby="bar-chart-title">
             {/* Chart title */}
             <motion.p
               className="mb-2 text-sm font-medium uppercase tracking-wide text-gray-500"
+              id="bar-chart-title"
               initial={{ opacity: 0 }}
               animate={barsVisible ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.3 }}
@@ -279,18 +284,27 @@ export function ProblemSection() {
             >
               <div className="border-l-2 border-teal-600 pl-6">
                 <p className="text-[22px] font-semibold leading-snug text-white sm:text-[26px]">
-                  Causation is backwards
+                  The targets were downstream
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-gray-300">
                   Plaques and tangles aren&apos;t causing disease. They&apos;re
-                  protective responses to iron accumulation. 400+ drugs targeted
-                  these downstream markers. That&apos;s why they failed.
+                  the brain&apos;s response to iron accumulation. 400+ drugs
+                  targeted these downstream markers instead of the iron biology
+                  driving them.
                 </p>
+                <Link
+                  href="/explore/trials"
+                  className="mt-4 inline-block text-sm font-medium text-teal-400 transition-colors hover:text-teal-300"
+                >
+                  See which drugs failed &rarr;
+                </Link>
               </div>
             </motion.div>
           </div>
         </div>
       </motion.div>
+
+      <TrialExplorer isOpen={explorerOpen} onClose={() => setExplorerOpen(false)} />
     </div>
   );
 }

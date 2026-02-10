@@ -97,23 +97,7 @@ const BOUNDARY_TRANSITIONS: {
   },
 
   // -----------------------------------------------------------------------
-  // 1  Iron → Ferroptosis — "Cross Dissolve"
-  //    Pure opacity, no motion — seamless diagram continuation.
-  // -----------------------------------------------------------------------
-  {
-    forward: {
-      exit: { opacity: 0, filter: "blur(4px)" },
-      initial: { opacity: 0, filter: "blur(4px)" },
-    },
-    backward: {
-      exit: { opacity: 0, filter: "blur(4px)" },
-      initial: { opacity: 0, filter: "blur(4px)" },
-    },
-    duration: 0.6,
-  },
-
-  // -----------------------------------------------------------------------
-  // 2  Ferroptosis → Problem — "Deep Zoom"
+  // 1  Iron → Problem — "Deep Zoom"
   //    Dramatic break — ferroptosis "zooms into" the problem.
   // -----------------------------------------------------------------------
   {
@@ -129,7 +113,7 @@ const BOUNDARY_TRANSITIONS: {
   },
 
   // -----------------------------------------------------------------------
-  // 3  Problem → Findings — "Vertical Slide"
+  // 2  Problem → Findings — "Vertical Slide"
   //    Classic full-screen slide; old section exits upward, new enters
   //    from below.
   // -----------------------------------------------------------------------
@@ -146,7 +130,7 @@ const BOUNDARY_TRANSITIONS: {
   },
 
   // -----------------------------------------------------------------------
-  // 4  Findings → Evidence — "Scale Punch"
+  // 3  Findings → Evidence — "Scale Punch"
   //    Findings compresses and blurs away; Evidence punches in from a
   //    large, blurred state.
   // -----------------------------------------------------------------------
@@ -163,7 +147,7 @@ const BOUNDARY_TRANSITIONS: {
   },
 
   // -----------------------------------------------------------------------
-  // 5  Evidence → CTA — "Dissolve Rise"
+  // 4  Evidence → CTA — "Dissolve Rise"
   //    Evidence shrinks and dissolves; CTA rises from slight offset with
   //    a clearing blur.
   // -----------------------------------------------------------------------
@@ -234,8 +218,37 @@ export function FullPageScroll({
   initialStep = 0,
   onSlideChange,
 }: FullPageScrollProps) {
-  const [currentIndex, setCurrentIndex] = useState(initialIndex);
-  const [currentStep, setCurrentStep] = useState(initialStep);
+  // Initialise from ?slide=…&step=… query params (avoids flash of slide 0)
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    if (typeof window === "undefined") return initialIndex;
+    const params = new URLSearchParams(window.location.search);
+    const slideParam = params.get("slide");
+    if (slideParam) {
+      const idx = sections.findIndex((s) => s.id === slideParam);
+      if (idx >= 0) return idx;
+    }
+    const hash = window.location.hash.replace("#", "");
+    if (hash) {
+      const idx = sections.findIndex((s) => s.id === hash);
+      if (idx >= 0) return idx;
+    }
+    return initialIndex;
+  });
+  const [currentStep, setCurrentStep] = useState(() => {
+    if (typeof window === "undefined") return initialStep;
+    const params = new URLSearchParams(window.location.search);
+    const slideParam = params.get("slide");
+    const stepParam = params.get("step");
+    if (slideParam && stepParam) {
+      const idx = sections.findIndex((s) => s.id === slideParam);
+      if (idx >= 0) {
+        const step = parseInt(stepParam, 10);
+        const maxStep = (sections[idx]?.steps ?? 1) - 1;
+        if (!isNaN(step) && step >= 0 && step <= maxStep) return step;
+      }
+    }
+    return initialStep;
+  });
   const [isTransitioning, setIsTransitioning] = useState(false);
   const isAnimating = useRef(false);
   const isStepAnimating = useRef(false);
@@ -416,16 +429,25 @@ export function FullPageScroll({
     };
   }, [active, navigateDown, navigateUp]);
 
-  // ------- Hash on load -------
+  // ------- Sync URL query params on navigation -------
 
   useEffect(() => {
-    const hash = window.location.hash.replace("#", "");
-    if (hash) {
-      const idx = sections.findIndex((s) => s.id === hash);
-      if (idx > 0) setCurrentIndex(idx);
+    const id = sections[currentIndex]?.id;
+    if (!id) return;
+
+    const params = new URLSearchParams();
+    if (currentIndex > 0 || currentStep > 0) {
+      params.set("slide", id);
+      if (currentStep > 0) {
+        params.set("step", String(currentStep));
+      }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    const query = params.toString();
+    const url = query
+      ? `${window.location.pathname}?${query}`
+      : window.location.pathname;
+    window.history.replaceState(null, "", url);
+  }, [currentIndex, currentStep, sections]);
 
   // ------- Render -------
 

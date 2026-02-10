@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Instrument_Serif } from "next/font/google";
+import { ClientProviders } from "@/components/providers/client-providers";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,9 +21,9 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "FELINE",
+  title: "Project FELINE",
   description:
-    "How the brain's iron defenses fail in neurodegeneration",
+    "Investigating ferroptosis in neurodegeneration",
 };
 
 export default function RootLayout({
@@ -35,7 +36,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased`}
       >
-        {children}
+        <ClientProviders>{children}</ClientProviders>
+        <div id="citation-portal" className="fixed z-[100]" />
       </body>
     </html>
   );

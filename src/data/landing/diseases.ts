@@ -2,51 +2,51 @@ import type { DiseaseCard } from "./types";
 
 export const diseases: DiseaseCard[] = [
   {
-    name: "Alzheimer's Disease",
+    name: "Alzheimer\u2019s Disease",
     stat: "99%",
     statLabel: "drug failure rate",
     explanation:
-      "Neurovascular damage (pericyte loss) and export failure cause iron accumulation. Amyloid plaques and tau tangles are protective iron-buffering responses, not the disease itself. Dense-core plaques are granulomas that sequester toxic iron. Removing them releases that iron back into tissue.",
+      "Pericyte loss breaches the blood-brain barrier. Iron accumulates. Plaques and tangles form to buffer that iron. Remove them with drugs, and the iron has nowhere to go.",
   },
   {
-    name: "Parkinson's Disease",
+    name: "Parkinson\u2019s Disease",
     stat: "10-30%",
     statLabel: "GBA1 penetrance",
     explanation:
-      "Substantia nigra has the highest brain iron concentration. GBA1 compromises the insulation layer (lysosomal iron containment), but disease requires concurrent failure of lysosomal defenses or neurovascular integrity.",
+      "The substantia nigra has the highest iron concentration in the brain. GBA1 mutations compromise iron containment, but disease only develops when antioxidant defenses or the blood-brain barrier also fail.",
   },
   {
     name: "Long COVID",
     stat: "400M+",
     statLabel: "estimated cases globally",
     explanation:
-      "SARS-CoV-2 directly infects pericytes via CD147, breaching the neurovascular barrier. Viral persistence degrades lysosomal integrity and export pathways. This isn't chronic infection. It's lysosomal and export failure producing neurodegenerative biomarkers within months.",
+      "SARS-CoV-2 infects pericytes via CD147, breaching the blood-brain barrier. Viral persistence degrades antioxidant and iron export pathways. Patients develop neurodegenerative biomarkers within months.",
   },
   {
     name: "ALS",
     stat: "90%",
     statLabel: "sporadic (no genetic cause)",
     explanation:
-      "Motor cortex iron accumulation reflects defense layer failure. Lysosomal defenses (GPX4) and insulation (ferritin) are overwhelmed before export pathways can compensate.",
+      "Motor cortex iron accumulates as antioxidant defenses (GPX4) and iron-buffering proteins (ferritin) are overwhelmed. 90% of cases have no genetic explanation.",
   },
   {
     name: "Multiple Sclerosis",
     stat: "2.8M",
     statLabel: "people affected worldwide",
     explanation:
-      "EBV persistence is a lysosome and export problem, not active viral reactivation. Iron rim lesions mark zones where insulation and export have both collapsed, driving oligodendrocyte ferroptosis in genetically susceptible individuals.",
+      "EBV doesn\u2019t need to reactivate. Latent viral proteins disrupt iron buffering and export. Iron rim lesions mark where these systems have collapsed, driving oligodendrocyte death.",
   },
   {
     name: "Prion Disease",
     stat: "100%",
     statLabel: "fatal",
     explanation:
-      "PrP misfolding collapses the insulation layer. Lysosomal integrity fails, iron floods the cytosol, and export cannot compensate. The fastest cascade across all five defense layers.",
+      "PrP misfolding destroys iron-buffering capacity. Antioxidant defenses fail, iron floods cells, and export can\u2019t compensate. The fastest progression of any neurodegenerative disease.",
   },
 ];
 
 export const evidenceInsight = {
-  title: "\"Viral reactivation\" is lysosome and export failure",
+  title: "Viruses don\u2019t need to wake up",
   content:
-    "Researchers spent decades hunting for active virus in diseased brains and found almost nothing. FELINE explains why: the virus doesn't need to wake up. Latent viral proteins sabotage iron-buffering (tau, alpha-synuclein), while lysosomal disruption releases stored iron. No reactivation required.",
+    "Researchers spent decades hunting for active virus in diseased brains and found almost nothing. The answer may be simpler: latent viral proteins sabotage iron-buffering systems (tau, alpha-synuclein) while disrupting the antioxidant defenses that contain stored iron. No reactivation required.",
 };

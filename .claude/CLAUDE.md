@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the presentation site for the **FELINE (Fe-Lysosome-Insulation-Neurovascular-Export) Framework**, a novel biological framework modeling neurodegeneration as multi-layer defense failure:
+This is the presentation site for the **FELINE (Fe-Lysosome-Insulation-Neurovascular-Export) Framework**, a novel biological framework modeling latent neurodegeneration as multi-layer defense failure (as distinct from acute neurodegeneration caused by infection or autoimmune attack):
 
 **Defense layers:** Fe (iron homeostasis) · Lysosome (GPX4, NAD+/SIRT3, GSH) · Insulation (myelin sheaths, lysosomes, ferritin, tau, alpha-synuclein; oligodendrocytes provide both electrical insulation and iron insulation via FTH1 export) · Neurovascular (pericytes, BBB, astrocyte endfeet, Schwann cell vasculature) · Export (brain-level: ferroportin/Cp, glymphatic, AQP4; systemic: liver hepcidin/bile, spleen recycling, gut absorption/microbiome)
 

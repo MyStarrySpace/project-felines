@@ -46,15 +46,16 @@ export function StepFragment({
       className={`absolute inset-0 flex items-center justify-center ${className ?? ""}`}
       style={{ zIndex }}
       animate={{
-        opacity: hidden ? 0 : isReceded ? 0.12 : 1,
-        scale: hidden ? 0.9 : isReceded ? 0.5 : 1,
-        y: hidden ? 30 : isReceded ? "-10%" : 0,
-        filter: hidden ? "blur(0px)" : isReceded ? "blur(8px)" : "blur(0px)",
+        opacity: hidden ? 0 : isReceded ? 0 : 1,
+        scale: hidden ? 0.9 : isReceded ? 0.85 : 1,
+        y: hidden ? 30 : isReceded ? -20 : 0,
+        filter: hidden ? "blur(0px)" : isReceded ? "blur(12px)" : "blur(0px)",
       }}
       transition={{
         ...STEP_TRANSITION,
         delay: !hidden && !isReceded && delay > 0 ? delay : 0,
       }}
+      aria-hidden={hidden || isReceded}
       {...rest}
     >
       {children}

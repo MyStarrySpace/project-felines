@@ -55,6 +55,7 @@ export function AnimatedShape({
   return (
     <motion.div
       className={`absolute pointer-events-none ${className}`}
+      aria-hidden="true"
       initial={initial}
       animate={
         visible
