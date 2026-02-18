@@ -5,24 +5,6 @@ import { motion, useMotionValue, useTransform, animate, AnimatePresence } from "
 import Link from "next/link";
 import { StepFragment } from "@/components/ui/step-fragment";
 import { useFullPage } from "@/components/ui/full-page-scroll";
-import { TrialExplorer } from "@/components/landing/trial-explorer";
-
-const stats = [
-  {
-    text: "drugs failed",
-    highlight: "400+",
-  },
-  {
-    text: "spent. Zero cures.",
-    highlight: "$42.5 billion",
-  },
-  {
-    text: "BACE inhibitors",
-    highlight: "worsened",
-    suffix: " cognition",
-    prefix: "5 ",
-  },
-];
 
 /**
  * Clinical trial success rates (Phase I → approval) by therapeutic area.
@@ -61,6 +43,25 @@ const barData = [
     rate: 0.4,
     source: "Cummings JL, Morstorf T, Zhong K. Alzheimers Res Ther. 2014;6(4):37.",
     sourceId: "cummings-2014-alzrt",
+  },
+];
+
+const facts = [
+  {
+    headline: "A\u03B2 is an antimicrobial peptide.",
+    body: "It entraps bacteria and viruses in fibrillar nets. Microbes have been found inside plaques.",
+  },
+  {
+    headline: "It also sequesters iron.",
+    body: "But during aggregation, A\u03B2 reduces Fe\u00B3\u207A to redox-active Fe\u00B2\u207A, making trapped iron more dangerous if released.",
+  },
+  {
+    headline: "Microglia compact the damage.",
+    body: "They physically remodel loose amyloid into dense-core plaques, walling off toxic material behind a cellular barrier.",
+  },
+  {
+    headline: "And this pattern repeats everywhere.",
+    body: "Tau, \u03B1-synuclein, TDP-43, prion protein, fibrinogen: every self-templating protein in disease has iron involvement. Free iron catalyzes the same \u03B1-helix to \u03B2-sheet switch in all of them. The proteins differ. The trigger doesn\u2019t.",
   },
 ];
 
@@ -127,7 +128,7 @@ function SuccessRateBar({
       <div className="flex items-center gap-4">
         {/* Bar */}
         <motion.div
-          className={`h-10 sm:h-14 ${isAlzheimers ? "bg-teal-400/30" : "bg-teal-600/20"}`}
+          className={`h-12 sm:h-16 ${isAlzheimers ? "bg-teal-400/30" : "bg-teal-600/20"}`}
           initial={{ width: 0 }}
           animate={visible ? { width: `${widthPercent}%` } : { width: 0 }}
           transition={{
@@ -139,7 +140,7 @@ function SuccessRateBar({
 
         {/* Rate number */}
         <motion.span
-          className={`font-mono text-[28px] font-bold tracking-tight whitespace-nowrap sm:text-[36px] ${isAlzheimers ? "text-teal-300" : "text-teal-400"}`}
+          className={`font-mono text-[32px] font-bold tracking-tight whitespace-nowrap sm:text-[40px] ${isAlzheimers ? "text-teal-300" : "text-teal-400"}`}
           initial={{ opacity: 0 }}
           animate={visible ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.3, delay: delay + 0.2 }}
@@ -180,35 +181,43 @@ export function ProblemSection() {
   const { currentStep } = useFullPage();
   const step = currentStep;
   const barsVisible = step >= 2;
-  const [explorerOpen, setExplorerOpen] = useState(false);
 
   return (
     <div className="h-full relative overflow-hidden" role="region" aria-label="Problem">
-      {/* Step 0: Section kicker + heading — top-left anchored */}
-      <StepFragment step={step} appear={0} recede={1} className="!items-start !justify-start pt-24 pl-10 sm:pt-32 sm:pl-16">
+      {/* Step 0: Provocation — top-left anchored */}
+      <StepFragment step={step} appear={0} recede={1} className="!items-start !justify-start pt-28 pl-12 sm:pt-36 sm:pl-20">
         <div className="flex flex-col items-start text-left max-w-3xl px-6">
-          <h2 id="problem-heading" className="text-[48px] font-bold leading-[1.1] tracking-[-0.02em] text-white sm:text-[64px]">
-            Every major trial has failed.{" "}
+          <h2 id="problem-heading" className="text-[52px] font-bold leading-[1.1] tracking-[-0.03em] text-white sm:text-[72px]">
+            We spent 30 years removing the brain&apos;s own defense system.{" "}
             <span className="text-gray-400">
-              We targeted symptoms, not causes.
+              Then wondered why patients got worse.
             </span>
           </h2>
         </div>
       </StepFragment>
 
-      {/* Step 1: Three stats — large, centered */}
+      {/* Step 1: Three scientific facts — staggered reveal, centered */}
       <StepFragment step={step} appear={1} recede={2}>
-        <div className="flex flex-col items-center gap-8">
-          {stats.map((stat, i) => (
-            <p
+        <div className="flex flex-col items-center gap-10 max-w-2xl px-6">
+          {facts.map((fact, i) => (
+            <motion.div
               key={i}
-              className="text-[36px] font-semibold leading-tight text-white sm:text-[44px] text-center"
+              className="text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={step >= 1 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{
+                duration: 0.5,
+                delay: i * 0.15,
+                ease: [0.22, 1, 0.36, 1],
+              }}
             >
-              {stat.prefix}
-              <span className="text-teal-400">{stat.highlight}</span>{" "}
-              {stat.text}
-              {stat.suffix}
-            </p>
+              <p className="font-serif text-[28px] font-semibold leading-tight text-white sm:text-[36px]">
+                {fact.headline}
+              </p>
+              <p className="mt-2 text-lg leading-relaxed text-gray-400">
+                {fact.body}
+              </p>
+            </motion.div>
           ))}
         </div>
       </StepFragment>
@@ -261,12 +270,11 @@ export function ProblemSection() {
               }}
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="text-[22px] font-semibold leading-snug text-white sm:text-[26px]">
-                244 compounds tested. One approval.
+              <p className="text-[24px] font-semibold leading-snug text-white sm:text-[28px]">
+                244 compounds tested against Alzheimer&apos;s. One conditional approval.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-300">
-                Alzheimer&apos;s drug development is 9x riskier, 40% slower,
-                and 2.2x more expensive than the industry average.
+                The worst success rate in all of medicine.
               </p>
               <p className="mt-3 text-sm text-gray-500">
                 Hover bars for sources
@@ -283,14 +291,11 @@ export function ProblemSection() {
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             >
               <div className="border-l-2 border-teal-600 pl-6">
-                <p className="text-[22px] font-semibold leading-snug text-white sm:text-[26px]">
-                  The targets were downstream
+                <p className="text-[24px] font-semibold leading-snug text-white sm:text-[28px]">
+                  Every major drug targeted plaques or the enzymes that produce them.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-gray-300">
-                  Plaques and tangles aren&apos;t causing disease. They&apos;re
-                  the brain&apos;s response to iron accumulation. 400+ drugs
-                  targeted these downstream markers instead of the iron biology
-                  driving them.
+                  BACE inhibitors blocked A&beta; production. Anti-amyloid antibodies cleared existing plaques. Both made patients worse. The proteins they removed were containing iron, not causing disease.
                 </p>
                 <Link
                   href="/explore/trials"
@@ -303,8 +308,6 @@ export function ProblemSection() {
           </div>
         </div>
       </motion.div>
-
-      <TrialExplorer isOpen={explorerOpen} onClose={() => setExplorerOpen(false)} />
     </div>
   );
 }

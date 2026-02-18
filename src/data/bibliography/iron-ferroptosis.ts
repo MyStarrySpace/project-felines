@@ -104,7 +104,7 @@ export const ironFerrOptosisSources: Source[] = [
     id: "ayton-2015-natcomms",
     title:
       "Ferritin levels in the cerebrospinal fluid predict Alzheimer's disease outcomes and are regulated by APOE",
-    authors: "Ayton S, Faux NG, Bush AI, et al.",
+    authors: "Ayton S, Faux NG, Bush AI; Alzheimer's Disease Neuroimaging Initiative.",
     journal: "Nature Communications",
     year: 2015,
     doi: "10.1038/ncomms7760",

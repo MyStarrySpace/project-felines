@@ -13,7 +13,6 @@ export const findings: KeyFinding[] = [
     kicker: "Key Finding",
     headline: "Iron has a U-shaped toxicity curve.",
     body: "Too little iron starves oligodendrocytes. Too much iron poisons them. Chelation trials worsened Parkinson\u2019s and Alzheimer\u2019s because they depleted iron from cells that needed it. The problem is distribution, not quantity.",
-    stat: { value: "3/3", label: "chelation outcomes predicted" },
     insight:
       "Deferiprone worsened PD. Chelation worsened AD. Chelation helped HD (genuine overload). Same drug, three diseases, three outcomes. The pattern only makes sense if iron distribution matters more than iron levels.",
   },

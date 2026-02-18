@@ -129,7 +129,7 @@ export const lysosomalSources: Source[] = [
   {
     id: "lieberman-2012-autophagy",
     title: "Autophagy in lysosomal storage disorders",
-    authors: "Lieberman AP, Puertollano R, Bhattacharya N, et al.",
+    authors: "Lieberman AP, Puertollano R, Raben N, et al.",
     journal: "Autophagy",
     year: 2012,
     doi: "10.4161/auto.19469",

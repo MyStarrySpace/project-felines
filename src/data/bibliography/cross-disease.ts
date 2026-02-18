@@ -4,7 +4,7 @@ export const crossDiseaseSources: Source[] = [
   {
     id: "hulse-2001-glia",
     title: "Astrocytic clasmatodendrosis in hippocampal organ culture",
-    authors: "Hulse RE, Winterfield J, Bhatt H, et al.",
+    authors: "Hulse RE, Winterfield J, Kunkler PE, et al.",
     journal: "Glia",
     year: 2001,
     doi: "10.1002/1098-1136(200102)33:2<169::AID-GLIA1016>3.0.CO;2-B",
@@ -150,20 +150,20 @@ export const crossDiseaseSources: Source[] = [
     verificationStatus: "verified",
   },
   {
-    id: "gibson-2019-cell",
+    id: "gibson-2018-cell",
     title:
       "Methotrexate chemotherapy induces persistent tri-glial dysregulation that underlies chemotherapy-related cognitive impairment",
     authors: "Gibson EM, Nagaraja S, Ocampo A, et al.",
     journal: "Cell",
-    year: 2019,
+    year: 2018,
     doi: "10.1016/j.cell.2018.10.049",
     pmid: "30528430",
     url: "https://pubmed.ncbi.nlm.nih.gov/30528430/",
     tags: ["oligodendrocyte", "microglia", "astrocyte"],
     citations: [
       {
-        citationId: "gibson-2019-cell-c1",
-        sourceId: "gibson-2019-cell",
+        citationId: "gibson-2018-cell-c1",
+        sourceId: "gibson-2018-cell",
         quote:
           "Methotrexate chemotherapy induces persistent tri-glial dysregulation with microglial activation, oligodendrocyte loss, and astrocyte reactivity",
         context:

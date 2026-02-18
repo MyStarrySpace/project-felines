@@ -16,7 +16,7 @@ export function CtaSection() {
   return (
     <div className="h-full relative overflow-hidden flex flex-col" role="region" aria-label="Conclusion">
       <ParallaxOrb
-        className="left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 bg-teal-600 opacity-10"
+        className="left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 bg-teal-600 opacity-[0.06]"
         speed={0.15}
       />
 
@@ -29,21 +29,21 @@ export function CtaSection() {
           variants={staggerContainer}
         >
           <motion.div variants={fadeInUp}>
-            <h2 id="cta-heading" className="font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[42px]">
+            <h2 id="cta-heading" className="font-serif text-[36px] leading-[1.2] tracking-[-0.01em] text-white sm:text-[52px]">
               Iron biology needs more attention
             </h2>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
             <ScrollRevealText
-              text="Single-target drugs keep failing. Interventions that address iron distribution, glial cell health, and export pathways together may do better. A companion paper with detailed evidence and kinetic modeling is forthcoming."
+              text="Single-target drugs keep failing. Interventions that address iron distribution, glial cell health, and export pathways together may do better."
               className="mt-6 block text-xl leading-relaxed sm:text-2xl sm:leading-relaxed"
               dimColor="rgba(107,114,128,1)"
               brightColor="rgba(209,213,219,1)"
             />
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="mt-10 flex gap-4">
+          <motion.div variants={fadeInUp} className="mt-14 flex gap-4">
             <Link href="/explore/biology">
               <Button
                 variant="primary-inverse"
