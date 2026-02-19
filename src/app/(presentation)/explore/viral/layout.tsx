@@ -9,6 +9,7 @@ const topics = [
   { label: "EBV & MS", href: "/explore/viral/ebv-ms" },
   { label: "COVID", href: "/explore/viral/covid" },
   { label: "Latent Proteins", href: "/explore/viral/latent-proteins" },
+  { label: "Iron & Reactivation", href: "/explore/viral/iron-reactivation" },
 ];
 
 export default function ViralLayout({

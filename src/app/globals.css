@@ -105,62 +105,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Glass card utilities */
+/* Reading-width container */
+.reading-width {
+  max-width: var(--width-reading);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Subtle section rule */
+.section-rule {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Minimal card style (used in explore pages) */
 .glass-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 0;
 }
 
 .glass-card-hover {
-  transition: background 200ms, border-color 200ms;
+  transition: border-color 200ms;
 }
 
 .glass-card-hover:hover {
-  background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Ambient glow */
-.glow-teal {
-  box-shadow: 0 0 80px rgba(217, 119, 6, 0.15);
-}
-
-/* Ambient gradient orb */
-.ambient-orb {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(64px);
-  opacity: 0.2;
-  pointer-events: none;
-}
-
-/* Dot pattern overlay */
-.dot-pattern {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.08) 1px,
-    transparent 1px
-  );
-  background-size: 24px 24px;
-}
-
-/* Section divider */
-.section-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06) 50%, transparent);
-}
-
-/* Teal gradient text */
-.text-gradient-teal {
-  background: linear-gradient(135deg, var(--teal-400), var(--teal-600));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Glow letter effect */
-.glow-letter {
-  filter: drop-shadow(0 0 16px rgba(217, 119, 6, 0.4));
 }

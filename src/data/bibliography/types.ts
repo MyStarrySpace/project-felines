@@ -20,6 +20,8 @@ export type TopicTag =
   | "huntingtons"
   | "tbi"
   | "ebv"
+  | "viral"
+  | "hsv"
   | "biomarkers"
   | "imaging"
   | "genetics";

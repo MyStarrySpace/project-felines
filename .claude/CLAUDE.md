@@ -46,9 +46,60 @@ Always consult these documents when building content for the site to ensure scie
 
 ## Design System
 
-**IMPORTANT**: Always refer to the component library at `/showcase` for visual reference when building new components or modifying existing ones. The showcase demonstrates proper usage of colors, typography, buttons, cards, badges, alerts, and tables. 
+Webflow-style scroll choreography. Dark theme, typography-driven, cinematic pacing.
 
-[This will be modified as we go]
+### Typography
+- **Headlines**: Instrument Serif. Max 3 font sizes per section.
+- **Body**: Geist Sans. Max 782px reading width.
+
+### Color
+- **Background**: `#1A0F0A` (navy-900)
+- **Text**: white for headlines, gray-300 for body, gray-400/500 for secondary
+- **Accent**: gold `#FBBF24` (teal-400) used sparingly: key statistics, active nav only
+- **No gradient text, no glow effects**
+
+### Layout
+- Left-aligned, 782px reading column (`reading-width` class), centered with generous vertical padding
+- **Primary pattern**: `StickyScrollStage` — tall scroll containers with sticky viewport and progress MotionValue
+- `ScrollSection` wraps each landing section (registers with scroll context). Use `fullWidth` for sticky stages.
+- Flowing content uses `ScrollAnimate` with `enterFrom` variants
+
+### Scroll Choreography Components
+- **`StickyScrollStage`**: Core building block. Children receive `progress` (0→1) MotionValue. Height in vh units.
+- **`ScrollBeat`**: Animate content within a stage. Maps sub-range of progress to enter/hold/exit. Supports `enterFrom`: `"left"`, `"right"`, `"bottom"`, `"fade"`, `"scale"`.
+- **`TypeReveal`**: Clip-path text reveal (left→right) driven by progress.
+- **`CountUp`**: Scroll-driven number animation. MotionValue-only (no React re-renders).
+- **`ScrollAnimate`**: For flowing (non-sticky) content. Supports `enterFrom`: `"bottom"` (default), `"left"`, `"right"`, `"scale"`.
+- **`ScrollHighlightText`**: Word-by-word highlight on scroll.
+
+### Allowed Transforms
+- `translateX` (horizontal slides: left/right entrance/exit)
+- `translateY` (vertical entrance from bottom)
+- `opacity` (fade in/out, dimming)
+- `scale` (0.92→1 entrance for emphasis)
+- `clipPath` (TypeReveal text reveals)
+- `scaleX` (horizontal rule draws)
+
+### Variable Pacing
+- **Slow**: Openers and closers (TypeReveal, large serif statements). Give readers time to absorb.
+- **Medium**: Data and evidence beats (stats, cards, diagrams).
+- **Fast**: Contrasts and punchy reveals (deferiprone stat, trial results).
+- Each `StickyScrollStage` defines its own timeline. Progress ranges should not overlap for sequential content, but can overlap slightly for staggered entrances within a beat.
+
+### Cards
+- One style only: `border border-white/5`, no background, no backdrop-filter
+- Explore pages may use `glass-card` class (minimal border, no backdrop-blur)
+
+### What NOT to add
+- Ambient orbs, parallax backgrounds, dot patterns
+- Glass/frosted cards with backdrop-filter
+- Gradient text (`text-gradient-teal` removed)
+- Marquee/ticker animations
+- Kicker badges (uppercase colored labels above headings)
+- Blur transitions
+- `StepFragment` or snap-to-slide navigation
+- `useSpring` on scroll-driven animations (causes lag)
+- React state updates on scroll (use MotionValues only)
 
 ## Citation Standards
 

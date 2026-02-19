@@ -6,16 +6,22 @@
 
 **Companion Document to: "The FELINE Framework: A Multi-Layer Defense Model Against Ferroptotic Neurodegeneration"**
 
-**Version:** 3.6 | **Date:** 2026-02-08
+**Version:** 3.28 | **Date:** 2026-02-16
 
 ---
 
 ## Table of Contents
 
+**EXECUTIVE SUMMARY**
+
+- [Alzheimer&#39;s Disease as Glial Ferroptotic Cascade](#executive-summary-alzheimers-disease-as-glial-ferroptotic-cascade)
+
 **PART 1: FRAMEWORK CORE**
 
 1. [Introduction and Framework Overview](#1-introduction-and-framework-overview)
 2. [Core Mechanisms](#2-core-mechanisms)
+
+   - 2.5 [Ferroptosis as Immune Defense](#25-ferroptosis-as-immune-defense-the-weapon-behind-the-disease)
 3. [Evidence Base](#3-evidence-base)
 
    - 3.5 [Single-Cell Transcriptomic Validation (scAURA x FELINE)](#35-single-cell-transcriptomic-validation-scaura-x-feline)
@@ -30,6 +36,8 @@
    - 8.3 [Astrocyte Iron Biology: Expanded Evidence Base](#83-astrocyte-iron-biology-expanded-evidence-base-added-february-2026)
    - 8.16 [Amyloid as Convergent Containment](#816-amyloid-as-convergent-containment-a%CE%B2-fibrin-and-tau-as-parallel-defense-systems)
    - 8.17 [Microglia as Containment Engineers](#817-microglia-as-containment-engineers-plaque-compaction-not-clearance)
+   - 8.18 [SNAP–Complement Inverse: Astrocyte Program Decline Enables Synapse Elimination](#818-snapcomplement-inverse-astrocyte-program-decline-enables-synapse-elimination)
+   - 8.19 [Base Barrier Cells and the Iron-Barrier Inventory](#819-base-barrier-cells-and-the-iron-barrier-inventory)
 
 **PART 3: CRITICAL ANALYSIS**
 9. [Open Questions](#9-open-questions)
@@ -106,6 +114,212 @@
 - [Appendix 7.4: Core References by Topic](#appendix-74-core-references-by-topic)
 - [Appendix 7.5: Glossary of Key Terms](#appendix-75-glossary-of-key-terms)
 - [Appendix 7.6: Diagram Reference](#appendix-76-diagram-reference)
+
+---
+
+# EXECUTIVE SUMMARY: Alzheimer's Disease as Glial Ferroptotic Cascade
+
+---
+
+It is remarkable how much Alzheimer's disease pathology can be captured with barely any mention of neurons and synapses.
+
+The main driver of pathology is **ferroptosis** — iron-dependent cell death — causing Fenton reactions that kill off **glial cells**, which are iron-rich and metabolically vulnerable, setting off a cascade that damages the rest of the brain. Neurons are downstream casualties, not primary targets.
+
+### Amyloid Beta Is Protective
+
+Amyloid beta (Aβ) is not the cause of the disease. Microbes have been found trapped within Aβ deposits, consistent with Aβ functioning as an antimicrobial peptide (Soscia et al. 2010; Eimer et al. 2018). Critically, Aβ has a binding site for iron that faces *away* from the inner surface that traps microbes — a structural architecture consistent with dual-function containment: microbial sequestration on the inside, iron chelation on the outside (Boopathi & Bhatt 2022). Microglia attempt to condense these deposits into compact plaques, and compaction — not clearance — is what reduces neuritic damage (Baligács et al. 2024). Dense-core plaques are sarcophagi, not tombstones.
+
+### The Iron Accumulation Cascade
+
+As time progresses, iron keeps building up due to impaired vascular and glymphatic clearance systems. This is not a single-point failure but a multi-system collapse:
+
+**Pericyte damage** causes astrocyte depolarization — loss of the aquaporin-4 (AQP4) polarity at endfeet that drives glymphatic flow — and later full astrocyte dysfunction, crippling the brain's primary iron distribution and export system (the ceruloplasmin-ferroportin complex at astrocyte endfeet). The **glymphatic system** — the brain's waste clearance pathway, driven by AQP4-mediated water flux along perivascular channels primarily during sleep — is also the brain's primary route for bulk iron clearance. When AQP4 polarity is lost, glymphatic flow stagnates, and iron-laden interstitial fluid that should be flushed into the cervical lymphatics instead pools in the parenchyma. This is why sleep disruption accelerates neurodegeneration: it is not merely "restorative rest" that is lost, but active iron and waste clearance (Xie et al. 2013; Mestre et al. 2018). **Acidification of the extracellular space** occurs simultaneously with **deacidification of lysosomes** — a bidirectional scissor that promotes Aβ aggregation and iron reactivity outside cells at exactly the moment the intracellular degradation machinery loses the acidic pH its cathepsins need to function. Damage to microglial processing capacity means the cells tasked with containment become iron-loaded, glycolytically shifted, and functionally impaired — unable to compact new deposits or finish degrading what they have already engulfed.
+
+This is why every amyloid-targeted, anti-inflammatory, and immune therapy only partially works. They are treating consequences, not causes.
+
+### Why Existing Therapies Show Only Partial Benefit
+
+**Donepezil** targets the cholinergic system, which is downstream. The cholinergic deficit becomes clinically significant with choroid plexus damage — and the choroid plexus is not merely a source of acetylcholine. It is the primary source of CSF, the main route for transferrin-mediated iron transport regulation into the brain, and a key component of the glymphatic clearance system. Donepezil's modest benefit may come partly from supporting residual cholinergic tone at the choroid plexus, helping maintain CSF turnover that indirectly supports the E-layer (Export/clearance). It treats a symptom of E-layer failure, not the failure itself.
+
+**Memantine** mitigates excitotoxicity, which amplifies but does not cause iron buildup. Iron potentiates glutamate release, impairs glutamate reuptake by damaging astrocyte EAAT2 transporters, and sensitizes NMDA receptors. Memantine blocks the terminal execution pathway but does not touch the iron dysregulation driving excessive glutamate signaling. It is a tourniquet, not a repair.
+
+**Anti-Aβ monoclonal antibodies** (lecanemab, donanemab) bind protofibrils and promote Fc-mediated phagocytosis of these intermediate species. The microglia may be processing them into more compact, less surface-exposed forms — essentially *accelerating the brain's own containment process* — which is why there is modest clinical benefit (fewer toxic soluble species), amyloid PET signal decreases (diffuse protofibrils converted to dense-core material), and the benefit is transient upon stopping (new protofibrils are continuously generated by the same upstream conditions, and without the antibody helping microglia manage the flow, they accumulate again). The antibody is not clearing the disease. It is helping compact it. When the antibody stops, compaction falls behind production (van Olst et al. 2025; Albertini et al. 2025). Worse, if ARIA effects persist — the fibrinogen liberation, the vascular wall weakening from disassembling the Aβ-fibrinogen-iron containment matrix in cerebral amyloid angiopathy — the antibodies may actively *damage* the neurovascular unit they pass through. A therapy that breaches the N-layer while modestly assisting the I-layer could produce net harm in patients where vascular containment was the rate-limiting defense (see Appendix 2.5, Appendix 6.3). And these antibodies do not fix upstream effects like memory loss induced by damage to astrocytes, which provide cholesterol for long-term memory formation via the SNARE/SNAP-25 vesicle fusion complex (see below) and, more broadly, through the SNAP gene expression program (Ling et al. 2024, see §8.18).
+
+### The Astrocyte-Cholesterol-Memory Connection
+
+Astrocytes are the brain's primary cholesterol producers, and neurons depend entirely on astrocyte-derived cholesterol for synaptic membrane remodeling during long-term potentiation (Ferris et al. 2017). The SNARE/SNAP-25 complex — the molecular machinery for synaptic vesicle fusion — requires cholesterol-rich membrane domains to function. (Note: SNAP-25, the soluble NSF attachment protein, is distinct from the SNAP gene expression program described in §8.18.) When astrocytes fail, cholesterol delivery to neurons ceases, and memory formation is physically impossible regardless of how many plaques are cleared.
+
+The cholesterol pathway and the iron pathway converge in the **astrocyte endoplasmic reticulum**. Cholesterol synthesis requires the mevalonate pathway, which is exquisitely sensitive to ER redox state. Iron-driven oxidative stress — Fenton chemistry in the ER lumen, where iron is present as an enzymatic cofactor — directly damages the HMG-CoA reductase system. This is not merely "general stress reducing output." Iron is specifically attacking the enzymatic machinery that makes cholesterol. The Fe-layer (iron) directly degrades the I-layer (insulation, which includes membrane cholesterol), which degrades synaptic function, which produces cognitive decline — all without touching a neuron directly (Tcw et al. 2022; Blanchard et al. 2022).
+
+### The Oligodendrocyte Problem — First to Die, Hardest to Replace
+
+Oligodendrocytes are the most iron-rich cells in the brain. They require enormous quantities of iron as a cofactor for the enzymes that synthesize cholesterol and fatty acids for myelin membranes — the insulation that enables rapid nerve conduction. This makes them the first cellular casualties when iron homeostasis fails: the cells with the most iron are the most vulnerable to iron-driven lipid peroxidation. FELINE identifies oligodendrocyte ferroptosis as a primary pathological event, not collateral damage.
+
+When an oligodendrocyte dies, three things happen simultaneously. First, the myelin sheath degrades — axons lose their insulation, nerve conduction slows, and the exposed membrane becomes vulnerable to extracellular reactive oxygen species. Second, the oligodendrocyte's stored iron floods into the parenchyma, directly amplifying the iron maldistribution that triggered the death in the first place. In multiple sclerosis, this is literally visible on MRI as iron rim lesions: rings of iron-laden microglia surrounding cores of dead oligodendrocytes, which predict disability progression (OR 2.24–2.87). Third, and most critically, oligodendrocytes actively protect their neighboring neurons by secreting ferritin heavy chain (FTH1), an iron-sequestering protein that buffers the extracellular labile iron pool (Mukherjee et al. 2020, Cell Metabolism). When oligodendrocytes die, neurons lose both the myelin barrier *and* this iron-buffering support simultaneously — a "double insulation" failure that leaves axons exposed to both mechanical and chemical damage.
+
+This reframes white matter changes in Alzheimer's disease. Diffusion tensor imaging consistently shows white matter disruption years before clinical symptom onset — often interpreted as "secondary" to cortical neuronal loss. FELINE argues the opposite: white matter damage is upstream, driven by oligodendrocyte ferroptosis from iron maldistribution, and the cortical symptoms that follow reflect the loss of the connectivity those oligodendrocytes maintained. The observation that oligodendrocyte precursor cells (OPCs) can proliferate and migrate to injury sites but fail to mature into myelinating oligodendrocytes in the diseased brain (Cheli et al. 2020) completes the trap: even the brain's replacement mechanism fails because the new cells need iron to mature, but the iron is in the wrong compartments — trapped in lysosomes, sequestered in ferritin aggregates, complexed with Aβ — unavailable for the very process that would repair the damage.
+
+### Tau — Not a Toxin, an Iron Manager That Failed
+
+Tau is almost universally described as a microtubule-stabilizing protein that "goes bad" through hyperphosphorylation and aggregation. FELINE reframes tau as primarily an iron management protein — one whose normal functions include both emergency iron buffering and active iron export, and whose pathological aggregation represents the catastrophic failure of both.
+
+The evidence for tau as iron manager is direct. Lei et al. (2012, Nature Medicine) showed that tau knockout mice develop age-dependent brain iron accumulation, substantia nigra neuronal loss, cognitive deficits, and parkinsonism — a phenotype that was *prevented by iron chelation*. The mechanism: tau normally facilitates the surface trafficking of APP, which stabilizes ferroportin — the only known mammalian iron exporter. Without tau, APP cannot reach the membrane, ferroportin is internalized and degraded, and neurons lose their ability to export iron. Tuo et al. (2017, Molecular Psychiatry) confirmed the other direction: tau-mediated iron export actively prevents ferroptotic damage after ischemic stroke. Tau is not merely associated with iron homeostasis — it is a functional component of the neuronal iron export machinery.
+
+Tau also has a direct iron-binding motif and can bind excess cytosolic Fe²⁺ as an emergency buffer — part of FELINE's I-layer "compartmental insulation." When iron levels rise acutely, tau sequesters the excess, preventing immediate Fenton chemistry damage. But this emergency buffering comes at a cost: tau bound to iron is tau unavailable for APP trafficking. The neuron gains temporary iron buffering but loses iron export capacity.
+
+This creates the most destructive positive feedback loop in the FELINE framework. Rising intracellular iron activates GSK3β and CDK5, which hyperphosphorylate tau. Hyperphosphorylated tau detaches from microtubules and aggregates into neurofibrillary tangles. Aggregated tau can neither buffer iron (binding sites are buried in the aggregate core) nor facilitate APP trafficking for iron export. Iron that was being managed by functional tau is now unmanaged — free to catalyze Fenton reactions, drive lipid peroxidation, and promote further tau hyperphosphorylation. Post-mortem analyses confirm iron deposits trapped within tau fibrils in AD cortex (Smith et al. 1997). Each step of tau pathology makes the iron problem worse, and each increment of iron makes tau pathology worse, until the system collapses into ferroptosis.
+
+This reframing explains one of the longest-standing puzzles in AD research: why tau pathology correlates far more strongly with cognitive decline than amyloid pathology does (Braak staging). If tau's normal function is managing neuronal iron — both buffering it and exporting it — then tau failure means neurons have lost their primary iron defense system. The cognitive decline tracks with tau because tau failure is the point at which neurons become defenseless against the iron that has been building up for years. Amyloid, by contrast, is the extracellular defense — important, but operating in a different compartment. The neuron dies not when extracellular Aβ fails, but when intracellular tau fails. FELINE predicts that interventions restoring tau's iron export function — rather than simply preventing tau aggregation — would be more therapeutically relevant than current anti-tau antibody approaches, which remove tau protein without addressing the iron accumulation that drove its dysfunction.
+
+### The Down Syndrome Argument — and Its Reinterpretation
+
+The amyloid field claims that Aβ causes Alzheimer's because individuals with Down syndrome (trisomy 21) have three copies of the APP gene on chromosome 21 and develop early-onset AD nearly universally. If more APP means more Aβ, and more Aβ means more disease, then Aβ must be the cause.
+
+But chromosome 21 contains over 200 other genes, and triplication of several of them independently promotes neurodegeneration through iron-mediated and oxidative mechanisms:
+
+**SOD1** (superoxide dismutase 1): Triplication creates a paradox — 50% more SOD1 converts superoxide to hydrogen peroxide, but without proportional increases in catalase or glutathione peroxidase to neutralize the H₂O₂, the net result is *increased* oxidative stress and Fenton substrate production. SOD1 is two-fold higher in Down syndrome–AD brains compared to sporadic AD (Shin et al. 2001; Head et al. 2025). **DYRK1A**: This kinase phosphorylates both APP (promoting amyloidogenic processing) and tau (promoting tangle formation), and Aβ itself upregulates DYRK1A, creating a feed-forward loop. But DYRK1A also disrupts mitochondrial dynamics and calcium signaling — iron-handling infrastructure (Kimura et al. 2007; García-Cerro et al. 2017). **RCAN1** (regulator of calcineurin 1): Dysregulates the redox pathway and promotes oxidative mitochondrial damage. **BACH1**: A transcription factor on chromosome 21 that *represses* the antioxidant Nrf2 pathway — the master regulator of ferroptosis defense genes including GPX4, ferritin, and heme oxygenase (Head et al. 2025). **SYNJ1** (synaptojanin 1): Disrupts endosomal trafficking and lysosomal function.
+
+The triplication of these genes creates a brain under chronic oxidative siege from birth, with simultaneously *increased* Fenton substrate (SOD1→H₂O₂), *increased* iron-handling disruption (DYRK1A, RCAN1), and *suppressed* ferroptosis defense (BACH1→Nrf2 repression). This is a FELINE multi-layer failure written into the genome.
+
+**The decisive natural experiment**: Doran et al. (2017) described an elderly man with phenotypic Down syndrome from partial trisomy 21 whose trisomic segment *did not include APP*. He had only two copies of APP. He was studied from ages 66–72 with serial neuropsychological testing, amyloid PET (PiB), plasma Aβ measurements, and ultimately brain autopsy. His cognitive scores declined less than 3% over 7 years (compared to 17–28% per year in DS individuals who develop dementia). His PiB-PET showed amyloid levels comparable to normal controls. His autopsy showed a paucity of amyloid plaques, no neurofibrillary tangle pathology, and no evidence of AD. A second case — a 78-year-old woman with partial trisomy 21 excluding APP (Prasher et al. 1998) — similarly showed no dementia and minimal neurodegeneration at autopsy.
+
+The amyloid field cites these cases as proof that APP triplication is necessary for AD in Down syndrome. FELINE agrees — *but for different reasons*. APP triplication means 50% more APP protein, which disrupts iron homeostasis through altered ferroportin stabilization, chronic overproduction of Aβ-metal complexes that create zinc feedback loops, and overloading of the iron export system. The disease results from iron export system saturation, not Aβ toxicity per se. Moreover, Wiseman et al. (2018) demonstrated in mouse models that triplication of chromosome 21 genes *other than APP* independently increases Aβ aggregation, plaque deposition, and cognitive deficits — proving that non-APP genes on chromosome 21 modulate the disease. The Down syndrome story is more complex than "more APP → more Aβ → more disease."
+
+### The Genetic Evidence — and Why It Actually Points to Iron
+
+The strongest objection to any non-amyloid model of AD is genetic: every known autosomal dominant AD mutation (APP, PSEN1, PSEN2) directly affects amyloid processing. Not iron transport, not ferroptosis defense, not lysosomal iron handling — amyloid processing. If iron maldistribution were the primary driver, why has no one ever found a familial AD pedigree caused by a mutation in a ferroptosis gene or iron transporter?
+
+This argument contains a hidden assumption: that genes are defined by a single function, and that the function for which they were *named* is the function through which they cause disease. This is the gene naming fallacy. BRCA1 is named for breast cancer, but it's a DNA repair gene — nobody claims breast cancer is "a DNA repair disease" just because the causal mutation is in a DNA repair gene. The mutation creates the vulnerability; the disease mechanism is downstream.
+
+**APP is not just an amyloid gene — it is an iron management protein.** APP has ferroxidase activity, oxidizing toxic Fe²⁺ to safe Fe³⁺ for transferrin loading (Duce et al. 2010). APP stabilizes ferroportin at the cell surface — the only known mammalian iron exporter. APP knockout mice develop brain iron accumulation. Tau facilitates APP surface trafficking for this iron export function (Lei et al. 2012). When familial APP mutations alter processing, they don't just change Aβ production — they disrupt the entire neuronal iron export complex. The gene is named "amyloid precursor protein" because amyloid was discovered first. If iron export had been discovered first, it would be called "ferroportin-stabilizing protein" and we would describe Aβ as its cleavage byproduct.
+
+**Presenilin mutations cause disease through ferroptosis, not amyloid.** Greenough et al. (2022, Cell Death & Differentiation) demonstrated this directly. PSEN1/PSEN2 are the catalytic subunit of γ-secretase, yes — but their *other* function is cleaving Notch-1, which activates LRP8 transcription, which imports selenoprotein P, which provides selenium for GPX4, the master ferroptosis regulator. Familial AD presenilin mutations reduce γ-secretase activity, cutting LRP8 expression by over 50%, selenium uptake by 39–71%, and GPX4 expression by roughly 60%. The result: ferroptosis is derepressed. Critically, presenilin conditional double-knockout mice develop neurodegeneration, hyperphosphorylated tau, and neuroinflammation *without Aβ plaques*. The neurodegeneration is explained entirely by the Notch-1/LRP8/selenium/GPX4 axis. And the PS1-ΔE9 familial mutation produces neurons with 26% more iron *and* 23% more zinc alongside reduced GPX4 — the precise FELINE signature of increased ferroptotic pressure meeting decreased ferroptotic defense. The paper explicitly states: "our studies demonstrate the potential for presenilin mutations to promote neurodegeneration irrespective of Aβ."
+
+**The GWAS hits support FELINE, not the amyloid hypothesis.** The top sporadic AD risk loci — APOE, TREM2, ABCA7, CLU, BIN1, PICALM — cluster around lipid metabolism, immune function, and endosomal trafficking. Critics cite this as pointing away from iron. But consider what ferroptosis actually *is*: iron-catalyzed peroxidation of PUFA-containing membrane phospholipids. The substrate of ferroptosis is lipids. The cells that manage brain iron are immune cells (microglia). Iron delivery occurs through endosomal trafficking (transferrin receptor endocytosis). "Lipid metabolism + immune function + endosomal trafficking" isn't pointing away from iron-ferroptosis — it's describing ferroptosis from the substrate and cellular side rather than the catalyst side. Specifically: APOE4 reduces the ability to block ferritinophagy, directly increasing lysosomal iron release (Belaidi et al. 2024). TREM2 loss-of-function creates iron-retentive microglia that cannot process myelin debris, leaving iron trapped in the parenchyma. PICALM directly regulates transferrin receptor trafficking — the primary route of cellular iron uptake. These genes weren't *identified* as iron genes because nobody was looking for iron connections when they were discovered, but the mechanistic links are direct.
+
+**Iron genes do associate with AD — they're just below standard GWAS thresholds.** Crespo et al. (2014, Neurobiology of Aging) genotyped 60 SNPs across iron metabolism genes in AD patients versus controls and found significant associations in TF (transferrin), TFR2 (transferrin receptor 2), ACO1 (aconitase 1, an iron-responsive element binding protein), and SLC40A1 (ferroportin). They simultaneously showed decreased ferroportin transcript levels and decreased serum iron/ferritin in AD patients — genetic, transcriptional, and biochemical evidence converging on systemic iron dysregulation. These associations don't reach genome-wide significance in large GWAS because FELINE predicts iron vulnerability is *distributed* across many genes with small individual effects, each contributing to a different defense layer. If neurodegeneration requires multi-layer failure — which is the Swiss cheese model's core claim — then no single iron gene variant would produce enough risk to reach the p < 5×10⁻⁸ threshold. The signal is real but spread across dozens of loci. Meanwhile, APOE4 reaches genome-wide significance because it is a single common variant that happens to compromise *multiple* FELINE layers simultaneously (lipid transport, ferritinophagy regulation, microglial function, BBB integrity) — a multi-layer vulnerability compressor detectable precisely because it affects so many layers at once.
+
+**Hemochromatosis genes provide the most direct test — and they confirm the prediction.** HFE mutations that cause systemic iron overload should increase dementia risk if FELINE is correct. They do. Atkins et al. (2021, J Alzheimers Dis) analyzed 154,000 UK Biobank participants and found male HFE C282Y homozygotes had 1.83× higher dementia risk (HR 1.83, 95% CI 1.21–2.76, p=0.004), with visible iron deposition on MRI in the putamen and caudate — the exact pattern of subcortical iron loading FELINE predicts from systemic iron dysregulation reaching the brain. Olynyk et al. (2025, Neurology) confirmed in a separate prospective cohort of 12,174 older adults that male H63D homozygotes had 2.39-fold higher dementia risk, and the Rotterdam Study found HFE H63D homozygosity accelerates age of AD onset, particularly in APOE4 carriers — an iron gene × lipid gene interaction that FELINE's multi-layer model predicts but the amyloid hypothesis has no reason to expect. Critically, the sex specificity of the HFE effect (significant in men, attenuated in premenopausal women) is exactly what FELINE's sex-stratified iron model predicts: women's menstrual iron export and estrogen-mediated ferroportin upregulation buffer against HFE-driven iron accumulation until menopause removes both protections.
+
+The genetic evidence does not point to amyloid as a disease mechanism. It points to genes whose first-discovered functions involve amyloid processing but whose iron-related functions are equally real and, in at least one case (presenilin), demonstrably more relevant to the neurodegeneration than the amyloid function is. Of the top 20 sporadic AD risk genes identified by GWAS, more encode lipid transporters, lipid sensors, and endosomal iron-trafficking machinery than encode anything directly involved in Aβ production or clearance — the field calls them "Alzheimer's genes," but their molecular functions read like an inventory of ferroptosis substrates and iron-handling infrastructure.
+
+### Why Iron Chelation Made Things Worse
+
+If iron drives neurodegeneration, removing iron should help. It does not. Deferiprone — the only iron chelator that crosses the blood-brain barrier — has now been tested in both Parkinson's disease (FAIRPARK-II, Devos et al. 2022, NEJM) and Alzheimer's disease (Ayton et al. 2025, JAMA Neurology), and in both cases it *accelerated* cognitive or motor decline despite successfully reducing brain iron on MRI.
+
+The reason is that iron has a **U-shaped relationship** with brain function. Too little iron is as dangerous as too much. Oligodendrocytes — the cells that make myelin — are the most iron-hungry cells in the brain, requiring iron as a cofactor for the enzymes that synthesize cholesterol and fatty acids for myelin membranes (Cheli et al. 2020). Neurons need iron for mitochondrial respiration via iron-sulfur clusters. The GPX4 enzyme that *prevents* ferroptosis is itself iron-dependent. Removing iron indiscriminately does not just reduce the pathological pool — it starves the cells and enzymes that defend against the disease.
+
+Deferiprone's failure is a matter of molecular physics. At 139 daltons — smaller than glucose — it crosses every membrane in the brain by passive diffusion. It enters mitochondria, permeates lysosomes, penetrates every subcellular compartment. It cannot distinguish between iron catalyzing Fenton reactions in the wrong place and iron sitting in a cytochrome doing its job. It chelates both. The result: the small pool of bioavailable iron that cells need for function is depleted first (it is the most accessible), while iron trapped inside lysosomes and ferritin aggregates — the pathological pool — remains relatively protected behind membranes that slow chelator access.
+
+In the Ayton AD trial, deferiprone successfully reduced hippocampal iron (QSM change: −0.36 ppb vs. +0.32 ppb placebo, p=0.024) but produced *accelerated* cognitive decline (NTB composite z-score: −0.80 vs. −0.30, p<0.001), driven specifically by worsening executive function. The drug hit its pharmacological target and made the disease worse.
+
+This is the strongest evidence that the problem in Alzheimer's is not iron *overload* but iron *maldistribution*. Total brain iron is elevated, but it is in the wrong compartments — trapped in lysosomes with pH too high to release it, locked in ferritin cages, sequestered in reactive microglia, complexed with Aβ plaques. Meanwhile, the cytoplasm senses iron deficiency, upregulates transferrin receptor to import more, and the imported iron gets trapped in the same dysfunctional compartments. A vicious cycle of rising total iron with falling functional iron. Chelation accelerates the functional deficiency without breaking the cycle. The therapeutic goal must be iron *redistribution*, not removal — restoring the compartmentalization machinery (lysosomal pH, ferroportin expression, glymphatic clearance) rather than depleting the element itself (Peikon & Andrews 2026, JCI; Ayton et al. 2025, Brain).
+
+### Men and Women Have Different Iron-Handling Architecture
+
+One of the most underappreciated facts in Alzheimer's research is that men and women have fundamentally different iron biology, and this difference is not merely quantitative — it is architectural.
+
+**Premenopausal women** export approximately 30–40mg of iron per month through menstruation, maintaining serum ferritin levels 2–3× lower than men's. This is not pathological iron deficiency — it is a protective "bloodletting" that keeps brain iron stores low. Estrogen independently suppresses hepcidin (the master iron-regulatory hormone), promoting ferroportin-mediated iron export from cells. The result is that premenopausal women have lower brain iron, less iron-loaded microglia, and preserved phagocytic function.
+
+**At menopause**, both protections are lost simultaneously. Menstrual iron export ceases abruptly. Estrogen loss causes hepcidin to rise, degrading ferroportin and trapping iron inside cells including microglia. Brain ferritin levels, which had been rising slowly, accelerate 10-fold (coefficient increases from 2.10 pre-menopause to 20.27 around the final menstrual period). Within approximately 10 years post-menopause, women's brain iron converges toward men's levels.
+
+**Critical proof that menstruation — not just estrogen — is the mechanism**: Bartzokis et al. (2011) showed that women who underwent premenopausal hysterectomy with ovaries intact (estrogen preserved but menstruation eliminated) have brain ferritin iron levels *indistinguishable from men's*.
+
+**The iron-handling failure is sex-specific in AD itself**: Rahman et al. (2025) found that in Alzheimer's, the relationship between brain iron deposits and microglial ferritin is *opposite by sex*. Men with AD show a positive correlation (more iron → microglia store more in ferritin — the normal compensatory response). Women with AD show a *negative* correlation (more iron → microglia store *less* in ferritin — storage machinery failing). This means that in mixed-sex AD cohorts, which are majority female, the male positive signal and female negative signal partially cancel out, producing weak or null aggregate iron effects and leading researchers to incorrectly conclude iron is less relevant in AD than in Parkinson's (where 60% of patients are male and the classical accumulation pattern is easily detected).
+
+Women may enter the FELINE cascade through the L-layer (lysosomal/ferritin storage failure in microglia) while men enter through the N-layer (neurovascular damage) or E-layer (export failure). The end result — iron maldistribution → ferroptosis → glial death → neurodegeneration — is the same. But the entry point, the biomarker signature, and the optimal therapeutic approach diverge by sex in ways that no unstratified trial can detect.
+
+### Prospective Therapeutics: Size-Selective Iron Redistribution
+
+If the problem is iron maldistribution rather than overload, the therapeutic goal shifts from removal to redistribution — and molecular size determines which iron compartments a molecule can reach. FELINE predicts, counterintuitively, that larger molecules should outperform smaller ones because their restricted distribution better matches the therapeutic need.
+
+**Theracurmin** (368 Da) — a nanoparticle curcumin formulation achieving ~27× higher bioavailability than standard curcumin — partitions preferentially into lipid bilayers, placing it at the membrane interface where ferroptosis executes. It engages multiple FELINE layers simultaneously: Fe²⁺ chelation at membranes (Fe-layer), hepcidin suppression preserving ferroportin (E-layer), autophagy enhancement (L-layer), and NF-κB suppression reducing microglial inflammation (I-layer). Small et al. (2018, Am J Geriatr Psychiatry) showed Theracurmin 90 mg twice daily for 18 months improved memory and attention and reduced FDDNP-PET binding in non-demented adults. FELINE predicts efficacy will be greatest in patients with high baseline brain iron (QSM-MRI) and APOE ε4 genotype.
+
+**Intranasal apo-lactoferrin** (~80,000 Da) represents a fundamentally different strategy. At 575× the mass of deferiprone, lactoferrin cannot cross cell membranes by passive diffusion — which is its greatest advantage. It operates exclusively in the extracellular space where pathological iron accumulates (iron spilling from dying cells, iron at the compromised BBB, iron in inflammatory microenvironments). It binds iron with 300× higher affinity than transferrin and, critically, retains binding at acidic pH where transferrin releases iron inappropriately. Intranasal delivery bypasses the gut, where oral apo-lactoferrin would pick up dietary iron and arrive at the brain as iron-loaded holo-lactoferrin — potentially worsening the problem. Mohamed et al. (2019) showed oral lactoferrin improved cognition and reduced Aβ42, IL-6, p-tau, and caspase-3 in AD patients in a pilot study.
+
+The optimal combination predicted by FELINE layers all three size classes: apo-lactoferrin (extracellular iron scavenging) + Theracurmin (membrane ferroptosis protection) + a ferroptosis inhibitor such as liproxstatin-1 (intracellular lipid peroxidation block). Deferiprone is explicitly excluded.
+
+### Prospective Diagnostics: Seeing Iron Before Symptoms
+
+If FELINE's temporal ordering is correct — neurovascular damage → iron maldistribution → amyloid response → neurodegeneration — then current diagnostics detect the disease too late. Amyloid PET and p-tau217 measure intermediate-to-late cascade events. Three complementary strategies could detect earlier stages and, crucially, distinguish patients at different points in the cascade.
+
+**Retinal imaging** exploits the fact that the retina shares embryological origin, vascular architecture, and iron-handling machinery with the brain — and it is optically accessible. Retinal pericyte loss (37% in AD; Shi et al. 2020), retinal iron doubling (Mashkani et al. 2024), and retinal gliosis correlating with plasma p-tau217 (Ravichandran et al. 2025) have all been documented. A multimodal stack combining OCTA (vascular density → N-layer), SD-OCT (layer thickness → I-layer), and hyperspectral imaging (spectral signatures for iron absorption and amyloid scattering → Fe-layer) could simultaneously read multiple FELINE layers in a ~15-minute, ~$200 scan at any optometry office. The proposed FELINE-EYE study would test whether retinal vascular density declines before iron signal rises, which rises before amyloid signal — the temporal ordering the framework predicts. No current imaging modality measures iron distribution and amyloid status simultaneously at this cost and accessibility. This is the population-screening tier.
+
+**QSM-MRI + DTI-ALPS** provides the brain-level longitudinal monitoring tier. QSM (quantitative susceptibility mapping) measures tissue iron distribution non-invasively, while DTI-ALPS (along-perivascular-space diffusivity) serves as a proxy for glymphatic function. Combining them in the same MRI session — no radiation, repeatable annually — tests FELINE's core mechanism: does glymphatic failure spatially co-localize with iron accumulation? Existing data already suggests yes — Ayton et al. (2017) showed hippocampal QSM predicted amyloid-related cognitive decline, Lee et al. (2025) showed iron accumulates where atrophy has not yet occurred (positioning iron as an earlier marker than volume loss), and Zarkali et al. (2025) published the only combined QSM + ALPS study, showing that in Parkinson's disease, lower glymphatic function associates with altered iron distribution. Sex-stratified analysis of combined QSM + ALPS has never been performed but is a direct test of FELINE's sex-specific entry point prediction. For tracking whether iron redistribution therapy is working over years, QSM+ALPS is the right tool — it images the upstream cause without cumulative radiation exposure.
+
+**Ferroptosis-specific ¹⁸F PET** adds what QSM fundamentally cannot see: whether the cellular defenses are holding. Two patients could show identical QSM iron signals but be at completely different points in the FELINE cascade — one's GPX4/GSH system compensating, the other's about to fail. Two existing tracers read this directly. [¹⁸F]FSPG images system xc⁻ (SLC7A11/xCT) activity — the cystine/glutamate antiporter that imports cystine for GSH synthesis to feed GPX4, the rate-limiting step of the ferroptosis brake. Elevated [¹⁸F]FSPG uptake would indicate a cell maxing out its antioxidant defense, desperately importing cystine to keep up with iron-driven lipid peroxidation — the transition zone between FELINE's Fe-layer (iron accumulating) and I-layer (defenses failing). Declining uptake in tissue that still shows high QSM iron would signal defense exhaustion: ferroptosis is winning. [¹⁸F]FSPG has been used in oncology to image oxidative stress in tumors but has never been applied to neurodegeneration — FELINE provides the rationale. [¹⁸F]-BCPP-EF, a mitochondrial Complex I tracer, adds a third dimension: is mitochondrial ATP production intact? This matters because FELINE predicts stage-dependent therapeutic responses — interventions that enhance autophagy (rapamycin, ferritinophagy) are beneficial when mitochondria can still power V-ATPase and GPX4, but harmful when ATP is depleted and iron released from ferritin floods defenseless cells. BCPP-EF tells you whether you're in the "safe to intervene" window or the "will backfire" window.
+
+The ideal FELINE diagnostic protocol would layer all three tiers: retinal imaging for population-level screening (~$200/visit, any optometry office), QSM+ALPS annually for longitudinal iron distribution and clearance monitoring (~$500–800, no radiation), and a single baseline [¹⁸F]FSPG + [¹⁸F]-BCPP-EF PET session for defense and mitochondrial stratification (~$3–5K, one-time). That combination reads all five FELINE layers: N (ALPS glymphatic function + retinal OCTA vascular density), Fe (QSM iron distribution + retinal HSI iron signal), L (retinal gliosis), I ([¹⁸F]FSPG ferroptosis defense status + retinal RNFL thickness), and E (BCPP-EF mitochondrial capacity as a proxy for energy-dependent export). No single modality covers the full framework. Together, they could stratify patients into "iron accumulating but defenses intact" (redistribute iron) versus "iron accumulating and defenses failing" (urgent ferroptosis inhibition) versus "mitochondria depleted" (supportive care, avoid interventions that increase energy demand) — three fundamentally different therapeutic decisions from a single diagnostic workup.
+
+### What Would Break FELINE
+
+A framework that cannot be falsified is not a scientific framework. The following observations, if made with rigorous methodology, would require fundamental revision or abandonment of FELINE's core claims.
+
+**1. Full AD phenotype with demonstrably normal iron distribution throughout the disease course.** If longitudinal QSM-MRI in a prospective cohort showed that individuals who develop the complete AD clinical and pathological phenotype — plaques, tangles, synaptic loss, cognitive decline in the characteristic temporal-to-frontal spread — maintain normal brain iron distribution from presymptomatic stages through clinical disease, FELINE's central claim (iron maldistribution drives the cascade) would be falsified. Note that this is a stronger requirement than "some patients have normal iron at one time point" — FELINE allows for compensatory mechanisms that temporarily normalize iron. The test requires longitudinal normality throughout progression.
+
+**2. Normal iron distribution in presymptomatic AD defined by early biomarkers.** If the proposed QSM+ALPS longitudinal study were conducted in a cohort with elevated p-tau217 or early amyloid PET positivity but no cognitive symptoms, and iron distribution were indistinguishable from healthy controls, this would break the temporal ordering. FELINE predicts iron maldistribution precedes amyloid — not follows it. If amyloid comes first and iron is normal at that stage, iron is downstream or epiphenomenal, and FELINE's causal architecture collapses. This is the most practically testable falsifier, achievable with existing technology in existing cohorts (ADNI, DIAN, A4 study participants).
+
+**3. Neurodegeneration from Aβ independent of iron coordination.** If Aβ with its metal-binding histidine residues (His6, His13, His14) mutated out — confirmed unable to chelate iron, copper, or zinc — were shown to still aggregate *and* produce progressive neurodegeneration (synaptic loss, tau hyperphosphorylation, cognitive decline) in an animal model with normal iron homeostasis, this would demonstrate intrinsic Aβ toxicity independent of metal chemistry. FELINE could accommodate *some* Aβ toxicity from membrane disruption by soluble oligomers, but if metal-free Aβ recapitulated the full disease, the "Aβ as iron defense molecule" pillar would fall.
+
+**4. Iron chelation that worsens outcomes by a mechanism unrelated to FELINE's predictions.** FELINE explains deferiprone's failure through the U-shaped iron curve, molecular size, and indiscriminate compartment access. If a large, compartment-selective iron chelator — one that FELINE predicts *should* work (extracellular-only, size-restricted) — were tested and also worsened outcomes, FELINE's therapeutic architecture would be in trouble. Conversely, if deferiprone's failure were shown to operate through a mechanism entirely unrelated to iron biology (e.g., off-target receptor binding driving neuroinflammation independent of iron), FELINE's explanation of the trial would be wrong, even if the broader framework survived.
+
+**5. Tau knockout phenotype not rescued by iron management.** FELINE reframes tau as an iron management protein whose loss causes neurodegeneration *through* iron accumulation. Lei et al. (2012) showed rescue with chelation. If this were shown to be an artifact — if tau KO neurodegeneration were demonstrated to proceed through a purely structural mechanism (microtubule collapse, axonal transport failure) with iron accumulation as an epiphenomenon that happens to co-occur but doesn't drive the damage — then FELINE's tau reframing would need significant revision.
+
+**What would NOT falsify FELINE:** Individual layer failures being insufficient alone (the Swiss cheese model predicts this), heterogeneous trial responses (different patients have different weak layers), or partial therapeutic benefits from single-layer interventions (expected). The framework is designed to accommodate these. The falsification criteria above target the *core structural claims* — iron maldistribution as primary driver, temporal ordering, protein reframing — not the secondary predictions.
+
+### The One-Sentence Summary
+
+**Iron kills the cells that protect neurons, and their dying disrupts the support systems neurons depend on, and by the time neurons themselves start dying, the disease is already decades old.**
+
+---
+
+### Executive Summary Bibliography
+
+- Albertini G, et al. (2025) SPP1/osteopontin promotes Aβ clearance via microglial phagocytosis. *Nat Neurosci*. [Spatial transcriptomics of lecanemab-treated brain]
+- Atkins JL, et al. (2021) Hemochromatosis mutations, brain iron imaging, and dementia in the UK Biobank cohort. *J Alzheimers Dis* 79(3):1203-1211. [DOI: 10.3233/JAD-201080](https://doi.org/10.3233/JAD-201080) [Male HFE C282Y homozygotes: HR 1.83 for dementia; brain iron on MRI]
+- Ayton S, et al. (2017) Cerebral quantitative susceptibility mapping predicts amyloid-β-related cognitive decline. *Brain* 140(8):2112-2119. [DOI: 10.1093/brain/awx137](https://doi.org/10.1093/brain/awx137)
+- Ayton S, et al. (2025a) Deferiprone in Alzheimer disease: a randomized clinical trial. *JAMA Neurol* 82(1):11-18. [DOI: 10.1001/jamaneurol.2024.3733](https://doi.org/10.1001/jamaneurol.2024.3733) [Iron chelation worsened cognition despite reducing hippocampal iron]
+- Ayton S, Moreau C, Devos D, Bush AI (2025b) Iron on trial: recasting the role of iron in neurodegeneration. *Brain* 148(12):4241-4247. [DOI: 10.1093/brain/awaf398](https://doi.org/10.1093/brain/awaf398)
+- Baligács N, et al. (2024) Homeostatic microglia initially seed and activated microglia later reshape amyloid plaques. *Nat Commun* 15:10634.
+- Bartzokis G, et al. (2011) Premenopausal hysterectomy is associated with increased brain ferritin iron. *Neurobiol Aging* 32(10):1766-1773. [DOI: 10.1016/j.neurobiolaging.2011.01.006](https://doi.org/10.1016/j.neurobiolaging.2011.01.006)
+- Belaidi AA, et al. (2024) Apolipoprotein E potently inhibits ferroptosis by blocking ferritinophagy. *Mol Psychiatry* 29(2):211-220. [DOI: 10.1038/s41380-022-01568-w](https://doi.org/10.1038/s41380-022-01568-w) [APOE4 less effective → higher labile iron]
+- Blanchard JW, et al. (2022) APOE4 impairs myelination via cholesterol dysregulation in oligodendrocytes. *Nature* 611:769-779. [DOI: 10.1038/s41586-022-05439-w](https://doi.org/10.1038/s41586-022-05439-w)
+- Boopathi S, Bhatt TK (2022) Dual binding site model of amyloid-beta for iron and microbial sequestration. *Biophys Chem* 281:106731.
+- Crespo ÂC, et al. (2014) Genetic and biochemical markers in patients with Alzheimer's disease support a concerted systemic iron homeostasis dysregulation. *Neurobiol Aging* 35(4):777-785. [DOI: 10.1016/j.neurobiolaging.2013.10.014](https://doi.org/10.1016/j.neurobiolaging.2013.10.014) [SNPs in TF, TFR2, ACO1, SLC40A1 associated with AD; decreased ferroportin transcripts]
+- Cheli VT, et al. (2020) Iron metabolism in oligodendrocytes and astrocytes, implications for myelination and remyelination. *ASN Neuro* 12:1759091420962681. [DOI: 10.1177/1759091420962681](https://doi.org/10.1177/1759091420962681)
+- Devos D, et al. (2022) Trial of deferiprone in early-stage Parkinson's disease. *N Engl J Med* 387(22):2045-2055. [DOI: 10.1056/NEJMoa2209254](https://doi.org/10.1056/NEJMoa2209254) [FAIRPARK-II: chelation worsened PD]
+- Doran E, et al. (2017) Down Syndrome, Partial Trisomy 21, and Absence of Alzheimer's Disease: The Role of APP. *J Alzheimers Dis* 56(2):459-470.
+- Duce JA, et al. (2010) Iron-export ferroxidase activity of β-amyloid precursor protein is inhibited by zinc in Alzheimer's disease. *Cell* 142(6):857-867. [DOI: 10.1016/j.cell.2010.08.014](https://doi.org/10.1016/j.cell.2010.08.014) [APP has ferroxidase activity; stabilizes ferroportin for iron export]
+- Eimer WA, et al. (2018) Alzheimer's disease-associated β-amyloid is rapidly seeded by herpesviridae to protect against brain infection. *Neuron* 99(1):56-63.
+- Ferris HA, et al. (2017) Loss of astrocyte cholesterol synthesis disrupts neuronal function and alters whole-body metabolism. *Proc Natl Acad Sci USA* 114:1189-1194. [DOI: 10.1073/pnas.1620506114](https://doi.org/10.1073/pnas.1620506114)
+- García-Cerro S, et al. (2017) Normalizing the gene dosage of Dyrk1A in a mouse model of Down syndrome rescues several Alzheimer's disease phenotypes. *Neurobiol Dis* 106:76-88.
+- Greenough MA, et al. (2022) Selective ferroptosis vulnerability due to familial Alzheimer's disease presenilin mutations. *Cell Death Differ* 29(11):2123-2136. [DOI: 10.1038/s41418-022-01003-1](https://doi.org/10.1038/s41418-022-01003-1) [PS mutations derepress ferroptosis via Notch-1/LRP8/selenium/GPX4; neurodegeneration without Aβ plaques]
+- Head E, et al. (2025) Down syndrome with Alzheimer's disease brains have increased iron and lipid peroxidation consistent with ferroptosis. *Alzheimers Dement*. [SOD1, BACH1, FSP1, GPx4 data in DSAD vs AD]
+- Kimura R, et al. (2007) The DYRK1A gene bridges between β-amyloid production and tau phosphorylation in Alzheimer disease. *Hum Mol Genet* 16:15-23.
+- Li Y, et al. (2022) Astrocytic ceruloplasmin knockout mice show age-dependent reversal of iron and cognitive effects. *Cell Death Dis*. [DOI: 10.1038/s41419-022-05459-4](https://doi.org/10.1038/s41419-022-05459-4) [U-shaped iron model in vivo]
+- Mestre H, et al. (2018) Aquaporin-4-dependent glymphatic solute transport in the rodent brain. *eLife* 7:e40070. [AQP4 drives perivascular clearance]
+- Peikon ID, Andrews NC (2026) Isn't it ironic? Functional iron deficiency at the core of Parkinson's disease pathobiology. *J Clin Invest*. [DOI: 10.1172/JCI202244](https://doi.org/10.1172/JCI202244)
+- Prasher VP, et al. (1998) Molecular mapping of Alzheimer-type dementia in Down's syndrome. *Ann Neurol* 43(3):380-383. [78-year-old woman with PT21 without AD]
+- Rahman et al. (2025) Sex differences in brain iron deposition and microglial ferritin in Alzheimer's disease. *Science Progress*. [Opposite iron-ferritin correlations by sex]
+- Shin JH, et al. (2001) Superoxide dismutase SOD1, encoded on chromosome 21, but not SOD2 is overexpressed in brains of patients with Down syndrome. *J Neural Transm Suppl* (61):73-83.
+- Soscia SJ, et al. (2010) The Alzheimer's disease-associated amyloid beta-protein is an antimicrobial peptide. *PLoS One* 5(3):e9505.
+- Tcw J, et al. (2022) Cholesterol and matrisome pathways dysregulated in astrocytes and microglia. *Cell* 185:2213-2233. [DOI: 10.1016/j.cell.2022.05.017](https://doi.org/10.1016/j.cell.2022.05.017)
+- van Olst L, et al. (2025) Spatial transcriptomics of lecanemab-treated Alzheimer brain reveals SPP1, FTH1, FTL, cathepsin B upregulation. *Nat Med*.
+- Wiseman FK, et al. (2018) Trisomy of human chromosome 21 enhances amyloid-β deposition independently of an extra copy of APP. *Sci Rep* 8:5765. [Non-APP chromosome 21 genes modulate Aβ aggregation]
+- Xie L, et al. (2013) Sleep drives metabolite clearance from the adult brain. *Science* 342(6156):373-377. [DOI: 10.1126/science.1241224](https://doi.org/10.1126/science.1241224) [Glymphatic clearance during sleep]
+- Zarkali A, et al. (2025) QSM + DTI-ALPS combined study in Parkinson's disease: lower ALPS associated with iron distribution changes. *Mov Disord* 40(11):2367-2380. [DOI: 10.1002/mds.30325](https://doi.org/10.1002/mds.30325)
+- Guo C, et al. (2017) Intranasal lactoferrin enhances α-secretase-dependent amyloid precursor protein processing via the ERK1/2-CREB and HIF-1α pathways. *Neuropsychopharmacology* 42:2504-2515. [Intranasal Lf delivery to brain]
+- Hadoux X, et al. (2019) Non-invasive in vivo hyperspectral imaging of the retina for potential biomarker use in Alzheimer's disease. *Nat Commun* 10:4227. [DOI: 10.1038/s41467-019-12242-1](https://doi.org/10.1038/s41467-019-12242-1)
+- Lee S, et al. (2025) QSM iron in aMCI: iron accumulates where atrophy hasn't occurred. *Brain Behav* 15(5):e70521. [DOI: 10.1002/brb3.70521](https://doi.org/10.1002/brb3.70521)
+- Lei P, et al. (2012) Tau deficiency induces parkinsonism with dementia by impairing APP-mediated iron export. *Nat Med* 18(2):291-295. [DOI: 10.1038/nm.2613](https://doi.org/10.1038/nm.2613) [Tau KO → iron accumulation → prevented by chelation]
+- Mashkani B, et al. (2024) Retinal iron doubled in AD; retina mirrored hippocampus iron. *Metallomics*. [LA-ICP-MS quantification]
+- Mohamed WA, et al. (2019) Lactoferrin as a neuroprotective agent in Alzheimer's disease: pilot study. *J Alzheimers Dis* 67(2):583-597. [Oral Lf improved cognition, reduced Aβ42, IL-6, p-tau]
+- Mukherjee C, et al. (2020) Oligodendrocytes provide antioxidant defense function for neurons by secreting ferritin heavy chain. *Cell Metab* 32(2):259-272. [DOI: 10.1016/j.cmet.2020.05.019](https://doi.org/10.1016/j.cmet.2020.05.019) [OLs secrete FTH1 to protect neurons — "double insulation"]
+- Olynyk JK, et al. (2025) Haemochromatosis genotypes and incident dementia in a prospective study of older adults. *Neurology*. [DOI: 10.1212/WNL.0000000000213743](https://doi.org/10.1212/WNL.0000000000213743) [Male H63D homozygotes: HR 2.39 for dementia; n=12,174]
+- Ravichandran S, et al. (2025) Retinal gliosis area correlated with plasma p-tau217 in cognitively unimpaired individuals. [β=0.48, p=0.007]
+- Shi H, et al. (2020) Retinal pericyte loss in AD (37%); PDGFR-β loss in MCI (38%). *Acta Neuropathol* 139:813-836.
+- Small GW, et al. (2018) Memory and brain amyloid and tau effects of a bioavailable form of curcumin in non-demented adults. *Am J Geriatr Psychiatry* 26(3):266-277. [Theracurmin 90 mg BID × 18 months]
+- Tuo QZ, et al. (2017) Tau-mediated iron export prevents ferroptotic damage after ischemic stroke. *Mol Psychiatry* 22(11):1520-1530. [DOI: 10.1038/mp.2017.171](https://doi.org/10.1038/mp.2017.171) [Tau facilitates iron export; prevents ferroptosis]
 
 ---
 
@@ -278,13 +492,13 @@ Nelson et al. noted that pericytes influence BBB endothelial gene expression and
 
 | Prior Literature                                       | FELINE's Distinct Claim                                                                                                                                                                                                                                                                                        |
 | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Iron accumulates in AD brain                           | NVU structural damage (pericyte loss, astrocyte endfoot retraction) is **one major entry point** for iron accumulation, alongside lysosomal failure, insulation breakdown, and export impairment -- the "Swiss cheese" model where multiple defense layers must fail                                      |
-| BBB inflammation alters iron flux                      | The specific mechanism is **loss of GPI-ceruloplasmin and ferroportin localization** at retracted astrocyte endfeet                                                                                                                                                                                       |
+| Iron accumulates in AD brain                           | NVU structural damage (pericyte loss, astrocyte endfoot retraction) is**one major entry point** for iron accumulation, alongside lysosomal failure, insulation breakdown, and export impairment -- the "Swiss cheese" model where multiple defense layers must fail                                      |
+| BBB inflammation alters iron flux                      | The specific mechanism is**loss of GPI-ceruloplasmin and ferroportin localization** at retracted astrocyte endfeet                                                                                                                                                                                       |
 | APP stabilizes ferroportin for iron export (contested) | When NVU-mediated iron export fails, amyloidogenic APP processing destabilizes ferroportin further (Tsatsanis 2020), shifting toward A-beta production at the cost of iron export                                                                                                                              |
-| Iron contributes to neurodegeneration                  | Iron-driven **ferroptosis** (not just oxidative stress) is the proximate cause of neuronal death; lipid peroxidation cascade is central                                                                                                                                                                   |
-| Tau loss causes iron retention                         | FELINE integrates tau's iron-binding function into a **multi-layer defense model** where tau, alpha-synuclein, and ferritin serve as emergency iron buffers                                                                                                                                               |
-| Amyloid plaques contain iron                           | TREM2-mediated plaque **compaction is protective** -- sequestering toxic iron-laden aggregates -- explaining why aggressive plaque removal (anti-amyloid therapy) shows limited benefit                                                                                                                   |
-| Vascular dysfunction contributes to AD                 | FELINE proposes that **when NVU is the entry point**, the mechanistic chain is: NVU damage -> endfoot loss -> triple failure of (1) glymphatic iron drainage, (2) iron import gatekeeping, AND (3) astrocyte-to-neuron iron distribution -> explains co-occurrence of protein aggregation AND ferroptosis |
+| Iron contributes to neurodegeneration                  | Iron-driven**ferroptosis** (not just oxidative stress) is the proximate cause of neuronal death; lipid peroxidation cascade is central                                                                                                                                                                   |
+| Tau loss causes iron retention                         | FELINE integrates tau's iron-binding function into a**multi-layer defense model** where tau, alpha-synuclein, and ferritin serve as emergency iron buffers                                                                                                                                               |
+| Amyloid plaques contain iron                           | TREM2-mediated plaque**compaction is protective** -- sequestering toxic iron-laden aggregates -- explaining why aggressive plaque removal (anti-amyloid therapy) shows limited benefit                                                                                                                   |
+| Vascular dysfunction contributes to AD                 | FELINE proposes that**when NVU is the entry point**, the mechanistic chain is: NVU damage -> endfoot loss -> triple failure of (1) glymphatic iron drainage, (2) iron import gatekeeping, AND (3) astrocyte-to-neuron iron distribution -> explains co-occurrence of protein aggregation AND ferroptosis |
 
 **The Critical Gap FELINE Addresses**
 
@@ -1003,6 +1217,105 @@ Mice have less myelin, shorter lifespans (less iron accumulation time), and rode
 
 **FELINE integration:** The myelination-iron-lifespan triangle explains why AD is uniquely human and age-dependent. It is not enough to have protein aggregation machinery; the brain must accumulate enough iron in enough myelinated tissue over enough time to overwhelm the FELINE defense layers.
 
+### 2.5 Ferroptosis as Immune Defense: The Weapon Behind the Disease
+
+Ferroptosis is not a design flaw. It is an ancient, deliberately deployed immune weapon that the body uses for tumor suppression, antimicrobial defense, and elimination of damaged cells. The five FELINE defense layers exist precisely to keep this weapon under control. Neurodegeneration is what happens when the safety systems around an inherently dangerous but necessary defense mechanism fail chronically.
+
+#### Why ferroptosis exists: tumor suppression
+
+The tumor suppressor p53 promotes ferroptosis through at least two independent pathways, separate from its canonical apoptosis and cell-cycle arrest functions:
+
+1. **SLC7A11 repression** (Jiang et al. 2015, *Nature*): p53 directly suppresses SLC7A11, a subunit of the System Xc- cystine/glutamate antiporter. This limits cystine import, depletes glutathione, and sensitizes pre-cancerous cells to iron-dependent lipid peroxidation. A p53 mutant (3KR) that cannot induce apoptosis, senescence, or cell-cycle arrest **fully retains** ferroptosis-inducing ability and tumor suppression. Ferroptosis alone is sufficient for p53's anti-cancer function.
+2. **ALOX12 pathway** (Chu et al. 2019, *Nature Cell Biology*): p53 activates ALOX12 (arachidonate 12-lipoxygenase) to trigger ferroptosis independently of GPX4 and ACSL4. Loss of a single *Alox12* allele accelerates tumorigenesis. ALOX12 mutations found in human cancers abolish this pathway.
+
+SLC7A11 is overexpressed in many human tumors — cancer cells evolve to suppress the very mechanism designed to kill them. This confirms that ferroptosis is a primary anti-cancer defense, not collateral damage.
+
+#### The immune system weaponizes ferroptosis
+
+CD8+ T cells — the adaptive immune system's primary killers — use ferroptosis as a direct killing mechanism against tumor cells:
+
+- **IFN-gamma → System Xc- downregulation** (Wang et al. 2019, *Nature*): Activated CD8+ T cells release IFN-gamma, which downregulates both SLC3A2 and SLC7A11 on target cells, collapsing their cystine import and triggering ferroptotic death. This contributes directly to anti-tumor efficacy of checkpoint immunotherapy (anti-PD-1). In patients, clinical benefit from nivolumab correlates with reduced SLC3A2 and increased IFN-gamma.
+- **ACSL4 orchestration** (Liao et al. 2022, *Cancer Cell*): IFN-gamma combined with arachidonic acid induces tumor ACSL4, remodeling tumor cell membranes to incorporate more oxidation-prone PUFAs. This makes tumor cells ferroptosis-sensitive. Tumor ACSL4 deficiency accelerates cancer progression.
+
+Meanwhile, the immune cells that deploy ferroptosis protect themselves from it:
+
+- **M1 macrophage resistance** (Kapralov et al. 2020, *Nature Chemical Biology*): Pro-inflammatory (M1) macrophages resist ferroptosis via iNOS/NO-mediated inhibition of 15-lipoxygenase. Anti-inflammatory (M2) macrophages lack this protection. Evolutionary logic: the cells that need to persist during active immune engagement are specifically shielded from the weapon they deploy.
+
+#### Antimicrobial ferroptosis
+
+Macrophages use iron-dependent oxidative killing against intracellular pathogens:
+
+- **Ferroptotic stress kills bacteria** (Ma et al. 2022, *Theranostics*): During early bacterial infection, macrophages increase intracellular ferrous iron and lipid peroxidation. Ferroptosis inducers enhance intracellular bacterial killing. The macrophage reverses ferroportin to import iron into bacterial vacuoles, inducing ferroptosis-like death in the pathogen.
+- **Nutritional immunity**: The hepcidin/ferroportin axis, lactoferrin (in neutrophil granules and human milk), and lipocalin-2 (scavenges bacterial siderophores) all restrict iron availability to extracellular pathogens. The immune system treats iron as a weapon to be withheld from invaders and deployed against them.
+- **Pathogens can hijack it**: *Pseudomonas aeruginosa* expresses a lipoxygenase (pLoxA) that oxidizes host PUFAs to trigger ferroptosis in airway epithelium — "theft-ferroptosis" (Dar et al. 2018, *Journal of Clinical Investigation*). This confirms that pathogens recognize ferroptosis as a real threat and have evolved to co-opt it.
+
+#### Evolutionary conservation
+
+Ferroptosis is ancient. It arises from the fundamental vulnerability of incorporating PUFAs into membranes in an oxygen-rich, iron-containing environment — a situation that has existed since aerobic metabolism evolved billions of years ago (Stockwell et al. 2017, *Cell*).
+
+- Ferroptosis-like cell death occurs in plants, fungi, and protozoa
+- Plant GPX proteins (Arabidopsis) can functionally substitute for mammalian GPX4 in preventing ferroptosis, demonstrating billion-year conservation (Song et al. 2021, *FASEB J*, DOI: 10.1096/fj.202000856R)
+- GPX4 knockout is embryonically lethal in mice — ferroptosis defense is non-negotiable for multicellular life (Yant et al. 2003; Imai et al. 2003)
+
+The elaborate multi-layer defenses (GPX4, glutathione, ferritin, System Xc-, ferroportin) evolved precisely because iron-catalyzed lipid peroxidation is both essential for immune defense and existentially dangerous when uncontrolled.
+
+#### The dual nature: defense becomes disease
+
+The same mechanism that makes ferroptosis effective against tumors and pathogens makes it devastating when chronic and dysregulated:
+
+| Context                             | Iron-dependent lipid peroxidation                       | Outcome                            |
+| ----------------------------------- | ------------------------------------------------------- | ---------------------------------- |
+| **Tumor suppression**         | p53 triggers ferroptosis in pre-cancerous cells         | Beneficial: cancer prevented       |
+| **Anti-tumor immunity**       | CD8+ T cells induce ferroptosis via IFN-gamma           | Beneficial: tumors killed          |
+| **Antimicrobial defense**     | Macrophages deploy iron against intracellular pathogens | Beneficial: infection contained    |
+| **Acute tissue damage**       | Ferroptosis eliminates damaged cells                    | Beneficial: damage limited         |
+| **Chronic neurodegeneration** | Age-related iron accumulation overwhelms defenses       | Pathological: cascading cell death |
+
+The FELINE defense layers map directly onto ferroptosis containment:
+
+- **Fe**: Keep iron compartmentalized so it cannot catalyze lipid peroxidation in the wrong place
+- **L (Lysosome)**: GPX4, GSH, and NAD+/SIRT3 directly neutralize lipid peroxides — the molecular products of ferroptosis
+- **I (Insulation)**: Myelin, ferritin, and iron-binding proteins physically separate iron from vulnerable membranes
+- **N (Neurovascular)**: BBB and pericytes prevent uncontrolled iron entry; astrocyte endfeet manage distribution
+- **E (Export)**: Ferroportin, glymphatic flow, and hepcidin regulation remove excess iron before it accumulates to dangerous levels
+
+When these layers fail with age and comorbidity, the weapon that was designed to kill cancer cells and pathogens turns on the brain's own cells — particularly the iron-rich oligodendrocytes that produce myelin. This is not a new disease mechanism. It is the body's oldest defense, running without a safety net.
+
+#### Amyloid-beta: the iron mop, not the iron weapon
+
+Structural biology resolves a long-standing confusion about Aβ's role at plaques. Aβ has two structurally independent domains that serve independent functions:
+
+- **Domain B (residues 17-42)**: Hydrophobic, membrane-inserting. Kills pathogens by physically disrupting their membranes. This is the antimicrobial function. It requires NO metals — Aβ kills bacteria via membrane pore formation, pathogen agglutination, and fibrillar entrapment, the same mechanisms as other antimicrobial peptides. No published experiment has shown that chelating metals from Aβ reduces its antimicrobial killing.
+- **Domain A (residues 1-16)**: Hydrophilic, faces outward into the aqueous phase. Contains all metal-binding residues (His6, His13, His14, Asp1, Glu3). Chelates and concentrates iron released from dying neurons. This is the cleanup function.
+
+The geometric proof: when Aβ inserts into a bacterial membrane via Domain B, the metal-binding Domain A faces AWAY from the target. This is the opposite of piscidin, a well-characterized antimicrobial peptide where the Cu-ATCUN complex inserts INTO the membrane to generate ROS directly at the bacterial lipid bilayer (Hayden et al. 2015). Piscidin's copper enhancement of killing is well-documented (2-16x, Oludiran et al. 2019); Aβ's metal enhancement of antimicrobial killing has never been demonstrated. The geometry explains why.
+
+But this same outward-facing geometry is exactly what makes plaque iron dangerous to neurons. Iron concentrated in the extracellular space generates omnidirectional hydroxyl radicals that hit neuronal membranes on all sides. Piscidin's copper is a scalpel. Aβ's iron is a grenade.
+
+**The Mop Analogy:** The field observed someone mopping up biohazardous waste (iron released from dying cells). They noticed the mop (Aβ) was covered in hazardous material (iron) and that people near dirty mops were sick. They concluded: "mops make people sick."
+
+This reframes the disease transition. It is not WEAPON → COLLATERAL DAMAGE. It is CLEANUP → OVERLOAD → TOXICITY:
+
+1. Tissue damage occurs (vascular leak, infection, aging, OL death)
+2. Two independent responses activate: Domain B kills pathogens if present; Domain A chelates iron from the debris
+3. Microglia compact both (pathogen remains + iron-loaded Aβ) into dense-core plaques
+4. If damage is acute and limited: cleanup succeeds, plaques are cleared
+5. If damage is chronic and escalating: the mop becomes saturated, iron-Aβ composites accumulate, Fenton chemistry generates omnidirectional ROS, and the cleanup tool becomes a source of damage
+
+Clinical trial results map precisely onto this model. Therapies that handle the WASTE (iron) perform better than those that merely remove the MOP:
+
+| Therapy      | Mop Analogy                        | Clinical outcome              |
+| ------------ | ---------------------------------- | ----------------------------- |
+| Gantenerumab | Removes mops, dumps waste on floor | No clinical benefit           |
+| Aducanumab   | Removes mops aggressively          | Marginal benefit, high ARIA   |
+| Lecanemab    | Removes mops, some waste handling  | Modest benefit (27%)          |
+| Donanemab    | Targets dirtiest mops (dense-core) | Best benefit (35%)            |
+| Deferiprone  | Removes waste from wrong location  | WORSENED decline (Ayton 2025) |
+
+The Fc-silenced lecanemab variant is the critical test: if microglial processing of iron-laden plaques (not just antibody-mediated clearance) drives benefit, then silencing the Fc domain should abolish benefit — because the dirty mop is removed but the waste is left behind.
+
+**Key citations for this section:** Jiang et al. 2015 (*Nature*), Wang et al. 2019 (*Nature*), Kapralov et al. 2020 (*Nature Chemical Biology*), Ma et al. 2022 (*Theranostics*), Stockwell et al. 2017 (*Cell*), Hayden et al. 2015, Oludiran et al. 2019, Moir et al. 2018 (*Journal of Alzheimer's Disease*), Ayton et al. 2025 (*JAMA Neurology*), Streit et al. 2022.
+
 ---
 
 ## 3. Evidence Base
@@ -1700,7 +2013,7 @@ FELINE extends the microglial compaction literature by proposing that dense-core
 
 **Critical warning from Lemke & Huang 2022**:
 
-> "If dense-core plaques are indeed [compact containment structures], their simple disassembly may be contraindicated as an Alzheimer's therapy" (original uses "granulomas"; reframed per FELINE compact plaque model)
+> "If dense-core plaques are indeed compact containment structures, their simple disassembly may be contraindicated as an Alzheimer's therapy" (Lemke & Huang 2022, paraphrased)
 
 #### APP Dual-Function Model: Iron Export AND A-beta as Iron Concentrator
 
@@ -2546,6 +2859,97 @@ Cathepsin D is upregulated in AD neocortex (Chai et al. 2019), and the cathepsin
 - Cicognola C et al. (2023) Neurology 101(19):e1891-e1902. [DOI](https://doi.org/10.1212/WNL.0000000000207358) [BioFINDER-2: sPDGFRβ correlates with GFAP/YKL-40 but NOT amyloid PET, tau PET, or APOE4; pericyte-astrocyte dysfunction is aging/vascular pathway independent of classical amyloid]
 - Chai YL et al. (2019) Brain Pathol 29(1):63-74. [Lysosomal cathepsin D upregulated in AD neocortex]
 
+**4.11c The Corrected Diagnostic Cascade: Blood Biomarkers Detect the Mop, Not the Spill**
+
+*Added v3.16 (2026-02-14). Corrects a framing error where plasma p-tau217 was treated as "first-line, earliest" screening. FELINE's own temporal ordering makes clear that blood biomarkers, while cheap and validated, detect mid-to-late cascade events — not the initiating pathology.*
+
+**The Mop Analogy applied to diagnostics** (see §4.7.22): Current blood biomarkers detect aspects of the cleanup response, not the upstream cause. Through this lens:
+
+| Biomarker      | What it detects          | Mop Analogy equivalent              | Cascade position                            | Compartment           |
+| -------------- | ------------------------ | ----------------------------------- | ------------------------------------------- | --------------------- |
+| CSF SMOC1      | OPC/ECM distress         | "Is the insulation cracking?"       | **Earliest known** (~30y pre-symptom) | CSF (plasma feasible) |
+| CSF SPON1      | APP processing shift     | "Is the export valve straining?"    | **Earliest known** (~30y pre-symptom) | CSF                   |
+| CSF sPDGFRβ   | Pericyte injury          | "Are the pipes leaking?"            | Very early (~20y pre-symptom)               | CSF                   |
+| p-tau217       | Tau phosphorylation      | "Is there a dirty mop?"             | Mid-cascade                                 | Blood                 |
+| Aβ42/40 ratio | Amyloid processing shift | "How much cleaning fluid consumed?" | Mid-cascade                                 | Blood                 |
+| GFAP           | Astrocyte activation     | "Are the janitors stressed?"        | Early-mid                                   | Blood                 |
+| NfL            | Axonal injury            | "Is the floor damaged?"             | Late                                        | Blood                 |
+
+None of the blood biomarkers answer: **why is there a spill, what kind of spill is it, or which pipe broke?** The CSF matrisome markers (SMOC1, SPON1) and pericyte markers (sPDGFRβ) come closer, detecting structural and cellular distress a full decade before the cleanup response begins.
+
+**Critical evidence**: In a Swedish community cohort of 2,148 dementia-free older adults followed for up to 16 years, no blood biomarker (including p-tau217, GFAP, NfL, Aβ42/40) was associated with the transition from normal cognition to MCI — they only predicted MCI-to-dementia progression (Valletta et al. 2025, *Nat Commun*). Blood biomarkers detect the disease AFTER the spill has caused visible damage. They cannot see the pipe cracking.
+
+Contrast this with FELINE's temporal hierarchy (Wang et al. 2022): CSF sPDGFRβ (pericyte injury) begins rising at ~age 20, a full **20 years before Aβ42 crosses its pathological threshold** at ~age 40. Mashkani et al. (2024) showed retinal metal alterations identified **prior to amyloid plaque aggregation**. CSF proteomics reveal an even earlier layer: SMOC1 (OPC-derived ECM protein) and SPON1 (APP-interacting ECM protein) are elevated **~30 years before symptom onset** in autosomal dominant AD, over a decade before p-tau or Aβ42/40 changes become detectable (Johnson et al. 2023, Nat Med; Shen et al. 2024, Cell; see §2.4.10). SMOC1 alone outperformed CSF p-tau and Aβ42/40 at the 20-year-pre-symptom timepoint. The earliest events in the cascade are not what blood biomarkers measure.
+
+**Why this matters clinically — the subtyping gap**: Even with >90% accuracy for AD detection, blood biomarkers cannot distinguish FELINE subtypes:
+
+| Clinical question                                   | p-tau217 answers it?                 | FELINE diagnostic answers it?                   |
+| --------------------------------------------------- | ------------------------------------ | ----------------------------------------------- |
+| "Do I have AD?"                                     | ✅ Yes (>90% accuracy)               | ✅ Yes                                          |
+| "Which defense layer is failing?"                   | ❌ No                                | ✅ Layer-specific scores                        |
+| "Am I vascular-predominant or iron-predominant?"    | ❌ No                                | ✅ OCTA vs. HSI pattern                         |
+| "Which therapy should I receive?"                   | ❌ Same result regardless of subtype | ✅ Guides treatment selection                   |
+| "Is my treatment working at the mechanistic level?" | Partially (p-tau217 decline)         | ✅ Layer-specific response tracking             |
+| "Am I at risk before symptoms begin?"               | ❌ Not for NC→MCI transition        | Potentially ✅ (if temporal ordering confirmed) |
+
+**The Corrected Three-Tier Diagnostic Cascade**:
+
+```
+TIER 1 — Earliest detection (~$200, any optometry office):
+  Retinal OCTA → pericyte/vascular dropout (N-layer)
+  Retinal HSI  → iron accumulation (Fe-layer)
+  SD-OCT       → layer thickness changes (I-layer)
+  ┌─────────────────────────────────────────────────────┐
+  │ FELINE predicts these PRECEDE blood biomarker       │
+  │ positivity by years to decades.                     │
+  │ Retinal pericyte loss: 38% in MCI (Shi 2020)       │
+  │ Retinal iron: doubled in AD, pre-plaque (Mashkani) │
+  │ OCTA AD detection: AUC 0.94 (Hao 2024 Eye-AD)     │
+  └─────────────────────────────────────────────────────┘
+
+TIER 2 — Confirmation + staging (~$200-400, any clinic):
+  Blood p-tau217 → confirms AD-pathway engagement
+  Blood GFAP    → confirms astrocyte response magnitude
+  Blood NfL     → confirms neurodegeneration has begun
+  ┌─────────────────────────────────────────────────────┐
+  │ These CONFIRM the retinal findings and STAGE        │
+  │ severity. They answer "how far along?" not "what    │
+  │ kind?" FDA-approved, scalable, validated.           │
+  │ p-tau217: 92-94% accuracy (Palmqvist 2025)         │
+  │ Dried blood spot now feasible (DROP-AD, 2026)       │
+  └─────────────────────────────────────────────────────┘
+
+TIER 3 — Spatial mapping (if needed, $1,500-5,000+):
+  QSM-MRI       → brain iron distribution map
+  DTI-ALPS      → glymphatic function assessment
+  Dual-tracer PET → iron vs. amyloid spatial separation
+  ┌─────────────────────────────────────────────────────┐
+  │ Reserved for: clinical trial enrollment, complex    │
+  │ treatment decisions, research validation.           │
+  │ Required when spatial resolution matters (e.g.,     │
+  │ is iron accumulation focal or diffuse?).            │
+  └─────────────────────────────────────────────────────┘
+```
+
+**The analogy**: Tier 1 catches the fire when it's still a spark. Tier 2 confirms the house is burning. Tier 3 tells you the building's structural blueprint for the fire crew.
+
+**Why p-tau217 still matters despite being mid-cascade**: Blood biomarkers are not obsoleted by retinal imaging — they serve different roles. p-tau217 is the best-validated, FDA-approved, globally scalable confirmatory test. It answers "is this AD?" with high confidence. What it cannot do is tell you *which kind* of AD, or catch the disease before the tau response has begun. The FELINE cascade uses each tool where it has maximum information value:
+
+- Retinal imaging → **detection** (earliest, cheapest per-layer information)
+- Blood biomarkers → **confirmation** (validated, regulatory-approved, staging)
+- Advanced neuroimaging → **characterization** (spatial detail for treatment planning)
+
+**Investment rationale for FELINE diagnostics**: The >90% accuracy of blood biomarkers creates a *complement*, not a competitor. A $200 retinal scan that detects vascular and iron changes years before p-tau217 turns positive addresses the single largest unmet need in AD diagnostics: **the pre-symptomatic window where intervention could actually prevent disease rather than slow its progression**. Blood biomarkers confirmed what we could already see on PET for less money. FELINE retinal imaging would show what no current test can see — the upstream cause — for the same price as the blood test.
+
+**Testable prediction**: In a prospective cohort (such as the proposed FELINE-EYE study, §6.7.6), retinal OCTA vascular density decline and retinal HSI iron signal elevation will be detectable in individuals who are p-tau217-negative, Aβ PET-negative, and cognitively normal — and those individuals will have higher rates of subsequent p-tau217 conversion and cognitive decline than retinal-normal controls.
+
+**Key additional citations for 4.11c**:
+
+- Valletta M et al. (2025) Nat Commun [DOI: 10.1038/s41467-025-66728-2] [Blood-based biomarkers of Alzheimer's disease and progression across different stages of cognitive decline in the community; no blood biomarker predicted NC→MCI transition]
+- Palmqvist S et al. (2025) Nat Med [DOI: 10.1038/s41591-025-03622-w] [Fully automated p-tau217 for AD diagnosis; 92-94% accuracy with two-cutoff approach in primary and secondary care]
+- Ashton NJ et al. (2026) Nat Med [DOI: 10.1038/s41591-025-04080-0] [DROP-AD: Dried blood spot p-tau217, GFAP, NfL feasibility for minimally invasive scalable testing]
+- Alzheimer's Association (2025) [First Clinical Practice Guideline on blood-based biomarkers: p-tau217, Aβ42/40, GFAP, NfL officially recognized for clinical use, July 2025]
+
 ---
 
 ### 4.12 Lewy Body Dementia: FELINE Predicts an Intermediate Iron Pattern
@@ -2683,6 +3087,201 @@ Single-target thinking ("autophagy good, enhance it") fails because the pillars 
 - Svensson JE et al. (2024) BMC Neurol 24(1):111. [doi:10.1186/s12883-024-03596-1](https://doi.org/10.1186/s12883-024-03596-1) [ERAP Phase IIa protocol: rapamycin in early AD]
 - Wu K et al. (2025) Front Cell Dev Biol 13:1551003. [doi:10.3389/fcell.2025.1551003](https://doi.org/10.3389/fcell.2025.1551003) [Ferritinophagy: NCOA4, mTOR/AMPK regulation, dual role in disease]
 - Zhou Q et al. (2024) Neurochem Int 174:105689. [NCOA4-mediated ferritinophagy causes white matter injury through ferroptosis]
+
+### 4.15 NBIA Disorders as Natural Validation of Convergent Cascade Architecture
+
+#### 4.15.1 The Natural Experiment
+
+Neurodegeneration with Brain Iron Accumulation (NBIA) is a family of 10+ genetic disorders that share a common endpoint — progressive neurodegeneration with brain iron accumulation — but enter from completely different upstream pathways. This family constitutes nature's experiment in testing which entry points can independently drive iron-mediated neurodegeneration.
+
+The critical insight: NBIA disorders enter the cascade from at least five different mechanistic categories, yet ALL converge on brain iron accumulation and ferroptosis-mediated cell death. This convergence pattern directly validates FELINE's multi-layer architecture.
+
+| NBIA Form           | Gene     | Primary Defect                      | FELINE Layer Entry    | Onset       |
+| ------------------- | -------- | ----------------------------------- | --------------------- | ----------- |
+| Aceruloplasminemia  | CP       | Ferroxidase (iron export)           | E-layer               | ~50s        |
+| Neuroferritinopathy | FTL      | Ferritin (iron storage)             | Fe-layer              | ~40s        |
+| PKAN                | PANK2    | CoA synthesis (mitochondrial)       | Multi-layer (Fe/I/L)* | Childhood   |
+| CoPAN               | COASY    | CoA synthesis (mitochondrial)       | Multi-layer (Fe/I/L)* | Childhood   |
+| PLAN                | PLA2G6   | Phospholipase A2 (lipid metabolism) | I-layer               | Childhood   |
+| FAHN                | FA2H     | Fatty acid hydroxylase              | I-layer               | Childhood   |
+| MPAN                | C19orf12 | Mitochondrial membrane protein      | I-layer               | Young adult |
+| BPAN                | WDR45    | Autophagy (β-propeller)            | L-layer               | Childhood   |
+| Kufor-Rakeb         | ATP13A2  | Lysosomal cation transport          | L-layer               | Juvenile    |
+
+*CoA synthesis failure hits multiple FELINE layers simultaneously — see §4.15.4.
+
+Reference: Levi & Finazzi 2014 (Front Pharmacol, [DOI: 10.3389/fphar.2014.00099](https://doi.org/10.3389/fphar.2014.00099)); Di Meo & Tiranti 2018 (Eur J Paediatr Neurol 22:272-284).
+
+#### 4.15.2 Aceruloplasminemia: The Clean Iron Export Experiment
+
+Aceruloplasminemia is the critical test case for the "NAD+ is upstream" challenge. These patients have a pure genetic loss of ceruloplasmin ferroxidase activity — no primary metabolic defect, no mitochondrial mutation, no CoA deficiency. Their cells should have normal NAD+ levels, normal mitochondrial function, and normal energy production. Yet they develop progressive neurodegeneration with massive brain iron accumulation.
+
+**The two-phase pathology** (Miyajima 2015, Neuropathology 35:83-90; Jeong & David 2006, J Neurosci 26:9810-9819, [DOI: 10.1523/JNEUROSCI.2993-06.2006](https://doi.org/10.1523/JNEUROSCI.2993-06.2006)):
+
+**Phase 1 — Functional iron deficiency**: Without GPI-anchored ceruloplasmin on astrocyte endfeet, astrocytes cannot oxidize Fe²⁺ to Fe³⁺ for loading onto transferrin. Neurons cannot receive iron through the normal transferrin pathway. Jeong & David found that Purkinje neurons in Cp⁻/⁻ mice do NOT accumulate iron but express extremely high levels of DMT1 (iron importer), indicating compensatory upregulation due to iron starvation. Neurons die from iron deprivation.
+
+**Phase 2 — Iron toxicity**: Iron that cannot be exported accumulates massively in astrocytes. Ferritin expression increases but eventually cannot contain the iron burden. Lipid peroxidation follows (plasma TBA products 3× control values — Gitlin 1998, Pediatric Research). Astrocytes swell, deform, and die, leaving "globular structures" as their remains. Neuronal support is lost, and neurons now encounter toxic NTBI (non-transferrin-bound iron) from dead astrocytes.
+
+**Pathology**: Severe destruction of basal ganglia and dentate nucleus; iron deposition in perivascular areas localizing to terminal astrocytic processes; progressive extension to cortex over decades (Kaneko et al. 2012). Marchi et al. 2019 (Front Neurosci 13:325, [DOI: 10.3389/fnins.2019.00325](https://doi.org/10.3389/fnins.2019.00325)) reviewed clinical features: the classical triad of retinal degeneration, dementia, and diabetes.
+
+**This is FELINE's functional iron deficiency model in its purest genetic form**: iron in the wrong compartment, cells that need it can't get it, cells that have it are destroyed by it. No NAD+ depletion required. No mitochondrial dysfunction as entry point. Pure E-layer failure → full cascade.
+
+#### 4.15.3 Resolving the "NAD+ Is Upstream" Challenge
+
+The strongest competing model to FELINE positions NAD+ depletion as upstream of all five defense layers. The argument: every FELINE layer requires energy (ATP, NADPH) to function; therefore metabolic failure is the true driver and iron maldistribution is merely a downstream symptom.
+
+**What the NAD+ model gets right**: NAD+ depletion IS a potent entry point into the FELINE cascade. Chaubey et al. 2025 demonstrated that restoring NAD+ homeostasis reverses advanced AD pathology in mice. NAD+ feeds into ferroptosis defense via SIRT3→GPX4 and NADK→NADPH→GSH (documented in Section 5.4). The NDAN finding — preserved NAD+ homeostasis in people with AD pathology but no dementia — is compelling evidence that metabolic resilience determines clinical outcome.
+
+**What the NBIA family reveals**: NAD+ is one of several independent entry points, not the universal upstream variable.
+
+```
+NAD+/CoA depletion (PKAN, CoPAN, aging) ──┐
+Lysosomal/autophagy failure (BPAN, KR) ───┤
+Lipid/membrane defects (PLAN, FAHN) ───────┼──→ Iron maldistribution ──→ Ferroptosis ──→ Neurodegeneration
+Iron storage failure (neuroferritinopathy) ┤
+Iron export failure (aceruloplasminemia) ──┘
+```
+
+If NAD+ depletion were the sole upstream cause, then:
+
+- Aceruloplasminemia patients should be rescuable by metabolic support (they are not — their ceruloplasmin is genetically absent)
+- PKAN should respond to NAD+ precursors (it does not — the damage runs through CoA→cysteine accumulation→iron chelation→ferroptosis)
+- The NBIA family should not exist — pure iron or lipid gene defects shouldn't cause neurodegeneration if cells have sufficient energy
+
+The NBIA family proves that iron maldistribution is the convergence point where multiple upstream failures intersect. NAD+ is an important enabler of iron defense (and thus a powerful therapeutic target when it IS the limiting factor), but iron handling is not reducible to a metabolic epiphenomenon.
+
+**The falsification criterion proposed by the NAD+ camp and nature's answer**: "Show me a model where NAD+ is preserved but iron maldistribution still causes neurodegeneration." Aceruloplasminemia IS that model. Genetically intact metabolism, genetically broken iron export, progressive neurodegeneration.
+
+**Reinterpreting Chaubey et al. 2025**: P7C3-A20 reverses AD pathology in 5xFAD mice because, in that specific model, the entry point into the iron cascade runs through amyloid-driven mitochondrial dysfunction. Restoring the entry point (NAD+ homeostasis) → restoring mitochondrial function → restoring iron handling capacity → resolving the downstream cascade. This proves NAD+ is upstream *in amyloid-driven models*, not that NAD+ is upstream *in all neurodegeneration*. Prediction: P7C3-A20 given to aceruloplasminemia patients would show no benefit on neurodegeneration (their problem is not metabolic, it is structural loss of ferroxidase).
+
+#### 4.15.4 The CoA Gap: An Honest Acknowledgment
+
+PKAN and CoPAN highlight a category of entry point that FELINE's five layers do not cleanly capture. CoA synthesis is a metabolic precursor that feeds into multiple FELINE layers simultaneously:
+
+- **Fe-layer**: CoA is required for mitochondrial acyl carrier protein (mtACP) 4'-phosphopantetheinylation, which is essential for Fe-S cluster assembly. PKAN iPSC-derived neurons show impaired Fe-S biosynthesis, simulating cellular iron deficiency despite normal iron supply, and compensatory TfR1 upregulation (Levi & Finazzi 2014).
+- **I-layer**: CoA feeds into fatty acid β-oxidation and lipid synthesis. CoA deficiency impairs myelin lipid production and membrane integrity. PKAN causes cysteine accumulation in basal ganglia → iron chelation → auto-oxidation → lipid peroxidation (the same ferroptosis endpoint).
+- **L-layer**: Mitochondrial dysfunction from CoA deficiency reduces ATP available for V-ATPase → lysosomal alkalinization.
+
+This multi-layer entry is not a flaw in FELINE — it actually illustrates why the five layers are *defense layers* (what fails) rather than *entry categories* (what triggers failure). Multiple upstream insults can hit multiple layers simultaneously. But it is worth noting that FELINE's current framing does not include an explicit "metabolic precursor" or "bioenergetic" category among its entry points. The framework describes what breaks, not all the ways it can be broken.
+
+**Implication for FELINE scope**: FELINE models the common downstream cascade — Fe/L/I/N/E are the defense systems that, when overwhelmed, lead to ferroptotic neurodegeneration. The entry points into this cascade include vascular damage (N), infection (multiple layers), genetic iron handling defects (Fe/E), metabolic failure (NAD+/CoA hitting all layers), lysosomal storage defects (L), and lipid metabolism defects (I). NBIA disorders collectively validate that the convergence architecture is correct: many roads lead to iron maldistribution and ferroptosis.
+
+#### 4.15.6 The Inseparability of Energy and Iron: Why "Pure Energy Failure" Is a Biochemical Fiction
+
+A natural follow-up to the NBIA analysis asks: can mitochondrial energy failure be cleanly separated from iron handling? If one could disrupt β-oxidation or the TCA cycle without touching Fe-S cluster assembly, heme biosynthesis, or lipid synthesis, and still produce progressive neurodegeneration, that would demonstrate a genuinely iron-independent metabolic pathway to brain damage. This section examines whether any such pathway exists.
+
+**The answer is no. Mitochondrial energy production and iron handling are not two interacting systems — they are the same system.**
+
+**The electron transport chain IS iron hardware**
+
+Every electron that flows from NADH or FADH₂ to molecular oxygen passes through iron-containing proteins. The mammalian respiratory chain Complexes I–III alone contain 12 Fe-S clusters (Maio et al. 2017, Cell Metab 25(4):945-953.e6, [DOI: 10.1016/j.cmet.2017.03.010](https://doi.org/10.1016/j.cmet.2017.03.010)):
+
+| Complex                                    | Fe-S Clusters                    | Other Iron           | Function                            |
+| ------------------------------------------ | -------------------------------- | -------------------- | ----------------------------------- |
+| Complex I (NADH:ubiquinone oxidoreductase) | 8 [4Fe-4S] or [2Fe-2S]           | —                   | NADH oxidation; pumps 4 H⁺         |
+| Complex II (succinate dehydrogenase)       | 3 ([2Fe-2S], [4Fe-4S], [3Fe-4S]) | 1 heme b             | TCA step 6 AND ETC entry            |
+| Complex III (cytochrome bc₁)              | 1 Rieske [2Fe-2S]                | 2 heme b, 1 heme c₁ | Q cycle; pumps 4 H⁺                |
+| Complex IV (cytochrome c oxidase)          | —                               | 2 heme a (Fe) + 2 Cu | Terminal O₂ reduction; pumps 2 H⁺ |
+
+There is no iron-free route to ATP via oxidative phosphorylation. Disrupting iron availability or Fe-S cluster assembly does not merely "also" affect energy — it IS the energy defect.
+
+**The TCA cycle contains Fe-S cluster proteins that directly regulate iron homeostasis**
+
+Two TCA cycle enzymes are themselves iron-dependent:
+
+**Aconitase** (step 2: citrate → isocitrate) contains a [4Fe-4S] cluster in its active site. When this cluster is damaged by superoxide or stripped by iron deficiency, the enzyme loses catalytic activity. But aconitase does not simply become inert — its cytosolic isoform (cAco/ACO1) is *the same protein* as Iron Regulatory Protein 1 (IRP1). In its apo form (without Fe-S cluster), IRP1 binds iron-responsive elements (IREs) on mRNAs, repressing ferritin and ferroportin translation while stabilizing transferrin receptor mRNA (Walden et al. 2006, Science 314:1903-1908, [DOI: 10.1126/science.1133116](https://doi.org/10.1126/science.1133116); reviewed in Rouault 2019, PNAS 116:13312-13319, [DOI: 10.1073/pnas.1906299116](https://doi.org/10.1073/pnas.1906299116)).
+
+This means: any oxidative stress that damages aconitase simultaneously (a) impairs TCA cycle flux → energy failure, (b) releases labile Fe²⁺ from the damaged cluster → Fenton chemistry → lipid peroxidation, and (c) rewires iron homeostasis toward increased import and decreased storage/export. Energy failure and iron maldistribution are mechanistically inseparable events occurring through the same protein.
+
+**Succinate dehydrogenase (SDH/Complex II)** is unique in being simultaneously a TCA cycle enzyme AND an ETC complex, containing 3 Fe-S clusters plus a heme. It bridges the TCA cycle to the respiratory chain through iron.
+
+**Fumarase deficiency: even "pure TCA" disruption hits iron**
+
+Fumarase (FH) catalyzes fumarate → malate in the TCA cycle and does NOT itself contain an Fe-S cluster. FH deficiency should be the cleanest test of pure TCA energy failure. But accumulated fumarate exerts dose-dependent inhibition of mitochondrial aconitase-2 through succination of the three cysteine residues critical for Fe-S cluster binding (MedLink Neurology, Fumarase Deficiency, updated 2025). So even blocking a non-iron TCA step poisons the iron-dependent step through substrate toxicity.
+
+Clinically, fumarase deficiency causes severe developmental encephalopathy from birth — but this is catastrophic developmental failure, not the latent progressive neurodegeneration that characterizes AD, PD, or NBIA.
+
+**Fatty acid β-oxidation disorders: acute crises, not latent neurodegeneration**
+
+MCAD, VLCAD, and LCHAD deficiencies impair the β-oxidation pathway that feeds acetyl-CoA into the TCA cycle and electrons (via ETF) into the ETC. If "pure energy failure" caused progressive neurodegeneration, these patients should show it.
+
+They do not. MCAD-deficient patients are generally asymptomatic between crises (Rinaldo et al. 2002; Anderson et al. 2020). Brain damage occurs acutely during metabolic decompensation (fasting, infection) through hypoketotic hypoglycemia → acute encephalopathy. Between crises, the brain compensates via glucose oxidation.
+
+LCHAD/MTP deficiency does produce progressive retinopathy and peripheral neuropathy — but the mechanism involves DHA (docosahexaenoic acid) depletion impairing retinal and neural membrane integrity (I-layer) and accumulation of toxic long-chain 3-hydroxy fatty acids that directly damage mitochondrial membranes and induce oxidative stress (Amaral et al. 2017, J Inborn Errors Metab Screen 5:1-12, [DOI: 10.1177/2326409817701472](https://doi.org/10.1177/2326409817701472)). The damage routes through membrane/lipid pathology — FELINE's I-layer — not through pure ATP depletion.
+
+**Wernicke-Korsakoff: the closest candidate, and it still routes through iron**
+
+Thiamine deficiency impairs two key TCA enzymes (pyruvate dehydrogenase complex and α-ketoglutarate dehydrogenase complex) plus transketolase in the pentose phosphate pathway. Wernicke encephalopathy (WE) is the strongest candidate for "pure metabolic" neurodegeneration.
+
+But the actual damage mechanism in WE includes:
+
+- Impaired transketolase → reduced NADPH regeneration → depleted GSH → loss of ferroptosis defense (I-layer; Hazell et al. 1998, Metab Brain Dis 13:97-122)
+- BBB disruption at astrocyte endfeet with AQP4 channel alterations and petechial hemorrhages → iron leak into parenchyma (N-layer)
+- Demyelination in chronic cases (I-layer)
+- Glutamate transporter (EAAT1/EAAT2) dysregulation on astrocytes → excitotoxicity (which activates the Dexras1-DMT1 iron import pathway — see Section 5.5)
+
+Furthermore, thiamine-dependent α-KGDH is part of the metabolon containing aconitase. Thiamine deficiency reduces aconitase activity by 18-27% even though aconitase is not directly thiamine-dependent — likely through oxidative damage to its Fe-S cluster secondary to the metabolic disruption (Ke & Gibson 2004, Neurochem Int 45:361-369, [DOI: 10.1016/j.neuint.2003.09.008](https://doi.org/10.1016/j.neuint.2004.03.014)).
+
+WE is also typically acute/subacute and reversible with prompt thiamine supplementation — fundamentally different from the slowly progressive neurodegeneration of AD, PD, or NBIA. When it does become chronic (Korsakoff syndrome), the irreversible damage involves mammillary body atrophy and thalamic gliosis — consistent with vascular-hemorrhagic damage plus demyelination, not pure energy starvation.
+
+**Synthesis: the energy-iron identity**
+
+The question "can you break energy production without breaking iron handling?" is equivalent to asking "can you break the engine without breaking the engine parts?" The engine parts ARE iron proteins.
+
+```
+β-oxidation → acetyl-CoA ─┐
+                           ↓
+Glucose → pyruvate → PDH → TCA cycle ← contains aconitase [4Fe-4S] = IRP1
+                              ↓                   ↕
+                           NADH/FADH₂        iron regulatory
+                              ↓              switch (Fe-S loss)
+                    ETC Complexes I-IV             ↓
+                    (12 Fe-S clusters,      ↑TfR, ↓ferritin,
+                     4+ heme irons)          ↓ferroportin
+                              ↓                   ↓
+                             ATP          iron maldistribution
+                              ↓                   ↓
+                        cell function          ferroptosis
+```
+
+When Fe-S clusters are damaged (by ROS, iron deficiency, or genetic defects in Fe-S assembly), three things happen simultaneously through the same molecular events:
+
+1. **Energy failure** — ETC flux drops, ATP production falls
+2. **Iron release** — labile Fe²⁺ escapes from damaged clusters → Fenton chemistry → lipid peroxidation
+3. **Iron regulatory rewiring** — IRP1 activation drives increased iron import, decreased storage, decreased export → worsened maldistribution
+
+These are not three consequences of one event. They are three descriptions of one event. You cannot have mitochondrial dysfunction without iron dysfunction because *mitochondria run on iron*.
+
+**Implications for the NAD+ debate**
+
+This analysis eliminates the last escape route for the "NAD+ is upstream and iron is downstream" position. The argument cannot be: "NAD+ depletion causes energy failure, and energy failure independently causes neurodegeneration through a non-iron pathway." There is no non-iron energy pathway in mitochondria. When NAD+ depletion impairs Complex I (which has 8 Fe-S clusters), the damage IS iron damage. When P7C3-A20 restores NAD+ and rescues Complex I function, it IS rescuing iron handling.
+
+FELINE's framework is not claiming iron is "more important" than energy. It is observing that iron handling and energy production are mechanistically identical at the molecular level, and that when this unified system fails, the toxic effector is iron-mediated lipid peroxidation (ferroptosis) — because released labile iron from damaged Fe-S clusters catalyzes membrane destruction through Fenton chemistry. The "energy" and "iron" hypotheses are not competing explanations. They are the same explanation viewed from different angles.
+
+#### 4.15.7 Key References — Energy-Iron Inseparability
+
+- Maio N et al. (2017) A single adaptable cochaperone-scaffold complex delivers nascent iron-sulfur clusters to mammalian respiratory chain complexes I–III. Cell Metab 25(4):945-953.e6. [DOI: 10.1016/j.cmet.2017.03.010](https://doi.org/10.1016/j.cmet.2017.03.010)
+- Walden WE et al. (2006) Structure of dual function iron regulatory protein 1 complexed with ferritin IRE-RNA. Science 314(5807):1903-1908. [DOI: 10.1126/science.1133116](https://doi.org/10.1126/science.1133116)
+- Rouault TA (2019) The indispensable role of mammalian iron sulfur proteins in function and regulation of multiple diverse metabolic pathways. PNAS 116(27):13312-13319. [DOI: 10.1073/pnas.1906299116](https://doi.org/10.1073/pnas.1906299116)
+- Lushchak OV et al. (2014) Aconitase post-translational modification as a key in linkage between Krebs cycle, iron homeostasis, redox signaling, and metabolism of reactive oxygen species. Redox Report 19(1):8-15. [DOI: 10.1179/1351000213Y.0000000073](https://doi.org/10.1179/1351000213Y.0000000073)
+- Tong WH & Rouault TA (2007) Metabolic regulation of citrate and iron by aconitases: role of iron-sulfur cluster biogenesis. BioMetals 20:549-564. [DOI: 10.1007/s10534-006-9047-6](https://doi.org/10.1007/s10534-006-9047-6)
+- Amaral AU et al. (2017) Mechanistic bases of neurotoxicity provoked by fatty acids accumulating in MCAD and LCHAD deficiencies. J Inborn Errors Metab Screen 5:1-12. [DOI: 10.1177/2326409817701472](https://doi.org/10.1177/2326409817701472)
+- Ke ZJ & Gibson GE (2004) Selective response of various brain cell types during neurodegeneration induced by mild impairment of oxidative metabolism. Neurochem Int 45(2-3):361-369. [DOI: 10.1016/j.neuint.2003.09.008](https://doi.org/10.1016/j.neuint.2003.09.008)
+- Hazell AS et al. (1998) Mechanisms of neuronal cell death in Wernicke's encephalopathy. Metab Brain Dis 13(2):97-122. [PMID: 9699919](https://pubmed.ncbi.nlm.nih.gov/9699919/)
+- Beinert H et al. (1997) Iron-sulfur clusters: nature's modular, multipurpose structures. Science 277:653-659.
+- Dunham-Snary KJ et al. (2019) Ndufs2, a core subunit of mitochondrial complex I, is essential for acute oxygen-sensing and hypoxic pulmonary vasoconstriction. Circ Res 124(12):1727-1746.
+
+#### 4.15.8 Key References — NBIA Section
+
+- Levi S & Finazzi D (2014) Neurodegeneration with brain iron accumulation: update on pathogenic mechanisms. Front Pharmacol 5:99. [DOI: 10.3389/fphar.2014.00099](https://doi.org/10.3389/fphar.2014.00099)
+- Jeong SY & David S (2006) Age-related changes in iron homeostasis and cell death in the cerebellum of ceruloplasmin-deficient mice. J Neurosci 26:9810-9819. [DOI: 10.1523/JNEUROSCI.2993-06.2006](https://doi.org/10.1523/JNEUROSCI.2993-06.2006)
+- Miyajima H (2015) Aceruloplasminemia. Neuropathology 35:83-90.
+- Marchi G et al. (2019) Aceruloplasminemia: a severe neurodegenerative disorder deserving an early diagnosis. Front Neurosci 13:325. [DOI: 10.3389/fnins.2019.00325](https://doi.org/10.3389/fnins.2019.00325)
+- Kaneko K et al. (2012) Extensive brain pathology in a patient with aceruloplasminemia with a prolonged duration of illness. Hum Pathol 43(3):451-456.
+- Gonzalez-Cuyar LF et al. (2008) Redox active iron accumulation in aceruloplasminemia. Neuropathology 28(5):466-471.
+- Chaubey K et al. (2025) Pharmacologic reversal of advanced Alzheimer's disease in mice and identification of potential therapeutic nodes in human brain. Cell Reports Medicine. [DOI: 10.1016/j.xcrm.2025.102535](https://doi.org/10.1016/j.xcrm.2025.102535)
+- Di Meo I & Tiranti V (2018) Classification and molecular pathogenesis of NBIA syndromes. Eur J Paediatr Neurol 22:272-284.
+- Brunetti D et al. (2012) Pantothenate kinase-associated neurodegeneration: altered mitochondrial membrane potential and defective respiration in Pank2 knock-out mouse model. Hum Mol Genet 21(24):5294-5305. [DOI: 10.1093/hmg/dds380](https://doi.org/10.1093/hmg/dds380)
 
 ---
 
@@ -4044,20 +4643,18 @@ The mechanism: Astrocytic Cp deletion blocks brain iron influx through the BBB (
 
 Alzheimer himself noted "adipose saccules" in glia in his 1907 report. The observation was ignored for over a century: lipid droplets in microglia attracted fewer than 200 papers while amyloid plaques generated over 100,000.
 
-**Marschallinger et al. 2020** (*Nature Neuroscience*; DOI: [10.1038/s41593-019-0532-5](https://doi.org/10.1038/s41593-019-0532-5)): Defined lipid-droplet-accumulating microglia (LDAM) in aging mouse brain. LDAM showed defective phagocytosis, elevated ROS, and increased proinflammatory cytokine secretion. The authors characterized LDAM as "dysfunctional" and implied the lipid droplets represent metabolic failure.
+**Marschallinger et al. 2020** (*Nature Neuroscience*; DOI: [10.1038/s41593-019-0566-1](https://doi.org/10.1038/s41593-019-0566-1)): Defined lipid-droplet-accumulating microglia (LDAM) in aging mouse brain. LDAM showed defective phagocytosis, elevated ROS, and increased proinflammatory cytokine secretion. The authors characterized LDAM as "dysfunctional" and implied the lipid droplets represent metabolic failure.
 
-**Chauhan et al. 2025** (*Oncotarget*; DOI: [10.18632/oncotarget.28690](https://doi.org/10.18632/oncotarget.28690)): Cross-domain evidence from cancer biology reframes this interpretation. Cancer cells under ferroptotic stress become resistant by converting membrane PUFAs into stable triglycerides and cholesteryl esters stored in lipid droplets. This depletes the very substrates ferroptosis requires (oxidation-prone polyunsaturated membrane phospholipids). The mechanism is DGAT-dependent: DGAT1/2 catalyze the esterification of PUFAs into triglycerides for droplet storage.
-
-**Prakash et al. 2025** (*Immunity*; DOI: pending): Demonstrated that lipid droplet formation in macrophages under inflammatory stress serves as a protective buffer, with DGAT-mediated triglyceride synthesis actively preventing lipotoxicity and ferroptosis.
+**DGAT-mediated ferroptosis resistance (cancer biology)**: Cancer cells under ferroptotic stress become resistant by converting membrane PUFAs into stable triglycerides and cholesteryl esters stored in lipid droplets via DGAT1/2. This depletes the very substrates ferroptosis requires (oxidation-prone polyunsaturated membrane phospholipids). This mechanism has been demonstrated across multiple cancer contexts (reviewed in Liang et al. 2023, *Cell Death & Differentiation*; DOI: [10.1038/s41418-023-01212-2](https://doi.org/10.1038/s41418-023-01212-2)).
 
 **FELINE reinterpretation**: The LDAM phenotype is not dysfunction but substrate depletion defense -- the third line of ferroptosis resistance after GPX4 enzymatic repair and Nrf2 transcriptional response:
 
-| Feature | Pathological Interpretation | Ferroptosis Defense Interpretation |
-|---------|---------------------------|-----------------------------------|
-| Lipid droplet accumulation | Metabolic failure | PUFA sequestration from membranes |
-| Impaired phagocytosis | Loss of function | Survival trade-off (less iron intake) |
-| Elevated ROS | Damaging inflammation | Ongoing sublethal ferroptotic stress |
-| Persistent cytokines | Maladaptive neuroinflammation | DAMPs from lipid peroxidation byproducts |
+| Feature                    | Pathological Interpretation   | Ferroptosis Defense Interpretation       |
+| -------------------------- | ----------------------------- | ---------------------------------------- |
+| Lipid droplet accumulation | Metabolic failure             | PUFA sequestration from membranes        |
+| Impaired phagocytosis      | Loss of function              | Survival trade-off (less iron intake)    |
+| Elevated ROS               | Damaging inflammation         | Ongoing sublethal ferroptotic stress     |
+| Persistent cytokines       | Maladaptive neuroinflammation | DAMPs from lipid peroxidation byproducts |
 
 **GPX4 defense hierarchy**:
 
@@ -4066,7 +4663,7 @@ Alzheimer himself noted "adipose saccules" in glia in his 1907 report. The obser
 3. **Substrate depletion**: DGAT-mediated PUFA sequestration into lipid droplets (LDAM phenotype)
 4. **Failure**: Membrane PUFA oxidation exceeds all defenses -> ferroptosis
 
-**Filipello et al. 2023** (*Developmental Cell*; DOI: [10.1016/j.devcel.2023.10.011](https://doi.org/10.1016/j.devcel.2023.10.011)): TREM2-deficient microglia show REDUCED lipid droplets (not increased), and this reflects lysosomal dysfunction rather than protection. Critically, restoring lysosomal biogenesis (via TFEB activation) rescued lipid droplet formation and restored microglial function. This is the opposite of what the "LDAM = dysfunction" model predicts: if lipid droplets were pathological, restoring them should worsen outcomes. Instead, it rescued them.
+**Filipello et al. 2023** (*Acta Neuropathologica*; DOI: [10.1007/s00401-023-02568-y](https://doi.org/10.1007/s00401-023-02568-y)): TREM2-deficient microglia show REDUCED lipid droplets (not increased), and this reflects lysosomal dysfunction rather than protection. Critically, restoring lysosomal biogenesis (via TFEB activation) rescued lipid droplet formation and restored microglial function. This is the opposite of what the "LDAM = dysfunction" model predicts: if lipid droplets were pathological, restoring them should worsen outcomes. Instead, it rescued them.
 
 **Testable prediction**: DGAT2 inhibition in iron-loaded microglia should increase ferroptosis markers (4-HNE, lipid ROS, cell death) if LDAM is a protective adaptation. Conversely, DGAT2 overexpression should confer ferroptosis resistance.
 
@@ -4707,6 +5304,230 @@ The Zeng & Jin review (299) explicitly acknowledges that "research on iron-lower
 298. Bao WD, Pang P, Zhou XT, et al. Loss of ferroportin induces memory impairment by promoting ferroptosis in Alzheimer's disease. *Cell Death Differ.* 2021;28(5):1548-1562. [doi:10.1038/s41418-020-00685-9.](https://doi.org/10.1038/s41418-020-00685-9.)
 299. Zeng H, Jin Z. The role of ferroptosis in Alzheimer's disease: Mechanisms and therapeutic potential (Review). *Mol Med Rep.* 2025;32(1):192. [doi:10.3892/mmr.2025.13557.](https://doi.org/10.3892/mmr.2025.13557.)
 300. Artusi I, Rubin M, Cravin G, Cozza G. Ferroptosis in Human Diseases: Fundamental Roles and Emerging Therapeutic Perspectives. *Antioxidants.* 2025;14(12):1411. [doi:10.3390/antiox14121411.](https://doi.org/10.3390/antiox14121411.)
+
+---
+
+### 8.18 SNAP–Complement Inverse: Astrocyte Program Decline Enables Synapse Elimination
+
+*Added v3.28 (2026-02-16). Integrates the Ling et al. 2024 SNAP discovery, The Transmitter's C4 reporting, and Brott et al. 2025 C4d-LilrB2 neuronal pruning pathway into a unified model of how astrocyte metabolic failure translates into complement-mediated memory destruction.*
+
+#### 8.18.1 The SNAP Discovery
+
+The Synaptic Neuron and Astrocyte Program (SNAP) is a coordinated gene expression program between cortical neurons and astrocytes, discovered by Ling et al. (2024, Nature; McCarroll lab, Broad Institute) using single-nucleus RNA sequencing of the prefrontal cortex from 191 human donors aged 22–97 (301). SNAP comprises two arms:
+
+- **SNAP-n (neuronal component):** Genes encoding synaptic vesicle cycle components, synapse organization factors, and postsynaptic density proteins. Enriched for SynGO-annotated synaptic gene sets. Subtypes across both glutamatergic and GABAergic neurons.
+- **SNAP-a (astrocyte component):** A distinct set of genes with synaptic support functions plus — critically — cholesterol biosynthesis and export genes (21 GO-annotated cholesterol biosynthesis genes showed strongly positive SNAP-a loadings). Fatty acid biosynthesis genes similarly co-regulated.
+
+The fundamental finding is that SNAP-a and SNAP-n are *tightly synchronized across individuals*: when one arm is high, the other is high. This is not just cell-autonomous expression — it reflects a coordinated multicellular program where astrocyte cholesterol biosynthesis scales with neuronal synaptic demand.
+
+In both schizophrenia and aging, cells **divested from SNAP**: astrocytes, glutamatergic neurons, and GABAergic neurons all reduced SNAP expression to corresponding degrees. However, some elderly individuals maintained robust SNAP, correlating with preserved cognitive flexibility. SNAP varied substantially even among healthy individuals of similar age, suggesting it may underlie normal interindividual cognitive differences (301).
+
+**Genetic evidence:** Both SNAP-a and SNAP-n were enriched for schizophrenia GWAS risk variants. Previous analyses had found enrichment only in neuronal genes — SNAP reframed the question by identifying which *dynamically coordinated* astrocyte genes carry risk, rather than which genes astrocytes express overall (301).
+
+#### 8.18.2 The C4 Inverse Relationship: Direct Evidence
+
+A critical but underappreciated finding from The Transmitter's coverage of the Ling et al. data: **"Many of the genes modulated by SNAP-a are associated with schizophrenia, including a gene called C4. People whose astrocytes expressed low levels of SNAP-a also have high levels of C4"** (302). In Ben Allen's study of aging mice, older astrocytes overexpressed C4 (302).
+
+This establishes a direct inverse correlation: **SNAP-a low ↔ C4 high.** When astrocytes reduce expression of cholesterol biosynthesis, synaptic support, and metabolic supply genes, they simultaneously de-repress complement C4 production. This is not a generic inflammation response — it is a specific molecular switch where the same cell transitions from synapse-supporting to synapse-tagging.
+
+#### 8.18.3 C4d–LilrB2/PirB: The Neuronal Pruning Receptor
+
+Brott et al. (2025, PNAS; Shatz lab, Stanford) discovered that C4d — a cleavage product of complement C4 previously thought to have no physiological function — binds the neuronal receptor LilrB2/PirB with nanomolar affinity (Kd = 3 nM by SPR, 37 nM in cell-binding assays) (303). Key findings:
+
+- **C4d and LilrB2 colocalize at excitatory synapses** in human cerebral cortex
+- **C4d colocalizes with beta-amyloid** in Alzheimer's disease brain
+- **Both C4d and C4 increase with age**, and more so in AD
+- In vivo C4d exposure caused **significant dendritic spine loss** on L5 pyramidal neurons in WT mice
+- **PirB knockout completely prevented** C4d-induced spine loss
+- C4d binds preferentially to LilrB2 over LilrB1 or LilrB3
+
+This is the same receptor that Shatz's lab previously showed binds Aβ oligomers (Kim et al. 2013, Science) (304). Both amyloid beta and complement C4d converge on a single neuronal pruning receptor — linking the amyloid and neuroinflammation hypotheses through a shared effector mechanism.
+
+**Three pathways to synapse elimination now identified:**
+
+| Pathway                      | Mechanism                                                     | Effector                           | Key Reference                          |
+| ---------------------------- | ------------------------------------------------------------- | ---------------------------------- | -------------------------------------- |
+| Classical complement (glial) | C1q→C4→C3→iC3b opsonization                                | Microglial CR3 phagocytosis        | Stevens et al. 2007 (305)              |
+| C4d–LilrB2 (neuronal)       | C4 cleavage → C4d → LilrB2                                  | Neuron-autonomous spine retraction | Brott et al. 2025 (303)                |
+| C4 intracellular (endosomal) | C4 overexpression → SNX27 disruption → GluR1 mistrafficking | AMPAR surface depletion            | Bhatt et al. 2024 Mol Psychiatry (306) |
+
+A fourth pathway — C5a/C5aR1 signaling targeting ependymal cells and clearance infrastructure — is described in §8.18.8.
+
+**Note on the third pathway:** Bhatt et al. (2024) showed that C4 overexpression impairs AMPA receptor (GluR1) trafficking through the endosomal-lysosomal pathway by disrupting SNX27, causing synapse loss *without* microglial phagocytosis — a CR3-independent, cell-intrinsic mechanism (306). SNX27 upregulation rescued the deficit. This connects to FELINE's L-layer: endosomal-lysosomal dysfunction driven by C4 excess represents a convergence of complement biology with the lysosomal integrity arm.
+
+#### 8.18.4 The FELINE Integration: Iron → SNAP Decline → C4 De-repression → Synapse Loss
+
+FELINE provides the mechanistic upstream cause of SNAP decline that Ling et al. documented but did not explain:
+
+1. **Iron accumulation in astrocytes** (Fe layer) → mitochondrial damage → ATP depletion
+2. **Cholesterol biosynthesis fails** (requires ~36 ATP + 16 NADPH per molecule) → SNAP-a cholesterol component lost
+3. **SNAP-a decline** → loss of coordinated synaptic support → SNAP-n correspondingly declines
+4. **C4 de-repressed** (inverse SNAP-a ↔ C4 relationship, §8.18.2)
+5. **C4 cleaved to C4d** → binds neuronal LilrB2 → spine retraction (§8.18.3)
+6. **Simultaneously:** C4 activates classical complement cascade → C3 opsonization → microglial phagocytic pruning
+7. **Simultaneously:** Excess C4 disrupts endosomal SNX27 → GluR1 mistrafficking → AMPAR loss (§8.18.3 third pathway)
+8. **Memory traces encoded as functional amyloid** (CPEB3 prion-like assemblies requiring cholesterol-rich synaptic membrane platforms) **lose their substrate** — both the membrane platform (cholesterol gone) and the synaptic structure (complement pruning)
+
+This cascade explains why cognitive decline precedes structural neurodegeneration: SNAP decline means astrocytes stop providing cholesterol for memory encoding *before* neurons die. The first symptoms of AD are not cell death — they are chaperone supply failure and synapse elimination.
+
+#### 8.18.5 Cross-Disease Predictions
+
+The SNAP-C4 inverse maps onto multiple conditions through a single mechanism:
+
+**Schizophrenia:** C4A copy number variation is the strongest genetic risk factor for schizophrenia (Sekar et al. 2016) (307). SNAP declines in schizophrenia (Ling et al. 2024) (301). FELINE predicts these are the same phenomenon viewed from different angles: C4A genetic loading → constitutively high complement → synapses pruned → SNAP-n declines as neurons lose synaptic partners → astrocytes reduce cholesterol supply in response → further C4 de-repression. In schizophrenia, the entry point is genetic (excess C4A); in aging/AD, the entry point is metabolic (iron-driven SNAP decline). Same pathway, different initiator.
+
+**Autism spectrum (inverse prediction):** C4B null allele is more prevalent in autism (Warren et al. 1995) (308). If reduced C4 means reduced pruning, FELINE predicts ASD individuals should show *preserved* or *excessive* SNAP expression — too many synapses maintained rather than too few eliminated. This is consistent with the over-connectivity phenotype observed in some ASD subtypes.
+
+**Down syndrome:** DSCAM (Down syndrome cell adhesion molecule) on chromosome 21 modulates complement-mediated synapse elimination. Trisomy → potential complement pathway dysregulation → accelerated pruning. Combined with SOD1-driven iron accumulation (§4, executive summary), DS represents dual FELINE layer failure converging on the same outcome: iron kills astrocytes (SNAP decline) while trisomy amplifies complement (C4 de-repression).
+
+#### 8.18.6 The Astrocyte as Switchboard
+
+The SNAP-C4 inverse reveals the astrocyte as a molecular switchboard with two operational states:
+
+| Feature                  | SNAP-high (healthy)           | SNAP-low (failing)                                    |
+| ------------------------ | ----------------------------- | ----------------------------------------------------- |
+| Cholesterol biosynthesis | Active (HMGCR, FDFT1, DHCR24) | Reduced                                               |
+| Synaptic support genes   | Expressed (NRXN1, EPHA3, DCC) | Down-regulated                                        |
+| Complement C4            | Suppressed                    | De-repressed (high)                                   |
+| MHC-I presentation       | Normal                        | Impaired (see APOE4 paradox, §1.4b genetic variants) |
+| Net effect on synapses   | Maintained/strengthened       | Tagged for elimination                                |
+| ATP status               | Adequate                      | Depleted (iron-mitochondrial damage)                  |
+
+This integrates with the APOE4 astrocyte immune paradox: APOE4 astrocytes show increased innate inflammatory output (C3↑, NF-κB↑) but decreased adaptive immune function (MHC-I↓, immunoproteasome↓) (Zalocusky et al. 2021). The SNAP-C4 inverse explains the innate arm: failing astrocytes de-repress complement while losing the cholesterol biosynthesis capacity needed for MHC-I antigen presentation.
+
+#### 8.18.7 Therapeutic Implications
+
+**LilrB2 antagonism:** Brott et al. (2025) propose targeting LilrB2 to protect synapses from both Aβ- and C4d-mediated pruning (303). FELINE agrees this could be synaptically protective but warns it addresses step 5 while leaving steps 1–4 intact. If iron continues damaging astrocytes, SNAP will continue declining, C4 will remain elevated, and other complement pathways (classical cascade, endosomal disruption) will continue operating. LilrB2 blockade is a tourniquet, not a cure.
+
+**SNAP restoration:** More upstream than LilrB2 blockade. If SNAP decline is caused by astrocyte ATP depletion from iron-mitochondrial damage, then:
+
+- Iron redistribution (curcumin/lactoferrin) → restored mitochondrial function → restored ATP → cholesterol biosynthesis recovers → SNAP-a re-engages → C4 re-suppressed → synapses protected
+- This predicts that FELINE-directed iron therapy should *measurably increase SNAP expression* in treated individuals — a testable pharmacodynamic biomarker
+
+**C4-selective modulation:** Rather than global complement inhibition (which would impair infection defense), selectively reducing C4d generation or blocking the C4d–LilrB2 interaction could preserve the classical cascade's antimicrobial functions while protecting synapses.
+
+#### 8.18.8 C5a/C5aR1: Complement Bridges to the E-Layer (Ependymal/Glymphatic)
+
+Sections §8.18.3–4 focused on complement-mediated synapse elimination. But complement also attacks the brain's waste clearance infrastructure — FELINE's E (Export and clearance) layer — through a distinct mechanism involving the anaphylatoxin C5a and its receptor C5aR1.
+
+**The NMO evidence:** Qi et al. (2026, JCI) developed an NMO model using non-complement-activating AQP4-IgG infused subarachnoidally. Despite bypassing the classical complement cascade, neutrophils carrying C5a infiltrated the parenchyma, physically interacted with microglia, and drove motor impairment through microglial C5aR1 signaling (310). Key findings:
+
+- C5aR1 knockout or pharmacological inhibition reduced neutrophil infiltration, microglial lysosomal activation, neuronal lipid-droplet burden, and motor impairment
+- The neuronal lipid-droplet accumulation is notable — it recapitulates a key feature of the LDAM (lipid-droplet-accumulating microglia) phenotype but in neurons, suggesting C5a/C5aR1 signaling can induce lipid metabolic dysfunction across cell types
+- Motor impairment was reversible upon stopping AQP4-IgG infusion, indicating a functional disruption phase before irreversible cytolysis
+
+**The ependymal connection:** Human Protein Atlas single-cell data show that ependymal cells co-express both C5aR1 and AQP4 at significant levels, as do choroid plexus epithelial cells (C5 itself is also expressed in these compartments). This creates the conditions for **C5a/C5aR1 autocrine signaling** at the CSF–brain interface — complement-mediated damage to the very cells that line the ventricles and regulate CSF dynamics (311; Protein Atlas data).
+
+**FELINE integration — the E-layer bridge:**
+
+AQP4 polarization drives glymphatic flow at two critical interfaces: astrocytic endfeet (perivascular, well-studied via Iliff et al. 2012) and the ependymal lining (ventricular, less studied). If C5a/C5aR1 signaling disrupts ependymal AQP4 function, the consequences cascade through FELINE's E-layer:
+
+1. **Impaired CSF dynamics** → reduced glymphatic bulk flow
+2. **Reduced iron clearance** → parenchymal iron accumulates (glymphatic system is the brain's bulk iron export route; Iliff et al. 2012, Jessen et al. 2015)
+3. **Iron accumulation** → astrocyte mitochondrial damage → SNAP decline → C4 de-repression (§8.18.2–4)
+4. **More complement activation** → more C5a generation → more ependymal damage → **vicious cycle**
+
+This means complement attacks the brain at three levels simultaneously:
+
+- **Synapses** (C4d/LilrB2, classical cascade, endosomal — §8.18.3)
+- **Myelin** (C1q tagging + OPC differentiation block — Appendix 2.1)
+- **Clearance infrastructure** (C5a/C5aR1 at ependymal/choroid plexus — this section)
+
+The third arm has been largely overlooked because NMO research and AD research rarely cross-pollinate. But the molecular players (AQP4, complement, microglia, lipid droplets) are identical.
+
+**Four complement pathways to neural damage now identified:**
+
+| Pathway                      | Mechanism                                        | Target structure                                    | Key reference             |
+| ---------------------------- | ------------------------------------------------ | --------------------------------------------------- | ------------------------- |
+| Classical complement (glial) | C1q→C4→C3→iC3b → CR3 phagocytosis            | Synapses, myelin                                    | Stevens et al. 2007 (305) |
+| C4d–LilrB2 (neuronal)       | C4 cleavage → C4d → LilrB2                     | Synapses (neuron-autonomous)                        | Brott et al. 2025 (303)   |
+| C4 intracellular (endosomal) | C4↑ → SNX27 disruption → GluR1 mistrafficking | AMPAR surface expression                            | Bhatt et al. 2024 (306)   |
+| C5a/C5aR1 (ependymal/glial)  | Neutrophil C5a → microglial + ependymal C5aR1   | Clearance infrastructure, neuronal lipid metabolism | Qi et al. 2026 (310)      |
+
+#### 8.18.9 Falsification Criteria
+
+- If SNAP-a expression does not inversely correlate with C4 expression in AD brain tissue (not just schizophrenia/aging), the SNAP-C4 link may be disease-specific rather than universal
+- If iron chelation in astrocyte cultures does not restore SNAP-a gene expression or reduce C4 expression, the iron→SNAP→C4 causal chain is incomplete
+- If LilrB2 knockout mice show normal cognitive decline in AD models despite spine protection, synapse loss via LilrB2 is not the rate-limiting step for cognitive impairment
+- If C4A overexpression in the absence of iron loading produces equivalent synapse loss, complement is sufficient without iron and FELINE's upstream positioning of iron is weakened
+- If SNAP-high elderly individuals show equivalent brain iron to SNAP-low individuals, iron is not the primary driver of SNAP decline
+- If C5aR1 inhibition in AD models fails to improve glymphatic clearance or brain iron levels, the complement→ependymal→E-layer bridge (§8.18.8) is not a significant contributor to iron accumulation
+
+#### 8.18.10 Nomenclature Note
+
+**SNAP (Synaptic Neuron and Astrocyte Program)** — the Ling et al. 2024 gene expression program described in this section — should not be confused with **SNAP-25** (synaptosomal-associated protein 25 kDa), a component of the SNARE vesicle fusion complex. Both are relevant to synaptic function but describe entirely different molecular entities. SNAP-25 is a single protein required for neurotransmitter release; SNAP is a multicellular transcriptional program encompassing hundreds of coordinated genes. Confusingly, SNAP-25 expression is itself part of the broader SNAP program (Ferris et al. 2017; Bhatt et al. 2025 showed astrocyte SCAP knockdown reduces SNAP-25 expression in hippocampal synapses) (309).
+
+#### 8.18.11 Bibliography: SNAP-C4-Complement Section
+
+301. Ling E, Nemesh J, Goldman M, et al. A concerted neuron–astrocyte program declines in ageing and schizophrenia. *Nature.* 2024;627(8004):604-611. [doi:10.1038/s41586-024-07109-5.](https://doi.org/10.1038/s41586-024-07109-5.)
+302. "'SNAP' dance of astrocytes and neurons falls out of step in aging and schizophrenia." *The Transmitter.* March 6, 2024. [C4 inverse correlation with SNAP-a reported; Allen aging mouse C4 overexpression data cited] [url: https://www.thetransmitter.org/astrocytes/snap-dance-of-astrocytes-and-neurons-declines-with-age-disease/]
+303. Brott BK, Raissi AJ, Micheva KD, et al. C4d, a high-affinity LilrB2 ligand, is elevated in Alzheimer's disease and mediates synapse pruning. *PNAS.* 2025;122(38):e2519253122. [doi:10.1073/pnas.2519253122.](https://doi.org/10.1073/pnas.2519253122.)
+304. Kim T, Vidal GS, Bhatt DK, et al. Human LilrB2 is a β-amyloid receptor and its murine homolog PirB regulates synaptic plasticity in an Alzheimer's model. *Science.* 2013;341(6152):1399-1404. [doi:10.1126/science.1242077.](https://doi.org/10.1126/science.1242077.)
+305. Stevens B, Allen NJ, Vazquez LE, et al. The classical complement cascade mediates CNS synapse elimination. *Cell.* 2007;131(6):1164-1178. [doi:10.1016/j.cell.2007.10.036.](https://doi.org/10.1016/j.cell.2007.10.036.)
+306. Phadke RA, Brack A, Fournier LA, et al. The schizophrenia risk gene C4 induces pathological synaptic loss by impairing AMPAR trafficking. *Mol Psychiatry.* 2025;30(2):796-809. [doi:10.1038/s41380-024-02701-7.](https://doi.org/10.1038/s41380-024-02701-7.) [C4 overexpression disrupts SNX27 → GluR1 mistrafficking; CR3-independent synapse loss; SNX27 rescue]
+307. Sekar A, Bialas AR, de Rivera H, et al. Schizophrenia risk from complex variation of complement component 4. *Nature.* 2016;530(7589):177-183. [doi:10.1038/nature16549.](https://doi.org/10.1038/nature16549.)
+308. Warren RP, Singh VK, Cole P, et al. Possible association of the extended MHC haplotype B44-SC30-DR4 with autism. *Immunogenetics.* 1992;36(4):203-207. [C4B null allele prevalence in autism; updated by subsequent HLA studies]
+309. // UNVERIFIED — DOI 10.1101/2025.01.15.633040 returns 404. Possibly: Vartiainen et al. 2025 (bioRxiv 10.1101/2025.01.28.635252) on astrocyte cholesterol and SNAP, but authors/claims differ. Original listed as: Bhatt DK, Goldman M, et al. Astrocyte cholesterol drives neuron-astrocyte program associated with schizophrenia. *bioRxiv.* 2025. [SNAP-a cholesterol → SNAP-n induction; NRXN1 co-regulation; SCAP knockdown → SNAP-25 reduction] [doi:10.1101/2025.01.15.633040.](https://doi.org/10.1101/2025.01.15.633040.)
+310. Qi F, Lennon VA, Zhao S, et al. Neutrophil-microglia interaction drives motor dysfunction in neuromyelitis optica model induced by subarachnoid AQP4-IgG. *J Clin Invest.* 2026;e199706. [doi:10.1172/JCI199706.](https://doi.org/10.1172/JCI199706.) [Non-complement-activating AQP4-IgG → neutrophil C5a → microglial C5aR1 → neuronal lipid-droplet burden + motor impairment; C5aR1 KO protective; precytolytic phase mechanism]
+311. Human Protein Atlas v24. C5AR1 single-cell expression: [url: https://v24.proteinatlas.org/ENSG00000197405-C5AR1/single+cell]; AQP4 single-cell expression: [url: https://v24.proteinatlas.org/ENSG00000171885-AQP4/single+cell]; C5 single-cell expression: [url: https://v24.proteinatlas.org/ENSG00000106804-C5/single+cell]. [Ependymal and choroid plexus co-expression of C5aR1 and AQP4; cited via Barry C, LinkedIn comment on Qi et al. 2026]
+
+### 8.19 Base Barrier Cells and the Iron-Barrier Inventory
+
+The choroid plexus (ChP) has long been recognized as a blood-CSF gateway, with its epithelium forming tight junctions that regulate molecular entry into cerebrospinal fluid. In 2026, Verhaege et al. discovered an entirely new cellular barrier at the ChP base: **Base Barrier Cells (BBCs)**, CLDN11+ fibroblasts derived from meningeal mesenchymal precursors that form tight junctions sealing the ChP stroma from CSF and brain parenchyma [312]. This discovery adds a previously unknown gate to FELINE's Export layer and reveals a molecular bridge to the Insulation layer through shared CLDN11 dependence.
+
+#### 8.19.1 The BBC Discovery
+
+Verhaege et al. identified BBCs at the base of the choroid plexus across mouse and human tissue, confirming cross-species conservation [312]. BBCs express CLDN11 and form tight junctions that physically seal the ChP stroma, which contains fenestrated capillaries and resident immune cells, from the surrounding CSF and brain parenchyma.
+
+During neuroinflammation, BBCs lose barrier integrity. Immune cells that would normally be confined to the ChP stroma cross the BBC barrier and enter the CNS. This positions the BBC as a structural gatekeeper whose failure enables peripheral-to-central immune trafficking, independent of the better-known BCSFB epithelial route.
+
+#### 8.19.2 CLDN11: One Protein, Two FELINE Layers
+
+CLDN11 (also called oligodendrocyte-specific protein, OSP) serves dual barrier roles:
+
+- **I-layer (myelin):** CLDN11 forms tight junctions in the radial component of myelin, sealing the extracellular space between myelin lamellae. CLDN11 knockout mice show slowed nerve conduction velocity and male sterility (the blood-testis barrier is also CLDN11-dependent) [314]. Without CLDN11, myelin loses its ability to exclude extracellular ions and reactive oxygen species from the periaxonal space.
+- **E/N-layer (BBCs):** CLDN11 forms tight junctions at the ChP base, preventing stromal contents (blood-derived iron, immune cells) from reaching CSF [312, 315].
+
+This creates a molecular bridge across FELINE layers: the same protein that protects axons from extracellular iron and ROS (Insulation) also prevents peripheral blood contents from reaching CSF (Export/Neurovascular). Any process that degrades CLDN11, such as iron-driven lipid peroxidation of tight junction lipid domains, would simultaneously compromise both barriers, producing coordinated multi-layer failure.
+
+#### 8.19.3 The Body's Iron-Barrier Inventory
+
+The following table catalogs all known biological barriers with iron-regulatory relevance, mapped to FELINE defense layers:
+
+| Barrier                        | Location                                         | Key TJ Proteins            | Iron Relevance                                              | FELINE Layer  | Inflammation Vulnerable?                          |
+| ------------------------------ | ------------------------------------------------ | -------------------------- | ----------------------------------------------------------- | ------------- | ------------------------------------------------- |
+| **BBB**                  | Brain capillary endothelium                      | Claudin-5, occludin, ZO-1  | Primary brain iron import gate; Tf/TfR1 transcytosis        | N             | Yes (pericyte loss, astrocyte endfoot retraction) |
+| **BCSFB**                | ChP epithelium                                   | Claudin-1, -2, -3, -11     | CSF iron regulation; Tf secretion into CSF                  | E             | Yes (LPS → occludin/ZO-1 loss)                   |
+| **BBC barrier**          | ChP base (fibroblasts)                           | CLDN11, adherens junctions | Seals fenestrated ChP capillaries from CSF/brain            | E             | Yes (Verhaege 2026)                               |
+| **BNB**                  | Peripheral nerve endoneurium                     | Claudin-5, -19             | More permeable than BBB; peripheral iron access             | N (PNS)       | Yes                                               |
+| **BRB**                  | Retinal pigment epithelium + retinal capillaries | Claudin-5, ZO-1            | Retinal iron doubled in AD                                  | N (retinal)   | Yes                                               |
+| **Myelin barrier**       | OL/Schwann cell wraps                            | CLDN11 (radial component)  | Shields axons from extracellular iron/ROS                   | I             | Yes (complement, lipid peroxidation)              |
+| **Placental barrier**    | Syncytiotrophoblast                              | ZO-1, claudin-4            | Tf/TfR1 iron transfer to fetus; excess iron → preeclampsia | Developmental | Yes (infection, preeclampsia)                     |
+| **Blood-testis barrier** | Sertoli cells                                    | CLDN11, occludin, ZO-1     | Protects spermatogenesis from iron/immune access            | Reproductive  | Yes                                               |
+
+**Key insight:** CLDN11 spans three of these barriers (myelin, BBC, blood-testis), making it a shared molecular vulnerability across reproductive, neural insulation, and CSF-gating functions.
+
+#### 8.19.4 BBC Failure → Iron Entry: The E-Layer Amplifier
+
+BBC breakdown during systemic inflammation creates a second route for peripheral iron and immune cells to enter CSF, beyond epithelial BCSFB disruption. This connects directly to the C5a/C5aR1 ependymal bridge described in §8.18.8: complement attacks the ChP epithelial gate while BBC failure removes the structural backstop, producing dual-breach entry.
+
+In long COVID, Pang et al. (2026) found that choroid plexus enlargement correlates with elevated GFAP and phospho-tau217, two biomarkers of astrocyte reactivity and tau pathology [313]. BBC inflammation vulnerability may explain why ChP structural change tracks with downstream neurodegeneration markers: if BBCs fail, the ChP becomes a funnel rather than a filter.
+
+The resulting vicious cycle: systemic inflammation → BBC barrier breach → iron and immune cell entry into CSF → astrocyte iron loading → hepcidin upregulation → ferroportin internalization → more iron trapping → more inflammation.
+
+#### 8.19.5 Falsification Criteria
+
+- If CLDN11 knockout mice show no change in ChP permeability to iron or immune cells, BBCs use different tight junction proteins than expected
+- If BBC-specific ablation does not increase brain iron concentration, the BBC barrier is not rate-limiting for iron entry via the ChP route
+- If long COVID ChP enlargement does not correlate with CSF iron or ferritin levels, BBC failure is not the mechanism linking ChP damage to iron accumulation
+- If CLDN11 degradation in myelin and BBCs is not temporally correlated during aging or neuroinflammation, the two barrier systems fail independently rather than through shared CLDN11 vulnerability
+
+**Bibliography (§8.19)**
+
+312. Verhaege D, De Nolf C, Castelein J, et al. Base barrier cells provide compartmentalization of choroid plexus, brain and CSF. *Nature Neuroscience.* 2026. [doi:10.1038/s41593-025-02188-7.](https://doi.org/10.1038/s41593-025-02188-7.) [CLDN11+ fibroblasts at ChP base; meningeal mesenchymal origin; conserved in mouse, marmoset, human; inflammation → barrier loss → immune cell crossing]
+313. Pang H, Frontera J, Jiang L, et al. Choroid plexus alterations in long COVID and their associations with Alzheimer's disease risks. *Alzheimer's & Dementia.* 2026. [doi:10.1002/alz.71020.](https://doi.org/10.1002/alz.71020.) PMID 41612939. [ChP volume 10% larger in long COVID; correlates with GFAP (r=0.35) and p-tau217 (r=0.54); CBF negatively correlated with p-tau217]
+314. Gow A, Southwood CM, Li JS, et al. CNS myelin and sertoli cell tight junction strands are absent in Osp/claudin-11 null mice. *Cell.* 1999;99(6):649-659. [doi:10.1016/S0092-8674(00)81553-6.](https://doi.org/10.1016/S0092-8674(00)81553-6.) [CLDN11 KO → loss of radial component TJs in myelin, slowed nerve conduction, male sterility from blood-testis barrier failure]
+315. Wolburg H, Wolburg-Buchholz K, Liebner S, Engelhardt B. Claudin-1, claudin-2 and claudin-11 are present in tight junctions of choroid plexus epithelium of the mouse. *Neuroscience Letters.* 2001;307(2):77-80. [doi:10.1016/S0304-3940(01)01927-9.](https://doi.org/10.1016/S0304-3940(01)01927-9.) PMID 11427304. [CLDN11 expression confirmed in ChP epithelial TJs; immunohistochemistry in adult mouse brain]
 
 ---
 
@@ -5355,6 +6176,171 @@ FELINE predicts that effective treatment requires simultaneous intervention on m
 
 **Why combination is required**: Single-layer intervention leaves other failed layers as alternative ferroptosis routes. Only by simultaneously shoring up multiple defenses can the "Swiss cheese" holes be blocked.
 
+### 12.4 Astrocyte Recovery Therapeutics: The Central Node
+
+Astrocytes are the single cell type that participates in ALL five FELINE defense layers:
+
+| FELINE Layer                   | Astrocyte Role                                                                                                | What Fails When Astrocytes Become Reactive                                                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Fe (Import/Storage)**  | Ferritin expression; iron uptake from ISF                                                                     | Reactive astrocytes accumulate iron but lose regulated storage → labile iron pool expands                                                     |
+| **L (Lysosomal)**        | Autophagic clearance of endfoot debris; Aβ uptake/degradation                                                | Autophagy impaired; endfoot mitochondria degenerate → clasmatodendrosis                                                                       |
+| **I (Insulation)**       | Cholesterol/lipid supply to OLs for myelination; GPX4/GSH maintenance                                         | SNAP-a program declines (Ling et al. 2024, Nature 627:604); cholesterol synthesis drops → NRXN1 signaling fails → OL myelination unsupported |
+| **N (Neurovascular)**    | Endfoot attachment to basement membrane; AQP4 polarization; BBB maintenance                                   | Endfeet retract (clasmatodendrosis); AQP4 depolarizes; BBB permeability increases                                                              |
+| **E (Export/Clearance)** | GPI-ceruloplasmin ferroxidase for iron distribution; ferroportin for iron export into ISF; glymphatic conduit | Iron distribution to neurons/OLs ceases; glymphatic clearance collapses; iron exit via CSF impaired                                            |
+
+This makes astrocyte recovery arguably the highest-leverage therapeutic target in FELINE — restoring astrocyte homeostatic function would simultaneously shore up all five defense layers. But "reactive astrocyte" is not a single state, and the interventions differ depending on whether the goal is prevention, reversal, or replacement.
+
+#### 12.4.1 Prevention: Maintaining Healthy Astrocytes Before Reactive Conversion
+
+**SIGMAR1 Agonists (Blarcamesine, Cevimeline)**
+
+Mechanism: SIGMAR1 at mitochondria-associated ER membranes (MAMs) → autophagy in astrocyte endfeet → endfoot mitochondrial health → sustained AQP4 polarization → preserved glymphatic function.
+
+Evidence: Cevimeline reduced CSF Aβ by 22% in healthy volunteers (Nitsch et al. 2000). Blarcamesine showed modest cognitive benefit in Phase 2b/3 AD trials. The endfoot-specific mechanism is detailed in the AD generic repurposing hypothesis (Section 1).
+
+FELINE interpretation: This is the purest upstream intervention — maintaining the cellular infrastructure before it breaks. Acts on the N-layer (endfoot integrity) and E-layer (glymphatic/clearance) simultaneously. Limited value after clasmatodendrosis is established because the endfeet are already fragmented.
+
+Clinical status: Blarcamesine Phase 3 ongoing. Cevimeline FDA-approved (Sjögren's syndrome) — repositioning opportunity.
+
+**NAD+ Restoration (P7C3-A20, NR, NMN)**
+
+Mechanism: NAD+ → SIRT3 → mitochondrial health in astrocytes → sustained ATP for V-ATPase (L-layer) and AQP4-mediated water transport (E-layer). Also NAD+ → NADK → NADPH → GSH → GPX4 → ferroptosis defense (I-layer).
+
+Evidence: Chaubey et al. 2025 (Cell Reports Medicine, [DOI: 10.1016/j.xcrm.2025.102535](https://doi.org/10.1016/j.xcrm.2025.102535)) demonstrated P7C3-A20 reverses advanced AD pathology in 5xFAD/PS19 mice. NDAN individuals (AD pathology, no dementia) show preserved NAD+ homeostasis.
+
+FELINE interpretation: NAD+ depletion is one of several independent entry points into the FELINE cascade (see Section 4.15.3). In amyloid-driven models where metabolic failure is the entry point, NAD+ restoration is highly effective. But per the NBIA analysis, NAD+ is not universally upstream — aceruloplasminemia patients have intact metabolism yet progressive neurodegeneration from pure iron export failure.
+
+Caveat: P7C3-A20 not yet in human trials; NR/NMN trials in AD have shown inconsistent results, possibly due to insufficient brain penetration.
+
+**Environmental Enrichment**
+
+Hase et al. (2017) demonstrated that environmental enrichment attenuates clasmatodendrosis and AQP4 disruption in a mouse model of chronic cerebral hypoperfusion. This is the non-pharmacological proof-of-principle that endfoot health is modifiable. Exercise independently enhances glymphatic clearance through increased arterial pulsatility (E-layer) and improves vascular health (N-layer).
+
+#### 12.4.2 Reversal: Converting Reactive Astrocytes Back to Homeostatic State
+
+**HDAC3 Inhibitors (RGFP966) — NEW, NOT PREVIOUSLY IN FELINE**
+
+This is the most significant recent advance in astrocyte-targeted therapy. Clayton & Tesar (2024, Nat Neurosci 27:656-665, [DOI: 10.1038/s41593-024-01580-z](https://doi.org/10.1038/s41593-024-01580-z)) developed a phenotypic screening platform for astrocyte reactivity modulators and identified HDAC3 (histone deacetylase 3) as the key epigenetic driver of the pathological reactive astrocyte state.
+
+Mechanism: HDAC3 deacetylates the RelA/p65 subunit of NF-κB, enabling it to drive transcription of pro-inflammatory/neurotoxic astrocyte genes (C3, GBP2, IL-6, CXCL10). HDAC3 inhibition by RGFP966 hyperacetylates RelA/p65, which paradoxically suppresses its pro-inflammatory transcriptional activity while simultaneously opening chromatin at beneficial astrocyte gene loci. The net effect is an epigenetic switch: pathological reactive gene program → suppressed; homeostatic/neuroprotective gene program → activated.
+
+What RGFP966 does:
+
+| Effect                                                  | Evidence                            | FELINE Layer                                               |
+| ------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------------- |
+| Suppresses C3, GBP2, IL-6, CXCL10 expression            | RNA-seq, in vitro + in vivo         | All (removes neurotoxic astrocyte output)                  |
+| Promotes beneficial astrocyte gene expression           | Chromatin mapping (H3K27ac CUT&RUN) | All (restores homeostatic functions)                       |
+| Reduces toxic very-long-chain fatty acids               | Lipidomics in reactive astrocytes   | **I-layer** (direct ferroptosis substrate reduction) |
+| Protects retinal ganglion cells after optic nerve crush | In vivo mouse model                 | Neuroprotection validated                                  |
+| Promotes remyelination after LPC-induced demyelination  | In vivo electron microscopy         | **I-layer** (myelin repair)                          |
+| Brain-penetrant, chronic dosing tolerated               | 11-day daily i.p. at 10 mg/kg       | Translational feasibility                                  |
+| Conserved in human astrocytes                           | Human iPSC-derived astrocytes       | Species conservation confirmed                             |
+
+FELINE interpretation: HDAC3 inhibition is remarkable because it hits multiple FELINE layers through a single astrocyte-targeted mechanism. Reducing VLCFA in reactive astrocytes directly lowers ferroptosis substrate availability (I-layer). Promoting remyelination restores insulation (I-layer). Suppressing C3 reduces complement-mediated myelin tagging (I-layer via Appendix 2.1 complement cascade). Restoring homeostatic astrocyte functions should restore Cp/Fpn iron distribution (E-layer) and AQP4 polarization (N/E-layers), though this has NOT been directly tested.
+
+Rosete & Ciernia (2024, Epigenomics 16:1373-1388, [DOI: 10.1080/17501911.2024.2419357](https://doi.org/10.1080/17501911.2024.2419357)) reviewed HDAC3 inhibition as simultaneously reducing astrocyte reactivity, suppressing pro-inflammatory microglia/macrophage phenotypes, AND promoting oligodendrocyte maturation and myelination — a triple-cell-type effect from one target.
+
+Critical FELINE prediction (untested): If HDAC3 inhibition truly restores homeostatic astrocyte function, then RGFP966-treated reactive astrocytes should re-express GPI-ceruloplasmin and ferroportin at their endfoot membranes, and AQP4 should re-polarize to perivascular endfeet. If RGFP966 restores gene expression programs but does NOT restore endfoot ceruloplasmin/ferroportin/AQP4 polarization, then the astrocyte is "halfway home" — less toxic but not functionally restored for iron distribution and clearance. This is a directly testable prediction using immunostaining in RGFP966-treated mice.
+
+Clinical status: Preclinical. Patent pending (Clayton & Tesar, Case Western Reserve). No clinical trials announced. RGFP966 is a tool compound; clinical-grade HDAC3-selective inhibitors would need development.
+
+**NU-9 (Target Undisclosed)**
+
+Kranz et al. (2025, Alzheimers Dement 21:e70968, [DOI: 10.1002/alz.70968](https://doi.org/10.1002/alz.70968)) reported "stunning" brain-wide GFAP reduction in 5xFAD mice after 60-day oral NU-9 treatment, alongside elimination of ACU193+ Aβ oligomers from astrocyte surfaces and sharp reduction in pTDP-43.
+
+FELINE interpretation: Impressive downstream effects but molecular target remains undisclosed (patent pending, Akava Therapeutics). Cannot assess which FELINE layers are mechanistically engaged without knowing the target. The observation that NU-9 works across ALS and AD models (SOD1, TDP-43, and 5xFAD) is consistent with it targeting a convergent pathway — possibly lysosomal trafficking (Johnson et al. 2025 PNAS suggest cathepsin B-dependent mechanism). See NU-9 Hypothesis Tracker for complete analysis.
+
+Clinical status: FDA-cleared for ALS human trials (2024). AD trials planned.
+
+**pSTAT3 Modulators — Timing-Dependent**
+
+The JAK2-STAT3 pathway drives the reactive astrocyte program. Inhibiting STAT3 phosphorylation reduces A1-type (neurotoxic) astrocyte activation and suppresses NF-κB/STAT3-driven inflammatory gene expression.
+
+Critical timing problem: Early reactive astrogliosis is protective. In the APPswe/PS1ΔE9 model, reducing astrocyte reactivity via GFAP/Vimentin double knockout ACCELERATED amyloid deposition (Kraft et al. 2013). In prion disease, abolishing reactive astrocytes accelerated disease progression. In the Hdh140 Huntington's model, JAK2-STAT3 activation in reactive astrocytes induced proteostasis that reduced mutant huntingtin aggregation (Ben Haim et al. 2015).
+
+FELINE interpretation: This is the "A1/A2 dilemma" — early reactive astrocytes are attempting to contain damage (iron sequestration in ferritin, Aβ uptake, debris clearance). Blocking this response too early removes protective functions. The therapeutic window is after the reactive state has become chronic and neurotoxic but before irreversible astrocyte loss. Listed as PLIG Tier 2 intervention with the explicit caveat "timing-dependent." HDAC3 inhibition may be superior because it selectively suppresses the neurotoxic program while promoting the neuroprotective program, rather than blanket STAT3 inhibition.
+
+**Chemogenetic Astrocyte Activation (Proof-of-Principle)**
+
+Kreisel T et al. (2025, bioRxiv, [DOI: 10.1101/2025.09.29.679133](https://doi.org/10.1101/2025.09.29.679133); Goshen lab, Hebrew University) demonstrated that Gq-pathway chemogenetic activation of CA1 astrocytes in 5xFAD mice completely corrected memory performance to wild-type levels for up to ONE YEAR after treatment cessation. This was accompanied by increased neuronal activity, enhanced synaptic plasticity, and endocytosis of Aβ plaques.
+
+FELINE interpretation: This is the most dramatic demonstration that AD cognitive deficits reflect astrocyte dysfunction rather than irreversible neuronal loss. Even with significant amyloid burden, restoring astrocyte function rescues the downstream consequences. Not clinically translatable (requires viral vector injection + synthetic ligand), but proves the target is correct. The year-long persistence suggests that once astrocytes are "rebooted," they can maintain homeostatic function autonomously — possibly because the SNAP-a program (Ling et al. 2024) is a self-reinforcing transcriptional state.
+
+Prediction: The memory rescue in Kreisel T et al. should correlate with restored AQP4 polarization and glymphatic function. If measured, DTI-ALPS index should normalize in treated animals.
+
+#### 12.4.3 Replacement: Transplanting Healthy Astrocytes
+
+**AstroRx (Kadimastem/Israël)**
+
+Izrael et al. (2018, Stem Cell Res Ther 9:152) demonstrated safety of human embryonic stem cell-derived astrocyte transplantation in SOD1-G93A ALS mice and NSG immunodeficient mice. Gotkine et al. (2023, J Transl Med 21:122) reported Phase I/IIa results for intrathecal AstroRx injection in ALS patients — safe, well-tolerated, with some signals of slowed progression.
+
+FELINE interpretation: Replacement strategy bypasses the reversal problem entirely — rather than trying to convert reactive astrocytes back to homeostatic, supply new healthy ones. But faces profound challenges: transplanted astrocytes must (a) engraft at perivascular locations, (b) extend endfeet that properly contact the basement membrane, (c) polarize AQP4/ferroportin/ceruloplasmin to those endfeet, and (d) integrate into the existing astrocyte syncytium via gap junctions. The healthy brain took decades to establish this architecture. Whether transplanted astrocytes can recapitulate it in a diseased environment is unknown.
+
+Clinical status: Phase I/IIa in ALS (intrathecal). No AD trials.
+
+#### 12.4.4 The Senolytic Paradox: Kill or Cure?
+
+Senescent astrocytes accumulate with age and disease, secreting SASP (senescence-associated secretory phenotype) factors that drive chronic inflammation and inhibit regeneration. Dasatinib + quercetin (D+Q) eliminates senescent cells and has shown promise in aging and AD models (see Section 3.3.9).
+
+FELINE's critical warning — the Senolytic Iron Release Problem: Senescent astrocytes are iron-loaded (Masaldan et al. 2018; see Section 3.3.9). Killing them releases stored iron into the parenchyma in an uncontrolled burst. In the PNS, Fuentes-Flores et al. (2023) showed that D+Q eliminates senescent Schwann cells and restores nerve regeneration — but the PNS has macrophage access for debris clearance and vascular access for iron removal. The CNS, behind the BBB, has neither.
+
+Prediction: CNS senolytics must be combined with ferroptosis inhibitors (ferrostatin-1, liproxstatin-1, or vitamin E) to manage the iron burst from dying senescent astrocytes. D+Q alone in a brain with impaired glymphatic clearance could trigger a wave of ferroptosis from released iron — paradoxically accelerating the cascade it was meant to halt.
+
+#### 12.4.5 The FELINE Test: What Astrocyte Recovery Must Achieve
+
+Any candidate astrocyte recovery therapy can be evaluated against FELINE's dual-function criterion:
+
+**The Endfoot Dual-Function Test:**
+
+A truly successful astrocyte recovery intervention must simultaneously restore:
+
+1. **AQP4 polarization** to perivascular endfeet → glymphatic clearance capacity (E-layer)
+2. **GPI-ceruloplasmin + ferroportin** expression at endfeet → iron distribution to neurons/OLs (E-layer + Fe-layer)
+
+If an intervention restores AQP4 but not Cp/Fpn → improved clearance but persistent iron maldistribution → continued ferroptosis
+If an intervention restores Cp/Fpn but not AQP4 → iron distribution improved but clearance impaired → iron still accumulates regionally
+If an intervention suppresses neurotoxic functions (C3, IL-6) without restoring homeostatic functions → less damage but no repair
+
+This test can be applied immediately to any existing or emerging astrocyte therapy:
+
+| Intervention              | Suppresses Neurotoxic             | Restores AQP4                          | Restores Cp/Fpn           | Verdict                             |
+| ------------------------- | --------------------------------- | -------------------------------------- | ------------------------- | ----------------------------------- |
+| HDAC3 inhibitor (RGFP966) | ✓ YES                            | ? UNTESTED                             | ? UNTESTED                | Promising; needs endfoot validation |
+| SIGMAR1 agonist           | ○ Indirect (prevents conversion) | ✓ Predicted (via endfoot autophagy)   | ? UNTESTED                | Promising for prevention            |
+| NU-9                      | ✓ YES (GFAP reduction)           | ? UNTESTED                             | ? UNTESTED                | Target unknown; cannot assess       |
+| Gq chemogenetics          | ✓ YES (memory rescue)            | ? UNTESTED                             | ? UNTESTED                | Proof of concept only               |
+| NAD+ restoration          | ○ Indirect                       | ○ Indirect (via mitochondrial health) | ? UNTESTED                | Metabolic support, not direct       |
+| D+Q senolytics            | ✓ (removes toxic cells)          | N/A (cells killed)                     | N/A (cells killed)        | Iron release risk                   |
+| AstroRx transplant        | N/A (new cells)                   | ? (engraftment-dependent)              | ? (engraftment-dependent) | Architecture challenge              |
+
+**Notable gap**: No current astrocyte therapy has been evaluated for restoration of ceruloplasmin ferroxidase activity at endfeet. This is FELINE's most specific, directly testable prediction for the astrocyte recovery field.
+
+#### 12.4.6 Proposed Combination: HDAC3 Inhibitor + Ferroptosis Defense
+
+Based on the analysis above, the highest-confidence astrocyte recovery combination within FELINE's framework would be:
+
+**HDAC3 inhibitor** (reverses reactive → homeostatic epigenetic switch, reduces VLCFA, promotes remyelination) **+ lipophilic ferroptosis inhibitor** (vitamin E/ferrostatin-1, provides iron defense coverage during the transition period when astrocytes are recovering but not yet fully functional)
+
+Rationale: The transition from reactive to homeostatic astrocyte state presumably involves a vulnerable window where neurotoxic functions are suppressed but homeostatic iron-handling functions are not yet fully restored. During this window, labile iron previously managed (poorly) by reactive astrocyte ferritin upregulation may become unmanaged. Ferroptosis defense coverage bridges this gap.
+
+This is analogous to the senolytic iron release problem but milder — cells are being reprogrammed, not killed, so iron release is gradual rather than burst-like. The ferroptosis inhibitor acts as insurance during the functional transition.
+
+#### 12.4.7 Key References — Astrocyte Recovery Therapeutics
+
+- Clayton BLL et al. (2024) A phenotypic screening platform for identifying chemical modulators of astrocyte reactivity. Nat Neurosci 27(4):656-665. [DOI: 10.1038/s41593-024-01580-z](https://doi.org/10.1038/s41593-024-01580-z)
+- Rosete C & Ciernia AV (2024) The two faces of HDAC3: neuroinflammation in disease and neuroprotection in recovery. Epigenomics 16(21-22):1373-1388. [DOI: 10.1080/17501911.2024.2419357](https://doi.org/10.1080/17501911.2024.2419357)
+- Kreisel T et al. (2025) Astrocytic activation completely corrects memory performance in Alzheimer's disease model. bioRxiv. [DOI: 10.1101/2025.09.29.679133](https://doi.org/10.1101/2025.09.29.679133)
+- Ling E et al. (2024) A concerted neuron–astrocyte program declines in ageing and schizophrenia. Nature 627:604-611.
+- Kranz DL et al. (2025) Identification of a glia-associated amyloid β oligomer subtype and the rescue from reactive astrogliosis by inhibitor NU-9. Alzheimers Dement 21:e70968. [DOI: 10.1002/alz.70968](https://doi.org/10.1002/alz.70968)
+- Gotkine M et al. (2023) Safety and efficacy of first-in-man intrathecal injection of human astrocytes (AstroRx) in ALS patients: Phase I/IIa clinical trial results. J Transl Med 21:122.
+- Izrael M et al. (2018) Safety and efficacy of human embryonic stem cell-derived astrocytes following intrathecal transplantation in SOD1(G93A) and NSG animal models. Stem Cell Res Ther 9:152.
+- Hase Y et al. (2017) Effects of environmental enrichment on white matter glial responses in a mouse model of chronic cerebral hypoperfusion. J Neuroinflammation 14(1):81. [DOI: 10.1186/s12974-017-0850-5]
+- Chaubey K et al. (2025) Pharmacologic reversal of advanced Alzheimer's disease in mice. Cell Reports Medicine. [DOI: 10.1016/j.xcrm.2025.102535](https://doi.org/10.1016/j.xcrm.2025.102535)
+- Fuentes-Flores J et al. (2023) Senolytics improve functional recovery after peripheral nerve injury. bioRxiv.
+- Masaldan S et al. (2018) Iron accumulation in senescent cells is coupled with impaired ferritinophagy and inhibition of ferroptosis. Redox Biol 14:100-115.
+- Cheli VT et al. (2023) The expression of ceruloplasmin in astrocytes is essential for postnatal myelination and myelin maintenance in the adult brain. Glia 71(10):2323-2342. [DOI: 10.1002/glia.24424]
+- Huang Y et al. (2025) Astrocyte in neurological disease: pathogenesis and therapy. MedComm. [DOI: 10.1002/mco2.70299](https://doi.org/10.1002/mco2.70299)
+
 ---
 
 ## 13. Precision Medicine Framework
@@ -5386,6 +6372,23 @@ FELINE suggests biomarker stratification by defense layer:
 | **E**  | CSF iron/transferrin ratio | Iron export capacity      | Export function                    |
 
 The goal: identify which layers are most compromised in each patient and target interventions accordingly. This moves from "one-size-fits-all" AD therapy to layer-specific precision medicine.
+
+### 13.3 [18F]FSPG PET: Imaging the Ferroptosis Defense In Vivo
+
+**What it is:** [18F]FSPG (also known as BAY 94-9392) is a PET radiotracer that directly measures system xc⁻ (cystine/glutamate antiporter, SLC7A11/xCT) transport activity in vivo. System xc⁻ imports cystine for glutathione synthesis — the pathway that feeds GPX4, the central enzymatic brake on ferroptosis. Currently used in oncology imaging (glioblastoma, lung cancer, hepatocellular carcinoma), where elevated xc⁻ activity correlates with tumor antioxidant defense. Low background brain uptake provides excellent signal-to-noise contrast.
+
+**Why it matters for FELINE:** If ferroptosis is a central mechanism in neurodegeneration, then imaging the ferroptosis *defense* system is as important as imaging iron accumulation. [18F]FSPG combined with QSM-MRI (iron mapping) would give a two-channel image: where iron accumulates AND where cells are actively defending against it. Regions with high iron + low [18F]FSPG signal = defense failure = highest ferroptosis risk. This directly maps the F-layer and L-layer status.
+
+Upregulated xCT in human AD brain is already documented (Ashraf et al. 2020, see §5.1.5). FoxO1a directly regulates SLC7A11 transcription (Zhao et al. 2025, see §2.1). The framework predicts xCT upregulation as a compensatory defense — [18F]FSPG could quantify that defense in living patients.
+
+**Existing neurological evidence:**
+
+- **Hoehne et al. (2018, J Neuroinflammation, PMID 29471880, DOI: 10.1186/s12974-018-1080-1):** [18F]FSPG-PET detected increased xc⁻ activity in EAE mouse spinal cord *before clinical symptom onset*. More sensitive than [18F]FDG at detecting early pathological changes. Signal correlated with xCT protein expression in both activated monocytes and T cells.
+- **Domercq et al. (2016, Theranostics, PMID 27570548, DOI: 10.7150/thno.15616):** [18F]FSPG-PET detected xc⁻ upregulation in microglia and astrocytes following cerebral ischemia in rats. Signal peaked at days 3–7 post-stroke, *preceding* TSPO signal changes. Pharmacological xc⁻ inhibition reduced proinflammatory markers (CCL2, TNF, iNOS).
+
+**The gap:** [18F]FSPG has never been used in Alzheimer's disease, MCI, Parkinson's disease, ALS, or any neurodegenerative dementia. No study has combined [18F]FSPG with iron-sensitive MRI in any neurological context.
+
+**Proposed use:** A combined [18F]FSPG + QSM-MRI protocol could stratify patients by ferroptosis defense status and guide layer-specific therapy selection. This would add an F/L-layer imaging biomarker to the panel in §13.2.
 
 ---
 
@@ -6733,8 +7736,10 @@ STAGE 2: Iron dysregulation (FELINE root cause)
 STAGE 3: Differentiating OPCs undergo ferroptosis
          - Differentiating cells have HIGH metabolic demand
          - High iron requirement for myelin synthesis
+         - MBP mRNA granule transport to process tips requires functional iron throughout (see 2.4.9)
          - Limited antioxidant capacity during transition
          - GPX4 vulnerability during state change
+         - Extended processes = large PUFA-rich membrane = maximum ferroptotic attack surface
                      |
                      v
 STAGE 4: Ferroptotic OPCs generate DAMPs/OSEs
@@ -6786,6 +7791,143 @@ The insight that the clearance response is appropriate but chronic changes the t
 | **Clearance Model** | Stopping debris generation should allow repair WITHOUT immunosuppression          | Ferroptosis inhibitor alone in MS                          |
 | **Attack Model**    | Immunosuppression required even without new debris                                | Anti-CD20 + ferroptosis inhibitor no better than anti-CD20 |
 | **FELINE Combined** | Ferroptosis inhibitor should show benefit in progressive MS where anti-CD20 fails | Trial in SPMS with high PRL burden                         |
+
+### 2.4.9 MBP mRNA Transport: The Molecular Basis of OPC Differentiation Vulnerability
+
+*Added v3.7 (2026-02-16). Citations verified 2026-02-17.*
+
+The "high metabolic demand" and "high iron requirement" listed in Stage 3 are not abstractions. They have a specific molecular basis: **the MBP mRNA transport and local translation system**.
+
+**Key discovery** (Ainger et al. 1997, J Cell Biol, [DOI: 10.1083/jcb.138.5.1077](https://doi.org/10.1083/jcb.138.5.1077), [PMC2136761](https://pmc.ncbi.nlm.nih.gov/articles/PMC2136761/)):
+
+MBP mRNA is NOT translated in the oligodendrocyte cell body and then transported as protein. Instead:
+
+1. MBP mRNA is assembled into **RNA granules** in the perikaryon
+2. Granules are actively transported along microtubules to the tips of OL processes
+3. Translation occurs **LOCALLY** at sites of active myelination
+4. A 21-nucleotide RNA transport signal (RTS) in the 3' UTR directs this localization
+
+This was demonstrated by microinjection of deleted and chimeric RNAs into cultured oligodendrocytes, showing that transport and localization are separable RNA-directed processes.
+
+**Why this creates ferroptotic vulnerability during differentiation:**
+
+```
+OPC begins differentiation
+         |
+         v
+Must extend processes + transport MBP mRNA granules to tips
+         |
+         v
+Requirements at EVERY STEP:
+  - RNA granule assembly (energy-intensive)
+  - Kinesin-dependent microtubule transport (ATP-dependent)
+  - Local translation at process tips (ATP-dependent, powered by iron-dependent mitochondria)
+  - Simultaneous cholesterol/lipid synthesis for myelin membrane (~36 ATP + 16 NADPH per molecule)
+  - Iron for cytochrome-dependent mitochondrial ATP production throughout extending processes
+         |
+         v
+ALL of these require functional iron AND functioning mitochondria
+throughout the extending process -- not just at the cell body
+         |
+         v
+Iron maldistribution (FELINE) means:
+  - Not enough functional iron for mitochondrial ATP at process tips
+  - Not enough ATP for local translation at process tips
+  - Impaired cholesterol/lipid synthesis
+  - BUT labile (non-functional) iron still present --> Fenton chemistry
+         |
+         v
+Extended processes = LARGE PUFA-rich membrane surface area
+         = More substrate for lipid peroxidation
+         = More ferroptosis vulnerability
+         |
+         v
+Differentiating OPC = MAXIMUM VULNERABILITY:
+  highest iron demand + largest oxidizable membrane surface + lowest antioxidant reserves
+```
+
+**The critical asymmetry**: A quiescent OPC has small, compact morphology with minimal membrane surface area. A differentiating OPC must extend elaborate processes filled with transport machinery and lipid-rich membrane. This dramatically increases the cell's ferroptotic attack surface while simultaneously increasing its metabolic iron requirements. FELINE's iron maldistribution hits hardest exactly when the cell needs functional iron most and is most vulnerable to labile iron's toxic effects.
+
+**Connection to neuronal vulnerability**: When MBP mRNA transport fails and the differentiating OPC undergoes ferroptosis, the neuron it was attempting to myelinate loses THREE forms of support simultaneously:
+
+1. **Myelin insulation**: Saltatory conduction fails, energy cost of signal propagation increases
+2. **FTH1 iron buffering**: OLs export ferritin heavy chain to neurons via extracellular vesicles (Mukherjee 2020). Dead OLs cannot buffer neuronal iron.
+3. **Metabolic support**: OLs supply lactate to axons via MCT1 monocarboxylate transporter. Loss of this metabolic coupling starves the axon.
+
+**OPC differentiation failure is not just a myelin problem. It is a neuronal survival problem.** The neuron becomes simultaneously energy-starved, iron-unprotected, and metabolically unsupported. Each of these failures makes the neuron more vulnerable to iron-mediated damage on its own, and they compound. This may explain why white matter changes in AD and MS frequently precede and predict cortical neurodegeneration (animal models and preclinical AD neuroimaging show white matter disruption before cortical atrophy or amyloid deposition), though the causal directionality is not yet conclusively established in humans.
+
+### 2.4.10 SMOC1 and SPON1: The Earliest Measurable Readouts of Cascade Initiation
+
+*Added v3.7 (2026-02-16). Citations verified 2026-02-17.*
+
+Both SMOC1 and SPON1 belong to the **M42 matrisome brain coexpression module**, a network of ~32 extracellular matrix proteins that has the strongest correlation with AD pathology (r = 0.75) of any protein module identified in brain proteomics (Johnson et al. 2023, Nat Med). In autosomal dominant AD, these ECM proteins are among the first CSF biomarkers to rise, appearing ~30 years before symptom onset and over a decade before conventional amyloid or tau markers become detectable.
+
+#### SMOC1: OPC Distress Signal
+
+**SMOC1** (Secreted Modular Calcium-binding protein 1) is an extracellular matrix protein predominantly produced by OPCs (highest expression in OPCs, no significant colocalization with astrocytes or neurons; Balcomb et al. 2024). FELINE interprets elevated CSF SMOC1 as a readout of impaired OPC differentiation, though this interpretation has not been directly established experimentally.
+
+**Key finding 1: Earliest CSF biomarker in AD** (Shen et al. 2024, Cell, [DOI: 10.1016/j.cell.2024.08.049](https://doi.org/10.1016/j.cell.2024.08.049)):
+
+In autosomal dominant Alzheimer's disease, SMOC1 is one of the FIRST CSF biomarkers detected:
+
+- Appears **~30 years** before symptom onset (estimated year of onset minus year of CSF collection)
+- Over **a decade before** plaques or tangles are detectable in CSF (~15 years before pTau, Tau, Aβ42 changes)
+
+**Key finding 2: SMOC1 colocalizes with plaques and delays Aβ aggregation** (Balcomb et al. 2024, Acta Neuropathologica, [DOI: 10.1007/s00401-024-02819-6](https://doi.org/10.1007/s00401-024-02819-6), [PMC11588930](https://pmc.ncbi.nlm.nih.gov/articles/PMC11588930/)):
+
+- SMOC1 colocalizes with **43.8%** of amyloid plaques in AD, 32.8% in MCI, 28.3% in preclinical AD
+- SMOC1 levels **strongly correlate with plaque load**, irrespective of disease stage
+- SMOC1 directly interacts with both Aβ and phosphorylated tau (co-immunoprecipitation)
+- SMOC1 **delays Aβ42 fibril formation** dose-dependently (lag phase extended from 2.8 to 29.6 hours at highest concentration)
+- Fibrils formed in SMOC1's presence have altered "corkscrew-like" morphology
+- SMOC1 remains in the soluble fraction, suggesting transient rather than stable interactions
+- Cell type: SMOC1-positive cells co-localize with PDGFRα (OPC marker), are negative for Olig2 (specific OPC subpopulation), and do NOT co-localize with GFAP (astrocytes), NeuN (neurons), or Iba1 (microglia)
+
+**FELINE interpretation**: SMOC1 may serve a dual role. First, as an OPC-derived protein, its early CSF elevation could reflect disrupted OPC differentiation driven by iron maldistribution (Stage 3 of the cascade, section 2.4.5). Second, its ability to delay Aβ aggregation fits the FELINE framework's "Aβ as protective response" model (section 2.5): OPCs produce a protein that actively modulates plaque formation, adding another link between OPC biology and amyloid. The fact that SMOC1 strongly correlates with plaque load means it cannot be cleanly separated from amyloid pathology. However, its appearance ~30 years before symptoms and ~15 years before conventional amyloid biomarkers suggests the OPC signal comes first, with plaque colocalization reflecting a later, possibly protective, interaction.
+
+**Connection to Mironova 2026**: OPCs constitutively attempt differentiation everywhere in the adult brain at a constant rate (section 2.4). When FELINE-driven iron maldistribution stalls that constitutive process, SMOC1 accumulates in CSF. Because OPC differentiation is constitutive and brain-wide, SMOC1 elevation is expected to be an early, sensitive, and diffuse signal rather than a focal one.
+
+**Testable predictions**:
+
+| Prediction                                                                                   | Rationale                                                                       | Test                                             |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------ |
+| SMOC1 correlates with iron maldistribution biomarkers (QSM, CSF transferrin/ferritin ratios) | Both reflect same upstream process                                              | Correlate in AD cohort                           |
+| SMOC1 correlates with white matter integrity (DTI, MTR)                                      | OPC failure → demyelination                                                    | Correlate in presymptomatic AD carriers          |
+| SMOC1 temporal trajectory: OPC signal precedes plaque colocalization                         | If OPC dysfunction is upstream, CSF SMOC1 rises before SMOC1 appears in plaques | Longitudinal imaging + CSF in ADAD carriers      |
+| SMOC1 elevated in MS and iron deficiency states                                              | OPC differentiation impaired by same mechanism                                  | Measure in MS cohort vs AD cohort                |
+| Ferroptosis inhibitors reduce CSF SMOC1                                                      | Stopping ferroptosis allows OPC maturation to proceed                           | SMOC1 as endpoint in ferroptosis inhibitor trial |
+
+SMOC1 is the canary in the coal mine for the entire FELINE cascade.
+
+#### SPON1: APP Processing and the Iron Export Link
+
+**SPON1** (Spondin-1 / F-Spondin) is a secreted ECM protein that binds directly to the BACE1 cleavage site on APP, blocking β-secretase processing and reducing Aβ production (Ho & Bhatt 2003). SPON1 also clusters with ApoE receptor 2 (ApoER2) and APP, decreasing Aβ generation through receptor-mediated signaling. In AD mouse models, SPON1 overexpression reduced Aβ burden and reversed cognitive impairment (Park et al. 2020).
+
+**Temporal profile** (Johnson et al. 2023, Nat Med; Shen et al. 2024, Cell):
+
+- Elevated **~30 years** before symptom onset in ADAD carriers, comparable to SMOC1
+- Unlike SMOC1, SPON1 **decreases back toward baseline** approximately 7 years after symptom onset
+- This rise-then-fall trajectory suggests SPON1 may reflect an early protective ECM response that is eventually overwhelmed
+
+**FELINE interpretation**: SPON1's mechanism is directly relevant to the APP-iron axis. In the FELINE framework, APP stabilizes ferroportin on the neuronal surface for iron export (§2.1). BACE1 cleavage of APP disrupts this stabilization, producing Aβ while simultaneously impairing iron export capacity. SPON1 binding at the BACE1 site on APP would preserve full-length APP at the membrane, maintaining ferroportin stability and iron export. This positions SPON1 as an endogenous protector of the E-layer (iron export), not merely an anti-amyloid factor.
+
+The early rise of SPON1 in ADAD could reflect a compensatory ECM response: as iron begins to maldistribute and BACE1 activity increases, SPON1 production ramps up to block excessive APP cleavage and preserve ferroportin function. The eventual decline post-onset may indicate exhaustion of this compensatory mechanism or loss of the ECM cells that produce it.
+
+**Practical biomarker considerations**:
+
+- CSF SMOC1 and SPON1 are both robustly measurable by multiple platforms (SomaScan, TMT-MS, Olink)
+- Plasma SMOC1 is detectable and independently predicts MCI-to-dementia conversion (Morato et al. 2024, HR > 1.3, p < 0.002)
+- Plasma SPON1 data is more limited; CSF remains the primary validated compartment
+- A 4-protein CSF panel including SMOC1 (YWHAG, SMOC1, PIGR, TMOD2) achieved diagnostic accuracy of 0.987 for AD (Dammer et al. 2022)
+- SMOC1 alone outperformed CSF p-tau and Aβ42/40 at 20 years pre-symptom (Johnson et al. 2023)
+
+**Key references for SMOC1/SPON1**:
+
+- Johnson ECB et al. (2023) Cerebrospinal fluid proteomics define the natural history of autosomal dominant Alzheimer's disease. Nat Med 29(8):1979-1988. [DOI: 10.1038/s41591-023-02476-4](https://doi.org/10.1038/s41591-023-02476-4)
+- Shen Y et al. (2024) CSF proteomics identifies early changes in autosomal dominant Alzheimer's disease. Cell 187(22):6309-6326.e15. [DOI: 10.1016/j.cell.2024.08.049](https://doi.org/10.1016/j.cell.2024.08.049)
+- Park SY et al. (2020) SPON1 can reduce amyloid beta and reverse cognitive impairment and memory dysfunction in Alzheimer's disease mouse model. Cells 9(5):1275. [DOI: 10.3390/cells9051275](https://doi.org/10.3390/cells9051275)
+- Dammer EB et al. (2022) Multi-platform proteomic analysis of Alzheimer's disease cerebrospinal fluid and plasma reveals network biomarkers associated with proteostasis and the matrisome. Alzheimers Res Ther 14(1):174. [DOI: 10.1186/s13195-022-01113-5](https://doi.org/10.1186/s13195-022-01113-5)
+- Morato X et al. (2024) Associations of plasma SMOC1 and soluble IL6RA levels with the progression from mild cognitive impairment to dementia. Brain Behav Immun Health 42:100899. [DOI: 10.1016/j.bbih.2024.100899](https://doi.org/10.1016/j.bbih.2024.100899)
 
 ---
 
@@ -6961,9 +8103,9 @@ When A-beta and fibrinogen meet in the brain -- a compartment where they were ne
 
 ### 2.6.1 Overview: Perivascular Amyloid as Compact Plaque
 
-This appendix extends the Aβ-fibrinogen-iron convergence (Appendix 2.5) with a critical biological insight: **perivascular fibrin-Aβ deposits may be compact containment structures built by border-associated macrophages (BAMs)**, analogous to how tissue macrophages build TB granulomas to contain *M. tuberculosis*.
+This appendix extends the Aβ-fibrinogen-iron convergence (Appendix 2.5) with a critical biological insight: **perivascular fibrin-Aβ deposits may be compact containment structures built by border-associated macrophages (BAMs)**, using the same innate immune containment machinery that macrophages deploy against any persistent threat they cannot clear.
 
-The core argument: when perivascular macrophages cannot clear fibrin-Aβ deposits, they switch from phagocytic clearance to physical containment -- the same clearance-to-containment transition that macrophages undergo in tuberculosis.
+The core argument: when perivascular macrophages cannot clear fibrin-Aβ deposits, they switch from phagocytic clearance to physical containment. This clearance-to-containment transition is a general macrophage behavior observed across many contexts, not specific to any single pathogen.
 
 ### 2.6.2 Border-Associated Macrophages (BAMs): The Correct Effector Cells
 
@@ -6988,29 +8130,27 @@ The core argument: when perivascular macrophages cannot clear fibrin-Aβ deposit
 | **Parenchymal microglia**                  | Brain parenchyma               | Secondary support; may compact from parenchymal side |
 | **Recruited monocyte-derived macrophages** | Blood → perivascular space    | Primarily inflammatory (DIMs); unlikely to compact   |
 
-### 2.6.3 TB Granuloma Biology: The Mechanistic Template
+### 2.6.3 Macrophage Containment Biology: The Mechanistic Basis
 
-TB granuloma formation provides the closest biological analogue:
-
-**TB granuloma structure** (outside → in): Fibrotic capsule (collagen rim) → Lymphocytic cuff (T cells, B cells) → Epithelioid macrophage layers (tightly interdigitated via E-cadherin) → Foamy macrophages, multinucleated giant cells → Central necrotic/caseous core
+When macrophages encounter a persistent threat they cannot clear, they switch from phagocytic clearance to physical containment. The molecular machinery for this transition is well-characterized:
 
 **Key molecular events**:
 
 - Macrophages undergo **epithelioid transformation** via E-cadherin upregulation (Cronan 2016)
 - Epithelioid macrophages form **adherens junctions** creating a physical barrier
-- This barrier simultaneously contains the pathogen AND protects surrounding tissue
+- This barrier simultaneously contains the threat AND protects surrounding tissue
 
-**Critical insight from Cronan 2016**: When E-cadherin was disrupted in granuloma macrophages, granulomas became disordered, bacterial burden DECREASED, and host survival IMPROVED. The granuloma can serve a **bacteria-protective** role by walling off pathogens from effective immune clearance.
+**Critical insight from Cronan 2016**: When E-cadherin was disrupted in containment-forming macrophages, the structures became disordered. Paradoxically, the contained material was MORE accessible to immune clearance — but the surrounding tissue was also exposed to damage. Containment structures serve a **dual role**: they wall off threats, but they also wall off the immune response.
 
-**TB-Aβ-Fibrin comparison**:
+**This maps directly to amyloid plaque biology:**
 
-| Feature                   | TB Granuloma                     | Aβ Dense-Core Plaque        | Predicted Fibrin Compact Plaque                             |
-| ------------------------- | -------------------------------- | ---------------------------- | ----------------------------------------------------------- |
-| Central threat            | *M. tuberculosis*              | Aβ aggregates + iron        | Composite cross-seeded amyloid: fibrin + Aβ + iron         |
-| Effector cells            | Tissue macrophages               | Parenchymal microglia (DAM)  | PVMs/BAMs                                                   |
-| Barrier mechanism         | E-cadherin adherens junctions    | TREM2-dependent "snowplow"   | TREM2-dependent? (untested)                                 |
-| Central iron              | Not primary                      | Iron-rich core (Streit 2022) | Iron as structural component                                |
-| Consequence of disruption | Reactivation TB / miliary spread | ARIA                         | Release of cross-seeded components: iron + P2 epitope + Aβ |
+| Feature                   | Aβ Dense-Core Plaque        | Predicted Fibrin Compact Plaque                             |
+| ------------------------- | ---------------------------- | ----------------------------------------------------------- |
+| Central threat            | Aβ aggregates + iron        | Composite cross-seeded amyloid: fibrin + Aβ + iron         |
+| Effector cells            | Parenchymal microglia (DAM)  | PVMs/BAMs                                                   |
+| Barrier mechanism         | TREM2-dependent "snowplow"   | TREM2-dependent? (untested)                                 |
+| Central iron              | Iron-rich core (Streit 2022) | Iron as structural component                                |
+| Consequence of disruption | ARIA                         | Release of cross-seeded components: iron + P2 epitope + Aβ |
 
 ### 2.6.4 The Clearance-to-Containment Transition
 

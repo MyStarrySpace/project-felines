@@ -22,6 +22,12 @@ const viralTopics = [
     description:
       "The key insight: viruses don't need to be active to cause damage. Latent proteins sabotage iron-buffering systems (tau, alpha-synuclein) while disrupting the antioxidant defenses that contain stored iron.",
   },
+  {
+    slug: "iron-reactivation",
+    title: "Iron-Dependent Reactivation",
+    description:
+      "The enzymes that unlock viral genomes require iron as an obligate cofactor. Rising brain iron with age doesn't just correlate with reactivation. It causes it, through four molecular mechanisms that collapse the 3-loop model into one.",
+  },
 ];
 
 export default function ViralOverview() {
@@ -41,7 +47,7 @@ export default function ViralOverview() {
         </p>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {viralTopics.map((topic) => (
           <Link
             key={topic.slug}

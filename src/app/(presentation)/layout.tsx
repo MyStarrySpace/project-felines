@@ -1,121 +1,172 @@
 "use client";
 
-import { useEffect, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, type ReactNode } from "react";
 import { motion } from "framer-motion";
-import { HeroSection } from "@/components/landing/hero-section";
+import { TeaserSection } from "@/components/landing/teaser-section";
 import { IronBuildupSection } from "@/components/landing/iron-buildup-section";
-
-import { ProblemSection } from "@/components/landing/problem-section";
-import { FindingsSection } from "@/components/landing/findings-section";
+import { ReframeSection } from "@/components/landing/reframe-section";
+import { ParadoxSection } from "@/components/landing/paradox-section";
 import { EvidenceSection } from "@/components/landing/evidence-section";
-import { CtaSection } from "@/components/landing/cta-section";
+import { SummarySection } from "@/components/landing/summary-section";
 import { SectionIndicator } from "@/components/ui/section-indicator";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
-import { SlideEdgeNav } from "@/components/ui/slide-edge-nav";
-import { FullPageScroll, type SlideConfig } from "@/components/ui/full-page-scroll";
+import { ScrollProvider, useScrollContext } from "@/components/providers/scroll-context";
 import { TransitionProvider, useExploreTransition } from "@/components/providers/transition-context";
-
-const slides: SlideConfig[] = [
-  {
-    id: "hero",
-    steps: 1,
-    bg: "bg-gradient-to-b from-navy-900 to-[#110B07]",
-    content: <HeroSection />,
-  },
-  {
-    id: "iron",
-    steps: 7,
-    bg: "bg-[#110B07]",
-    content: <IronBuildupSection />,
-  },
-  {
-    id: "problem",
-    steps: 4,
-    bg: "bg-[#110B07]",
-    content: <ProblemSection />,
-  },
-  {
-    id: "findings",
-    steps: 3,
-    bg: "bg-navy-900",
-    content: <FindingsSection />,
-  },
-  {
-    id: "evidence",
-    steps: 4,
-    bg: "bg-navy-800",
-    content: <EvidenceSection />,
-  },
-  {
-    id: "cta",
-    steps: 1,
-    bg: "bg-gradient-to-b from-navy-800 to-navy-900",
-    content: <CtaSection />,
-  },
-];
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 function PresentationContent({ children }: { children: ReactNode }) {
   const { phase, completeExpand } = useExploreTransition();
+  const { scrollToSection, sections, activeSection, getBreakpointScrollPositions } = useScrollContext();
+  const presentationRef = useRef<HTMLDivElement>(null);
+  const savedScrollRef = useRef(0);
+  const didJumpRef = useRef(false);
+  const activeSectionRef = useRef(activeSection);
+  activeSectionRef.current = activeSection;
+  const sectionsRef = useRef(sections);
+  sectionsRef.current = sections;
 
   const showPresentation = phase === "idle" || phase === "expanding";
   const showExplore = phase === "explore";
 
-  // Lock body scroll when in presentation mode
+  // Jump to section from ?section= query param on initial load
   useEffect(() => {
-    document.body.style.overflow = phase === "idle" ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
+    if (didJumpRef.current) return;
+    const target = new URLSearchParams(window.location.search).get("section");
+    if (!target || sections.length === 0) return;
+    if (sections.some((s) => s.id === target)) {
+      didJumpRef.current = true;
+      scrollToSection(target, "instant");
+    }
+  }, [sections, scrollToSection]);
+
+  // Update URL query param as active section changes
+  useEffect(() => {
+    if (!activeSection || !showPresentation) return;
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("section") !== activeSection) {
+      url.searchParams.set("section", activeSection);
+      window.history.replaceState({}, "", url.toString());
+    }
+  }, [activeSection, showPresentation]);
+
+  // Save/restore scroll position when transitioning
+  useEffect(() => {
+    if (phase === "collapsing") {
+      savedScrollRef.current = window.scrollY;
+    } else if (phase === "expanding") {
+      // Restore scroll position after transition back
+      const timer = setTimeout(() => {
+        window.scrollTo(0, savedScrollRef.current);
+        completeExpand();
+      }, 600);
+      return () => clearTimeout(timer);
+    }
+  }, [phase, completeExpand]);
+
+  // Smooth scroll helper — duration scales with distance
+  const smoothScrollTo = useCallback((target: number) => {
+    const start = window.scrollY;
+    const delta = target - start;
+    if (delta === 0) return;
+    // ~1800ms per viewport-height of travel, clamped to 1000–5000ms
+    const duration = Math.max(1000, Math.min(5000, (Math.abs(delta) / window.innerHeight) * 1800));
+    const startTime = performance.now();
+
+    function step(now: number) {
+      const elapsed = now - startTime;
+      const t = Math.min(elapsed / duration, 1);
+      // Ease-in-out cubic
+      const eased = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      window.scrollTo(0, start + delta * eased);
+      if (t < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }, []);
+
+  // Click-to-advance navigation + cursor chevrons
+  useEffect(() => {
+    if (!showPresentation) return;
+    const el = presentationRef.current;
+    if (!el) return;
+
+    const chevronUp = 'url("/cursors/chevron-up.svg") 8 8, auto';
+    const chevronDown = 'url("/cursors/chevron-down.svg") 8 8, auto';
+
+    const handleMouseMove = (e: MouseEvent) => {
+      // Don't change cursor over interactive elements
+      if ((e.target as HTMLElement).closest("a, button, [role='button'], input, select")) {
+        el.style.cursor = "";
+        return;
+      }
+      const y = e.clientY / window.innerHeight;
+      if (y < 0.25) el.style.cursor = chevronUp;
+      else if (y > 0.75) el.style.cursor = chevronDown;
+      else el.style.cursor = "";
     };
-  }, [phase]);
 
-  // Presentation: fade content only — no scale/blur/transform
-  const presentationAnimate = showPresentation
-    ? { opacity: 1 }
-    : { opacity: 0 };
+    const handleClick = (e: MouseEvent) => {
+      // Don't intercept clicks on interactive elements
+      if ((e.target as HTMLElement).closest("a, button, [role='button'], input, select")) return;
+      const y = e.clientY / window.innerHeight;
+      const positions = getBreakpointScrollPositions();
+      const current = Math.round(window.scrollY);
+      const threshold = 10; // px tolerance to avoid getting stuck
 
-  // Explore: expand vertically (already full width), clip reveals from top
-  const exploreAnimate = showExplore
-    ? { clipPath: "inset(0% 0% 0% 0%)" }
-    : { clipPath: "inset(0% 0% 100% 0%)" };
+      if (y < 0.25) {
+        // Find the highest breakpoint below current position
+        const target = positions.filter((p) => p < current - threshold).pop();
+        if (target !== undefined) smoothScrollTo(target);
+      } else if (y > 0.75) {
+        // Find the lowest breakpoint above current position
+        const target = positions.find((p) => p > current + threshold);
+        if (target !== undefined) smoothScrollTo(target);
+      }
+    };
+
+    el.addEventListener("mousemove", handleMouseMove, { passive: true });
+    el.addEventListener("click", handleClick);
+    return () => {
+      el.removeEventListener("mousemove", handleMouseMove);
+      el.removeEventListener("click", handleClick);
+      el.style.cursor = "";
+    };
+  }, [showPresentation, smoothScrollTo, getBreakpointScrollPositions]);
 
   return (
     <>
-      {/* Persistent dark background — stays visible during transitions */}
-      <div className="fixed inset-0 z-0 bg-navy-900" />
-
-      {/* Presentation — fades out, background shows through */}
-      <motion.div
-        className="fixed inset-0 z-10"
-        initial={false}
-        animate={presentationAnimate}
-        transition={{ duration: 0.6, ease: EASE }}
-        style={{ pointerEvents: showPresentation ? "auto" : "none" }}
-        onAnimationComplete={() => {
-          if (phase === "expanding") {
-            completeExpand();
-          }
+      {/* Presentation — native scrolling, normal document flow */}
+      <div
+        ref={presentationRef}
+        className="min-h-screen bg-navy-900"
+        style={{
+          display: showPresentation ? "block" : "none",
+          opacity: showPresentation ? 1 : 0,
         }}
       >
-        <FullPageScroll sections={slides} active={phase === "idle"}>
-          <SectionIndicator />
-          <ScrollProgress />
-          <SlideEdgeNav />
-        </FullPageScroll>
-      </motion.div>
+        <TeaserSection />
+        <IronBuildupSection />
+        <ReframeSection />
+        <ParadoxSection />
+        <EvidenceSection />
+        <SummarySection />
 
-      {/* Explore content — expands vertically over the fading presentation */}
+        <SectionIndicator />
+        <ScrollProgress />
+      </div>
+
+      {/* Explore content */}
       <motion.div
-        className="relative z-20 min-h-screen bg-navy-900"
+        className="min-h-screen bg-navy-900"
         initial={false}
-        animate={exploreAnimate}
-        transition={{
-          duration: 0.5,
-          delay: showExplore ? 0.15 : 0,
-          ease: EASE,
+        animate={{
+          opacity: showExplore ? 1 : 0,
         }}
-        style={{ pointerEvents: showExplore ? "auto" : "none" }}
+        transition={{ duration: 0.4, ease: EASE }}
+        style={{
+          display: showExplore ? "block" : "none",
+          pointerEvents: showExplore ? "auto" : "none",
+        }}
       >
         {children}
       </motion.div>
@@ -130,7 +181,9 @@ export default function PresentationLayout({
 }) {
   return (
     <TransitionProvider>
-      <PresentationContent>{children}</PresentationContent>
+      <ScrollProvider>
+        <PresentationContent>{children}</PresentationContent>
+      </ScrollProvider>
     </TransitionProvider>
   );
 }

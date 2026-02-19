@@ -2,66 +2,30 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useFullPage } from "./full-page-scroll";
-
-/**
- * Slide configs mirrored from layout.tsx so we can compute global progress.
- * Each entry is the number of steps for that slide index.
- */
-const SLIDE_STEPS = [1, 7, 4, 3, 4, 1];
-
-const SECTION_META = [
-  { label: "Hero", desc: "The pattern" },
-  { label: "Iron", desc: "Iron to ferroptosis" },
-  { label: "Problem", desc: "Why trials keep failing" },
-  { label: "Findings", desc: "What the research shows" },
-  { label: "Evidence", desc: "Cross-disease evidence" },
-  { label: "Conclusion", desc: "Clinical implications" },
-];
-
-function getProgress(slideIndex: number, step: number): number {
-  const totalSteps = SLIDE_STEPS.reduce((a, b) => a + b, 0);
-  let completed = 0;
-  for (let i = 0; i < slideIndex; i++) {
-    completed += SLIDE_STEPS[i];
-  }
-  completed += step;
-  return totalSteps > 0 ? completed / (totalSteps - 1) : 0;
-}
-
-/** Cumulative step index where each slide begins (for dot markers). */
-function getSlideBoundaries(): number[] {
-  const totalSteps = SLIDE_STEPS.reduce((a, b) => a + b, 0);
-  const boundaries: number[] = [];
-  let cumulative = 0;
-  for (let i = 0; i < SLIDE_STEPS.length; i++) {
-    boundaries.push(cumulative / (totalSteps - 1));
-    cumulative += SLIDE_STEPS[i];
-  }
-  return boundaries;
-}
+import { useScrollContext } from "@/components/providers/scroll-context";
 
 export function ScrollProgress() {
-  const { currentIndex, currentStep, goToSlide } = useFullPage();
+  const { progress, activeSection, sections, scrollToSection } = useScrollContext();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [trackHovered, setTrackHovered] = useState(false);
 
-  const progress = getProgress(currentIndex, currentStep);
-  const boundaries = getSlideBoundaries();
-  const showLabels = currentIndex === 0 || trackHovered;
+  const showLabels = trackHovered;
 
   return (
     <nav
       className="fixed right-0 top-0 z-40 hidden h-screen items-center pr-3 sm:pr-4 md:flex"
-      style={{ width: 180 }}
+      style={{ width: 160 }}
       role="navigation"
-      aria-label={`Presentation progress: ${Math.round(progress * 100)}%`}
+      aria-label={`Scroll progress: ${Math.round(progress * 100)}%`}
       onMouseEnter={() => setTrackHovered(true)}
-      onMouseLeave={() => setTrackHovered(false)}
+      onMouseLeave={() => {
+        setTrackHovered(false);
+        setHoveredIndex(null);
+      }}
     >
-      {/* Track — pinned to right edge */}
+      {/* Track */}
       <div
-        className="relative ml-auto h-[60vh] w-[3px] rounded-full bg-white/10"
+        className="relative ml-auto h-[60vh] w-[2px] bg-white/8"
         role="progressbar"
         aria-valuenow={Math.round(progress * 100)}
         aria-valuemin={0}
@@ -69,69 +33,62 @@ export function ScrollProgress() {
       >
         {/* Fill */}
         <motion.div
-          className="absolute left-0 top-0 w-full origin-top rounded-full bg-teal-400"
-          style={{ boxShadow: "0 0 8px rgba(251,191,36,0.5)" }}
+          className="absolute left-0 top-0 w-full origin-top bg-teal-400"
           initial={false}
           animate={{ scaleY: progress }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
+          transition={{ duration: 0.1, ease: "linear" }}
           layout={false}
         >
-          <div className="h-[60vh] w-full rounded-full bg-teal-400" />
+          <div className="h-[60vh] w-full bg-teal-400" />
         </motion.div>
 
-        {/* Slide boundary dots */}
-        {boundaries.map((pos, i) => {
-          const isActive = currentIndex >= i;
-          const isCurrent = currentIndex === i;
-          const meta = SECTION_META[i];
+        {/* Section dots */}
+        {sections.map((section, i) => {
+          const isActive = activeSection === section.id;
+          const dotPosition = sections.length > 1 ? i / (sections.length - 1) : 0;
 
           return (
             <div
-              key={i}
+              key={section.id}
               className="absolute left-1/2 -translate-x-1/2"
-              style={{ top: `${pos * 100}%` }}
+              style={{ top: `${dotPosition * 100}%` }}
             >
               <button
                 type="button"
-                onClick={() => goToSlide(i)}
+                onClick={() => scrollToSection(section.id)}
                 onMouseEnter={() => setHoveredIndex(i)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 className="group flex h-6 w-6 -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center"
                 style={{ position: "absolute", left: "50%", top: "50%" }}
-                aria-label={`Go to ${meta?.label ?? `section ${i + 1}`}`}
-                aria-current={isCurrent ? "step" : undefined}
+                aria-label={`Go to ${section.label}`}
+                aria-current={isActive ? "step" : undefined}
               >
                 <span
-                  className={`block h-1.5 w-1.5 rounded-full transition-all duration-300 ${
-                    isActive ? "bg-teal-400" : "bg-white/30"
-                  } ${isCurrent ? "shadow-[0_0_6px_2px_rgba(251,191,36,0.5)]" : ""}`}
+                  className={`block rounded-full transition-all duration-200 ${
+                    isActive
+                      ? "h-2 w-2 bg-teal-400"
+                      : "h-1.5 w-1.5 bg-white/25"
+                  }`}
                 />
               </button>
 
-              {/* Label — persistent on hero, shown on track hover otherwise */}
+              {/* Section label on hover */}
               <AnimatePresence>
-                {(showLabels || hoveredIndex === i) && meta && (
+                {(showLabels || hoveredIndex === i) && (
                   <motion.div
                     initial={{ opacity: 0, x: 4 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 4 }}
-                    transition={{ duration: 0.15 }}
+                    transition={{ duration: 0.12 }}
                     className="pointer-events-none absolute right-full top-1/2 mr-3 -translate-y-1/2 whitespace-nowrap"
                   >
                     <p
                       className={`text-xs font-medium transition-colors duration-200 ${
-                        isCurrent
-                          ? "text-teal-400"
-                          : isActive
-                            ? "text-white/50"
-                            : "text-white/30"
+                        isActive ? "text-teal-400" : "text-white/40"
                       }`}
                     >
-                      {meta.label}
+                      {section.label}
                     </p>
-                    {hoveredIndex === i && (
-                      <p className="text-[11px] text-white/40">{meta.desc}</p>
-                    )}
                   </motion.div>
                 )}
               </AnimatePresence>

@@ -19,6 +19,12 @@ export const researchTopics: ResearchTopic[] = [
     href: "/explore/amyloid-iron",
   },
   {
+    slug: "cascades",
+    title: "Iron Cascades",
+    description: "How iron drives amyloid, tau, demyelination, and cholinergic failure",
+    href: "/explore/iron-cascades",
+  },
+  {
     slug: "defense-systems",
     title: "Defense Systems",
     description: "Five layers protecting the brain from iron-driven damage",

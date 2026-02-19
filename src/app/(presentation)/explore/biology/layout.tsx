@@ -11,6 +11,7 @@ const layers = [
   { label: "Insulation", href: "/explore/biology/insulation" },
   { label: "Neurovascular", href: "/explore/biology/neurovascular" },
   { label: "Export", href: "/explore/biology/export" },
+  { label: "Ferroptosis as Defense", href: "/explore/biology/ferroptosis-defense" },
 ];
 
 export default function BiologyLayout({

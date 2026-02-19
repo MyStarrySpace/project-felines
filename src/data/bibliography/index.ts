@@ -6,6 +6,8 @@ import { glialSources } from "./glial";
 import { clinicalTrialsSources } from "./clinical-trials";
 import { epidemiologySources } from "./epidemiology";
 import { crossDiseaseSources } from "./cross-disease";
+import { ironCascadesSources } from "./iron-cascades";
+import { viralReactivationSources } from "./viral-reactivation";
 
 // Re-export types
 export type { Source, Citation, TopicTag, VerificationStatus };
@@ -19,6 +21,8 @@ export {
   clinicalTrialsSources,
   epidemiologySources,
   crossDiseaseSources,
+  ironCascadesSources,
+  viralReactivationSources,
 };
 
 // Aggregate all sources
@@ -30,6 +34,8 @@ const allModules: Source[][] = [
   clinicalTrialsSources,
   epidemiologySources,
   crossDiseaseSources,
+  ironCascadesSources,
+  viralReactivationSources,
 ];
 
 export const sources: Source[] = allModules.flat();

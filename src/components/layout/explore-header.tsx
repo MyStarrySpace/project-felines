@@ -12,6 +12,7 @@ const sectionLinks = [
   { label: "Viral", href: "/explore/viral" },
   { label: "Diseases", href: "/explore/diseases" },
   { label: "Barriers", href: "/explore/barrier" },
+  { label: "Clearance", href: "/explore/clearance" },
 ];
 
 export function ExploreHeader() {
