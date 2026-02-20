@@ -1996,4 +1996,136 @@ export const ironCascadesSources: Source[] = [
     ],
     verificationStatus: "verified",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // Aβ INNATE IMMUNITY & IRON BINDING (What-If lines, teaser section)
+  // ──────────────────────────────────────────────────────────────────────
+
+  {
+    id: "soscia-2010-plosone",
+    title:
+      "The Alzheimer's Disease-Associated Amyloid β-Protein Is an Antimicrobial Peptide",
+    authors: "Soscia SJ, Kirby JE, Washicosky KJ, et al.",
+    journal: "PLoS ONE",
+    year: 2010,
+    doi: "10.1371/journal.pone.0009505",
+    pmid: "20209079",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2831066/#:~:text=peptides%20inhibited%20the%20growth%20of%20eight%20of%2012%20clinically%20important%20pathogens%20screened",
+    tags: ["alzheimers", "iron"],
+    citations: [
+      {
+        citationId: "soscia-2010-plosone-c1",
+        sourceId: "soscia-2010-plosone",
+        quote:
+          "A\u03B2 peptides inhibited the growth of eight of 12 clinically important pathogens screened (Table 1), including the bacteria S. pneumoniae, which is a leading cause of bacterial meningitis, and C. albicans, the most common cause of neurocandidiasis.",
+        context:
+          "A\u03B2 functions as an antimicrobial peptide active against bacteria and yeast",
+        location: "Results",
+        projectRef:
+          "Teaser What-If line 0: A\u03B2 kills bacteria and yeast (ancient defense system)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "kumar-2016-stm",
+    title:
+      "Amyloid-β peptide protects against microbial infection in mouse and worm models of Alzheimer's disease",
+    authors: "Kumar DK, Choi SH, Washicosky KJ, et al.",
+    journal: "Science Translational Medicine",
+    year: 2016,
+    doi: "10.1126/scitranslmed.aaf1059",
+    pmid: "27225182",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27225182/",
+    tags: ["alzheimers", "iron"],
+    citations: [
+      {
+        citationId: "kumar-2016-stm-c1",
+        sourceId: "kumar-2016-stm",
+        quote:
+          "Our findings raise the intriguing possibility that β-amyloid may play a protective role in innate immunity",
+        context:
+          "In vivo evidence that Aβ protects against infection in mouse and worm AD models",
+        projectRef:
+          "Supporting evidence §8.14: Aβ antimicrobial innate immune function",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "everett-2014-jrsinterface",
+    title:
+      "Ferrous iron formation following the co-aggregation of ferric iron and the Alzheimer's disease peptide β-amyloid (1–42)",
+    authors: "Everett J, Céspedes E, Shelford LR, et al.",
+    journal: "Journal of The Royal Society Interface",
+    year: 2014,
+    doi: "10.1098/rsif.2014.0165",
+    pmid: "24671940",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24671940/",
+    tags: ["alzheimers", "iron"],
+    citations: [
+      {
+        citationId: "everett-2014-jrsinterface-c1",
+        sourceId: "everett-2014-jrsinterface",
+        quote:
+          "these results demonstrate the ability of Aβ to accumulate iron, offering an explanation for previously observed local increases in iron concentration associated with AD lesions",
+        context:
+          "Aβ accumulates ferric iron and reduces it to redox-active ferrous iron",
+        location: "Abstract",
+        projectRef:
+          "Teaser What-If line 2: 'A\u03B2 accumulates iron within aggregates'",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "seubert-1992-nature",
+    title:
+      "Isolation and quantification of soluble Alzheimer's β-peptide from biological fluids",
+    authors: "Seubert P, Vigo-Pelfrey C, Esch F, et al.",
+    journal: "Nature",
+    year: 1992,
+    doi: "10.1038/359325a0",
+    pmid: "1406936",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1406936/",
+    tags: ["alzheimers"],
+    citations: [
+      {
+        citationId: "seubert-1992-nature-c1",
+        sourceId: "seubert-1992-nature",
+        quote:
+          "These findings demonstrate that A beta is produced and released both in vivo and in vitro",
+        context:
+          "First detection of soluble Aβ in cerebrospinal fluid and plasma of healthy individuals",
+        projectRef:
+          "Supporting evidence §8.14: Aβ as normal metabolic product",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "haass-1992-nature",
+    title:
+      "Amyloid beta-peptide is produced by cultured cells during normal metabolism",
+    authors: "Haass C, Schlossmacher MG, Hung AY, et al.",
+    journal: "Nature",
+    year: 1992,
+    doi: "10.1038/359322a0",
+    pmid: "1383826",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1383826/",
+    tags: ["alzheimers"],
+    citations: [
+      {
+        citationId: "haass-1992-nature-c1",
+        sourceId: "haass-1992-nature",
+        quote:
+          "A beta is produced in soluble form in vitro and in vivo during normal cellular metabolism",
+        context:
+          "Landmark discovery that Aβ production is a normal cellular process, not inherently pathological",
+        projectRef:
+          "Supporting evidence §8.14: Aβ as normal metabolic product",
+      },
+    ],
+    verificationStatus: "verified",
+  },
 ];

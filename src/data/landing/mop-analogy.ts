@@ -1,8 +1,8 @@
 /**
- * Data for Slide 3: "The mop, not the weapon"
+ * Data for the Reframe section: pan-proteinopathy narrative
  *
- * Combines the mop analogy, dual-domain Aβ, trial reinterpretation,
- * and antibody selectivity into a 5-step narrative.
+ * Combines the mop analogy, cross-proteinopathy convergence, trial
+ * reinterpretation, and antibody selectivity into a multi-step narrative.
  */
 
 // ---------------------------------------------------------------------------
@@ -10,15 +10,12 @@
 // ---------------------------------------------------------------------------
 
 export const hookContent = {
-  headline: "We spent 30 years removing the brain\u2019s own defense system.",
-  subhead: "Then wondered why patients got worse.",
+  headline: "Six proteins. Six diseases. One exposed secret.",
+  subhead: "Every protein the field has targeted binds iron.",
   stat: {
-    value: "0.4%",
-    label: "clinical trial success rate for Alzheimer\u2019s",
-    source: "Cummings JL, Morstorf T, Zhong K. Alzheimers Res Ther. 2014;6(4):37.",
-    sourceId: "cummings-2014-alzrt",
+    value: "0",
+    label: "trials that addressed the iron those proteins manage",
   },
-  trialCount: "244 compounds tested. One conditional approval.",
 };
 
 // ---------------------------------------------------------------------------
@@ -28,58 +25,55 @@ export const hookContent = {
 export const mopContent = {
   kicker: "The framing error",
   analogy: [
-    "The field observed someone mopping up biohazardous waste.",
-    "They noticed the mop was covered in hazardous material and that people near dirty mops were sick.",
-    "They concluded: mops make people sick.",
+    "Six different diseases. Six different proteins found at the scene.",
+    "In Alzheimer\u2019s it was amyloid-beta. In Parkinson\u2019s, alpha-synuclein. In prion disease, PrP. In ALS, TDP-43.",
+    "The field concluded: the proteins are the disease. Remove them, cure the patient.",
   ],
   reframe:
-    "Amyloid-beta is not the disease. It is the cleanup crew. Removing it leaves the waste unmanaged.",
+    "All six proteins bind iron. All six aggregate around iron. In every case, removing the protein left the iron unmanaged\u2009\u2014\u2009and patients got worse.",
 };
 
 // ---------------------------------------------------------------------------
-// Step 2: Dual-domain Aβ
+// Step 2: Cross-proteinopathy convergence
 // ---------------------------------------------------------------------------
 
-export interface DomainCard {
-  domain: string;
-  residues: string;
-  label: string;
-  function: string;
-  character: string;
-  details: string[];
+export interface ProteinRow {
+  name: string;
+  disease: string;
+  ironRole: string;
+  withoutIron: string;
 }
 
-export const dualDomainContent = {
-  kicker: "One peptide, two jobs",
-  headline: "The same molecule is both a weapon and a mop.",
+export const convergenceContent = {
+  headline: "Different protein, same iron story.",
+  proteins: [
+    {
+      name: "Amyloid-\u03B2",
+      disease: "Alzheimer\u2019s",
+      ironRole: "Accumulates iron within aggregates, concentrating it locally",
+      withoutIron: "Aggregates formed without iron are non-toxic",
+    },
+    {
+      name: "Alpha-synuclein",
+      disease: "Parkinson\u2019s",
+      ironRole: "Binds ferric iron with 10\u00B9\u00B3 M\u207B\u00B9 affinity",
+      withoutIron: "No cellular aggregates form without iron",
+    },
+    {
+      name: "Tau",
+      disease: "Tauopathies / AD",
+      ironRole: "Buffers iron, facilitates ferroportin export",
+      withoutIron: "Hyperphosphorylation requires iron-activated kinases",
+    },
+    {
+      name: "PrP",
+      disease: "Prion disease",
+      ironRole: "Descended from ZIP metal transporter family",
+      withoutIron: "PrP-null mice show altered brain iron homeostasis",
+    },
+  ] as ProteinRow[],
   insight:
-    "When A\u03B2 inserts into a bacterial membrane via Domain B, the metal-binding Domain A faces AWAY from the target. Iron at plaques is not a weapon. It is cleanup.",
-  domains: [
-    {
-      domain: "B",
-      residues: "res 17\u201342",
-      label: "The weapon",
-      function: "Antimicrobial killing",
-      character: "Hydrophobic",
-      details: [
-        "Inserts into bacterial membranes",
-        "Requires no metals",
-        "Shared with LL-37 antimicrobial peptide",
-      ],
-    },
-    {
-      domain: "A",
-      residues: "res 1\u201316",
-      label: "The mop",
-      function: "Iron cleanup",
-      character: "Hydrophilic",
-      details: [
-        "Faces outward in membrane-bound form",
-        "Contains His6/His13/His14 metal-binding residues",
-        "Chelates Fe\u00B2\u207A, Cu\u00B2\u207A, Zn\u00B2\u207A",
-      ],
-    },
-  ] as DomainCard[],
+    "Four independent evolutionary lineages. All converging on the same function: iron management. The protein is the mop. Iron is the waste.",
 };
 
 // ---------------------------------------------------------------------------

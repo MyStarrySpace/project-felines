@@ -121,7 +121,16 @@
       "WebFetch(domain:www.proteinatlas.org)",
       "WebFetch(domain:wearebouldergroup.com)",
       "Bash(npx next dev --turbopack)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "WebFetch(domain:go.bio.org)",
+      "WebFetch(domain:journals.plos.org)",
+      "WebFetch(domain:genomebiology.biomedcentral.com)",
+      "WebFetch(domain:bmcgenomics.biomedcentral.com)",
+      "WebFetch(domain:eutils.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:www.jneurosci.org)",
+      "WebFetch(domain:keele-repository.worktribe.com)",
+      "WebFetch(domain:www.cureffi.org)",
+      "WebFetch(domain:www.oaepublish.com)"
     ]
   }
 }

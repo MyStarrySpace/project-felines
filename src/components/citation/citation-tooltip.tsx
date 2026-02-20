@@ -10,6 +10,8 @@ type CitationTooltipProps = {
   number: number;
   anchorRect: DOMRect | null;
   visible: boolean;
+  onEnter: () => void;
+  onLeave: () => void;
 };
 
 export function CitationTooltip({
@@ -17,6 +19,8 @@ export function CitationTooltip({
   number,
   anchorRect,
   visible,
+  onEnter,
+  onLeave,
 }: CitationTooltipProps) {
   const [portalTarget, setPortalTarget] = useState<HTMLElement | null>(null);
 
@@ -27,9 +31,9 @@ export function CitationTooltip({
   if (!portalTarget || !anchorRect) return null;
 
   // Position above the anchor, centered horizontally
-  const tooltipWidth = 320;
+  const tooltipWidth = 360;
   let left = anchorRect.left + anchorRect.width / 2 - tooltipWidth / 2;
-  const top = anchorRect.top - 8;
+  const top = anchorRect.top - 12;
 
   // Clamp to viewport
   if (left < 8) left = 8;
@@ -40,6 +44,9 @@ export function CitationTooltip({
   const doiUrl = source.doi ? `https://doi.org/${source.doi}` : undefined;
   const linkUrl = source.url || doiUrl;
 
+  // First citation quote for this source
+  const quote = source.citations[0]?.quote;
+
   return createPortal(
     <AnimatePresence>
       {visible && (
@@ -48,29 +55,52 @@ export function CitationTooltip({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 4 }}
           transition={{ duration: 0.15 }}
-          className="pointer-events-none fixed z-[101]"
+          className="fixed z-[101]"
           style={{
             left,
             top,
             width: tooltipWidth,
             transform: "translateY(-100%)",
           }}
+          onMouseEnter={onEnter}
+          onMouseLeave={onLeave}
         >
+          {/* Invisible bridge so cursor can travel from sup to tooltip */}
+          <div className="h-3" />
           <div className="rounded bg-navy-900/95 px-4 py-3 text-sm leading-relaxed shadow-lg backdrop-blur-sm border border-white/10">
             <p className="text-xs text-teal-400 mb-1">[{number}]</p>
-            <p className="font-medium text-white text-xs leading-snug">
-              {source.title}
-            </p>
-            <p className="mt-1 text-xs text-gray-400">
-              {source.authors}
-            </p>
+            {linkUrl ? (
+              <a
+                href={linkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-white text-xs leading-snug hover:text-teal-300 transition-colors"
+              >
+                {source.title}
+              </a>
+            ) : (
+              <p className="font-medium text-white text-xs leading-snug">
+                {source.title}
+              </p>
+            )}
+            <p className="mt-1 text-xs text-gray-400">{source.authors}</p>
             <p className="text-xs text-gray-500">
               {source.journal} ({source.year})
             </p>
-            {linkUrl && (
-              <p className="mt-1 text-xs text-teal-400/70 truncate">
-                {source.doi || linkUrl}
+            {quote && (
+              <p className="mt-2 text-xs text-gray-400 italic border-l border-white/10 pl-2 line-clamp-3">
+                &ldquo;{quote}&rdquo;
               </p>
+            )}
+            {linkUrl && (
+              <a
+                href={linkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-xs text-teal-400/70 hover:text-teal-300 transition-colors truncate max-w-full"
+              >
+                {source.doi ? `doi: ${source.doi}` : linkUrl}
+              </a>
             )}
           </div>
         </motion.div>

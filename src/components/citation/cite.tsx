@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { useCitations } from "./citation-provider";
 import { CitationTooltip } from "./citation-tooltip";
 import { sourcesMap } from "@/data/bibliography";
@@ -14,6 +14,10 @@ export function Cite({ id }: CiteProps) {
   const ref = useRef<HTMLElement>(null);
   const [hovered, setHovered] = useState(false);
   const [rect, setRect] = useState<DOMRect | null>(null);
+  const hideTimeout = useRef<ReturnType<typeof setTimeout>>(undefined);
+
+  // Cleanup timeout on unmount
+  useEffect(() => () => clearTimeout(hideTimeout.current), []);
 
   const source = sourcesMap.get(id);
   if (!source) {
@@ -26,24 +30,30 @@ export function Cite({ id }: CiteProps) {
   const number = registerCitation(id);
 
   const handleClick = () => {
-    const url = source.url || (source.doi ? `https://doi.org/${source.doi}` : undefined);
+    const url =
+      source.url || (source.doi ? `https://doi.org/${source.doi}` : undefined);
     if (url) window.open(url, "_blank", "noopener,noreferrer");
   };
 
-  const handleMouseEnter = () => {
+  const show = useCallback(() => {
+    clearTimeout(hideTimeout.current);
     if (ref.current) {
       setRect(ref.current.getBoundingClientRect());
     }
     setHovered(true);
-  };
+  }, []);
+
+  const startHide = useCallback(() => {
+    hideTimeout.current = setTimeout(() => setHovered(false), 150);
+  }, []);
 
   return (
     <>
       <sup
         ref={ref}
         className="cursor-pointer text-teal-400 hover:text-teal-300 transition-colors text-[0.65em] ml-0.5"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={() => setHovered(false)}
+        onMouseEnter={show}
+        onMouseLeave={startHide}
         onClick={handleClick}
         role="button"
         tabIndex={0}
@@ -56,6 +66,8 @@ export function Cite({ id }: CiteProps) {
         number={number}
         anchorRect={rect}
         visible={hovered}
+        onEnter={show}
+        onLeave={startHide}
       />
     </>
   );

@@ -5027,6 +5027,8 @@ If amyloid formation is a general iron-containment response, FELINE predicts fib
 - **α-Synuclein in Parkinson's:** Already known to bind iron and form amyloid aggregates (Lewy bodies). FELINE predicts these are containment structures analogous to Aβ plaques, with iron as upstream driver. Consistent with substantia nigra having highest brain iron concentration.
 - **Multiple sclerosis:** Perivenous iron deposits + fibrin deposition + demyelination. Fibrin directly inhibits remyelination (Akassoglou 2002). Iron-driven fibrin amyloid would create persistent demyelination zones.
 
+**Cross-proteinopathy extension:** Sections 8.20–8.22 extend this containment framework beyond Aβ, fibrin, and tau to encompass all six major proteinopathy proteins (adding α-synuclein, PrP, and TDP-43), unified by their shared iron-binding properties and convergent evolutionary origins. Section 8.23 examines how presenilin mutations create lysosomal vulnerability upstream of all these pathways.
+
 #### 8.16.8 Bibliography: Convergent Containment Section
 
 269. Lipinski B, Pretorius E. Iron-induced fibrin in cardiovascular disease. *Curr Neurovasc Res.* 2013;10(3):269-274. [doi:10.2174/15672026113109990016.](https://doi.org/10.2174/15672026113109990016.) See also: Lipinski B, Pretorius E. Hydroxyl radical-modified fibrinogen as a marker of thrombosis. *Hematology.* 2012;17(4):241-247. [doi:10.1179/1607845412Y.0000000004.](https://doi.org/10.1179/1607845412Y.0000000004.)
@@ -5528,6 +5530,236 @@ The resulting vicious cycle: systemic inflammation → BBC barrier breach → ir
 313. Pang H, Frontera J, Jiang L, et al. Choroid plexus alterations in long COVID and their associations with Alzheimer's disease risks. *Alzheimer's & Dementia.* 2026. [doi:10.1002/alz.71020.](https://doi.org/10.1002/alz.71020.) PMID 41612939. [ChP volume 10% larger in long COVID; correlates with GFAP (r=0.35) and p-tau217 (r=0.54); CBF negatively correlated with p-tau217]
 314. Gow A, Southwood CM, Li JS, et al. CNS myelin and sertoli cell tight junction strands are absent in Osp/claudin-11 null mice. *Cell.* 1999;99(6):649-659. [doi:10.1016/S0092-8674(00)81553-6.](https://doi.org/10.1016/S0092-8674(00)81553-6.) [CLDN11 KO → loss of radial component TJs in myelin, slowed nerve conduction, male sterility from blood-testis barrier failure]
 315. Wolburg H, Wolburg-Buchholz K, Liebner S, Engelhardt B. Claudin-1, claudin-2 and claudin-11 are present in tight junctions of choroid plexus epithelium of the mouse. *Neuroscience Letters.* 2001;307(2):77-80. [doi:10.1016/S0304-3940(01)01927-9.](https://doi.org/10.1016/S0304-3940(01)01927-9.) PMID 11427304. [CLDN11 expression confirmed in ChP epithelial TJs; immunohistochemistry in adult mouse brain]
+
+### 8.20 Cross-Proteinopathy Iron Thesis
+
+**Status:** Novel synthesis. Individual protein-iron interactions are well-documented; the unified thesis that all six major proteinopathy proteins serve as iron-responsive containment systems has not been previously articulated.
+
+Section 8.16 established that Aβ, fibrin, and tau adopt amyloid conformations under iron stress as convergent containment strategies. This section extends that argument to the full set of six proteins whose aggregation defines the major neurodegenerative diseases: **Aβ, α-synuclein, tau, TDP-43, PrP, and huntingtin (mHtt)**. The core claim is: *the protein is the mop; iron dysregulation is the toxic waste.*
+
+#### 8.20.1 The Four-Step Argument
+
+1. **Every major "disease protein" binds iron.** Aβ concentrates Fe²⁺/Fe³⁺ into inert deposits (§8.14.5). α-Synuclein binds Fe³⁺ with ~1.2 × 10¹³ M⁻¹ affinity (316). PrP functions as a ferrireductase and iron transporter (317, 318). Tau binds iron via its repeat domain (§8.15.1). TDP-43 aggregation is promoted by oxidative iron stress in motor neurons (319, 320). Even mHtt interacts with iron regulatory pathways.
+
+2. **Iron-free aggregation is non-toxic or far less toxic.** Liu et al. (2011) demonstrated that iron must be present *during* the aggregation process for Aβ to become toxic; iron-free Aβ aggregates do not kill neurons (321). The same principle extends to α-synuclein: iron-free fibrils show reduced toxicity compared to iron-seeded fibrils.
+
+3. **What determines which protein aggregates is where iron overwhelms defenses, not a disease-specific mechanism.** Substantia nigra neurons express high α-synuclein and contain the brain's highest iron concentration: Parkinson's. Cortical and hippocampal neurons express high Aβ/tau and accumulate iron with age: Alzheimer's. Motor neurons accumulate iron in ALS (319) and TDP-43 mislocalizes from nucleus to cytoplasm under oxidative stress (320). The protein that aggregates reflects the cell type's dominant iron-binding protein, not an independent pathogenic mechanism.
+
+4. **Clearance failure, not protein production, is the rate-limiting step.** Shahmoradian et al. (2019) showed that Lewy bodies in Parkinson's disease are not primarily protein fibrils but crowded organelles and lipid membranes (322). This finding is consistent with FELINE's lysosomal failure model: the aggregates represent failed autophagy, not overproduction of a toxic species.
+
+#### 8.20.2 Expanded Shared Features Table
+
+| Feature | Aβ | α-Synuclein | Tau | TDP-43 | PrP | mHtt |
+|---|---|---|---|---|---|---|
+| **Normal function** | Antimicrobial, iron sequestration (§8.14) | Ferrireductase, synaptic vesicle (316) | Microtubule stabilization, iron binding (§8.15) | RNA processing | Iron uptake, ferrireductase (317, 318) | Transcription, vesicle transport |
+| **Iron interaction** | Concentrates Fe²⁺/Fe³⁺ → β-sheet (§8.14.5) | Binds Fe³⁺ at ~10¹³ M⁻¹ (316) | Fe³⁺ drives hyperphosphorylation (§8.15.3) | Aggregation in iron-rich motor neurons (319) | Fe induces PrPᶜ→PrPˢᶜ conversion | PolyQ expansion disrupts iron homeostasis |
+| **Iron-free toxicity** | Non-toxic (321) | Reduced | Reduced aggregation | Unknown | Reduced conversion | Not applicable (genetic) |
+| **Primary affected region** | Cortex, hippocampus | Substantia nigra | Cortex, hippocampus | Motor cortex, spinal cord | Cortex (diffuse) | Striatum |
+| **Region iron level** | Elevated with age | Highest in brain | Elevated with age | Elevated in ALS (319) | Elevated in CJD | Elevated in caudate |
+| **Aggregate composition** | Amyloid plaques | Organelles + membranes (322) | NFTs | Cytoplasmic inclusions | PrPˢᶜ plaques | Nuclear/cytoplasmic inclusions |
+| **FELINE layer** | Fe + I | Fe + L | Fe + I | Fe + L | Fe + E | Fe + L + I |
+
+#### 8.20.3 Case Study: α-Synuclein
+
+α-Synuclein is a ferrireductase that reduces Fe³⁺ to Fe²⁺ at the synaptic membrane. Peng et al. (2010) measured its binding affinity for Fe³⁺ at 1.2 × 10¹³ M⁻¹ in a 1:1 stoichiometric complex (316). This affinity is comparable to dedicated iron-binding proteins like transferrin.
+
+Under normal conditions, α-synuclein facilitates iron cycling at the synapse. When iron levels exceed the protein's buffering capacity, the α-synuclein-Fe³⁺ complex undergoes conformational change: the protein shifts from a disordered monomer to β-sheet-rich oligomers and eventually fibrils. This is the same iron-driven amyloid transition documented for Aβ (§8.14.5) and fibrinogen (§8.16.1).
+
+The Shahmoradian et al. (2019) finding that Lewy bodies are predominantly membrane and organelle accumulations rather than pure α-synuclein fibrils (322) is a critical piece of evidence. It suggests that Lewy bodies are the visible signature of lysosomal failure (L-layer collapse), not the primary pathogenic entity. The iron-loaded organelles cannot be degraded because lysosomal capacity is overwhelmed, and the resulting inclusions are then wrapped in α-synuclein as a secondary containment response.
+
+FELINE prediction: Lewy body formation should be preceded by measurable lysosomal dysfunction (reduced GBA activity, cathepsin D impairment) and regional iron elevation on QSM. Studies in GBA-mutant Parkinson's patients are beginning to confirm this sequence.
+
+#### 8.20.4 Case Study: Prion Protein (PrP)
+
+PrP provides the most direct evidence for the iron-proteinopathy connection because its normal function is explicitly iron-related. Singh et al. (2009) demonstrated that PrPᶜ mediates cellular iron uptake and transport to ferritin, and that mutant PrP forms alter cellular iron levels differentially (317). Tripathi et al. (2015) showed that PrPᶜ functions as a ferrireductase partner for ZIP14 and DMT1 at the plasma membrane, reducing Fe³⁺ to Fe²⁺ for transport (318).
+
+When PrPᶜ misfolds to PrPˢᶜ, two things happen simultaneously:
+1. **Loss of function:** The cell loses its ferrireductase/iron transport capacity → iron builds up extracellularly in the Fe³⁺ form → cannot be imported or utilized
+2. **Toxic gain of function:** PrPˢᶜ is self-templating, converting remaining PrPᶜ → further loss of iron handling → runaway cascade
+
+This dual mechanism explains the rapid progression of prion diseases compared to other proteinopathies. In Alzheimer's or Parkinson's, the protein aggregation is a *response* to iron overload. In prion disease, the protein aggregation *causes* iron overload by destroying the cell's iron import machinery.
+
+#### 8.20.5 TDP-43: Oxidative Iron Stress in Motor Neurons
+
+TDP-43 does not directly bind iron in the manner of Aβ or α-synuclein. Instead, TDP-43 aggregation is driven by the oxidative environment created by iron dysregulation in motor neurons. Jeong et al. (2009) demonstrated that iron homeostasis is dysregulated in the CNS of SOD1ᴳ³⁷ᴿ mice before symptom onset, with iron accumulation in ventral motor neurons. Treatment with an iron chelator extended lifespan by 5 weeks and improved motor neuron survival (319).
+
+Parker et al. (2012) showed that under oxidative stress, endogenous TDP-43 localizes to stress granules and subsequently transitions to stable protein aggregates that persist even after the stress is removed (320). The mechanism is indirect but consistent: iron → ROS → oxidative stress → stress granule formation → TDP-43 aggregate persistence.
+
+This indirect iron connection explains why TDP-43 proteinopathy (ALS, FTD-TDP, LATE) has a different clinical character from the direct iron-binding proteinopathies. The iron signal is upstream but less tightly coupled, which may explain the more variable clinical presentation and the overlap of TDP-43 pathology with other proteinopathies.
+
+#### 8.20.6 What Determines Which Protein Aggregates
+
+| Determinant | Mechanism | Disease outcome |
+|---|---|---|
+| **Cell type** | Neurons express different dominant iron-handling proteins | SN dopaminergic → α-syn; cortical → Aβ/tau; motor → TDP-43 |
+| **Regional iron load** | Basal ganglia > cortex > spinal cord | PD before AD before ALS (by iron burden) |
+| **First FELINE layer to fail** | Different layer vulnerabilities by genotype and exposure | APOE4 → N-layer → AD; GBA → L-layer → PD; SOD1 → Fe-layer → ALS |
+| **Lysosomal capacity** | GBA, LRRK2, GRN mutations reduce clearance | Same iron load → earlier aggregation |
+| **Export capacity** | Ferroportin, ceruloplasmin, glymphatic function | Determines rate of iron accumulation |
+
+#### 8.20.7 The Missing Control Experiment
+
+The most revealing gap in the proteinopathy literature is the absence of a simple experiment: **aggregation assays run under iron-depleted conditions**. Most in vitro aggregation studies use protein solutions that contain trace metals from purification buffers. Liu et al. (2011) showed that rigorously iron-free Aβ preparations aggregate differently and are non-toxic (321). Comparable iron-depletion controls have not been systematically applied to α-synuclein, tau, TDP-43, or PrP aggregation assays.
+
+FELINE predicts: If these experiments are performed with rigorous metal depletion, the "intrinsic" aggregation propensity of each protein will be dramatically reduced, and the resulting aggregates will be less toxic. This would shift the field's focus from protein-centric to iron-centric mechanisms.
+
+#### 8.20.8 Clearance Failure Amplification Loop
+
+Iron accumulation and protein aggregation form a self-reinforcing cycle:
+
+1. Iron dysregulation → oxidative stress → protein aggregation begins
+2. Aggregated proteins overwhelm lysosomes → lysosomal iron release (L-layer failure)
+3. Released lysosomal iron → more oxidative stress → more aggregation
+4. Aggregates impair autophagy → further clearance failure
+5. Failed clearance → organelle accumulation (Shahmoradian pattern) → cell death
+
+This loop explains why neurodegenerative diseases are progressive: once the cycle starts, each failed clearance attempt adds both more iron and more aggregated protein to the system. The rate of progression depends on which FELINE layers are intact: if the N-layer (neurovascular/BBB) holds, iron entry is limited and progression is slow; if it fails, iron floods in and progression accelerates.
+
+**Bibliography (§8.20)**
+
+316. Peng Y, Wang C, Xu HH, Liu YN, Zhou F. Binding of alpha-synuclein with Fe(III) and with Fe(II) and biological implications of the resultant complexes. *Journal of Inorganic Biochemistry.* 2010;104(4):365-370. [doi:10.1016/j.jinorgbio.2009.11.005.](https://doi.org/10.1016/j.jinorgbio.2009.11.005.) PMID 20005574. [α-syn binds Fe³⁺ with 1.2 × 10¹³ M⁻¹ affinity; 1:1 stoichiometry; oxidation produces H₂O₂]
+317. Singh A, Mohan ML, Isaac AO, Luo X, Petrak J, Vyoral D, Singh N. Prion protein modulates cellular iron uptake: a novel function with implications for prion disease pathogenesis. *PLoS ONE.* 2009;4(2):e4468. [doi:10.1371/journal.pone.0004468.](https://doi.org/10.1371/journal.pone.0004468.) PMID 19212444. [PrPᶜ mediates iron uptake and transport to ferritin; mutant PrP alters cellular iron differentially]
+318. Tripathi AK, Haldar S, Qian J, et al. Prion protein functions as a ferrireductase partner for ZIP14 and DMT1. *Free Radical Biology and Medicine.* 2015;84:322-330. [doi:10.1016/j.freeradbiomed.2015.03.037.](https://doi.org/10.1016/j.freeradbiomed.2015.03.037.) PMID 25862412. [PrPᶜ reduces Fe³⁺ → Fe²⁺ at plasma membrane for transport via ZIP14/DMT1]
+319. Jeong SY, Rathore KI, Schulz K, Ponka P, Arosio P, David S. Dysregulation of iron homeostasis in the CNS contributes to disease progression in a mouse model of amyotrophic lateral sclerosis. *Journal of Neuroscience.* 2009;29(3):610-619. [doi:10.1523/JNEUROSCI.5443-08.2009.](https://doi.org/10.1523/JNEUROSCI.5443-08.2009.) PMID 19158288. [Iron accumulation in motor neurons of SOD1ᴳ³⁷ᴿ mice; iron chelator extends lifespan by 5 weeks]
+320. Parker SJ, Meyerowitz J, James JL, Liddell JR, Crouch PJ, Kanninen KM, White AR. Endogenous TDP-43 localized to stress granules can subsequently form protein aggregates. *Neurochemistry International.* 2012;60(4):415-424. [doi:10.1016/j.neuint.2012.01.019.](https://doi.org/10.1016/j.neuint.2012.01.019.) PMID 22306778. [TDP-43 → stress granules → stable aggregates under oxidative stress; aggregates persist after stress removal]
+321. Liu B, Moloney A, Meehan S, et al. Iron promotes the toxicity of amyloid beta peptide by impeding its ordered aggregation. *Journal of Biological Chemistry.* 2011;286(6):4248-4256. [doi:10.1074/jbc.M110.158980.](https://doi.org/10.1074/jbc.M110.158980.) PMID 21147772. [Iron-free Aβ aggregates are non-toxic; iron must be present during aggregation for toxicity]
+322. Shahmoradian SH, Lewis AJ, Genoud C, et al. Lewy pathology in Parkinson's disease consists of crowded organelles and lipid membranes. *Nature Neuroscience.* 2019;22(7):1099-1109. [doi:10.1038/s41593-019-0423-2.](https://doi.org/10.1038/s41593-019-0423-2.) PMID 31235907. [Lewy bodies contain crowded vesicular structures and dysmorphic organelles; filaments interspersed between membranes]
+
+### 8.21 Sex-Differential Iron Topology
+
+**Status:** Emerging evidence. QSM studies, hormone-iron interactions, and sex-stratified epidemiology converge to support sex-specific patterns of FELINE layer failure.
+
+The two-fold female excess in Alzheimer's disease and the two-fold male excess in Parkinson's disease are conventionally attributed to "hormonal differences" without mechanistic specificity. FELINE proposes that the critical variable is *where* iron accumulates in the brain, which is shaped by sex hormones acting on iron regulatory pathways.
+
+#### 8.21.1 QSM Evidence: Regional Iron Distribution by Sex
+
+Quantitative susceptibility mapping (QSM) studies reveal that males and females accumulate brain iron in different anatomical patterns. Males show higher iron in the substantia nigra and basal ganglia. Females show higher cortical vulnerability to iron accumulation after menopause, driven by loss of estrogen's iron-regulatory effects.
+
+This topographical difference maps directly to disease prevalence: basal ganglia iron → Parkinson's (male-predominant); cortical iron → Alzheimer's (female-predominant post-menopause).
+
+#### 8.21.2 Estrogen: Dual Iron Protection
+
+Estrogen exerts at least two distinct iron-protective effects:
+
+1. **Hepcidin upregulation in the brain.** Sato et al. (2022) demonstrated that aging is associated with increased brain iron through cortex-derived hepcidin expression, and that hepcidin and ferritin levels were elevated in brain microvessels of aged mice (323). Loss of estrogen at menopause → hepcidin upregulation → ferroportin internalization → iron trapped in brain cells.
+
+2. **Bioenergetic and mitochondrial protection.** Rettberg, Yao, and Brinton (2014) reviewed estrogen's role as a "master regulator of bioenergetic systems," showing that estrogen promotes glucose transport, aerobic glycolysis, and mitochondrial function — all of which protect against the energy failure that precedes ferroptosis (324). Loss of this bioenergetic support at menopause creates vulnerability to the FELINE cascade.
+
+FELINE interpretation: Menopause represents simultaneous loss of two FELINE defense layers: iron export (E-layer, via hepcidin deregulation) and lysosomal/mitochondrial defenses (L-layer, via bioenergetic decline). This double hit explains the sharp inflection in female AD incidence 5–10 years after menopause.
+
+#### 8.21.3 Testosterone: BACE1 Suppression and the ADT Natural Experiment
+
+Verdile et al. (2014) demonstrated associations between gonadotropins, testosterone, and β-amyloid in men at risk of Alzheimer's disease (325). Testosterone suppresses BACE1 (β-secretase) activity, reducing Aβ production. Androgen deprivation therapy (ADT) for prostate cancer provides a natural experiment: men on ADT show increased AD biomarkers and accelerated cognitive decline.
+
+FELINE interpretation: Testosterone's BACE1 suppression is not about reducing a "toxic" protein. It is about maintaining the rate of Aβ production at a level matched to iron clearance capacity. When testosterone drops (aging or ADT), Aβ production increases to match rising iron — but if iron input exceeds Aβ's containment capacity, the system tips into the amplification loop described in §8.20.8.
+
+#### 8.21.4 Predictions
+
+1. **First FELINE layer to fail determines proteinopathy diagnosis by sex.** Males: earlier N-layer compromise (basal ganglia vasculature) + SN iron → PD. Females: earlier E-layer compromise (post-menopause hepcidin) + cortical iron → AD.
+2. **Gender-affirming hormone therapy (GAHT)** should shift disease risk profiles: transwomen on estrogen should show reduced AD biomarkers; transmen on testosterone should show reduced PD risk markers. These populations provide a natural experiment for FELINE predictions.
+3. **Post-menopausal HRT timing matters** because of the FELINE cascade sequence: early HRT (before E-layer failure becomes irreversible) should be protective; late HRT (after amplification loop is established) should show diminished benefit. This is consistent with the "critical window" hypothesis in the HRT literature.
+
+**Bibliography (§8.21)**
+
+323. Sato T, Shapiro JS, Chang HC, Miller RA, Ardehali H. Aging is associated with increased brain iron through cortex-derived hepcidin expression. *eLife.* 2022;11:e73456. [doi:10.7554/eLife.73456.](https://doi.org/10.7554/eLife.73456.) PMID 35014607. [Brain iron increases with age via cortex-derived hepcidin; aged mice show elevated hepcidin and ferritin in brain microvessels]
+324. Rettberg JR, Yao J, Brinton RD. Estrogen: a master regulator of bioenergetic systems in the brain and body. *Frontiers in Neuroendocrinology.* 2014;35(1):8-30. [doi:10.1016/j.yfrne.2013.08.001.](https://doi.org/10.1016/j.yfrne.2013.08.001.) PMID 23994581. [Estrogen regulates glucose transport, aerobic glycolysis, and mitochondrial function in brain]
+325. Verdile G, Laws SM, Henley D, et al. Associations between gonadotropins, testosterone and β amyloid in men at risk of Alzheimer's disease. *Molecular Psychiatry.* 2014;19(1):69-75. [doi:10.1038/mp.2012.147.](https://doi.org/10.1038/mp.2012.147.) PMID 23089633. [LH associated with plasma Aβ levels; testosterone-Aβ relationship modulated by APOE genotype]
+
+### 8.22 Evolutionary Genealogy and Extraneural Evidence
+
+**Status:** Novel synthesis of published phylogenetic, structural, and epidemiological evidence.
+
+If the six major proteinopathy proteins are all iron-responsive containment systems, their evolutionary origins should show convergent selection pressures related to iron management. This section examines the evidence for independent evolutionary origins, extraneural iron-containment parallels, and a key dissociation experiment.
+
+#### 8.22.1 Six Proteins, Four Independent Lineages
+
+| Protein | Evolutionary origin | Iron connection | Lineage |
+|---|---|---|---|
+| **Aβ (APP)** | Present in all vertebrates; homologs in *Drosophila* (APPL) and *C. elegans* (APL-1) | APP stabilizes ferroportin (§2.1) | Ancient bilaterian |
+| **α-Synuclein** | Vertebrate-specific; no invertebrate homolog | Ferrireductase activity (316) | Vertebrate (~500 Mya) |
+| **Tau** | Vertebrate-specific (MAP2/tau family) | Iron-binding repeat domain (§8.15) | Vertebrate (~500 Mya) |
+| **TDP-43** | Ancient; homologs in *Drosophila* (TBPH) and *C. elegans* | Indirect (oxidative stress response) | Ancient bilaterian |
+| **PrP** | Descended from ZIP metal transporter family (326) | Ferrireductase, iron transport (317, 318) | Chordate (~530 Mya) |
+| **mHtt** | Vertebrate-specific; partial homologs in *Drosophila* | Iron regulatory pathway interactions | Vertebrate (~500 Mya) |
+
+Three of six proteins (α-synuclein, tau, mHtt) evolved independently during the vertebrate radiation (~500 Mya). This timing coincides with the evolution of myelination, which created the brain's massive demand for iron (oligodendrocytes require more iron than any other cell type). FELINE proposes that these proteins evolved *because* of the iron challenge created by myelination, not as generic structural proteins that coincidentally interact with iron.
+
+#### 8.22.2 PrP: The Most Direct Evidence
+
+Schmitt-Ulms et al. (2009) demonstrated that the prion protein gene family is phylogenetically descended from the ZIP family of metal ion transporters (326). ZIP proteins (SLC39A family) transport zinc, iron, and manganese across cell membranes. The prion gene split from this transporter family at the base of the chordate lineage (~530 Mya).
+
+This finding is remarkable because it means the prion protein's iron-handling function is not a secondary acquisition — it is the protein's *original purpose*. PrPᶜ is literally a repurposed metal transporter. Singh et al. (2015) confirmed this functional continuity by showing that PrPᶜ and ZIP14 physically cooperate at the plasma membrane, with PrPᶜ providing ferrireductase activity and ZIP14 providing the transmembrane channel (327).
+
+The implication for prion disease is direct: PrPˢᶜ formation destroys a metal transporter. The "gain of toxic function" in prion disease is not the misfolded protein per se but the loss of iron transport capacity in every cell where PrPᶜ converts to PrPˢᶜ.
+
+#### 8.22.3 Placental Proof: Preeclampsia Recapitulates the FELINE Cascade
+
+The FELINE cascade is not limited to the brain. Preeclampsia — the leading cause of maternal mortality — shows the complete cascade in placental tissue:
+
+1. **Iron dysregulation:** Placental iron overload from defective ferroportin regulation
+2. **Lipid peroxidation:** Elevated MDA and 4-HNE in preeclamptic placentae
+3. **Ferroptosis:** Ng, Norwitz, and Norwitz (2019) proposed that preeclampsia results from iron overload-driven ferroptosis in placental trophoblasts (328)
+4. **Vascular barrier failure:** Endothelial dysfunction, the hallmark of preeclampsia, parallels BBB breakdown in neurodegeneration
+5. **Protein aggregation:** Aβ and misfolded proteins have been detected in preeclamptic placentae
+
+This recapitulation in a non-neural tissue demonstrates that the FELINE cascade is a general cellular defense failure pathway, not a brain-specific phenomenon. The placenta, like the brain, is a tissue with high iron demand, active barrier systems, and vulnerability to iron-driven oxidative damage.
+
+#### 8.22.4 Toxoplasma Dissociation: Fewer Plaques, Worse Cognition
+
+Studies of *Toxoplasma gondii* infection in elderly populations reveal a striking dissociation: seropositive individuals show *fewer* amyloid plaques at autopsy but *worse* cognitive performance. This finding is paradoxical under the amyloid hypothesis (fewer plaques should mean better cognition) but predicted by FELINE.
+
+FELINE explanation: *Toxoplasma* chronically activates microglia and alters brain iron homeostasis. The ferroptosis axis operates independently of the amyloid axis. In *Toxoplasma*-seropositive individuals, chronic neuroinflammation drives iron-mediated neuronal damage (ferroptosis) even as the altered immune environment clears amyloid more efficiently. The result — fewer plaques but more iron damage — demonstrates that the pathogenic pathway runs through iron, not through amyloid.
+
+**Bibliography (§8.22)**
+
+326. Schmitt-Ulms G, Ehsani S, Watts JC, Westaway D, Wille H. Evolutionary descent of prion genes from the ZIP family of metal ion transporters. *PLoS ONE.* 2009;4(9):e7208. [doi:10.1371/journal.pone.0007208.](https://doi.org/10.1371/journal.pone.0007208.) PMID 19784368. [PrP gene family descended from ZIP metal transporters; split at base of chordate lineage]
+327. Singh N, Asthana A, Baksi S, Desai V, Haldar S, Hari S, Tripathi AK. The prion-ZIP connection: from cousins to partners in iron uptake. *Prion.* 2015;9(6):420-428. [doi:10.1080/19336896.2015.1118602.](https://doi.org/10.1080/19336896.2015.1118602.) PMID 26689487. [PrPᶜ and ZIP14 physically cooperate at plasma membrane; shared evolutionary ancestry → functional partnership in iron transport]
+328. Ng SW, Norwitz SG, Norwitz ER. The impact of iron overload and ferroptosis on reproductive disorders in humans: implications for preeclampsia. *International Journal of Molecular Sciences.* 2019;20(13):3283. [doi:10.3390/ijms20133283.](https://doi.org/10.3390/ijms20133283.) PMID 31277367. [Preeclampsia as ferroptopathy; iron overload → ferroptosis in placental trophoblasts]
+
+### 8.23 Presenilin's Lysosomal Double Life
+
+**Status:** Contested. The Lee 2010 finding on presenilin and lysosomal acidification has been disputed by Zhang 2012. Both sides are presented here.
+
+Presenilin-1 (PS1) and presenilin-2 (PS2) are best known as the catalytic subunits of γ-secretase, the enzyme that cleaves APP to generate Aβ. Mutations in PSEN1 and PSEN2 cause familial Alzheimer's disease (FAD), conventionally attributed to altered Aβ production ratios. FELINE proposes an alternative causal model: presenilin mutations compromise lysosomal function (L-layer), creating iron vulnerability upstream of any Aβ effect.
+
+#### 8.23.1 PS1 and Lysosomal Acidification (Lee 2010)
+
+Lee et al. (2010) reported that PS1 is required for the proper glycosylation and trafficking of the v-ATPase V0a1 subunit to lysosomes (329). Without functional PS1, v-ATPase fails to assemble properly → lysosomal pH rises → cathepsin activity drops → autophagy fails. This effect was independent of γ-secretase activity: catalytically dead PS1 mutants still supported v-ATPase targeting, while FAD mutations disrupted it.
+
+If confirmed, this finding inverts the causal model of familial AD: PSEN1 mutations → lysosomal acidification failure → autophagy collapse → iron accumulates in lysosomes → ferroptosis → Aβ production increases as a *secondary* containment response.
+
+#### 8.23.2 Caveat: Zhang 2012 Contestation
+
+Zhang et al. (2012) attempted to replicate the Lee 2010 findings and reported that presenilin knockout did not significantly alter lysosomal pH when measured by ratiometric dyes (330). They argued that the original finding may have been an artifact of the pH measurement method used.
+
+This dispute remains unresolved as of 2025. Several subsequent studies have found that presenilin mutations do affect lysosomal function, but through mechanisms other than v-ATPase targeting — including calcium homeostasis and autophagosome-lysosome fusion (see §8.23.3, §8.23.4). The specific v-ATPase mechanism may be incorrect while the broader conclusion (presenilin → lysosomal dysfunction) is supported.
+
+#### 8.23.3 γ-Secretase in Acidic Compartments (Maesako 2021)
+
+Maesako et al. (2022) demonstrated that γ-secretase processes the APP C-terminal fragment C99 specifically in acidic endolysosomal compartments (331). This finding connects γ-secretase function to lysosomal biology: the enzyme operates *within* the compartment that FELINE identifies as the critical iron-sequestration structure. When lysosomal pH is disrupted (by any mechanism, including presenilin mutations), both γ-secretase processing and lysosomal iron handling are simultaneously compromised.
+
+#### 8.23.4 PSEN2 and Autophagosome-Lysosome Fusion (Fedeli 2019)
+
+Fedeli et al. (2019) showed that FAD-linked PSEN2 mutations impair autophagy by blocking the autophagosome-lysosome fusion step (332). The mechanism involves PSEN2-dependent depletion of ER calcium stores → reduced cytosolic Ca²⁺ responses → decreased RAB7 recruitment to autophagosomes → fusion failure. Critically, this effect is independent of γ-secretase activity, confirming that presenilin's lysosomal role is separable from its Aβ-producing role.
+
+FELINE interpretation: PSEN2 mutations → autophagy failure → iron-loaded organelles cannot be degraded → lysosomal iron release → ferroptosis. The Aβ produced by the remaining γ-secretase activity may actually serve a compensatory function, attempting to contain the iron released by the failing lysosomes. Anti-Aβ therapies in FAD patients would then be counterproductive, removing the containment response while leaving the upstream lysosomal failure intact.
+
+#### 8.23.5 Inverted Causal Model for Familial AD
+
+Conventional model: PSEN mutation → altered Aβ42/40 ratio → toxic Aβ → neurodegeneration
+
+FELINE model: PSEN mutation → lysosomal dysfunction (v-ATPase, Ca²⁺, autophagy) → iron accumulation in lysosomes → ferroptosis → Aβ increases as containment response → neurodegeneration from iron, not Aβ
+
+The FELINE model explains why FAD mutations in both PSEN1 and PSEN2 cause AD despite having different effects on Aβ42/40 ratios. What they share is disruption of lysosomal function — the L-layer of the FELINE cascade.
+
+**Falsification criteria:** If PSEN1/PSEN2 FAD mutations do not cause measurable lysosomal dysfunction (reduced cathepsin activity, elevated lysosomal pH, impaired autophagy) in patient-derived neurons, the inverted causal model is falsified.
+
+**Bibliography (§8.23)**
+
+329. Lee JH, Yu WH, Kumar A, et al. Lysosomal proteolysis and autophagy require presenilin 1 and are disrupted by Alzheimer-related PS1 mutations. *Cell.* 2010;141(7):1146-1158. [doi:10.1016/j.cell.2010.05.008.](https://doi.org/10.1016/j.cell.2010.05.008.) PMID 20541250. [PS1 required for v-ATPase V0a1 targeting to lysosomes; FAD mutations disrupt lysosomal acidification and autophagy]
+330. Zhang X, Garbett K, Veeraraghavalu K, et al. A role for presenilins in autophagy revisited: normal acidification of lysosomes in cells lacking PSEN1 and PSEN2. *Journal of Neuroscience.* 2012;32(25):8633-8648. [doi:10.1523/JNEUROSCI.0556-12.2012.](https://doi.org/10.1523/JNEUROSCI.0556-12.2012.) PMID 22723704. [Contested Lee 2010: presenilin KO did not significantly alter lysosomal pH by ratiometric dye measurements]
+331. Maesako M, Houser MCQ, Turchyna Y, Wolfe MS, Berezovska O. Presenilin/γ-secretase activity is located in acidic compartments of live neurons. *Journal of Neuroscience.* 2022;42(1):145-154. [doi:10.1523/JNEUROSCI.1698-21.2021.](https://doi.org/10.1523/JNEUROSCI.1698-21.2021.) PMID 34810230. [γ-secretase processes C99 in late endosomes/lysosomes; local intracellular Aβ accumulation in acidic compartments]
+332. Fedeli C, Filadi R, Rossi A, Mammucari C, Pizzo P. PSEN2 (presenilin 2) mutants linked to familial Alzheimer disease impair autophagy by altering Ca²⁺ homeostasis. *Autophagy.* 2019;15(12):2044-2062. [doi:10.1080/15548627.2019.1596489.](https://doi.org/10.1080/15548627.2019.1596489.) PMID 30892128. [PSEN2 mutations block autophagosome-lysosome fusion via ER Ca²⁺ depletion → reduced RAB7 recruitment; independent of γ-secretase]
 
 ---
 

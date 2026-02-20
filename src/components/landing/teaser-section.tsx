@@ -1,17 +1,26 @@
 "use client";
 
-import { useCallback } from "react";
 import { motion, useTransform, type MotionValue } from "framer-motion";
 import { ScrollSection } from "@/components/ui/scroll-section";
 import { StickyScrollStage } from "@/components/ui/sticky-scroll-stage";
 import { ScrollBeat } from "@/components/ui/scroll-beat";
-import { CountUp } from "@/components/ui/count-up";
+import { TrialBars } from "@/components/landing/trial-bars";
+import { WhatIfLines } from "@/components/landing/what-if-lines";
+import { ProteinTrials } from "@/components/landing/protein-trials";
 import { teaserContent } from "@/data/landing/teaser";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 const FILL_BG = "#EDE6DB";
 const DARK_TEXT = "#1A0F0A";
 const DARK_GOLD = "#92400E";
+
+/** Wrap occurrences of "iron" in <em> */
+function emphasize(text: string) {
+  const parts = text.split(/(iron)/i);
+  return parts.map((p, i) =>
+    p.toLowerCase() === "iron" ? <em key={i}>{p}</em> : p
+  );
+}
 
 /** Quote text rendered in either original (light-on-dark) or inverted (dark-on-light) colors */
 function QuoteText({ inverted = false }: { inverted?: boolean }) {
@@ -38,7 +47,7 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
         animate={{ clipPath: "inset(0 0% 0 0)" }}
         transition={{ duration: 1, delay: 0.7, ease: EASE }}
       >
-        {teaserContent.quote.line1Gold}
+        {emphasize(teaserContent.quote.line1Gold)}
       </motion.p>
       <motion.p
         className={`${whiteClass} mt-6`}
@@ -56,39 +65,48 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
         animate={{ clipPath: "inset(0 0% 0 0)" }}
         transition={{ duration: 1, delay: 1.7, ease: EASE }}
       >
-        {teaserContent.quote.line2Gold}
+        {emphasize(teaserContent.quote.line2Gold)}
       </motion.p>
     </div>
   );
 }
 
 function TeaserStage({ progress }: { progress: MotionValue<number> }) {
-  // Timeline aligned to 3 beats at progress 0, 0.40, 0.80
-  // (350vh section, 250vh travel, 1 click = 100vh = 0.40 progress)
+  // Timeline aligned to 4 beats (450vh section, 350vh travel, ~0.286 per 100vh)
 
-  // --- Beat 1 (0.00–0.38): Quote + fill rise ---
-  const fillTop = useTransform(progress, [0.06, 0.30], [100, 0]);
+  // --- Beat 1 (0.00–0.26): Quote + fill rise ---
+  const fillTop = useTransform(progress, [0.04, 0.20], [100, 0]);
   const fillClip = useTransform(fillTop, (v) => `inset(${v}% 0 0 0)`);
   const fillFade = useTransform(progress, [0.64, 0.72], [1, 0]);
   const fillVisible = useTransform(fillFade, (v) =>
     v > 0.01 ? "visible" : "hidden"
   );
   const quoteHidden = useTransform(progress, (v) =>
-    v < 0.36 ? "visible" : "hidden"
+    v < 0.24 ? "visible" : "hidden"
   );
-  const invertedQuoteFade = useTransform(progress, [0.28, 0.35], [1, 0]);
+  const invertedQuoteFade = useTransform(progress, [0.18, 0.24], [1, 0]);
 
-  // --- Beat 2 (0.34–0.70): Headline on cream ---
+  // --- Beat 2 (0.24–0.46): Protein trial stats on cream ---
+  const proteinOpacity = useTransform(
+    progress,
+    [0.24, 0.27, 0.42, 0.46],
+    [0, 1, 1, 0]
+  );
+  const proteinVisible = useTransform(proteinOpacity, (v) =>
+    v > 0.02 ? "visible" : "hidden"
+  );
+
+  // --- Beat 3 (0.44–0.68): Headline on cream ---
   const headlineOpacity = useTransform(
     progress,
-    [0.34, 0.44, 0.64, 0.72],
+    [0.44, 0.50, 0.62, 0.68],
     [0, 1, 1, 0]
   );
   const headlineVisible = useTransform(headlineOpacity, (v) =>
     v > 0.02 ? "visible" : "hidden"
   );
 
-  // --- Beat 3 (0.72–1.00): Stats on dark ---
+  // --- Beat 4 (0.72–1.00): Stats on dark ---
   const statsIn = useTransform(progress, [0.72, 0.80], [0, 1]);
   const statsVisible = useTransform(statsIn, (v) =>
     v > 0.02 ? "visible" : "hidden"
@@ -96,11 +114,6 @@ function TeaserStage({ progress }: { progress: MotionValue<number> }) {
 
   // Scroll hint: fades out as user starts scrolling
   const hintOpacity = useTransform(progress, [0, 0.06], [1, 0]);
-
-  const formatPercent = useCallback(
-    (v: number) => v.toFixed(1) + "%",
-    []
-  );
 
   return (
     <div className="h-full relative">
@@ -134,69 +147,39 @@ function TeaserStage({ progress }: { progress: MotionValue<number> }) {
         </motion.div>
       </motion.div>
 
+      {/* Protein trial stats (dark text on cream) */}
+      <motion.div
+        style={{ opacity: proteinOpacity, visibility: proteinVisible }}
+        className="absolute inset-0 flex items-center px-6 sm:px-8"
+      >
+        <ProteinTrials progress={progress} />
+      </motion.div>
+
       {/* Headline (dark text on cream) */}
       <motion.div
         style={{ opacity: headlineOpacity, visibility: headlineVisible }}
         className="absolute inset-0 flex items-center px-6 sm:px-8"
       >
         <div className="reading-width mx-auto w-full">
-          <ScrollBeat progress={progress} enter={0.36} hold={0.44} enterFrom="scale">
+          <ScrollBeat progress={progress} enter={0.46} hold={0.52} enterFrom="scale">
             <h1 className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] text-[#1A0F0A] max-w-[16ch]">
               {teaserContent.headline}
             </h1>
           </ScrollBeat>
-          <ScrollBeat progress={progress} enter={0.40} hold={0.48} enterFrom="bottom">
-            <p className="mt-6 font-serif text-[clamp(1.1rem,2.5vw,1.5rem)] text-[#1A0F0A]/60">
-              {teaserContent.subtext}
-            </p>
-          </ScrollBeat>
+          <WhatIfLines progress={progress} />
         </div>
       </motion.div>
 
-      {/* Stats (white/gold on dark bg) */}
+      {/* Trial bars + context (white/gold on dark bg) */}
       <motion.div
         style={{ opacity: statsIn, visibility: statsVisible }}
         className="absolute inset-0 flex items-center px-6 sm:px-8"
       >
-        <div className="reading-width mx-auto w-full">
-          <ScrollBeat progress={progress} enter={0.74} hold={0.80} enterFrom="scale">
-            <div className="mb-6">
-              <span className="font-serif text-[clamp(3rem,10vw,7rem)] font-bold text-teal-400 leading-[0.9] tracking-tight">
-                <CountUp
-                  progress={progress}
-                  enter={0.74}
-                  hold={0.80}
-                  from={0}
-                  to={0.4}
-                  format={formatPercent}
-                />
-              </span>
-              <p className="text-lg text-gray-400 mt-2">
-                {teaserContent.stats.successRate.label}
-              </p>
-            </div>
-          </ScrollBeat>
+        <div className="w-full max-w-4xl mx-auto">
+          <TrialBars progress={progress} />
 
-          <ScrollBeat progress={progress} enter={0.78} hold={0.84} enterFrom="right">
-            <div className="flex flex-wrap items-baseline gap-3 sm:gap-6 mb-8">
-              <span className="text-[clamp(1.5rem,3.5vw,2.5rem)] font-bold text-gray-200 leading-none tabular-nums">
-                {teaserContent.stats.compounds.value}
-              </span>
-              <span className="text-sm text-gray-500">
-                {teaserContent.stats.compounds.label}
-              </span>
-              <span className="text-gray-600 hidden sm:inline">{"\u00B7"}</span>
-              <span className="text-[clamp(1.5rem,3.5vw,2.5rem)] font-bold text-gray-200 leading-none">
-                {teaserContent.stats.spending.value}
-              </span>
-              <span className="text-sm text-gray-500">
-                {teaserContent.stats.spending.label}
-              </span>
-            </div>
-          </ScrollBeat>
-
-          <ScrollBeat progress={progress} enter={0.84} hold={0.90} enterFrom="left">
-            <div className="border-l-2 border-teal-600/50 pl-6 max-w-lg">
+          <ScrollBeat progress={progress} enter={0.90} hold={0.96} enterFrom="left">
+            <div className="border-l-2 border-teal-600/50 pl-6 max-w-lg mt-8 ml-[5.5rem] sm:ml-28">
               <p className="text-xl text-gray-300 leading-relaxed">
                 {teaserContent.context}
               </p>
@@ -276,12 +259,12 @@ function TeaserStage({ progress }: { progress: MotionValue<number> }) {
   );
 }
 
-const TEASER_BREAKPOINTS = [0, 0.50, 0.75];
+const TEASER_BREAKPOINTS = [0, 0.44, 0.58, 0.80];
 
 export function TeaserSection() {
   return (
     <ScrollSection id="teaser" label="Teaser" className="py-0" fullWidth breakpoints={TEASER_BREAKPOINTS}>
-      <StickyScrollStage height={350}>
+      <StickyScrollStage height={450}>
         {(progress) => <TeaserStage progress={progress} />}
       </StickyScrollStage>
     </ScrollSection>

@@ -1,8 +1,8 @@
 /**
  * Data for Slide 2: Reframings
  *
- * Pays off the teaser: if plaques aren't the disease, what is?
- * Mop analogy + dual-domain A-beta + OL vulnerability + tau reframe + summary sentence.
+ * Pays off the teaser: if the protein isn't the problem, what is?
+ * Mop analogy + cross-proteinopathy convergence + OL vulnerability + tau reframe + summary sentence.
  *
  * Steps 0-1 reuse mop-analogy.ts exports directly.
  * Steps 2-4 are new content defined here.

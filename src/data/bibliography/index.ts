@@ -8,6 +8,7 @@ import { epidemiologySources } from "./epidemiology";
 import { crossDiseaseSources } from "./cross-disease";
 import { ironCascadesSources } from "./iron-cascades";
 import { viralReactivationSources } from "./viral-reactivation";
+import { proteinopathySources } from "./proteinopathy";
 
 // Re-export types
 export type { Source, Citation, TopicTag, VerificationStatus };
@@ -23,6 +24,7 @@ export {
   crossDiseaseSources,
   ironCascadesSources,
   viralReactivationSources,
+  proteinopathySources,
 };
 
 // Aggregate all sources
@@ -36,6 +38,7 @@ const allModules: Source[][] = [
   crossDiseaseSources,
   ironCascadesSources,
   viralReactivationSources,
+  proteinopathySources,
 ];
 
 export const sources: Source[] = allModules.flat();

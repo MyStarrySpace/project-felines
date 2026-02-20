@@ -6,7 +6,7 @@ import { ScrollSection } from "@/components/ui/scroll-section";
 import { StickyScrollStage } from "@/components/ui/sticky-scroll-stage";
 import { ScrollBeat } from "@/components/ui/scroll-beat";
 import { CountUp } from "@/components/ui/count-up";
-import { mopContent, dualDomainContent } from "@/data/landing/mop-analogy";
+import { mopContent, convergenceContent } from "@/data/landing/mop-analogy";
 import { olContent, tauContent, summaryLine } from "@/data/landing/reframe";
 
 function ReframeStage({ progress }: { progress: MotionValue<number> }) {
@@ -53,41 +53,32 @@ function ReframeStage({ progress }: { progress: MotionValue<number> }) {
           />
         </ScrollBeat>
 
-        {/* Beat 2: Dual-domain Aβ (0.32–0.52) */}
+        {/* Beat 2: Cross-proteinopathy convergence (0.32–0.52) */}
         <ScrollBeat progress={progress} enter={0.32} hold={0.44} exit={0.52} gone={0.56} enterFrom="fade">
           <ScrollBeat progress={progress} enter={0.32} hold={0.38} enterFrom="right">
             <h2 className="font-serif text-[clamp(1.5rem,4vw,2.5rem)] leading-[1.2] text-white mb-8">
-              {dualDomainContent.headline}
+              {convergenceContent.headline}
             </h2>
           </ScrollBeat>
 
-          <div className="grid gap-6 sm:grid-cols-2">
-            {dualDomainContent.domains.map((d, i) => (
+          <div className="space-y-4">
+            {convergenceContent.proteins.map((p, i) => (
               <ScrollBeat
-                key={d.domain}
+                key={p.name}
                 progress={progress}
-                enter={0.34 + (i === 0 ? 0 : 0.02)}
-                hold={0.40 + (i === 0 ? 0 : 0.02)}
-                enterFrom={i === 0 ? "left" : "right"}
+                enter={0.34 + i * 0.015}
+                hold={0.39 + i * 0.015}
+                enterFrom="bottom"
               >
-                <div className="border border-white/5 p-6">
-                  <div className="flex items-baseline gap-2 mb-3">
-                    <span className="text-sm font-bold tracking-wide text-gray-300">
-                      Domain {d.domain}
-                    </span>
-                    <span className="text-xs text-gray-500">({d.residues})</span>
+                <div className="border border-white/5 px-6 py-4 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+                  <div className="shrink-0 sm:w-44">
+                    <span className="text-base font-semibold text-white">{p.name}</span>
+                    <span className="ml-2 text-xs text-gray-500">{p.disease}</span>
                   </div>
-                  <p className="text-lg font-semibold text-white mb-1">{d.function}</p>
-                  <p className="text-sm text-gray-400 mb-3">{d.character}</p>
-                  <ul className="space-y-1">
-                    {d.details.map((detail) => (
-                      <li key={detail} className="text-sm text-gray-300 flex gap-2">
-                        <span className="text-gray-600">&bull;</span>
-                        {detail}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="mt-4 text-sm font-bold text-gray-300">{d.label}</p>
+                  <div className="flex-1 space-y-1">
+                    <p className="text-sm text-gray-300">{p.ironRole}</p>
+                    <p className="text-xs text-gray-500">Without iron: {p.withoutIron}</p>
+                  </div>
                 </div>
               </ScrollBeat>
             ))}
@@ -95,7 +86,7 @@ function ReframeStage({ progress }: { progress: MotionValue<number> }) {
 
           <ScrollBeat progress={progress} enter={0.44} hold={0.48} enterFrom="fade">
             <p className="mt-6 text-lg leading-relaxed text-gray-300">
-              {dualDomainContent.insight}
+              {convergenceContent.insight}
             </p>
           </ScrollBeat>
         </ScrollBeat>

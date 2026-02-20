@@ -128,7 +128,13 @@ Every source MUST have:
 - **Year** of publication
 - **DOI** (without `https://doi.org/` prefix) when available
 - **PMID** when the source is indexed in PubMed
-- **URL** direct link to the source (PubMed, PMC, or publisher page)
+- **URL** direct link to the source with a **text fragment** pointing to the cited quote. Rules:
+  - Prefer **PMC** (PubMed Central) URLs over PubMed when the paper is in PMC, because PMC has the full text where text fragments can highlight the quote
+  - Append `#:~:text=` with a URL-encoded distinctive phrase (4-8 words) from the first citation's `quote` field
+  - Example: `"https://pmc.ncbi.nlm.nih.gov/articles/PMC2745754/#:~:text=prion%20gene%20family%20is%20phylogenetically%20derived"`
+  - Choose a phrase specific enough to be unique on the page (avoid common words like "the" or "we found")
+  - URL-encode special characters: spaces→`%20`, commas→`%2C`, colons→`%3A`
+  - If no PMC version exists, use PubMed URL with text fragment (works on abstracts)
 
 ### Required Citation Fields
 
@@ -188,6 +194,12 @@ Good copy is clear, concise, and serves the reader. Follow these principles base
   - Colon: "stuck in trials: too cheap to fund"
   - Parentheses: "blocked by stigma (not science)"
   - Period and new sentence for longer asides
+- **Redundant negations** - Don't waste words telling the reader what something *isn't* before saying what it *is*. If you can remove the "It's not X" part and keep only "It's Y," remove the negation. It adds nothing.
+  - Bad: "These proteins are not recent accidents. They evolved iron-handling functions across independent lineages."
+  - Good: "These proteins evolved iron-handling functions across independent lineages."
+  - Bad: "Tau is not a toxin. It is an iron manager that failed."
+  - Good: "Tau is an iron manager that failed."
+  - **Exception**: Negations that directly challenge a widely held assumption earn their place. "Lewy bodies are not protein fibrils" works because readers expect them to be fibrils. The test: would a reader be surprised by the negation? If yes, keep it. If no, cut it.
 
 ### Card/Callout Copy Pattern
 
