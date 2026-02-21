@@ -12,6 +12,8 @@ type CitationTooltipProps = {
   visible: boolean;
   onEnter: () => void;
   onLeave: () => void;
+  /** Show specific citation quotes (by citationId). Shows first quote if omitted. */
+  citationIds?: string[];
 };
 
 export function CitationTooltip({
@@ -21,6 +23,7 @@ export function CitationTooltip({
   visible,
   onEnter,
   onLeave,
+  citationIds,
 }: CitationTooltipProps) {
   const [portalTarget, setPortalTarget] = useState<HTMLElement | null>(null);
 
@@ -44,8 +47,10 @@ export function CitationTooltip({
   const doiUrl = source.doi ? `https://doi.org/${source.doi}` : undefined;
   const linkUrl = source.url || doiUrl;
 
-  // First citation quote for this source
-  const quote = source.citations[0]?.quote;
+  // Select quotes: specific citationIds if provided, otherwise first quote
+  const quotes = citationIds
+    ? source.citations.filter((c) => citationIds.includes(c.citationId)).map((c) => c.quote)
+    : source.citations[0]?.quote ? [source.citations[0].quote] : [];
 
   return createPortal(
     <AnimatePresence>
@@ -87,10 +92,14 @@ export function CitationTooltip({
             <p className="text-xs text-gray-500">
               {source.journal} ({source.year})
             </p>
-            {quote && (
-              <p className="mt-2 text-xs text-gray-400 italic border-l border-white/10 pl-2 line-clamp-3">
-                &ldquo;{quote}&rdquo;
-              </p>
+            {quotes.length > 0 && (
+              <div className="mt-2 space-y-1.5">
+                {quotes.map((q, i) => (
+                  <p key={i} className="text-xs text-gray-400 italic border-l border-white/10 pl-2 line-clamp-3">
+                    &ldquo;{q}&rdquo;
+                  </p>
+                ))}
+              </div>
             )}
             {linkUrl && (
               <a

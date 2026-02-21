@@ -192,6 +192,28 @@ export const proteinopathySources: Source[] = [
         projectRef:
           "Landing teaser: APP evolutionary age (>540 Mya, ancient metazoan)",
       },
+      {
+        citationId: "tharp-2013-bmcgenomics-c2",
+        sourceId: "tharp-2013-bmcgenomics",
+        quote:
+          "Invertebrate species genomes encode a single homologue referred to as either amyloid precursor like 1 protein (APL-1) or A\u03B2PP-like 1 protein (APPL-1)",
+        context:
+          "Flies (APPL-1) and worms (APL-1) both carry APP homologs",
+        location: "Background",
+        projectRef:
+          "Landing teaser: APP homologs in flies, worms, and cnidarians",
+      },
+      {
+        citationId: "tharp-2013-bmcgenomics-c3",
+        sourceId: "tharp-2013-bmcgenomics",
+        quote:
+          "fruit flies express APPL-1 only in neurons",
+        context:
+          "Drosophila APP homolog has neuron-specific expression",
+        location: "Results",
+        projectRef:
+          "Landing teaser: APP homologs in flies",
+      },
     ],
     verificationStatus: "verified",
   },

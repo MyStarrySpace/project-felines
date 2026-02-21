@@ -30,7 +30,7 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
   const goldClass = inverted ? "" : "text-teal-400";
 
   return (
-    <div className="font-serif text-[clamp(2.25rem,5.5vw,4rem)] leading-[1.25] tracking-[-0.02em]">
+    <div className="font-serif text-[clamp(2.75rem,6.5vw,5rem)] leading-[1.1] tracking-[-0.02em] text-center">
       <motion.p
         className={whiteClass}
         style={whiteStyle}
@@ -50,7 +50,7 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
         {emphasize(teaserContent.quote.line1Gold)}
       </motion.p>
       <motion.p
-        className={`${whiteClass} mt-6`}
+        className={`${whiteClass} mt-3`}
         style={whiteStyle}
         initial={{ clipPath: "inset(0 100% 0 0)" }}
         animate={{ clipPath: "inset(0 0% 0 0)" }}

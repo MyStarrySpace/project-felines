@@ -32,7 +32,7 @@ const expandedContent: ReactNode[] = [
       <dd>
         Homologs in flies, worms, and even cnidarians. The ancestral gene dates
         to 630&ndash;540&thinsp;Mya.
-        <Cite id="tharp-2013-bmcgenomics" /> A&beta; itself kills bacteria and
+        <Cite id="tharp-2013-bmcgenomics" citationIds={["tharp-2013-bmcgenomics-c1", "tharp-2013-bmcgenomics-c2", "tharp-2013-bmcgenomics-c3"]} /> A&beta; itself kills bacteria and
         yeast.
         <Cite id="soscia-2010-plosone" />
       </dd>

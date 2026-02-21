@@ -110,14 +110,41 @@ export interface ProteinTrialStat {
   tested: number;
   approved: number;
   approvedNote?: string;
+  image?: string | string[];
 }
 
 export const proteinTrialStats: ProteinTrialStat[] = [
-  { disease: "Alzheimer\u2019s", protein: "A\u03B2 / tau", tested: 28, approved: 2, approvedNote: "contested benefit" },
-  { disease: "Parkinson\u2019s", protein: "\u03B1-synuclein", tested: 5, approved: 0 },
-  { disease: "ALS", protein: "SOD1 / TDP-43", tested: 5, approved: 1, approvedNote: "missed primary endpoint" },
-  { disease: "Huntington\u2019s", protein: "huntingtin", tested: 6, approved: 0 },
-  { disease: "Prion", protein: "PrP", tested: 5, approved: 0 },
+  {
+    disease: "Alzheimer\u2019s",
+    protein: "A\u03B2 / tau",
+    tested: 28,
+    approved: 2,
+    approvedNote: "contested benefit",
+    image: ["5OQV-ab.png", "5O3L-tau.png"],
+  },
+  {
+    disease: "Parkinson\u2019s",
+    protein: "\u03B1-synuclein",
+    tested: 5,
+    approved: 0,
+    image: "6CU7-a-syn.png",
+  },
+  {
+    disease: "ALS",
+    protein: "SOD1 / TDP-43",
+    tested: 5,
+    approved: 1,
+    approvedNote: "missed primary endpoint",
+    image: "2C9V-sod1.png",
+  },
+  {
+    disease: "Huntington\u2019s",
+    protein: "huntingtin",
+    tested: 6,
+    approved: 0,
+    image: "6X9O-huntingtin.png",
+  },
+  { disease: "Prion", protein: "PrP", tested: 5, approved: 0, image: "1I4M-prion.png" },
 ];
 
 export const proteinTrialContent = {

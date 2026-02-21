@@ -7,9 +7,11 @@ import { sourcesMap } from "@/data/bibliography";
 
 type CiteProps = {
   id: string;
+  /** Show specific citation quotes in the tooltip (by citationId). Shows first quote if omitted. */
+  citationIds?: string[];
 };
 
-export function Cite({ id }: CiteProps) {
+export function Cite({ id, citationIds }: CiteProps) {
   const { registerCitation } = useCitations();
   const ref = useRef<HTMLElement>(null);
   const [hovered, setHovered] = useState(false);
@@ -51,7 +53,7 @@ export function Cite({ id }: CiteProps) {
     <>
       <sup
         ref={ref}
-        className="cursor-pointer text-teal-400 hover:text-teal-300 transition-colors text-[0.65em] ml-0.5"
+        className="cursor-pointer text-teal-600 hover:text-teal-400 transition-colors text-[0.65em] ml-0.5"
         onMouseEnter={show}
         onMouseLeave={startHide}
         onClick={handleClick}
@@ -68,6 +70,7 @@ export function Cite({ id }: CiteProps) {
         visible={hovered}
         onEnter={show}
         onLeave={startHide}
+        citationIds={citationIds}
       />
     </>
   );

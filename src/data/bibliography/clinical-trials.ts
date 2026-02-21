@@ -284,4 +284,142 @@ export const clinicalTrialsSources: Source[] = [
     ],
     verificationStatus: "verified",
   },
+  {
+    id: "vandyck-2023-nejm-lecanemab",
+    title: "Lecanemab in Early Alzheimer's Disease",
+    authors: "van Dyck CH, Swanson CJ, Aisen P, et al.",
+    journal: "New England Journal of Medicine",
+    year: 2023,
+    doi: "10.1056/NEJMoa2212948",
+    pmid: "36449413",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10040446/#:~:text=least-squares%20mean%20change%20from%20baseline%20at%2018%20months",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "vandyck-2023-nejm-lecanemab-c1",
+        sourceId: "vandyck-2023-nejm-lecanemab",
+        quote:
+          "The adjusted least-squares mean change from baseline at 18 months was 1.21 with lecanemab and 1.66 with placebo (difference, \u22120.45; 95% confidence interval [CI], \u22120.67 to \u22120.23; P<0.001).",
+        context:
+          "27% slowing of decline (0.45/1.66) on CDR-SB scale, less than half a point on 18-point scale",
+        location: "Results",
+        projectRef:
+          "Protein trials: Alzheimer's expanded detail (lecanemab efficacy)",
+      },
+      {
+        citationId: "vandyck-2023-nejm-lecanemab-c2",
+        sourceId: "vandyck-2023-nejm-lecanemab",
+        quote:
+          "Lecanemab resulted in infusion-related reactions in 26.4% of the participants and amyloid-related imaging abnormalities with edema or effusions in 12.6%.",
+        context:
+          "Combined ARIA-E (12.6%) and ARIA-H (17.3%) = 21.3% any ARIA",
+        location: "Results, Safety",
+        projectRef:
+          "Protein trials: Alzheimer's expanded detail (ARIA incidence)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "mcdade-2022-alz-res-ther",
+    title:
+      "Lecanemab in patients with early Alzheimer's disease: detailed results on biomarker, cognitive, and clinical effects from the randomized and open-label extension of the phase 2 proof-of-concept study",
+    authors:
+      "McDade E, Cummings JL, Dhadda S, Swanson CJ, Reyderman L, Kanekiyo M, Koyama A, Irizarry M, Kramer LD, Bateman RJ.",
+    journal: "Alzheimer's Research & Therapy",
+    year: 2022,
+    doi: "10.1186/s13195-022-01124-2",
+    pmid: "36544184",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9768996/#:~:text=gradual%20re-accumulation%20of%20pathological%20biomarkers%20supports%20the%20need",
+    tags: ["clinical-trials", "alzheimers", "biomarkers"],
+    citations: [
+      {
+        citationId: "mcdade-2022-alz-res-ther-c1",
+        sourceId: "mcdade-2022-alz-res-ther",
+        quote:
+          "Clinical progression and gradual re-accumulation of pathological biomarkers supports the need for continued dosing, even after the observed clearance of brain amyloid.",
+        context:
+          "Off-treatment gap period (mean 24 months): biomarkers return toward baseline",
+        location: "Discussion",
+        projectRef:
+          "Protein trials: Alzheimer's expanded detail (treatment discontinuation)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "miller-2022-nejm-tofersen",
+    title: "Trial of Antisense Oligonucleotide Tofersen for SOD1 ALS",
+    authors: "Miller TM, Cudkowicz ME, Genge A, et al.",
+    journal: "New England Journal of Medicine",
+    year: 2022,
+    doi: "10.1056/NEJMoa2204705",
+    pmid: "36129998",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11524200/#:~:text=tofersen%20reduced%20concentrations%20of%20SOD1",
+    tags: ["clinical-trials", "als"],
+    citations: [
+      {
+        citationId: "miller-2022-nejm-tofersen-c1",
+        sourceId: "miller-2022-nejm-tofersen",
+        quote:
+          "In persons with SOD1 ALS, tofersen reduced concentrations of SOD1 in CSF and of neurofilament light chains in plasma over 28 weeks but did not improve clinical end points and was associated with adverse events.",
+        context:
+          "Primary endpoint (ALSFRS-R) not met, P=0.97. FDA approved on biomarker surrogate only.",
+        location: "Conclusions",
+        projectRef:
+          "Protein trials: ALS expanded detail (tofersen VALOR trial failure)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "tarawneh-2024-alz-res-ther",
+    title:
+      "The search for clarity regarding 'clinically meaningful outcomes' in Alzheimer disease clinical trials: CLARITY-AD and Beyond",
+    authors: "Tarawneh R, Pankratz VS.",
+    journal: "Alzheimer's Research & Therapy",
+    year: 2024,
+    doi: "10.1186/s13195-024-01412-z",
+    pmid: "38365811",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10870501/#:~:text=slowing%20in%20CDR-SB%20progression%20by",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "tarawneh-2024-alz-res-ther-c1",
+        sourceId: "tarawneh-2024-alz-res-ther",
+        quote:
+          "slowing in CDR-SB progression by ~3.2 months at 12 months, ~5 months at 18 months, ~6.5 months at 2 years, and ~10 months at 3 years",
+        context:
+          "Translates the CDR-SB difference into practical time saved: ~5 months at the 18-month trial endpoint",
+        location: "Results",
+        projectRef:
+          "Protein trials: Alzheimer's expanded detail (practical meaning of 27%)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "biogen-2024-aduhelm-withdrawal",
+    title:
+      "Biogen to Realign Resources for Alzheimer's Disease Franchise",
+    authors: "Biogen Inc.",
+    journal: "Press release (Biogen)",
+    year: 2024,
+    url: "https://investors.biogen.com/news-releases/news-release-details/biogen-realign-resources-alzheimers-disease-franchise#:~:text=reprioritizing%20resources%20to%20build%20a%20leading%20franchise",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "biogen-2024-aduhelm-withdrawal-c1",
+        sourceId: "biogen-2024-aduhelm-withdrawal",
+        quote:
+          "Biogen is reprioritizing resources to build a leading franchise to address the multiple pathologies of the disease and patient needs.",
+        context:
+          "Aducanumab withdrawn Jan 2024; confirmatory ENVISION trial terminated; Medicare had restricted coverage to clinical trials only",
+        location: "Press release",
+        projectRef:
+          "Protein trials: Alzheimer's expanded detail (aducanumab withdrawal)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
 ];

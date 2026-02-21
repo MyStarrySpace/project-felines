@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-arimo, system-ui), sans-serif;
+}
+
 :root {
   /* Iron hierarchy */
   --navy-900: #1A0F0A;
@@ -88,8 +92,7 @@
   --color-red-600: #DC2626;
   --color-red-50: #FEF2F2;
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Menlo, monospace;
   --font-serif: var(--font-instrument-serif);
 
   --shadow-sm: var(--shadow-sm);
@@ -100,7 +103,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-arimo, system-ui), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -130,7 +130,30 @@
       "WebFetch(domain:www.jneurosci.org)",
       "WebFetch(domain:keele-repository.worktribe.com)",
       "WebFetch(domain:www.cureffi.org)",
-      "WebFetch(domain:www.oaepublish.com)"
+      "WebFetch(domain:www.oaepublish.com)",
+      "WebFetch(domain:healthjournalism.org)",
+      "WebFetch(domain:aagponline.org)",
+      "WebFetch(domain:www.leqembihcp.com)",
+      "WebFetch(domain:www.ean.org)",
+      "WebFetch(domain:www.eneuro.org)",
+      "WebFetch(domain:source.washu.edu)",
+      "WebFetch(domain:www.medscape.com)",
+      "WebFetch(domain:resident360.nejm.org)",
+      "WebFetch(domain:www.ccjm.org)",
+      "WebFetch(domain:icer.org)",
+      "WebFetch(domain:www.fda.gov)",
+      "WebFetch(domain:www.accessdata.fda.gov)",
+      "WebFetch(domain:dailymed.nlm.nih.gov)",
+      "WebFetch(domain:www.medrxiv.org)",
+      "WebFetch(domain:bundlephobia.com)",
+      "WebFetch(domain:www.rcsb.org)",
+      "WebFetch(domain:cdn.rcsb.org)",
+      "WebFetch(domain:molstar.org)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:www.jsdelivr.com)",
+      "WebFetch(domain:cdn.jsdelivr.net)",
+      "WebFetch(domain:cdnjs.com)"
     ]
   }
 }
