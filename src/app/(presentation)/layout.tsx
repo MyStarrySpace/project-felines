@@ -21,6 +21,8 @@ function PresentationContent({ children }: { children: ReactNode }) {
   const presentationRef = useRef<HTMLDivElement>(null);
   const savedScrollRef = useRef(0);
   const didJumpRef = useRef(false);
+  const rafIdRef = useRef(0);
+  const isAnimatingRef = useRef(false);
   const activeSectionRef = useRef(activeSection);
   activeSectionRef.current = activeSection;
   const sectionsRef = useRef(sections);
@@ -64,24 +66,32 @@ function PresentationContent({ children }: { children: ReactNode }) {
     }
   }, [phase, completeExpand]);
 
-  // Smooth scroll helper — duration scales with distance
-  const smoothScrollTo = useCallback((target: number) => {
+  // Smooth scroll helper — duration scales with distance, optional override
+  const smoothScrollTo = useCallback((target: number, durationOverride?: number) => {
     const start = window.scrollY;
     const delta = target - start;
     if (delta === 0) return;
+    // Cancel any in-progress animation
+    cancelAnimationFrame(rafIdRef.current);
+    isAnimatingRef.current = true;
     // ~1800ms per viewport-height of travel, clamped to 1000–5000ms
-    const duration = Math.max(1000, Math.min(5000, (Math.abs(delta) / window.innerHeight) * 1800));
+    const duration = durationOverride ?? Math.max(1000, Math.min(5000, (Math.abs(delta) / window.innerHeight) * 1800));
     const startTime = performance.now();
 
     function step(now: number) {
+      if (!isAnimatingRef.current) return; // cancelled by user scroll
       const elapsed = now - startTime;
       const t = Math.min(elapsed / duration, 1);
       // Ease-in-out cubic
       const eased = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
       window.scrollTo(0, start + delta * eased);
-      if (t < 1) requestAnimationFrame(step);
+      if (t < 1) {
+        rafIdRef.current = requestAnimationFrame(step);
+      } else {
+        isAnimatingRef.current = false;
+      }
     }
-    requestAnimationFrame(step);
+    rafIdRef.current = requestAnimationFrame(step);
   }, []);
 
   // Click-to-advance navigation + cursor chevrons
@@ -130,6 +140,54 @@ function PresentationContent({ children }: { children: ReactNode }) {
       el.removeEventListener("mousemove", handleMouseMove);
       el.removeEventListener("click", handleClick);
       el.style.cursor = "";
+    };
+  }, [showPresentation, smoothScrollTo, getBreakpointScrollPositions]);
+
+  // Scroll-idle snap: when user stops scrolling near a breakpoint, gently snap to it
+  useEffect(() => {
+    if (!showPresentation) return;
+    let idleTimer: ReturnType<typeof setTimeout>;
+
+    // Cancel snap animation on actual user input (not scroll events, which our animation triggers)
+    const cancelSnap = () => {
+      if (isAnimatingRef.current) {
+        cancelAnimationFrame(rafIdRef.current);
+        isAnimatingRef.current = false;
+      }
+    };
+    window.addEventListener("wheel", cancelSnap, { passive: true });
+    window.addEventListener("touchstart", cancelSnap, { passive: true });
+    window.addEventListener("keydown", cancelSnap);
+
+    const onScroll = () => {
+      if (isAnimatingRef.current) return; // ignore scroll events from our own animation
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => {
+        const positions = getBreakpointScrollPositions();
+        const current = window.scrollY;
+        const threshold = window.innerHeight * 0.15;
+        let nearest = positions[0];
+        let minDist = Infinity;
+        for (const p of positions) {
+          const d = Math.abs(p - current);
+          if (d < minDist) {
+            minDist = d;
+            nearest = p;
+          }
+        }
+        if (minDist > 0 && minDist < threshold) {
+          smoothScrollTo(nearest, 600);
+        }
+      }, 800);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("wheel", cancelSnap);
+      window.removeEventListener("touchstart", cancelSnap);
+      window.removeEventListener("keydown", cancelSnap);
+      clearTimeout(idleTimer);
     };
   }, [showPresentation, smoothScrollTo, getBreakpointScrollPositions]);
 

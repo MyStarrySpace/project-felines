@@ -163,7 +163,7 @@ function TeaserStage({ progress }: { progress: MotionValue<number> }) {
         <div className="reading-width mx-auto w-full">
           <ScrollBeat progress={progress} enter={0.46} hold={0.52} enterFrom="scale">
             <h1 className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] text-[#1A0F0A] max-w-[16ch]">
-              {teaserContent.headline}
+              What if the protein <em>isn&rsquo;t the problem?</em>
             </h1>
           </ScrollBeat>
           <WhatIfLines progress={progress} />

@@ -75,15 +75,17 @@ const detailContent: Record<string, ReactNode> = {
         ~2% of ALS cases.
       </p>
       <p>
-        Its Phase 3 trial (VALOR) found no statistically significant difference
-        from placebo on the primary endpoint (ALSFRS-R functional score).
+        Its Phase 3 trial (VALOR) found
       </p>
       <p
         className="font-serif text-[clamp(1.75rem,4vw,2.5rem)] leading-tight font-semibold"
         style={{ color: DARK_TEXT }}
       >
-        P = 0.97.
+        no statistically significant difference (P&thinsp;=&thinsp;0.97).
         <Cite id="miller-2022-nejm-tofersen" />
+      </p>
+      <p>
+        from placebo on the primary endpoint (ALSFRS-R functional score).
       </p>
       <p>
         The FDA approved it anyway via accelerated approval, based on a
@@ -141,63 +143,100 @@ function ProteinTrialRow({
   const detail = detailContent[stat.disease];
 
   return (
-    <div ref={ref} className="relative flex items-center" style={{ opacity: 0 }}>
-      {/* Protein image(s) — sits in the negative-margin gutter on lg */}
-      {stat.image && (
-        <div className="hidden lg:flex w-[140px] shrink-0 mr-3 items-center justify-center gap-1">
-          {(Array.isArray(stat.image) ? stat.image : [stat.image]).map((img) => (
-            <Image
-              key={img}
-              src={`/images/proteins/${img}`}
-              alt={`${stat.protein} structure`}
-              width={Array.isArray(stat.image) ? 64 : 80}
-              height={Array.isArray(stat.image) ? 64 : 80}
-            />
-          ))}
-        </div>
-      )}
-      {/* Row content */}
-      <div
-        className="flex-1 flex items-baseline justify-between gap-2 sm:gap-4 py-4 sm:py-5 border-b"
-        style={{ borderColor: `${DARK_TEXT}12` }}
-      >
-        <div className="min-w-0">
-          <span
-            className="font-serif text-lg sm:text-2xl block"
-            style={{ color: DARK_TEXT }}
-          >
-            {stat.disease}
-          </span>
-          <span
-            className="text-sm sm:text-base"
-            style={{ color: `${DARK_TEXT}80` }}
-          >
-            {stat.protein}
-          </span>
-        </div>
-        <div className="flex items-baseline gap-3 sm:gap-5 shrink-0 tabular-nums text-sm sm:text-lg">
-          <span style={{ color: `${DARK_TEXT}B3` }}>
-            {stat.tested} tested
-          </span>
-          <span>
+    <div ref={ref} className="relative" style={{ opacity: 0 }}>
+      {/* Row: image + content */}
+      <div className="flex items-center">
+        {/* Protein image(s) — sits in the negative-margin gutter on lg */}
+        {stat.image && (
+          <div className="hidden lg:flex w-[140px] shrink-0 mr-3 items-center justify-center gap-1">
+            {(Array.isArray(stat.image) ? stat.image : [stat.image]).map((img) => (
+              <Image
+                key={img}
+                src={`/images/proteins/${img}`}
+                alt={`${stat.protein} structure`}
+                width={Array.isArray(stat.image) ? 64 : 80}
+                height={Array.isArray(stat.image) ? 64 : 80}
+              />
+            ))}
+          </div>
+        )}
+        {/* Row content */}
+        <div
+          className="flex-1 flex items-baseline justify-between gap-2 sm:gap-4 py-4 sm:py-5 border-b"
+          style={{ borderColor: `${DARK_TEXT}12` }}
+        >
+          <div className="min-w-0">
             <span
-              className={stat.approved === 0 ? "font-semibold" : ""}
+              className="font-serif text-lg sm:text-2xl block"
+              style={{ color: DARK_TEXT }}
+            >
+              {stat.disease}
+            </span>
+            <span
+              className="text-sm sm:text-base"
+              style={{ color: `${DARK_TEXT}80` }}
+            >
+              {stat.protein}
+            </span>
+          </div>
+          <div className="flex items-baseline gap-3 sm:gap-5 shrink-0 tabular-nums text-sm sm:text-lg">
+            <span style={{ color: `${DARK_TEXT}B3` }}>
+              {stat.tested} tested
+            </span>
+            <span>
+              <span
+                className={stat.approved === 0 ? "font-semibold" : ""}
+                style={{
+                  color: stat.approved === 0 ? DARK_GOLD : `${DARK_TEXT}80`,
+                }}
+              >
+                {stat.approved}
+              </span>
+              <span style={{ color: `${DARK_TEXT}80` }}> approved</span>
+            </span>
+          </div>
+        </div>
+
+        {/* Desktop note: callout box to the right */}
+        {hasNote && (
+          <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-full ml-6 items-center">
+            {/* Left-pointing triangle */}
+            <div
+              className="w-0 h-0 shrink-0"
               style={{
-                color: stat.approved === 0 ? DARK_GOLD : `${DARK_TEXT}80`,
+                borderTop: "8px solid transparent",
+                borderBottom: "8px solid transparent",
+                borderRight: `8px solid ${DARK_TEXT}25`,
+              }}
+            />
+            {/* Note box */}
+            <div
+              className="text-base leading-snug px-4 py-3 rounded max-w-[18rem]"
+              style={{
+                border: `1px solid ${DARK_TEXT}20`,
+                color: `${DARK_TEXT}CC`,
               }}
             >
-              {stat.approved}
-            </span>
-            <span style={{ color: `${DARK_TEXT}80` }}> approved</span>
-          </span>
-        </div>
+              <span className="font-medium">{stat.approvedNote}</span>
+              {detail && (
+                <button
+                  onClick={onToggle}
+                  className="font-medium underline underline-offset-2 cursor-pointer"
+                  style={{ color: DARK_GOLD }}
+                >
+                  {" "}{expanded ? "close" : "why?"}
+                </button>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Mobile note */}
       {hasNote && (
         <div className="lg:hidden pt-1 pb-2">
           <span
-            className="text-sm font-medium"
+            className="text-base font-medium"
             style={{ color: `${DARK_TEXT}99` }}
           >
             {stat.approvedNote}
@@ -205,50 +244,16 @@ function ProteinTrialRow({
           {detail && (
             <button
               onClick={onToggle}
-              className="text-sm font-medium underline underline-offset-2 cursor-pointer ml-1.5"
+              className="text-base font-medium underline underline-offset-2 cursor-pointer"
               style={{ color: DARK_GOLD }}
             >
-              {expanded ? "close" : "why?"}
+              {" "}{expanded ? "close" : "why?"}
             </button>
           )}
         </div>
       )}
 
-      {/* Desktop note: callout box to the right */}
-      {hasNote && (
-        <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-full ml-3 items-center">
-          {/* Left-pointing triangle */}
-          <div
-            className="w-0 h-0 shrink-0"
-            style={{
-              borderTop: "6px solid transparent",
-              borderBottom: "6px solid transparent",
-              borderRight: `6px solid ${DARK_TEXT}25`,
-            }}
-          />
-          {/* Note box */}
-          <div
-            className="text-sm leading-snug px-3 py-2 rounded max-w-[16rem]"
-            style={{
-              border: `1px solid ${DARK_TEXT}20`,
-              color: `${DARK_TEXT}CC`,
-            }}
-          >
-            <span className="font-medium">{stat.approvedNote}</span>
-            {detail && (
-              <button
-                onClick={onToggle}
-                className="font-medium underline underline-offset-2 cursor-pointer ml-1.5"
-                style={{ color: DARK_GOLD }}
-              >
-                {expanded ? "close" : "why?"}
-              </button>
-            )}
-          </div>
-        </div>
-      )}
-
-      {/* Expanded detail section */}
+      {/* Expanded detail section — full-width row beneath */}
       <AnimatePresence initial={false}>
         {expanded && detail && (
           <motion.div
@@ -259,7 +264,7 @@ function ProteinTrialRow({
             className="overflow-hidden"
           >
             <div
-              className="py-4 px-4 text-sm leading-relaxed rounded-b"
+              className="py-5 px-5 text-base leading-relaxed rounded-b"
               style={{
                 color: `${DARK_TEXT}B3`,
                 backgroundColor: `${DARK_TEXT}06`,
