@@ -42,6 +42,7 @@ export interface ProteinRow {
   disease: string;
   ironRole: string;
   withoutIron: string;
+  contrastLabel?: string;
 }
 
 export const convergenceContent = {
@@ -71,9 +72,16 @@ export const convergenceContent = {
       ironRole: "Descended from ZIP metal transporter family",
       withoutIron: "PrP-null mice show altered brain iron homeostasis",
     },
+    {
+      name: "CPEB3",
+      disease: "Memory (functional amyloid)",
+      ironRole: "Same A11 oligomer fold and cross-\u03B2 structure as pathological amyloids",
+      withoutIron: "Hydrophilic core makes aggregates reversible and labile, unlike pathological amyloids",
+      contrastLabel: "Key difference:",
+    },
   ] as ProteinRow[],
   insight:
-    "Four independent evolutionary lineages. All converging on the same function: iron management. The protein is the mop. Iron is the waste.",
+    "Five proteins. Four cause disease. One stores memories. All share the same A11-reactive oligomeric fold. The difference is regulation, not structure. The protein is the mop. Iron is the waste.",
 };
 
 // ---------------------------------------------------------------------------

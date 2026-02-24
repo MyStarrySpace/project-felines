@@ -10,6 +10,7 @@ export const exploreNav: NavItem[] = [
   { label: "Biology", href: "/explore/biology" },
   { label: "Viral", href: "/explore/viral" },
   { label: "Diseases", href: "/explore/diseases" },
+  { label: "Genetics", href: "/explore/gwas" },
   {
     label: "Barrier Pattern",
     href: "/explore/barrier",

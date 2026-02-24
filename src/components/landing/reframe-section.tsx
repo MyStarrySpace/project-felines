@@ -6,6 +6,7 @@ import { ScrollSection } from "@/components/ui/scroll-section";
 import { StickyScrollStage } from "@/components/ui/sticky-scroll-stage";
 import { ScrollBeat } from "@/components/ui/scroll-beat";
 import { CountUp } from "@/components/ui/count-up";
+import { ScrollAnimate } from "@/components/ui/scroll-animate";
 import { mopContent, convergenceContent } from "@/data/landing/mop-analogy";
 import { olContent, tauContent, summaryLine } from "@/data/landing/reframe";
 
@@ -77,7 +78,7 @@ function ReframeStage({ progress }: { progress: MotionValue<number> }) {
                   </div>
                   <div className="flex-1 space-y-1">
                     <p className="text-sm text-gray-300">{p.ironRole}</p>
-                    <p className="text-xs text-gray-500">Without iron: {p.withoutIron}</p>
+                    <p className="text-xs text-gray-500">{p.contrastLabel ?? "Without iron:"} {p.withoutIron}</p>
                   </div>
                 </div>
               </ScrollBeat>
@@ -190,12 +191,159 @@ function ReframeStage({ progress }: { progress: MotionValue<number> }) {
   );
 }
 
+function ReframeFlowing() {
+  return (
+    <div className="py-24 space-y-20 px-6">
+      {/* Beat 1: Mop analogy */}
+      <ScrollAnimate>
+        <div className="reading-width mx-auto">
+          <blockquote className="border-l-2 border-teal-600/50 pl-6">
+            {mopContent.analogy.map((line, i) => (
+              <p key={i} className="font-serif text-[clamp(1.25rem,3vw,1.75rem)] leading-relaxed text-gray-200 mb-4 last:mb-0">
+                {line}
+              </p>
+            ))}
+          </blockquote>
+          <p className="mt-6 text-lg leading-relaxed text-gray-300">
+            {mopContent.reframe}
+          </p>
+        </div>
+      </ScrollAnimate>
+
+      <div className="reading-width mx-auto">
+        <div className="h-px bg-white/10" />
+      </div>
+
+      {/* Beat 2: Cross-proteinopathy convergence */}
+      <ScrollAnimate enterFrom="right">
+        <div className="reading-width mx-auto">
+          <h2 className="font-serif text-[clamp(1.5rem,4vw,2.5rem)] leading-[1.2] text-white mb-8">
+            {convergenceContent.headline}
+          </h2>
+        </div>
+      </ScrollAnimate>
+
+      <div className="reading-width mx-auto space-y-4 px-6">
+        {convergenceContent.proteins.map((p, i) => (
+          <ScrollAnimate key={p.name} enterFrom="bottom">
+            <div className="border border-white/5 px-6 py-4 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+              <div className="shrink-0 sm:w-44">
+                <span className="text-base font-semibold text-white">{p.name}</span>
+                <span className="ml-2 text-xs text-gray-500">{p.disease}</span>
+              </div>
+              <div className="flex-1 space-y-1">
+                <p className="text-sm text-gray-300">{p.ironRole}</p>
+                <p className="text-xs text-gray-500">Without iron: {p.withoutIron}</p>
+              </div>
+            </div>
+          </ScrollAnimate>
+        ))}
+      </div>
+
+      <ScrollAnimate>
+        <div className="reading-width mx-auto">
+          <p className="text-lg leading-relaxed text-gray-300">
+            {convergenceContent.insight}
+          </p>
+        </div>
+      </ScrollAnimate>
+
+      {/* Beat 3: Oligodendrocytes */}
+      <ScrollAnimate>
+        <div className="reading-width mx-auto">
+          <h2 className="font-serif text-[clamp(1.5rem,4vw,2.5rem)] leading-[1.2] text-white mb-8">
+            {olContent.headline}
+          </h2>
+
+          <div className="flex flex-wrap items-baseline gap-x-8 gap-y-4 mb-8">
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl font-bold text-gray-200 tabular-nums sm:text-3xl">
+                3.05 mM
+              </span>
+              <span className="text-sm text-gray-400">{olContent.stats[0].label}</span>
+            </div>
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl font-bold text-gray-200 tabular-nums sm:text-3xl">
+                5.4×
+              </span>
+              <span className="text-sm text-gray-400">{olContent.stats[2].label}</span>
+            </div>
+          </div>
+
+          <div className="space-y-3 mb-8">
+            {olContent.failureSteps.map((f, i) => (
+              <div key={f.title} className="flex gap-4">
+                <span className="shrink-0 text-sm font-bold text-gray-500 tabular-nums pt-0.5">
+                  {i + 1}.
+                </span>
+                <div>
+                  <p className="text-sm font-semibold text-white">{f.title}</p>
+                  <p className="text-sm text-gray-400">{f.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-lg leading-relaxed text-gray-300">{olContent.insight}</p>
+          <p className="mt-2 text-xs text-gray-500">{olContent.source}</p>
+        </div>
+      </ScrollAnimate>
+
+      {/* Beat 4: Tau */}
+      <ScrollAnimate enterFrom="right">
+        <div className="reading-width mx-auto">
+          <h2 className="font-serif text-[clamp(1.5rem,4vw,2.5rem)] leading-[1.2] text-white mb-8">
+            {tauContent.headline}
+          </h2>
+
+          <div className="space-y-4 mb-8">
+            {tauContent.narrative.map((line, i) => (
+              <p key={i} className="text-lg leading-relaxed text-gray-300">{line}</p>
+            ))}
+          </div>
+
+          <div className="border border-white/5 p-6 mb-8">
+            <p className="text-xs font-medium uppercase tracking-wide text-gray-500 mb-3">
+              {tauContent.feedbackLoop.title}
+            </p>
+            <ol className="list-decimal list-inside space-y-1">
+              {tauContent.feedbackLoop.steps.map((s, i) => (
+                <li key={i} className="text-sm text-gray-300">{s}</li>
+              ))}
+            </ol>
+          </div>
+
+          <p className="text-lg leading-relaxed text-gray-300">{tauContent.insight}</p>
+          <p className="mt-2 text-xs text-gray-500">{tauContent.source}</p>
+        </div>
+      </ScrollAnimate>
+
+      {/* Beat 5: Summary */}
+      <ScrollAnimate enterFrom="scale">
+        <div className="reading-width mx-auto">
+          <p className="font-serif text-[clamp(1.75rem,5vw,3.5rem)] leading-[1.15] tracking-[-0.02em] text-white text-center">
+            {summaryLine.text}
+          </p>
+        </div>
+      </ScrollAnimate>
+    </div>
+  );
+}
+
 export function ReframeSection() {
   return (
     <ScrollSection id="reframe" label="Reframe" className="py-0" fullWidth>
-      <StickyScrollStage height={500}>
-        {(progress) => <ReframeStage progress={progress} />}
-      </StickyScrollStage>
+      {/* Desktop: sticky scroll stage */}
+      <div className="hidden md:block">
+        <StickyScrollStage height={500}>
+          {(progress) => <ReframeStage progress={progress} />}
+        </StickyScrollStage>
+      </div>
+
+      {/* Mobile: flowing layout */}
+      <div className="md:hidden">
+        <ReframeFlowing />
+      </div>
     </ScrollSection>
   );
 }

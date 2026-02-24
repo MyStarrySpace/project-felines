@@ -4,8 +4,12 @@ import { useCallback, useEffect, useRef, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { TeaserSection } from "@/components/landing/teaser-section";
 import { IronBuildupSection } from "@/components/landing/iron-buildup-section";
+import { CellVulnerabilitySection } from "@/components/landing/cell-vulnerability-section";
+import { DrugBrowserSection } from "@/components/landing/drug-browser-section";
+import { IronAlternativesSection } from "@/components/landing/iron-alternatives-section";
 import { ReframeSection } from "@/components/landing/reframe-section";
 import { ParadoxSection } from "@/components/landing/paradox-section";
+import { GwasSection } from "@/components/landing/gwas-section";
 import { EvidenceSection } from "@/components/landing/evidence-section";
 import { SummarySection } from "@/components/landing/summary-section";
 import { SectionIndicator } from "@/components/ui/section-indicator";
@@ -94,9 +98,10 @@ function PresentationContent({ children }: { children: ReactNode }) {
     rafIdRef.current = requestAnimationFrame(step);
   }, []);
 
-  // Click-to-advance navigation + cursor chevrons
+  // Click-to-advance navigation + cursor chevrons (desktop only)
   useEffect(() => {
     if (!showPresentation) return;
+    if (window.matchMedia("(pointer: coarse)").matches) return;
     const el = presentationRef.current;
     if (!el) return;
 
@@ -143,9 +148,10 @@ function PresentationContent({ children }: { children: ReactNode }) {
     };
   }, [showPresentation, smoothScrollTo, getBreakpointScrollPositions]);
 
-  // Scroll-idle snap: when user stops scrolling near a breakpoint, gently snap to it
+  // Scroll-idle snap: when user stops scrolling near a breakpoint, gently snap to it (desktop only)
   useEffect(() => {
     if (!showPresentation) return;
+    if (window.matchMedia("(pointer: coarse)").matches) return;
     let idleTimer: ReturnType<typeof setTimeout>;
 
     // Cancel snap animation on actual user input (not scroll events, which our animation triggers)
@@ -204,8 +210,12 @@ function PresentationContent({ children }: { children: ReactNode }) {
       >
         <TeaserSection />
         <IronBuildupSection />
+        <CellVulnerabilitySection />
+        <DrugBrowserSection />
+        <IronAlternativesSection />
         <ReframeSection />
         <ParadoxSection />
+        <GwasSection />
         <EvidenceSection />
         <SummarySection />
 

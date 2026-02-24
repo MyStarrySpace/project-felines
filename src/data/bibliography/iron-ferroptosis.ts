@@ -26,6 +26,32 @@ export const ironFerrOptosisSources: Source[] = [
     verificationStatus: "verified",
   },
   {
+    id: "agrawal-2018-frbm",
+    title:
+      "Brain mitochondrial iron accumulates in Huntington's disease, mediates mitochondrial dysfunction, and can be removed pharmacologically",
+    authors: "Agrawal S, Fox J, Bhatt Thyagarajan B, Fox JH.",
+    journal: "Free Radical Biology and Medicine",
+    year: 2018,
+    doi: "10.1016/j.freeradbiomed.2018.04.002",
+    pmid: "29625173",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5940499/#:~:text=deferiprone%20removed%20mitochondrial%20iron",
+    tags: ["iron", "huntingtons"],
+    citations: [
+      {
+        citationId: "agrawal-2018-frbm-c1",
+        sourceId: "agrawal-2018-frbm",
+        quote:
+          "A 10-day oral deferiprone treatment in 9-week R6/2 HD mice indicated that deferiprone removed mitochondrial iron, restored mitochondrial potentials, decreased lipid peroxidation, and improved motor endurance.",
+        context:
+          "Preclinical only. HD has genuine mitochondrial iron accumulation (mutant HTT disrupts frataxin), making chelation potentially rational unlike AD/PD maldistribution.",
+        location: "Abstract",
+        projectRef:
+          "Drug browser: Deferiprone (HD) detail tooltip",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
     id: "seo-2025-natcomms",
     title:
       "Distinct brain alterations and neurodegenerative processes in cognitive impairment associated with post-acute sequelae of COVID-19",
@@ -121,6 +147,15 @@ export const ironFerrOptosisSources: Source[] = [
           "CSF ferritin as prognostic biomarker for AD progression",
         projectRef:
           "Kinetics model Part III: iron kinetics in AD, CSF ferritin predicts decline",
+      },
+      {
+        citationId: "ayton-2015-natcomms-c2",
+        sourceId: "ayton-2015-natcomms",
+        quote:
+          "Ferritin was strongly associated with CSF apolipoprotein E levels and was elevated by the Alzheimer's risk allele, APOE-epsilon4.",
+        context:
+          "APOE4 elevates CSF ferritin — connects #1 AD risk gene to iron",
+        projectRef: "GWAS section: APOE gene card — iron connection",
       },
     ],
     verificationStatus: "verified",

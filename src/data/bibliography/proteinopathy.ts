@@ -52,6 +52,17 @@ export const proteinopathySources: Source[] = [
         projectRef:
           "Landing teaser: 'Lewy bodies are not protein fibrils. They are crowded organelles and lipid membranes.'",
       },
+      {
+        citationId: "shahmoradian-2019-natneurosci-c2",
+        sourceId: "shahmoradian-2019-natneurosci",
+        quote:
+          "Filaments interspersed between the membranes and organelles were identifiable in many, but not all, parsing α-synuclein inclusions",
+        context:
+          "Fibrils were not universally present in Lewy bodies — filaments appeared in many but not all inclusions.",
+        location: "Abstract",
+        projectRef:
+          "Landing: Parkinson's evidence — fibrils not the dominant component of Lewy bodies",
+      },
     ],
     verificationStatus: "verified",
   },
@@ -269,6 +280,92 @@ export const proteinopathySources: Source[] = [
     verificationStatus: "verified",
   },
   {
+    id: "nishioka-2026-lsa",
+    title:
+      "Amyloid-\u03B2 fibrils accumulated in preeclamptic placentas suppress cytotrophoblast syncytialization",
+    authors:
+      "Nishioka K, Ikezaki M, Iwahashi N, Arakawa M, Fukushima M, Mori N, Mizoguchi M, Horiuchi-Tanizaki Y, Fujino M, Tomiyama T, Ihara Y, Uchimura K, Ino K, Nishitsuji K",
+    journal: "Life Science Alliance",
+    year: 2026,
+    doi: "10.26508/lsa.202503453",
+    pmid: "41558820",
+    url: "https://www.life-science-alliance.org/content/9/4/e202503453#:~:text=A%CE%B242%20fibrils%20inhibited%20CTB%20syncytialization",
+    tags: ["alzheimers", "iron"],
+    citations: [
+      {
+        citationId: "nishioka-2026-lsa-c1",
+        sourceId: "nishioka-2026-lsa",
+        quote:
+          "A\u03B242 fibrils inhibited CTB syncytialization, a critical step in maintaining pregnancy, by inducing loss of membrane localization of cell-cell adhesion molecules",
+        context:
+          "A\u03B2 fibrils in preeclamptic placentas suppress cytotrophoblast fusion, demonstrating A\u03B2 pathology outside the brain",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: 'not even unique to the brain' \u2014 placental A\u03B2 plaques in preeclampsia",
+      },
+      {
+        citationId: "nishioka-2026-lsa-c2",
+        sourceId: "nishioka-2026-lsa",
+        quote:
+          "levels of hypoxia-inducible factor 1-\u03B1 and \u03B2-secretase (BACE-1) increased concurrently with placental A\u03B2 deposition in late-stage preeclamptic placentas",
+        context:
+          "Hypoxia drives BACE1 upregulation and A\u03B2 production in placenta, paralleling the hypoxia\u2192iron\u2192A\u03B2 axis in brain",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: hypoxia driving placental A\u03B2 production",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "yang-2026-hypertension",
+    title:
+      "Iron Overload-Induced Ferroptosis Drives Placental Dysfunction in Preeclampsia",
+    authors: "Yang Y, Zuo H, Ma X, et al.",
+    journal: "Hypertension",
+    year: 2026,
+    doi: "10.1161/HYPERTENSIONAHA.125.26344",
+    pmid: "41608783",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41608783/#:~:text=elevated%20hemoglobin%2C%20ferritin%2C%20and%20serum%20iron",
+    tags: ["iron", "ferroptosis"],
+    citations: [
+      {
+        citationId: "yang-2026-hypertension-c1",
+        sourceId: "yang-2026-hypertension",
+        quote:
+          "Patients with preeclampsia exhibited elevated hemoglobin, ferritin, and serum iron levels from the second trimester, alongside placental iron overload",
+        context:
+          "Iron overload is present in preeclamptic placentas from 2nd trimester onward",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: 'not even unique to the brain' \u2014 iron overload in preeclamptic placentas",
+      },
+      {
+        citationId: "yang-2026-hypertension-c2",
+        sourceId: "yang-2026-hypertension",
+        quote:
+          "Iron overload induced ferroptosis and apoptosis in trophoblasts, evidenced by increased lipid peroxidation (4HNE\u2191, Gpx4\u2193), ROS, Tunnel staining positive and cell death",
+        context:
+          "Iron overload causes both ferroptosis and apoptosis in trophoblasts, not just ferroptosis alone",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: 'not even unique to the brain' \u2014 iron-driven ferroptosis + apoptosis in placenta",
+      },
+      {
+        citationId: "yang-2026-hypertension-c3",
+        sourceId: "yang-2026-hypertension",
+        quote:
+          "Both deferoxamine and MitoQ rescued these effects in vitro and in preeclampsia-derived organoids",
+        context:
+          "Iron chelation and mitochondrial antioxidant rescue placental cell death, paralleling iron-targeting approaches in neurodegeneration",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: deferoxamine + MitoQ rescue of placental damage",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
     id: "george-2002-genomebiology",
     title: "The synucleins",
     authors: "George JM",
@@ -289,6 +386,237 @@ export const proteinopathySources: Source[] = [
         location: "Gene organization and evolutionary history",
         projectRef:
           "Landing teaser: \u03B1-synuclein vertebrate-specific origin (~500 Mya)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "bateman-2006-natmed",
+    title:
+      "Human amyloid-beta synthesis and clearance rates as measured in cerebrospinal fluid in vivo",
+    authors:
+      "Bateman RJ, Munsell LY, Morris JC, Swarm R, Yarasheski KE, Holtzman DM",
+    journal: "Nature Medicine",
+    year: 2006,
+    doi: "10.1038/nm1438",
+    pmid: "16799555",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2983090/#:~:text=rapidly%20produced%20and%20cleared%20in%20the%20CNS",
+    tags: ["alzheimers"],
+    citations: [
+      {
+        citationId: "bateman-2006-natmed-c1",
+        sourceId: "bateman-2006-natmed",
+        quote:
+          "Our results indicate A\u03B2 is rapidly produced and cleared in the CNS in humans.",
+        context:
+          "Soluble A\u03B2 has a half-life of ~8 hours (FCR 8.2%/hr); constitutive production at 7.6%/hr matches clearance at steady state",
+        location: "Results",
+        projectRef:
+          "Landing teaser: A\u03B2 constitutive production and rapid turnover (~8h half-life)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "mawuenyega-2010-science",
+    title:
+      "Decreased clearance of CNS beta-amyloid in Alzheimer's disease",
+    authors:
+      "Mawuenyega KG, Sigurdson W, Ovod V, Munsell L, Kasten T, Morris JC, Yarasheski KE, Bateman RJ",
+    journal: "Science",
+    year: 2010,
+    doi: "10.1126/science.1197623",
+    pmid: "21148344",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3073454/#:~:text=30%25%20impairment%20in%20the%20clearance",
+    tags: ["alzheimers"],
+    citations: [
+      {
+        citationId: "mawuenyega-2010-science-c1",
+        sourceId: "mawuenyega-2010-science",
+        quote:
+          "We found that late onset AD is associated with a 30% impairment in the clearance of both A\u03B242 and A\u03B240, indicating that A\u03B2 clearance mechanisms may be critically important in the development of AD.",
+        context:
+          "Production rates identical between AD and controls (6.7 vs 6.6%/hr for A\u03B242); clearance is the deficit",
+        location: "Results",
+        projectRef:
+          "Landing teaser: In sporadic AD, A\u03B2 production unchanged, clearance drops ~30%",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "zoltowska-2024-elife",
+    title:
+      "Alzheimer's disease linked A\u03B242 exerts product feedback inhibition on \u03B3-secretase impairing downstream cell signaling",
+    authors: "Zoltowska KM, Das U, Lismont S, Enzlein T, Maesako M, Houser MCQ, et al.",
+    journal: "eLife",
+    year: 2024,
+    doi: "10.7554/eLife.90690",
+    pmid: "39027984",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259434/#:~:text=non-productive%20E-S-like%20complex",
+    tags: ["alzheimers"],
+    citations: [
+      {
+        citationId: "zoltowska-2024-elife-c1",
+        sourceId: "zoltowska-2024-elife",
+        quote:
+          "Collectively, our analyses support a model wherein A\u03B242 forms a non-productive E-S-like complex with \u03B3-secretase and its binding is reversible.",
+        context:
+          "A\u03B242 competitively inhibits \u03B3-secretase at IC50 ~1.3 \u03BCM (at KM substrate concentration); human-specific (murine A\u03B242 barely inhibits, max ~20%)",
+        location: "Results",
+        projectRef:
+          "Landing teaser: A\u03B242 product feedback inhibition on \u03B3-secretase",
+      },
+      {
+        citationId: "zoltowska-2024-elife-c2",
+        sourceId: "zoltowska-2024-elife",
+        quote:
+          "neither murine A\u03B242 nor human A\u03B217\u201342 (p3), inhibit \u03B3-secretases",
+        context:
+          "Human-specific: murine A\u03B242 barely inhibits, attributed to three N-terminal amino acid differences (R5G, Y10F, H13R); may explain why wild-type mice don't develop AD pathology",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: species specificity of A\u03B242 \u03B3-secretase inhibition",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "quintela-lopez-2019-celldeathdis",
+    title:
+      "A\u03B2 oligomers promote oligodendrocyte differentiation and maturation via integrin \u03B21 and Fyn kinase signaling",
+    authors:
+      "Quintela-L\u00F3pez T, Ortiz-Sanz C, Serrano-Regal MP, Gaminde-Blasco A, Valero J, Baleriola J, S\u00E1nchez-G\u00F3mez MV, Matute C, Alberdi E",
+    journal: "Cell Death & Disease",
+    year: 2019,
+    doi: "10.1038/s41419-019-1636-8",
+    pmid: "31171765",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6554322/#:~:text=promoted%20oligodendrocyte%20differentiation%20and%20maturation",
+    tags: ["alzheimers", "oligodendrocyte", "glia"],
+    citations: [
+      {
+        citationId: "quintela-lopez-2019-celldeathdis-c1",
+        sourceId: "quintela-lopez-2019-celldeathdis",
+        quote:
+          "A\u03B2 oligomers promoted oligodendrocyte differentiation and maturation, as well as cell survival in cultured oligodendrocytes",
+        context:
+          "At moderate concentrations, A\u03B2 oligomers promote OL differentiation and MBP expression via integrin \u03B21 and Fyn kinase signaling",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: A\u03B2 promotes myelination as an extracellular signal",
+      },
+      {
+        citationId: "quintela-lopez-2019-celldeathdis-c2",
+        sourceId: "quintela-lopez-2019-celldeathdis",
+        quote:
+          "A\u03B2 oligomers required integrin \u03B21 receptor, Src-family kinase Fyn and Ca2+/CaMKII as effectors to modulate MBP protein expression.",
+        context:
+          "Mechanism: integrin \u03B21 \u2192 Fyn kinase \u2192 Ca2+/CaMKII \u2192 MBP translation",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: A\u03B2 myelination signaling mechanism",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "kayed-2003-science",
+    title:
+      "Common structure of soluble amyloid oligomers implies common mechanism of pathogenesis",
+    authors: "Kayed R, Head E, Thompson JL, et al.",
+    journal: "Science",
+    year: 2003,
+    doi: "10.1126/science.1079469",
+    pmid: "12702875",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12702875/#:~:text=common%20conformation-dependent%20structure%20that%20is%20unique%20to%20soluble%20oligomers",
+    tags: ["alzheimers", "prion"],
+    citations: [
+      {
+        citationId: "kayed-2003-science-c1",
+        sourceId: "kayed-2003-science",
+        quote:
+          "All of the soluble oligomers tested display a common conformation-dependent structure that is unique to soluble oligomers regardless of sequence.",
+        context:
+          "A11 antibody recognizes shared oligomeric fold across A\u03B2, \u03B1-syn, PrP, IAPP, insulin amyloid",
+        projectRef:
+          "Reframe section: convergence table \u2014 shared A11 conformation across proteins",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "fioriti-2015-neuron",
+    title:
+      "The Persistence of Hippocampal-Based Memory Requires Protein Synthesis Mediated by the Prion-like Protein CPEB3",
+    authors:
+      "Fioriti L, Myers C, Huang YY, et al.",
+    journal: "Neuron",
+    year: 2015,
+    doi: "10.1016/j.neuron.2015.05.021",
+    pmid: "26074003",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26074003/#:~:text=Persistence%20of%20long-term%20memory%20results%20from%20the%20assembly%20of%20CPEB3%20into%20aggregates",
+    tags: ["prion", "alzheimers"],
+    citations: [
+      {
+        citationId: "fioriti-2015-neuron-c1",
+        sourceId: "fioriti-2015-neuron",
+        quote:
+          "Persistence of long-term memory results from the assembly of CPEB3 into aggregates. These aggregates serve as functional prions and regulate local protein synthesis necessary for the maintenance of long-term memory.",
+        context:
+          "CPEB3 uses the same amyloid fold as pathological proteins, but for memory storage",
+        projectRef:
+          "Reframe section: convergence table \u2014 CPEB3 functional amyloid",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "majumdar-2012-cell",
+    title:
+      "Critical role of amyloid-like oligomers of Drosophila Orb2 in the persistence of memory",
+    authors:
+      "Majumdar A, Cesario WC, White-Grindley E, et al.",
+    journal: "Cell",
+    year: 2012,
+    doi: "10.1016/j.cell.2012.01.004",
+    pmid: "22284910",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22284910/#:~:text=oligomeric%20Orb2%20is%20amyloid%20in%20nature",
+    tags: ["prion"],
+    citations: [
+      {
+        citationId: "majumdar-2012-cell-c1",
+        sourceId: "majumdar-2012-cell",
+        quote:
+          "the oligomeric Orb2 is amyloid in nature based on resistance to heat and detergents, higher binding to Thioflavin T, interaction with the amyloidogenic anti-oligomeric antibody A11",
+        context:
+          "Orb2 (Drosophila CPEB) confirmed A11-reactive \u2014 same oligomeric fold as A\u03B2 and \u03B1-syn",
+        projectRef:
+          "Reframe section: convergence table \u2014 CPEB3/Orb2 A11 reactivity",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "hervas-2020-science",
+    title:
+      "Cryo-EM structure of a neuronal functional amyloid implicated in memory persistence in Drosophila",
+    authors: "Herv\u00E1s R, Rau MJ, Park Y, et al.",
+    journal: "Science",
+    year: 2020,
+    doi: "10.1126/science.aba3526",
+    pmid: "32165583",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32165583/#:~:text=Unlike%20the%20hydrophobic%20core%20of%20pathogenic%20amyloids",
+    tags: ["prion"],
+    citations: [
+      {
+        citationId: "hervas-2020-science-c1",
+        sourceId: "hervas-2020-science",
+        quote:
+          "Unlike the hydrophobic core of pathogenic amyloids, the hydrophilic core of Orb2 filaments suggests how some neuronal amyloids could be a stable yet regulatable substrate of memory.",
+        context:
+          "Same cross-beta fold as pathological amyloids but hydrophilic/reversible \u2014 functional version",
+        projectRef:
+          "Reframe section: convergence table \u2014 CPEB3 hydrophilic vs pathological hydrophobic core",
       },
     ],
     verificationStatus: "verified",
