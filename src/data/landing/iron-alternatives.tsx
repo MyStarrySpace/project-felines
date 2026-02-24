@@ -8,6 +8,9 @@ export interface IronAlternative {
   mechanism: string;
   description: ReactNode;
   trialStatus: ReactNode;
+  structureImage: string;
+  structureId: string;
+  structureSource: "PDB" | "PubChem";
 }
 
 export const alternativesHeadline = "The iron managers no one tested";
@@ -23,6 +26,9 @@ export const alternatives: IronAlternative[] = [
     size: "80 kDa",
     sizeMultiple: "575\u00D7",
     mechanism: "Reversible iron shuttle",
+    structureImage: "/images/structures/lactoferrin.jpeg",
+    structureId: "1LFG",
+    structureSource: "PDB",
     description: (
       <>
         Binds two Fe&#xB3;&#x207A; ions at neutral pH, releasing them in
@@ -45,6 +51,9 @@ export const alternatives: IronAlternative[] = [
     size: "132 kDa",
     sizeMultiple: "950\u00D7",
     mechanism: "Ferroxidase",
+    structureImage: "/images/structures/ceruloplasmin.jpeg",
+    structureId: "2J5W",
+    structureSource: "PDB",
     description: (
       <>
         Converts Fe&#xB2;&#x207A; to Fe&#xB3;&#x207A; so ferroportin can
@@ -69,6 +78,9 @@ export const alternatives: IronAlternative[] = [
     size: "80 kDa",
     sizeMultiple: "575\u00D7",
     mechanism: "Iron transport",
+    structureImage: "/images/structures/transferrin.jpeg",
+    structureId: "3QYT",
+    structureSource: "PDB",
     description: (
       <>
         The body&#x2019;s iron courier. Binds two Fe&#xB3;&#x207A; ions and
@@ -90,6 +102,9 @@ export const alternatives: IronAlternative[] = [
     size: "480 kDa",
     sizeMultiple: "3,450\u00D7",
     mechanism: "Iron sequestration",
+    structureImage: "/images/structures/ferritin.jpeg",
+    structureId: "2FHA",
+    structureSource: "PDB",
     description: (
       <>
         A 24-subunit protein shell storing up to 4,500 iron atoms. Crosses the
@@ -110,6 +125,9 @@ export const alternatives: IronAlternative[] = [
     size: "2.8 kDa",
     sizeMultiple: "20\u00D7",
     mechanism: "Iron flow regulator",
+    structureImage: "/images/structures/hepcidin.jpeg",
+    structureId: "2KEF",
+    structureSource: "PDB",
     description: (
       <>
         Master switch for systemic iron. Degrades ferroportin, controlling how
@@ -132,6 +150,9 @@ export const alternatives: IronAlternative[] = [
     size: "290 Da",
     sizeMultiple: "2.1\u00D7",
     mechanism: "Iron redistribution",
+    structureImage: "/images/structures/ath434.png",
+    structureId: "CID 46236251",
+    structureSource: "PubChem",
     description: (
       <>
         Moderate-affinity Fe&#xB2;&#x207A; chaperone. Redistributes excess

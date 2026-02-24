@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ScrollSection } from "@/components/ui/scroll-section";
 import { ScrollAnimate } from "@/components/ui/scroll-animate";
 import {
@@ -24,25 +25,46 @@ export function IronAlternativesSection() {
         </p>
       </ScrollAnimate>
 
-      <div className="space-y-6">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {alternatives.map((alt) => (
           <ScrollAnimate key={alt.name} enterFrom="bottom">
-            <div className="border border-white/5 p-6">
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
-                <h3 className="text-lg font-semibold text-white">{alt.name}</h3>
-                <span className="text-sm text-teal-400">{alt.size}</span>
-                <span className="text-xs text-gray-500">
-                  {alt.sizeMultiple} deferiprone
-                </span>
+            <div className="border border-white/5 p-5 flex flex-col h-full">
+              {/* Structure image */}
+              <div className="flex items-center justify-center bg-white rounded mb-4 aspect-square overflow-hidden">
+                <Image
+                  src={alt.structureImage}
+                  alt={`${alt.name} structure (${alt.structureSource}: ${alt.structureId})`}
+                  width={240}
+                  height={240}
+                  className="object-contain w-full h-full p-2"
+                />
               </div>
-              <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">
+
+              {/* Header */}
+              <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-1">
+                <h3 className="text-base font-semibold text-white">{alt.name}</h3>
+                <span className="text-sm text-teal-400">{alt.size}</span>
+              </div>
+              <p className="text-xs text-gray-500 mb-2">
+                {alt.sizeMultiple} deferiprone
+              </p>
+
+              {/* Mechanism + description */}
+              <p className="text-xs text-gray-500 uppercase tracking-wider mb-1.5">
                 {alt.mechanism}
               </p>
-              <p className="text-gray-300 text-sm leading-relaxed mb-2">
+              <p className="text-gray-300 text-sm leading-relaxed mb-2 flex-1">
                 {alt.description}
               </p>
-              <p className="text-gray-500 text-sm leading-relaxed">
+
+              {/* Trial status */}
+              <p className="text-gray-500 text-xs leading-relaxed">
                 {alt.trialStatus}
+              </p>
+
+              {/* Structure source */}
+              <p className="text-gray-600 text-[10px] mt-2">
+                {alt.structureSource}: {alt.structureId}
               </p>
             </div>
           </ScrollAnimate>
