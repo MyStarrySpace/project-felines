@@ -1,12 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { motion, useTransform, type MotionValue } from "framer-motion";
 import { ScrollSection } from "@/components/ui/scroll-section";
 import { StickyScrollStage } from "@/components/ui/sticky-scroll-stage";
 import { ScrollBeat } from "@/components/ui/scroll-beat";
-import { TrialBars } from "@/components/landing/trial-bars";
-import { WhatIfLines } from "@/components/landing/what-if-lines";
-import { ProteinTrials } from "@/components/landing/protein-trials";
+import { WhatIfLines, WhatIfLinesMobile } from "@/components/landing/what-if-lines";
+import { ProteinTrials, ProteinTrialsMobile } from "@/components/landing/protein-trials";
 import { teaserContent } from "@/data/landing/teaser";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -30,12 +30,12 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
   const goldClass = inverted ? "" : "text-teal-400";
 
   return (
-    <div className="font-serif text-[clamp(2.75rem,6.5vw,5rem)] leading-[1.1] tracking-[-0.02em] text-center">
+    <div className="font-serif text-[clamp(3rem,7vw,6rem)] leading-[0.8] tracking-[-0.02em] text-center">
       <motion.p
         className={whiteClass}
         style={whiteStyle}
-        initial={{ clipPath: "inset(0 100% 0 0)" }}
-        animate={{ clipPath: "inset(0 0% 0 0)" }}
+        initial={{ clipPath: "inset(-0.2em 100% -0.2em 0)" }}
+        animate={{ clipPath: "inset(-0.2em 0% -0.2em 0)" }}
         transition={{ duration: 1, delay: 0.3, ease: EASE }}
       >
         {teaserContent.quote.line1}
@@ -43,8 +43,8 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
       <motion.p
         className={goldClass}
         style={goldStyle}
-        initial={{ clipPath: "inset(0 100% 0 0)" }}
-        animate={{ clipPath: "inset(0 0% 0 0)" }}
+        initial={{ clipPath: "inset(-0.2em 100% -0.2em 0)" }}
+        animate={{ clipPath: "inset(-0.2em 0% -0.2em 0)" }}
         transition={{ duration: 1, delay: 0.7, ease: EASE }}
       >
         {emphasize(teaserContent.quote.line1Gold)}
@@ -52,8 +52,8 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
       <motion.p
         className={`${whiteClass} mt-3`}
         style={whiteStyle}
-        initial={{ clipPath: "inset(0 100% 0 0)" }}
-        animate={{ clipPath: "inset(0 0% 0 0)" }}
+        initial={{ clipPath: "inset(-0.2em 100% -0.2em 0)" }}
+        animate={{ clipPath: "inset(-0.2em 0% -0.2em 0)" }}
         transition={{ duration: 1, delay: 1.3, ease: EASE }}
       >
         {teaserContent.quote.line2}
@@ -61,8 +61,8 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
       <motion.p
         className={goldClass}
         style={goldStyle}
-        initial={{ clipPath: "inset(0 100% 0 0)" }}
-        animate={{ clipPath: "inset(0 0% 0 0)" }}
+        initial={{ clipPath: "inset(-0.2em 100% -0.2em 0)" }}
+        animate={{ clipPath: "inset(-0.2em 0% -0.2em 0)" }}
         transition={{ duration: 1, delay: 1.7, ease: EASE }}
       >
         {emphasize(teaserContent.quote.line2Gold)}
@@ -72,45 +72,41 @@ function QuoteText({ inverted = false }: { inverted?: boolean }) {
 }
 
 function TeaserStage({ progress }: { progress: MotionValue<number> }) {
-  // Timeline aligned to 4 beats (450vh section, 350vh travel, ~0.286 per 100vh)
+  // Timeline: 3 beats over 330vh (230vh travel)
 
-  // --- Beat 1 (0.00–0.26): Quote + fill rise ---
-  const fillTop = useTransform(progress, [0.04, 0.20], [100, 0]);
+  // --- Beat 1 (0.00–0.34): Quote + fill rise ---
+  const fillTop = useTransform(progress, [0.04, 0.26], [100, 0]);
   const fillClip = useTransform(fillTop, (v) => `inset(${v}% 0 0 0)`);
-  const fillFade = useTransform(progress, [0.64, 0.72], [1, 0]);
-  const fillVisible = useTransform(fillFade, (v) =>
-    v > 0.01 ? "visible" : "hidden"
-  );
   const quoteHidden = useTransform(progress, (v) =>
-    v < 0.24 ? "visible" : "hidden"
+    v < 0.32 ? "visible" : "hidden"
   );
-  const invertedQuoteFade = useTransform(progress, [0.18, 0.24], [1, 0]);
+  const invertedQuoteFade = useTransform(progress, [0.24, 0.32], [1, 0]);
 
-  // --- Beat 2 (0.24–0.46): Protein trial stats on cream ---
+  // --- Beat 2 (0.30–0.62): Protein trial stats on cream ---
   const proteinOpacity = useTransform(
     progress,
-    [0.24, 0.27, 0.42, 0.46],
+    [0.30, 0.34, 0.56, 0.62],
     [0, 1, 1, 0]
   );
   const proteinVisible = useTransform(proteinOpacity, (v) =>
     v > 0.02 ? "visible" : "hidden"
   );
 
-  // --- Beat 3 (0.44–0.68): Headline on cream ---
+  // --- Beat 3 (0.58–1.00): Headline + WhatIfLines on cream (stays visible) ---
   const headlineOpacity = useTransform(
     progress,
-    [0.44, 0.50, 0.62, 0.68],
-    [0, 1, 1, 0]
+    [0.58, 0.66],
+    [0, 1]
   );
   const headlineVisible = useTransform(headlineOpacity, (v) =>
     v > 0.02 ? "visible" : "hidden"
   );
-
-  // --- Beat 4 (0.72–1.00): Stats on dark ---
-  const statsIn = useTransform(progress, [0.72, 0.80], [0, 1]);
-  const statsVisible = useTransform(statsIn, (v) =>
-    v > 0.02 ? "visible" : "hidden"
+  const headlinePointer = useTransform(headlineOpacity, (v): "auto" | "none" =>
+    v > 0.02 ? "auto" : "none"
   );
+
+  // Track whether a "What if" line is expanded to shrink heading
+  const [anyExpanded, setAnyExpanded] = useState(false);
 
   // Scroll hint: fades out as user starts scrolling
   const hintOpacity = useTransform(progress, [0, 0.06], [1, 0]);
@@ -127,12 +123,10 @@ function TeaserStage({ progress }: { progress: MotionValue<number> }) {
         </div>
       </motion.div>
 
-      {/* Fill layer: cream bg + inverted quote text */}
+      {/* Fill layer: cream bg + inverted quote text — stays for entire section */}
       <motion.div
         style={{
           clipPath: fillClip,
-          opacity: fillFade,
-          visibility: fillVisible,
           backgroundColor: FILL_BG,
         }}
         className="absolute inset-0"
@@ -155,36 +149,24 @@ function TeaserStage({ progress }: { progress: MotionValue<number> }) {
         <ProteinTrials progress={progress} />
       </motion.div>
 
-      {/* Headline (dark text on cream) */}
+      {/* Headline + WhatIfLines (dark text on cream) */}
       <motion.div
-        style={{ opacity: headlineOpacity, visibility: headlineVisible }}
+        style={{ opacity: headlineOpacity, visibility: headlineVisible, pointerEvents: headlinePointer }}
         className="absolute inset-0 flex items-center px-6 sm:px-8"
       >
         <div className="reading-width mx-auto w-full">
-          <ScrollBeat progress={progress} enter={0.46} hold={0.52} enterFrom="scale">
-            <h1 className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] text-[#1A0F0A] max-w-[16ch]">
-              What if the protein <em>isn&rsquo;t the problem?</em>
+          <ScrollBeat progress={progress} enter={0.60} hold={0.68} enterFrom="scale">
+            <h1
+              className="font-serif leading-[0.95] tracking-[-0.03em] text-[#1A0F0A] max-w-[16ch]"
+              style={{
+                fontSize: anyExpanded ? "clamp(1.5rem,4vw,3rem)" : "clamp(2.5rem,7vw,5.5rem)",
+                transition: "font-size 300ms ease",
+              }}
+            >
+              What if the protein isn&rsquo;t the <em>only</em> problem?
             </h1>
           </ScrollBeat>
-          <WhatIfLines progress={progress} />
-        </div>
-      </motion.div>
-
-      {/* Trial bars + context (white/gold on dark bg) */}
-      <motion.div
-        style={{ opacity: statsIn, visibility: statsVisible }}
-        className="absolute inset-0 flex items-center px-6 sm:px-8"
-      >
-        <div className="w-full max-w-4xl mx-auto">
-          <TrialBars progress={progress} />
-
-          <ScrollBeat progress={progress} enter={0.90} hold={0.96} enterFrom="left">
-            <div className="border-l-2 border-teal-600/50 pl-6 max-w-lg mt-8 ml-[5.5rem] sm:ml-28">
-              <p className="text-xl text-gray-300 leading-relaxed">
-                {teaserContent.context}
-              </p>
-            </div>
-          </ScrollBeat>
+          <WhatIfLines progress={progress} onExpandChange={setAnyExpanded} />
         </div>
       </motion.div>
 
@@ -259,14 +241,50 @@ function TeaserStage({ progress }: { progress: MotionValue<number> }) {
   );
 }
 
-const TEASER_BREAKPOINTS = [0, 0.44, 0.58, 0.80];
+function TeaserFlowing() {
+  return (
+    <>
+      {/* Dark bg section with quote */}
+      <div className="min-h-[80vh] flex items-center px-6 sm:px-8">
+        <div className="reading-width mx-auto w-full">
+          <QuoteText />
+        </div>
+      </div>
+
+      {/* Cream bg section with protein trials + what-if lines */}
+      <div style={{ backgroundColor: FILL_BG }} className="px-6 sm:px-8 py-16">
+        <ProteinTrialsMobile />
+
+        <div className="reading-width mx-auto w-full mt-16">
+          <h1
+            className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] max-w-[16ch]"
+            style={{ color: DARK_TEXT }}
+          >
+            What if the protein isn&rsquo;t the <em>only</em> problem?
+          </h1>
+          <WhatIfLinesMobile />
+        </div>
+      </div>
+    </>
+  );
+}
+
+const TEASER_BREAKPOINTS = [0, 0.50, 0.72];
 
 export function TeaserSection() {
   return (
     <ScrollSection id="teaser" label="Teaser" className="py-0" fullWidth breakpoints={TEASER_BREAKPOINTS}>
-      <StickyScrollStage height={450}>
-        {(progress) => <TeaserStage progress={progress} />}
-      </StickyScrollStage>
+      {/* Desktop: sticky scroll stage */}
+      <div className="hidden md:block">
+        <StickyScrollStage height={330}>
+          {(progress) => <TeaserStage progress={progress} />}
+        </StickyScrollStage>
+      </div>
+
+      {/* Mobile: flowing layout */}
+      <div className="md:hidden">
+        <TeaserFlowing />
+      </div>
     </ScrollSection>
   );
 }

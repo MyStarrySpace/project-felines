@@ -34,3 +34,6 @@ framework-docs/
 *.bak
 *.bak2
 *.bak3
+
+# Claim verification cache
+scripts/.claim-cache.json

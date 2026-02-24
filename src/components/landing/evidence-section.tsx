@@ -114,15 +114,50 @@ function EvidenceStickyStage({ progress }: { progress: MotionValue<number> }) {
   );
 }
 
+function EvidenceStickyFlowing() {
+  return (
+    <div className="py-24 space-y-16 px-6">
+      <ScrollAnimate>
+        <div className="reading-width mx-auto">
+          <h2 className="font-serif text-[clamp(1.75rem,5vw,3.5rem)] leading-[1.2] tracking-[-0.01em] text-white mb-12">
+            Same iron signature. Six diseases.
+          </h2>
+
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-8">
+            <div className="shrink-0">
+              <span className="font-serif text-[clamp(4rem,12vw,7rem)] text-teal-400 leading-none">
+                2.0×
+              </span>
+              <p className="text-sm text-gray-400 mt-1">{featured.statLabel}</p>
+              <p className="text-xs text-gray-500 mt-1">{featured.statSource.label}</p>
+            </div>
+            <div>
+              <h3 className="font-serif text-xl text-white mb-2">{featured.name}</h3>
+              <p className="text-lg leading-relaxed text-gray-300">{featured.explanation}</p>
+            </div>
+          </div>
+        </div>
+      </ScrollAnimate>
+    </div>
+  );
+}
+
 export function EvidenceSection() {
   const { startTransition } = useExploreTransition();
 
   return (
     <ScrollSection id="evidence" label="Evidence" className="py-0" fullWidth>
-      {/* Sticky portion */}
-      <StickyScrollStage height={200}>
-        {(progress) => <EvidenceStickyStage progress={progress} />}
-      </StickyScrollStage>
+      {/* Desktop: sticky portion */}
+      <div className="hidden md:block">
+        <StickyScrollStage height={200}>
+          {(progress) => <EvidenceStickyStage progress={progress} />}
+        </StickyScrollStage>
+      </div>
+
+      {/* Mobile: flowing header */}
+      <div className="md:hidden">
+        <EvidenceStickyFlowing />
+      </div>
 
       {/* Flowing portion */}
       <div className="reading-width mx-auto px-6 sm:px-8 py-24 sm:py-32">

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "verify-bib": "npx tsx scripts/verify-bibliography.ts"
+    "verify-bib": "npx tsx scripts/verify-bibliography.ts",
+    "verify-claims": "npx tsx scripts/verify-claims.ts"
   },
   "dependencies": {
     "@nivo/bar": "^0.99.0",

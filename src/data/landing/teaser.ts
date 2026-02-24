@@ -99,9 +99,9 @@ export interface WhatIfLine {
 }
 
 export const whatIfLines: WhatIfLine[] = [
-  { label: "\u2026an ancient defense system?", underlineFrom: "left" },
-  { label: "\u2026an iron cleanup crew?", underlineFrom: "right" },
-  { label: "\u2026the same story in every disease?", underlineFrom: "left" },
+  { label: "\u2026an immune weapon that never switched off?", underlineFrom: "left" },
+  { label: "\u2026not even unique to the brain?", underlineFrom: "right" },
+  { label: "\u2026iron, in every brain they\u2019ve checked?", underlineFrom: "left" },
 ];
 
 export interface ProteinTrialStat {
@@ -160,7 +160,7 @@ export const teaserContent = {
     line2: "What makes us lose our minds uniquely",
     line2Gold: "is driven by iron.",
   },
-  headline: "What if the protein isn\u2019t the problem?",
+  headline: "What if the protein isn\u2019t the only problem?",
   subtextLeadIn: "What if it\u2019s\u2026",
   context:
     "Every major protein targeted by drug trials binds iron. None of the trials addressed iron.",

@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import { Cite } from "@/components/citation/cite";
+import { ScrollAnimate } from "@/components/ui/scroll-animate";
 import {
   proteinTrialStats,
   proteinTrialContent,
@@ -24,16 +25,16 @@ const detailContent: Record<string, ReactNode> = {
   "Alzheimer\u2019s": (
     <div className="space-y-4">
       <p>
-        Lecanemab and donanemab target amyloid plaques,
-        <br />
-        but only slow cognitive decline by
+        Lecanemab targets amyloid plaques. &ldquo;The adjusted
+        least-squares mean change from baseline at 18 months was 1.21 with
+        lecanemab and 1.66 with placebo (difference, &minus;0.45).&rdquo;
+        <Cite id="vandyck-2023-nejm-lecanemab" />
       </p>
       <p
         className="font-serif text-[clamp(1.75rem,4vw,2.5rem)] leading-tight font-semibold"
         style={{ color: DARK_TEXT }}
       >
-        ~27% over 18 months.
-        <Cite id="vandyck-2023-nejm-lecanemab" />
+        ~27% slower decline.
       </p>
       <p>
         That translates to roughly 5 extra months before patients lose the
@@ -43,21 +44,25 @@ const detailContent: Record<string, ReactNode> = {
         <Cite id="mcdade-2022-alz-res-ther" />
       </p>
       <p>
+        &ldquo;Amyloid-related imaging abnormalities with edema or effusions&rdquo;
+        occurred in{" "}
         <span
           className="font-serif text-[clamp(1.75rem,4vw,2.5rem)] leading-tight font-semibold"
           style={{ color: DARK_TEXT }}
         >
-          21%
+          12.6%
         </span>{" "}
-        develop ARIA (brain swelling or microbleeds), requiring regular MRI
-        monitoring.
-        <Cite id="vandyck-2023-nejm-lecanemab" />
+        of participants.
+        <Cite
+          id="vandyck-2023-nejm-lecanemab"
+          citationIds={["vandyck-2023-nejm-lecanemab-c2"]}
+        />
       </p>
       <p>
-        A third antibody, aducanumab, was withdrawn from the market in 2024 to{" "}
+        A third antibody, aducanumab, was discontinued. Biogen is{" "}
         <em>
-          {"\u201C"}build a leading franchise to address the multiple pathologies
-          of the disease.{"\u201D"}
+          {"\u201C"}reprioritizing resources to build a leading franchise to
+          address the multiple pathologies of the disease.{"\u201D"}
         </em>
         <Cite id="biogen-2024-aduhelm-withdrawal" />
       </p>
@@ -75,17 +80,10 @@ const detailContent: Record<string, ReactNode> = {
         ~2% of ALS cases.
       </p>
       <p>
-        Its Phase 3 trial (VALOR) found
-      </p>
-      <p
-        className="font-serif text-[clamp(1.75rem,4vw,2.5rem)] leading-tight font-semibold"
-        style={{ color: DARK_TEXT }}
-      >
-        no statistically significant difference (P&thinsp;=&thinsp;0.97).
+        Tofersen &ldquo;reduced concentrations of SOD1 in CSF and of
+        neurofilament light chains in plasma over 28 weeks but{" "}
+        <strong>did not improve clinical end points.</strong>&rdquo;
         <Cite id="miller-2022-nejm-tofersen" />
-      </p>
-      <p>
-        from placebo on the primary endpoint (ALSFRS-R functional score).
       </p>
       <p>
         The FDA approved it anyway via accelerated approval, based on a
@@ -121,8 +119,8 @@ function ProteinTrialRow({
 }) {
   const ref = useRef<HTMLDivElement>(null);
 
-  const enterStart = 0.29 + index * 0.02;
-  const enterEnd = enterStart + 0.03;
+  const enterStart = 0.38 + index * 0.025;
+  const enterEnd = enterStart + 0.04;
   const opacity = useTransform(progress, [enterStart, enterEnd], [0, 1]);
   const y = useTransform(progress, [enterStart, enterEnd], [15, 0]);
 
@@ -234,9 +232,12 @@ function ProteinTrialRow({
 
       {/* Mobile note */}
       {hasNote && (
-        <div className="lg:hidden pt-1 pb-2">
+        <div
+          className="lg:hidden flex items-baseline justify-between gap-4 mt-2 mb-1 px-3 py-2 rounded"
+          style={{ backgroundColor: `${DARK_TEXT}08` }}
+        >
           <span
-            className="text-base font-medium"
+            className="text-base sm:text-lg font-medium"
             style={{ color: `${DARK_TEXT}99` }}
           >
             {stat.approvedNote}
@@ -244,10 +245,10 @@ function ProteinTrialRow({
           {detail && (
             <button
               onClick={onToggle}
-              className="text-base font-medium underline underline-offset-2 cursor-pointer"
+              className="text-base sm:text-lg font-medium underline underline-offset-2 cursor-pointer shrink-0"
               style={{ color: DARK_GOLD }}
             >
-              {" "}{expanded ? "close" : "why?"}
+              {expanded ? "close" : "why?"}
             </button>
           )}
         </div>
@@ -279,6 +280,163 @@ function ProteinTrialRow({
   );
 }
 
+/* ------------------------------------------------------------------ */
+/*  Mobile: no progress-driven animations                              */
+/* ------------------------------------------------------------------ */
+
+function ProteinTrialRowMobile({
+  stat,
+  expanded,
+  onToggle,
+}: {
+  stat: ProteinTrialStat;
+  expanded: boolean;
+  onToggle: () => void;
+}) {
+  const hasNote = Boolean(stat.approvedNote);
+  const detail = detailContent[stat.disease];
+
+  return (
+    <div>
+      <div className="flex items-center">
+        <div
+          className="flex-1 flex items-baseline justify-between gap-2 sm:gap-4 py-4 sm:py-5 border-b"
+          style={{ borderColor: `${DARK_TEXT}12` }}
+        >
+          <div className="min-w-0">
+            <span
+              className="font-serif text-lg sm:text-2xl block"
+              style={{ color: DARK_TEXT }}
+            >
+              {stat.disease}
+            </span>
+            <span
+              className="text-sm sm:text-base"
+              style={{ color: `${DARK_TEXT}80` }}
+            >
+              {stat.protein}
+            </span>
+          </div>
+          <div className="flex items-baseline gap-3 sm:gap-5 shrink-0 tabular-nums text-sm sm:text-lg">
+            <span style={{ color: `${DARK_TEXT}B3` }}>
+              {stat.tested} tested
+            </span>
+            <span>
+              <span
+                className={stat.approved === 0 ? "font-semibold" : ""}
+                style={{
+                  color: stat.approved === 0 ? DARK_GOLD : `${DARK_TEXT}80`,
+                }}
+              >
+                {stat.approved}
+              </span>
+              <span style={{ color: `${DARK_TEXT}80` }}> approved</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {hasNote && (
+        <div
+          className="flex items-baseline justify-between gap-4 mt-2 mb-1 px-3 py-2 rounded"
+          style={{ backgroundColor: `${DARK_TEXT}08` }}
+        >
+          <span
+            className="text-base sm:text-lg font-medium"
+            style={{ color: `${DARK_TEXT}99` }}
+          >
+            {stat.approvedNote}
+          </span>
+          {detail && (
+            <button
+              onClick={onToggle}
+              className="text-base sm:text-lg font-medium underline underline-offset-2 cursor-pointer shrink-0"
+              style={{ color: DARK_GOLD }}
+            >
+              {expanded ? "close" : "why?"}
+            </button>
+          )}
+        </div>
+      )}
+
+      <AnimatePresence initial={false}>
+        {expanded && detail && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35, ease: EASE }}
+            className="overflow-hidden"
+          >
+            <div
+              className="py-5 px-5 text-base leading-relaxed rounded-b"
+              style={{
+                color: `${DARK_TEXT}B3`,
+                backgroundColor: `${DARK_TEXT}06`,
+              }}
+            >
+              {detail}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+export function ProteinTrialsMobile() {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  const handleToggle = useCallback((i: number) => {
+    setExpandedIndex((prev) => (prev === i ? null : i));
+  }, []);
+
+  return (
+    <div className="reading-width mx-auto w-full">
+      <ScrollAnimate>
+        <h2
+          className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-[-0.02em]"
+          style={{ color: DARK_TEXT }}
+        >
+          49 drugs targeted the <em>protein.</em>
+        </h2>
+        <p
+          className="text-lg sm:text-xl mt-2"
+          style={{ color: `${DARK_TEXT}99` }}
+        >
+          {proteinTrialContent.subhead}
+        </p>
+      </ScrollAnimate>
+
+      <div className="mt-6 sm:mt-8">
+        {proteinTrialStats.map((stat, i) => (
+          <ProteinTrialRowMobile
+            key={stat.disease}
+            stat={stat}
+            expanded={expandedIndex === i}
+            onToggle={() => handleToggle(i)}
+          />
+        ))}
+      </div>
+
+      <ScrollAnimate>
+        <div className="mt-6 sm:mt-8">
+          <p
+            className="font-serif text-[clamp(1.5rem,4vw,2.5rem)] leading-tight font-semibold"
+            style={{ color: DARK_GOLD }}
+          >
+            {proteinTrialContent.punchline}
+          </p>
+        </div>
+      </ScrollAnimate>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Desktop: progress-driven animations                                */
+/* ------------------------------------------------------------------ */
+
 export function ProteinTrials({
   progress,
 }: {
@@ -292,11 +450,11 @@ export function ProteinTrials({
     setExpandedIndex((prev) => (prev === i ? null : i));
   }, []);
 
-  const headingOpacity = useTransform(progress, [0.26, 0.30], [0, 1]);
-  const headingY = useTransform(progress, [0.26, 0.30], [20, 0]);
+  const headingOpacity = useTransform(progress, [0.34, 0.40], [0, 1]);
+  const headingY = useTransform(progress, [0.34, 0.40], [20, 0]);
 
-  const punchOpacity = useTransform(progress, [0.38, 0.41], [0, 1]);
-  const punchY = useTransform(progress, [0.38, 0.41], [15, 0]);
+  const punchOpacity = useTransform(progress, [0.52, 0.56], [0, 1]);
+  const punchY = useTransform(progress, [0.52, 0.56], [15, 0]);
 
   useEffect(() => {
     const unsubs = [

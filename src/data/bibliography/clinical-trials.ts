@@ -98,10 +98,11 @@ export const clinicalTrialsSources: Source[] = [
   {
     id: "ath434-2025-msa",
     title:
-      "ATH434 Phase 2 trial in Multiple System Atrophy",
+      "Alterity Therapeutics Announces Positive ATH434 Phase 2 Trial Results in Multiple System Atrophy Led By Robust Clinical Efficacy",
     authors: "Alterity Therapeutics.",
-    journal: "Clinical trial report",
+    journal: "Press release (GlobeNewsWire)",
     year: 2025,
+    url: "https://www.globenewswire.com/news-release/2025/01/30/3017941/0/en/Alterity-Therapeutics-Announces-Positive-ATH434-Phase-2-Trial-Results-in-Multiple-System-Atrophy-Led-By-Robust-Clinical-Efficacy.html#:~:text=48%25%20slowing%20of%20clinical%20progression",
     tags: ["clinical-trials", "iron"],
     citations: [
       {
@@ -114,8 +115,70 @@ export const clinicalTrialsSources: Source[] = [
         projectRef:
           "Cross-disease: MSA iron redistribution therapy validation",
       },
+      {
+        citationId: "ath434-2025-msa-c2",
+        sourceId: "ath434-2025-msa",
+        quote:
+          "The 50 mg dose declined by a mean of 4.3 points over 52 weeks, equivalent to a 48% slowing of clinical progression (p=0.03)",
+        context:
+          "ATH434 Phase 2 primary endpoint result: clinically meaningful slowing of MSA progression",
+        location: "Press release",
+        projectRef:
+          "Iron alternatives section: ATH434 trial status",
+      },
     ],
-    verificationStatus: "unverifiable",
+    verificationStatus: "verified",
+  },
+  {
+    id: "ayton-2025-jamaneurol",
+    title: "Deferiprone in Alzheimer Disease: A Randomized Clinical Trial",
+    authors: "Ayton S, Barton D, Brew B, et al.",
+    journal: "JAMA Neurology",
+    year: 2025,
+    doi: "10.1001/jamaneurol.2024.3733",
+    pmid: "39495531",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11536302/#:~:text=accelerated%20cognitive%20decline%20in%20patients%20with%20amyloid-confirmed%20early%20AD",
+    tags: ["clinical-trials", "alzheimers", "iron"],
+    citations: [
+      {
+        citationId: "ayton-2025-jamaneurol-c1",
+        sourceId: "ayton-2025-jamaneurol",
+        quote:
+          "These trial findings show that deferiprone 15 mg/kg twice a day decreased hippocampal QSM and accelerated cognitive decline in patients with amyloid-confirmed early AD, suggesting that lowering iron with deferiprone is detrimental to patients with AD.",
+        context:
+          "3D trial: chelation removed iron the brain needs, worsening cognition despite reducing hippocampal iron",
+        location: "Abstract, Conclusions",
+        projectRef:
+          "Drug browser: Deferiprone (AD) detail tooltip",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "crapper-mclachlan-1991-lancet",
+    title:
+      "Intramuscular desferrioxamine in patients with Alzheimer's disease",
+    authors: "Crapper McLachlan DR, Dalton AJ, Kruck TP, et al.",
+    journal: "The Lancet",
+    year: 1991,
+    doi: "10.1016/0140-6736(91)92978-b",
+    pmid: "1674295",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1674295/#:~:text=significant%20reduction%20in%20the%20rate%20of%20decline",
+    tags: ["clinical-trials", "alzheimers", "iron"],
+    citations: [
+      {
+        citationId: "crapper-mclachlan-1991-lancet-c1",
+        sourceId: "crapper-mclachlan-1991-lancet",
+        quote:
+          "Desferrioxamine treatment led to significant reduction in the rate of decline of daily living skills as assessed by both group means (p = 0.03) and variances (p less than 0.04). The mean rate of decline was twice as rapid for the no-treatment group.",
+        context:
+          "First iron chelation trial in AD: 48 patients, 24 months IM deferoxamine. Slowed decline but never replicated.",
+        location: "Abstract",
+        projectRef:
+          "Drug browser: Deferoxamine (AD) detail tooltip",
+      },
+    ],
+    verificationStatus: "verified",
   },
   {
     id: "honig-2018-solanezumab",
@@ -418,6 +481,184 @@ export const clinicalTrialsSources: Source[] = [
         location: "Press release",
         projectRef:
           "Protein trials: Alzheimer's expanded detail (aducanumab withdrawal)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Iron alternatives section sources ──────────────────────────────
+
+  {
+    id: "mohamed-2019-biomed-pharmacother",
+    title:
+      "A pilot study on the effect of lactoferrin on Alzheimer's disease pathological sequelae: Impact of the p-Akt/PTEN pathway",
+    authors: "Mohamed WA, Salama RM, Schaalan MF.",
+    journal: "Biomedicine & Pharmacotherapy",
+    year: 2019,
+    doi: "10.1016/j.biopha.2018.12.118",
+    pmid: "30611996",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30611996/#:~:text=enhanced%20cognitive%20function%20assessed%20by%20the%20Mini-Mental%20State%20Examination",
+    tags: ["clinical-trials", "iron", "alzheimers"],
+    citations: [
+      {
+        citationId: "mohamed-2019-biomed-pharmacother-c1",
+        sourceId: "mohamed-2019-biomed-pharmacother",
+        quote:
+          "Improvement in the aforementioned AD surrogate markers post-LF treatment was reflected in enhanced cognitive function assessed by the Mini-Mental State Examination (MMSE) and Alzheimer's Disease Assessment Scale-Cognitive Subscale 11-item (ADAS-COG 11) questionnaires as clinical endpoints.",
+        context:
+          "Lactoferrin pilot study in AD showed cognitive improvement on standard scales",
+        location: "Abstract",
+        projectRef:
+          "Iron alternatives section: Lactoferrin trial status",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "zanardi-2018-embo",
+    title:
+      "Ceruloplasmin replacement therapy ameliorates neurological symptoms in a preclinical model of aceruloplasminemia",
+    authors: "Zanardi A, Conti A, Cremonesi M, et al.",
+    journal: "EMBO Molecular Medicine",
+    year: 2018,
+    doi: "10.15252/emmm.201708361",
+    pmid: "29183916",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5760856/#:~:text=treatment%20with%20Cp%20promoted%20a%20rescue%20of%20Purkinje%20cell%20loss",
+    tags: ["clinical-trials", "iron"],
+    citations: [
+      {
+        citationId: "zanardi-2018-embo-c1",
+        sourceId: "zanardi-2018-embo",
+        quote:
+          "Ceruloplasmin-treated mice showed amelioration of motor incoordination that was associated with diminished loss of Purkinje neurons and reduced brain iron deposition, in particular in the choroid plexus.",
+        context:
+          "Ceruloplasmin replacement prevented neuron loss and reduced brain iron in aceruloplasminemia model",
+        location: "Abstract",
+        projectRef:
+          "Iron alternatives section: Ceruloplasmin trial status",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "kedrion-2025-fda-orphan",
+    title:
+      "Kedrion receives FDA Orphan Drug Designation for investigational plasma-derived treatment for Congenital Aceruloplasminemia",
+    authors: "Kedrion Biopharma.",
+    journal: "Press release (PR Newswire)",
+    year: 2025,
+    url: "https://www.prnewswire.com/news-releases/kedrion-receives-fda-orphan-drug-designation-for-investigational-plasma-derived-treatment-for-congenital-aceruloplasminemia-302524420.html#:~:text=Orphan%20Drug%20Designation%20from%20the%20FDA",
+    tags: ["clinical-trials", "iron"],
+    citations: [
+      {
+        citationId: "kedrion-2025-fda-orphan-c1",
+        sourceId: "kedrion-2025-fda-orphan",
+        quote:
+          "Receiving Orphan Drug Designation from the FDA is a fundamental step in our journey to bring hope to patients affected by Congenital Aceruloplasminemia.",
+        context:
+          "First ceruloplasmin replacement therapy to receive FDA designation for neurodegeneration-related disease",
+        location: "Press release",
+        projectRef:
+          "Iron alternatives section: Ceruloplasmin trial status",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "fillebeen-1999-jbc",
+    title:
+      "Receptor-mediated transcytosis of lactoferrin through the blood-brain barrier",
+    authors: "Fillebeen C, Descamps L, Dehouck MP, et al.",
+    journal: "Journal of Biological Chemistry",
+    year: 1999,
+    doi: "10.1074/jbc.274.11.7011",
+    pmid: "10066755",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10066755/#:~:text=iron%20may%20cross%20the%20bovine%20brain%20capillary%20endothelial%20cells",
+    tags: ["iron"],
+    citations: [
+      {
+        citationId: "fillebeen-1999-jbc-c1",
+        sourceId: "fillebeen-1999-jbc",
+        quote:
+          "A specific unidirectional transport then occurred via a receptor-mediated process with no apparent intraendothelial degradation.",
+        context:
+          "Lactoferrin crosses the BBB via receptor-mediated transcytosis",
+        location: "Abstract",
+        projectRef:
+          "Iron alternatives section: Lactoferrin description",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "takeda-2026-rusfertide-nda",
+    title:
+      "Takeda and Protagonist Submit NDA for Rusfertide in Polycythemia Vera",
+    authors: "Takeda Pharmaceutical Company.",
+    journal: "Press release (Takeda)",
+    year: 2026,
+    url: "https://www.takeda.com/newsroom/newsreleases/2025/new-drug-application-pv/#:~:text=mimics%20the%20action%20of%20hepcidin",
+    tags: ["clinical-trials", "iron"],
+    citations: [
+      {
+        citationId: "takeda-2026-rusfertide-nda-c1",
+        sourceId: "takeda-2026-rusfertide-nda",
+        quote:
+          "Rusfertide is a first-in-class investigational subcutaneous treatment that mimics the action of hepcidin, a natural hormone that regulates iron homeostasis and red blood cell production.",
+        context:
+          "Hepcidin mimetic with NDA submitted for PV, never tested for neurodegeneration",
+        location: "Press release",
+        projectRef:
+          "Iron alternatives section: Hepcidin trial status",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "pulsesight-2025-pst611",
+    title:
+      "First patient dosed in the Phase I clinical trial of PulseSight Therapeutics' PST-611 treatment for dry AMD/Geographic Atrophy",
+    authors: "PulseSight Therapeutics.",
+    journal: "Press release (GlobeNewsWire)",
+    year: 2025,
+    url: "https://www.globenewswire.com/news-release/2025/07/07/3110761/0/en/First-patient-dosed-in-the-Phase-I-clinical-trial-of-PulseSight-Therapeutics-PST-611-treatment-for-dry-AMD-Geographic-Atrophy.html#:~:text=expressing%20human%20transferrin",
+    tags: ["clinical-trials", "iron"],
+    citations: [
+      {
+        citationId: "pulsesight-2025-pst611-c1",
+        sourceId: "pulsesight-2025-pst611",
+        quote:
+          "PST-611 is a first-in-class non-viral vectorized therapy for the treatment of dry Age-related Macular Degeneration (AMD) /Geographic Atrophy (GA), expressing human transferrin, a highly potent iron regulator, playing a central role in restoring normal iron homeostasis.",
+        context:
+          "Transferrin gene therapy in Phase 1 for AMD; proof-of-concept for transferrin as iron management therapy",
+        location: "Press release",
+        projectRef:
+          "Iron alternatives section: Transferrin trial status",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "wen-2026-ijn-ferritin",
+    title:
+      "The Landscape of Ferritin Nanocages for Neurodegenerative Diseases Treatment",
+    authors: "Wen S, Gao J, Sun J, et al.",
+    journal: "International Journal of Nanomedicine",
+    year: 2026,
+    doi: "10.2147/IJN.S571993",
+    url: "https://www.dovepress.com/the-landscape-of-ferritin-nanocages-for-neurodegenerative-diseases-tre-peer-reviewed-fulltext-article-IJN#:~:text=high-affinity%20binding%20domains%20for%20transferrin%20receptor%201",
+    tags: ["iron"],
+    citations: [
+      {
+        citationId: "wen-2026-ijn-ferritin-c1",
+        sourceId: "wen-2026-ijn-ferritin",
+        quote:
+          "Upon binding to TfR1, HFn is internalized via clathrin-coated pit formation, resulting in transport vesicles that traverse endothelial cells",
+        context:
+          "Ferritin nanocages cross the BBB via TfR1-mediated transcytosis",
+        location: "Full text",
+        projectRef:
+          "Iron alternatives section: Ferritin nanocages description",
       },
     ],
     verificationStatus: "verified",
