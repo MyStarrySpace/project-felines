@@ -12,12 +12,13 @@ export function DrugBrowserSection() {
           Drug trials
         </p>
         <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-white mb-3">
-          Every iron trial. All under 600 Da.
+          Iron chelators failed by working.
         </h2>
         <p className="text-gray-400 text-lg leading-relaxed mb-12 max-w-[52ch]">
           Antibodies, gene therapies, kinase inhibitors, iron chelators.
-          61 drugs across six diseases. Every iron chelator trialed has been
-          a small molecule that strips iron indiscriminately.
+          61 drugs across six diseases. Deferiprone reduced brain iron
+          exactly as designed, and patients got worse. The problem
+          isn&rsquo;t too much iron. It&rsquo;s iron in the wrong places.
         </p>
       </ScrollAnimate>
       <ScrollAnimate enterFrom="bottom" start={0.1} end={0.25}>

@@ -13,11 +13,12 @@ export interface IronAlternative {
   structureSource: "PDB" | "PubChem";
 }
 
-export const alternativesHeadline = "The iron managers no one tested";
+export const alternativesHeadline = "The body already redistributes iron";
 
 export const alternativesBody =
-  "The body manages iron with proteins 100\u20133,000\u00D7 larger than deferiprone. " +
-  "They bind it reversibly, shuttle it across barriers, oxidize it for export, store it safely. " +
+  "Iron chelators strip iron indiscriminately. " +
+  "The body redistributes it with specialized proteins \u2014 binding reversibly, " +
+  "shuttling across barriers, oxidizing for export, storing safely. " +
   "Almost none have been trialed for neurodegeneration.";
 
 export const alternatives: IronAlternative[] = [
@@ -57,8 +58,9 @@ export const alternatives: IronAlternative[] = [
     description: (
       <>
         Converts Fe&#xB2;&#x207A; to Fe&#xB3;&#x207A; so ferroportin can
-        export iron safely. Without it, iron accumulates in brain, liver, and
-        retina.
+        export iron safely.
+        <Cite id="patel-2002-jneurosci" /> Without it, iron accumulates in
+        brain, liver, and retina.
       </>
     ),
     trialStatus: (
@@ -84,8 +86,9 @@ export const alternatives: IronAlternative[] = [
     description: (
       <>
         The body&#x2019;s iron courier. Binds two Fe&#xB3;&#x207A; ions and
-        delivers them to cells via receptor-mediated endocytosis. When
-        transferrin is saturated, unbound iron catalyzes Fenton chemistry.
+        delivers them to cells via receptor-mediated endocytosis.
+        <Cite id="luck-2012-currtopics" /> When transferrin is saturated,
+        unbound iron catalyzes Fenton chemistry.
       </>
     ),
     trialStatus: (
@@ -131,8 +134,10 @@ export const alternatives: IronAlternative[] = [
     description: (
       <>
         Master switch for systemic iron. Degrades ferroportin, controlling how
-        much iron enters circulation. Astrocyte-derived hepcidin guards the
+        much iron enters circulation.
+        <Cite id="nemeth-2004-science" /> Astrocyte-derived hepcidin guards the
         blood-brain barrier.
+        <Cite id="you-2022-celldeath" />
       </>
     ),
     trialStatus: (
@@ -155,9 +160,10 @@ export const alternatives: IronAlternative[] = [
     structureSource: "PubChem",
     description: (
       <>
-        Moderate-affinity Fe&#xB2;&#x207A; chaperone. Redistributes excess
-        labile iron rather than stripping it. Mimics endogenous iron chaperones
-        like PCBP1/2.
+        Moderate-affinity Fe&#xB2;&#x207A; chaperone that &ldquo;supports the
+        redistribution of excess iron, supplementing the function of the
+        cytoplasmic and nuclear PCBP1/2 iron chaperones.&rdquo;
+        <Cite id="bailey-2025-jbc" citationIds={["bailey-2025-jbc-c2"]} />
       </>
     ),
     trialStatus: (
@@ -169,14 +175,16 @@ export const alternatives: IronAlternative[] = [
           id="ath434-2025-msa"
           citationIds={["ath434-2025-msa-c2"]}
         />{" "}
-        The one iron compound that showed results uses redistribution, not
-        chelation.
+        MSA progresses faster than Alzheimer&rsquo;s, making it a practical
+        proving ground for redistribution.
       </>
     ),
   },
 ];
 
 export const alternativesInsight =
-  "Four are natural proteins the body already produces. " +
-  "The one iron compound that showed results (ATH434) redistributes iron instead of stripping it. " +
-  "Combined investment in neurodegeneration for the natural proteins: one underpowered pilot.";
+  "Five are natural proteins the body already produces. " +
+  "Total investment in them for neurodegeneration: one underpowered pilot. " +
+  "ATH434 mimics what they do and is in active Phase 2 trials, " +
+  "starting with MSA because it progresses faster than Alzheimer\u2019s. " +
+  "Phase 3 success would open repurposing across neurodegenerative diseases.";

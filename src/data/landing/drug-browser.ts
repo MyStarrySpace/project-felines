@@ -235,7 +235,7 @@ export const drugs: Drug[] = [
   {
     id: 26, name: "Deferiprone", company: "ApoPharma", category: "iron", disease: "PD", phase: "3", outcome: "worsened",
     note: "FAIRPARK-II: motor worsening",
-    detail: "FAIRPARK-II: 372 patients, 36 weeks. Substantia nigra iron fell but MDS-UPDRS worsened (+15.6 vs +6.3 placebo). 22% needed rescue therapy vs 2.7% placebo.",
+    detail: "FAIRPARK-II: 372 patients, 36 weeks. Substantia nigra iron fell but MDS-UPDRS worsened (+15.6 vs +6.3 placebo). 22% needed rescue therapy vs 2.7% placebo. The chelator removed iron the brain still needs.",
     attribution: "Devos et al., NEJM 2022",
     sourceId: "devos-2022-nejm",
   },
