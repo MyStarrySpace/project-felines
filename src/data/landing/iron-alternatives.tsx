@@ -13,12 +13,11 @@ export interface IronAlternative {
   structureSource: "PDB" | "PubChem";
 }
 
-export const alternativesHeadline = "The body already redistributes iron";
+export const alternativesHeadline = "Other ways to redistribute iron";
 
 export const alternativesBody =
-  "Iron chelators strip iron indiscriminately. " +
-  "The body redistributes it with specialized proteins \u2014 binding reversibly, " +
-  "shuttling across barriers, oxidizing for export, storing safely. " +
+  "The body already redistributes iron with specialized proteins \u2014 " +
+  "binding reversibly, shuttling across barriers, oxidizing for export, storing safely. " +
   "Almost none have been trialed for neurodegeneration.";
 
 export const alternatives: IronAlternative[] = [
@@ -27,7 +26,7 @@ export const alternatives: IronAlternative[] = [
     size: "80 kDa",
     sizeMultiple: "575\u00D7",
     mechanism: "Reversible iron shuttle",
-    structureImage: "/images/structures/lactoferrin.jpeg",
+    structureImage: "/images/proteins/1LFG-lactoferrin.png",
     structureId: "1LFG",
     structureSource: "PDB",
     description: (
@@ -52,7 +51,7 @@ export const alternatives: IronAlternative[] = [
     size: "132 kDa",
     sizeMultiple: "950\u00D7",
     mechanism: "Ferroxidase",
-    structureImage: "/images/structures/ceruloplasmin.jpeg",
+    structureImage: "/images/proteins/2J5W-ceruloplasmin.png",
     structureId: "2J5W",
     structureSource: "PDB",
     description: (
@@ -80,7 +79,7 @@ export const alternatives: IronAlternative[] = [
     size: "80 kDa",
     sizeMultiple: "575\u00D7",
     mechanism: "Iron transport",
-    structureImage: "/images/structures/transferrin.jpeg",
+    structureImage: "/images/proteins/3QYT-transferrin.png",
     structureId: "3QYT",
     structureSource: "PDB",
     description: (
@@ -105,7 +104,7 @@ export const alternatives: IronAlternative[] = [
     size: "480 kDa",
     sizeMultiple: "3,450\u00D7",
     mechanism: "Iron sequestration",
-    structureImage: "/images/structures/ferritin.jpeg",
+    structureImage: "/images/proteins/2FHA-ferritin.png",
     structureId: "2FHA",
     structureSource: "PDB",
     description: (
@@ -155,7 +154,7 @@ export const alternatives: IronAlternative[] = [
     size: "290 Da",
     sizeMultiple: "2.1\u00D7",
     mechanism: "Iron redistribution",
-    structureImage: "/images/structures/ath434.png",
+    structureImage: "/images/structures/46236251-ath434.png",
     structureId: "CID 46236251",
     structureSource: "PubChem",
     description: (
