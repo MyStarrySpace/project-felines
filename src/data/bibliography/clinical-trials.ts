@@ -45,6 +45,15 @@ export const clinicalTrialsSources: Source[] = [
         projectRef:
           "Framework summary: Why every major trial has failed (BACE inhibitors)",
       },
+      {
+        citationId: "egan-2019-verubecestat-c2",
+        sourceId: "egan-2019-verubecestat",
+        quote:
+          "The trial was terminated for futility after 1454 patients had been enrolled",
+        context: "Early stopping due to lack of efficacy",
+        projectRef:
+          "Failed trials: Verubecestat halted early",
+      },
     ],
     verificationStatus: "verified",
   },
@@ -150,6 +159,16 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract, Conclusions",
         projectRef:
           "Drug browser: Deferiprone (AD) detail tooltip",
+      },
+      {
+        citationId: "ayton-2025-jamaneurol-c2",
+        sourceId: "ayton-2025-jamaneurol",
+        quote:
+          "change in NTB composite z score for deferiprone, \u22120.80 [95% CI, \u22120.98 to \u22120.62]; for placebo, \u22120.30 [95% CI, \u22120.54 to \u22120.06]",
+        context: "Primary outcome NTB z-scores showing deferiprone worsened cognition",
+        location: "Results",
+        projectRef:
+          "Findings section: Deferiprone NTB z-score comparison",
       },
     ],
     verificationStatus: "verified",

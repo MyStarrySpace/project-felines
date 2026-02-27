@@ -30,9 +30,9 @@ export const toxoPuzzle = {
     "Fewer plaques should mean less disease. T. gondii does the opposite.",
   resolution: (
     <>
-      It attacks three defense layers simultaneously: iron homeostasis,
+      T. gondii activates ferroptosis in the hippocampus
       <Cite id="wang-2023-plosntd" />
-      {" "}antioxidant defenses, and the blood-brain barrier.
+      {" "}and disrupts blood-brain barrier integrity.
       <Cite id="olivera-2021-elife" />
       {" "}The plaques were never the problem.
     </>

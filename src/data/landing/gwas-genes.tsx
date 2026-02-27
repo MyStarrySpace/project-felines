@@ -26,9 +26,8 @@ export const gwasGenes: GwasGene[] = [
     ironConnection: (
       <>
         Potently inhibits ferroptosis (EC50 ~10 nM).
-        <Cite id="belaidi-2024-molpsychiatry" /> APOE4 risk comes from lower
-        protein abundance, not weaker function. CSF ferritin tracks APOE
-        levels.
+        <Cite id="belaidi-2024-molpsychiatry" /> CSF ferritin is strongly
+        associated with APOE levels and elevated by the APOE4 allele.
         <Cite id="ayton-2015-natcomms" citationIds={["ayton-2015-natcomms-c2"]} />
       </>
     ),

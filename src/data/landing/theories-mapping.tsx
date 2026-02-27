@@ -1,114 +1,89 @@
 /**
- * Data for Theories Mapping section.
+ * Data for the Swiss-Cheese Multi-Layer Interventions section.
  *
- * Shows how current leading theories (neuroinflammation, NAD+, BBB breakdown, etc.)
- * each describe a single FELINE layer, not a competing hypothesis.
+ * Neurodegeneration is a multi-layer failure. Single-layer interventions fail
+ * because they leave other holes open. This section maps lifestyle and
+ * treatment interventions to FELINE defense layers.
  */
 
-export interface TheoryMapping {
-  theory: string;
+export const sectionHeadline = "No single layer is enough.";
+export const sectionSubhead =
+  "Neurodegeneration is a swiss-cheese failure: every defense has holes. Disease begins when the holes line up. The interventions that work protect multiple layers at once.";
+
+export interface LifestyleIntervention {
+  name: string;
   layers: string[];
-  treatments: string;
-  explanation: string;
+  note: string;
 }
 
-export const theoriesMappingHeadline = "The theories that survive target the layers.";
-export const theoriesMappingSubhead = "None describes the system.";
-
-export const theoryMappings: TheoryMapping[] = [
+export const lifestyleInterventions: LifestyleIntervention[] = [
   {
-    theory: "Iron dysregulation / ferroptosis",
-    layers: ["Fe"],
-    treatments: "Deferiprone, deferoxamine",
-    explanation:
-      "The substrate. Iron makes every other failure lethal.",
+    name: "Exercise",
+    layers: ["Fe", "L", "I", "N", "E"],
+    note: "Upregulates ferroportin, boosts GPX4/GSH, strengthens BBB, enhances glymphatic flow.",
   },
   {
-    theory: "Oxidative stress / lipid peroxidation",
-    layers: ["Fe", "L"],
-    treatments: "CoQ10, edaravone, inosine",
-    explanation:
-      "Iron-generated radicals overwhelm antioxidant defenses.",
+    name: "Sleep",
+    layers: ["N", "E"],
+    note: "Glymphatic clearance peaks during deep sleep. BBB repair requires consolidated rest.",
   },
   {
-    theory: "NAD+ decline / mitochondrial dysfunction",
-    layers: ["L"],
-    treatments: "NR, NMN (no Phase 3)",
-    explanation:
-      "NAD+/SIRT3 maintain the antioxidant machinery. Their decline disables it.",
-  },
-  {
-    theory: "Chronic neuroinflammation",
+    name: "Vaccination",
     layers: ["L", "N"],
-    treatments: "NSAIDs, pioglitazone, AL002, minocycline",
-    explanation:
-      "Microglia sequester iron, suppress repair, and breach barriers.",
+    note: "Prevents viral BBB breach (COVID, flu, shingles). Many AD-linked infections also damage lysosomes.",
   },
   {
-    theory: "Myelin / oligodendrocyte failure",
-    layers: ["I"],
-    treatments: "Clemastine (remyelination, Phase 2 MS)",
-    explanation:
-      "Oligodendrocytes are the most iron-rich cells. Their death releases iron and removes insulation.",
-  },
-  {
-    theory: "BBB breakdown / pericyte loss",
-    layers: ["N"],
-    treatments: "No clinical candidates",
-    explanation:
-      "Without the gate, circulating iron enters uncontrolled.",
-  },
-  {
-    theory: "Impaired glymphatic / waste clearance",
-    layers: ["E"],
-    treatments: "No clinical candidates",
-    explanation:
-      "Export failure means accumulation at normal intake.",
-  },
-  {
-    theory: "Protein aggregation (A\u03B2, tau, \u03B1-syn)",
-    layers: ["I"],
-    treatments: "Lecanemab, donanemab, prasinezumab",
-    explanation:
-      "These proteins bind iron. Aggregation is downstream of iron overload, not upstream.",
+    name: "Dental care",
+    layers: ["Fe", "N"],
+    note: "P. gingivalis hijacks host iron machinery directly. Gingipains degrade transferrin and hemoglobin to harvest iron.",
   },
 ];
 
-export interface FailedTheory {
-  theory: string;
-  treatment: string;
-  outcome: string;
+export interface MultiLayerTreatment {
+  name: string;
+  layers: string[];
+  status: string;
+  note: string;
 }
 
-export const failedTheories: FailedTheory[] = [
+export const multiLayerTreatments: MultiLayerTreatment[] = [
   {
-    theory: "Amyloid production",
-    treatment: "BACE inhibitors",
-    outcome: "5 trials: cognitive worsening in every one. Removing A\u03B2 production removed a defense protein.",
+    name: "Blarcamesine",
+    layers: ["Fe", "L", "I", "N"],
+    status: "Phase 2b/3",
+    note: "Sigma-1 receptor agonist. Restores autophagy, protects pericytes/BBB, supports oligodendrocytes. Oral, no ARIA.",
   },
   {
-    theory: "Gamma secretase",
-    treatment: "Semagacestat, avagacestat",
-    outcome: "Blocked APP processing. Semagacestat worsened cognition and increased skin cancer.",
+    name: "Low-dose lithium",
+    layers: ["L", "I", "N"],
+    status: "Phase 2 / OTC",
+    note: "GSK-3\u03B2 inhibition: autophagy + tau dephosphorylation + BBB tight junctions. Safe at microdose (5\u201320 mg lithium orotate).",
   },
   {
-    theory: "Cholinergic deficit",
-    treatment: "Donepezil, rivastigmine",
-    outcome: "Symptomatic relief only. No disease modification after 30 years of use.",
+    name: "NAD+ restoration (NR/NMN)",
+    layers: ["L"],
+    status: "Phase 1/2 / supplement",
+    note: "Restores SIRT3 and mitochondrial antioxidant machinery. Single layer but critical bottleneck.",
   },
   {
-    theory: "Glutamate excitotoxicity",
-    treatment: "Memantine",
-    outcome: "Modest symptomatic benefit. Does not slow progression.",
+    name: "40 Hz gamma stimulation",
+    layers: ["L", "N", "E"],
+    status: "Phase 2",
+    note: "Entrains microglial clearance, enhances cerebral blood flow, promotes glymphatic transport. Non-invasive.",
   },
   {
-    theory: "Prion-like spreading",
-    treatment: "Anti-tau antibodies",
-    outcome: "Gosuranemab cut CSF tau 98%. Zero cognitive benefit. Spreading is not the cause.",
+    name: "Melatonin",
+    layers: ["Fe", "L", "I", "N", "E"],
+    status: "Supplement",
+    note: "Iron chelator, antioxidant, BBB protector, restores AQP4 polarization for glymphatic clearance.",
+  },
+  {
+    name: "Sulforaphane",
+    layers: ["Fe", "L", "I", "N"],
+    status: "Phase 2 / supplement",
+    note: "Nrf2 activator: master switch for ferritin, ferroportin, GPX4, GSH. From broccoli sprouts.",
   },
 ];
 
-export const failedTheoriesHeadline = "The theories that didn\u2019t.";
-
-export const theoriesMappingClosing =
-  "FELINE doesn\u2019t replace these theories. It explains why they all coexist.";
+export const sectionClosing =
+  "Single-target drugs fail a multi-layer disease. The framework predicts that interventions touching more layers, at lower intensity, will outperform those hitting one layer hard.";

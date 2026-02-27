@@ -56,7 +56,8 @@ export const olContent = {
       title: "FTH1 iron export stops",
       detail: (
         <>
-          OLs normally export safe ferritin (FTH1) to neighboring cells.
+          OLs normally export ferritin heavy chain (FTH1) to neighboring
+          cells.
           <Cite id="mukherjee-2020" /> Dead OLs release free iron instead.
         </>
       ),
@@ -96,7 +97,7 @@ export const tauContent = {
       <>
         Tau facilitates APP trafficking to the cell surface, where APP
         stabilizes ferroportin for iron export.
-        <Cite id="lei-2012-natmed" />
+        <Cite id="lei-2012-natmed" citationIds={["lei-2012-natmed-c2", "lei-2012-natmed-c3"]} />
       </>
     ),
     "When iron rises, tau acts as an emergency buffer, binding iron directly.",
@@ -104,7 +105,7 @@ export const tauContent = {
       <>
         But rising iron activates GSK3&#x3B2; and CDK5, which
         hyperphosphorylate tau.
-        <Cite id="guo-2013-iron-tau" />
+        <Cite id="guo-2013-iron-tau" citationIds={["guo-2013-iron-tau-c2"]} />
       </>
     ),
   ],

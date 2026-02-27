@@ -5,6 +5,9 @@
  * looks up the source's quotes, and asks Claude Haiku whether the claim
  * is supported by the quoted evidence.
  *
+ * Also processes claims from the claims manifest (scripts/claims-manifest.ts)
+ * which covers factual claims in data files that don't use <Cite> tags.
+ *
  * Results are cached in scripts/.claim-cache.json so verified pairs
  * are not re-checked on subsequent runs.
  *
@@ -18,6 +21,7 @@ import * as path from "path";
 import * as crypto from "crypto";
 import { sources, sourcesMap } from "../src/data/bibliography";
 import type { Source } from "../src/data/bibliography/types";
+import { manifestClaims } from "./claims-manifest";
 
 // ── Config ─────────────────────────────────────────────────────────
 
@@ -222,6 +226,7 @@ function extractClaims(filePath: string): ClaimEntry[] {
     if (!claimText || claimText.length < 15) continue;
     // Skip entries that look like code artifacts rather than prose
     if (/^[A-Z][a-z]+\(|^\w+\s*=|^[{(]/.test(claimText)) continue;
+    if (/\bfunction\b|]\s*;\s*}|^\w+\s*\(/.test(claimText)) continue;
 
     // Find line number
     const lineNumber = content.slice(0, match.index).split("\n").length;
@@ -323,12 +328,45 @@ async function main() {
   const files = findTsxFiles(SRC_DIR);
   console.log(`Scanning ${files.length} .tsx files...\n`);
 
-  // Extract all claims
+  // Extract claims from <Cite> tags
   const allClaims: ClaimEntry[] = [];
   for (const file of files) {
     allClaims.push(...extractClaims(file));
   }
-  console.log(`Found ${allClaims.length} citations with extractable claims.\n`);
+  console.log(`Found ${allClaims.length} claims from <Cite> tags.`);
+
+  // Extract claims from manifest (data-file claims)
+  let manifestCount = 0;
+  for (const mc of manifestClaims) {
+    const source = sourcesMap.get(mc.sourceId);
+    if (!source || source.citations.length === 0) {
+      console.warn(`  Warning: manifest source "${mc.sourceId}" not found or has no citations. Skipping.`);
+      continue;
+    }
+
+    const quotes: string[] = [];
+    if (mc.citationIds && mc.citationIds.length > 0) {
+      for (const cid of mc.citationIds) {
+        const citation = source.citations.find((c) => c.citationId === cid);
+        if (citation) quotes.push(citation.quote);
+      }
+    }
+    if (quotes.length === 0 && source.citations[0]) {
+      quotes.push(source.citations[0].quote);
+    }
+
+    allClaims.push({
+      file: mc.file,
+      line: 0, // manifest claims don't have line numbers
+      sourceId: mc.sourceId,
+      citationIds: mc.citationIds ?? [],
+      claimText: mc.claim,
+      quotes,
+    });
+    manifestCount++;
+  }
+  console.log(`Found ${manifestCount} claims from manifest.`);
+  console.log(`Total: ${allClaims.length} claims to verify.\n`);
 
   if (allClaims.length === 0) {
     console.log("Nothing to verify.");
@@ -338,7 +376,8 @@ async function main() {
   // Dry run: just print extracted claims
   if (DRY_RUN) {
     for (const entry of allClaims) {
-      console.log(`${entry.file}:${entry.line} [${entry.sourceId}]`);
+      const loc = entry.line > 0 ? `${entry.file}:${entry.line}` : `${entry.file} (manifest)`;
+      console.log(`${loc} [${entry.sourceId}]`);
       console.log(`  Claim: "${entry.claimText.slice(0, 150)}${entry.claimText.length > 150 ? "..." : ""}"`);
       console.log(`  Quotes: ${entry.quotes.length} quote(s)`);
       for (const q of entry.quotes) {
@@ -397,7 +436,7 @@ async function main() {
 
   // Summary
   console.log("--- RESULTS ---");
-  console.log(`Total claims:  ${allClaims.length}`);
+  console.log(`Total claims:  ${allClaims.length} (${allClaims.length - manifestCount} from <Cite>, ${manifestCount} from manifest)`);
   console.log(`Supported:     ${supported.length}`);
   console.log(`Unsupported:   ${unsupported.length}`);
   console.log(`Cache hits:    ${cacheHits}`);
@@ -408,7 +447,8 @@ async function main() {
   if (unsupported.length > 0) {
     console.log("--- UNSUPPORTED CLAIMS ---\n");
     for (const { entry, reason } of unsupported) {
-      console.log(`${entry.file}:${entry.line} [${entry.sourceId}]`);
+      const loc = entry.line > 0 ? `${entry.file}:${entry.line}` : `${entry.file} (manifest)`;
+      console.log(`${loc} [${entry.sourceId}]`);
       console.log(`  Claim: "${entry.claimText.slice(0, 120)}${entry.claimText.length > 120 ? "..." : ""}"`);
       console.log(`  Reason: ${reason}`);
       console.log();

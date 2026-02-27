@@ -58,7 +58,7 @@ export const alternatives: IronAlternative[] = [
       <>
         Converts Fe&#xB2;&#x207A; to Fe&#xB3;&#x207A; so ferroportin can
         export iron safely.
-        <Cite id="patel-2002-jneurosci" /> Without it, iron accumulates in
+        <Cite id="patel-2002-jneurosci" citationIds={["patel-2002-jneurosci-c2"]} /> Without it, iron accumulates in
         brain, liver, and retina.
       </>
     ),
@@ -86,7 +86,7 @@ export const alternatives: IronAlternative[] = [
       <>
         The body&#x2019;s iron courier. Binds two Fe&#xB3;&#x207A; ions and
         delivers them to cells via receptor-mediated endocytosis.
-        <Cite id="luck-2012-currtopics" /> When transferrin is saturated,
+        <Cite id="luck-2012-currtopics" citationIds={["luck-2012-currtopics-c1", "luck-2012-currtopics-c3"]} /> When transferrin is saturated,
         unbound iron catalyzes Fenton chemistry.
       </>
     ),
@@ -136,7 +136,7 @@ export const alternatives: IronAlternative[] = [
         much iron enters circulation.
         <Cite id="nemeth-2004-science" /> Astrocyte-derived hepcidin guards the
         blood-brain barrier.
-        <Cite id="you-2022-celldeath" />
+        <Cite id="you-2022-celldeath" citationIds={["you-2022-celldeath-c2"]} />
       </>
     ),
     trialStatus: (

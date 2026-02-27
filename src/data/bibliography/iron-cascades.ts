@@ -426,6 +426,26 @@ export const ironCascadesSources: Source[] = [
         projectRef:
           "Iron cascades: Tau's normal job: APP trafficking for iron export (mechanism step 1)",
       },
+      {
+        citationId: "lei-2012-natmed-c2",
+        sourceId: "lei-2012-natmed",
+        quote:
+          "loss of tau also causes iron retention, by decreasing surface trafficking of APP",
+        context: "Tau facilitates APP surface trafficking for ferroportin-mediated iron export",
+        location: "Results",
+        projectRef:
+          "Reframe section: Tau facilitates APP trafficking",
+      },
+      {
+        citationId: "lei-2012-natmed-c3",
+        sourceId: "lei-2012-natmed",
+        quote:
+          "Amyloid precursor protein (APP) ferroxidase activity couples with surface ferroportin to export iron",
+        context: "APP stabilizes ferroportin at cell surface for iron export",
+        location: "Abstract",
+        projectRef:
+          "Reframe section: APP-ferroportin coupling for iron export",
+      },
     ],
     verificationStatus: "verified",
   },
@@ -472,9 +492,19 @@ export const ironCascadesSources: Source[] = [
         quote:
           "Deferoxamine inhibits iron induced hippocampal tau phosphorylation in the Alzheimer transgenic mouse brain",
         context:
-          "Iron activates GSK-3β driving tau phosphorylation at Thr205, Thr231, Ser396",
+          "Iron activates GSK-3\u03B2 driving tau phosphorylation at Thr205, Thr231, Ser396",
         projectRef:
-          "Iron cascades: Iron activates GSK-3β/CDK5 → tau hyperphosphorylation (mechanism step 2)",
+          "Iron cascades: Iron activates GSK-3\u03B2/CDK5 \u2192 tau hyperphosphorylation (mechanism step 2)",
+      },
+      {
+        citationId: "guo-2013-iron-tau-c2",
+        sourceId: "guo-2013-iron-tau",
+        quote:
+          "intranasal DFO treatment exerts its suppressive effects on iron induced tau phosphorylation via CDK5 and GSK3\u03B2 pathways",
+        context: "Iron drives tau phosphorylation through CDK5 and GSK-3\u03B2 kinase activation",
+        location: "Abstract",
+        projectRef:
+          "Reframe section: Iron activates GSK3\u03B2 and CDK5 to hyperphosphorylate tau",
       },
     ],
     verificationStatus: "verified",

@@ -380,6 +380,15 @@ export const ironFerrOptosisSources: Source[] = [
         projectRef:
           "Iron alternatives section: Ceruloplasmin description",
       },
+      {
+        citationId: "patel-2002-jneurosci-c2",
+        sourceId: "patel-2002-jneurosci",
+        quote:
+          "GPI\u2013ceruloplasmin in the brain could also potentially play a role in controlling the efflux of ferrous iron via Ireg1 by rapidly oxidizing it to the ferric form as it exits at the cell surface",
+        context: "Ceruloplasmin enables ferroportin (Ireg1) mediated iron export in the brain",
+        projectRef:
+          "Iron alternatives section: Ceruloplasmin ferroportin coupling",
+      },
     ],
     verificationStatus: "verified",
   },
@@ -412,6 +421,15 @@ export const ironFerrOptosisSources: Source[] = [
           "When transferrin is saturated, unbound iron drives Fenton chemistry",
         projectRef:
           "Iron alternatives section: Transferrin description (Fenton danger)",
+      },
+      {
+        citationId: "luck-2012-currtopics-c3",
+        sourceId: "luck-2012-currtopics",
+        quote:
+          "iron-bearing hTF in the blood binds tightly to the specific transferrin receptor (TFR), a homodimeric transmembrane protein. After undergoing endocytosis",
+        context: "Classic clathrin-dependent receptor-mediated endocytosis pathway for iron delivery",
+        projectRef:
+          "Iron alternatives section: Transferrin receptor-mediated endocytosis",
       },
     ],
     verificationStatus: "verified",
@@ -462,6 +480,15 @@ export const ironFerrOptosisSources: Source[] = [
           "Astrocyte hepcidin guards the BBB iron gate",
         projectRef:
           "Iron alternatives section: Hepcidin description (BBB)",
+      },
+      {
+        citationId: "you-2022-celldeath-c2",
+        sourceId: "you-2022-celldeath",
+        quote:
+          "the controller of this gateway is hepcidin secreted by astrocyte at its endfeet through physical contact with BMVECs",
+        context: "Astrocyte endfeet secrete hepcidin to regulate endothelial ferroportin",
+        projectRef:
+          "Iron alternatives section: Astrocyte-derived hepcidin guards BBB",
       },
     ],
     verificationStatus: "verified",

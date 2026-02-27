@@ -193,6 +193,15 @@ export const pericyteVascularSources: Source[] = [
         projectRef:
           "Cross-disease biomarker validation: sPDGFRβ as early AD marker",
       },
+      {
+        citationId: "nation-2019-natmed-c2",
+        sourceId: "nation-2019-natmed",
+        quote:
+          "brain capillary damage using a novel cerebrospinal fluid biomarker of BBB-associated capillary mural cell pericyte, soluble platelet-derived growth factor receptor-\u03B2",
+        context: "sPDGFR\u03B2 shed from damaged pericytes as BBB breakdown biomarker",
+        projectRef:
+          "Pillars section: Neurovascular layer pericyte loss evidence",
+      },
     ],
     verificationStatus: "verified",
   },
