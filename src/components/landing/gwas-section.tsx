@@ -4,18 +4,20 @@ import Link from "next/link";
 import { ScrollSection } from "@/components/ui/scroll-section";
 import { ScrollAnimate } from "@/components/ui/scroll-animate";
 import {
+  gwasGenes,
   gwasStats,
   survivorshipBias,
-  genesByLayer,
   layerLabels,
 } from "@/data/landing/gwas-genes";
 import { defenseLayers } from "@/data/landing/entry-points";
 
-const grouped = genesByLayer();
+const sortedGenes = [...gwasGenes].sort(
+  (a, b) => defenseLayers.indexOf(a.primaryLayer) - defenseLayers.indexOf(b.primaryLayer),
+);
 
 export function GwasSection() {
   return (
-    <ScrollSection id="gwas" label="Genetics" className="py-24 sm:py-32">
+    <ScrollSection id="gwas" label="Risk genes map to defense" className="py-24 sm:py-32">
         {/* Headline */}
         <ScrollAnimate enterFrom="bottom">
           <p className="text-sm text-teal-400 tracking-wide uppercase mb-3">
@@ -45,37 +47,27 @@ export function GwasSection() {
           </div>
         </ScrollAnimate>
 
-        {/* FELINE layer rows with gene pills */}
-        <div className="space-y-6 mb-12">
-          {defenseLayers.map((layerId) => {
-            const genes = grouped[layerId];
-            if (genes.length === 0) return null;
-            return (
-              <ScrollAnimate key={layerId} enterFrom="bottom">
-                <div>
-                  <div className="flex items-baseline gap-3 mb-2">
-                    <span className="font-mono text-teal-400 text-sm w-6 shrink-0">
-                      {layerId}
-                    </span>
-                    <span className="text-gray-500 text-sm">
-                      {layerLabels[layerId]}
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap gap-2 ml-9">
-                    {genes.map((gene) => (
-                      <span
-                        key={gene.id}
-                        className="border border-white/10 px-3 py-1.5 text-sm text-white"
-                      >
-                        {gene.id}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </ScrollAnimate>
-            );
-          })}
-        </div>
+        {/* Gene table — 2-column grid sorted by FELINE layer */}
+        <ScrollAnimate enterFrom="bottom">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 mb-12">
+            {sortedGenes.map((gene) => (
+              <div
+                key={gene.id}
+                className="flex items-baseline gap-3 py-2 border-b border-white/5"
+              >
+                <span className="font-mono text-teal-400 text-xs w-5 shrink-0">
+                  {gene.primaryLayer}
+                </span>
+                <span className="text-sm text-white font-medium w-16 shrink-0">
+                  {gene.id}
+                </span>
+                <span className="text-xs text-gray-500 truncate">
+                  {gene.fullName}
+                </span>
+              </div>
+            ))}
+          </div>
+        </ScrollAnimate>
 
         {/* Survivorship bias callout */}
         <ScrollAnimate enterFrom="bottom">

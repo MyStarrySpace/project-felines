@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
 import {
   drugs,
   drugCategories,
@@ -34,12 +34,16 @@ function DrugTooltip({
   visible,
   pinned,
   id,
+  nudge,
+  onClose,
 }: {
   drug: Drug;
   anchorRect: DOMRect | null;
   visible: boolean;
   pinned?: boolean;
   id?: string;
+  nudge?: { x?: number; y?: number };
+  onClose?: () => void;
 }) {
   const [portalTarget, setPortalTarget] = useState<HTMLElement | null>(null);
 
@@ -50,13 +54,17 @@ function DrugTooltip({
   if (!portalTarget || !anchorRect) return null;
 
   const tooltipWidth = 300;
-  let left = anchorRect.left + anchorRect.width / 2 - tooltipWidth / 2;
-  const top = anchorRect.top - 8;
+  let left = anchorRect.left + anchorRect.width / 2 - tooltipWidth / 2 + (nudge?.x ?? 0);
+  const top = anchorRect.top - 8 + (nudge?.y ?? 0);
 
   if (left < 8) left = 8;
   if (left + tooltipWidth > window.innerWidth - 8) {
     left = window.innerWidth - tooltipWidth - 8;
   }
+
+  const diseaseLabel = drug.category === "iron-chelator"
+    ? diseaseRows.find((d) => d.id === drug.disease)?.label
+    : null;
 
   return createPortal(
     <AnimatePresence>
@@ -70,15 +78,31 @@ function DrugTooltip({
           className={`fixed z-[101] ${pinned ? "pointer-events-auto" : "pointer-events-none"}`}
           style={{ left, top, width: tooltipWidth, transform: "translateY(-100%)" }}
         >
-          <div className="rounded bg-navy-900/95 px-4 py-3 text-sm leading-relaxed shadow-lg backdrop-blur-sm border border-white/10">
+          <div className="bg-navy-900/95 px-4 py-3 text-sm leading-relaxed shadow-lg backdrop-blur-sm border border-white/10">
             <div className="flex items-baseline justify-between gap-2 mb-1">
-              <p className="text-white font-medium">{drug.name}</p>
-              <span
-                className="text-xs font-medium px-1.5 py-0.5 rounded"
-                style={{ color: outcomeColor(drug.outcome), backgroundColor: `${outcomeColor(drug.outcome)}15` }}
-              >
-                {outcomeLabel(drug.outcome)}
-              </span>
+              <p className="text-white font-medium">
+                {drug.name}
+                {diseaseLabel && (
+                  <span className="text-gray-400 font-normal text-xs ml-1">({diseaseLabel})</span>
+                )}
+              </p>
+              <div className="flex items-center gap-1">
+                <span
+                  className="text-xs font-medium px-1.5 py-0.5"
+                  style={{ color: outcomeColor(drug.outcome), backgroundColor: `${outcomeColor(drug.outcome)}15` }}
+                >
+                  {outcomeLabel(drug.outcome)}
+                </span>
+                {onClose && (
+                  <button
+                    type="button"
+                    onClick={(e) => { e.stopPropagation(); onClose(); }}
+                    className="md:hidden text-gray-500 hover:text-gray-300 p-0.5 cursor-pointer"
+                  >
+                    <X size={14} />
+                  </button>
+                )}
+              </div>
             </div>
             <p className="text-xs text-gray-400 mb-1.5">{drug.company}</p>
             <p className="text-xs text-gray-300">{drug.detail ?? drug.note}</p>
@@ -121,9 +145,17 @@ const MIN_HIT = 16; // minimum tap target in px
 function DrugChip({
   drug,
   dimmed,
+  dimOpacity = 0.15,
+  forceTooltip,
+  tooltipNudge,
+  spotlightPulse,
 }: {
   drug: Drug;
   dimmed: boolean;
+  dimOpacity?: number;
+  forceTooltip?: boolean;
+  tooltipNudge?: { x?: number; y?: number };
+  spotlightPulse?: boolean;
 }) {
   const ref = useRef<HTMLButtonElement>(null);
   const [hovered, setHovered] = useState(false);
@@ -141,6 +173,7 @@ function DrugChip({
 
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
+    if (forceTooltip) return;
     updateRect();
     setPinned((p) => !p);
   };
@@ -160,6 +193,19 @@ function DrugChip({
     return () => document.removeEventListener("pointerdown", dismiss);
   }, [pinned, tooltipId]);
 
+  // Keep rect updated when tooltip is forced (scroll/resize tracking)
+  useEffect(() => {
+    if (!forceTooltip) return;
+    updateRect();
+    const onLayout = () => updateRect();
+    window.addEventListener("scroll", onLayout, { passive: true });
+    window.addEventListener("resize", onLayout, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onLayout);
+      window.removeEventListener("resize", onLayout);
+    };
+  }, [forceTooltip, updateRect]);
+
   const type = getMoleculeType(drug);
   const dotPx = moleculeDotSize(type);
   const hitPx = Math.max(dotPx, MIN_HIT);
@@ -174,22 +220,137 @@ function DrugChip({
         onMouseLeave={() => setHovered(false)}
         onFocus={handleMouseEnter}
         onBlur={() => { if (!pinned) setHovered(false); }}
-        className="inline-flex items-center justify-center cursor-help shrink-0"
+        className="relative inline-flex items-center justify-center cursor-help shrink-0"
         style={{ width: hitPx, height: hitPx }}
         aria-label={`${drug.name}: ${outcomeLabel(drug.outcome)}`}
       >
+        {spotlightPulse && (
+          <span
+            className="absolute animate-ping rounded-full"
+            style={{
+              width: dotPx + 4,
+              height: dotPx + 4,
+              backgroundColor: outcomeColor(drug.outcome),
+              opacity: 0.4,
+            }}
+          />
+        )}
         <span
           className="block transition-opacity duration-200"
           style={{
             width: dotPx,
             height: dotPx,
             backgroundColor: outcomeColor(drug.outcome),
-            opacity: dimmed ? 0.15 : 1,
+            opacity: dimmed ? dimOpacity : 1,
             ...moleculeShapeStyle(type),
           }}
         />
       </button>
-      <DrugTooltip drug={drug} anchorRect={rect} visible={hovered || pinned} pinned={pinned} id={tooltipId} />
+      <DrugTooltip
+        drug={drug}
+        anchorRect={rect}
+        visible={forceTooltip || hovered || pinned}
+        pinned={forceTooltip || pinned}
+        id={tooltipId}
+        nudge={tooltipNudge}
+        onClose={() => setPinned(false)}
+      />
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Drug name chip (name-mode with tooltip support for spotlight)      */
+/* ------------------------------------------------------------------ */
+
+function DrugNameChip({
+  drug,
+  dimmed,
+  dimOpacity = 0.15,
+  forceTooltip,
+  tooltipNudge,
+  spotlightPulse,
+}: {
+  drug: Drug;
+  dimmed: boolean;
+  dimOpacity?: number;
+  forceTooltip?: boolean;
+  tooltipNudge?: { x?: number; y?: number };
+  spotlightPulse?: boolean;
+}) {
+  const ref = useRef<HTMLButtonElement>(null);
+  const [hovered, setHovered] = useState(false);
+  const [pinned, setPinned] = useState(false);
+  const [rect, setRect] = useState<DOMRect | null>(null);
+
+  const updateRect = useCallback(() => {
+    if (ref.current) setRect(ref.current.getBoundingClientRect());
+  }, []);
+
+  const tooltipId = `name-tip-${drug.id}`;
+
+  useEffect(() => {
+    if (!pinned) return;
+    const dismiss = (e: Event) => {
+      const target = e.target as Node;
+      if (ref.current?.contains(target)) return;
+      const tip = document.getElementById(tooltipId);
+      if (tip?.contains(target)) return;
+      setPinned(false);
+    };
+    document.addEventListener("pointerdown", dismiss);
+    return () => document.removeEventListener("pointerdown", dismiss);
+  }, [pinned, tooltipId]);
+
+  useEffect(() => {
+    if (!forceTooltip) return;
+    updateRect();
+    const onLayout = () => updateRect();
+    window.addEventListener("scroll", onLayout, { passive: true });
+    window.addEventListener("resize", onLayout, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onLayout);
+      window.removeEventListener("resize", onLayout);
+    };
+  }, [forceTooltip, updateRect]);
+
+  return (
+    <>
+      <button
+        ref={ref}
+        type="button"
+        onClick={(e) => { e.stopPropagation(); if (!forceTooltip) { updateRect(); setPinned((p) => !p); } }}
+        onMouseEnter={() => { updateRect(); setHovered(true); }}
+        onMouseLeave={() => setHovered(false)}
+        className="inline-flex items-center gap-1 text-[10px] leading-tight whitespace-nowrap transition-opacity duration-200 cursor-help"
+        style={{
+          color: outcomeColor(drug.outcome),
+          opacity: dimmed ? dimOpacity : 1,
+        }}
+      >
+        {spotlightPulse && (
+          <span className="relative inline-flex h-1.5 w-1.5 shrink-0">
+            <span
+              className="absolute inline-flex h-full w-full rounded-full animate-ping"
+              style={{ backgroundColor: outcomeColor(drug.outcome), opacity: 0.5 }}
+            />
+            <span
+              className="relative inline-flex h-1.5 w-1.5 rounded-full"
+              style={{ backgroundColor: outcomeColor(drug.outcome) }}
+            />
+          </span>
+        )}
+        {drug.name}
+      </button>
+      <DrugTooltip
+        drug={drug}
+        anchorRect={rect}
+        visible={forceTooltip || hovered || pinned}
+        pinned={forceTooltip || pinned}
+        id={tooltipId}
+        nudge={tooltipNudge}
+        onClose={() => setPinned(false)}
+      />
     </>
   );
 }
@@ -299,26 +460,31 @@ const viewTabs: { id: ViewMode; label: string }[] = [
 function ViewTabs({
   mode,
   onChange,
+  children,
 }: {
   mode: ViewMode;
   onChange: (m: ViewMode) => void;
+  children?: React.ReactNode;
 }) {
   return (
-    <div className="flex gap-6 mb-6 border-b border-white/10">
-      {viewTabs.map((tab) => (
-        <button
-          key={tab.id}
-          type="button"
-          onClick={() => onChange(tab.id)}
-          className={`pb-2 text-sm transition-colors duration-200 cursor-pointer border-b-2 ${
-            mode === tab.id
-              ? "text-white border-white"
-              : "text-gray-500 hover:text-gray-300 border-transparent"
-          }`}
-        >
-          {tab.label}
-        </button>
-      ))}
+    <div className="flex items-end justify-between gap-4 mb-6 border-b border-white/10">
+      <div className="flex gap-6">
+        {viewTabs.map((tab) => (
+          <button
+            key={tab.id}
+            type="button"
+            onClick={() => onChange(tab.id)}
+            className={`pb-2 text-sm transition-colors duration-200 cursor-pointer border-b-2 ${
+              mode === tab.id
+                ? "text-white border-white"
+                : "text-gray-500 hover:text-gray-300 border-transparent"
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+      {children && <div className="pb-2.5">{children}</div>}
     </div>
   );
 }
@@ -434,18 +600,18 @@ function CategoryAccordion({
   const dimmed = selectedCategory !== null && selectedCategory !== category.id;
 
   return (
-    <div className={`border border-white/5 rounded-lg mb-2 transition-opacity duration-200 ${dimmed ? "opacity-20" : ""}`}>
+    <div className={`border-b border-white/5 transition-opacity duration-200 ${dimmed ? "opacity-20" : ""}`}>
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="w-full flex items-center justify-between px-4 py-3 text-left cursor-pointer hover:bg-white/[0.02] transition-colors rounded-lg"
+        className="w-full flex items-center justify-between py-2.5 text-left cursor-pointer hover:bg-white/[0.02] transition-colors"
       >
         <div className="flex items-center gap-2">
           <span className="text-sm text-gray-200 font-medium">{category.shortLabel}</span>
           <span className="text-xs text-gray-500">{categoryDrugs.length}</span>
         </div>
         <ChevronDown
-          size={16}
+          size={14}
           className={`text-gray-500 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
         />
       </button>
@@ -458,15 +624,15 @@ function CategoryAccordion({
             transition={{ duration: 0.2 }}
             className="overflow-hidden"
           >
-            <div className="px-2 pb-2">
+            <div className="pb-2">
               {phaseColumns.map((phase) => {
                 const phaseDrugs = categoryDrugs.filter(
                   (d) => phaseToColumn(d.phase) === phase.id,
                 );
                 if (phaseDrugs.length === 0) return null;
                 return (
-                  <div key={phase.id} className="mb-2 last:mb-0">
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wider px-3 py-1">
+                  <div key={phase.id} className="mb-1 last:mb-0">
+                    <p className="text-[10px] text-gray-500 uppercase tracking-wider px-1 py-0.5">
                       {phase.label}
                     </p>
                     {phaseDrugs.map((drug) => (
@@ -564,7 +730,7 @@ function ScaleDot({
         }}
         aria-label={`${drug.name}: ${outcomeLabel(drug.outcome)}, ${getDrugMW(drug).toLocaleString()} Da`}
       />
-      <DrugTooltip drug={drug} anchorRect={rect} visible={hovered || pinned} pinned={pinned} id={tooltipId} />
+      <DrugTooltip drug={drug} anchorRect={rect} visible={hovered || pinned} pinned={pinned} id={tooltipId} onClose={() => setPinned(false)} />
     </>
   );
 }
@@ -665,15 +831,40 @@ function MoleculeScalePlot({ selectedCategory }: { selectedCategory: string | nu
 /*  Grid table                                                         */
 /* ------------------------------------------------------------------ */
 
+// Tooltip nudges for spotlight mode: prevent overlap when multiple
+// iron chelators share the same grid cell (e.g. 27 + 30 in AD × Ph2).
+const spotlightNudge: Record<number, { x?: number; y?: number }> = {
+  26: { x: 165, y: 31 },    // Deferiprone PD
+  27: { x: -142, y: -183 }, // Deferiprone AD
+  28: { x: -132, y: 29 },   // Deferiprone HD
+  30: { x: 190, y: -110 },  // Deferoxamine AD
+};
+
+function useIsMobile() {
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    setMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+  return mobile;
+}
+
 function DrugGrid({
   selectedCategory,
   grid,
   gridMode,
+  spotlight,
 }: {
   selectedCategory: string | null;
   grid: Map<string, Drug[]>;
   gridMode: GridMode;
+  spotlight?: boolean;
 }) {
+  const isMobile = useIsMobile();
+
   return (
     <div className="overflow-x-auto -mx-6 sm:-mx-8 px-6 sm:px-8">
       <table className="w-full border-collapse min-w-[480px]">
@@ -705,28 +896,59 @@ function DrugGrid({
                     <td key={col.id} className="py-3 px-2 align-top">
                       {gridMode === "names" ? (
                         <div className="flex flex-wrap items-end gap-x-1.5 gap-y-0.5">
-                          {cellDrugs.map((drug) => (
-                            <span
-                              key={drug.id}
-                              className="text-[10px] leading-tight whitespace-nowrap transition-opacity duration-200"
-                              style={{
-                                color: outcomeColor(drug.outcome),
-                                opacity: selectedCategory !== null && drug.category !== selectedCategory ? 0.15 : 1,
-                              }}
-                            >
-                              {drug.name}
-                            </span>
-                          ))}
+                          {cellDrugs.map((drug) => {
+                            const isIron = drug.category === "iron-chelator";
+                            const dimmed = spotlight
+                              ? !isIron
+                              : (selectedCategory !== null && drug.category !== selectedCategory);
+
+                            if (spotlight && isIron) {
+                              return (
+                                <DrugNameChip
+                                  key={drug.id}
+                                  drug={drug}
+                                  dimmed={false}
+                                  forceTooltip={!isMobile}
+                                  tooltipNudge={!isMobile ? spotlightNudge[drug.id] : undefined}
+                                  spotlightPulse={isMobile}
+                                />
+                              );
+                            }
+
+                            return (
+                              <span
+                                key={drug.id}
+                                className="text-[10px] leading-tight whitespace-nowrap transition-opacity duration-200"
+                                style={{
+                                  color: outcomeColor(drug.outcome),
+                                  opacity: dimmed ? 0.08 : 1,
+                                }}
+                              >
+                                {drug.name}
+                              </span>
+                            );
+                          })}
                         </div>
                       ) : (
                         <div className="flex flex-wrap items-center gap-0.5">
-                          {cellDrugs.map((drug) => (
-                            <DrugChip
-                              key={drug.id}
-                              drug={drug}
-                              dimmed={selectedCategory !== null && drug.category !== selectedCategory}
-                            />
-                          ))}
+                          {cellDrugs.map((drug) => {
+                            const isIron = drug.category === "iron-chelator";
+                            const dimmed = spotlight
+                              ? !isIron
+                              : (selectedCategory !== null && drug.category !== selectedCategory);
+                            const desktopForce = spotlight && isIron && !isMobile;
+                            return (
+                              <DrugChip
+                                key={drug.id}
+                                drug={drug}
+                                dimmed={dimmed}
+                                dimOpacity={spotlight ? 0.08 : 0.15}
+                                forceTooltip={desktopForce}
+                                tooltipNudge={desktopForce ? spotlightNudge[drug.id] : undefined}
+                                spotlightPulse={spotlight && isIron && isMobile}
+                              />
+                            );
+                          })}
                         </div>
                       )}
                     </td>
@@ -745,20 +967,12 @@ function DrugGrid({
 /*  Main DrugBrowser                                                   */
 /* ------------------------------------------------------------------ */
 
-function GridLegends({ viewMode, gridMode }: { viewMode: ViewMode; gridMode: GridMode }) {
-  return (
-    <div className="mt-6 space-y-2">
-      {viewMode === "grid" && gridMode === "dots" && <SizeLegend />}
-      <OutcomeLegend />
-    </div>
-  );
-}
-
 export function DrugBrowser() {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>("iron");
-  const [viewMode, setViewMode] = useState<ViewMode>("chart");
-  const [gridMode, setGridMode] = useState<GridMode>("dots");
+  const [selectedCategory, setSelectedCategory] = useState<string | null>("iron-chelator");
+  const [viewMode, setViewMode] = useState<ViewMode>("grid");
+  const [gridMode, setGridMode] = useState<GridMode>("names");
   const [mobileExpanded, setMobileExpanded] = useState(false);
+  const [spotlight, setSpotlight] = useState(true);
 
   // Build lookup: disease × phaseColumn → Drug[]
   const grid = useMemo(() => {
@@ -775,33 +989,59 @@ export function DrugBrowser() {
 
   return (
     <div>
-      <ViewTabs mode={viewMode} onChange={setViewMode} />
+      <div
+        className="transition-opacity duration-300"
+        style={spotlight ? { opacity: 0.3, pointerEvents: "none" } : undefined}
+      >
+        <ViewTabs mode={viewMode} onChange={setViewMode}>
+          <OutcomeLegend />
+        </ViewTabs>
+      </div>
 
       <div className="relative">
         <div
           className={`overflow-hidden transition-[max-height] duration-500 md:max-h-none ${
-            mobileExpanded ? "" : "max-h-[280px]"
+            mobileExpanded || spotlight ? "" : "max-h-[280px]"
           }`}
         >
-          {viewMode === "grid" && (
-            <GridModeToggle mode={gridMode} onChange={setGridMode} />
-          )}
-          {viewMode !== "list" && (
-            <CategoryPills selected={selectedCategory} onSelect={setSelectedCategory} />
-          )}
+          <div
+            className="transition-opacity duration-300"
+            style={spotlight ? { opacity: 0.3, pointerEvents: "none" } : undefined}
+          >
+            {viewMode === "grid" && (
+              <GridModeToggle mode={gridMode} onChange={setGridMode} />
+            )}
+            {viewMode !== "list" && (
+              <CategoryPills selected={selectedCategory} onSelect={setSelectedCategory} />
+            )}
+          </div>
           {viewMode === "chart" && (
             <MoleculeScalePlot selectedCategory={selectedCategory} />
           )}
           {viewMode === "grid" && (
-            <DrugGrid selectedCategory={selectedCategory} grid={grid} gridMode={gridMode} />
+            <DrugGrid selectedCategory={selectedCategory} grid={grid} gridMode={gridMode} spotlight={spotlight} />
           )}
           {viewMode === "list" && (
             <DrugTreeList selectedCategory={null} />
           )}
-          <GridLegends viewMode={viewMode} gridMode={gridMode} />
+          {viewMode === "grid" && gridMode === "dots" && (
+            <div className="mt-6"><SizeLegend /></div>
+          )}
         </div>
 
-        {!mobileExpanded && (
+        {spotlight && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <button
+              type="button"
+              onClick={() => setSpotlight(false)}
+              className="pointer-events-auto px-6 py-2.5 text-sm text-gray-200 border border-white/15 hover:text-white hover:border-white/30 transition-colors cursor-pointer bg-[#1A0F0A]"
+            >
+              Explore all {drugs.length} trials
+            </button>
+          </div>
+        )}
+
+        {!mobileExpanded && !spotlight && (
           <div className="absolute inset-x-0 bottom-0 flex flex-col items-center md:hidden">
             <div className="h-20 w-full bg-gradient-to-t from-[#1A0F0A] to-transparent" />
             <button

@@ -273,7 +273,7 @@ const TEASER_BREAKPOINTS = [0, 0.50, 0.72];
 
 export function TeaserSection() {
   return (
-    <ScrollSection id="teaser" label="Teaser" className="py-0" fullWidth breakpoints={TEASER_BREAKPOINTS}>
+    <ScrollSection id="teaser" label="49 drugs, 0 clear successes" className="py-0" fullWidth breakpoints={TEASER_BREAKPOINTS}>
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">
         <StickyScrollStage height={330}>

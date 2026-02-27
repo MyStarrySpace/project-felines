@@ -146,7 +146,7 @@ export function EvidenceSection() {
   const { startTransition } = useExploreTransition();
 
   return (
-    <ScrollSection id="evidence" label="Evidence" className="py-0" fullWidth>
+    <ScrollSection id="evidence" label="One pattern, six diseases" className="py-0" fullWidth>
       {/* Desktop: sticky portion */}
       <div className="hidden md:block">
         <StickyScrollStage height={200}>

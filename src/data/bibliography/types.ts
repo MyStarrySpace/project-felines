@@ -24,7 +24,8 @@ export type TopicTag =
   | "hsv"
   | "biomarkers"
   | "imaging"
-  | "genetics";
+  | "genetics"
+  | "toxoplasma";
 
 export type VerificationStatus = "verified" | "unverified" | "unverifiable";
 

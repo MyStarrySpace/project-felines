@@ -1120,18 +1120,28 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1186/s12868-019-0507-7",
     pmid: "31142282",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31142282/",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6542065/#:~:text=average%20iron%20concentration%20of%20oligodendrocytes%20is%20fivefold%20higher",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
         citationId: "reinert-2019-c1",
         sourceId: "reinert-2019",
         quote:
-          "Calibrated synchrotron X-ray fluorescence measurements of intracellular iron concentrations",
+          "The average intracellular iron concentration is (1.29±14)mM for astrocytes, (1.76±27)mM for microglia and (3.05±16)mM for oligodendrocytes",
         context:
           "OLs 3.05 mM, microglia 1.76 mM, astrocytes 1.29 mM, neurons 0.57 mM",
         projectRef:
           "Iron cascades: Triple vulnerability (mechanism step 1); iron concentration table",
+      },
+      {
+        citationId: "reinert-2019-c2",
+        sourceId: "reinert-2019",
+        quote:
+          "The average iron concentration of oligodendrocytes is fivefold higher than that of neurons (p<0.001)",
+        context:
+          "5× ratio between OL and neuron iron, supporting 5.4× calculated from 3.05/0.57",
+        projectRef:
+          "Reframe section: OL vs neuron iron ratio (5.4×)",
       },
     ],
     verificationStatus: "verified",

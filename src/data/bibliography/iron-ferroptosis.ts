@@ -358,4 +358,112 @@ export const ironFerrOptosisSources: Source[] = [
     ],
     verificationStatus: "verified",
   },
+  {
+    id: "patel-2002-jneurosci",
+    title:
+      "Ceruloplasmin regulates iron levels in the CNS and prevents free radical injury",
+    authors: "Patel BN, Dunn RJ, Jeong SY, et al.",
+    journal: "The Journal of Neuroscience",
+    year: 2002,
+    doi: "10.1523/JNEUROSCI.22-15-06578.2002",
+    pmid: "12151537",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6758125/#:~:text=oxidizing%20the%20ferrous%20%5BFe%20(II)%5D%20form%20of%20iron%20to%20the%20ferric",
+    tags: ["iron"],
+    citations: [
+      {
+        citationId: "patel-2002-jneurosci-c1",
+        sourceId: "patel-2002-jneurosci",
+        quote:
+          "By oxidizing the ferrous [Fe (II)] form of iron to the ferric [Fe (III)] form, Cp promotes iron loading onto transferrin",
+        context:
+          "Ceruloplasmin ferroxidase activity converts Fe2+ to Fe3+ for safe export",
+        projectRef:
+          "Iron alternatives section: Ceruloplasmin description",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "luck-2012-currtopics",
+    title: "Transferrin-mediated cellular iron delivery",
+    authors: "Luck AN, Mason AB.",
+    journal: "Current Topics in Membranes",
+    year: 2012,
+    doi: "10.1016/B978-0-12-394390-3.00001-X",
+    pmid: "23046645",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4479283/#:~:text=Each%20lobe%20(N-%20and%20C-lobe)%20of%20hTF%20forms%20a%20deep%20cleft",
+    tags: ["iron"],
+    citations: [
+      {
+        citationId: "luck-2012-currtopics-c1",
+        sourceId: "luck-2012-currtopics",
+        quote:
+          "Each lobe (N- and C-lobe) of hTF forms a deep cleft which binds a single Fe3+",
+        context: "Transferrin binds two Fe3+ ions, one per lobe",
+        projectRef:
+          "Iron alternatives section: Transferrin description",
+      },
+      {
+        citationId: "luck-2012-currtopics-c2",
+        sourceId: "luck-2012-currtopics",
+        quote:
+          "Fe2+ catalyzed Fenton reactions...reduction of O2 by Fe2+ generates superoxide, which can ultimately lead to the formation of the hydroxyl radical, a powerful oxidant known to damage DNA, proteins and lipids",
+        context:
+          "When transferrin is saturated, unbound iron drives Fenton chemistry",
+        projectRef:
+          "Iron alternatives section: Transferrin description (Fenton danger)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "nemeth-2004-science",
+    title:
+      "Hepcidin regulates cellular iron efflux by binding to ferroportin and inducing its internalization",
+    authors: "Nemeth E, Tuttle MS, Powelson J, et al.",
+    journal: "Science",
+    year: 2004,
+    doi: "10.1126/science.1104742",
+    pmid: "15514116",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15514116/#:~:text=hepcidin%20bound%20to%20ferroportin%20in%20tissue%20culture%20cells",
+    tags: ["iron"],
+    citations: [
+      {
+        citationId: "nemeth-2004-science-c1",
+        sourceId: "nemeth-2004-science",
+        quote:
+          "hepcidin bound to ferroportin in tissue culture cells. After binding, ferroportin was internalized and degraded, leading to decreased export of cellular iron",
+        context:
+          "Hepcidin degrades ferroportin to control iron flow",
+        projectRef:
+          "Iron alternatives section: Hepcidin description",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "you-2022-celldeath",
+    title:
+      "Astrocyte-derived hepcidin controls iron traffic at the blood-brain-barrier via regulating ferroportin 1 of microvascular endothelial cells",
+    authors: "You L, Yu PP, Dong T, et al.",
+    journal: "Cell Death & Disease",
+    year: 2022,
+    doi: "10.1038/s41419-022-05043-w",
+    pmid: "35915080",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9343463/#:~:text=FPN1%20of%20BMVECs%20is%20a%20gateway%20for%20iron%20transport",
+    tags: ["iron", "astrocyte", "vascular"],
+    citations: [
+      {
+        citationId: "you-2022-celldeath-c1",
+        sourceId: "you-2022-celldeath",
+        quote:
+          "FPN1 of BMVECs is a gateway for iron transport into the brain from circulation",
+        context:
+          "Astrocyte hepcidin guards the BBB iron gate",
+        projectRef:
+          "Iron alternatives section: Hepcidin description (BBB)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
 ];

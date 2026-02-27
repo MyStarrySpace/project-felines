@@ -6,7 +6,7 @@ import { DrugBrowser } from "@/components/landing/drug-browser";
 
 export function DrugBrowserSection() {
   return (
-    <ScrollSection id="trials" label="Drug trials" className="py-24 sm:py-32">
+    <ScrollSection id="trials" label="Chelation backfired" className="py-24 sm:py-32">
       <ScrollAnimate enterFrom="bottom">
         <p className="text-sm text-teal-400 tracking-wide uppercase mb-3">
           Drug trials
@@ -16,7 +16,7 @@ export function DrugBrowserSection() {
         </h2>
         <p className="text-gray-400 text-lg leading-relaxed mb-12 max-w-[52ch]">
           Antibodies, gene therapies, kinase inhibitors, iron chelators.
-          61 drugs across six diseases. Deferiprone reduced brain iron
+          72 drugs across six diseases. Deferiprone reduced brain iron
           exactly as designed, and patients got worse. The problem
           isn&rsquo;t too much iron. It&rsquo;s iron in the wrong places.
         </p>

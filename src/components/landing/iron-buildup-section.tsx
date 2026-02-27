@@ -207,7 +207,7 @@ function IronBuildupFlowing() {
 
 export function IronBuildupSection() {
   return (
-    <ScrollSection id="iron" label="Iron" className="py-0" fullWidth>
+    <ScrollSection id="iron" label="Iron triggers ferroptosis" className="py-0" fullWidth>
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">
         <StickyScrollStage height={300}>

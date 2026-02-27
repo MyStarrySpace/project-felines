@@ -7,17 +7,19 @@ import { IronBuildupSection } from "@/components/landing/iron-buildup-section";
 import { CellVulnerabilitySection } from "@/components/landing/cell-vulnerability-section";
 import { DrugBrowserSection } from "@/components/landing/drug-browser-section";
 import { IronAlternativesSection } from "@/components/landing/iron-alternatives-section";
-import { ReframeSection } from "@/components/landing/reframe-section";
-import { ParadoxSection } from "@/components/landing/paradox-section";
+import { LecanemabCritiqueSection } from "@/components/landing/lecanemab-critique-section";
+import { FelineIntroSection } from "@/components/landing/feline-intro-section";
+import { TheoriesMappingSection } from "@/components/landing/theories-mapping-section";
 import { GwasSection } from "@/components/landing/gwas-section";
 import { EvidenceSection } from "@/components/landing/evidence-section";
-import { SummarySection } from "@/components/landing/summary-section";
+import { ProgressionSection } from "@/components/landing/progression-section";
 import { SectionIndicator } from "@/components/ui/section-indicator";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { ScrollProvider, useScrollContext } from "@/components/providers/scroll-context";
 import { TransitionProvider, useExploreTransition } from "@/components/providers/transition-context";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
+const chevronYBuffer = 0.15; // portion of viewport height at top/bottom reserved for click-to-advance chevrons
 
 function PresentationContent({ children }: { children: ReactNode }) {
   const { phase, completeExpand } = useExploreTransition();
@@ -115,8 +117,8 @@ function PresentationContent({ children }: { children: ReactNode }) {
         return;
       }
       const y = e.clientY / window.innerHeight;
-      if (y < 0.25) el.style.cursor = chevronUp;
-      else if (y > 0.75) el.style.cursor = chevronDown;
+      if (y < chevronYBuffer) el.style.cursor = chevronUp;
+      else if (y > 1 - chevronYBuffer) el.style.cursor = chevronDown;
       else el.style.cursor = "";
     };
 
@@ -128,11 +130,11 @@ function PresentationContent({ children }: { children: ReactNode }) {
       const current = Math.round(window.scrollY);
       const threshold = 10; // px tolerance to avoid getting stuck
 
-      if (y < 0.25) {
+      if (y < chevronYBuffer) {
         // Find the highest breakpoint below current position
         const target = positions.filter((p) => p < current - threshold).pop();
         if (target !== undefined) smoothScrollTo(target);
-      } else if (y > 0.75) {
+      } else if (y > 1 - chevronYBuffer) {
         // Find the lowest breakpoint above current position
         const target = positions.find((p) => p > current + threshold);
         if (target !== undefined) smoothScrollTo(target);
@@ -213,11 +215,12 @@ function PresentationContent({ children }: { children: ReactNode }) {
         <CellVulnerabilitySection />
         <DrugBrowserSection />
         <IronAlternativesSection />
-        <ReframeSection />
-        <ParadoxSection />
+        <LecanemabCritiqueSection />
+        <FelineIntroSection />
+        <TheoriesMappingSection />
         <GwasSection />
         <EvidenceSection />
-        <SummarySection />
+        <ProgressionSection />
 
         <SectionIndicator />
         <ScrollProgress />

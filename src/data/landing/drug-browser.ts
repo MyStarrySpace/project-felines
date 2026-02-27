@@ -1,5 +1,5 @@
 /**
- * Drug browser data — 61 drugs across 13 categories
+ * Drug browser data — 72 drugs across 17 categories
  * for the interactive drug category browser section.
  */
 
@@ -16,7 +16,8 @@ export type DrugOutcome =
   | "early"
   | "marginal"
   | "signal"
-  | "improved";
+  | "improved"
+  | "promising";
 
 export type DiseaseTarget =
   | "AD"
@@ -61,11 +62,15 @@ export const drugCategories: DrugCategory[] = [
   { id: "sod1", label: "SOD1 targeting", shortLabel: "SOD1" },
   { id: "lrrk2", label: "LRRK2 inhibitors", shortLabel: "LRRK2" },
   { id: "gba", label: "GBA modulators", shortLabel: "GBA" },
-  { id: "iron", label: "Iron chelators / modulators", shortLabel: "Iron" },
+  { id: "iron-chelator", label: "Iron chelators", shortLabel: "Chelators" },
+  { id: "iron-redist", label: "Iron redistribution", shortLabel: "Redist." },
   { id: "glp1", label: "GLP-1 agonists", shortLabel: "GLP-1" },
   { id: "anti-inflammatory", label: "Anti-inflammatory / immune", shortLabel: "Immune" },
   { id: "antiviral", label: "Antiviral", shortLabel: "Antiviral" },
   { id: "antioxidant", label: "Antioxidant / neuroprotective", shortLabel: "Neuroprot." },
+  { id: "gamma-secretase", label: "Gamma-secretase inhibitors", shortLabel: "\u03B3-Secretase" },
+  { id: "cholinesterase", label: "Cholinesterase inhibitors", shortLabel: "AChEI" },
+  { id: "nmda", label: "NMDA antagonists", shortLabel: "NMDA" },
 ];
 
 export const drugs: Drug[] = [
@@ -231,37 +236,37 @@ export const drugs: Drug[] = [
     attribution: "Miller et al., NEJM 2022", // PMID: 36129998
   },
 
-  // 7. Iron chelators / modulators (multi-disease)
+  // 7. Iron chelators (multi-disease)
   {
-    id: 26, name: "Deferiprone", company: "ApoPharma", category: "iron", disease: "PD", phase: "3", outcome: "worsened",
+    id: 26, name: "Deferiprone", company: "ApoPharma", category: "iron-chelator", disease: "PD", phase: "3", outcome: "worsened",
     note: "FAIRPARK-II: motor worsening",
     detail: "FAIRPARK-II: 372 patients, 36 weeks. Substantia nigra iron fell but MDS-UPDRS worsened (+15.6 vs +6.3 placebo). 22% needed rescue therapy vs 2.7% placebo. The chelator removed iron the brain still needs.",
     attribution: "Devos et al., NEJM 2022",
     sourceId: "devos-2022-nejm",
   },
   {
-    id: 27, name: "Deferiprone", company: "Various", category: "iron", disease: "AD", phase: "2", outcome: "worsened",
+    id: 27, name: "Deferiprone", company: "Various", category: "iron-chelator", disease: "AD", phase: "2", outcome: "worsened",
     note: "3D trial: cognitive worsening; Cohen\u2019s d = \u22120.704",
     detail: "3D trial: 171 patients, 12 months. Hippocampal iron fell but cognition worsened (Cohen\u2019s d = \u22120.70 per-protocol). Chelation removes iron the brain needs for myelination and ferroxidase activity.",
     attribution: "Ayton et al., JAMA Neurol 2025",
     sourceId: "ayton-2025-jamaneurol",
   },
   {
-    id: 28, name: "Deferiprone", company: "Academic", category: "iron", disease: "HD", phase: "1", outcome: "early",
+    id: 28, name: "Deferiprone", company: "Academic", category: "iron-chelator", disease: "HD", phase: "1", outcome: "early",
     note: "Preclinical only; mouse motor improvement",
     detail: "No human trial. In R6/2 HD mice, 10-day oral deferiprone removed mitochondrial iron, reduced lipid peroxidation, and improved motor endurance. HD striatum shows genuine mitochondrial iron accumulation from mutant HTT disrupting frataxin.",
     attribution: "Agrawal et al., Free Radic Biol Med 2018",
     sourceId: "agrawal-2018-frbm",
   },
   {
-    id: 29, name: "ATH434", company: "Alterity", category: "iron", disease: "MSA", phase: "2", outcome: "signal",
+    id: 29, name: "ATH434", company: "Alterity", category: "iron-redist", disease: "MSA", phase: "2", outcome: "signal",
     note: "Iron redistribution (not chelation)",
     detail: "Redistributes iron rather than chelating it out. Slower brain atrophy, reduced basal ganglia iron, stable NfL. 43% stable and 30% improved on clinical scales.",
     attribution: "Alterity Therapeutics, 2025",
     sourceId: "ath434-2025-msa",
   },
   {
-    id: 30, name: "Deferoxamine", company: "Various", category: "iron", disease: "AD", phase: "2", outcome: "marginal",
+    id: 30, name: "Deferoxamine", company: "Various", category: "iron-chelator", disease: "AD", phase: "2", outcome: "marginal",
     note: "Crapper McLachlan 1991; small study",
     detail: "48 AD patients, IM deferoxamine twice daily for 24 months. Rate of cognitive decline halved vs no-treatment group (p = 0.03). Small sample, no replication in 35 years.",
     attribution: "Crapper McLachlan et al., Lancet 1991",
@@ -473,6 +478,86 @@ export const drugs: Drug[] = [
     detail: "Phase 2 (Elia 2016): 34 patients, 54 weeks. 87% responders on TUDCA vs 43% placebo (p=0.02). Phase 3 TUDCA-ALS: 336 patients across 26 European centers, 18 months. Failed to meet primary ALSFRS-R endpoint. No difference on survival or neurofilament biomarkers.",
     attribution: "Elia et al., Eur J Neurol 2016", // PMID: 25664595 (Phase 2; Phase 3 results not yet published in journal)
   },
+
+  // 18. Iron redistribution (natural proteins and chaperones)
+  {
+    id: 62, name: "Lactoferrin", company: "Academic", category: "iron-redist", disease: "AD", phase: "2", outcome: "promising",
+    note: "AD pilot: cognitive improvement; ~$15/month",
+    detail: "Pilot in AD patients showed enhanced cognitive function on MMSE and ADAS-COG 11. Crosses BBB via receptor-mediated transport. Available as a supplement for ~$15/month. No Phase 2 RCT funded.",
+    attribution: "Mohamed et al., Biomed Pharmacother 2019",
+    sourceId: "mohamed-2019-biomed-pharmacother",
+  },
+  {
+    id: 63, name: "Ceruloplasmin", company: "Kedrion", category: "iron-redist", disease: "multi", phase: "1", outcome: "promising",
+    note: "FDA Orphan Drug; ferroxidase for safe iron export",
+    detail: "Converts Fe\u00B2\u207A to Fe\u00B3\u207A so ferroportin can export iron safely. FDA Orphan Drug Designation (2025) for aceruloplasminemia. In mice, treated animals showed amelioration of motor incoordination and reduced brain iron deposition. No proposal for AD or PD.",
+    attribution: "Zanardi et al., EMBO Mol Med 2018",
+    sourceId: "zanardi-2018-embo",
+  },
+  {
+    id: 64, name: "Transferrin (PST-611)", company: "PulseSight", category: "iron-redist", disease: "multi", phase: "1", outcome: "early",
+    note: "Gene therapy expressing transferrin; Phase 1 in dry AMD",
+    detail: "PST-611 is a first-in-class non-viral gene therapy expressing human transferrin, the body\u2019s iron courier. Phase 1 in dry AMD. No trial for neurodegeneration.",
+    attribution: "PulseSight Therapeutics, 2025",
+    sourceId: "pulsesight-2025-pst611",
+  },
+  {
+    id: 65, name: "Ferritin nanocages", company: "Academic", category: "iron-redist", disease: "multi", phase: "1", outcome: "early",
+    note: "Preclinical; sequesters up to 4,500 iron atoms",
+    detail: "24-subunit protein shell storing up to 4,500 iron atoms. Crosses BBB via TfR1 clathrin-coated pit formation. In preclinical development as drug delivery vehicles. No clinical trial for direct iron management.",
+    attribution: "Wen et al., Int J Nanomedicine 2026",
+    sourceId: "wen-2026-ijn-ferritin",
+  },
+  {
+    id: 66, name: "Rusfertide", company: "Protagonist/Takeda", category: "iron-redist", disease: "multi", phase: "1", outcome: "promising",
+    note: "Hepcidin mimic; NDA submitted for polycythemia vera",
+    detail: "First-in-class hepcidin mimic. NDA submitted for polycythemia vera. Hepcidin is the master switch for systemic iron; astrocyte-derived hepcidin guards the blood-brain barrier. Never tested for neurodegeneration.",
+    attribution: "Takeda, 2026",
+    sourceId: "takeda-2026-rusfertide-nda",
+  },
+
+  // 19. Gamma-secretase inhibitors (AD)
+  {
+    id: 67, name: "Semagacestat", company: "Eli Lilly", category: "gamma-secretase", disease: "AD", phase: "3", outcome: "worsened",
+    note: "Cognitive worsening + skin cancer; halted by DSMB",
+    detail: "Phase 3: 1,537 patients with mild-to-moderate AD. DSMB halted the trial for futility and safety. Cognition worsened on ADAS-Cog vs placebo. Increased risk of skin cancer and infections. Blocking \u03B3-secretase also blocked Notch signaling.",
+    attribution: "Doody et al., NEJM 2013", // PMID: 24024838
+  },
+  {
+    id: 68, name: "Avagacestat", company: "Bristol-Myers Squibb", category: "gamma-secretase", disease: "AD", phase: "2", outcome: "worsened",
+    note: "Cognitive worsening at higher doses; skin cancers",
+    detail: "Phase 2: 209 patients with mild-to-moderate AD and 263 prodromal AD patients. Higher doses worsened cognition and produced skin cancers. Notch-related toxicity similar to semagacestat. BMS terminated development.",
+    attribution: "Coric et al., JAMA Neurol 2015", // PMID: 25799451 (prodromal trial); Coric et al., Arch Neurol 2012 (mild-moderate)
+  },
+
+  // 20. Cholinesterase inhibitors (AD)
+  {
+    id: 69, name: "Donepezil", company: "Eisai/Pfizer", category: "cholinesterase", disease: "AD", phase: "approved", outcome: "modest",
+    note: "Approved 1996; symptomatic only; no disease modification",
+    detail: "Phase 3: 473 patients with mild-to-moderate AD. ADAS-Cog improved 2.5\u20133.1 points vs placebo at 24 weeks. Approved in 1996. After 30 years of use, no evidence of disease modification. GI side effects in ~20%.",
+    attribution: "Rogers et al., Neurology 1998", // PMID: 9443460
+  },
+  {
+    id: 70, name: "Rivastigmine", company: "Novartis", category: "cholinesterase", disease: "AD", phase: "approved", outcome: "modest",
+    note: "Approved 2000; dual AChE/BuChE; symptomatic only",
+    detail: "Phase 3: 725 patients with mild-to-moderate AD, 26 weeks. ADAS-Cog improved 3.78 points vs placebo at higher doses. Dual acetylcholinesterase and butyrylcholinesterase inhibitor. Approved 2000. Transdermal patch reduced GI side effects. No disease modification.",
+    attribution: "Corey-Bloom et al., Int J Geriatr Psychopharmacol 1998", // PMID: 12578757
+  },
+
+  {
+    id: 72, name: "Galantamine", company: "Janssen", category: "cholinesterase", disease: "AD", phase: "approved", outcome: "modest",
+    note: "Approved 2001; dual AChE + nicotinic modulator; symptomatic only",
+    detail: "Five Phase 3 trials totaling 3,000+ patients with mild-to-moderate AD. ADAS-Cog improved ~4 points vs placebo at 6 months. Dual mechanism: AChE inhibition plus allosteric nicotinic receptor modulation. Approved 2001. No disease modification.",
+    attribution: "Raskind et al., Neurology 2000", // PMID: 10971048
+  },
+
+  // 21. NMDA antagonists (AD)
+  {
+    id: 71, name: "Memantine", company: "Forest/Allergan", category: "nmda", disease: "AD", phase: "approved", outcome: "modest",
+    note: "Approved 2003; moderate-severe AD; no disease modification",
+    detail: "Phase 3: 252 patients with moderate-to-severe AD, 28 weeks. SIB improved 5.7 points vs placebo (p<0.001). ADCS-ADL improved 3.4 points (p=0.02). Approved 2003 for moderate-to-severe AD. Does not slow progression.",
+    attribution: "Reisberg et al., NEJM 2003", // PMID: 12672860
+  },
 ];
 
 /** Map outcome to display color */
@@ -495,6 +580,8 @@ export function outcomeColor(outcome: DrugOutcome): string {
       return "#10B981";
     case "contested":
       return "#F59E0B";
+    case "promising":
+      return "#6d916d"; // sage
     case "ongoing":
     case "early":
       return "#6B7280";
@@ -519,6 +606,7 @@ export function outcomeLabel(outcome: DrugOutcome): string {
     case "marginal": return "Marginal";
     case "signal": return "Signal";
     case "improved": return "Improved";
+    case "promising": return "Promising";
     default: return outcome;
   }
 }
@@ -531,6 +619,7 @@ export const diseaseRows: { id: DiseaseTarget; label: string; shortLabel: string
   { id: "HD", label: "Huntington\u2019s", shortLabel: "HD" },
   { id: "PSP", label: "PSP", shortLabel: "PSP" },
   { id: "MSA", label: "MSA", shortLabel: "MSA" },
+  { id: "multi", label: "Multi-disease", shortLabel: "Multi" },
 ];
 
 /** Phase columns for the grid layout */
@@ -556,6 +645,8 @@ const moleculeTypeOverrides: Record<number, MoleculeType> = {
   41: "small",     // Votoplam — oral splicing modifier (in htt-lowering cat)
   42: "small",     // Branaplam — oral splicing modifier (in htt-lowering cat)
   51: "protein",   // Sargramostim — GM-CSF glycoprotein (in anti-inflammatory cat)
+  29: "small",     // ATH434 — small molecule chaperone (in iron-redist cat)
+  66: "peptide",   // Rusfertide — hepcidin peptide mimic (in iron-redist cat)
 };
 
 const categoryMoleculeDefaults: Record<string, MoleculeType> = {
@@ -567,11 +658,15 @@ const categoryMoleculeDefaults: Record<string, MoleculeType> = {
   "sod1": "aso",
   "lrrk2": "small",
   "gba": "small",
-  "iron": "small",
+  "iron-chelator": "small",
+  "iron-redist": "protein",
   "glp1": "peptide",
   "anti-inflammatory": "small",
   "antiviral": "small",
   "antioxidant": "small",
+  "gamma-secretase": "small",
+  "cholinesterase": "small",
+  "nmda": "small",
 };
 
 /** Approximate molecular weight in Daltons for each drug */
@@ -589,7 +684,9 @@ export const drugMW: Record<number, number> = {
   // SOD1
   25: 7000,
   // Iron chelators
-  26: 139, 27: 139, 28: 139, 29: 290, 30: 560,
+  26: 139, 27: 139, 28: 139, 30: 560,
+  // Iron redistribution
+  29: 290, 62: 80000, 63: 132000, 64: 80000, 65: 480000, 66: 2789,
   // Anti-inflammatory / immune
   31: 306, 32: 800, 33: 4114, 34: 150000, 35: 134, 49: 457, 50: 499, 51: 16000, 52: 357,
   // Antiviral
@@ -602,6 +699,12 @@ export const drugMW: Record<number, number> = {
   44: 390, 45: 378,
   // GLP-1
   46: 4187, 47: 3751, 48: 4859,
+  // Gamma-secretase inhibitors
+  67: 360, 68: 361,
+  // Cholinesterase inhibitors
+  69: 379, 70: 250, 72: 287,
+  // NMDA antagonists
+  71: 179,
 };
 
 /** Get MW for a drug, with fallback */

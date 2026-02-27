@@ -127,7 +127,7 @@ export const alternatives: IronAlternative[] = [
     size: "2.8 kDa",
     sizeMultiple: "20\u00D7",
     mechanism: "Iron flow regulator",
-    structureImage: "/images/structures/hepcidin.jpeg",
+    structureImage: "/images/proteins/2KEF-hepicidin.png",
     structureId: "2KEF",
     structureSource: "PDB",
     description: (

@@ -663,4 +663,292 @@ export const clinicalTrialsSources: Source[] = [
     ],
     verificationStatus: "verified",
   },
+  {
+    id: "alves-2023-neurology",
+    title:
+      "Accelerated Brain Volume Loss Caused by Anti-\u03B2-Amyloid Drugs: A Systematic Review and Meta-analysis",
+    authors: "Alves F, Kalinowski P, Ayton S.",
+    journal: "Neurology",
+    year: 2023,
+    doi: "10.1212/WNL.0000000000207156",
+    pmid: "36973044",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10186239/#:~:text=enlargement%20of%20ventricles%20was%20strongly%20correlated%20with",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "alves-2023-neurology-c1",
+        sourceId: "alves-2023-neurology",
+        quote:
+          "the enlargement of ventricles was strongly correlated with % ARIA (r = 0.86, p = 6.22 \u00D7 10\u207B\u2077)",
+        context:
+          "Anti-amyloid antibodies accelerate brain atrophy; ventricular enlargement correlates with ARIA",
+        location: "Results",
+        projectRef:
+          "Insight section: mAb critique (brain volume loss)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "wolters-2024-alz-dement",
+    title:
+      "Potential impact of unblinding on observed treatment effects in Alzheimer's disease trials",
+    authors: "Wolters FJ, Labrecque JA.",
+    journal: "Alzheimer's & Dementia",
+    year: 2024,
+    doi: "10.1002/alz.13690",
+    pmid: "38380503",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38380503/#:~:text=Psychological%20treatment%20effects%20due%20to%20unblinding",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "wolters-2024-alz-dement-c1",
+        sourceId: "wolters-2024-alz-dement",
+        quote:
+          "Psychological treatment effects due to unblinding may explain a substantial share of observed treatment effects in RCTs",
+        context:
+          "ARIA in 22-44% of treatment arms likely unblinded trials; placebo/nocebo effects could explain CDR-SB differences",
+        location: "Abstract",
+        projectRef:
+          "Insight section: mAb critique (unblinding)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "muir-2024-alz-dement",
+    title:
+      "Minimal clinically important difference in Alzheimer's disease: Rapid review",
+    authors: "Muir RT, Hill MD, Black SE, Smith EE.",
+    journal: "Alzheimer's & Dementia",
+    year: 2024,
+    doi: "10.1002/alz.13770",
+    pmid: "38561021",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38561021/#:~:text=Average%20treatment%20effects%20in%20recent%20trials",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "muir-2024-alz-dement-c1",
+        sourceId: "muir-2024-alz-dement",
+        quote:
+          "Average treatment effects in recent trials of anti-amyloid disease modifying monoclonal antibodies are lower than previously published MCIDs",
+        context:
+          "Lecanemab's 0.45-point CDR-SB benefit is below the 1-point MCID threshold for MCI",
+        location: "Abstract",
+        projectRef:
+          "Insight section: mAb critique (clinical significance)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "finkelstein-2017-actaneuropathol",
+    title:
+      "The novel compound PBT434 prevents iron mediated neurodegeneration and alpha-synuclein toxicity in multiple models of Parkinson's disease",
+    authors: "Finkelstein DI, Billings JL, Adlard PA, et al.",
+    journal: "Acta Neuropathologica Communications",
+    year: 2017,
+    doi: "10.1186/s40478-017-0456-2",
+    pmid: "28659169",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5490188/#:~:text=binds%20iron%20sufficiently%20to%20abolish%20pathological%20reaction",
+    tags: ["iron", "parkinsons", "clinical-trials"],
+    citations: [
+      {
+        citationId: "finkelstein-2017-actaneuropathol-c1",
+        sourceId: "finkelstein-2017-actaneuropathol",
+        quote:
+          "PBT434, an orally bioavailable 8-hydroxyquinazolin-4(3H)-one, binds iron sufficiently to abolish pathological reaction with α-synuclein, but with an affinity that is designed not to disrupt physiological iron homeostasis",
+        context:
+          "ATH434 (formerly PBT434) moderate-affinity iron binding mechanism",
+        projectRef:
+          "Iron alternatives section: ATH434 description",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "bailey-2025-jbc",
+    title:
+      "Potent antioxidant and mitochondrial-protective effects of ATH434, a moderate affinity iron chaperone",
+    authors: "Bailey DK, Nihlawi R, Bradbury MJ, et al.",
+    journal: "Journal of Biological Chemistry",
+    year: 2025,
+    doi: "10.1016/j.jbc.2025.110595",
+    pmid: "40812418",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12450639/#:~:text=functioned%20as%20a%20ferrous%20iron%20chaperone",
+    tags: ["iron", "clinical-trials"],
+    citations: [
+      {
+        citationId: "bailey-2025-jbc-c1",
+        sourceId: "bailey-2025-jbc",
+        quote:
+          "functioned as a ferrous iron chaperone in contrast to being a ferric iron chelator",
+        context:
+          "ATH434 is an iron chaperone, not a chelator",
+        projectRef:
+          "Iron alternatives section: ATH434 description (chaperone vs chelator)",
+      },
+      {
+        citationId: "bailey-2025-jbc-c2",
+        sourceId: "bailey-2025-jbc",
+        quote:
+          "supports the redistribution of excess iron, supplementing the function of the cytoplasmic and nuclear PCBP1/2 iron chaperones",
+        context:
+          "ATH434 mimics endogenous PCBP1/2 iron chaperones",
+        projectRef:
+          "Iron alternatives section: ATH434 description (PCBP1/2 mimicry)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "vandyck-2023-nejm",
+    title:
+      "Lecanemab in Early Alzheimer\u2019s Disease",
+    authors: "van Dyck CH, Swanson CJ, Aisen P, et al.",
+    journal: "New England Journal of Medicine",
+    year: 2023,
+    doi: "10.1056/NEJMoa2212948",
+    pmid: "36449413",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36449413/#:~:text=adjusted%20least-squares%20mean%20change%20from%20baseline",
+    tags: ["clinical-trials", "alzheimers", "clinical-trials"],
+    citations: [
+      {
+        citationId: "vandyck-2023-nejm-c1",
+        sourceId: "vandyck-2023-nejm",
+        quote:
+          "The adjusted least-squares mean change from baseline at 18 months was 1.21 with lecanemab and 1.66 with placebo (difference, \u22120.45; 95% CI, \u22120.67 to \u22120.23; P<0.001)",
+        context:
+          "CLARITY-AD primary endpoint: 0.45-point CDR-SB difference at 18 months",
+        projectRef:
+          "Lecanemab critique section: trial data for graph",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "espay-2024-eneuro",
+    title:
+      "Lecanemab and Donanemab as Therapies for Alzheimer\u2019s Disease: An Illustrated Perspective on the Data",
+    authors: "Espay AJ, Kepp KP, Herrup K.",
+    journal: "eNeuro",
+    year: 2024,
+    doi: "10.1523/ENEURO.0319-23.2024",
+    pmid: "38951040",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11218032/#:~:text=differences%20imperceptible%20to%20patients",
+    tags: ["clinical-trials", "alzheimers", "clinical-trials"],
+    citations: [
+      {
+        citationId: "espay-2024-eneuro-c1",
+        sourceId: "espay-2024-eneuro",
+        quote:
+          "Average changes of \u223C3 on the iADRS and \u223C0.5 on the CDR-SB represent differences imperceptible to patients, their families, and their physicians",
+        context:
+          "Clinical imperceptibility of lecanemab effect size",
+        projectRef:
+          "Lecanemab critique section: effect size imperceptibility",
+      },
+      {
+        citationId: "espay-2024-eneuro-c2",
+        sourceId: "espay-2024-eneuro",
+        quote:
+          "This translates to a treatment effect of 2.5% (0.45 / 18) for lecanemab",
+        context:
+          "Full-scale percentage reframing of lecanemab effect",
+        projectRef:
+          "Lecanemab critique section: 2.5% vs 27% framing",
+      },
+      {
+        citationId: "espay-2024-eneuro-c3",
+        sourceId: "espay-2024-eneuro",
+        quote:
+          "For this metric to remain constant, the curves must separate linearly. However, if over time the curves become parallel, as might easily be the case for many patients, then this metric will decline",
+        context:
+          "Linear divergence assumption underlying the 27% figure",
+        projectRef:
+          "Lecanemab critique section: linear assumption problem",
+      },
+      {
+        citationId: "espay-2024-eneuro-c4",
+        sourceId: "espay-2024-eneuro",
+        quote:
+          "The percent \u2018improvement\u2019 was then calculated as [X \u2212 Y] / Y. This is how the 27% effect figure is obtained.",
+        context:
+          "Derivation of the 27% figure from trial data",
+        projectRef:
+          "Lecanemab critique section: 27% calculation explanation",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "daly-2024-alz-dement",
+    title:
+      "Are lecanemab and donanemab disease\u2010modifying therapies?",
+    authors: "Daly T, Kepp KP, Imbimbo BP.",
+    journal: "Alzheimer\u2019s & Dementia",
+    year: 2024,
+    doi: "10.1002/alz.14114",
+    pmid: "39096161",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11497653/#:~:text=slopes%20of%20the%20scales%20based%20on%20caregiver%20input%20diverge",
+    tags: ["clinical-trials", "alzheimers", "clinical-trials"],
+    citations: [
+      {
+        citationId: "daly-2024-alz-dement-c1",
+        sourceId: "daly-2024-alz-dement",
+        quote:
+          "The slopes of the scales based on caregiver input diverge, while the slopes of the objective cognitive variables collected by the patients are parallel.",
+        context:
+          "CDR-SB diverges but ADAS-Cog14/MMSE parallel \u2014 measurement-dependent effect",
+        projectRef:
+          "Lecanemab critique section: caregiver vs objective measures",
+      },
+      {
+        citationId: "daly-2024-alz-dement-c2",
+        sourceId: "daly-2024-alz-dement",
+        quote:
+          "Available data do not confirm that lecanemab and donanemab are disease\u2010modifying.",
+        context:
+          "Anti-amyloid antibodies not confirmed disease-modifying",
+        projectRef:
+          "Lecanemab critique section: disease-modification conclusion",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "samtani-2014-ndt",
+    title:
+      "Disease progression model for Clinical Dementia Rating\u2013Sum of Boxes in mild cognitive impairment and Alzheimer\u2019s subjects from the Alzheimer\u2019s Disease Neuroimaging Initiative",
+    authors: "Samtani MN, Raghavan N, Novak G, Nandy P, Narayan VA.",
+    journal: "Neuropsychiatric Disease and Treatment",
+    year: 2014,
+    doi: "10.2147/NDT.S62323",
+    pmid: "24926196",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4049432/#:~:text=characteristic%20of%20an%20S-shaped%20progression%20curve",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "samtani-2014-ndt-c1",
+        sourceId: "samtani-2014-ndt",
+        quote:
+          "This inverted U-shaped relationship for progression rate vs baseline score is a characteristic of an S-shaped progression curve",
+        context:
+          "CDR-SB progression follows a sigmoidal (S-shaped) trajectory",
+        projectRef:
+          "Lecanemab critique section: sigmoidal disease progression",
+      },
+      {
+        citationId: "samtani-2014-ndt-c2",
+        sourceId: "samtani-2014-ndt",
+        quote:
+          "The results show that scores increase exponentially during the early phase of the disease and as AD worsens the scores theoretically level off as the CDR\u2013SB approaches 18",
+        context:
+          "CDR-SB accelerates early then decelerates, producing sigmoidal shape",
+        projectRef:
+          "Lecanemab critique section: sigmoidal trajectory detail",
+      },
+    ],
+    verificationStatus: "verified",
+  },
 ];

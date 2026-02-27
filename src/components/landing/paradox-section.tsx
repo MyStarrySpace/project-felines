@@ -299,7 +299,7 @@ function ParadoxFlowing() {
 
 export function ParadoxSection() {
   return (
-    <ScrollSection id="paradox" label="Paradox" className="py-0" fullWidth>
+    <ScrollSection id="paradox" label="Wrong places, not too much" className="py-0" fullWidth>
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">
         <StickyScrollStage height={250}>

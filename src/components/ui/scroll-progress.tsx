@@ -69,10 +69,10 @@ interface Colors {
 
 const DARK: Colors = {
   track: "rgba(255,255,255,0.15)",
-  fill: "#2dd4bf",
-  activeDot: "#2dd4bf",
+  fill: "#6d916d",
+  activeDot: "#6d916d",
   inactiveDot: "rgba(255,255,255,0.35)",
-  activeLabel: "#2dd4bf",
+  activeLabel: "#6d916d",
   inactiveLabel: "rgba(255,255,255,0.4)",
 };
 

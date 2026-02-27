@@ -10,6 +10,7 @@ import { ironCascadesSources } from "./iron-cascades";
 import { viralReactivationSources } from "./viral-reactivation";
 import { proteinopathySources } from "./proteinopathy";
 import { gwasGeneticsSources } from "./gwas-genetics";
+import { toxoplasmaSources } from "./toxoplasma";
 
 // Re-export types
 export type { Source, Citation, TopicTag, VerificationStatus };
@@ -27,6 +28,7 @@ export {
   viralReactivationSources,
   proteinopathySources,
   gwasGeneticsSources,
+  toxoplasmaSources,
 };
 
 // Aggregate all sources
@@ -42,6 +44,7 @@ const allModules: Source[][] = [
   viralReactivationSources,
   proteinopathySources,
   gwasGeneticsSources,
+  toxoplasmaSources,
 ];
 
 export const sources: Source[] = allModules.flat();

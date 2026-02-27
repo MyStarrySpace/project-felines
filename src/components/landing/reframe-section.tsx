@@ -332,7 +332,7 @@ function ReframeFlowing() {
 
 export function ReframeSection() {
   return (
-    <ScrollSection id="reframe" label="Reframe" className="py-0" fullWidth>
+    <ScrollSection id="reframe" label="Defense failure, not protein" className="py-0" fullWidth>
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">
         <StickyScrollStage height={500}>
