@@ -65,15 +65,15 @@ const ironBeats: IronBeat[] = [
     headline: "GCH1 produces BH4, a third independent radical trap.",
     detail: (
       <>
-        The BH4/DHFR axis provides yet another line of defense. When all three
-        axes fail, lipid peroxidation chain-reacts into ferroptosis.
+        The BH4/DHFR axis provides a third independent line of defense.
+        Three redundant systems, any one enough to hold the line.
         <Cite id="zhao-2023-biompharm" />
       </>
     ),
   },
   {
     headline:
-      "When all three axes fail, iron-driven lipid peroxidation chain-reacts through cell membranes.",
+      "As these defenses erode, iron-driven lipid peroxidation chain-reacts through cell membranes.",
     detail: (
       <>
         PE-PUFAs are oxidized by iron-catalyzed Fenton reactions and
