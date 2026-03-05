@@ -94,6 +94,16 @@ export function ScrollProgress() {
   const showLabels = trackHovered;
   const creamClip = computeCreamClip(sections, sectionProgress);
 
+  // Compute dot positions based on actual section DOM positions
+  const dotPositions = sections.map((section) => {
+    if (typeof window === "undefined") return 0;
+    const el = section.element;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    if (maxScroll <= 0) return 0;
+    const centerScrollY = el.offsetTop + el.offsetHeight / 2 - window.innerHeight / 2;
+    return Math.max(0, Math.min(1, centerScrollY / maxScroll));
+  });
+
   /** Render the track + fill + dots for a given color scheme */
   const renderTrack = (colors: Colors, interactive: boolean) => (
     <div
@@ -125,8 +135,7 @@ export function ScrollProgress() {
       {/* Section dots */}
       {sections.map((section, i) => {
         const isActive = activeSection === section.id;
-        const dotPosition =
-          sections.length > 1 ? i / (sections.length - 1) : 0;
+        const dotPosition = dotPositions[i] ?? 0;
 
         return (
           <div
