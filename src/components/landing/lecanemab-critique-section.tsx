@@ -336,7 +336,7 @@ function CritiqueFlowing() {
 
 export function LecanemabCritiqueSection() {
   return (
-    <ScrollSection id="critique" label="27% means 2.5%" className="py-0" fullWidth breakpoints={[0, 0.32, 0.42, 0.53, 0.65]}>
+    <ScrollSection id="critique" label="Lecanemab's real effect" className="py-0" fullWidth breakpoints={[0, 0.32, 0.42, 0.53, 0.65]}>
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">
         <StickyScrollStage height={350}>

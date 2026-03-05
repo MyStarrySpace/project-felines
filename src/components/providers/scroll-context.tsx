@@ -82,7 +82,17 @@ export function ScrollProvider({ children }: { children: ReactNode }) {
 
   const scrollToSection = useCallback((id: string, behavior: ScrollBehavior = "smooth") => {
     const entry = sectionsRef.current.find((s) => s.id === id);
-    if (entry) {
+    if (!entry) return;
+
+    // If section has content breakpoints beyond 0, scroll to the first
+    // content beat so fade-in animations are already visible
+    const firstContentBp = entry.breakpoints.find((b) => b > 0);
+    if (firstContentBp) {
+      const el = entry.element;
+      const sh = el.offsetHeight;
+      const scrollY = el.offsetTop + firstContentBp * (sh + window.innerHeight) - window.innerHeight;
+      window.scrollTo({ top: Math.max(0, scrollY), behavior });
+    } else {
       entry.element.scrollIntoView({ behavior });
     }
   }, []);
