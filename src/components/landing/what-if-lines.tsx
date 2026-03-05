@@ -118,7 +118,7 @@ function ImmuneWeapons() {
       <div>
         <ProteinEntry
           name="&alpha;-Synuclein"
-          summary="Vertebrate ferrireductase (~500 Mya). Oligomeric forms amplify iron reduction."
+          summary="Vertebrate ferrireductase (~500 Mya). Converts stored iron into reactive Fe²⁺ for Fenton chemistry."
           isExpanded={expanded === "asyn"}
           onToggle={() => toggle("asyn")}
         >
@@ -131,12 +131,14 @@ function ImmuneWeapons() {
           </FactGroup>
           <FactGroup label="Function">
             <p>
-              Cellular ferrireductase: reduces iron(III) to bioavailable
-              iron(II).
+              Cellular ferrireductase: converts Fe&#xB3;&#x207A; to
+              Fe&#xB2;&#x207A;, the reactive form that drives Fenton
+              chemistry.
               <Cite
                 id="davies-2011-plosone"
                 citationIds={["davies-2011-plosone-c1"]}
-              />
+              />{" "}
+              This turns stored iron into a weapon against pathogens.
             </p>
           </FactGroup>
           <FactGroup label="Mechanism">
@@ -147,7 +149,9 @@ function ImmuneWeapons() {
                 id="peng-2010-jinorgbiochem"
                 citationIds={["peng-2010-jinorgbiochem-c1"]}
               />{" "}
-              Aggregation amplifies the signal, not a malfunction.
+              Oligomeric forms have higher ferrireductase activity:
+              aggregation intensifies the response, not a random
+              malfunction.
             </p>
           </FactGroup>
         </ProteinEntry>
