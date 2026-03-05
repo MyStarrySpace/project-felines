@@ -8,11 +8,11 @@ import { CellVulnerabilitySection } from "@/components/landing/cell-vulnerabilit
 import { DrugBrowserSection } from "@/components/landing/drug-browser-section";
 import { IronAlternativesSection } from "@/components/landing/iron-alternatives-section";
 import { LecanemabCritiqueSection } from "@/components/landing/lecanemab-critique-section";
+import { ClearanceNarrativeSection } from "@/components/landing/clearance-narrative-section";
 import { FelineIntroSection } from "@/components/landing/feline-intro-section";
 import { TheoriesMappingSection } from "@/components/landing/theories-mapping-section";
 import { GwasSection } from "@/components/landing/gwas-section";
-import { EvidenceSection } from "@/components/landing/evidence-section";
-import { ProgressionSection } from "@/components/landing/progression-section";
+import { SurvivorshipBiasSection } from "@/components/landing/survivorship-bias-section";
 import { SectionIndicator } from "@/components/ui/section-indicator";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { ScrollProvider, useScrollContext } from "@/components/providers/scroll-context";
@@ -58,12 +58,19 @@ function PresentationContent({ children }: { children: ReactNode }) {
     }
   }, [activeSection, showPresentation]);
 
-  // Save/restore scroll position when transitioning
+  // Continuously track scroll position while presentation is visible
   useEffect(() => {
-    if (phase === "collapsing") {
+    if (!showPresentation) return;
+    const onScroll = () => {
       savedScrollRef.current = window.scrollY;
-    } else if (phase === "expanding") {
-      // Restore scroll position after transition back
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [showPresentation]);
+
+  // Restore scroll position when returning from explore
+  useEffect(() => {
+    if (phase === "expanding") {
       const timer = setTimeout(() => {
         window.scrollTo(0, savedScrollRef.current);
         completeExpand();
@@ -173,7 +180,7 @@ function PresentationContent({ children }: { children: ReactNode }) {
       idleTimer = setTimeout(() => {
         const positions = getBreakpointScrollPositions();
         const current = window.scrollY;
-        const threshold = window.innerHeight * 0.15;
+        const threshold = window.innerHeight * 0.35;
         let nearest = positions[0];
         let minDist = Infinity;
         for (const p of positions) {
@@ -184,9 +191,9 @@ function PresentationContent({ children }: { children: ReactNode }) {
           }
         }
         if (minDist > 0 && minDist < threshold) {
-          smoothScrollTo(nearest, 600);
+          smoothScrollTo(nearest, 800);
         }
-      }, 800);
+      }, 1500);
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -216,11 +223,11 @@ function PresentationContent({ children }: { children: ReactNode }) {
         <DrugBrowserSection />
         <IronAlternativesSection />
         <LecanemabCritiqueSection />
+        <ClearanceNarrativeSection />
         <FelineIntroSection />
-        <TheoriesMappingSection />
         <GwasSection />
-        <EvidenceSection />
-        <ProgressionSection />
+        <TheoriesMappingSection />
+        <SurvivorshipBiasSection />
 
         <SectionIndicator />
         <ScrollProgress />

@@ -14,7 +14,7 @@ function LayerBadges({ layers }: { layers: string[] }) {
   return (
     <div className="flex gap-1.5 shrink-0">
       {layers.map((layer) => (
-        <span key={layer} className="text-teal-400 font-mono text-xs">
+        <span key={layer} className="text-teal-400 font-serif text-xs">
           {layer}
         </span>
       ))}
@@ -28,6 +28,7 @@ export function TheoriesMappingSection() {
       id="theories"
       label="Multi-layer interventions"
       className="py-24 sm:py-32"
+      breakpoints={[]}
     >
       {/* Swiss-cheese headline */}
       <ScrollAnimate enterFrom="bottom">
@@ -82,7 +83,7 @@ export function TheoriesMappingSection() {
                 <LayerBadges layers={item.layers} />
               </div>
               <div className="flex items-baseline gap-2">
-                <span className="text-gray-600 text-xs">{item.status}</span>
+                <span className="text-gray-500 text-xs">{item.status}</span>
               </div>
               <p className="text-gray-500 text-sm leading-relaxed mt-0.5">
                 {item.note}

@@ -43,7 +43,7 @@ export default function BarrierLayout({
                   </Link>
                 ) : (
                   <span
-                    className="block text-sm text-gray-700 cursor-not-allowed"
+                    className="block text-sm text-gray-600 cursor-not-allowed"
                     aria-disabled="true"
                   >
                     {item.label}

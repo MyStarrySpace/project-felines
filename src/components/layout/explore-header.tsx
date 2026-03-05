@@ -7,12 +7,14 @@ import { Container } from "@/components/ui/container";
 import { Breadcrumbs } from "./breadcrumbs";
 
 const sectionLinks = [
+  { label: "Drugs", href: "/explore/drugs" },
   { label: "Trials", href: "/explore/trials" },
   { label: "Biology", href: "/explore/biology" },
   { label: "Viral", href: "/explore/viral" },
   { label: "Diseases", href: "/explore/diseases" },
   { label: "Barriers", href: "/explore/barrier" },
   { label: "Clearance", href: "/explore/clearance" },
+  { label: "Biosensor", href: "/explore/biosensor" },
 ];
 
 export function ExploreHeader() {

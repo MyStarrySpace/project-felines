@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@untangling/canis": ["./node_modules/@untangling/canis/dist/index.d.ts"],
+      "@untangling/canis/react": ["./node_modules/@untangling/canis/dist/react.d.ts"]
     }
   },
   "include": [

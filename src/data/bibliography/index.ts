@@ -11,6 +11,12 @@ import { viralReactivationSources } from "./viral-reactivation";
 import { proteinopathySources } from "./proteinopathy";
 import { gwasGeneticsSources } from "./gwas-genetics";
 import { toxoplasmaSources } from "./toxoplasma";
+import { drugTrialsAdSources } from "./drug-trials-ad";
+import { drugTrialsPdSources } from "./drug-trials-pd";
+import { drugTrialsAlsSources } from "./drug-trials-als";
+import { drugTrialsMsSources } from "./drug-trials-ms";
+import { drugTrialsOtherSources } from "./drug-trials-other";
+import { geneFunctionDbSources } from "./gene-function-db";
 
 // Re-export types
 export type { Source, Citation, TopicTag, VerificationStatus };
@@ -29,6 +35,12 @@ export {
   proteinopathySources,
   gwasGeneticsSources,
   toxoplasmaSources,
+  drugTrialsAdSources,
+  drugTrialsPdSources,
+  drugTrialsAlsSources,
+  drugTrialsMsSources,
+  drugTrialsOtherSources,
+  geneFunctionDbSources,
 };
 
 // Aggregate all sources
@@ -45,6 +57,12 @@ const allModules: Source[][] = [
   proteinopathySources,
   gwasGeneticsSources,
   toxoplasmaSources,
+  drugTrialsAdSources,
+  drugTrialsPdSources,
+  drugTrialsAlsSources,
+  drugTrialsMsSources,
+  drugTrialsOtherSources,
+  geneFunctionDbSources,
 ];
 
 export const sources: Source[] = allModules.flat();

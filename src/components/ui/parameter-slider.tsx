@@ -1,17 +1,18 @@
 "use client";
 
-import type { ConfidenceLevel } from "@/lib/clearance/types";
+import { useState, useRef, useEffect } from "react";
+import type { ParamSource } from "@/lib/clearance/types";
 
-const confidenceColors: Record<ConfidenceLevel, string> = {
-  high: "#059669", // green-600
-  moderate: "#D97706", // amber-600
-  low: "#DC2626", // red-600
+const sourceColors: Record<ParamSource, string> = {
+  measured: "#059669", // green-600
+  derived: "#D97706", // amber-600
+  assumed: "#DC2626", // red-600
 };
 
-const confidenceLabels: Record<ConfidenceLevel, string> = {
-  high: "Well-measured",
-  moderate: "Estimated",
-  low: "Poorly constrained",
+const sourceLabels: Record<ParamSource, string> = {
+  measured: "Measured",
+  derived: "Derived from measured",
+  assumed: "Assumed",
 };
 
 interface ParameterSliderProps {
@@ -21,7 +22,13 @@ interface ParameterSliderProps {
   max: number;
   step: number;
   unit?: string;
-  confidence?: ConfidenceLevel;
+  source?: ParamSource;
+  /** Short citation label (e.g., "Hallgren & Sourander 1958") */
+  cite?: string;
+  /** Detailed citation note for tooltip */
+  citationNote?: string;
+  /** PMID for PubMed link */
+  pmid?: string;
   onChange: (value: number) => void;
 }
 
@@ -32,20 +39,74 @@ export function ParameterSlider({
   max,
   step,
   unit = "",
-  confidence,
+  source,
+  cite,
+  citationNote,
+  pmid,
   onChange,
 }: ParameterSliderProps) {
+  const [showTooltip, setShowTooltip] = useState(false);
+  const tooltipRef = useRef<HTMLDivElement>(null);
+  const dotRef = useRef<HTMLButtonElement>(null);
+
+  // Close tooltip on outside click
+  useEffect(() => {
+    if (!showTooltip) return;
+    function handleClick(e: MouseEvent) {
+      if (
+        tooltipRef.current && !tooltipRef.current.contains(e.target as Node) &&
+        dotRef.current && !dotRef.current.contains(e.target as Node)
+      ) {
+        setShowTooltip(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [showTooltip]);
+
+  const hasCitation = source && (cite || citationNote);
+
   return (
     <div className="space-y-1.5">
       <div className="flex items-center justify-between">
         <label className="text-xs font-medium text-gray-300">{label}</label>
         <div className="flex items-center gap-2">
-          {confidence && (
-            <span
-              className="inline-block h-2 w-2 rounded-full"
-              style={{ backgroundColor: confidenceColors[confidence] }}
-              title={confidenceLabels[confidence]}
-            />
+          {source && (
+            <div className="relative">
+              <button
+                ref={dotRef}
+                type="button"
+                onClick={() => hasCitation && setShowTooltip((v) => !v)}
+                className={`inline-block h-2 w-2 rounded-full ${hasCitation ? "cursor-pointer" : "cursor-default"}`}
+                style={{ backgroundColor: sourceColors[source] }}
+                title={!hasCitation ? sourceLabels[source] : undefined}
+                aria-label={`${sourceLabels[source]}${cite ? `: ${cite}` : ""}`}
+              />
+              {showTooltip && hasCitation && (
+                <div
+                  ref={tooltipRef}
+                  className="absolute right-0 top-full z-50 mt-2 w-64 border border-white/10 bg-navy-900 p-3 shadow-lg"
+                >
+                  <p className="mb-1 text-xs font-medium" style={{ color: sourceColors[source] }}>
+                    {sourceLabels[source]}
+                  </p>
+                  {cite && <p className="text-xs font-medium text-gray-200">{cite}</p>}
+                  {citationNote && (
+                    <p className="mt-1 text-xs leading-relaxed text-gray-400">{citationNote}</p>
+                  )}
+                  {pmid && (
+                    <a
+                      href={`https://pubmed.ncbi.nlm.nih.gov/${pmid}/`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1.5 inline-block text-xs text-teal-400 hover:text-teal-300"
+                    >
+                      PubMed {pmid}
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
           )}
           <span className="text-xs tabular-nums text-white">
             {value % 1 === 0 ? value : value.toFixed(step < 0.01 ? 3 : step < 0.1 ? 2 : 1)}

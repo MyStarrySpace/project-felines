@@ -103,13 +103,13 @@ export function ExploreSectionIndicator() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.2, ease: "easeOut" }}
-                className="overflow-hidden rounded-lg bg-navy-900/95 border border-white/10 backdrop-blur-md min-w-[220px]"
+                className="overflow-hidden bg-navy-900/95 border border-white/10 backdrop-blur-md min-w-[220px]"
               >
                 <div className="max-h-[70vh] overflow-y-auto py-1">
                   {/* Group 1: Page sections */}
                   {sections.length > 0 && (
                     <>
-                      <p className="px-4 pt-2 pb-1 text-[10px] font-medium uppercase tracking-wider text-gray-600">
+                      <p className="px-4 pt-2 pb-1 text-[10px] font-medium uppercase tracking-wider text-gray-500">
                         On this page
                       </p>
                       <ul role="list">
@@ -144,7 +144,7 @@ export function ExploreSectionIndicator() {
                   )}
 
                   {/* Group 2: Explore nav */}
-                  <p className="px-4 pt-1 pb-1 text-[10px] font-medium uppercase tracking-wider text-gray-600">
+                  <p className="px-4 pt-1 pb-1 text-[10px] font-medium uppercase tracking-wider text-gray-500">
                     Explore
                   </p>
 
@@ -200,7 +200,7 @@ export function ExploreSectionIndicator() {
                                         {child.label}
                                       </Link>
                                     ) : (
-                                      <span className="block px-3 py-1.5 text-sm text-gray-700 cursor-not-allowed">
+                                      <span className="block px-3 py-1.5 text-sm text-gray-600 cursor-not-allowed">
                                         {child.label}
                                       </span>
                                     )}
@@ -224,7 +224,7 @@ export function ExploreSectionIndicator() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.15 }}
-                className="flex items-center gap-3 rounded-lg bg-navy-900/80 px-4 py-2 backdrop-blur-md border border-white/10"
+                className="flex items-center gap-3 bg-navy-900/80 px-4 py-2 backdrop-blur-md border border-white/10"
                 aria-expanded={false}
                 aria-haspopup="true"
               >

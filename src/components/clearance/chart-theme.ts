@@ -4,9 +4,8 @@ export const CLEARANCE_COLORS = {
   ferritin: "#D97706", // amber-600 — ferritin storage
   ISF: "#7C3AED", // violet-600 — interstitial fluid
   CSF: "#2563EB", // blue-600 — cerebrospinal fluid
-  damage: "#F97316", // orange-500 — cumulative damage
-  ferroxidase: "#10B981", // emerald-500 — ferroxidase efficiency
-  rho: "#06B6D4", // cyan-500 — ISF recapture fraction
+  fpn: "#10B981", // emerald-500 — ferroportin fraction
+  gly: "#06B6D4", // cyan-500 — glymphatic fraction
 } as const;
 
 /** Phase band colors */

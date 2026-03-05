@@ -621,4 +621,92 @@ export const proteinopathySources: Source[] = [
     ],
     verificationStatus: "verified",
   },
+  {
+    id: "chen-2026-actaneuropathol",
+    title:
+      "Disentangling on and off-target binding in flortaucipir PET: a voxel-to-voxel P-tau, ferric iron, and MAO-B histology-to-flortaucipir PET comparison",
+    authors:
+      "Chen Y, La Joie R, Pereira FL, Blazhenets G, Zhu L, Spina S, Seeley WW, Heinsen H, Ushizima D, Tosun D, Rabinovici GD, Grinberg LT",
+    journal: "Acta Neuropathologica",
+    year: 2026,
+    doi: "10.1007/s00401-026-02983-x",
+    url: "https://link.springer.com/article/10.1007/s00401-026-02983-x#:~:text=Flortaucipir%20signal%20correlated%20more%20strongly%20with%20ferric%20iron",
+    tags: ["iron", "alzheimers", "imaging"],
+    citations: [
+      {
+        citationId: "chen-2026-actaneuropathol-c1",
+        sourceId: "chen-2026-actaneuropathol",
+        quote:
+          "in non-Alzheimer\u2019s tauopathies and FTLD-TDP-43, correlations between Flortaucipir signal and tau pathology were weak or negligible. Instead, Flortaucipir signal correlated more strongly with ferric iron and MAO-B",
+        context:
+          "The FDA-approved tau PET tracer binds ferric iron deposits, not just tau protein",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: tau PET tracer binds ferric iron in non-AD tauopathies",
+      },
+      {
+        citationId: "chen-2026-actaneuropathol-c2",
+        sourceId: "chen-2026-actaneuropathol",
+        quote:
+          "ferric iron was the main positive predictor in PSP, and combined ferric iron plus MAO-B models best explained Flortaucipir signal variance in FTLD-MAPT-S305I and FTLD-TDP, while p-tau/CP-13 lacked significant predictive value",
+        context:
+          "In non-AD tauopathies, ferric iron predicts the tau tracer signal better than tau itself",
+        location: "Discussion",
+        projectRef:
+          "Landing teaser: iron predicts tau PET signal better than tau in PSP/FTLD",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "chen-2006-jbiochem",
+    title:
+      "The effect of Abeta conformation on the metal affinity and aggregation mechanism studied by circular dichroism spectroscopy",
+    authors: "Chen YR, Huang HB, Chyan CL, Shiao MS, Lin TH, Chen YC",
+    journal: "Journal of Biochemistry",
+    year: 2006,
+    doi: "10.1093/jb/mvj083",
+    pmid: "16672274",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16672274/#:~:text=a%20two-state%20transition%20for%20the%20metal-bound%20state",
+    tags: ["iron", "alzheimers"],
+    citations: [
+      {
+        citationId: "chen-2006-jbiochem-c1",
+        sourceId: "chen-2006-jbiochem",
+        quote:
+          "Only in 5% and 25% TFE can Abeta undergo an alpha-helix to beta-sheet aggregation, which involve a three-state mechanism for the metal-free state, and a two-state transition for the metal-bound state, respectively. The aggregation-inducing activity of metals is in the order, Cu2+ > Fe3+ > or = Al3+ > Zn2+.",
+        context:
+          "Fe3+ accelerates A\u03B2 from alpha-helix to beta-sheet via a simplified two-state mechanism",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: Fe\u00B3\u207A promotes A\u03B2 beta-sheet transition",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "lipinski-2013-currneurovascres",
+    title: "Iron-induced fibrin in cardiovascular disease",
+    authors: "Lipinski B, Pretorius E",
+    journal: "Current Neurovascular Research",
+    year: 2013,
+    doi: "10.2174/15672026113109990016",
+    pmid: "23721262",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23721262/#:~:text=trivalent%20iron%20(FeIII)%20initiates%20a%20hydroxyl%20radical-catalyzed%20conversion",
+    tags: ["iron", "vascular"],
+    citations: [
+      {
+        citationId: "lipinski-2013-currneurovascres-c1",
+        sourceId: "lipinski-2013-currneurovascres",
+        quote:
+          "trivalent iron (FeIII) initiates a hydroxyl radical-catalyzed conversion of fibrinogen into a fibrin-like polymer (parafibrin) that is remarkably resistant to the proteolytic dissolution and thus promotes its intravascular deposition",
+        context:
+          "Fenton-derived hydroxyl radicals convert fibrinogen into protease-resistant amyloid-like deposits",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: Fenton radicals convert fibrinogen to amyloid",
+      },
+    ],
+    verificationStatus: "verified",
+  },
 ];

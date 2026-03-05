@@ -134,3 +134,16 @@ body {
 .glass-card-hover:hover {
   border-color: rgba(255, 255, 255, 0.15);
 }
+
+/* Echo text marquee — infinite scroll for gene names */
+@keyframes echo-scroll-left {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+@keyframes echo-scroll-right {
+  from { transform: translate3d(-50%, 0, 0); }
+  to { transform: translate3d(0, 0, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .echo-marquee-row { animation: none !important; }
+}

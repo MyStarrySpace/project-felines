@@ -239,7 +239,7 @@ export function InteractiveSvg({ svgUrl, steps }: InteractiveSvgProps) {
       `}</style>
 
       {/* SVG viewer */}
-      <div className="flex-1 min-w-0 overflow-hidden rounded-lg border border-white/10 bg-white/[0.02]">
+      <div className="flex-1 min-w-0 overflow-hidden border border-white/10 bg-white/[0.02]">
         <div
           ref={containerRef}
           className="svg-viewer"
@@ -257,7 +257,7 @@ export function InteractiveSvg({ svgUrl, steps }: InteractiveSvgProps) {
             <button
               key={step.id}
               onClick={() => setActiveStep(i)}
-              className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
+              className={`px-3 py-1.5 text-xs font-medium transition-colors ${
                 i === activeStep
                   ? "bg-teal-500/20 text-teal-400 border border-teal-400/40"
                   : "bg-white/5 text-gray-400 border border-white/10 hover:border-white/20 hover:text-white"
@@ -286,20 +286,20 @@ export function InteractiveSvg({ svgUrl, steps }: InteractiveSvgProps) {
           <button
             onClick={goPrev}
             disabled={activeStep === 0}
-            className="flex-1 rounded-md border border-white/10 px-4 py-2.5 text-sm font-medium text-gray-400 transition-colors hover:border-white/20 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
+            className="flex-1 border border-white/10 px-4 py-2.5 text-sm font-medium text-gray-400 transition-colors hover:border-white/20 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
           >
             &larr; Previous
           </button>
           <button
             onClick={goNext}
             disabled={activeStep === steps.length - 1}
-            className="flex-1 rounded-md border border-teal-400/40 bg-teal-500/10 px-4 py-2.5 text-sm font-medium text-teal-400 transition-colors hover:bg-teal-500/20 disabled:opacity-30 disabled:cursor-not-allowed"
+            className="flex-1 border border-teal-400/40 bg-teal-500/10 px-4 py-2.5 text-sm font-medium text-teal-400 transition-colors hover:bg-teal-500/20 disabled:opacity-30 disabled:cursor-not-allowed"
           >
             Next &rarr;
           </button>
         </div>
 
-        <p className="text-xs text-gray-600 text-center">
+        <p className="text-xs text-gray-500 text-center">
           Use arrow keys to navigate
         </p>
       </div>

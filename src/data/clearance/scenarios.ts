@@ -3,36 +3,20 @@ import { clearanceScenarios } from "@/lib/clearance/parameters";
 import type { ClearanceResult } from "@/lib/clearance/types";
 
 /** Pre-computed simulation results for each scenario (run at import time) */
-export const healthyResult: ClearanceResult = simulateClearance(
-  clearanceScenarios[0].parameters
-);
+const results: Record<string, ClearanceResult> = {};
 
-export const apoe4HetResult: ClearanceResult = simulateClearance(
-  clearanceScenarios[1].parameters
-);
+for (const scenario of clearanceScenarios) {
+  results[scenario.id] = simulateClearance(
+    scenario.overrides,
+    scenario.extensionOverrides,
+  );
+}
 
-export const apoe4HomResult: ClearanceResult = simulateClearance(
-  clearanceScenarios[2].parameters
-);
+export const healthyResult = results["healthy"];
+export const apoe4HetResult = results["apoe4_het"];
+export const apoe4HomResult = results["apoe4_hom"];
+export const multimorbidResult = results["multimorbid"];
+export const postStrokeResult = results["post_stroke"];
+export const femalePostmenoResult = results["female_postmeno"];
 
-export const multimorbidResult: ClearanceResult = simulateClearance(
-  clearanceScenarios[3].parameters
-);
-
-export const postStrokeResult: ClearanceResult = simulateClearance(
-  clearanceScenarios[4].parameters
-);
-
-export const femalePostmenoResult: ClearanceResult = simulateClearance(
-  clearanceScenarios[5].parameters
-);
-
-/** Map from scenario ID to pre-computed result */
-export const scenarioResults: Record<string, ClearanceResult> = {
-  healthy: healthyResult,
-  apoe4_het: apoe4HetResult,
-  apoe4_hom: apoe4HomResult,
-  multimorbid: multimorbidResult,
-  post_stroke: postStrokeResult,
-  female_postmeno: femalePostmenoResult,
-};
+export const scenarioResults = results;

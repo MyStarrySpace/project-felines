@@ -658,6 +658,16 @@ export const ironCascadesSources: Source[] = [
         projectRef:
           "Iron cascades: APP dual function (mechanism step 3)",
       },
+      {
+        citationId: "tsatsanis-2020-molpsych-c2",
+        sourceId: "tsatsanis-2020-molpsych",
+        quote:
+          "APP promotes neuronal iron efflux by stabilizing the cell-surface presentation of ferroportin, the only iron export channel of cells",
+        context:
+          "Intact APP at the cell surface stabilizes ferroportin for iron export",
+        projectRef:
+          "FELINE intro: Fe layer — Iron export segment",
+      },
     ],
     verificationStatus: "verified",
   },
@@ -2164,6 +2174,136 @@ export const ironCascadesSources: Source[] = [
           "Landmark discovery that Aβ production is a normal cellular process, not inherently pathological",
         projectRef:
           "Supporting evidence §8.14: Aβ as normal metabolic product",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "hirsch-reinshagen-2004-jbc",
+    title:
+      "Deficiency of ABCA1 impairs apolipoprotein E metabolism in brain",
+    authors: "Hirsch-Reinshagen V, Zhou S, Burgess BL, et al.",
+    journal: "Journal of Biological Chemistry",
+    year: 2004,
+    doi: "10.1074/jbc.M407962200",
+    pmid: "15269218",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15269218/#:~:text=glial%20ABCA1%20is%20required%20for%20cholesterol%20efflux",
+    tags: ["alzheimers", "genetics"],
+    citations: [
+      {
+        citationId: "hirsch-reinshagen-2004-jbc-c1",
+        sourceId: "hirsch-reinshagen-2004-jbc",
+        quote:
+          "Glial ABCA1 is required for cholesterol efflux to apoA-I and plays a key role in facilitating cholesterol efflux to apoE, which is the major apolipoprotein in the brain",
+        context:
+          "ABCA1 mediates brain cholesterol efflux to apolipoproteins",
+        projectRef:
+          "FELINE I layer: Cholesterol efflux and fatty acid processing",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "wyatt-2011-cmls",
+    title:
+      "Clusterin facilitates in vivo clearance of extracellular misfolded proteins",
+    authors: "Wyatt AR, Yerbury JJ, Berghofer P, et al.",
+    journal: "Cellular and Molecular Life Sciences",
+    year: 2011,
+    doi: "10.1007/s00018-011-0684-8",
+    pmid: "21505792",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11115182/#:~:text=plays%20a%20key%20role%20in%20an%20extracellular%20proteostasis%20system",
+    tags: ["alzheimers"],
+    citations: [
+      {
+        citationId: "wyatt-2011-cmls-c1",
+        sourceId: "wyatt-2011-cmls",
+        quote:
+          "CLU plays a key role in an extracellular proteostasis system that recognizes, keeps soluble, and then rapidly mediates the disposal of misfolded proteins",
+        context:
+          "Clusterin (apolipoprotein J) is an extracellular chaperone that escorts misfolded proteins for clearance",
+        projectRef:
+          "FELINE E layer: Clusterin escorts misfolded proteins for clearance",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "kuhn-2010-emboj",
+    title:
+      "ADAM10 is the physiologically relevant, constitutive alpha-secretase of the amyloid precursor protein in primary neurons",
+    authors: "Kuhn PH, Wang H, Dislich B, et al.",
+    journal: "EMBO Journal",
+    year: 2010,
+    doi: "10.1038/emboj.2010.167",
+    pmid: "20676056",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2944055/#:~:text=RNAi-mediated%20knockdown%20of%20ADAM10",
+    tags: ["alzheimers"],
+    citations: [
+      {
+        citationId: "kuhn-2010-emboj-c1",
+        sourceId: "kuhn-2010-emboj",
+        quote:
+          "ADAM10 is the physiologically relevant, constitutive alpha-secretase of APP and that ADAM9 and 17 are not redundant for this cleavage",
+        context:
+          "ADAM10 is the primary APP alpha-secretase; ADAM17 is not redundant for this role",
+        projectRef:
+          "FELINE E layer: ADAM10 cleaves APP as alpha-secretase",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // IRON DETECTION / IMAGING
+  // ──────────────────────────────────────────────────────────────────────
+
+  {
+    id: "absinta-2019-jamaneurol",
+    title:
+      "Association of Chronic Active Multiple Sclerosis Lesions With Disability In Vivo",
+    authors: "Absinta M, Sati P, Masuzzo F, et al.",
+    journal: "JAMA Neurology",
+    year: 2019,
+    doi: "10.1001/jamaneurol.2019.2399",
+    pmid: "31403674",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6694756/#:~:text=iron-laden%20phagocytes",
+    tags: ["iron", "imaging", "ms"],
+    citations: [
+      {
+        citationId: "absinta-2019-jamaneurol-c1",
+        sourceId: "absinta-2019-jamaneurol",
+        quote:
+          "All expanding rim lesions were chronic-active by pathology results. An accumulation of iron-laden phagocytes (cluster of differentiation [CD] 68 and iron staining) was seen at the lesion edge.",
+        context:
+          "Iron rim lesions in MS are chronic-active, expanding, and predict disability",
+        projectRef:
+          "Teaser: 'driven by iron?' expanded content \u2014 MS iron rim lesions",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "an-2018-jneurolsci",
+    title:
+      "Quantifying iron deposition within the substantia nigra of Parkinson's disease by quantitative susceptibility mapping",
+    authors: "An H, Zeng X, Niu T, et al.",
+    journal: "Journal of the Neurological Sciences",
+    year: 2018,
+    doi: "10.1016/j.jns.2018.01.008",
+    pmid: "29406966",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29406966/#:~:text=iron%20content%20in%20the%20SN%20of%20PD%20patients%20was%20significantly%20correlated",
+    tags: ["iron", "imaging", "parkinsons"],
+    citations: [
+      {
+        citationId: "an-2018-jneurolsci-c1",
+        sourceId: "an-2018-jneurolsci",
+        quote:
+          "the iron content in the SN of PD patients was significantly correlated with the Hoehn-Yahr stage, the Unified Parkinson's Disease Rating Scale (UPDRS)",
+        context:
+          "QSM iron in substantia nigra correlates with PD clinical severity",
+        projectRef:
+          "Teaser: 'driven by iron?' expanded content \u2014 PD iron detection via QSM",
       },
     ],
     verificationStatus: "verified",

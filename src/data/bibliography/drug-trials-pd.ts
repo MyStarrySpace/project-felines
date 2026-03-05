@@ -1,0 +1,205 @@
+import type { Source } from "./types";
+
+export const drugTrialsPdSources: Source[] = [
+  // Anti-α-synuclein
+  {
+    id: "pagano-2022-nejm",
+    title: "Trial of Prasinezumab in Early-Stage Parkinson's Disease.",
+    authors: "Pagano G, Taylor KI, Anzures-Cabrera J, et al.",
+    journal: "New England Journal of Medicine",
+    year: 2022,
+    doi: "10.1056/NEJMoa2202867",
+    pmid: "35921451",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35921451/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "pagano-2022-nejm-c1",
+        sourceId: "pagano-2022-nejm",
+        quote: "Trial of Prasinezumab in Early-Stage Parkinson's Disease",
+        projectRef: "Drug browser: Prasinezumab PASADENA motor subscale signal",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "lang-2022-nejm",
+    title: "Trial of Cinpanemab in Early Parkinson's Disease.",
+    authors: "Lang AE, Siderowf AD, Macklin EA, et al.",
+    journal: "New England Journal of Medicine",
+    year: 2022,
+    doi: "10.1056/NEJMoa2203395",
+    pmid: "35921450",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35921450/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "lang-2022-nejm-c1",
+        sourceId: "lang-2022-nejm",
+        quote: "Trial of Cinpanemab in Early Parkinson's Disease",
+        projectRef: "Drug browser: Cinpanemab SPARK failure, no motor or imaging benefit",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "shering-2025-braincomm",
+    title: "Phase 1, randomized trials of MEDI1341: cerebrospinal fluid free α-synuclein lowered by >50.",
+    authors: "Shering C, Pomfret M, Kubiak RJ, et al.",
+    journal: "Brain Communications",
+    year: 2025,
+    doi: "10.1093/braincomms/fcaf304",
+    pmid: "40936651",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40936651/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "shering-2025-braincomm-c1",
+        sourceId: "shering-2025-braincomm",
+        quote: "Phase 1, randomized trials of MEDI1341: cerebrospinal fluid free α-synuclein lowered by >50",
+        projectRef: "Drug browser: TAK-341 CSF α-syn −59%, MSA Phase 2 failure",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "ucb-2024-minzasolmin",
+    title: "UCB announces ORCHESTRA Phase 2 trial of minzasolmin did not meet endpoints",
+    authors: "UCB S.A.",
+    journal: "Press release",
+    year: 2024,
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "ucb-2024-minzasolmin-c1",
+        sourceId: "ucb-2024-minzasolmin",
+        quote: "Minzasolmin failed all primary and secondary clinical endpoints in ORCHESTRA",
+        projectRef: "Drug browser: Minzasolmin ORCHESTRA 496 pts all endpoints missed",
+      },
+    ],
+    verificationStatus: "unverifiable",
+  },
+  // LRRK2
+  {
+    id: "jennings-2023-movdisord",
+    title: "LRRK2 Inhibition by BIIB122 in Healthy Participants and Patients with Parkinson's Disease.",
+    authors: "Jennings D, Huntwork-Rodriguez S, Vissers MFJM, et al.",
+    journal: "Movement Disorders",
+    year: 2023,
+    doi: "10.1002/mds.29297",
+    pmid: "36807624",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36807624/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "jennings-2023-movdisord-c1",
+        sourceId: "jennings-2023-movdisord",
+        quote: "LRRK2 Inhibition by BIIB122 in Healthy Participants and Patients with Parkinson's Disease",
+        projectRef: "Drug browser: BIIB122 Phase 2b LUMA ongoing",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  // GBA
+  {
+    id: "giladi-2023-lancetneurol",
+    title: "Safety and efficacy of venglustat in GBA1-associated Parkinson's disease: an international, multicentre, double-blind, randomised, placebo-controlled, phase 2 trial.",
+    authors: "Giladi N, Alcalay RN, Cutter G, et al.",
+    journal: "Lancet Neurology",
+    year: 2023,
+    doi: "10.1016/S1474-4422(23)00205-3",
+    pmid: "37479372",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37479372/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "giladi-2023-lancetneurol-c1",
+        sourceId: "giladi-2023-lancetneurol",
+        quote: "Safety and efficacy of venglustat in GBA1-associated Parkinson's disease",
+        projectRef: "Drug browser: Venglustat MOVES-PD motor worsening despite substrate reduction",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  // mullin-2020-jamaneurol already in lysosomal.ts
+  // GLP-1 PD
+  {
+    id: "vijiaratnam-2025-lancet",
+    title: "Exenatide once a week versus placebo as a potential disease-modifying treatment for people with Parkinson's disease in the UK: a phase 3, multicentre, double-blind, parallel-group, randomised, placebo-controlled trial.",
+    authors: "Vijiaratnam N, Girges C, Auld G, et al.",
+    journal: "Lancet",
+    year: 2025,
+    doi: "10.1016/S0140-6736(24)02808-3",
+    pmid: "39919773",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39919773/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "vijiaratnam-2025-lancet-c1",
+        sourceId: "vijiaratnam-2025-lancet",
+        quote: "Exenatide once a week versus placebo as a potential disease-modifying treatment for people with Parkinson's disease",
+        projectRef: "Drug browser: Exenatide Phase 3 no motor benefit vs Phase 2 positive",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "meissner-2024-nejm",
+    title: "Trial of Lixisenatide in Early Parkinson's Disease.",
+    authors: "Meissner WG, Remy P, Giordana C, et al.",
+    journal: "New England Journal of Medicine",
+    year: 2024,
+    doi: "10.1056/NEJMoa2312323",
+    pmid: "38598572",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38598572/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "meissner-2024-nejm-c1",
+        sourceId: "meissner-2024-nejm",
+        quote: "Trial of Lixisenatide in Early Parkinson's Disease",
+        projectRef: "Drug browser: Lixisenatide LixiPark motor stability signal",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  // Antioxidant PD
+  {
+    id: "psg-2014-jamaneurol",
+    title: "A randomized clinical trial of high-dosage coenzyme Q10 in early Parkinson disease: no evidence of benefit.",
+    authors: "Parkinson Study Group QE3 Investigators.",
+    journal: "JAMA Neurology",
+    year: 2014,
+    pmid: "24664227",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24664227/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "psg-2014-jamaneurol-c1",
+        sourceId: "psg-2014-jamaneurol",
+        quote: "A randomized clinical trial of high-dosage coenzyme Q10 in early Parkinson disease: no evidence of benefit",
+        projectRef: "Drug browser: CoQ10 QE3 terminated for futility",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "schwarzschild-2021-jama",
+    title: "Effect of Urate-Elevating Inosine on Early Parkinson Disease Progression: The SURE-PD3 Randomized Clinical Trial.",
+    authors: "Schwarzschild MA, et al.",
+    journal: "JAMA",
+    year: 2021,
+    pmid: "34519802",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34519802/",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "schwarzschild-2021-jama-c1",
+        sourceId: "schwarzschild-2021-jama",
+        quote: "Effect of Urate-Elevating Inosine on Early Parkinson Disease Progression: The SURE-PD3 Randomized Clinical Trial",
+        projectRef: "Drug browser: Inosine SURE-PD3 futility",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+];

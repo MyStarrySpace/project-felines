@@ -245,7 +245,7 @@ function ResearchSection() {
           </div>
           <button
             onClick={() => setAllOpen((v) => !v)}
-            className="shrink-0 rounded-md border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-white/20 hover:text-white"
+            className="shrink-0 border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-white/20 hover:text-white"
             aria-label={allOpen ? "Collapse all research sections" : "Expand all research sections"}
           >
             {allOpen ? "Collapse all" : "Expand all"}

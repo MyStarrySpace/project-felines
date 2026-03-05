@@ -216,9 +216,11 @@ function extractClaims(filePath: string): ClaimEntry[] {
         if (citation) quotes.push(citation.quote);
       }
     }
-    // Always include the first citation's quote as fallback
-    if (quotes.length === 0 && source.citations[0]) {
-      quotes.push(source.citations[0].quote);
+    // Include ALL citation quotes when no specific citationIds are given
+    if (quotes.length === 0) {
+      for (const c of source.citations) {
+        quotes.push(c.quote);
+      }
     }
 
     // Extract claim text

@@ -108,6 +108,16 @@ export const glialSources: Source[] = [
         projectRef:
           "Cross-disease: glial dysfunction pillar, microglia-astrocyte cascade",
       },
+      {
+        citationId: "liddelow-2017-nature-c2",
+        sourceId: "liddelow-2017-nature",
+        quote:
+          "A1s secrete a soluble toxin that rapidly kills a subset of CNS neurons and mature oligodendrocytes, but not other CNS cell types",
+        context:
+          "A1 reactive astrocytes selectively kill oligodendrocytes and neurons",
+        projectRef:
+          "FELINE intro: I layer — Reactive astrocyte damage segment",
+      },
     ],
     verificationStatus: "verified",
   },

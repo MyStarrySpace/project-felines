@@ -1,7 +1,7 @@
 /**
  * Data for Slide 2: Reframings
  *
- * Pays off the teaser: if the protein isn't the problem, what is?
+ * Pays off the teaser: if the proteins share a mechanism, what is it?
  * Mop analogy + cross-proteinopathy convergence + OL vulnerability + tau reframe + summary sentence.
  *
  * Steps 0-1 reuse mop-analogy.ts exports directly.

@@ -9,11 +9,11 @@ type AlertProps = {
   className?: string;
 };
 
-const variantStyles: Record<AlertVariant, string> = {
-  info: "border-l-teal-600 bg-teal-50/50 text-teal-800",
-  warning: "border-l-amber-600 bg-amber-50/50 text-amber-600",
-  success: "border-l-green-600 bg-green-50/50 text-green-600",
-  neutral: "border-l-gray-400 bg-gray-100/50 text-gray-700",
+const variantBorder: Record<AlertVariant, string> = {
+  info: "border-l-teal-500/50",
+  warning: "border-l-amber-500/50",
+  success: "border-l-green-500/50",
+  neutral: "border-l-gray-500/40",
 };
 
 export function Alert({
@@ -24,11 +24,11 @@ export function Alert({
 }: AlertProps) {
   return (
     <div
-      className={`rounded-r-lg border-l-4 p-4 ${variantStyles[variant]} ${className}`}
+      className={`border-l-2 pl-4 py-3 ${variantBorder[variant]} ${className}`}
       role="alert"
     >
-      {title && <p className="mb-1 font-medium">{title}</p>}
-      <div className="text-sm">{children}</div>
+      {title && <p className="mb-1 text-sm font-medium text-gray-200">{title}</p>}
+      <div className="text-sm text-gray-400">{children}</div>
     </div>
   );
 }

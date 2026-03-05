@@ -108,15 +108,15 @@ function IntroSection() {
               Conventional model: 3 independent loops
             </p>
             <div className="flex items-center gap-3 text-sm text-gray-400 mb-6">
-              <span className="rounded-md bg-white/5 border border-white/10 px-3 py-1.5">
+              <span className="bg-white/5 border border-white/10 px-3 py-1.5">
                 Iron loop
               </span>
-              <span className="text-gray-600">+</span>
-              <span className="rounded-md bg-white/5 border border-white/10 px-3 py-1.5">
+              <span className="text-gray-500">+</span>
+              <span className="bg-white/5 border border-white/10 px-3 py-1.5">
                 Tau loop
               </span>
-              <span className="text-gray-600">+</span>
-              <span className="rounded-md bg-white/5 border border-white/10 px-3 py-1.5">
+              <span className="text-gray-500">+</span>
+              <span className="bg-white/5 border border-white/10 px-3 py-1.5">
                 Virus loop
               </span>
             </div>
@@ -125,19 +125,19 @@ function IntroSection() {
               FELINE model: 1 master loop + 2 amplifiers
             </p>
             <div className="flex items-center gap-3 text-sm">
-              <span className="rounded-md bg-teal-400/10 border border-teal-400/30 px-3 py-1.5 text-teal-400 font-medium">
+              <span className="bg-teal-400/10 border border-teal-400/30 px-3 py-1.5 text-teal-400 font-medium">
                 Iron (master)
               </span>
-              <span className="text-gray-600">&rarr;</span>
+              <span className="text-gray-500">&rarr;</span>
               <div className="flex flex-col gap-1.5">
-                <span className="rounded-md bg-white/5 border border-white/10 px-3 py-1.5 text-gray-400">
+                <span className="bg-white/5 border border-white/10 px-3 py-1.5 text-gray-400">
                   Tau amplifier
                 </span>
-                <span className="rounded-md bg-white/5 border border-white/10 px-3 py-1.5 text-gray-400">
+                <span className="bg-white/5 border border-white/10 px-3 py-1.5 text-gray-400">
                   Virus amplifier
                 </span>
               </div>
-              <span className="text-gray-600">&rarr;</span>
+              <span className="text-gray-500">&rarr;</span>
               <span className="text-xs text-gray-500">
                 both feed
                 <br />
@@ -256,7 +256,7 @@ function AmplificationSection() {
                       height: 36,
                     }}
                   >
-                    <span className="rounded-md bg-white/5 border border-white/10 px-2.5 py-1.5 text-xs font-medium text-white text-center leading-tight whitespace-nowrap">
+                    <span className="bg-white/5 border border-white/10 px-2.5 py-1.5 text-xs font-medium text-white text-center leading-tight whitespace-nowrap">
                       {step.label}
                     </span>
                   </div>
@@ -321,7 +321,7 @@ function AmplificationSection() {
           <h3 className="text-lg font-bold text-white mb-4">
             Export failure modes
           </h3>
-          <div className="overflow-x-auto rounded-lg border border-white/10">
+          <div className="overflow-x-auto border border-white/10">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-white/10 bg-white/5">
@@ -389,7 +389,7 @@ function AgeWindowSection() {
         </p>
 
         <div className="max-w-3xl">
-          <div className="overflow-x-auto rounded-lg border border-white/10">
+          <div className="overflow-x-auto border border-white/10">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-white/10 bg-white/5">
@@ -417,7 +417,7 @@ function AgeWindowSection() {
                     <td className="px-4 py-3 font-medium text-white text-xs">
                       {row.phenomenon}
                     </td>
-                    <td className="px-4 py-3 text-teal-400 text-xs font-mono">
+                    <td className="px-4 py-3 text-teal-400 text-xs font-serif">
                       {row.ageThreshold}
                     </td>
                     <td className="px-4 py-3 text-gray-500 text-xs">
@@ -469,7 +469,7 @@ function EpidemiologySection() {
                 <p className="text-xs font-medium text-teal-400">
                   {study.study}
                 </p>
-                <span className="text-xs text-gray-600">
+                <span className="text-xs text-gray-500">
                   {study.journal}, {study.year}
                 </span>
               </div>
@@ -489,7 +489,7 @@ function EpidemiologySection() {
             <p className="text-xs font-medium uppercase tracking-wide text-teal-400 mb-3">
               {cairnsCascade.title}
             </p>
-            <p className="text-xs text-gray-600 mb-2">
+            <p className="text-xs text-gray-500 mb-2">
               {cairnsCascade.study}
             </p>
             <p className="text-sm text-gray-300 leading-relaxed mb-3">
@@ -537,7 +537,7 @@ function CrossVirusSection() {
           vulnerability.
         </p>
 
-        <div className="max-w-5xl overflow-x-auto rounded-lg border border-white/10">
+        <div className="max-w-5xl overflow-x-auto border border-white/10">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-white/10 bg-white/5">

@@ -42,7 +42,7 @@ function IntroSection() {
             </p>
             <p className="text-sm text-gray-500 mt-1">PNS iron clearance</p>
           </div>
-          <span className="text-gray-600 text-2xl">vs</span>
+          <span className="text-gray-500 text-2xl">vs</span>
           <div className="text-center">
             <p className="font-serif text-3xl sm:text-4xl text-white">
               Days&ndash;weeks
@@ -298,7 +298,7 @@ function ResearchSection() {
           </div>
           <button
             onClick={() => setAllOpen((v) => !v)}
-            className="shrink-0 rounded-md border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-white/20 hover:text-white"
+            className="shrink-0 border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-white/20 hover:text-white"
             aria-label={
               allOpen
                 ? "Collapse all research sections"

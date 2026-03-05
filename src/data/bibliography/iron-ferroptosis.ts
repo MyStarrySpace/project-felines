@@ -9,18 +9,52 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2209254",
     pmid: "36449420",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36449420/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36449420/#:~:text=increased%20(worsened)%20by%2015.6%20points%20and%206.3%20points",
     tags: ["iron", "parkinsons", "clinical-trials"],
     citations: [
       {
         citationId: "devos-2022-nejm-c1",
         sourceId: "devos-2022-nejm",
         quote:
-          "Deferiprone reduced substantia nigra iron but worsened motor symptoms in Parkinson's disease",
+          "A total of 372 participants were enrolled; 186 were assigned to receive deferiprone and 186 to receive placebo.",
         context:
-          "FAIRPARK-II: iron chelation worsened PD. Supports maldistribution model, not excess",
+          "FAIRPARK-II enrollment and randomization",
+        location: "Results",
         projectRef:
           "Framework summary: Why every major trial has failed (Deferiprone/FAIRPARK-II)",
+      },
+      {
+        citationId: "devos-2022-nejm-c2",
+        sourceId: "devos-2022-nejm",
+        quote:
+          "The mean MDS-UPDRS total score at baseline was 34.3 in the deferiprone group and 33.2 in the placebo group and increased (worsened) by 15.6 points and 6.3 points, respectively (difference, 9.3 points; 95% confidence interval, 6.3 to 12.2; P<0.001).",
+        context:
+          "Motor worsening: deferiprone group declined 2.5× faster than placebo",
+        location: "Results",
+        projectRef:
+          "Drug browser: Deferiprone (PD) detail tooltip — MDS-UPDRS worsening",
+      },
+      {
+        citationId: "devos-2022-nejm-c3",
+        sourceId: "devos-2022-nejm",
+        quote:
+          "Progression of symptoms led to the initiation of dopaminergic therapy in 22.0% of the participants in the deferiprone group and 2.7% of those in the placebo group.",
+        context:
+          "8× more deferiprone patients needed rescue dopaminergic therapy",
+        location: "Results",
+        projectRef:
+          "Drug browser: Deferiprone (PD) detail tooltip — rescue therapy rate",
+      },
+      {
+        citationId: "devos-2022-nejm-c4",
+        sourceId: "devos-2022-nejm",
+        quote:
+          "Nigrostriatal iron content decreased more in the deferiprone group than in the placebo group.",
+        context:
+          "Iron chelation worked as designed: brain iron fell. But patients got worse.",
+        location: "Results",
+        projectRef:
+          "Drug browser: Deferiprone (PD) detail tooltip — iron reduction confirmed",
       },
     ],
     verificationStatus: "verified",
@@ -123,6 +157,16 @@ export const ironFerrOptosisSources: Source[] = [
         projectRef:
           "Kinetics model Part III: iron kinetics in AD, accelerator role",
       },
+      {
+        citationId: "ayton-2017-brain-c2",
+        sourceId: "ayton-2017-brain",
+        quote:
+          "higher hippocampal quantitative susceptibility mapping levels predicted accelerated deterioration in composite cognition tests for episodic memory",
+        context:
+          "QSM iron imaging in AD: hippocampal iron predicts cognitive decline independently of A\u03B2 and tau",
+        projectRef:
+          "Teaser: 'driven by iron?' expanded content \u2014 AD iron detection via QSM",
+      },
     ],
     verificationStatus: "verified",
   },
@@ -156,6 +200,16 @@ export const ironFerrOptosisSources: Source[] = [
         context:
           "APOE4 elevates CSF ferritin — connects #1 AD risk gene to iron",
         projectRef: "GWAS section: APOE gene card — iron connection",
+      },
+      {
+        citationId: "ayton-2015-natcomms-c3",
+        sourceId: "ayton-2015-natcomms",
+        quote:
+          "baseline CSF ferritin levels were negatively associated with cognitive performance over 7 years in 91 cognitively normal, 144 mild cognitive impairment (MCI) and 67 AD subjects, and predicted MCI conversion to AD",
+        context:
+          "CSF ferritin is a predictive biomarker for AD progression and MCI\u2192AD conversion",
+        projectRef:
+          "Teaser: 'driven by iron?' expanded content \u2014 CSF ferritin predicts AD",
       },
     ],
     verificationStatus: "verified",
@@ -254,6 +308,16 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Landmark review defining ferroptosis mechanisms",
         projectRef:
           "Kinetics model Step 4: ferroptosis execution pathway",
+      },
+      {
+        citationId: "stockwell-2022-cell-c2",
+        sourceId: "stockwell-2022-cell",
+        quote:
+          "Cysteine and glutamate are used in the biosynthesis of reduced glutathione, which is in turn used by GPX4 to reduce reactive PUFA phospholipid hydroperoxides (PUFA-PL-OOH) to non-reactive and non-lethal PUFA phospholipid alcohols (PUFA-PL-OH)",
+        context:
+          "System xc- supplies cysteine for GSH; GPX4 uses GSH to neutralize lipid peroxides",
+        projectRef:
+          "FELINE intro: L layer — Lipid peroxide neutralization segment",
       },
     ],
     verificationStatus: "verified",
@@ -431,6 +495,16 @@ export const ironFerrOptosisSources: Source[] = [
         projectRef:
           "Iron alternatives section: Transferrin receptor-mediated endocytosis",
       },
+      {
+        citationId: "luck-2012-currtopics-c4",
+        sourceId: "luck-2012-currtopics",
+        quote:
+          "Once inside the cell, iron is compartmentalized in a number of different ways. These include incorporation into heme, iron-sulfur clusters, and other iron-requiring enzymes/proteins, formation of an intracellular labile iron pool or storage in the iron storage protein ferritin",
+        context:
+          "Iron compartmentalization includes heme synthesis and iron-sulfur clusters (mitochondrial processes)",
+        projectRef:
+          "FELINE intro: Fe layer — Mitochondrial iron use segment",
+      },
     ],
     verificationStatus: "verified",
   },
@@ -489,6 +563,158 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Astrocyte endfeet secrete hepcidin to regulate endothelial ferroportin",
         projectRef:
           "Iron alternatives section: Astrocyte-derived hepcidin guards BBB",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "harrison-arosio-1996-bba",
+    title:
+      "The ferritins: molecular properties, iron storage function and cellular regulation",
+    authors: "Harrison PM, Arosio P",
+    journal: "Biochimica et Biophysica Acta",
+    year: 1996,
+    doi: "10.1016/0005-2728(96)00022-9",
+    pmid: "8695634",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8695634/#:~:text=4500%20Fe(III)%20atoms%20as%20an%20inorganic%20complex",
+    tags: ["iron"],
+    citations: [
+      {
+        citationId: "harrison-arosio-1996-bba-c1",
+        sourceId: "harrison-arosio-1996-bba",
+        quote:
+          "All ferritins have 24 protein subunits arranged in 432 symmetry to give a hollow shell with an 80 A diameter cavity capable of storing up to 4500 Fe(III) atoms as an inorganic complex",
+        context:
+          "Definitive structural characterization of ferritin iron storage capacity",
+        projectRef:
+          "FELINE Fe layer: Ferritin cages store up to 4,500 iron atoms each",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "levi-2014-frontpharmacol",
+    title:
+      "Neurodegeneration with brain iron accumulation: update on pathogenic mechanisms",
+    authors: "Levi S, Finazzi D",
+    journal: "Frontiers in Pharmacology",
+    year: 2014,
+    doi: "10.3389/fphar.2014.00099",
+    pmid: "24847269",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4019866/#:~:text=The%20average%20age%20of%20onset%20is%2039%20years",
+    tags: ["iron"],
+    citations: [
+      {
+        citationId: "levi-2014-frontpharmacol-c1",
+        sourceId: "levi-2014-frontpharmacol",
+        quote:
+          "The average age of onset is 39 years and the main clinical manifestations are those that characterize the extrapyramidal disorders.",
+        context: "Neuroferritinopathy (FTL mutations) onset age",
+        projectRef:
+          "GWAS section: FTL neuroferritinopathy onset in the 40s",
+      },
+      {
+        citationId: "levi-2014-frontpharmacol-c2",
+        sourceId: "levi-2014-frontpharmacol",
+        quote:
+          "The symptoms include neurological signs with first appearance in adulthood (fourth or fifth decade of life), usually preceded by diabetes mellitus, retinal degeneration.",
+        context: "Aceruloplasminemia (CP mutations) onset and symptoms",
+        projectRef:
+          "GWAS section: CP aceruloplasminemia onset by age 50",
+      },
+      {
+        citationId: "levi-2014-frontpharmacol-c3",
+        sourceId: "levi-2014-frontpharmacol",
+        quote:
+          "The classic form usually manifests in the first decade of life, more often before the age of 6 years.",
+        context: "PKAN (PANK2 mutations) childhood onset",
+        projectRef:
+          "GWAS section: PANK2 NBIA childhood onset",
+      },
+      {
+        citationId: "levi-2014-frontpharmacol-c4",
+        sourceId: "levi-2014-frontpharmacol",
+        quote:
+          "Iron deposits in the cerebellum, basal ganglia and motor cortex are visible by MRI",
+        context: "Neuroferritinopathy basal ganglia iron accumulation",
+        projectRef:
+          "GWAS section: FTL basal ganglia iron deposits",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "brissot-2018-natrevdisprimers",
+    title: "Haemochromatosis",
+    authors: "Brissot P, Pietrangelo A, Adams PC, et al.",
+    journal: "Nature Reviews Disease Primers",
+    year: 2018,
+    doi: "10.1038/nrdp.2018.16",
+    pmid: "29620054",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7775623/#:~:text=they%20develop%20symptoms%20only%20around%2030%E2%80%9340%20years%20of%20age",
+    tags: ["iron"],
+    citations: [
+      {
+        citationId: "brissot-2018-natrevdisprimers-c1",
+        sourceId: "brissot-2018-natrevdisprimers",
+        quote:
+          "Non-HFE forms of haemochromatosis due to mutations in HAMP, HJV or TFR2 are much rarer.",
+        context: "Non-HFE hemochromatosis genes",
+        projectRef:
+          "GWAS section: HFE, TFR2, HAMP cause hemochromatosis",
+      },
+      {
+        citationId: "brissot-2018-natrevdisprimers-c2",
+        sourceId: "brissot-2018-natrevdisprimers",
+        quote:
+          "Cardiac symptoms consist of cardiac rhythm disorders and cardiac failure.",
+        context: "Hemochromatosis cardiac complications",
+        projectRef:
+          "GWAS section: hemochromatosis causes cardiac failure",
+      },
+      {
+        citationId: "brissot-2018-natrevdisprimers-c3",
+        sourceId: "brissot-2018-natrevdisprimers",
+        quote:
+          "in HFE-associated haemochromatosis, they develop symptoms only around 30\u201340 years of age",
+        context: "Hemochromatosis symptom onset age",
+        projectRef:
+          "GWAS section: hemochromatosis symptoms decades before AD onset",
+      },
+      {
+        citationId: "brissot-2018-natrevdisprimers-c4",
+        sourceId: "brissot-2018-natrevdisprimers",
+        quote:
+          "Cellular iron excess in HFE and non-HFE forms of haemochromatosis is caused by increased concentrations of plasma iron, which can lead to the accumulation of iron in parenchymal cells, particularly hepatocytes, pancreatic cells and cardiomyocytes.",
+        context: "Hemochromatosis hepatic and cardiac iron overload",
+        projectRef:
+          "GWAS section: hemochromatosis causes cirrhosis",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "zhao-2023-biompharm",
+    title:
+      "Mechanisms of ferroptosis in Alzheimer's disease and therapeutic effects of natural plant products: A review",
+    authors: "Zhao D, Yang K, Guo H, et al.",
+    journal: "Biomedicine & Pharmacotherapy",
+    year: 2023,
+    doi: "10.1016/j.biopha.2023.114312",
+    pmid: "37210894",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37210894/#:~:text=ferroptosis%20is%20a%20newly%20discovered%20programmed%20cell%20death",
+    tags: ["ferroptosis", "alzheimers", "iron"],
+    citations: [
+      {
+        citationId: "zhao-2023-biompharm-c1",
+        sourceId: "zhao-2023-biompharm",
+        quote:
+          "ferroptosis is a newly discovered programmed cell death induced by iron-dependent lipid peroxidation and reactive oxygen species",
+        context:
+          "Review of ferroptosis mechanisms in AD, including three defense axes: GSH/GPX4, FSP1/CoQ10, GCH1/BH4",
+        location: "Abstract",
+        projectRef:
+          "Iron buildup section: diagram attribution (Zhao et al. 2023 ferroptosis defense axes)",
       },
     ],
     verificationStatus: "verified",

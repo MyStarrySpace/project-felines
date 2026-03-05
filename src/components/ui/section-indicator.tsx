@@ -50,7 +50,7 @@ export function SectionIndicator() {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
-                  className="overflow-hidden rounded-lg bg-navy-900/95 border border-white/10"
+                  className="overflow-hidden bg-navy-900/95 border border-white/10"
                 >
                   <ul className="py-1" role="list">
                     {sections.map((section) => {
@@ -88,7 +88,7 @@ export function SectionIndicator() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15 }}
-                  className="flex items-center gap-3 rounded-lg bg-navy-900/80 px-4 py-2 border border-white/10"
+                  className="flex items-center gap-3 bg-navy-900/80 px-4 py-2 border border-white/10"
                   aria-expanded={false}
                   aria-haspopup="true"
                 >

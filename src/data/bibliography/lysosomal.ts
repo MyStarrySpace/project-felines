@@ -175,4 +175,29 @@ export const lysosomalSources: Source[] = [
     ],
     verificationStatus: "verified",
   },
+  {
+    id: "paushter-2018-actaneuropathol",
+    title:
+      "The lysosomal function of progranulin, a guardian against neurodegeneration",
+    authors: "Paushter DH, Du H, Feng T, Hu F",
+    journal: "Acta Neuropathologica",
+    year: 2018,
+    doi: "10.1007/s00401-018-1861-8",
+    pmid: "29744576",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6117207/#:~:text=growing%20evidence%20suggests%20a%20role%20for%20PGRN%20in%20the%20lysosome",
+    tags: ["lysosomal", "ftd"],
+    citations: [
+      {
+        citationId: "paushter-2018-actaneuropathol-c1",
+        sourceId: "paushter-2018-actaneuropathol",
+        quote:
+          "Growing evidence suggests a role for PGRN in the lysosome – most striking being that homozygous GRN mutation leads to neuronal ceroid lipofuscinosis, a lysosomal storage disease",
+        context:
+          "Progranulin is essential for lysosomal integrity; loss causes lysosomal storage disease",
+        projectRef:
+          "FELINE L layer: Progranulin maintains lysosomal membranes",
+      },
+    ],
+    verificationStatus: "verified",
+  },
 ];

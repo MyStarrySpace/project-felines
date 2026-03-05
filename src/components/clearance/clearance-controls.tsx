@@ -2,45 +2,45 @@
 
 import { Expandable } from "@/components/ui/expandable";
 import { ParameterSlider } from "@/components/ui/parameter-slider";
-import { DiseaseToggles } from "./disease-toggles";
-import { parameterMeta } from "@/lib/clearance/parameters";
+import { ExtensionToggles } from "./disease-toggles";
+import { parameterMeta, citations } from "@/lib/clearance/parameters";
 import type {
-  ClearanceParameters,
-  DiseasePerturbations,
+  CoreParameters,
+  OptionalExtensions,
   Sex,
   APOEGenotype,
 } from "@/lib/clearance/types";
 
 interface ClearanceControlsProps {
-  params: Partial<ClearanceParameters>;
-  perturbations: DiseasePerturbations;
+  params: Partial<CoreParameters>;
+  extensions: Partial<OptionalExtensions>;
   showReference: boolean;
   onParamChange: (key: string, value: number | string) => void;
-  onPerturbationsChange: (perturbations: DiseasePerturbations) => void;
+  onExtensionsChange: (extensions: Partial<OptionalExtensions>) => void;
   onToggleReference: () => void;
 }
 
 export function ClearanceControls({
   params,
-  perturbations,
+  extensions,
   showReference,
   onParamChange,
-  onPerturbationsChange,
+  onExtensionsChange,
   onToggleReference,
 }: ClearanceControlsProps) {
-  const fpnMeta = parameterMeta.filter((m) => m.group === "fpn");
-  const glyMeta = parameterMeta.filter((m) => m.group === "glymphatic");
-  const advMeta = parameterMeta.filter((m) => m.group === "advanced");
+  const coreMeta = parameterMeta.filter((m) => m.group === "core");
+  const clearanceMeta = parameterMeta.filter((m) => m.group === "clearance");
+  const thresholdMeta = parameterMeta.filter((m) => m.group === "thresholds");
 
   const currentSex = (params.sex as Sex) ?? "male";
   const currentApoe = (params.apoe_genotype as APOEGenotype) ?? "e3/e3";
 
   return (
     <div className="space-y-4">
-      {/* Disease toggles */}
-      <DiseaseToggles
-        perturbations={perturbations}
-        onChange={onPerturbationsChange}
+      {/* Extension toggles */}
+      <ExtensionToggles
+        extensions={extensions}
+        onChange={onExtensionsChange}
       />
 
       {/* Demographics */}
@@ -55,7 +55,7 @@ export function ClearanceControls({
                 <button
                   key={sex}
                   onClick={() => onParamChange("sex", sex)}
-                  className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                  className={`px-3 py-1 text-xs font-medium transition-colors ${
                     currentSex === sex
                       ? "bg-teal-400 text-navy-900"
                       : "bg-white/5 text-gray-400 hover:bg-white/10"
@@ -75,7 +75,7 @@ export function ClearanceControls({
                 <button
                   key={g}
                   onClick={() => onParamChange("apoe_genotype", g)}
-                  className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                  className={`px-3 py-1 text-xs font-medium transition-colors ${
                     currentApoe === g
                       ? "bg-teal-400 text-navy-900"
                       : "bg-white/5 text-gray-400 hover:bg-white/10"
@@ -89,77 +89,97 @@ export function ClearanceControls({
         </div>
       </Expandable>
 
-      {/* Fpn Kinetics */}
-      <Expandable title="Ferroportin kinetics" variant="dark">
+      {/* Core parameters */}
+      <Expandable title="Core parameters" variant="dark">
         <div className="space-y-3">
-          {fpnMeta.map((meta) => (
-            <ParameterSlider
-              key={meta.key}
-              label={meta.label}
-              value={(params[meta.key] as number) ?? meta.min}
-              min={meta.min}
-              max={meta.max}
-              step={meta.step}
-              unit={meta.unit}
-              confidence={meta.confidence}
-              onChange={(v) => onParamChange(meta.key, v)}
-            />
-          ))}
+          {coreMeta.map((meta) => {
+            const c = meta.citationKey ? citations[meta.citationKey] : undefined;
+            return (
+              <ParameterSlider
+                key={meta.key}
+                label={meta.label}
+                value={(params[meta.key as keyof CoreParameters] as number) ?? meta.min}
+                min={meta.min}
+                max={meta.max}
+                step={meta.step}
+                unit={meta.unit}
+                source={meta.source}
+                cite={c?.cite ?? meta.cite}
+                citationNote={c?.note}
+                pmid={c?.pmid}
+                onChange={(v) => onParamChange(meta.key, v)}
+              />
+            );
+          })}
         </div>
       </Expandable>
 
-      {/* Glymphatic */}
-      <Expandable title="Glymphatic clearance" variant="dark">
+      {/* Clearance decline */}
+      <Expandable title="Clearance decline rates" variant="dark">
         <div className="space-y-3">
-          {glyMeta.map((meta) => (
-            <ParameterSlider
-              key={meta.key}
-              label={meta.label}
-              value={(params[meta.key] as number) ?? meta.min}
-              min={meta.min}
-              max={meta.max}
-              step={meta.step}
-              unit={meta.unit}
-              confidence={meta.confidence}
-              onChange={(v) => onParamChange(meta.key, v)}
-            />
-          ))}
+          {clearanceMeta.map((meta) => {
+            const c = meta.citationKey ? citations[meta.citationKey] : undefined;
+            return (
+              <ParameterSlider
+                key={meta.key}
+                label={meta.label}
+                value={(params[meta.key as keyof CoreParameters] as number) ?? meta.min}
+                min={meta.min}
+                max={meta.max}
+                step={meta.step}
+                unit={meta.unit}
+                source={meta.source}
+                cite={c?.cite ?? meta.cite}
+                citationNote={c?.note}
+                pmid={c?.pmid}
+                onChange={(v) => onParamChange(meta.key, v)}
+              />
+            );
+          })}
         </div>
       </Expandable>
 
-      {/* Advanced */}
-      <Expandable title="Advanced parameters" variant="dark">
+      {/* Thresholds */}
+      <Expandable title="Ferroptosis thresholds" variant="dark">
         <div className="space-y-3">
-          {advMeta.map((meta) => (
-            <ParameterSlider
-              key={meta.key}
-              label={meta.label}
-              value={(params[meta.key] as number) ?? meta.min}
-              min={meta.min}
-              max={meta.max}
-              step={meta.step}
-              unit={meta.unit}
-              confidence={meta.confidence}
-              onChange={(v) => onParamChange(meta.key, v)}
-            />
-          ))}
+          {thresholdMeta.map((meta) => {
+            const c = meta.citationKey ? citations[meta.citationKey] : undefined;
+            return (
+              <ParameterSlider
+                key={meta.key}
+                label={meta.label}
+                value={(params[meta.key as keyof CoreParameters] as number) ?? meta.min}
+                min={meta.min}
+                max={meta.max}
+                step={meta.step}
+                unit={meta.unit}
+                source={meta.source}
+                cite={c?.cite ?? meta.cite}
+                citationNote={c?.note}
+                pmid={c?.pmid}
+                onChange={(v) => onParamChange(meta.key, v)}
+              />
+            );
+          })}
         </div>
       </Expandable>
 
       {/* Compare toggle */}
-      <label className="flex cursor-pointer items-center gap-2.5 rounded-lg border border-white/10 px-3 py-2.5">
+      <label className="flex cursor-pointer items-center gap-2.5 border border-white/10 px-3 py-2.5">
         <div
-          className={`relative h-5 w-9 rounded-full transition-colors ${
-            showReference ? "bg-teal-400" : "bg-white/10"
+          className={`flex h-4 w-4 items-center justify-center border transition-colors ${
+            showReference
+              ? "border-teal-400 bg-teal-400/15"
+              : "border-white/20 bg-transparent"
           }`}
         >
-          <div
-            className={`absolute top-0.5 h-4 w-4 rounded-full bg-white shadow-sm transition-transform ${
-              showReference ? "translate-x-4" : "translate-x-0.5"
-            }`}
-          />
+          {showReference && (
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+              <path d="M1 4l2.5 2.5L9 1" stroke="#2DD4BF" strokeWidth="1.5" strokeLinecap="square" />
+            </svg>
+          )}
         </div>
-        <span className="text-sm text-gray-300">Compare to healthy</span>
+        <span className="text-sm text-gray-200">Compare to healthy</span>
         <input
           type="checkbox"
           checked={showReference}
@@ -168,26 +188,26 @@ export function ClearanceControls({
         />
       </label>
 
-      {/* Confidence legend */}
-      <div className="rounded-lg border border-white/10 px-3 py-2.5">
+      {/* Source legend */}
+      <div className="border border-white/10 px-3 py-2.5">
         <p className="mb-1.5 text-xs font-medium text-gray-400">
-          Confidence indicator
+          Parameter source
         </p>
         <div className="flex flex-wrap gap-3">
-          {(["high", "moderate", "low"] as const).map((level) => (
+          {(["measured", "derived", "assumed"] as const).map((level) => (
             <div key={level} className="flex items-center gap-1.5">
               <span
                 className="inline-block h-2 w-2 rounded-full"
                 style={{
                   backgroundColor:
-                    level === "high"
+                    level === "measured"
                       ? "#059669"
-                      : level === "moderate"
+                      : level === "derived"
                         ? "#D97706"
                         : "#DC2626",
                 }}
               />
-              <span className="text-xs capitalize text-gray-500">{level}</span>
+              <span className="text-xs capitalize text-gray-400">{level}</span>
             </div>
           ))}
         </div>

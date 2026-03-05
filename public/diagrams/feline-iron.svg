@@ -1,1001 +1,609 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1861 622" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
-    <g transform="matrix(1,0,0,1,-5.5038,-56.4653)">
-        <g transform="matrix(1,0,0,1.17402,0,-10.7894)">
-            <path d="M270,68.814L270,575.186C270,578.947 266.415,582 262,582L18,582C13.585,582 10,578.947 10,575.186L10,68.814C10,65.053 13.585,62 18,62L262,62C266.415,62 270,65.053 270,68.814Z" style="fill:white;stroke:black;stroke-width:2px;"/>
-        </g>
-        <g transform="matrix(1,0,0,1,140,86)">
-            <g transform="matrix(16,0,0,16,116.898,0)">
-            </g>
-            <text x="-116.898px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:16px;">IRON IMPORT &amp; PROCESSING</text>
-        </g>
-        <g id="Transferrin-complex-1" serif:id="Transferrin complex 1">
-            <g id="Transferrin-1" serif:id="Transferrin 1" transform="matrix(1.27923,-1.27923,1.27923,1.27923,-243.957,235.768)">
-                <path d="M161.405,145.991C160.737,144.586 159.634,143.434 158.26,142.705C155.731,141.357 154.008,138.693 154.008,135.631C154.008,131.21 157.598,127.62 162.019,127.62C163.542,127.62 164.966,128.046 166.179,128.786C167.787,129.775 169.815,129.775 171.423,128.785C172.636,128.046 174.06,127.62 175.583,127.62C180.004,127.62 183.594,131.21 183.594,135.631C183.594,138.78 181.773,141.507 179.127,142.815C177.696,143.521 176.537,144.679 175.832,146.111C174.523,148.756 171.796,150.577 168.647,150.577C165.451,150.577 162.69,148.701 161.405,145.991Z" style="fill:white;stroke:black;stroke-width:0.55px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g id="Fe3--1" serif:id="Fe3+ 1">
-                <g id="Fe3-ellipse-2" serif:id="Fe3 ellipse 2" transform="matrix(0.79392,0,0,0.79392,90.5902,83.1869)">
-                    <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-                </g>
-                <g id="Fe3--1-label" serif:id="Fe3+ 1 label" transform="matrix(1,0,0,1,153.89,188.373)">
-                    <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe³</text>
-                    <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-                </g>
-            </g>
-            <g id="Fe3--2" serif:id="Fe3+ 2">
-                <g id="Fe3-ellipse-1" serif:id="Fe3 ellipse 1" transform="matrix(0.79392,0,0,0.79392,73.3608,100.416)">
-                    <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-                </g>
-                <g id="Fe3--2-label" serif:id="Fe3+ 2 label" transform="matrix(1,0,0,1,136.661,205.602)">
-                    <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe³</text>
-                    <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-                </g>
-            </g>
-        </g>
-        <g id="Transferrin-complex-2" serif:id="Transferrin complex 2" transform="matrix(0.707107,0.707107,-0.707107,0.707107,96.1185,-85.4923)">
-            <g id="Transferrin-11" serif:id="Transferrin 1" transform="matrix(1.27923,-1.27923,1.27923,1.27923,-243.957,235.768)">
-                <path d="M161.405,145.991C160.737,144.586 159.634,143.434 158.26,142.705C155.731,141.357 154.008,138.693 154.008,135.631C154.008,131.21 157.598,127.62 162.019,127.62C163.542,127.62 164.966,128.046 166.179,128.786C167.787,129.775 169.815,129.775 171.423,128.785C172.636,128.046 174.06,127.62 175.583,127.62C180.004,127.62 183.594,131.21 183.594,135.631C183.594,138.78 181.773,141.507 179.127,142.815C177.696,143.521 176.537,144.679 175.832,146.111C174.523,148.756 171.796,150.577 168.647,150.577C165.451,150.577 162.69,148.701 161.405,145.991Z" style="fill:white;stroke:black;stroke-width:0.55px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g id="Fe3--11" serif:id="Fe3+ 1">
-                <g id="Fe3-ellipse-21" serif:id="Fe3 ellipse 2" transform="matrix(0.79392,0,0,0.79392,90.5902,83.1869)">
-                    <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-                </g>
-                <g id="Fe3--1-label1" serif:id="Fe3+ 1 label" transform="matrix(0.707107,-0.707107,0.707107,0.707107,156.463,187.455)">
-                    <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe³</text>
-                    <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-                </g>
-            </g>
-            <g id="Fe3--21" serif:id="Fe3+ 2">
-                <g id="Fe3-ellipse-11" serif:id="Fe3 ellipse 1" transform="matrix(0.79392,0,0,0.79392,73.3608,100.416)">
-                    <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-                </g>
-                <g id="Fe3--2-label1" serif:id="Fe3+ 2 label" transform="matrix(0.707107,-0.707107,0.707107,0.707107,139.233,204.684)">
-                    <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe³</text>
-                    <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-                </g>
-            </g>
-        </g>
-        <g id="TfR1-receptor" serif:id="TfR1 receptor" transform="matrix(0.753899,-0.753899,0.53827,0.53827,-60.4108,294.722)">
-            <path d="M202.815,170.669C202.815,173.57 201.134,175.924 199.064,175.924C196.993,175.924 195.312,173.57 195.312,170.669L195.312,150.081C191.558,149.382 188.564,147.579 186.332,145.044C183.118,141.395 181.324,136.193 181.179,129.854C181.113,126.955 182.74,124.526 184.809,124.434C186.879,124.341 188.613,126.619 188.679,129.518C188.831,136.184 192.636,139.943 199.042,139.892C200.041,139.884 201.001,140.434 201.709,141.42C202.417,142.406 202.815,143.748 202.815,145.146L202.815,170.669ZM204.534,170.669L204.534,145.146C204.534,143.748 204.932,142.406 205.64,141.42C206.348,140.434 207.308,139.884 208.307,139.892C214.713,139.943 218.517,136.184 218.67,129.518C218.736,126.619 220.47,124.341 222.539,124.434C224.609,124.526 226.235,126.955 226.169,129.854C226.025,136.193 224.231,141.395 221.017,145.044C218.784,147.579 215.79,149.382 212.037,150.081L212.037,170.669C212.037,173.57 210.356,175.924 208.285,175.924C206.215,175.924 204.534,173.57 204.534,170.669Z" style="fill:white;stroke:black;stroke-width:1.08px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-        </g>
-        <g id="Fe3--4" serif:id="Fe3+ 4" transform="matrix(0.632801,0,0,0.632801,33.7516,143.31)">
-            <g id="Fe3-ellipse-4" serif:id="Fe3 ellipse 4" transform="matrix(1.25293,0,0,1.25293,-7.66639,227.508)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Fe3--4-label" serif:id="Fe3+ 4 label" transform="matrix(1,0,0,1,92.3187,392.874)">
-                <text x="-14.483px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:15.803px;">Fe³</text>
-                <text x="9.221px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:15.803px;">⁺</text>
-            </g>
-        </g>
-        <g id="Fe2--1" serif:id="Fe2+ 1" transform="matrix(1,0,0,1,44.7651,16.6711)">
-            <g id="Fe2-ellipse-1" serif:id="Fe2 ellipse 1" transform="matrix(0.792857,0,0,0.792857,52.8446,274.574)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Fe2--1-label" serif:id="Fe2+ 1 label" transform="matrix(1,0,0,1,115.966,379.624)">
-                <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe</text>
-                <text x="2.505px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">²</text>
-                <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,-101.067,-51.9593)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">T<tspan x="132.924px 138.373px " y="166.937px 166.937px ">ra</tspan>nsferrin</text>
-            <text x="202.172px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">carries</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">two Fe³</text>
-            <text x="171.821px" y="180.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <g transform="matrix(14,0,0,14,206.055,180.937)">
-            </g>
-            <text x="180.373px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">ions</text>
-        </g>
-        <g transform="matrix(1,0,0,1,57.2601,-11.2285)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">TfR1</text>
-            <text x="160.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">binds</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">transferrin at</text>
-            <g transform="matrix(14,0,0,14,195.952,194.937)">
-            </g>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">cell surface</text>
-        </g>
-        <g transform="matrix(1,0,0,1,-101.067,79.8513)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Acidic pH in the</text>
-            <text x="125.145px" y="181.395px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Endosome</text>
-            <text x="200.6px" y="181.395px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">causes</text>
-            <text x="125.145px" y="195.853px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Fe³</text>
-            <text x="146.145px" y="195.853px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="154.697px" y="195.853px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">to dissociate</text>
-            <g transform="matrix(14,0,0,14,220.055,210.311)">
-            </g>
-            <text x="125.145px" y="210.311px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">from transferrin</text>
-        </g>
-        <g transform="matrix(1,0,0,1,-103.919,275.065)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">STEAP3</text>
-            <text x="179.607px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">, a</text>
-            <text x="125.145px" y="180.937px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:14px;">ferrireductase</text>
-            <text x="210.738px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">,</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">sits on the</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">endosomal</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">membrane and</text>
-            <text x="125.145px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">reduces Fe³</text>
-            <text x="199.841px" y="236.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="208.393px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">→</text>
-            <text x="125.145px" y="250.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Fe²</text>
-            <text x="146.145px" y="250.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-        </g>
-        <g transform="matrix(1,0,0,1,41.9095,283.092)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">DMT1</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">transports the</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">resulting Fe²</text>
-            <text x="202.952px" y="194.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">into the</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">cytoplasm,</text>
-            <g transform="matrix(14,0,0,14,219.331,236.937)">
-            </g>
-            <text x="125.145px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">feeding the LIP</text>
-        </g>
-        <g id="Endosome">
-            <g id="Endosome-ellipse-outer" serif:id="Endosome ellipse outer" transform="matrix(1.79963,0,0,1.79963,-80.0985,-85.4662)">
-                <circle cx="118.818" cy="251.653" r="38.794" style="fill:none;stroke:black;stroke-width:0.56px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g id="Endosome-ellipse-inner" serif:id="Endosome ellipse inner" transform="matrix(1.58127,0,0,1.58127,-54.1532,-30.5148)">
-                <circle cx="118.818" cy="251.653" r="38.794" style="fill:none;stroke:black;stroke-width:0.63px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="STEAP3" transform="matrix(0.384092,0.641795,-0.641795,0.384092,295.264,215.725)">
-            <path d="M26.408,350.631L27.408,350.631C29.97,350.631 32.05,352.71 32.05,355.272C32.05,369.427 43.542,380.919 57.696,380.919C71.851,380.919 83.343,369.427 83.343,355.272C83.343,352.71 85.422,350.631 87.984,350.631L88.984,350.631C91.546,350.631 93.626,352.71 93.626,355.272C93.626,375.102 77.526,391.202 57.696,391.202C37.866,391.202 21.767,375.102 21.767,355.272C21.767,352.71 23.847,350.631 26.408,350.631Z" style="fill:white;stroke:black;stroke-width:1.34px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-        </g>
-        <g transform="matrix(2.05913,0,0,1.17402,-296.555,-10.7894)">
-            <path d="M720,68.814L720,575.186C720,578.947 718.259,582 716.115,582L283.885,582C281.741,582 280,578.947 280,575.186L280,68.814C280,65.053 281.741,62 283.885,62L716.115,62C718.259,62 720,65.053 720,68.814Z" style="fill:white;stroke:black;stroke-width:1.19px;"/>
-        </g>
-        <g transform="matrix(1.40737,0,0,1.17402,806.588,-10.7894)">
-            <path d="M720,68.814L720,575.186C720,578.947 717.453,582 714.316,582L285.684,582C282.547,582 280,578.947 280,575.186L280,68.814C280,65.053 282.547,62 285.684,62L714.316,62C717.453,62 720,65.053 720,68.814Z" style="fill:white;stroke:black;stroke-width:2.07px;"/>
-        </g>
-        <g id="Catalase" transform="matrix(1,0,0,1,643.006,212.966)">
-            <g transform="matrix(1.37219,0,0,1.29603,-255.67,-76.3587)">
-                <path d="M676.725,222.4L724.643,251.773L676.725,281.146L628.807,251.773L676.725,222.4Z" style="fill:white;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g transform="matrix(1,0,0,1,-2.7525,23.0987)">
-                <text x="641.39px" y="224.382px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Fe³</text>
-                <text x="662.39px" y="224.382px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-                <text x="670.942px" y="224.382px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">+ O</text>
-                <text x="693.897px" y="224.382px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂⁻</text>
-                <text x="707.111px" y="224.382px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">→</text>
-                <text x="641.39px" y="238.84px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Fe²</text>
-                <text x="662.39px" y="238.84px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-                <text x="670.942px" y="238.84px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">+ O</text>
-                <text x="693.897px" y="238.84px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂</text>
-            </g>
-        </g>
-        <g transform="matrix(1.02422,-4.86837e-32,1.01775e-32,0.711747,190.363,263.114)">
-            <path d="M1309.38,438.485C1317.57,438.485 1324.22,445.135 1324.22,453.326C1324.22,461.516 1317.57,461.184 1309.38,461.184C1301.19,461.184 1294.54,461.516 1294.54,453.326C1294.54,445.135 1301.19,438.485 1309.38,438.485ZM1308.99,443.878C1305.78,443.878 1303.16,447.258 1303.16,451.421C1303.16,455.585 1305.78,455.416 1308.99,455.416C1312.21,455.416 1314.82,455.585 1314.82,451.421C1314.82,447.258 1312.21,443.878 1308.99,443.878Z" style="fill:white;stroke:black;stroke-width:1.13px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.407109,-0.407109,0.494454,0.494454,251.627,643.336)">
-            <path d="M965.044,595.479C965.022,593.551 965.211,591.588 965.638,589.605C966.307,586.496 969.915,584.42 973.691,584.971C975.566,585.244 977.132,586.115 978.152,587.303C983.917,585.088 990.588,583.812 997.445,583.957C1000.1,582.545 1003.67,582.764 1006.04,584.644C1006.19,584.761 1006.33,584.879 1006.48,584.999C1008.71,585.479 1010.94,586.131 1013.12,586.972C1016.59,588.309 1018.1,591.716 1016.47,594.576C1016.24,594.986 1015.96,595.362 1015.63,595.702C1018.86,596.657 1020.81,599.459 1020.06,602.293C1019.32,605.128 1017.75,607.999 1015.52,610.713C1014.61,616.729 1011.78,622.763 1006.54,627.896C1004.07,630.313 999.682,630.626 996.747,628.594C996.064,628.122 995.52,627.564 995.117,626.955C994.217,627.075 993.273,627.051 992.332,626.858C990.654,626.515 988.972,626.008 987.312,625.354C983.568,625.836 979.657,625.889 975.663,625.41C971.868,624.955 969.236,622.049 969.788,618.925C970.087,617.238 971.254,615.829 972.862,614.963C970.797,612.554 969.039,609.877 967.717,607.007C966.865,606.919 966.018,606.698 965.221,606.335C961.866,604.806 960.65,601.322 962.507,598.56C963.219,597.502 964.07,596.471 965.044,595.479ZM998.859,595.412C991.534,594.749 984.341,596.561 979.424,599.678C980.787,605.405 984.744,610.367 989.55,613.292C994.684,611.976 999.135,609.505 1002.23,606.547C1002.36,602.379 1001.13,598.41 998.859,595.412Z" style="fill:white;stroke:black;stroke-width:1.56px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-        </g>
-        <g id="Mitochondria" transform="matrix(1,0,0,1,879.889,-209.829)">
-            <g id="Mitochondria1" serif:id="Mitochondria" transform="matrix(0.536464,0,0,0.536464,-417.959,172.085)">
-                <path d="M925.579,540.726C904.207,538.8 892.046,524.421 891.424,503.84C890.701,479.886 909.515,464.762 928.381,461.753C956.635,457.247 1009.72,464.917 1051.67,504.246C1066.69,518.329 1075.38,536.461 1067.64,555.541C1058.66,577.673 1024.46,584.904 1008.22,572.252C966.235,539.56 948.182,542.763 925.579,540.726Z" style="fill:white;stroke:black;stroke-width:1.86px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Mitochondria-christae" serif:id="Mitochondria christae" transform="matrix(1,0,0,1,-583.747,173.323)">
-                <path d="M654.161,255.466C653.829,256.398 652.964,256.731 654.627,258.461C656.291,260.191 660.017,262.919 656.69,263.784C653.363,264.649 652.431,257.928 649.969,260.524C647.507,263.119 646.642,273.233 649.37,272.767C652.098,272.302 654.827,269.973 656.291,270.372C657.755,270.771 659.085,272.235 657.621,273.233C656.158,274.231 650.102,274.658 651.633,277.472C653.163,280.287 654.76,281.884 657.089,282.216C659.418,282.549 661.88,276.893 662.878,275.695C663.876,274.497 666.072,272.834 667.004,274.63C667.935,276.427 660.35,285.144 665.141,284.811C669.932,284.479 673.126,277.292 673.725,276.028C674.324,274.764 674.457,273.265 676.054,273.981C677.651,274.697 674.057,280.752 674.856,282.948C675.654,285.144 676.985,285.41 679.381,285.81C681.776,286.209 683.307,283.148 683.772,278.556C684.238,273.965 684.771,267.91 688.364,270.106C691.957,272.302 684.85,286.408 687.705,288.538C690.56,290.667 693.022,291.277 694.02,290.872C695.018,290.467 700.408,277.958 702.937,280.22C705.465,282.482 701.122,287.34 700,289.403C698.878,291.466 697.014,293.063 698.478,294.26C699.942,295.458 701.14,296.39 702.537,295.924C703.935,295.458 708.526,284.213 710.922,285.876C713.317,287.54 710.323,290.534 708.792,293.595C707.262,296.656 704.6,298.985 707.528,301.181C710.456,303.377 711.121,302.778 712.718,302.046C714.315,301.314 714.515,292.863 717.11,292.796C719.705,292.73 718.441,298.319 718.108,301.447C717.775,304.574 720.637,304.574 723.432,303.909C726.226,303.244 726.958,300.249 725.827,297.787C724.696,295.325 723.698,292.198 726.359,292.53C729.021,292.863 728.644,297.654 731.417,297.787C734.189,297.92 736.718,288.072 735.121,286.874C733.524,285.676 732.859,286.076 729.465,286.475C726.071,286.874 726.337,283.68 728.733,282.616C731.128,281.551 733.457,280.619 731.395,278.357C729.332,276.094 727.735,277.824 725.672,279.422C723.609,281.019 720.615,278.49 721.813,276.893C723.01,275.296 726.537,273.832 724.142,270.771C721.746,267.71 719.883,266.313 718.552,267.244C717.221,268.176 714.36,278.317 710.5,277.472C706.641,276.627 710.035,271.969 711.099,270.704C712.164,269.44 716.09,264.782 713.229,261.987C710.367,259.193 705.776,255.599 704.179,258.993C702.582,262.387 700.519,273.832 697.192,272.9C693.865,271.969 698.257,263.851 699.321,260.058C700.386,256.265 699.521,255.2 695.595,254.069C691.669,252.938 691.736,254.468 690.804,257.13C689.872,259.792 689.14,260.856 687.011,260.257C684.882,259.659 687.467,254.734 687.705,253.137C687.943,251.54 686.146,250.675 683.817,250.276C681.488,249.877 676.83,248.546 676.697,253.869C676.564,259.193 676.764,264.45 675.566,266.047C674.368,267.644 672.106,266.779 671.973,265.381C671.839,263.984 672.825,249.989 669.997,249.823C667.169,249.656 662.677,250.072 663.26,252.568C663.842,255.063 667.252,259.471 664.84,260.553C662.428,261.634 660.265,252.401 658.352,252.9C656.439,253.399 654.494,254.535 654.161,255.466Z" style="fill:white;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Mitochondria-Double-Star" serif:id="Mitochondria Double Star" transform="matrix(1.37425,0,0,1.48889,324.232,-403.986)">
-            <path d="M511.131,411.944L514.474,417.819L520.637,416.833L519.202,421.069L527.748,423.367L519.202,425.665L520.637,429.902L514.474,428.915L511.131,434.79L507.788,428.915L501.625,429.902L503.06,425.665L494.514,423.367L503.06,421.069L501.625,416.833L507.788,417.819L511.131,411.944Z" style="fill:white;stroke:black;stroke-width:0.7px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(1,0,0,1,706.173,-173.323)">
-            <g id="PUFAs-label" serif:id="PUFAs label" transform="matrix(1,0,0,1,60,593.28)">
-                <text x="-25.785px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:16px;">PUF<tspan x="5.332px 16.887px " y="0px 0px ">As</tspan></text>
-            </g>
-            <g transform="matrix(1,0,0,1,-121.856,635.26)">
-                <g transform="matrix(1,0,0,1,0.25612,0)">
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="714.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip2">
-                            <rect x="4.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip2)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="718.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="724.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip4">
-                            <rect x="14.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip4)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="728.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="734.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip5">
-                            <rect x="24.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip5)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="738.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="744.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip6">
-                            <rect x="34.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip6)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="748.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="754.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip7">
-                            <rect x="44.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip7)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="758.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="764.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip8">
-                            <rect x="54.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip8)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="768.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="774.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip9">
-                            <rect x="64.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip9)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="778.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="784.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip10">
-                            <rect x="74.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip10)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="788.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                            <use xlink:href="#_Image1" x="794.227" y="369.412" width="9px" height="9px"/>
-                        </g>
-                    </g>
-                    <g transform="matrix(1,0,0,1,134.657,-31.5593)">
-                        <clipPath id="_clip11">
-                            <rect x="84.5" y="4" width="1" height="14"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip11)">
-                            <g transform="matrix(1,-0,-0,1,-713.727,-373.912)">
-                                <use xlink:href="#_Image3" x="798.227" y="377.912" width="1px" height="14px"/>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-                <g id="Hydroxyl-radical-Double-Star" serif:id="Hydroxyl radical Double Star" transform="matrix(1.37425,0,0,1.48889,-566.767,-665.906)">
-                    <path d="M511.131,411.944L514.474,417.819L520.637,416.833L519.202,421.069L527.748,423.367L519.202,425.665L520.637,429.902L514.474,428.915L511.131,434.79L507.788,428.915L501.625,429.902L503.06,425.665L494.514,423.367L503.06,421.069L501.625,416.833L507.788,417.819L511.131,411.944Z" style="fill:white;stroke:black;stroke-width:0.7px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-                </g>
-                <g id="Hydroxyl-radical-Double-Star1" serif:id="Hydroxyl radical Double Star" transform="matrix(1.37425,0,0,1.48889,-476.972,-651.627)">
-                    <path d="M511.131,411.944L514.474,417.819L520.637,416.833L519.202,421.069L527.748,423.367L519.202,425.665L520.637,429.902L514.474,428.915L511.131,434.79L507.788,428.915L501.625,429.902L503.06,425.665L494.514,423.367L503.06,421.069L501.625,416.833L507.788,417.819L511.131,411.944Z" style="fill:white;stroke:black;stroke-width:0.7px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-                </g>
-            </g>
-        </g>
-        <g id="Fenton-reaction" serif:id="Fenton reaction">
-            <g transform="matrix(1.77744,0,0,2.16718,-392.932,-306.274)">
-                <path d="M494.71,283L505.168,295.877L520.839,293.741L522.09,302.833L546.967,304.482L528.554,314.089L536.987,321.861L522.09,325.344L527.007,339.24L505.168,332.301L494.71,339.24L484.252,332.301L462.413,339.24L467.33,325.344L452.433,321.861L460.866,314.089L442.453,304.482L467.33,302.833L468.581,293.741L484.252,295.877L494.71,283Z" style="fill:white;stroke:black;stroke-width:0.5px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g transform="matrix(1,0,0,1,429.981,359.432)">
-                <text x="2.958px" y="10.021px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">H</text>
-                <text x="13.068px" y="10.021px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂</text>
-                <text x="17.73px" y="10.021px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">O</text>
-                <text x="28.62px" y="10.021px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂</text>
-                <text x="37.171px" y="10.021px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">+ Fe²</text>
-                <text x="70.237px" y="10.021px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-                <text x="74.899px" y="10.021px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">→ Fe³</text>
-                <text x="113.789px" y="10.021px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-                <text x="20.912px" y="24.021px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">+ •OH + OH</text>
-                <text x="95.834px" y="24.021px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁻</text>
-            </g>
-        </g>
-        <g id="Regeneration" transform="matrix(1,0,0,1,-18.6213,5.25592)">
-            <g transform="matrix(1.37219,0,0,1.29603,-255.67,-76.3587)">
-                <path d="M676.725,222.4L724.643,251.773L676.725,281.146L628.807,251.773L676.725,222.4Z" style="fill:white;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g transform="matrix(1,0,0,1,-2.7525,23.0987)">
-                <text x="641.39px" y="224.382px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Fe³</text>
-                <text x="662.39px" y="224.382px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-                <text x="670.942px" y="224.382px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">+ O</text>
-                <text x="693.897px" y="224.382px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂⁻</text>
-                <text x="707.111px" y="224.382px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">→</text>
-                <text x="641.39px" y="238.84px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Fe²</text>
-                <text x="662.39px" y="238.84px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-                <text x="670.942px" y="238.84px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">+ O</text>
-                <text x="693.897px" y="238.84px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂</text>
-            </g>
-        </g>
-        <g id="LIP-Ellipse" serif:id="LIP Ellipse" transform="matrix(0.573245,0,0,1.22838,190.236,-270.191)">
-            <ellipse cx="400" cy="390" rx="75" ry="35" style="fill:white;stroke:black;stroke-width:1.04px;"/>
-        </g>
-        <g id="DMT1-1" serif:id="DMT1 1" transform="matrix(-0.0456835,-0.0971103,0.231955,-0.109118,133.217,435.534)">
-            <path d="M163.899,399.346C164.852,398.996 166.877,398.229 168.038,397.627C172.261,395.437 175.933,392.572 179.266,389.238C189.858,378.646 196.031,363.989 196.031,347.841C196.031,331.693 189.858,317.037 179.266,306.445C175.933,303.111 172.261,300.246 168.038,298.056C166.877,297.454 164.852,296.687 163.899,296.337C144.409,295.834 128.952,289.048 128.952,280.763C128.952,272.15 145.653,265.158 166.224,265.158C187.332,265.158 208.501,269.356 226.042,278.453C251.205,291.504 270.575,317.56 270.575,347.841C270.575,378.123 251.205,404.179 226.042,417.23C208.501,426.327 187.332,430.525 166.224,430.525C145.653,430.525 128.952,423.533 128.952,414.92C128.952,406.635 144.409,399.849 163.899,399.346ZM445.731,399.346C465.221,399.849 480.678,406.635 480.678,414.92C480.678,423.533 463.977,430.525 443.406,430.525C422.298,430.525 401.129,426.327 383.588,417.23C358.425,404.179 339.055,378.123 339.055,347.841C339.055,317.56 358.425,291.504 383.588,278.453C401.129,269.356 422.298,265.158 443.406,265.158C463.977,265.158 480.678,272.15 480.678,280.763C480.678,289.048 465.221,295.834 445.731,296.337C444.778,296.687 442.753,297.454 441.592,298.056C437.369,300.246 433.697,303.111 430.364,306.445C419.772,317.037 413.599,331.693 413.599,347.841C413.599,363.989 419.772,378.646 430.364,389.238C433.697,392.572 437.369,395.437 441.592,397.627C442.753,398.229 444.778,398.996 445.731,399.346Z" style="fill:white;stroke:black;stroke-width:5.09px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-        </g>
-        <g id="LIP-Label" serif:id="LIP Label" transform="matrix(1,0,0,1,187.14,-29.1852)">
-            <text x="125.145px" y="166.93px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Cytosolic</text>
-            <text x="125.145px" y="180.93px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Labile Iron</text>
-            <g transform="matrix(14,0,0,14,190.469,194.93)">
-            </g>
-            <text x="125.145px" y="194.93px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Pool (LIP)</text>
-        </g>
-        <g transform="matrix(1,0,0,1,280,74.3516)">
-            <text x="254.336px" y="11.453px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:16px;">LIPID PEROXIDA<tspan x="382.055px 391.828px " y="11.453px 11.453px ">TI</tspan>ON &amp; MIT<tspan x="467.977px 480.422px " y="11.453px 11.453px ">OC</tspan>HONDRIAL<tspan x="576.125px 580.57px " y="11.453px 11.453px "> D</tspan>AMAGE</text>
-        </g>
-        <g transform="matrix(1,0,0,1,1200.65,74.3516)">
-            <g transform="matrix(16,0,0,16,404.294,11.4531)">
-            </g>
-            <text x="214.95px" y="11.453px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:16px;">ANTIOXIDANT DEFENSE</text>
-        </g>
-        <g transform="matrix(1,0,0,1,166.998,229.39)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Free</text>
-            <text x="157.821px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Fe²</text>
-            <text x="178.821px" y="166.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="187.373px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">from the</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">LIP<tspan x="145.906px 149.796px " y="180.937px 180.937px "> e</tspan>ncounters</text>
-            <text x="125.145px" y="194.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">H</text>
-            <text x="135.255px" y="194.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂</text>
-            <text x="139.918px" y="194.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">O</text>
-            <text x="150.807px" y="194.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂</text>
-            <text x="159.359px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">(hydrogen</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">peroxide) from</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">mitochondrial</text>
-            <text x="125.145px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">respiration,</text>
-            <text x="125.145px" y="250.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">resulting in the</text>
-            <g transform="matrix(14,0,0,14,230.152,264.937)">
-            </g>
-            <text x="125.145px" y="264.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Fenton reaction</text>
-        </g>
-        <g transform="matrix(1,0,0,1,353.734,14.5234)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">This iron reduction step,</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">combined with the Fenton</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">reaction, creates the</text>
-            <g transform="matrix(14,0,0,14,268.05,208.937)">
-            </g>
-            <text x="125.145px" y="208.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Haber-W<tspan x="182.451px 190.237px " y="208.937px 208.937px ">ei</tspan>ss reaction</text>
-        </g>
-        <g transform="matrix(1,0,0,1,840.486,-18.3263)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Eleveated LIP<tspan x="212.064px 215.954px " y="166.937px 166.937px "> P</tspan>ool</text>
-            <text x="247.864px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">→</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Excess iron gets imported</text>
-            <g transform="matrix(14,0,0,14,276.869,194.937)">
-            </g>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">into mitochondrial matrix</text>
-        </g>
-        <g transform="matrix(1,0,0,1,1114.32,-66.2598)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Extracellular</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">glutamate blocks</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">System xc</text>
-            <text x="189.711px" y="194.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁻</text>
-        </g>
-        <g transform="matrix(1,0,0,1,938.521,56.3763)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Oxidative stress</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">in matrix causes</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">damage to Fe-S</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">cluster being</text>
-            <g transform="matrix(14,0,0,14,192.848,222.937)">
-            </g>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">assembled</text>
-        </g>
-        <g transform="matrix(1,0,0,1,910.588,172.866)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">ETC complex</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">destabilization →</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">more electron</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">leakage → more O</text>
-            <text x="242.641px" y="208.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂⁻</text>
-        </g>
-        <g transform="matrix(1,0,0,1,601.867,14.3763)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">•OH attacks</text>
-            <text x="203.177px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">cardiolipin</text>
-            <text x="277.853px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">and</text>
-            <text x="125.145px" y="180.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">mtDNA,</text>
-            <text x="180.366px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">destabilizing ETC</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">complexes, causing electron</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">leakage. Oxidized cardiolipin</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">also triggers</text>
-            <text x="205.29px" y="222.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">cytochrome c</text>
-            <g transform="matrix(14,0,0,14,294.027,236.937)">
-            </g>
-            <text x="125.145px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">release, initiating apoptosis</text>
-        </g>
-        <g transform="matrix(1,0,0,1,569.074,307.683)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">•OH attacks</text>
-            <text x="203.177px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">PUF<tspan x="230.405px 240.515px " y="166.937px 166.937px ">As</tspan></text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">(polyunsaturated</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">fatty acids) in cell</text>
-            <g transform="matrix(14,0,0,14,199.062,208.937)">
-            </g>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">membranes</text>
-        </g>
-        <g transform="matrix(1,0,0,1,173.548,397.226)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">NOX</text>
-            <text x="159.373px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">(NADPH oxidase)</text>
-            <text x="125.145px" y="180.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">enzymes</text>
-            <text x="188.179px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">generate</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">reactive oxygen species</text>
-            <g transform="matrix(14,0,0,14,255.096,208.937)">
-            </g>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">as immune response</text>
-        </g>
-        <g transform="matrix(1,0,0,1,879.358,342.233)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">SOD</text>
-            <text x="159.373px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">(Superoxide</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">dismutase)  converts</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">two superoxide</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">radicals into hydrogen</text>
-            <g transform="matrix(14,0,0,14,255.13,222.937)">
-            </g>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">peroxide and oxygen</text>
-        </g>
-        <g transform="matrix(1,0,0,1,1354.33,210.119)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">NCOA4</text>
-            <text x="178.042px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">binds to</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">the</text>
-            <text x="148.497px" y="180.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">FTH1</text>
-            <text x="187.386px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">(H-</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">chain)</text>
-            <text x="167.166px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">on Ferritin</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Ferritin H-chains</text>
-            <text x="125.145px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">are more</text>
-            <g transform="matrix(14,0,0,14,232.545,250.937)">
-            </g>
-            <text x="125.145px" y="250.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">prevalent in brain</text>
-        </g>
-        <g transform="matrix(1,0,0,1,1323.31,89.7436)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Autophagosome</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">connects to</text>
-            <text x="200.634px" y="180.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">LIR</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">(LC3-interacting</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">regoin), engulfs the</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">complex, then fuses</text>
-            <text x="125.145px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">with lysosome to</text>
-            <text x="125.145px" y="250.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">form</text>
-            <g transform="matrix(14,0,0,14,251.172,250.937)">
-            </g>
-            <text x="157.035px" y="250.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">autolysosome</text>
-        </g>
-        <g transform="matrix(1,0,0,1,1329.72,-49.7731)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Acidic pH and</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">lysosomal</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">proteases</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">degrade ferritin</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">shell, exposing</text>
-            <text x="125.145px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Fe³</text>
-            <text x="146.145px" y="236.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="154.697px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">core</text>
-            <text x="125.145px" y="250.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Reducing</text>
-            <text x="125.145px" y="264.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">agents convert</text>
-            <text x="125.145px" y="278.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Fe³</text>
-            <text x="146.145px" y="278.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="154.697px" y="278.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">→ Fe²</text>
-            <text x="193.587px" y="278.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-        </g>
-        <g id="Autolysosome-" serif:id="Autolysosome " transform="matrix(1.26737,-0.168379,0.168379,1.26737,-516.463,202.902)">
-            <g id="Autolysosome-Outer" serif:id="Autolysosome Outer" transform="matrix(0.829653,0,0,0.829653,277.092,57.2844)">
-                <path d="M1721.7,246.491C1730.85,256.876 1736.4,270.506 1736.4,285.422C1736.4,317.937 1710.01,344.335 1677.49,344.335C1644.98,344.335 1618.58,317.937 1618.58,285.422C1618.58,270.505 1624.13,256.875 1633.29,246.492C1613.4,232.545 1600.4,209.45 1600.4,183.342C1600.4,140.795 1634.94,106.252 1677.49,106.252C1720.04,106.252 1754.58,140.795 1754.58,183.342C1754.58,209.449 1741.58,232.544 1721.7,246.491Z" style="fill:white;stroke:black;stroke-width:0.94px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g id="Autolysosome-Inner" serif:id="Autolysosome Inner" transform="matrix(0.829653,0,0,0.829653,277.092,57.2844)">
-                <path d="M1641.72,249.283C1642.76,248.261 1643.27,246.818 1643.11,245.371C1642.94,243.924 1642.12,242.632 1640.88,241.869C1621.41,229.656 1608.45,208 1608.45,183.342C1608.45,145.24 1639.39,114.306 1677.49,114.306C1715.59,114.306 1746.53,145.24 1746.53,183.342C1746.53,208 1733.57,229.656 1714.1,241.869C1712.86,242.632 1712.04,243.923 1711.88,245.371C1711.71,246.818 1712.22,248.26 1713.26,249.282C1722.58,258.503 1728.35,271.294 1728.35,285.422C1728.35,313.492 1705.56,336.281 1677.49,336.281C1649.42,336.281 1626.63,313.492 1626.63,285.422C1626.63,271.294 1632.41,258.503 1641.72,249.283Z" style="fill:white;stroke:black;stroke-width:0.94px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="DMT1-2" serif:id="DMT1 2" transform="matrix(-0.0536595,0.0929411,-0.221996,-0.12817,1799.65,234.82)">
-            <path d="M163.899,399.346C164.852,398.996 166.877,398.229 168.038,397.627C172.261,395.437 175.933,392.572 179.266,389.238C189.858,378.646 196.031,363.989 196.031,347.841C196.031,331.693 189.858,317.037 179.266,306.445C175.933,303.111 172.261,300.246 168.038,298.056C166.877,297.454 164.852,296.687 163.899,296.337C144.409,295.834 128.952,289.048 128.952,280.763C128.952,272.15 145.653,265.158 166.224,265.158C187.332,265.158 208.501,269.356 226.042,278.453C251.205,291.504 270.575,317.56 270.575,347.841C270.575,378.123 251.205,404.179 226.042,417.23C208.501,426.327 187.332,430.525 166.224,430.525C145.653,430.525 128.952,423.533 128.952,414.92C128.952,406.635 144.409,399.849 163.899,399.346ZM445.731,399.346C465.221,399.849 480.678,406.635 480.678,414.92C480.678,423.533 463.977,430.525 443.406,430.525C422.298,430.525 401.129,426.327 383.588,417.23C358.425,404.179 339.055,378.123 339.055,347.841C339.055,317.56 358.425,291.504 383.588,278.453C401.129,269.356 422.298,265.158 443.406,265.158C463.977,265.158 480.678,272.15 480.678,280.763C480.678,289.048 465.221,295.834 445.731,296.337C444.778,296.687 442.753,297.454 441.592,298.056C437.369,300.246 433.697,303.111 430.364,306.445C419.772,317.037 413.599,331.693 413.599,347.841C413.599,363.989 419.772,378.646 430.364,389.238C433.697,392.572 437.369,395.437 441.592,397.627C442.753,398.229 444.778,398.996 445.731,399.346Z" style="fill:white;stroke:black;stroke-width:5.09px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-        </g>
-        <g id="Mitochondria-degraded" serif:id="Mitochondria degraded" transform="matrix(0.809625,0.118458,-0.118458,0.809625,1619.12,-216.283)">
-            <g id="Mitochondria2" serif:id="Mitochondria" transform="matrix(0.536464,0,0,0.536464,-417.959,172.085)">
-                <path d="M925.579,540.726C904.207,538.8 892.046,524.421 891.424,503.84C890.701,479.886 909.515,464.762 928.381,461.753C956.635,457.247 1009.72,464.917 1051.67,504.246C1066.69,518.329 1075.38,536.461 1067.64,555.541C1058.66,577.673 1024.46,584.904 1008.22,572.252C966.235,539.56 948.182,542.763 925.579,540.726Z" style="fill:white;stroke:black;stroke-width:2.28px;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:6.83,13.67,0,0,0,0;"/>
-            </g>
-            <g id="Mitochondria-christae-degraded" serif:id="Mitochondria christae degraded" transform="matrix(1,0,0,1,-583.747,173.323)">
-                <path d="M654.161,255.466C653.829,256.398 652.964,256.731 654.627,258.461C656.291,260.191 660.017,262.919 656.69,263.784C653.363,264.649 652.431,257.928 649.969,260.524C647.507,263.119 646.642,273.233 649.37,272.767C652.098,272.302 654.827,269.973 656.291,270.372C657.755,270.771 659.085,272.235 657.621,273.233C656.158,274.231 650.102,274.658 651.633,277.472C653.163,280.287 654.76,281.884 657.089,282.216C659.418,282.549 661.88,276.893 662.878,275.695C663.876,274.497 666.072,272.834 667.004,274.63C667.935,276.427 660.35,285.144 665.141,284.811C669.932,284.479 673.126,277.292 673.725,276.028C674.324,274.764 674.457,273.265 676.054,273.981C677.651,274.697 674.057,280.752 674.856,282.948C675.654,285.144 676.985,285.41 679.381,285.81C681.776,286.209 683.307,283.148 683.772,278.556C684.238,273.965 684.771,267.91 688.364,270.106C691.957,272.302 684.85,286.408 687.705,288.538C690.56,290.667 693.022,291.277 694.02,290.872C695.018,290.467 700.408,277.958 702.937,280.22C705.465,282.482 701.122,287.34 700,289.403C698.878,291.466 697.014,293.063 698.478,294.26C699.942,295.458 701.14,296.39 702.537,295.924C703.935,295.458 708.526,284.213 710.922,285.876C713.317,287.54 710.323,290.534 708.792,293.595C707.262,296.656 704.6,298.985 707.528,301.181C710.456,303.377 711.121,302.778 712.718,302.046C714.315,301.314 714.515,292.863 717.11,292.796C719.705,292.73 718.441,298.319 718.108,301.447C717.775,304.574 720.637,304.574 723.432,303.909C726.226,303.244 726.958,300.249 725.827,297.787C724.696,295.325 723.698,292.198 726.359,292.53C729.021,292.863 728.644,297.654 731.417,297.787C734.189,297.92 736.718,288.072 735.121,286.874C733.524,285.676 732.859,286.076 729.465,286.475C726.071,286.874 726.337,283.68 728.733,282.616C731.128,281.551 733.457,280.619 731.395,278.357C729.332,276.094 727.735,277.824 725.672,279.422C723.609,281.019 720.615,278.49 721.813,276.893C723.01,275.296 726.537,273.832 724.142,270.771C721.746,267.71 719.883,266.313 718.552,267.244C717.221,268.176 714.36,278.317 710.5,277.472C706.641,276.627 710.035,271.969 711.099,270.704C712.164,269.44 716.09,264.782 713.229,261.987C710.367,259.193 705.776,255.599 704.179,258.993C702.582,262.387 700.519,273.832 697.192,272.9C693.865,271.969 698.257,263.851 699.321,260.058C700.386,256.265 699.521,255.2 695.595,254.069C691.669,252.938 691.736,254.468 690.804,257.13C689.872,259.792 689.14,260.856 687.011,260.257C684.882,259.659 687.467,254.734 687.705,253.137C687.943,251.54 686.146,250.675 683.817,250.276C681.488,249.877 676.83,248.546 676.697,253.869C676.564,259.193 676.764,264.45 675.566,266.047C674.368,267.644 672.106,266.779 671.973,265.381C671.839,263.984 672.825,249.989 669.997,249.823C667.169,249.656 662.677,250.072 663.26,252.568C663.842,255.063 667.252,259.471 664.84,260.553C662.428,261.634 660.265,252.401 658.352,252.9C656.439,253.399 654.494,254.535 654.161,255.466Z" style="fill:white;stroke:black;stroke-width:1.22px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:3.67,3.67,0,0,0,0;"/>
-            </g>
-        </g>
-        <g id="H₂O₂-2" serif:id="H₂O₂ 2" transform="matrix(1,0,0,1,1096.61,-150.082)">
-            <path id="H₂O₂-ellipse" serif:id="H₂O₂ ellipse" d="M526.261,301.612C531.891,301.612 536.455,306.176 536.455,311.806C536.455,311.806 536.455,311.806 536.455,311.806C536.455,317.436 531.891,322 526.261,322C521.121,322 514.904,322 509.763,322C504.133,322 499.569,317.436 499.569,311.806C499.569,311.806 499.569,311.806 499.569,311.806C499.569,306.176 504.133,301.612 509.763,301.612C514.904,301.612 521.121,301.612 526.261,301.612Z" style="fill:white;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            <g id="H₂O₂-label" serif:id="H₂O₂ label" transform="matrix(1,0,0,1,500.842,308.306)">
-                <text x="7.356px" y="7.158px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">H</text>
-                <text x="14.577px" y="7.158px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">₂</text>
-                <text x="17.907px" y="7.158px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">O</text>
-                <text x="25.686px" y="7.158px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">₂</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,1441.21,412.511)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">PCBP1/2</text>
-            <text x="187.393px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">(Poly-rC</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Binding Proteins 1</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">and 2) bind Fe²</text>
-            <text x="220.089px" y="194.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">directly to deliver it</text>
-            <g transform="matrix(14,0,0,14,247.324,222.937)">
-            </g>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">to recipient proteins</text>
-        </g>
-        <g transform="matrix(1,0,0,1,1507.46,335.335)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Ferritin</text>
-            <text x="177.262px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">stores up to</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">4,500 atoms per cage,</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">with ferroxidase</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">converting Fe²</text>
-            <text x="214.628px" y="208.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="223.179px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">→ Fe³</text>
-            <text x="262.069px" y="208.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-        </g>
-        <g transform="matrix(1,0,0,1,723.676,294.698)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">LOXs</text>
-            <text x="165.6px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">(lipoxygenases)</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">are enzymes that also</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">catalyze PUF<tspan x="207.621px " y="194.937px ">A</tspan></text>
-            <g transform="matrix(14,0,0,14,229.421,208.937)">
-            </g>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">oxidation directly</text>
-        </g>
-        <g id="Fe2--2" serif:id="Fe2+ 2" transform="matrix(1,0,0,1,292.16,-156.082)">
-            <g id="Fe2-ellipse-2" serif:id="Fe2 ellipse 2" transform="matrix(0.792857,0,0,0.792857,52.8446,274.574)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Fe2--2-label" serif:id="Fe2+ 2 label" transform="matrix(1,0,0,1,116.095,379.624)">
-                <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe</text>
-                <text x="2.505px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">²</text>
-                <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-            </g>
-        </g>
-        <g id="Fe2--3" serif:id="Fe2+ 3" transform="matrix(1,0,0,1,303.093,-190.967)">
-            <g id="Fe2-ellipse-3" serif:id="Fe2 ellipse 3" transform="matrix(0.792857,0,0,0.792857,52.8446,274.574)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Fe2--3-label" serif:id="Fe2+ 3 label" transform="matrix(1,0,0,1,116.095,379.624)">
-                <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe</text>
-                <text x="2.505px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">²</text>
-                <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-            </g>
-        </g>
-        <g id="Fe2--4" serif:id="Fe2+ 4" transform="matrix(1,0,0,1,327.683,-178.671)">
-            <g id="Fe2-ellipse-4" serif:id="Fe2 ellipse 4" transform="matrix(0.792857,0,0,0.792857,52.8446,274.574)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Fe2--4-label" serif:id="Fe2+ 4 label" transform="matrix(1,0,0,1,116.095,379.624)">
-                <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe</text>
-                <text x="2.505px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">²</text>
-                <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-            </g>
-        </g>
-        <g id="Fe2--5" serif:id="Fe2+ 5" transform="matrix(1,0,0,1,224.602,-214.259)">
-            <g id="Fe2-ellipse-5" serif:id="Fe2 ellipse 5" transform="matrix(0.792857,0,0,0.792857,276.023,395.273)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Fe2--5-label" serif:id="Fe2+ 5 label" transform="matrix(1,0,0,1,339.274,500.323)">
-                <text x="-9.165px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">Fe³</text>
-                <text x="5.835px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁺</text>
-            </g>
-        </g>
-        <g id="O₂⁻" transform="matrix(1,0,0,1,675.756,-140.613)">
-            <g id="O₂⁻-ellipse" serif:id="O₂⁻ ellipse" transform="matrix(0.792857,0,0,0.792857,276.023,395.273)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="O₂⁻-label" serif:id="O₂⁻ label" transform="matrix(1,0,0,1,341.842,500.323)">
-                <text x="-9.636px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">O</text>
-                <text x="-1.858px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">₂⁻</text>
-            </g>
-        </g>
-        <g id="O₂⁻-2" serif:id="O₂⁻ 2" transform="matrix(1,0,0,1,1305.47,-356.329)">
-            <g id="O₂⁻-ellipse1" serif:id="O₂⁻ ellipse" transform="matrix(0.792857,0,0,0.792857,276.023,395.273)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="O₂⁻-label1" serif:id="O₂⁻ label" transform="matrix(1,0,0,1,341.842,500.323)">
-                <text x="-9.636px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">O</text>
-                <text x="-1.858px" y="0px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">₂⁻</text>
-            </g>
-        </g>
-        <g id="H₂O₂" transform="matrix(1,0,0,1,-58.9226,199.024)">
-            <path id="H₂O₂-ellipse1" serif:id="H₂O₂ ellipse" d="M526.261,301.612C531.891,301.612 536.455,306.176 536.455,311.806C536.455,311.806 536.455,311.806 536.455,311.806C536.455,317.436 531.891,322 526.261,322C521.121,322 514.904,322 509.763,322C504.133,322 499.569,317.436 499.569,311.806C499.569,311.806 499.569,311.806 499.569,311.806C499.569,306.176 504.133,301.612 509.763,301.612C514.904,301.612 521.121,301.612 526.261,301.612Z" style="fill:white;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            <g id="H₂O₂-label1" serif:id="H₂O₂ label" transform="matrix(1,0,0,1,500.842,308.306)">
-                <text x="7.356px" y="7.158px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">H</text>
-                <text x="14.577px" y="7.158px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">₂</text>
-                <text x="17.907px" y="7.158px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">O</text>
-                <text x="25.686px" y="7.158px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">₂</text>
-            </g>
-        </g>
-        <g id="PCBP1-2" serif:id="PCBP1/2" transform="matrix(-0.620216,1.07425,-0.468181,-0.270305,2515.11,-730.982)">
-            <path d="M1322.07,459.117C1321.9,470.399 1321.24,478.171 1318.7,478.171C1316.31,478.171 1314.22,471.333 1313.1,461.174C1311.91,461.192 1310.67,461.184 1309.38,461.184C1307.25,461.184 1305.22,461.206 1303.39,461.095C1303.23,461.155 1303.08,461.186 1302.91,461.186C1302.69,461.186 1302.48,461.126 1302.29,461.008C1297.67,460.553 1294.54,458.946 1294.54,453.326C1294.54,448.907 1296.48,444.937 1299.55,442.217C1299.48,437.67 1299.49,432.549 1299.49,427.134C1299.49,424.096 1299.49,421.149 1299.5,418.345C1299.49,418.207 1299.49,418.068 1299.49,417.928C1299.49,417.752 1299.49,417.58 1299.5,417.411C1299.56,403.349 1299.99,393.082 1302.91,393.082C1305.31,393.082 1307.4,399.951 1308.52,410.148C1310.31,410.049 1312.27,410.07 1314.33,410.07C1315.77,410.07 1317.16,410.06 1318.48,410.087C1318.55,410.074 1318.62,410.068 1318.7,410.068C1318.79,410.068 1318.88,410.078 1318.97,410.099C1324.89,410.272 1329.17,411.358 1329.17,417.928C1329.17,423.277 1326.34,427.969 1322.09,430.581C1322.13,434.731 1322.12,439.309 1322.12,444.12C1322.12,444.653 1322.12,445.184 1322.12,445.712C1323.46,447.938 1324.22,450.543 1324.22,453.326C1324.22,456.146 1323.43,457.956 1322.07,459.117ZM1309.01,438.49C1309.14,438.487 1309.26,438.485 1309.38,438.485C1310.38,438.485 1311.36,438.584 1312.31,438.774C1312.37,436.669 1312.47,434.628 1312.6,432.669C1311.46,432.537 1310.37,432.276 1309.32,431.9C1309.26,434.176 1309.16,436.381 1309.01,438.49Z" style="fill:white;stroke:black;stroke-width:1.05px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g id="LOXs" transform="matrix(1,0,0,1,396.552,153.691)">
-            <g id="LOXs-ellipse" serif:id="LOXs ellipse" transform="matrix(1,0,0,1,0,-31.5593)">
-                <path d="M526.261,301.612C531.891,301.612 536.455,306.176 536.455,311.806C536.455,311.806 536.455,311.806 536.455,311.806C536.455,317.436 531.891,322 526.261,322C521.121,322 514.904,322 509.763,322C504.133,322 499.569,317.436 499.569,311.806C499.569,311.806 499.569,311.806 499.569,311.806C499.569,306.176 504.133,301.612 509.763,301.612C514.904,301.612 521.121,301.612 526.261,301.612Z" style="fill:white;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g id="LOXs-Label" serif:id="LOXs Label" transform="matrix(1,0,0,1,499.569,276.75)">
-                <g transform="matrix(10,0,0,10,31.2449,7.1582)">
-                </g>
-                <text x="5.127px" y="7.158px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">LOXs</text>
-            </g>
-        </g>
-        <g id="H₂O₂1" serif:id="H₂O₂" transform="matrix(1,0,0,1,66.1483,139.937)">
-            <g id="H₂O₂-ellipse2" serif:id="H₂O₂ ellipse" transform="matrix(1,0,0,1,0,-31.5593)">
-                <path d="M526.261,301.612C531.891,301.612 536.455,306.176 536.455,311.806C536.455,311.806 536.455,311.806 536.455,311.806C536.455,317.436 531.891,322 526.261,322C521.121,322 514.904,322 509.763,322C504.133,322 499.569,317.436 499.569,311.806C499.569,311.806 499.569,311.806 499.569,311.806C499.569,306.176 504.133,301.612 509.763,301.612C514.904,301.612 521.121,301.612 526.261,301.612Z" style="fill:white;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g id="H₂O₂-label2" serif:id="H₂O₂ label" transform="matrix(1,0,0,1,500.842,276.747)">
-                <text x="9.021px" y="7.158px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">OH</text>
-                <text x="24.021px" y="7.158px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁻</text>
-            </g>
-        </g>
-        <g id="Hydroxyl-radical" serif:id="Hydroxyl radical" transform="matrix(1,0,0,1,43.0652,103.276)">
-            <g id="Hydroxyl-radical-Double-Star2" serif:id="Hydroxyl radical Double Star" transform="matrix(1.37425,0,0,1.48889,-191.927,-240.316)">
-                <path d="M511.131,411.944L514.474,417.819L520.637,416.833L519.202,421.069L527.748,423.367L519.202,425.665L520.637,429.902L514.474,428.915L511.131,434.79L507.788,428.915L501.625,429.902L503.06,425.665L494.514,423.367L503.06,421.069L501.625,416.833L507.788,417.819L511.131,411.944Z" style="fill:white;stroke:black;stroke-width:0.7px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g id="Hydroxyl-radical-label" serif:id="Hydroxyl radical label" transform="matrix(1,0,0,1,500.842,385.886)">
-                <text x="0px" y="7.158px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">•OH</text>
-            </g>
-        </g>
-        <g id="Hydroxyl-radical1" serif:id="Hydroxyl radical" transform="matrix(1,0,0,1,264.14,-83.2969)">
-            <g id="Hydroxyl-radical-Double-Star3" serif:id="Hydroxyl radical Double Star" transform="matrix(1.5904,0,0,1.72307,-298.55,-307.977)">
-                <path d="M511.131,411.944L514.474,417.819L520.637,416.833L519.202,421.069L527.748,423.367L519.202,425.665L520.637,429.902L514.474,428.915L511.131,434.79L507.788,428.915L501.625,429.902L503.06,425.665L494.514,423.367L503.06,421.069L501.625,416.833L507.788,417.819L511.131,411.944Z" style="fill:white;stroke:black;stroke-width:0.6px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-            <g id="Hydroxyl-radical-label1" serif:id="Hydroxyl radical label" transform="matrix(1,0,0,1,500.842,417.445)">
-                <text x="0px" y="7.158px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">•OOH</text>
-            </g>
-        </g>
-        <g id="NOX-Enzyme" serif:id="NOX Enzyme" transform="matrix(-0.742899,-9.09788e-17,9.09788e-17,-0.742899,873.096,703.961)">
-            <path d="M531.014,157.217C530.688,155.853 530.312,154.128 529.912,152.195C524.977,164.326 513.868,165.31 513.868,165.31C510.915,165.644 508.246,163.519 507.911,160.566C507.577,157.613 509.702,154.944 512.655,154.61C512.655,154.61 518.367,153.656 520.468,146.62C523.566,136.24 525.12,125.217 525.12,125.217C525.489,122.594 527.712,120.63 530.361,120.585C533.009,120.541 535.297,122.429 535.754,125.038C535.754,125.038 536.278,128.036 537.034,132.207C537.791,128.036 538.314,125.038 538.314,125.038C538.772,122.429 541.06,120.541 543.708,120.585C546.357,120.63 548.579,122.594 548.949,125.217C548.949,125.217 550.503,136.24 553.601,146.62C555.701,153.656 561.414,154.61 561.414,154.61C564.367,154.944 566.492,157.613 566.157,160.566C565.823,163.519 563.154,165.644 560.201,165.31C560.201,165.31 549.091,164.326 544.157,152.195C543.756,154.128 543.381,155.853 543.055,157.217L544.342,158.583C546.632,160.477 546.952,163.874 545.057,166.163C543.163,168.453 539.766,168.773 537.476,166.878C537.476,166.878 537.31,166.74 537.034,166.497C536.759,166.74 536.592,166.878 536.592,166.878C534.303,168.773 530.906,168.453 529.011,166.163C527.117,163.874 527.437,160.477 529.726,158.583L531.014,157.217Z" style="fill:white;stroke:black;stroke-width:1.35px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-        </g>
-        <g transform="matrix(1,0,0,1,69.6638,-31.1134)">
-            <g transform="matrix(10,0,0,10,1269,206.293)">
-            </g>
-            <text x="1230.09px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">Cysteine</text>
-        </g>
-        <g transform="matrix(1,0,0,1,141.775,-61.6656)">
-            <g transform="matrix(10,0,0,10,1263.44,206.293)">
-            </g>
-            <text x="1230.09px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">Cystine</text>
-        </g>
-        <g transform="matrix(1,0,0,1,14.1411,-5.86599)">
-            <text x="1230.09px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">System Xc</text>
-            <text x="1277.88px" y="206.293px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">⁻</text>
-        </g>
-        <g transform="matrix(1,0,0,1,79.5479,26.1284)">
-            <g transform="matrix(10,0,0,10,1276.22,206.293)">
-            </g>
-            <text x="1230.09px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">Glutamate</text>
-        </g>
-        <g transform="matrix(1,0,0,1,134.899,65.2349)">
-            <g transform="matrix(10,0,0,10,1256.77,206.293)">
-            </g>
-            <text x="1230.09px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">GPX4</text>
-        </g>
-        <g transform="matrix(1,0,0,1,25.916,60.5078)">
-            <g transform="matrix(10,0,0,10,1251.76,206.293)">
-            </g>
-            <text x="1230.09px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">GSH</text>
-        </g>
-        <g transform="matrix(1,0,0,1,76.2765,161.229)">
-            <text x="1235.08px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">FSP1/CoQ</text>
-            <text x="1283.42px" y="206.293px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:10px;">₁₀</text>
-        </g>
-        <g transform="matrix(1,0,0,1,25.2284,96.2624)">
-            <g transform="matrix(10,0,0,10,1250.65,206.293)">
-            </g>
-            <text x="1230.09px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">LOH</text>
-        </g>
-        <g transform="matrix(10,0,0,10,1433.42,206.293)">
-        </g>
-        <text x="1405.08px" y="206.293px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">LOOH</text>
-        <g id="Ferritin" transform="matrix(1,0,0,1,194.338,38.386)">
-            <g id="Ferritin-Ellipse" serif:id="Ferritin Ellipse" transform="matrix(0.573245,0,0,1.22838,1232.41,-76.5578)">
-                <ellipse cx="400" cy="390" rx="75" ry="35" style="fill:white;stroke:black;stroke-width:1.04px;"/>
-            </g>
-            <g id="Ferritin-Ellipse-Dotted" serif:id="Ferritin Ellipse Dotted" transform="matrix(0.483968,0,0,1.03707,1268.12,-1.94794)">
-                <ellipse cx="400" cy="390" rx="75" ry="35" style="fill:white;stroke:black;stroke-width:1.04px;stroke-dasharray:3.13,3.13,0,0,0,0;"/>
-            </g>
-            <g id="Ferritin-Iron-Circle-1" serif:id="Ferritin Iron Circle 1" transform="matrix(0.79392,0,0,0.79392,1392.25,281.789)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Ferritin-H-Chain-1" serif:id="Ferritin H Chain 1" transform="matrix(0.965926,-0.258819,0.258819,0.965926,-42.1896,386.924)">
-                <g id="Ferritin-H-Chain-1-Pill" serif:id="Ferritin H Chain 1 Pill" transform="matrix(0.676474,0,0,1.0061,318.385,-17.2003)">
-                    <path d="M1681.21,365.116L1681.21,372.17C1681.21,376.165 1676.38,379.408 1670.44,379.408C1664.5,379.408 1659.68,376.165 1659.68,372.17L1659.68,365.116C1659.68,361.121 1664.5,357.878 1670.44,357.878C1676.38,357.878 1681.21,361.121 1681.21,365.116Z" style="fill:white;stroke:black;stroke-width:1.17px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-                </g>
-                <g id="Ferritin-H-Chain-Label-1" serif:id="Ferritin H Chain Label 1" transform="matrix(0.965926,0.258819,-0.258819,0.965926,1362.05,165.445)">
-                    <g transform="matrix(10,0,0,10,135.766,164.066)">
-                    </g>
-                    <text x="128.544px" y="164.066px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">H</text>
-                </g>
-            </g>
-            <g id="Ferritin-H-Chain-2" serif:id="Ferritin H Chain 2" transform="matrix(0.866025,0.5,-0.5,0.866025,413.478,-661.907)">
-                <g id="Ferritin-H-Chain-2-Pill" serif:id="Ferritin H Chain 2 Pill" transform="matrix(0.676474,0,0,1.0061,318.385,-17.2003)">
-                    <path d="M1681.21,365.116L1681.21,372.17C1681.21,376.165 1676.38,379.408 1670.44,379.408C1664.5,379.408 1659.68,376.165 1659.68,372.17L1659.68,365.116C1659.68,361.121 1664.5,357.878 1670.44,357.878C1676.38,357.878 1681.21,361.121 1681.21,365.116Z" style="fill:white;stroke:black;stroke-width:1.17px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-                </g>
-                <g id="Ferritin-H-Chain-Label-2" serif:id="Ferritin H Chain Label 2" transform="matrix(0.866025,-0.5,0.5,0.866025,1254.05,280.985)">
-                    <g transform="matrix(10,0,0,10,135.766,164.066)">
-                    </g>
-                    <text x="128.544px" y="164.066px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">H</text>
-                </g>
-            </g>
-            <g id="Ferritin-L-Chain-1" serif:id="Ferritin L Chain 1" transform="matrix(0.866025,-0.5,0.5,0.866025,0.168283,789.039)">
-                <g id="Ferritin-L-Chain-1-Pill" serif:id="Ferritin L Chain 1 Pill" transform="matrix(0.676474,0,0,1.0061,318.385,-17.2003)">
-                    <path d="M1681.21,365.116L1681.21,372.17C1681.21,376.165 1676.38,379.408 1670.44,379.408C1664.5,379.408 1659.68,376.165 1659.68,372.17L1659.68,365.116C1659.68,361.121 1664.5,357.878 1670.44,357.878C1676.38,357.878 1681.21,361.121 1681.21,365.116Z" style="fill:white;stroke:black;stroke-width:1.17px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-                </g>
-                <g id="Ferritin-L-Chain-Label-1" serif:id="Ferritin L Chain Label 1" transform="matrix(0.866025,0.5,-0.5,0.866025,1414.39,148.44)">
-                    <g transform="matrix(10,0,0,10,135.21,164.066)">
-                    </g>
-                    <text x="129.101px" y="164.066px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:10px;">L</text>
-                </g>
-            </g>
-            <g id="Ferritin-Iron-Circle-2" serif:id="Ferritin Iron Circle 2" transform="matrix(0.79392,0,0,0.79392,1416.44,289.774)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Ferritin-Iron-Circle-3" serif:id="Ferritin Iron Circle 3" transform="matrix(0.79392,0,0,0.79392,1387.08,319.13)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.26px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Ferritin-Label" serif:id="Ferritin Label" transform="matrix(1,0,0,1,1309.12,238.476)">
-                <g transform="matrix(14,0,0,14,176.699,166.93)">
-                </g>
-                <text x="128.472px" y="166.93px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">Ferritin</text>
-            </g>
-        </g>
-        <g id="Ferritin-2" serif:id="Ferritin 2" transform="matrix(0.676531,0,0,0.676531,651.026,-37.4005)">
-            <g id="Ferritin-Ellipse1" serif:id="Ferritin Ellipse" transform="matrix(0.573245,0,0,1.22838,1232.41,-76.5578)">
-                <ellipse cx="400" cy="390" rx="75" ry="35" style="fill:white;stroke:black;stroke-width:1.54px;stroke-dasharray:4.63,13.88,0,0,0,0;"/>
-            </g>
-            <g id="Ferritin-Ellipse-Dotted1" serif:id="Ferritin Ellipse Dotted" transform="matrix(0.483968,0,0,1.03707,1268.12,-1.94794)">
-                <ellipse cx="400" cy="390" rx="75" ry="35" style="fill:white;stroke:black;stroke-width:1.83px;stroke-dasharray:5.48,5.48,0,0,0,0;"/>
-            </g>
-            <g id="Ferritin-Iron-Circle-4" serif:id="Ferritin Iron Circle 4" transform="matrix(0.79392,0,0,0.79392,1394.21,258.378)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.86px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Ferritin-Iron-Circle-5" serif:id="Ferritin Iron Circle 5" transform="matrix(0.79392,0,0,0.79392,1428.35,258.378)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.86px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-            <g id="Ferritin-Iron-Circle-6" serif:id="Ferritin Iron Circle 6" transform="matrix(0.79392,0,0,0.79392,1361.89,306.809)">
-                <circle cx="80" cy="128" r="14" style="fill:white;stroke:black;stroke-width:1.86px;stroke-linejoin:round;stroke-miterlimit:2;"/>
-            </g>
-        </g>
-        <g transform="matrix(0.963832,0.596503,-0.596503,0.963832,363.289,-867.598)">
-            <path d="M1545.26,323.723L1545.26,335.573C1545.26,343.497 1538.83,349.931 1530.91,349.931L1519.06,349.931C1511.13,349.931 1504.7,343.497 1504.7,335.573L1504.7,323.723C1504.7,315.799 1511.13,309.366 1519.06,309.366L1530.91,309.366C1538.83,309.366 1545.26,315.799 1545.26,323.723Z" style="fill:white;stroke:black;stroke-width:0.88px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g id="Arrow-5" serif:id="Arrow 5" transform="matrix(0.117278,-0.455691,0.789286,0.203133,-73.2109,201.702)">
-            <g transform="matrix(0.529691,1.18826,-2.05815,0.305815,340.612,49.1183)">
-                <path d="M126.588,114.453L127.615,121.083L121.695,117.927L126.588,114.453Z"/>
-                <path d="M88.491,101.346C88.491,101.346 111.854,101.333 124.836,117.169" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-4" serif:id="Arrow 4" transform="matrix(-1.27241,-3.52492,2.19451,-0.792166,-78.1055,1167.42)">
-            <g transform="matrix(-0.0906013,0.403151,-0.250989,-0.145528,271.263,195.383)">
-                <path d="M135.835,327.171L138.106,333.483L131.694,331.513L135.835,327.171Z"/>
-                <path d="M103.145,330.921C103.145,330.921 120.037,318.488 134.633,330.17" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-22" serif:id="Arrow 22" transform="matrix(-3.62731,0.941667,-0.586252,-2.25825,980.479,627.654)">
-            <g transform="matrix(-0.25828,-0.1077,0.0670506,-0.414861,213.518,341.969)">
-                <path d="M382.24,177.04L387.998,173.598L387.297,180.27L382.24,177.04Z"/>
-                <path d="M170.022,326.693C175.985,323.195 206.907,299.054 241.223,295.942C300.389,290.577 350.825,231.323 385.415,177.643" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-3" serif:id="Arrow 3" transform="matrix(1.52924,-3.42134,2.13002,0.952054,-286.168,691.313)">
-            <g transform="matrix(0.108888,0.391304,-0.243614,0.174901,186.417,3.09679)">
-                <path d="M483.761,290.182L480.883,296.241L477.763,290.303L483.761,290.182Z"/>
-                <path d="M418.43,146.065C418.43,146.065 478.045,216.864 480.786,291.442" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-6" serif:id="Arrow 6" transform="matrix(1.39129,1.10022,0.771822,-0.976008,-3.08653,483.006)">
-            <g transform="matrix(0.442216,0.498496,0.349702,-0.630374,-145.363,273.162)">
-                <path d="M981.506,462.307L975.136,464.41L977.275,458.052L981.506,462.307Z"/>
-                <path d="M1011.17,326.104C1006.12,409.472 991.295,446.575 978.54,461.026" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-14" serif:id="Arrow 14" transform="matrix(-2.64992,-2.64992,1.64976,-1.64976,693.327,1228.73)">
-            <g transform="matrix(-0.188685,0.303075,-0.188685,-0.303075,350.971,146.822)">
-                <path d="M515.608,426.171L519.178,431.85L512.493,431.299L515.608,426.171Z"/>
-                <path d="M480.883,337.682C475.454,373.157 480.612,407.268 515.076,429.358" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-17" serif:id="Arrow 17" transform="matrix(-2.64992,-2.64992,1.64976,-1.64976,724.561,1220.3)">
-            <g transform="matrix(-0.188685,0.303075,-0.188685,-0.303075,355.274,134.801)">
-                <path d="M549.594,359.904L555.134,363.687L548.784,365.849L549.594,359.904Z"/>
-                <path d="M518.562,337.682C527.009,354.56 526.498,359.498 550.378,363.039" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-19" serif:id="Arrow 19" transform="matrix(-2.64992,-2.64992,1.64976,-1.64976,789.012,1232.74)">
-            <g transform="matrix(-0.188685,0.303075,-0.188685,-0.303075,369.782,119.038)">
-                <path d="M685.843,393.066L692.075,390.585L690.321,397.06L685.843,393.066Z"/>
-                <path d="M581.07,441.062C631.723,446.534 664.607,420.932 688.881,394.167" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-11" serif:id="Arrow 11" transform="matrix(2.64992,2.64992,-1.64976,1.64976,646.883,-341.68)">
-            <g transform="matrix(0.188685,-0.303075,0.188685,0.303075,-45.8947,315.054)">
-                <path d="M834.817,380.399L828.782,377.472L834.745,374.4L834.817,380.399Z"/>
-                <path d="M882.052,377.472C874.595,377.501 848.717,377.289 833.581,377.414" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-23" serif:id="Arrow 23" transform="matrix(-0.869078,0.869078,-0.541061,-0.541061,1032.84,315.215)">
-            <g transform="matrix(-0.575322,-0.924111,0.575322,-0.924111,442.183,1188.48)">
-                <path d="M769.996,316.799L772.959,310.781L775.996,316.762L769.996,316.799Z"/>
-                <path d="M772.959,337.682C772.951,335.55 773.002,323.079 772.989,315.58" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-12" serif:id="Arrow 12" transform="matrix(-2.64992,-2.64992,1.64976,-1.64976,655.112,1221.29)">
-            <g transform="matrix(-0.188685,0.303075,-0.188685,-0.303075,342.357,156.15)">
-                <path d="M541.273,239.75L547.45,237.135L545.836,243.646L541.273,239.75Z"/>
-                <path d="M523.068,294.726C523.068,294.726 517.525,273.213 544.333,240.785" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-8" serif:id="Arrow 8" transform="matrix(-0.390623,-2.21576,1.59347,-0.280918,290.976,751.458)">
-            <g transform="matrix(-0.0771651,0.608643,-0.437709,-0.1073,326.233,-99.1785)">
-                <path d="M603.929,193.814L610.594,194.57L605.99,199.449L603.929,193.814Z"/>
-                <path d="M574.377,214.935C574.377,214.935 580.583,205.922 606.087,196.219" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-24" serif:id="Arrow 24" transform="matrix(1.94657,8.51713,-3.77906,0.863694,1128.07,-1524.75)">
-            <g transform="matrix(0.0255018,-0.25148,0.111582,0.0574751,147.808,373.185)">
-                <path d="M556.083,287.774L549.378,287.978L553.238,282.492L556.083,287.774Z"/>
-                <path d="M629.028,214.935C629.028,214.935 617.076,250.875 553.604,285.702" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-13" serif:id="Arrow 13" transform="matrix(-0.959222,0.48102,-0.316232,-0.630612,688.953,581.413)">
-            <g transform="matrix(-0.833029,-0.635421,0.417738,-1.26712,350.042,1099.45)">
-                <path d="M456.276,481.644L457.142,474.992L461.944,479.677L456.276,481.644Z"/>
-                <path d="M464.218,511.99C465.025,507.194 462.501,491.47 458.716,479.527" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-21" serif:id="Arrow 21" transform="matrix(-1.82296,0.914159,-0.473624,-0.944473,867.645,464.213)">
-            <g transform="matrix(-0.438331,-0.424262,0.219809,-0.846038,288.276,710.744)">
-                <path d="M435.496,325.69L439.523,320.324L441.399,326.765L435.496,325.69Z"/>
-                <path d="M452.415,436.193C449.316,424.209 436.627,348.256 438.663,325.047" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-9" serif:id="Arrow 9" transform="matrix(1.13858,0.685036,0.48546,-0.806873,345.772,574.634)">
-            <g transform="matrix(0.644853,0.547481,0.38798,-0.909957,-420.462,285.221)">
-                <path d="M485.471,472.2L482.125,466.386L488.784,467.198L485.471,472.2Z"/>
-                <path d="M917.094,496.429C863.732,499.565 551.375,507.487 486.127,469.037" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-20" serif:id="Arrow 20" transform="matrix(-2.64992,-2.64992,1.64976,-1.64976,808.485,1140.08)">
-            <g transform="matrix(-0.188685,0.303075,-0.188685,-0.303075,355.972,85.0524)">
-                <path d="M914.548,190.552L921.048,192.209L915.822,196.415L914.548,190.552Z"/>
-                <path d="M573.684,425.618C585.027,444.636 644.285,253.396 916.357,193.229" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-7" serif:id="Arrow 7" transform="matrix(1.39129,1.10022,0.771822,-0.976008,226.893,237.078)">
-            <g transform="matrix(0.442216,0.498496,0.349702,-0.630374,-161.063,3.49211)">
-                <path d="M716.784,220.949L712.135,216.114L718.793,215.295L716.784,220.949Z"/>
-                <path d="M984.112,295.965C912.725,290.71 811.671,251.532 716.658,217.721" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-16" serif:id="Arrow 16" transform="matrix(-2.89772,-2.37642,1.47948,-1.80403,718.572,989.85)">
-            <g transform="matrix(-0.20633,0.271795,-0.169211,-0.331416,305.066,115.531)">
-                <path d="M968.085,138.846L970.133,145.234L963.794,143.04L968.085,138.846Z"/>
-                <path d="M436.306,115.64C560.088,54.37 891.406,69.719 966.778,141.801" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-18" serif:id="Arrow 18" transform="matrix(-2.89772,-2.37642,1.47948,-1.80403,758.966,1494.16)">
-            <g transform="matrix(-0.20633,0.271795,-0.169211,-0.331416,398.734,271.687)">
-                <path d="M1245.45,471.713L1249.53,466.386L1251.34,472.844L1245.45,471.713Z"/>
-                <path d="M476.944,482.838C589.134,551.107 1217.18,593.147 1248.62,471.1" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-15" serif:id="Arrow 15" transform="matrix(-2.89772,-2.37642,1.47948,-1.80403,704.933,984.604)">
-            <g transform="matrix(-0.20633,0.271795,-0.169211,-0.331416,301.364,117.499)">
-                <path d="M1300.81,100.686L1305.87,105.084L1299.31,106.497L1300.81,100.686Z"/>
-                <path d="M422.666,110.394C531.187,39.698 964.464,18.007 1301.22,103.89" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-1" serif:id="Arrow 1" transform="matrix(3.74755,0,0,2.33311,-496.746,-194.977)">
-            <g transform="matrix(0.266841,-0,-0,0.428613,134.021,107.771)">
-                <path d="M98.494,313.251L92.166,315.475L94.184,309.078L98.494,313.251Z"/>
-                <path d="M156.387,184.885C156.387,184.885 170.345,233.801 95.504,312.026" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-2" serif:id="Arrow 2" transform="matrix(3.74755,0,0,2.33311,-460.025,49.8319)">
-            <g transform="matrix(0.266841,-0,-0,0.428613,124.222,2.84314)">
-                <path d="M1467.66,531.927L1473.91,529.498L1472.11,535.958L1467.66,531.927Z"/>
-                <path d="M148.505,365.143C117.105,438.552 134.817,553.84 212.126,564.46C368.003,585.874 1094.12,575.925 1366.3,572.841C1432.64,572.089 1452.91,552.57 1470.69,533.054" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-25" serif:id="Arrow 25" transform="matrix(2.16676,1.12288,0.426815,-0.823602,1284.14,436.84)">
-            <g transform="matrix(0.363813,0.496013,0.188538,-0.95713,-536.9,-270.152)">
-                <path d="M1651.82,229.885L1653.15,223.31L1657.61,228.318L1651.82,229.885Z"/>
-                <path d="M1646.11,273.177C1658.63,257.073 1660.5,251.21 1654.4,227.943" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-26" serif:id="Arrow 26" transform="matrix(-2.24301,-1.83949,1.31284,-1.60083,1405.24,1203.11)">
-            <g transform="matrix(-0.266555,0.306294,-0.218601,-0.373484,623.766,-0.476541)">
-                <path d="M1602.36,413.466L1609.02,414.227L1604.41,419.102L1602.36,413.466Z"/>
-                <path d="M1519.2,481.868C1545.21,442.92 1535.19,441.279 1604.51,415.873" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-27" serif:id="Arrow 27" transform="matrix(-3.56279,-2.92185,1.53386,-1.87033,1559.87,1426.51)">
-            <g transform="matrix(-0.167813,0.26216,-0.137624,-0.319668,449.395,30.4664)">
-                <path d="M1848.92,458.043L1851.85,452.012L1854.92,457.981L1848.92,458.043Z"/>
-                <path d="M1541.15,493.164C1618.26,500.792 1848.42,538.626 1851.9,456.812" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g id="Arrow-10" serif:id="Arrow 10" transform="matrix(1.30138,-2.25405,1.45406,0.839503,507.005,576.069)">
-            <g transform="matrix(0.192104,0.515797,-0.332734,0.297795,76.5491,-413.408)">
-                <path d="M1005.66,273.163L1002.8,279.232L999.665,273.303L1005.66,273.163Z"/>
-                <path d="M984.112,220.119C989.819,224.262 1001.06,259.363 1002.69,274.433" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,1603.16,82.4944)">
-            <text x="125.145px" y="166.937px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;">DMT1</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">exports</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Fe²</text>
-            <text x="146.145px" y="194.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">⁺</text>
-            <text x="154.697px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">into</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">cytoplasm;</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">fails with</text>
-            <text x="125.145px" y="236.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">age, as</text>
-            <text x="125.145px" y="250.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">lysosomes</text>
-            <g transform="matrix(14,0,0,14,194.4,264.937)">
-            </g>
-            <text x="125.145px" y="264.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">lose acidity</text>
-        </g>
-        <g transform="matrix(1,0,0,1,1595.38,-49.7731)">
-            <text x="125.145px" y="166.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">Mitochondria</text>
-            <text x="125.145px" y="180.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">dissolved in</text>
-            <text x="125.145px" y="194.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">autolysosome</text>
-            <text x="125.145px" y="208.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">release O</text>
-            <text x="185.841px" y="208.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂⁻</text>
-            <text x="125.145px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">and H</text>
-            <text x="162.504px" y="222.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂</text>
-            <text x="167.166px" y="222.937px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:14px;">O</text>
-            <text x="178.055px" y="222.937px" style="font-family:'MicrosoftSansSerif', 'Microsoft Sans Serif', sans-serif;font-size:14px;">₂</text>
+<svg width="100%" height="100%" viewBox="0 0 1277 745" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;fill:white;">
+    <style>
+        text { fill: white; }
+        .diagram-section {
+            transition: opacity 0.4s ease;
+        }
+    </style>
+    <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+        <g transform="matrix(0.946066,0,0,0.795085,21.5735,6.14747)">
+            <path d="M400,30L400,690" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.2px;stroke-dasharray:8,6;"/>
+        </g>
+        <g transform="matrix(0.946066,0,0,0.795085,43.1471,6.14747)">
+            <path d="M800,30L800,690" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.2px;stroke-dasharray:8,6;"/>
+        </g>
+        <g transform="matrix(1.03448,0,0,1,-20.6897,-112.263)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <path d="M20,700L1180,700" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.5px;stroke-dasharray:8,6;"/>
+            </g>
+        </g>
+        <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
+            <path d="M46.553,115.709C276.144,2.182 523.834,2.171 753.447,115.709" style="fill:none;stroke:rgb(90,110,155);stroke-width:8px;stroke-linecap:round;"/>
+        </g>
+        <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
+            <path d="M50,135C277.334,22.418 522.644,22.407 750,135" style="fill:none;stroke:rgb(130,150,185);stroke-width:8px;stroke-linecap:round;"/>
+        </g>
+        <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
+            <path d="M46.553,115.709C265.347,7.521 500.663,2.382 721.132,100.53C723.741,101.691 737.363,107.756 753.447,115.709C752.298,122.139 751.149,128.57 750,135C522.666,22.418 277.356,22.407 50,135C48.851,128.57 47.702,122.139 46.553,115.709Z" style="fill:rgb(25,35,50);fill-opacity:0.4;"/>
+        </g>
+        <g transform="matrix(1.73749,0,0,1.13479,-109.107,41.7566)">
+            <g transform="matrix(0.301948,0,0,0.418733,69.2057,-65.6328)">
+                <path d="M196.475,296.12C206.036,284.264 218.42,275.504 230.058,275.172C241.696,274.839 242.693,279.494 254.996,280.492C267.299,281.489 284.921,264.864 300.549,284.482C316.177,304.1 293.566,452.397 278.936,452.729C264.306,453.062 251.006,447.742 251.006,447.742C251.006,447.742 242.361,457.052 224.738,452.729C207.115,448.407 212.768,384.898 212.768,384.898C212.768,384.898 188.162,306.427 196.475,296.12Z" style="fill:rgb(228,177,41);stroke:rgb(205,164,48);stroke-width:4.99px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+        </g>
+        <g transform="matrix(1.73749,0,0,1.13479,-109.107,41.7566)">
+            <g transform="matrix(0.271291,0,0,0.418733,79.0295,-65.6861)">
+                <path d="M275.577,302.279C274.025,316.599 276.907,367.45 275.577,373.568C274.247,379.686 269.724,379.154 267.33,387.666C264.936,396.178 263.074,402.562 267.33,411.074C271.586,419.586 276.109,430.227 275.577,438.739C275.045,447.251 281.695,460.285 290.473,458.423C299.251,456.561 311.487,446.187 311.487,438.739C311.487,431.291 301.379,409.478 303.507,391.124C305.635,372.77 321.329,348.563 324.255,341.913C327.181,335.263 330.639,316.909 324.255,318.239C317.871,319.569 313.615,310.525 314.945,307.333C316.275,304.141 322.393,297.757 317.871,294.565C313.349,291.373 307.763,289.51 305.901,294.565C304.039,299.619 294.197,294.831 294.995,291.639C295.793,288.446 288.611,283.392 284.887,287.648C281.163,291.905 276.199,296.532 275.577,302.279Z" style="fill:rgb(236,195,81);stroke:rgb(205,164,48);stroke-width:5.28px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+        </g>
+        <g transform="matrix(1.73749,0,0,1.13479,-109.107,41.7566)">
+            <g transform="matrix(0.262128,0,0,0.418733,76.1915,-65.6328)">
+                <path d="M191.519,307.333C191.519,311.855 191.519,317.973 185.401,318.239C179.283,318.505 172.367,319.303 176.889,330.209C181.411,341.115 193.647,362.806 197.105,372.31C200.563,381.814 202.159,409.744 200.297,416.66C198.435,423.576 188.327,446.453 204.553,454.433C220.78,462.413 227.696,451.507 232.484,444.059C237.272,436.611 235.41,310.259 232.484,303.343C229.558,296.427 221.046,286.78 212.534,286.017C204.021,285.254 189.125,287.914 188.593,294.033C188.061,300.151 191.519,302.811 191.519,307.333Z" style="fill:rgb(236,195,81);stroke:rgb(205,164,48);stroke-width:5.37px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,15,22.9665)">
+            <g transform="matrix(1,0,0,1,-6.56164,-68.9832)">
+                <ellipse cx="131" cy="478" rx="28" ry="16" style="fill:rgb(212,167,106);stroke:rgb(195,195,195);stroke-width:1.5px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,19,22.9665)">
+            <g transform="matrix(1,0,0,1,0,-65.5094)">
+                <ellipse cx="187" cy="550" rx="32" ry="16" style="fill:rgb(212,167,106);stroke:rgb(195,195,195);stroke-width:1.5px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,19,0)">
+            <g transform="matrix(1,0,0,1,14.0053,72.2088)">
+                <ellipse cx="520" cy="288" rx="30" ry="16" style="fill:rgb(212,167,106);stroke:rgb(195,195,195);stroke-width:1.5px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,20.4822,70.825)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <ellipse cx="969" cy="317" rx="32" ry="16" style="fill:rgb(212,167,106);stroke:rgb(195,195,195);stroke-width:1.5px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,0,22.9665)">
+            <g transform="matrix(1,0,0,1,0,-65.5094)">
+                <path d="M150,318L150,352C150,354.208 148.208,356 146,356L42,356C39.792,356 38,354.208 38,352L38,318C38,315.792 39.792,314 42,314L146,314C148.208,314 150,315.792 150,318Z" style="fill:rgb(30,40,55);stroke:rgb(100,120,160);stroke-width:1px;"/>
+            </g>
+        </g>
+        <g id="section-gsh-gpx4" class="diagram-section">
+        <g transform="matrix(1,0,0,1,91.969,28)">
+            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">Cyst(e)ine/GSH/GPX4 axis</text>
+        </g>
+        <g transform="matrix(1,0,0,1,113.457,83.1619)">
+            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Glutamate</text>
+        </g>
+        <g transform="matrix(1,0,0,1,205.038,87.7629)">
+            <g transform="matrix(1,0,0,1,5.30721,-6.79532)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">Erastin</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,113.457,201.128)">
+            <g transform="matrix(1,0,0,1,-24.6062,7.28217)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">System xc⁻</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,190.256,267.966)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Cystine</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,48,320.438)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">Transsulfuration</text>
+                <text x="0px" y="16px" style="font-family:'Helvetica';font-size:12px;fill:white;">pathway</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,326.166,274.247)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">Auranoﬁn</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,219.567,312.238)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">GSH/TXNRD1</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,186.363,360.438)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Cysteine</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,280.159,360.438)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">NAC</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,221.521,420.094)">
+            <g transform="matrix(1,0,0,1,-2.23647,-39.1572)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">γ-GCSc</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,290.474,461.292)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">BSO</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,191.642,468.157)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">GSH</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,110.524,404.749)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,124.201,469.968)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">GSR</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,18.0874,465.449)">
+            <g transform="matrix(1,0,0,1,8.30009,-35.9591)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,84.8412,506.124)">
+            <g transform="matrix(1,0,0,1,-27.4693,-10.0575)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">BCNU</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,105.02,544.174)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">GSSG</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,185.877,545.814)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">GPX4</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,282.307,535.325)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">RSL3,</text>
+                <text x="0px" y="17px" style="font-family:'Helvetica';font-size:12px;fill:white;">ML210</text>
+            </g>
+        </g>
+        <g id="arrow-systemxc-to-glutamate" transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,242.457,274.917)">
+            <g transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,283.496,260.179)">
+                <path d="M170.871,80.925L176.496,73.425L182.121,80.925L170.871,80.925Z" style="fill:white;"/>
+                <path d="M176.496,175.179L176.496,79.425" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-erastin-on-systemxc" transform="matrix(1,-0,-0,1,-41.0385,14.7373)">
+            <path d="M227.78,90.612L222.468,82.14" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+            <path d="M246.038,73.263C246.038,73.263 229.512,83.625 225.124,86.376" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+        </g>
+        <g id="arrow-systemxc-to-cystine" transform="matrix(0.921519,0,0,0.957197,32.4288,6.19198)">
+            <g transform="matrix(1.08517,-0,-0,1.04472,-79.7241,8.92744)">
+                <path d="M225.211,195.629L227.796,204.641L218.421,204.599L225.211,195.629Z" style="fill:white;"/>
+                <path d="M186.717,83.147C186.717,83.147 173.983,138.188 201.013,177.465C208.605,188.497 217.617,196.651 223.012,201.019" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-cystine-to-cysteine" transform="matrix(1,0,0,0.617506,0,73.3519)">
+            <g transform="matrix(1,-0,-0,1.61942,-41.0385,-94.9215)">
+                <path d="M256.692,282.642L251.038,290.179L245.385,282.642L256.692,282.642Z" style="fill:white;"/>
+                <path d="M251.038,230.281L251.038,284.149" style="fill:none;stroke:white;stroke-width:2.51px;"/>
+            </g>
+        </g>
+        <g id="tbar-auranofin-on-txnrd1" transform="matrix(0.670391,0.188348,0.188348,0.892373,55.0917,-64.4625)">
+            <g transform="matrix(1.5857,-0.334684,-0.334684,1.19125,-178.94,126.52)">
+                <path d="M339.09,252.011L334.128,243.328" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M367.038,230.281C367.038,230.281 342.152,244.502 336.609,247.669" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-transsulfuration-to-cysteine" transform="matrix(0.915563,-0.076027,-0.076027,0.931545,44.295,-25.6262)">
+            <g transform="matrix(1.09968,0.0897488,0.0897488,1.08081,-90.2167,35.9667)">
+                <path d="M219.329,293.155L221.138,302.353L211.801,301.515L219.329,293.155Z" style="fill:white;"/>
+                <path d="M199.876,283.209C199.876,283.209 210.445,292.725 216.68,298.339" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-nac-to-cysteine" transform="matrix(1.24124,0,0,1,-54.8379,-70.122)">
+            <g transform="matrix(0.805648,-0,-0,1,11.1175,84.8593)">
+                <path d="M296.274,314.481L287.821,308.141L296.274,301.801L296.274,314.481Z" style="fill:white;"/>
+                <path d="M317.611,308.141L294.584,308.141" style="fill:none;stroke:white;stroke-width:2.82px;"/>
+            </g>
+        </g>
+        <g id="arrow-ipp-to-gpx4" transform="matrix(1,0,0,1,0,-32.9815)">
+            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
+                <path d="M283.982,468.095L277.378,471.651L275.814,464.316L283.982,468.095Z" style="fill:white;"/>
+                <path d="M675.234,227.239C419.752,140.373 308.196,404.355 279.394,467.295" style="fill:none;stroke:white;stroke-width:2px;stroke-dasharray:8,5;"/>
+            </g>
+        </g>
+        <g id="arrow-cysteine-to-gsh" transform="matrix(1,0,0,0.763266,0,29.8946)">
+            <g transform="matrix(1,-0,-0,1.31016,-41.0385,-19.8585)">
+                <path d="M256.042,377.448L251.038,384.12L246.035,377.448L256.042,377.448Z" style="fill:white;"/>
+                <path d="M251.038,322.753L251.038,378.783" style="fill:none;stroke:white;stroke-width:2.22px;"/>
+            </g>
+        </g>
+        <g id="tbar-bso-on-gcsc" transform="matrix(1.21135,0.000281494,0.385558,1.14835,-234.594,-133.608)">
+            <g transform="matrix(0.82559,-0.000202376,-0.277191,0.870881,118.677,129.152)">
+                <path d="M296.457,381.505L301.129,375.01" style="fill:none;stroke:white;stroke-width:2px;stroke-miterlimit:10;"/>
+                <path d="M329.919,400.646C329.919,400.646 303.768,381.836 298.793,378.258" style="fill:none;stroke:white;stroke-width:2px;"/>
+            </g>
+        </g>
+        <g id="arrow-nadph-to-gsr-to-nadp" transform="matrix(1,0,0,1,-6.56164,-68.9832)">
+            <g transform="matrix(1,-0,-0,1,-34.4768,83.7205)">
+                <path d="M119.947,426.44L112.969,420.18L120.933,415.233L119.947,426.44Z" style="fill:white;"/>
+                <path d="M176.573,362.272C176.573,362.272 184.042,389.702 158.569,405.927C139.39,418.143 126.045,420.549 118.946,420.705" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-bcnu-on-gsr" transform="matrix(1.02051,-0.253587,0.170355,1.01914,-106.054,-44.4891)">
+            <g transform="matrix(0.940827,0.2341,-0.157264,0.942085,51.8537,71.0163)">
+                <path d="M150.9,431.459L158.613,437.84" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M129.028,465.752C129.028,465.752 150.335,439.995 154.757,434.649" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-gsh-to-gpx4-to-gssg" transform="matrix(1,0,0,1,0,-65.5094)">
+            <g transform="matrix(1,-0,-0,1,-41.0385,80.2467)">
+                <path d="M197.045,496.23L189.038,491.353L195.962,485.032L197.045,496.23Z" style="fill:white;"/>
+                <path d="M252.658,427.503C248.164,466.212 228.312,486.542 195.011,490.776" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-gssg-to-gsr-to-gsh" transform="matrix(0.757711,-0.65259,0.65259,0.757711,-320.305,224.464)">
+            <g transform="matrix(0.757711,0.65259,-0.65259,0.757711,348.469,23.3351)">
+                <path d="M222.102,415.721L230.566,419.753L224.326,426.75L222.102,415.721Z" style="fill:white;"/>
+                <path d="M165.652,481.136C168.114,458.73 183.865,430.313 224.685,420.939" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-rsl3-on-gpx4" transform="matrix(1.02188,-0.000683674,-0.000683674,1.00002,3.19283,-65.3589)">
+            <g transform="matrix(0.978591,0.000669023,0.000669023,0.999979,-43.2308,80.0649)">
+                <path d="M288.309,497.805L288.309,487.702" style="fill:none;stroke:white;stroke-width:2.53px;stroke-miterlimit:10;"/>
+                <path d="M317.252,492.753L288.309,492.753" style="fill:none;stroke:white;stroke-width:2.53px;"/>
+            </g>
+        </g>
+        <g id="tbar-gpx4-on-pepufaooh" transform="matrix(0.908081,-0.0835624,-0.0835624,0.924034,78.1568,5.54229)">
+            <g transform="matrix(1.11046,0.100422,0.100422,1.09129,-131.439,-1.93533)">
+                <path d="M340.71,585.674L334.278,593.331" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M251.677,517.425C251.677,517.425 328.036,581.559 337.494,589.503" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        </g>
+        <g id="section-fsp1-coq10" class="diagram-section">
+        <g transform="matrix(1,0,0,1,527.969,28)">
+            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">FSP1/CoQ10 axis</text>
+        </g>
+        <g transform="matrix(1,0,0,1,544.825,185.116)">
+            <g transform="matrix(1,0,0,1,0.762387,-0.762387)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Statins</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,625.025,184.4)">
+            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">HMG-CoA</text>
+        </g>
+        <g transform="matrix(1,0,0,1,644.614,260.594)">
+            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">IPP</text>
+        </g>
+        <g transform="matrix(1,0,0,1,691.758,338.202)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">FIN56</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,449.005,415.19)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,535.123,398.548)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">FSP1</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,533.908,355.489)">
+            <g transform="matrix(1,0,0,1,2.77904,-41.8642)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,465.407,459.99)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">iFSP1</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,3.11211,-9.17377)">
+            <text x="623.282px" y="368.036px" style="font-family:'Helvetica';font-size:13px;fill:white;">CoQ10H2/</text>
+            <g transform="matrix(13,0,0,13,662.764,381.036)">
+            </g>
+            <text x="623.282px" y="381.036px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-T<tspan x="643.264px " y="381.036px ">O</tspan>H</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-111.059,68.0219)">
+            <text x="623.282px" y="368.036px" style="font-family:'Helvetica';font-size:13px;fill:white;">CoQ10(H)/</text>
+            <g transform="matrix(13,0,0,13,662.764,381.036)">
+            </g>
+            <text x="623.282px" y="381.036px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-T<tspan x="643.264px " y="381.036px ">O</tspan>H</text>
+        </g>
+        <g id="tbar-statins-on-hmgcoa" transform="matrix(1,0,0,1,5.58828,12.3334)">
+            <g transform="matrix(1,-0,-0,1,-46.6267,2.40393)">
+                <path d="M660.454,160.577L660.299,170.576" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M633.584,165.161C633.584,165.161 654.936,165.492 660.377,165.577" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-hmgcoa-to-ipp" transform="matrix(1,0,0,0.685544,9.29367,76.2377)">
+            <g transform="matrix(1,-0,-0,1.45869,-50.3321,-89.7103)">
+                <path d="M700.957,219.169L695.332,226.669L689.707,219.169L700.957,219.169Z" style="fill:white;"/>
+                <path d="M695.332,183.527L695.332,220.669" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-ipp-to-coq10h2" transform="matrix(0.750972,0,0,0.750972,168.087,84.9946)">
+            <g transform="matrix(1.33161,-0,-0,1.33161,-278.473,-93.5551)">
+                <path d="M702.02,319.6L696.469,327.154L690.77,319.71L702.02,319.6Z" style="fill:white;"/>
+                <path d="M695.755,254.246C695.755,254.246 696.239,303.712 696.41,321.155" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-fin56-on-coq10" transform="matrix(1.40153,-0.385464,-0.385464,1.37005,-163.539,166.395)">
+            <g transform="matrix(0.773351,0.217583,0.217583,0.79112,61.7376,-93.3253)">
+                <path d="M721.857,324.7L715.715,319.568" style="fill:none;stroke:white;stroke-width:2px;stroke-miterlimit:10;"/>
+                <path d="M740.511,296.132C740.511,296.132 722.445,317.755 718.786,322.134" style="fill:none;stroke:white;stroke-width:2px;"/>
+            </g>
+        </g>
+        <g id="arrow-nadph-to-fsp1-to-nadp-center" transform="matrix(1,0,0,1,14.0053,72.2088)">
+            <g transform="matrix(1,-0,-0,1,-55.0438,-57.4715)">
+                <path d="M582.216,312.696L590.193,307.77L592.688,316.807L582.216,312.696Z" style="fill:white;"/>
+                <path d="M526.137,353.471C551.6,351.465 577.912,335.045 588,313.355" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-ifsp1-on-fsp1" transform="matrix(1,0,0,1,14.0053,72.2088)">
+            <g transform="matrix(1,-0,-0,1,-55.0438,-57.4715)">
+                <path d="M559.279,359.508L567.324,365.446" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M536.698,398.524C536.698,398.524 558.927,368.405 563.302,362.477" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-coq10h-to-coq10h2" transform="matrix(1,0,0,1,14.0053,72.2088)">
+            <g transform="matrix(1,-0,-0,1,-55.0438,-57.4715)">
+                <path d="M679.237,368.497L685.445,361.471L690.45,369.398L679.237,368.497Z" style="fill:white;"/>
+                <path d="M617.652,427.369C649.142,423.96 680.331,407.802 684.964,367.452" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-coq10h2-to-coq10h" transform="matrix(1,0,0,1,14.0053,72.2088)">
+            <g transform="matrix(1,-0,-0,1,-55.0438,-57.4715)">
+                <path d="M584.935,402.534L576.645,406.912L574.763,397.728L584.935,402.534Z" style="fill:white;"/>
+                <path d="M658.659,350.945C626.669,341.142 598.867,361.508 579.208,401.487" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-coq10h2-on-pepufaoo" transform="matrix(0.943416,-0.145969,-0.120169,0.540224,94.1301,321.918)">
+            <g transform="matrix(1.09776,0.296615,0.244189,1.91706,-223.393,-628.978)">
+                <path d="M762.29,573.175L753.704,578.302" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M667.085,423.501C667.085,423.501 749.865,562.121 757.997,575.738" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        </g>
+        <g id="section-gch1-bh4" class="diagram-section">
+        <g transform="matrix(1,0,0,1,908.985,28)">
+            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">GCH1/BH4/DHFR axis</text>
+        </g>
+        <g transform="matrix(1,0,0,1,975,206.223)">
+            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">GCH1</text>
+        </g>
+        <g transform="matrix(1,0,0,1,1074.92,240.185)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">GTP</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,948.064,322.773)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,861.33,381.319)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">BH4/</text>
+                <text x="0px" y="18px" style="font-family:'Helvetica';font-size:14px;fill:white;">α-TOH</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,968.337,393.205)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">DHFR</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,1062.43,367.86)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,1049.26,434.876)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">MTX</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,948.406,453.113)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">BH2/</text>
+                <text x="0px" y="18px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-TOH·</text>
+            </g>
+        </g>
+        <g id="arrow-gtp-to-gch1" transform="matrix(0.718708,0,0,1,282.358,-36.4553)">
+            <g transform="matrix(1.39139,-0,-0,1,-449.97,51.1926)">
+                <path d="M1066.13,193.432L1058.63,187.807L1066.13,182.182L1066.13,193.432Z" style="fill:white;"/>
+                <path d="M1106.79,187.807L1064.63,187.807" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-gch1-to-bh4" transform="matrix(1,0,0,1,0,-32.9815)">
+            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
+                <path d="M932.696,314.033L925.138,319.581L921.928,310.773L932.696,314.033Z" style="fill:white;"/>
+                <path d="M1016.04,201.281C968.54,239.913 938.819,277.433 926.877,313.839" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-bh4-to-bh2" transform="matrix(1,0,0,1,0,-32.9815)">
+            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
+                <path d="M977.862,393.976L983.738,401.281L975.08,404.877L977.862,393.976Z" style="fill:white;"/>
+                <path d="M941.038,352.281C943.216,376.641 954.968,392.937 977.925,399.798" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-nadph-to-dhfr-to-nadp-right" transform="matrix(1,0,0,1,0,-32.9815)">
+            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
+                <path d="M1086.81,322.487L1095.34,326.381L1089.21,333.478L1086.81,322.487Z" style="fill:white;"/>
+                <path d="M1008.18,285.946C1024.56,322.745 1052.51,334.842 1089.48,327.662" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-bh2-to-bh4" transform="matrix(1,0,0,1,0,-32.9815)">
+            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
+                <path d="M962.172,338.737L954.021,334.106L960.75,327.578L962.172,338.737Z" style="fill:white;"/>
+                <path d="M1011.07,386.731C1013.59,353.837 995.696,330.144 959.973,333.347" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-bh4-to-coq10h2" transform="matrix(1,-0,-0,1,-41.0385,14.7373)">
+            <path d="M743.195,325.086L733.822,324.876L736.648,315.937L743.195,325.086Z" style="fill:white;"/>
+            <path d="M898.899,324.876C847.738,289.278 804.109,275.666 738.701,321.385" style="fill:none;stroke:white;stroke-width:2.5px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:7.5,7.5,0,0,0,0;"/>
+        </g>
+        <g id="tbar-mtx-on-dhfr" transform="matrix(1,0,0,1,0,-32.9815)">
+            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
+                <path d="M1060.69,357.098L1066.4,348.894" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M1089.61,371.165C1089.61,371.165 1068.49,356.441 1063.55,352.996" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-bh4-on-pepufaoo" transform="matrix(0.978881,0.0526447,0.0526447,0.868769,-2.95743,-25.6093)">
+            <g transform="matrix(1.02491,-0.0621066,-0.0621066,1.15482,-41.5356,48.9581)">
+                <path d="M836.24,591.724L827.579,586.724" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M942.555,397.597C942.555,397.597 840.844,573.751 831.91,589.224" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        </g>
+        <g id="section-lipid-perox" class="diagram-section">
+        <g transform="matrix(1,0,0,1,40,629.455)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:16px;fill:white;">Lipid peroxidation</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,130,657.315)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PUFA</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,301.769,657.315)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PE-PUFA-OOH</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,132.279,714.749)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:11px;fill:white;">ACSL4 inhibitor, D-</text>
+                <text x="0px" y="16px" style="font-family:'Helvetica';font-size:11px;fill:white;">PUFA, MUFA</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,510.664,659.042)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:17px;fill:rgb(232,150,30);">Autoxidation</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,408.458,728.354)">
+            <g transform="matrix(1,0,0,1,-38.5382,-13.1926)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">Iron chelator</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,714.879,657.315)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PE-PUFA-OO·</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,920.603,648.95)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">RTA (e.g. α-TOH,</text>
+                <text x="0px" y="16px" style="font-family:'Helvetica';font-size:12px;fill:white;">Fer-1, Lip-1)</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,657.418,728.354)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">FINO2,</text>
+                <text x="0px" y="16px" style="font-family:'Helvetica';font-size:12px;fill:white;">nanoparticles</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,517.257,788.986)">
+            <g transform="matrix(1,0,0,1,0,-32.9815)">
+                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:16px;fill:white;">Ferroptosis</text>
+            </g>
+        </g>
+        <g id="tbar-acsl4-inhib-on-pepufaooh" transform="matrix(0.297408,-0.740413,0.67275,0.601028,-264.028,448.862)">
+            <g transform="matrix(0.88796,1.09389,-0.993922,0.439392,629.492,53.1745)">
+                <path d="M275.408,612.16L280.52,620.755" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M229.053,645.547C229.053,645.547 270.7,620.778 277.964,616.458" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-pepufaoo-to-pepufaooh" transform="matrix(1,0,0,1,-5.21317,-78.8545)">
+            <path d="M716.075,708C604.9,746.329 503.704,743.912 411.828,703.436" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+        </g>
+        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+            <path d="M1103.67,1527.91C1101.98,1534.99 1109.42,1544.08 1119.63,1545.25C1129.85,1546.42 1132.19,1538.55 1132.62,1533.44C1133.04,1528.34 1126.23,1525.14 1119.63,1523.23C1113.04,1521.31 1107.08,1513.65 1103.67,1527.91Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+            <path d="M1165.33,1466.41C1159.19,1466.11 1154.53,1474.92 1162.19,1478.97C1169.86,1483.01 1171.98,1480.67 1175.82,1476.2C1179.64,1471.73 1174,1466.84 1165.33,1466.41Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+            <path d="M1262.02,1446.55C1257.77,1446.74 1258.53,1442.73 1255.05,1443.71C1251.56,1444.69 1246.87,1451.12 1253.3,1457.33C1259.73,1463.54 1268.56,1459.62 1271.06,1457.33C1273.57,1455.04 1273.89,1446 1262.02,1446.55Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+            <path d="M1398.87,1580.04C1387.27,1583.09 1388.48,1594.17 1393.93,1603.19C1399.38,1612.21 1406.87,1618.34 1416.4,1614.26C1425.94,1610.17 1429.17,1595.36 1421,1586C1412.83,1576.63 1402.1,1579.18 1398.87,1580.04Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+            <path d="M1148.45,1662.6C1152.04,1660.71 1157.58,1663.56 1160.3,1660.42C1163.02,1657.29 1160.98,1654.16 1153.76,1652.93C1146.54,1651.71 1130.47,1654.3 1130.06,1659.06C1129.65,1663.83 1133.47,1670.5 1148.45,1662.6Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.380785,0,0,0.397718,73.5389,58.7883)">
+            <path d="M1361.69,1523.61C1355.87,1524.81 1350.47,1517.38 1350.47,1504.08C1350.47,1490.78 1333.02,1463.76 1305.17,1462.93C1277.32,1462.1 1284.39,1466.67 1267.76,1472.9C1251.13,1479.14 1236.17,1467.5 1222.04,1469.16C1207.91,1470.83 1164.27,1504.08 1159.28,1513.22C1154.29,1522.36 1151.42,1541.48 1150.55,1558.94C1149.69,1576.4 1138.46,1598.01 1145.53,1617.54C1152.6,1637.08 1158.41,1632.51 1164.23,1642.07C1170.05,1651.63 1164.23,1657.44 1177.12,1671.58C1190,1685.71 1200.46,1702.75 1222.04,1696.93C1243.62,1691.11 1244.03,1682.8 1256.09,1677.81C1268.14,1672.82 1284.35,1672.41 1283.52,1677.81C1282.69,1683.21 1282.27,1690.28 1272.3,1691.11C1262.32,1691.94 1261.15,1703.16 1267.76,1702.33C1274.38,1701.5 1275.62,1698.59 1283.52,1696.93C1291.42,1695.27 1293.57,1677.39 1305.17,1671.58C1316.77,1665.76 1338.38,1665.34 1343.37,1671.58C1348.36,1677.81 1359.58,1701.92 1367.06,1702.33C1374.54,1702.75 1379.53,1694.85 1374.54,1691.11C1369.56,1687.37 1357.99,1681.97 1361.69,1677.81C1365.4,1673.65 1366.64,1675.73 1367.06,1666.59C1367.48,1657.44 1369.56,1656.2 1374.54,1659.94C1379.53,1663.68 1378.28,1670.33 1389.92,1671.58C1401.56,1672.82 1401.56,1664.1 1395.74,1659.94C1389.92,1655.78 1383.69,1650.79 1389.92,1645.81C1396.15,1640.82 1394.49,1626.27 1383.69,1622.95C1372.88,1619.62 1356.67,1602.17 1357.92,1593.85C1359.16,1585.54 1366.23,1565.59 1374.54,1570.58C1382.86,1575.57 1384.6,1577.54 1385.96,1574.28C1387.33,1571.01 1370.85,1555.34 1370.16,1551.12C1369.48,1546.9 1367.44,1534.92 1372.34,1523.61C1377.25,1512.31 1375.2,1505.23 1372.34,1508.22C1369.48,1511.22 1366.98,1522.52 1361.69,1523.61Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.42px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:19.26,19.26,0,0,0,0;"/>
+        </g>
+        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+            <path d="M1302.84,1537.62C1294.84,1539.75 1287.15,1536.55 1288.75,1543.47C1290.34,1550.38 1295.13,1550.92 1291.67,1559.16C1288.21,1567.41 1288.75,1569.01 1288.75,1576.72C1288.75,1584.43 1291.14,1595.34 1285.29,1596.4C1279.44,1597.47 1263.48,1591.88 1262.14,1599.86C1260.82,1607.84 1266.13,1606.51 1265.87,1610.5C1265.6,1614.49 1256.29,1618.48 1262.14,1623.54C1268,1628.59 1271.72,1619.55 1279.44,1619.01C1287.15,1618.48 1295.13,1619.28 1305.24,1614.23C1315.35,1609.17 1312.95,1595.34 1316.68,1589.49C1320.4,1583.64 1320.4,1566.61 1316.68,1559.16C1312.95,1551.72 1313.48,1552.78 1316.68,1546.66C1319.87,1540.54 1314.81,1534.42 1302.84,1537.62Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+            <path d="M1243.31,1572.08C1240.07,1574.71 1240.86,1586.52 1245.22,1587.61C1249.58,1588.7 1258.7,1588.7 1263.2,1583.79C1267.69,1578.89 1266.6,1573.58 1267.15,1570.04C1267.69,1566.5 1272.6,1564.45 1275.32,1562.68C1278.04,1560.91 1274.78,1548.93 1270.14,1548.11C1265.51,1547.29 1256.39,1546.88 1254.62,1555.87C1252.85,1564.86 1248.35,1568 1243.31,1572.08Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+            <path d="M1239.23,1600.14C1235.56,1601.84 1239.77,1609.67 1243.31,1613.21C1246.86,1616.75 1253.12,1615.25 1253.12,1611.85C1253.12,1608.44 1246.86,1596.6 1239.23,1600.14Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+            <path d="M1229.29,1528.23C1225.94,1531.13 1223.84,1535.31 1224.93,1540.76C1226.02,1546.2 1235.3,1545.25 1237.81,1544.57C1240.32,1543.89 1249.94,1535.85 1245.46,1530.4C1240.99,1524.96 1232.43,1525.5 1229.29,1528.23Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+            <path d="M1227.23,1503.44C1228.18,1507.42 1230.09,1506.84 1232.68,1506.03C1235.27,1505.21 1235,1502.49 1232.68,1501.26C1230.37,1500.03 1226.55,1500.58 1227.23,1503.44Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+            <path d="M1200,1542.86C1195.44,1549.53 1202.93,1556.16 1208.52,1545.25C1214.1,1534.35 1213.3,1529.83 1208.52,1531.42C1203.73,1533.02 1203.45,1537.81 1200,1542.86Z" style="fill:rgb(157,100,57);"/>
+        </g>
+        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+            <path d="M1164.94,1578.72C1165.72,1572.78 1170.27,1563.4 1172.39,1561.48C1174.52,1559.57 1174.73,1550.2 1168.56,1551.05C1162.39,1551.9 1162.18,1568.93 1159.41,1578.72C1156.64,1588.51 1155.58,1598.72 1159.41,1600C1163.24,1601.27 1164.31,1583.61 1164.94,1578.72Z" style="fill:rgb(157,100,57);"/>
+        </g>
+        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+            <path d="M1195.3,1605.73C1198.13,1608.3 1195.71,1611.45 1192.71,1612.26C1189.71,1613.08 1188.49,1613.35 1187.94,1615.94C1187.4,1618.53 1190.17,1635.42 1198.59,1635.28C1207.01,1635.14 1200.75,1629.7 1200,1627.25C1199.25,1624.79 1195.71,1615.81 1200,1617.98C1204.29,1620.16 1203.06,1621.12 1207.96,1627.25C1212.87,1633.37 1226.35,1639.37 1234.52,1638.82C1242.69,1638.28 1231.12,1632.01 1228.39,1630.51C1225.67,1629.02 1225.67,1625.34 1228.39,1625.47C1231.12,1625.61 1237.11,1628.47 1239.15,1627.25C1241.2,1626.02 1240.11,1618.39 1233.16,1615.94C1226.21,1613.49 1225.53,1602.16 1222.27,1600.06C1219,1597.96 1207.28,1593.61 1207.96,1590.34C1208.65,1587.07 1209.05,1577.67 1214.5,1571.13C1219.95,1564.6 1217.81,1559.83 1212.41,1563.23C1207.01,1566.64 1204.56,1579.85 1204.02,1584.62C1203.47,1589.38 1201.84,1594.97 1207.96,1601.64C1214.09,1608.31 1219.13,1611.72 1218.59,1614.72C1218.04,1617.71 1215.5,1618.66 1212.41,1615.94C1209.33,1613.22 1201.98,1605.16 1200,1600.06C1198.02,1594.97 1196.85,1584.48 1198.59,1577.94C1200.34,1571.4 1199.93,1558.88 1195.3,1564.19C1190.67,1569.5 1187.94,1599.05 1195.3,1605.73Z" style="fill:rgb(157,100,57);"/>
+        </g>
+        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+            <path d="M1222.27,1645.74C1219.74,1646.84 1220.42,1649.41 1223.42,1652.27C1226.42,1655.13 1224.51,1657.18 1226.69,1659.63C1228.87,1662.08 1233.63,1656.36 1232.14,1652.27C1230.64,1648.19 1226.01,1644.1 1222.27,1645.74Z" style="fill:rgb(157,100,57);"/>
+        </g>
+        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+            <path d="M1339.49,1555.65C1335.56,1553.15 1332.84,1558.25 1336.83,1562.1C1340.82,1565.96 1342.48,1571.8 1342.48,1575.53C1342.48,1579.26 1342.81,1586.24 1346.8,1584.25C1350.79,1582.25 1348.47,1575.6 1346.8,1568.29C1345.14,1560.97 1343.15,1557.98 1339.49,1555.65Z" style="fill:rgb(157,100,57);"/>
+        </g>
+        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+            <path d="M1343.68,1590.68C1341.49,1591.28 1342.57,1593.89 1344.24,1594.73C1345.91,1595.56 1346.54,1598.15 1344.24,1600.06C1341.94,1601.98 1339.15,1605.81 1342.84,1607.28C1346.54,1608.74 1350.1,1605.61 1351,1603.72C1351.91,1601.84 1353.1,1588.1 1343.68,1590.68Z" style="fill:rgb(157,100,57);"/>
+        </g>
+        <g id="arrow-pufa-to-pepufaooh" transform="matrix(1.07143,0,0,1.07143,-8.14286,-128.411)">
+            <g transform="matrix(0.933333,-0,-0,0.933333,-30.7026,133.605)">
+                <path d="M327.003,598.682L335.038,604.709L327.003,610.735L327.003,598.682Z" style="fill:white;"/>
+                <path d="M215.038,604.709L328.61,604.709" style="fill:none;stroke:white;stroke-width:2.68px;"/>
+            </g>
+        </g>
+        <g id="arrow-pepufaooh-to-pepufaoo" transform="matrix(2.04193,-3.46945e-18,3.46945e-18,2.04193,-328.479,-812.932)">
+            <g transform="matrix(0.489733,8.32108e-19,-8.32108e-19,0.489733,140.769,405.337)">
+                <path d="M744.506,591.128L749.134,599.281L740.011,601.44L744.506,591.128Z" style="fill:white;"/>
+                <path d="M447.653,597.596C552.205,555.845 648.872,556.366 743.634,596.883" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-ironchelator-on-autoxidation" transform="matrix(1,0,0,1,-38.5382,-53.8524)">
+            <g transform="matrix(1,-0,-0,1,-2.50028,68.5897)">
+                <path d="M494.543,644.878L502.53,650.896" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M472.578,682.333C472.578,682.333 494.199,653.642 498.536,647.887" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="tbar-rta-on-pepufaoo" transform="matrix(0.815983,-0.00294428,-0.00294428,0.999953,168.796,-76.474)">
+            <g transform="matrix(1.22553,0.00360847,0.00360847,1.00006,-256.83,90.4593)">
+                <path d="M853.683,609.423L853.629,599.423" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                <path d="M954.398,603.886C954.398,603.886 865.302,604.361 853.656,604.423" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
+        <g id="arrow-fino2-to-ferroptosis" transform="matrix(1,0,0,1,0,-73.6413)">
+            <g transform="matrix(1,-0,-0,1,-41.0385,88.3786)">
+                <path d="M676.659,654.531L673.21,646.889L681.394,648.714L676.659,654.531Z" style="fill:white;"/>
+                <path d="M694.985,664.611C694.985,664.611 684.259,655.882 677.863,650.676" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+            </g>
+        </g>
         </g>
     </g>
-    <defs>
-        <image id="_Image1" width="9px" height="9px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA9UlEQVQYlWWQMWqEQABF/zhxFmZGsEjcK3iCgZTrESwCAe8hnsAmIfdIkZRTCG5vo128QBpdwUJld2SZFMFik1e/4vEIfqGc8yfGWDRN072U8mSMKZdleQdwdQBQz/NelVKx1nrf9z3VWu+VUrHneS8AKOGcPyul4rIsd4QQbFhrEUXRpaqqD4cxFuV5fiMAACEEeZ7vGGMH4rruZ9d11Pd9/GUcRwRBcHWEEKe2bf8JANC2LYQQvWOMKbMsu1hrbwRrLdI0PRtjjnRd169hGB6LouBhGN5JKdE0DZIkOdd1/T3P89tWu306zPP8IITojTHH7dMPFS9p10QtFuwAAAAASUVORK5CYII="/>
-        <image id="_Image3" width="1px" height="14px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAOCAYAAADuQ3ZcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAFElEQVQImWNgYGCoZ2JgYGCghAAAJJIAmmzbXNIAAAAASUVORK5CYII="/>
-    </defs>
 </svg>

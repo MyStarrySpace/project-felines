@@ -95,11 +95,11 @@ function CritiqueChart({ progress }: { progress: MotionValue<number> }) {
 
       {/* Axis labels */}
       {xTicks.map((t) => (
-        <text key={t.month} x={t.x} y={ann.yMax + 18} textAnchor="middle" className="fill-gray-600 text-[10px]">{t.month}</text>
+        <text key={t.month} x={t.x} y={ann.yMax + 18} textAnchor="middle" className="fill-gray-500 text-[10px]">{t.month}</text>
       ))}
       <text x={(ann.xMin + ann.xMax) / 2} y={ann.yMax + 34} textAnchor="middle" className="fill-gray-500 text-[11px]">Months</text>
       {yTicks.map((t) => (
-        <text key={t.value} x={ann.xMin - 10} y={t.y + 4} textAnchor="end" className="fill-gray-600 text-[10px]">{t.value}</text>
+        <text key={t.value} x={ann.xMin - 10} y={t.y + 4} textAnchor="end" className="fill-gray-500 text-[10px]">{t.value}</text>
       ))}
       <text x={20} y={(ann.yMin + ann.yMax) / 2} textAnchor="middle" className="fill-gray-500 text-[11px]" transform={`rotate(-90, 20, ${(ann.yMin + ann.yMax) / 2})`}>Dementia score (CDR-SB)</text>
       <text x={20} y={ann.yMin - 4} textAnchor="middle" className="fill-gray-500 text-[9px]">&#x25B2; worse</text>
@@ -119,7 +119,7 @@ function CritiqueChart({ progress }: { progress: MotionValue<number> }) {
 
       {/* Linear extrapolation labels */}
       <motion.text x={ann.month36X - 45} y={ann.gap36LinearMidY + 4} className="fill-red-400/60 text-[11px]" style={{ opacity: linearGapOpacity }}>0.90?</motion.text>
-      <motion.text x={(ann.month18X + ann.month36X) / 2} y={ann.yMin - 2} textAnchor="middle" className="fill-gray-600 text-[10px] italic" style={{ opacity: linearOpacity }}>Linear extrapolation</motion.text>
+      <motion.text x={(ann.month18X + ann.month36X) / 2} y={ann.yMin - 2} textAnchor="middle" className="fill-gray-500 text-[10px] italic" style={{ opacity: linearOpacity }}>Linear extrapolation</motion.text>
 
       {/* Sigmoidal labels */}
       <motion.text x={ann.month36X - 45} y={ann.gap36SigMidY + 4} className="fill-red-400 text-[11px] font-bold" style={{ opacity: sigGapOpacity }}>0.13</motion.text>
@@ -268,11 +268,11 @@ function CritiqueFlowing() {
             <line x1={ann.xMin} y1={ann.yMin} x2={ann.xMin} y2={ann.yMax} stroke="rgba(255,255,255,0.2)" strokeWidth={1} />
             {/* Labels */}
             {xTicks.map((t) => (
-              <text key={t.month} x={t.x} y={ann.yMax + 18} textAnchor="middle" className="fill-gray-600 text-[10px]">{t.month}</text>
+              <text key={t.month} x={t.x} y={ann.yMax + 18} textAnchor="middle" className="fill-gray-500 text-[10px]">{t.month}</text>
             ))}
             <text x={(ann.xMin + ann.xMax) / 2} y={ann.yMax + 34} textAnchor="middle" className="fill-gray-500 text-[11px]">Months</text>
             {yTicks.map((t) => (
-              <text key={t.value} x={ann.xMin - 10} y={t.y + 4} textAnchor="end" className="fill-gray-600 text-[10px]">{t.value}</text>
+              <text key={t.value} x={ann.xMin - 10} y={t.y + 4} textAnchor="end" className="fill-gray-500 text-[10px]">{t.value}</text>
             ))}
             <text x={20} y={(ann.yMin + ann.yMax) / 2} textAnchor="middle" className="fill-gray-500 text-[11px]" transform={`rotate(-90, 20, ${(ann.yMin + ann.yMax) / 2})`}>Dementia score (CDR-SB)</text>
             <text x={20} y={ann.yMin - 4} textAnchor="middle" className="fill-gray-500 text-[9px]">&#x25B2; worse</text>
@@ -336,7 +336,7 @@ function CritiqueFlowing() {
 
 export function LecanemabCritiqueSection() {
   return (
-    <ScrollSection id="critique" label="27% means 2.5%" className="py-0" fullWidth>
+    <ScrollSection id="critique" label="27% means 2.5%" className="py-0" fullWidth breakpoints={[0, 0.32, 0.42, 0.53, 0.65]}>
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">
         <StickyScrollStage height={350}>

@@ -27,7 +27,7 @@ function ParadoxStage({ progress }: { progress: MotionValue<number> }) {
           </h2>
 
           <div className="mb-6">
-            <span className="font-mono text-[clamp(3rem,10vw,5rem)] text-red-400 leading-none">
+            <span className="font-serif text-[clamp(3rem,10vw,5rem)] text-red-400 leading-none">
               <CountUp
                 progress={progress}
                 enter={0.08}
@@ -178,7 +178,7 @@ function ParadoxFlowing() {
           </h2>
 
           <div className="mb-6">
-            <span className="font-mono text-[clamp(3rem,10vw,5rem)] text-red-400 leading-none">
+            <span className="font-serif text-[clamp(3rem,10vw,5rem)] text-red-400 leading-none">
               -0.80
             </span>
             <p className="text-sm text-gray-400 mt-1">

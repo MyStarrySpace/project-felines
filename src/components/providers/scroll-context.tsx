@@ -57,7 +57,7 @@ export function ScrollProvider({ children }: { children: ReactNode }) {
 
   const registerSection = useCallback(
     (id: string, label: string, element: HTMLElement, breakpoints?: number[]) => {
-      const bp = breakpoints && breakpoints.length > 0 ? breakpoints : [0];
+      const bp = breakpoints !== undefined ? breakpoints : [0];
       // Avoid duplicates
       const existing = sectionsRef.current.findIndex((s) => s.id === id);
       if (existing >= 0) {

@@ -1,0 +1,830 @@
+{
+  "CR1": {
+    "citationId": "ncbi-gene-cr1",
+    "disease": "AD"
+  },
+  "INPP5D": {
+    "citationId": "ncbi-gene-inpp5d",
+    "disease": "AD"
+  },
+  "CLNK/HS3ST1": {
+    "citationId": "ncbi-gene-clnk-hs3st1",
+    "disease": "AD"
+  },
+  "HLA-DQA1": {
+    "citationId": "ncbi-gene-hla-dqa1",
+    "disease": "AD"
+  },
+  "CD2AP": {
+    "citationId": "ncbi-gene-cd2ap",
+    "disease": "AD"
+  },
+  "NME8": {
+    "citationId": "ncbi-gene-nme8",
+    "disease": "AD"
+  },
+  "ZCWPW1/NYAP1": {
+    "citationId": "ncbi-gene-zcwpw1-nyap1",
+    "disease": "AD"
+  },
+  "EPHA1": {
+    "citationId": "ncbi-gene-epha1",
+    "disease": "AD"
+  },
+  "PTK2B": {
+    "citationId": "ncbi-gene-ptk2b",
+    "disease": "AD"
+  },
+  "CLU": {
+    "citationId": "ncbi-gene-clu",
+    "disease": "AD"
+  },
+  "ECHDC3": {
+    "citationId": "ncbi-gene-echdc3",
+    "disease": "AD"
+  },
+  "CELF1": {
+    "citationId": "ncbi-gene-celf1",
+    "disease": "AD"
+  },
+  "SORL1": {
+    "citationId": "ncbi-gene-sorl1",
+    "disease": "AD"
+  },
+  "FERMT2": {
+    "citationId": "ncbi-gene-fermt2",
+    "disease": "AD"
+  },
+  "SLC24A4/RIN3": {
+    "citationId": "ncbi-gene-slc24a4-rin3",
+    "disease": "AD"
+  },
+  "SPPL2A": {
+    "citationId": "ncbi-gene-sppl2a",
+    "disease": "multi"
+  },
+  "ADAM10": {
+    "citationId": "ncbi-gene-adam10",
+    "disease": "AD"
+  },
+  "APH1B": {
+    "citationId": "ncbi-gene-aph1b",
+    "disease": "AD"
+  },
+  "KAT8": {
+    "citationId": "ncbi-gene-kat8",
+    "disease": "AD"
+  },
+  "IL34": {
+    "citationId": "ncbi-gene-il34",
+    "disease": "AD"
+  },
+  "PLCG2": {
+    "citationId": "ncbi-gene-plcg2",
+    "disease": "AD"
+  },
+  "SCIMP/RABEP1": {
+    "citationId": "ncbi-gene-scimp-rabep1",
+    "disease": "AD"
+  },
+  "MAPT": {
+    "citationId": "ncbi-gene-mapt",
+    "disease": "AD"
+  },
+  "ABI3": {
+    "citationId": "ncbi-gene-abi3",
+    "disease": "AD"
+  },
+  "TSPOAP1": {
+    "citationId": "ncbi-gene-tspoap1",
+    "disease": "AD"
+  },
+  "ACE": {
+    "citationId": "ncbi-gene-ace",
+    "disease": "AD"
+  },
+  "ABCA7": {
+    "citationId": "ncbi-gene-abca7",
+    "disease": "AD"
+  },
+  "CASS4": {
+    "citationId": "ncbi-gene-cass4",
+    "disease": "AD"
+  },
+  "ADAMTS1": {
+    "citationId": "ncbi-gene-adamts1",
+    "disease": "AD"
+  },
+  "SORT1": {
+    "citationId": "ncbi-gene-sort1",
+    "disease": "AD"
+  },
+  "ADAM17": {
+    "citationId": "ncbi-gene-adam17",
+    "disease": "AD"
+  },
+  "TSPAN14": {
+    "citationId": "ncbi-gene-tspan14",
+    "disease": "AD"
+  },
+  "ABCA1": {
+    "citationId": "ncbi-gene-abca1",
+    "disease": "AD"
+  },
+  "NCK2": {
+    "citationId": "ncbi-gene-nck2",
+    "disease": "AD"
+  },
+  "TMEM106B": {
+    "citationId": "ncbi-gene-tmem106b",
+    "disease": "AD"
+  },
+  "SEC61G/EGFR": {
+    "citationId": "ncbi-gene-sec61g-egfr",
+    "disease": "AD"
+  },
+  "BLNK": {
+    "citationId": "ncbi-gene-blnk",
+    "disease": "AD"
+  },
+  "TNIP1": {
+    "citationId": "ncbi-gene-tnip1",
+    "disease": "AD"
+  },
+  "ANK3": {
+    "citationId": "ncbi-gene-ank3",
+    "disease": "AD"
+  },
+  "SHARPIN": {
+    "citationId": "ncbi-gene-sharpin",
+    "disease": "AD"
+  },
+  "HS3ST5": {
+    "citationId": "ncbi-gene-hs3st5",
+    "disease": "AD"
+  },
+  "OTULIN": {
+    "citationId": "ncbi-gene-otulin",
+    "disease": "AD"
+  },
+  "WDR12": {
+    "citationId": "ncbi-gene-wdr12",
+    "disease": "AD"
+  },
+  "RASGEF1C": {
+    "citationId": "ncbi-gene-rasgef1c",
+    "disease": "AD"
+  },
+  "PRKD3": {
+    "citationId": "ncbi-gene-prkd3",
+    "disease": "AD"
+  },
+  "CTSB": {
+    "citationId": "ncbi-gene-ctsb",
+    "disease": "multi"
+  },
+  "ICA1": {
+    "citationId": "ncbi-gene-ica1",
+    "disease": "AD"
+  },
+  "DGKQ": {
+    "citationId": "ncbi-gene-dgkq",
+    "disease": "AD"
+  },
+  "CD33": {
+    "citationId": "ncbi-gene-cd33",
+    "disease": "AD"
+  },
+  "DOC2A": {
+    "citationId": "ncbi-gene-doc2a",
+    "disease": "AD"
+  },
+  "MME": {
+    "citationId": "ncbi-gene-mme",
+    "disease": "AD"
+  },
+  "IDUA": {
+    "citationId": "ncbi-gene-idua",
+    "disease": "AD"
+  },
+  "RHOH": {
+    "citationId": "ncbi-gene-rhoh",
+    "disease": "AD"
+  },
+  "ANKH": {
+    "citationId": "ncbi-gene-ankh",
+    "disease": "AD"
+  },
+  "COX7C": {
+    "citationId": "ncbi-gene-cox7c",
+    "disease": "AD"
+  },
+  "TPCN1": {
+    "citationId": "ncbi-gene-tpcn1",
+    "disease": "AD"
+  },
+  "IGH": {
+    "citationId": "ncbi-gene-igh",
+    "disease": "AD"
+  },
+  "SNX1": {
+    "citationId": "ncbi-gene-snx1",
+    "disease": "AD"
+  },
+  "CTSH": {
+    "citationId": "ncbi-gene-ctsh",
+    "disease": "AD"
+  },
+  "MAF": {
+    "citationId": "ncbi-gene-maf",
+    "disease": "AD"
+  },
+  "FOXF1": {
+    "citationId": "ncbi-gene-foxf1",
+    "disease": "AD"
+  },
+  "PRDM7": {
+    "citationId": "ncbi-gene-prdm7",
+    "disease": "AD"
+  },
+  "WDR81": {
+    "citationId": "ncbi-gene-wdr81",
+    "disease": "AD"
+  },
+  "MYO15A": {
+    "citationId": "ncbi-gene-myo15a",
+    "disease": "AD"
+  },
+  "GRN": {
+    "citationId": "ncbi-gene-grn",
+    "disease": "multi"
+  },
+  "KLF16": {
+    "citationId": "ncbi-gene-klf16",
+    "disease": "AD"
+  },
+  "SIGLEC11": {
+    "citationId": "ncbi-gene-siglec11",
+    "disease": "AD"
+  },
+  "LILRB2": {
+    "citationId": "ncbi-gene-lilrb2",
+    "disease": "AD"
+  },
+  "RBCK1": {
+    "citationId": "ncbi-gene-rbck1",
+    "disease": "AD"
+  },
+  "SLC2A4RG": {
+    "citationId": "ncbi-gene-slc2a4rg",
+    "disease": "AD"
+  },
+  "APP": {
+    "citationId": "ncbi-gene-app",
+    "disease": "AD"
+  },
+  "ZYG11B": {
+    "citationId": "ncbi-gene-zyg11b",
+    "disease": "PD"
+  },
+  "KCND3": {
+    "citationId": "ncbi-gene-kcnd3",
+    "disease": "PD"
+  },
+  "GBA1": {
+    "citationId": "ncbi-gene-gba1",
+    "disease": "PD"
+  },
+  "F11R": {
+    "citationId": "ncbi-gene-f11r",
+    "disease": "PD"
+  },
+  "SDHC": {
+    "citationId": "ncbi-gene-sdhc",
+    "disease": "PD"
+  },
+  "VAMP4": {
+    "citationId": "ncbi-gene-vamp4",
+    "disease": "PD"
+  },
+  "RAB29": {
+    "citationId": "ncbi-gene-rab29",
+    "disease": "PD"
+  },
+  "ITPKB": {
+    "citationId": "ncbi-gene-itpkb",
+    "disease": "PD"
+  },
+  "SIPA1L2": {
+    "citationId": "ncbi-gene-sipa1l2",
+    "disease": "PD"
+  },
+  "AKT3": {
+    "citationId": "ncbi-gene-akt3",
+    "disease": "PD"
+  },
+  "KCNS3": {
+    "citationId": "ncbi-gene-kcns3",
+    "disease": "PD"
+  },
+  "SRD5A2": {
+    "citationId": "ncbi-gene-srd5a2",
+    "disease": "PD"
+  },
+  "BIRC6": {
+    "citationId": "ncbi-gene-birc6",
+    "disease": "PD"
+  },
+  "XPO1": {
+    "citationId": "ncbi-gene-xpo1",
+    "disease": "PD"
+  },
+  "AAK1": {
+    "citationId": "ncbi-gene-aak1",
+    "disease": "PD"
+  },
+  "KCNIP3": {
+    "citationId": "ncbi-gene-kcnip3",
+    "disease": "PD"
+  },
+  "TBC1D8": {
+    "citationId": "ncbi-gene-tbc1d8",
+    "disease": "PD"
+  },
+  "ACMSD": {
+    "citationId": "ncbi-gene-acmsd",
+    "disease": "PD"
+  },
+  "ACVR2A": {
+    "citationId": "ncbi-gene-acvr2a",
+    "disease": "PD"
+  },
+  "ACVR1": {
+    "citationId": "ncbi-gene-acvr1",
+    "disease": "PD"
+  },
+  "TANK": {
+    "citationId": "ncbi-gene-tank",
+    "disease": "PD"
+  },
+  "STK39": {
+    "citationId": "ncbi-gene-stk39",
+    "disease": "PD"
+  },
+  "GRM7": {
+    "citationId": "ncbi-gene-grm7",
+    "disease": "PD"
+  },
+  "TBC1D5": {
+    "citationId": "ncbi-gene-tbc1d5",
+    "disease": "PD"
+  },
+  "RBMS3": {
+    "citationId": "ncbi-gene-rbms3",
+    "disease": "PD"
+  },
+  "MOBP": {
+    "citationId": "ncbi-gene-mobp",
+    "disease": "PD"
+  },
+  "PXK": {
+    "citationId": "ncbi-gene-pxk",
+    "disease": "PD"
+  },
+  "ADCY5": {
+    "citationId": "ncbi-gene-adcy5",
+    "disease": "PD"
+  },
+  "MED12L": {
+    "citationId": "ncbi-gene-med12l",
+    "disease": "PD"
+  },
+  "SUCNR1": {
+    "citationId": "ncbi-gene-sucnr1",
+    "disease": "PD"
+  },
+  "PLCH1": {
+    "citationId": "ncbi-gene-plch1",
+    "disease": "PD"
+  },
+  "SPTSSB": {
+    "citationId": "ncbi-gene-sptssb",
+    "disease": "PD"
+  },
+  "PIK3CA": {
+    "citationId": "ncbi-gene-pik3ca",
+    "disease": "PD"
+  },
+  "MCCC1": {
+    "citationId": "ncbi-gene-mccc1",
+    "disease": "PD"
+  },
+  "TMEM175": {
+    "citationId": "ncbi-gene-tmem175",
+    "disease": "PD"
+  },
+  "BST1": {
+    "citationId": "ncbi-gene-bst1",
+    "disease": "PD"
+  },
+  "LCORL": {
+    "citationId": "ncbi-gene-lcorl",
+    "disease": "PD"
+  },
+  "STBD1": {
+    "citationId": "ncbi-gene-stbd1",
+    "disease": "PD"
+  },
+  "SNCA": {
+    "citationId": "ncbi-gene-snca",
+    "disease": "PD"
+  },
+  "CAMK2D": {
+    "citationId": "ncbi-gene-camk2d",
+    "disease": "PD"
+  },
+  "CLCN3": {
+    "citationId": "ncbi-gene-clcn3",
+    "disease": "PD"
+  },
+  "SLC6A3": {
+    "citationId": "ncbi-gene-slc6a3",
+    "disease": "PD"
+  },
+  "ELOVL7": {
+    "citationId": "ncbi-gene-elovl7",
+    "disease": "PD"
+  },
+  "SV2C": {
+    "citationId": "ncbi-gene-sv2c",
+    "disease": "PD"
+  },
+  "FAM151B": {
+    "citationId": "ncbi-gene-fam151b",
+    "disease": "PD"
+  },
+  "ZNF608": {
+    "citationId": "ncbi-gene-znf608",
+    "disease": "PD"
+  },
+  "REEP2": {
+    "citationId": "ncbi-gene-reep2",
+    "disease": "PD"
+  },
+  "RANBP9": {
+    "citationId": "ncbi-gene-ranbp9",
+    "disease": "PD"
+  },
+  "MBOAT1": {
+    "citationId": "ncbi-gene-mboat1",
+    "disease": "PD"
+  },
+  "POM121L2": {
+    "citationId": "ncbi-gene-pom121l2",
+    "disease": "PD"
+  },
+  "ZNF311": {
+    "citationId": "ncbi-gene-znf311",
+    "disease": "PD"
+  },
+  "HLA-DRB1": {
+    "citationId": "ncbi-gene-hla-drb1",
+    "disease": "PD"
+  },
+  "LMBRD1": {
+    "citationId": "ncbi-gene-lmbrd1",
+    "disease": "PD"
+  },
+  "RIMS1": {
+    "citationId": "ncbi-gene-rims1",
+    "disease": "PD"
+  },
+  "FYN": {
+    "citationId": "ncbi-gene-fyn",
+    "disease": "PD"
+  },
+  "STX7": {
+    "citationId": "ncbi-gene-stx7",
+    "disease": "PD"
+  },
+  "KLHL7": {
+    "citationId": "ncbi-gene-klhl7",
+    "disease": "PD"
+  },
+  "DYNC1I1": {
+    "citationId": "ncbi-gene-dync1i1",
+    "disease": "PD"
+  },
+  "NYAP1": {
+    "citationId": "ncbi-gene-nyap1",
+    "disease": "PD"
+  },
+  "PTPRN2": {
+    "citationId": "ncbi-gene-ptprn2",
+    "disease": "PD"
+  },
+  "CLN8": {
+    "citationId": "ncbi-gene-cln8",
+    "disease": "PD"
+  },
+  "PRAG1": {
+    "citationId": "ncbi-gene-prag1",
+    "disease": "PD"
+  },
+  "FGF20": {
+    "citationId": "ncbi-gene-fgf20",
+    "disease": "PD"
+  },
+  "BIN3": {
+    "citationId": "ncbi-gene-bin3",
+    "disease": "PD"
+  },
+  "SYBU": {
+    "citationId": "ncbi-gene-sybu",
+    "disease": "PD"
+  },
+  "CYRIB": {
+    "citationId": "ncbi-gene-cyrib",
+    "disease": "PD"
+  },
+  "SH3GL2": {
+    "citationId": "ncbi-gene-sh3gl2",
+    "disease": "PD"
+  },
+  "UBAP1": {
+    "citationId": "ncbi-gene-ubap1",
+    "disease": "PD"
+  },
+  "ITGA8": {
+    "citationId": "ncbi-gene-itga8",
+    "disease": "PD"
+  },
+  "PSD": {
+    "citationId": "ncbi-gene-psd",
+    "disease": "PD"
+  },
+  "AS3MT": {
+    "citationId": "ncbi-gene-as3mt",
+    "disease": "PD"
+  },
+  "BAG3": {
+    "citationId": "ncbi-gene-bag3",
+    "disease": "PD"
+  },
+  "DLG2": {
+    "citationId": "ncbi-gene-dlg2",
+    "disease": "PD"
+  },
+  "ZW10": {
+    "citationId": "ncbi-gene-zw10",
+    "disease": "PD"
+  },
+  "IGSF9B": {
+    "citationId": "ncbi-gene-igsf9b",
+    "disease": "PD"
+  },
+  "WNK1": {
+    "citationId": "ncbi-gene-wnk1",
+    "disease": "PD"
+  },
+  "LRRK2": {
+    "citationId": "ncbi-gene-lrrk2",
+    "disease": "PD"
+  },
+  "SLC38A2": {
+    "citationId": "ncbi-gene-slc38a2",
+    "disease": "PD"
+  },
+  "KCNH3": {
+    "citationId": "ncbi-gene-kcnh3",
+    "disease": "PD"
+  },
+  "RAB21": {
+    "citationId": "ncbi-gene-rab21",
+    "disease": "PD"
+  },
+  "ANO4": {
+    "citationId": "ncbi-gene-ano4",
+    "disease": "PD"
+  },
+  "MVK": {
+    "citationId": "ncbi-gene-mvk",
+    "disease": "PD"
+  },
+  "HIP1R": {
+    "citationId": "ncbi-gene-hip1r",
+    "disease": "PD"
+  },
+  "CAB39L": {
+    "citationId": "ncbi-gene-cab39l",
+    "disease": "PD"
+  },
+  "MBNL2": {
+    "citationId": "ncbi-gene-mbnl2",
+    "disease": "PD"
+  },
+  "IRS2": {
+    "citationId": "ncbi-gene-irs2",
+    "disease": "PD"
+  },
+  "RALGAPA1": {
+    "citationId": "ncbi-gene-ralgapa1",
+    "disease": "PD"
+  },
+  "GCH1": {
+    "citationId": "ncbi-gene-gch1",
+    "disease": "PD"
+  },
+  "GALC": {
+    "citationId": "ncbi-gene-galc",
+    "disease": "PD"
+  },
+  "DLK1": {
+    "citationId": "ncbi-gene-dlk1",
+    "disease": "PD"
+  },
+  "VPS13C": {
+    "citationId": "ncbi-gene-vps13c",
+    "disease": "PD"
+  },
+  "HERC1": {
+    "citationId": "ncbi-gene-herc1",
+    "disease": "PD"
+  },
+  "MFGE8": {
+    "citationId": "ncbi-gene-mfge8",
+    "disease": "PD"
+  },
+  "CRAMP1": {
+    "citationId": "ncbi-gene-cramp1",
+    "disease": "PD"
+  },
+  "SYT17": {
+    "citationId": "ncbi-gene-syt17",
+    "disease": "PD"
+  },
+  "ATP2A1": {
+    "citationId": "ncbi-gene-atp2a1",
+    "disease": "PD"
+  },
+  "STX4": {
+    "citationId": "ncbi-gene-stx4",
+    "disease": "PD"
+  },
+  "CYLD": {
+    "citationId": "ncbi-gene-cyld",
+    "disease": "PD"
+  },
+  "TOX3": {
+    "citationId": "ncbi-gene-tox3",
+    "disease": "PD"
+  },
+  "CHD9": {
+    "citationId": "ncbi-gene-chd9",
+    "disease": "PD"
+  },
+  "GP1BA": {
+    "citationId": "ncbi-gene-gp1ba",
+    "disease": "PD"
+  },
+  "PHF23": {
+    "citationId": "ncbi-gene-phf23",
+    "disease": "PD"
+  },
+  "NCOR1": {
+    "citationId": "ncbi-gene-ncor1",
+    "disease": "PD"
+  },
+  "SREBF1": {
+    "citationId": "ncbi-gene-srebf1",
+    "disease": "PD"
+  },
+  "OMG": {
+    "citationId": "ncbi-gene-omg",
+    "disease": "PD"
+  },
+  "TUBG1": {
+    "citationId": "ncbi-gene-tubg1",
+    "disease": "PD"
+  },
+  "KANSL1": {
+    "citationId": "ncbi-gene-kansl1",
+    "disease": "PD"
+  },
+  "NPEPPS": {
+    "citationId": "ncbi-gene-npepps",
+    "disease": "PD"
+  },
+  "PPP1R9B": {
+    "citationId": "ncbi-gene-ppp1r9b",
+    "disease": "PD"
+  },
+  "STRADA": {
+    "citationId": "ncbi-gene-strada",
+    "disease": "PD"
+  },
+  "SLC16A6": {
+    "citationId": "ncbi-gene-slc16a6",
+    "disease": "PD"
+  },
+  "RPTOR": {
+    "citationId": "ncbi-gene-rptor",
+    "disease": "PD"
+  },
+  "ASPSCR1": {
+    "citationId": "ncbi-gene-aspscr1",
+    "disease": "PD"
+  },
+  "MAPRE2": {
+    "citationId": "ncbi-gene-mapre2",
+    "disease": "PD"
+  },
+  "RIT2": {
+    "citationId": "ncbi-gene-rit2",
+    "disease": "PD"
+  },
+  "SPPL2B": {
+    "citationId": "ncbi-gene-sppl2b",
+    "disease": "PD"
+  },
+  "ISYNA1": {
+    "citationId": "ncbi-gene-isyna1",
+    "disease": "PD"
+  },
+  "PDCD5": {
+    "citationId": "ncbi-gene-pdcd5",
+    "disease": "PD"
+  },
+  "PPFIA3": {
+    "citationId": "ncbi-gene-ppfia3",
+    "disease": "PD"
+  },
+  "DDRGK1": {
+    "citationId": "ncbi-gene-ddrgk1",
+    "disease": "PD"
+  },
+  "CRLS1": {
+    "citationId": "ncbi-gene-crls1",
+    "disease": "PD"
+  },
+  "TPX2": {
+    "citationId": "ncbi-gene-tpx2",
+    "disease": "PD"
+  },
+  "PTPN1": {
+    "citationId": "ncbi-gene-ptpn1",
+    "disease": "PD"
+  },
+  "DYRK1A": {
+    "citationId": "ncbi-gene-dyrk1a",
+    "disease": "PD"
+  },
+  "DSCAM": {
+    "citationId": "ncbi-gene-dscam",
+    "disease": "PD"
+  },
+  "ABCG1": {
+    "citationId": "ncbi-gene-abcg1",
+    "disease": "PD"
+  },
+  "TRPM2": {
+    "citationId": "ncbi-gene-trpm2",
+    "disease": "PD"
+  },
+  "ADARB1": {
+    "citationId": "ncbi-gene-adarb1",
+    "disease": "PD"
+  },
+  "PINK1": {
+    "citationId": "ncbi-gene-pink1",
+    "disease": "PD"
+  },
+  "PRKN": {
+    "citationId": "ncbi-gene-prkn",
+    "disease": "PD"
+  },
+  "VPS35": {
+    "citationId": "ncbi-gene-vps35",
+    "disease": "PD"
+  },
+  "GAK": {
+    "citationId": "ncbi-gene-gak",
+    "disease": "PD"
+  },
+  "INPP5F": {
+    "citationId": "ncbi-gene-inpp5f",
+    "disease": "PD"
+  },
+  "GPNMB": {
+    "citationId": "ncbi-gene-gpnmb",
+    "disease": "PD"
+  },
+  "USP8": {
+    "citationId": "ncbi-gene-usp8",
+    "disease": "PD"
+  },
+  "SCARB2": {
+    "citationId": "ncbi-gene-scarb2",
+    "disease": "PD"
+  }
+}

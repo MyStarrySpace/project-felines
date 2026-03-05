@@ -1,9 +1,13 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { Container } from "@/components/ui/container";
-import { InteractiveSvg } from "@/components/ui/interactive-svg";
 import { useRegisterSections } from "@/components/providers/explore-sections-context";
-import { diagramSteps } from "@/data/landing/iron-diagram";
+
+const IronGraph = dynamic(
+  () => import("@/components/iron-diagram/IronGraph").then((m) => m.IronGraph),
+  { ssr: false },
+);
 
 const PAGE_SECTIONS = [{ id: "diagram", label: "Iron Diagram" }];
 
@@ -28,10 +32,7 @@ export default function IronDiagramPage() {
           oxidative damage, and the defense systems that keep it in check.
         </p>
 
-        <InteractiveSvg
-          svgUrl="/diagrams/feline-iron.svg"
-          steps={diagramSteps}
-        />
+        <IronGraph />
       </Container>
     </section>
   );

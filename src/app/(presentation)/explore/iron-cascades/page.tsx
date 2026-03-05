@@ -94,7 +94,7 @@ function CascadeSectionBlock({ section }: { section: CascadeSection }) {
                 </p>
                 <p className="text-sm text-gray-400 mt-1">{stat.label}</p>
                 {stat.source && (
-                  <p className="text-xs text-gray-600 mt-1">{stat.source}</p>
+                  <p className="text-xs text-gray-500 mt-1">{stat.source}</p>
                 )}
               </div>
             ))}
@@ -108,7 +108,7 @@ function CascadeSectionBlock({ section }: { section: CascadeSection }) {
               <a
                 key={link.href}
                 href={link.href}
-                className="inline-flex items-center gap-1.5 rounded-md border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-teal-400/40 hover:text-teal-400"
+                className="inline-flex items-center gap-1.5 border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-teal-400/40 hover:text-teal-400"
               >
                 <span aria-hidden="true">&rarr;</span> {link.label}
               </a>
@@ -204,7 +204,7 @@ function ViciousCycleDiagram() {
                   height: 36,
                 }}
               >
-                <span className="rounded-md bg-white/5 border border-white/10 px-2.5 py-1.5 text-xs font-medium text-white text-center leading-tight whitespace-nowrap">
+                <span className="bg-white/5 border border-white/10 px-2.5 py-1.5 text-xs font-medium text-white text-center leading-tight whitespace-nowrap">
                   {step.label}
                 </span>
               </div>
@@ -291,7 +291,7 @@ function AntiTauTrialTable() {
         disease. It didn&rsquo;t. The cofactor model predicts this: intracellular
         iron, not extracellular seeds, drives aggregation.
       </p>
-      <div className="overflow-x-auto rounded-lg border border-white/10">
+      <div className="overflow-x-auto border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -352,7 +352,7 @@ function AntiTauTrialTable() {
                       {trial.outcome}
                     </span>
                     {trial.source && (
-                      <span className="block text-gray-600 mt-0.5">
+                      <span className="block text-gray-500 mt-0.5">
                         {trial.source}
                       </span>
                     )}
@@ -381,7 +381,7 @@ function AntiAmyloidTrialTable() {
         modest benefit, likely via microglial iron relocation. BACE inhibitors
         worsened cognition by removing backup iron sequestration.
       </p>
-      <div className="overflow-x-auto rounded-lg border border-white/10">
+      <div className="overflow-x-auto border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -447,7 +447,7 @@ function AntiAmyloidTrialTable() {
                       {trial.clinicalOutcome}
                     </span>
                     {trial.ariaRate && (
-                      <span className="block text-gray-600 mt-0.5">
+                      <span className="block text-gray-500 mt-0.5">
                         ARIA: {trial.ariaRate}
                       </span>
                     )}
@@ -477,7 +477,7 @@ function MetalOligomerMorphologyTable() {
         Iron produces the most toxic aggregate form. Without metal, A&beta; forms
         mature fibrils, the least toxic form.
       </p>
-      <div className="overflow-hidden rounded-lg border border-white/10">
+      <div className="overflow-hidden border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -505,7 +505,7 @@ function MetalOligomerMorphologyTable() {
                     : ""
                 }
               >
-                <td className="px-4 py-3 font-medium text-white font-mono">
+                <td className="px-4 py-3 font-medium text-white font-serif">
                   {row.metal}
                 </td>
                 <td className="px-4 py-3 text-gray-300 text-xs">
@@ -532,7 +532,7 @@ function MetalOligomerMorphologyTable() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-600 mt-2">
+      <p className="text-xs text-gray-500 mt-2">
         Source: Bolognin et al. 2011, Int J Biochem Cell Biol
       </p>
     </div>
@@ -552,7 +552,7 @@ function AriaBindingTable() {
         fibrils from human leptomeningeal tissue. The correlation with ARIA rates
         is striking.
       </p>
-      <div className="overflow-hidden rounded-lg border border-white/10">
+      <div className="overflow-hidden border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -586,7 +586,7 @@ function AriaBindingTable() {
                 <td className="px-4 py-3 text-gray-300 text-xs">
                   {row.caaBinding}
                 </td>
-                <td className="px-4 py-3 text-right font-mono">
+                <td className="px-4 py-3 text-right font-serif">
                   <span
                     className={
                       row.ariaRate === "0%"
@@ -607,7 +607,7 @@ function AriaBindingTable() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-600 mt-2">
+      <p className="text-xs text-gray-500 mt-2">
         Source: S&ouml;derberg et al. 2024, Scientific Reports
       </p>
     </div>
@@ -626,7 +626,7 @@ function OlVulnerabilityTradeoffTable() {
         Every property that makes OLs essential for brain function also makes
         them the most ferroptosis-vulnerable cell type.
       </p>
-      <div className="overflow-x-auto rounded-lg border border-white/10">
+      <div className="overflow-x-auto border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -665,7 +665,7 @@ function OlVulnerabilityTradeoffTable() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-600 mt-2">
+      <p className="text-xs text-gray-500 mt-2">
         Sources: Reinert 2019, Thorburne &amp; Juurlink 1996, Wade &amp; Connor
         2025
       </p>
@@ -685,7 +685,7 @@ function OpcDifferentiationTable() {
         OPCs attempt to differentiate constitutively, but nothing speeds them up
         when myelin is lost. Inflammation actively slows them down.
       </p>
-      <div className="overflow-hidden rounded-lg border border-white/10">
+      <div className="overflow-hidden border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -732,7 +732,7 @@ function OpcDifferentiationTable() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-600 mt-2">
+      <p className="text-xs text-gray-500 mt-2">
         Source: Mironova et al. 2026, Science
       </p>
     </div>
@@ -747,7 +747,7 @@ function IronConcentrationTable() {
       <h3 className="text-lg font-bold text-white mb-4">
         Cellular iron concentrations
       </h3>
-      <div className="overflow-hidden rounded-lg border border-white/10">
+      <div className="overflow-hidden border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -775,7 +775,7 @@ function IronConcentrationTable() {
                 <td className="px-4 py-3 font-medium text-white">
                   {row.cellType}
                 </td>
-                <td className="px-4 py-3 text-right font-mono text-teal-400">
+                <td className="px-4 py-3 text-right font-serif text-teal-400">
                   {row.concentration}
                 </td>
                 <td className="px-4 py-3 text-gray-500 text-xs">
@@ -786,7 +786,7 @@ function IronConcentrationTable() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-600 mt-2">
+      <p className="text-xs text-gray-500 mt-2">
         Source: Reinert et al. 2019, calibrated synchrotron X-ray fluorescence
       </p>
     </div>
@@ -806,7 +806,7 @@ function RegionalVulnerabilityHierarchyTable() {
         worst intersection: maximum CSF iron influx, poor efflux, and
         cholinergic neurons that regulate their own clearance.
       </p>
-      <div className="overflow-hidden rounded-lg border border-white/10">
+      <div className="overflow-hidden border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -885,7 +885,7 @@ function RegionalVulnerabilityHierarchyTable() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-600 mt-2">
+      <p className="text-xs text-gray-500 mt-2">
         Source: Iliff et al. 2012, Ringstad et al. 2018, Shafiee et al. 2024
       </p>
     </div>
@@ -904,7 +904,7 @@ function CrossDiseaseNBMTableComponent() {
         The nucleus basalis degenerates early in every major neurodegenerative
         disease, not just Alzheimer&apos;s.
       </p>
-      <div className="overflow-hidden rounded-lg border border-white/10">
+      <div className="overflow-hidden border border-white/10">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/5">
@@ -943,7 +943,7 @@ function CrossDiseaseNBMTableComponent() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-600 mt-2">
+      <p className="text-xs text-gray-500 mt-2">
         Source: Pereira et al. 2020, Whitehouse et al. 1981/1982
       </p>
     </div>
@@ -995,7 +995,7 @@ function ResearchSection() {
           </div>
           <button
             onClick={() => setAllOpen((v) => !v)}
-            className="shrink-0 rounded-md border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-white/20 hover:text-white"
+            className="shrink-0 border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-white/20 hover:text-white"
             aria-label={
               allOpen
                 ? "Collapse all research sections"
@@ -1187,7 +1187,7 @@ export default function IronCascadesPage() {
                   </p>
                   <p className="text-sm text-gray-400 mt-1">{stat.label}</p>
                   {stat.source && (
-                    <p className="text-xs text-gray-600 mt-1">{stat.source}</p>
+                    <p className="text-xs text-gray-500 mt-1">{stat.source}</p>
                   )}
                 </div>
               ))}
@@ -1201,7 +1201,7 @@ export default function IronCascadesPage() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="inline-flex items-center gap-1.5 rounded-md border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-teal-400/40 hover:text-teal-400"
+                  className="inline-flex items-center gap-1.5 border border-white/10 px-3 py-1.5 text-xs font-medium text-gray-400 transition-colors hover:border-teal-400/40 hover:text-teal-400"
                 >
                   <span aria-hidden="true">&rarr;</span> {link.label}
                 </a>
@@ -1250,7 +1250,7 @@ export default function IronCascadesPage() {
                   </p>
                   <p className="text-sm text-gray-400 mt-1">{stat.label}</p>
                   {stat.source && (
-                    <p className="text-xs text-gray-600 mt-1">{stat.source}</p>
+                    <p className="text-xs text-gray-500 mt-1">{stat.source}</p>
                   )}
                 </div>
               ))}
@@ -1300,7 +1300,7 @@ export default function IronCascadesPage() {
                   </p>
                   <p className="text-sm text-gray-400 mt-1">{stat.label}</p>
                   {stat.source && (
-                    <p className="text-xs text-gray-600 mt-1">{stat.source}</p>
+                    <p className="text-xs text-gray-500 mt-1">{stat.source}</p>
                   )}
                 </div>
               ))}
@@ -1362,7 +1362,7 @@ export default function IronCascadesPage() {
                   </p>
                   <p className="text-sm text-gray-400 mt-1">{stat.label}</p>
                   {stat.source && (
-                    <p className="text-xs text-gray-600 mt-1">{stat.source}</p>
+                    <p className="text-xs text-gray-500 mt-1">{stat.source}</p>
                   )}
                 </div>
               ))}

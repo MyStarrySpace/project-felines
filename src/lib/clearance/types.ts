@@ -1,195 +1,198 @@
-/** FELINE Clearance Model — Type Definitions
+/**
+ * FELINE Clearance Model v2 — Minimal ODE with cited parameters
  *
- * 4-compartment serial ODE system modeling brain iron clearance:
- * Cell (LIP + ferritin) → ISF → CSF → periphery
+ * 3-state ODE: [LIP, ferritin, ISF] with CSF as algebraic steady-state.
+ * Serial pathway: LIP → ISF → CSF → periphery
+ * Ferritin as a saturable buffer on LIP.
+ *
+ * Design principles:
+ *  - Every parameter is classified as "measured", "derived", or "assumed"
+ *  - Derived parameters are computed from measured ones (steady-state constraints)
+ *  - Optional extensions can be toggled on/off for exploration
+ *  - Feedback loops removed; acceleration comes from clearance decline alone
  */
 
-/** State variables for the 5-compartment model */
-export interface ClearanceState {
-  /** Labile iron pool — free intracellular Fe2+ (µM, baseline ~2.5) */
-  Fe_LIP: number;
-  /** Ferritin-bound storage iron (µM, baseline ~25) */
-  Fe_ferritin: number;
-  /** Interstitial fluid iron — NTBI in transit (µM, baseline ~0.005) */
-  Fe_ISF: number;
-  /** CSF iron (µg/L, baseline ~61) */
-  Fe_CSF: number;
-  /** Cumulative oxidative damage (0-1): drives Cu depletion, ferroxidase loss, protein aggregation */
-  damage: number;
+// ── Confidence classification ───────────────────────────────────────
+
+export type ParamSource = "measured" | "derived" | "assumed";
+
+export interface ParamCitation {
+  source: ParamSource;
+  /** Short citation: "Author Year, Journal" */
+  cite?: string;
+  /** PMID or DOI for lookup */
+  pmid?: string;
+  doi?: string;
+  /** How derived parameters were computed, or why assumed values were chosen */
+  note?: string;
 }
+
+// ── State variables ─────────────────────────────────────────────────
+
+/** ODE state: 3 variables integrated numerically */
+export interface ClearanceState {
+  /** Labile iron pool — free intracellular Fe²⁺ (µM, baseline ~0.8) */
+  Fe_LIP: number;
+  /** Ferritin-bound storage iron (µM) */
+  Fe_ferritin: number;
+  /** Interstitial fluid iron — NTBI (µM, baseline ~1.0) */
+  Fe_ISF: number;
+}
+
+// ── Core parameters (always active) ─────────────────────────────────
 
 export type Sex = "male" | "female";
 export type APOEGenotype = "e3/e3" | "e3/e4" | "e4/e4";
 
-/** Disease perturbation toggles */
-export interface DiseasePerturbations {
-  hypertension: boolean;
-  diabetes: boolean;
-  sleepDisruption: boolean;
-  chronicHepcidin: boolean;
-}
-
-/** Full parameter set for the clearance model */
-export interface ClearanceParameters {
-  // Demographics
+export interface CoreParameters {
   sex: Sex;
   apoe_genotype: APOEGenotype;
   startAge: number;
 
-  // Ferroportin kinetics
-  /** Fpn surface copies per cell (30-300 range) */
-  N_fpn: number;
-  /** Single-Fpn turnover rate (s^-1) */
-  k_cat: number;
-  /** Michaelis constant for Fpn (µM) */
+  // ── Iron uptake ───────────────────────────────────────────────────
+  /** Net iron accumulation rate (µM/year). ~0.5 mg/year whole brain. */
+  J_uptake: number;
+
+  // ── Ferroportin export ────────────────────────────────────────────
+  /** Fpn Km for Fe²⁺ (µM) */
   Km_fpn: number;
-  /** Ferroxidase efficiency (0-1; depends on Cu availability) */
-  f_ferroxidase: number;
+  /** Effective Fpn export rate (derived for steady state) */
+  k_fpn_eff: number;
   /** Annual Fpn decline rate after age 40 */
   fpn_decline_rate: number;
-  /** Base effective Fpn export rate constant (per year, calibrated) */
-  k_fpn_base: number;
 
-  // Iron uptake and storage
-  /** Basal iron uptake rate (µM/year) */
-  J_uptake: number;
-  /** Ferritinophagy rate constant (per year) */
-  k_ferritinophagy: number;
-  /** Ferritin storage rate constant (per year) */
+  // ── Ferritin storage ──────────────────────────────────────────────
+  /** Ferritin storage rate (per year, derived for steady state) */
   k_storage: number;
-  /** Ferritin capacity (µM) */
+  /** Ferritin iron capacity (µM) */
   ferritin_capacity: number;
-  /** EV-mediated ferritin secretion rate (per year) */
-  k_EV_secretion: number;
+  /** Basal ferritinophagy rate (per year, derived for ferritin steady state) */
+  k_ferritinophagy_basal: number;
 
-  // ISF dynamics
-  /** ISF recapture fraction (baseline ~0.85) */
+  // ── ISF dynamics ──────────────────────────────────────────────────
+  /** Fraction of Fpn-exported iron recaptured by neighboring cells */
   rho: number;
-  /** BBB leak rate (µM/year, normally ~0) */
-  J_BBB_leak: number;
-  /** Cell death iron release rate (µM/year) */
-  J_cell_death: number;
 
-  // Glymphatic kinetics
-  /** Glymphatic clearance rate constant (per year) */
+  // ── Glymphatic clearance ──────────────────────────────────────────
+  /** Glymphatic clearance rate (per year, derived for ISF steady state) */
   k_gly: number;
   /** Annual glymphatic decline rate after age 30 */
   gly_decline_rate: number;
-  /** AQP4 polarity (0-1, baseline 1.0) */
-  aqp4_polarity: number;
 
-  // CSF dynamics
-  /** Choroid plexus iron secretion rate (µg/L/year) */
+  // ── CSF dynamics (algebraic, not ODE) ─────────────────────────────
+  /** Choroid plexus iron secretion (µM/year, derived for CSF steady state) */
   J_CP_secretion: number;
-  /** CSF absorption rate constant (per year) */
+  /** CSF absorption rate (per year) — CSF turnover ~3.5x/day */
   k_CSF_absorption: number;
 
-  // Ferroptosis thresholds (as multiples of baseline LIP)
-  /** Phase 1 threshold (sublethal stress) */
+  // ── Ferroptosis thresholds ────────────────────────────────────────
+  /** Phase 1: sublethal oxidative stress (multiple of baseline LIP) */
   phase1_threshold: number;
-  /** Phase 2 threshold (frank ferroptosis) */
+  /** Phase 2: frank ferroptosis (multiple of baseline LIP) */
   phase2_threshold: number;
-  /** Ferroptosis consumption rate */
-  k_ferroptosis: number;
-
-  // Disease perturbations (multiplicative factors on clearance)
-  /** Hypertension: glymphatic reduction */
-  htn_gly_factor: number;
-  /** Diabetes: glymphatic reduction */
-  dm_gly_factor: number;
-  /** Sleep disruption: glymphatic reduction */
-  sleep_gly_factor: number;
-  /** Chronic hepcidin: Fpn reduction */
-  hepcidin_fpn_factor: number;
-
-  // Iron-coupled feedback loops
-  /** Rate of cumulative oxidative damage per unit LIP excess per year */
-  k_oxidative_damage: number;
-  /** Hepcidin response: Fpn suppression per unit LIP elevation above baseline */
-  k_hepcidin_response: number;
-  /** Rho sensitivity to cumulative damage (rho_eff = rho * (1 - k_rho_damage * D)) */
-  k_rho_damage: number;
-  /** Mild protein-iron amplifier: uptake increase per unit damage above threshold */
-  k_protein_amplifier: number;
-  /** Damage threshold before protein effects engage */
-  protein_damage_threshold: number;
-
-  // APOE modifiers
-  /** APOE decline acceleration multiplier */
-  apoe_decline_accel: number;
-
-  // Active disease toggles
-  perturbations: DiseasePerturbations;
 }
 
-/** A single time point in the simulation output */
+// ── Optional extensions (toggled on/off) ────────────────────────────
+
+export interface OptionalExtensions {
+  /** Extra ferritinophagy: NCOA4-mediated degradation beyond basal rate (e.g., iron stress) */
+  ferritinophagy: {
+    enabled: boolean;
+    /** Additional ferritinophagy rate constant on top of basal (per year) */
+    k_ferritinophagy_extra: number;
+  };
+
+  /** Disease perturbations on glymphatic clearance */
+  hypertension: {
+    enabled: boolean;
+    /** Fractional reduction in glymphatic clearance */
+    gly_reduction: number;
+  };
+  diabetes: {
+    enabled: boolean;
+    gly_reduction: number;
+  };
+  sleepDisruption: {
+    enabled: boolean;
+    gly_reduction: number;
+  };
+
+  /** Chronic hepcidin elevation (e.g., post-stroke, chronic inflammation) */
+  chronicHepcidin: {
+    enabled: boolean;
+    /** Fractional reduction in Fpn activity */
+    fpn_reduction: number;
+  };
+
+  /** BBB leak (acute injury) */
+  bbbLeak: {
+    enabled: boolean;
+    /** Iron leak into ISF (µM/year) */
+    J_BBB_leak: number;
+  };
+
+  /** Phase 2 ferroptosis iron consumption (negative feedback) */
+  ferroptosisConsumption: {
+    enabled: boolean;
+    /** Iron consumed during ferroptosis (per year) */
+    k_ferroptosis: number;
+  };
+}
+
+// ── Full parameter set ──────────────────────────────────────────────
+
+export interface ClearanceParameters extends CoreParameters {
+  extensions: OptionalExtensions;
+  /** APOE decline acceleration (derived from genotype) */
+  apoe_decline_accel: number;
+}
+
+// ── Output types ────────────────────────────────────────────────────
+
 export interface ClearanceTimePoint {
-  /** Age in years */
   age: number;
-  /** Labile iron pool (µM) */
   Fe_LIP: number;
-  /** Ferritin-stored iron (µM) */
   Fe_ferritin: number;
-  /** ISF iron (µM) */
   Fe_ISF: number;
-  /** CSF iron (µg/L) */
+  /** CSF iron (µM), computed algebraically from ISF flux */
   Fe_CSF: number;
-  /** Effective Fpn export rate at this age (fraction of baseline) */
   fpn_fraction: number;
-  /** Effective glymphatic clearance at this age (fraction of baseline) */
   gly_fraction: number;
-  /** Current rho (recapture fraction) */
-  rho: number;
-  /** Cumulative oxidative damage (0-1) */
-  damage: number;
-  /** Effective ferroxidase fraction after Cu depletion */
-  ferroxidase_eff: number;
-  /** Current ferroptosis phase (0, 1, or 2) */
   phase: 0 | 1 | 2;
 }
 
-/** Complete simulation result */
 export interface ClearanceResult {
   timePoints: ClearanceTimePoint[];
   parameters: ClearanceParameters;
+  /** Sex-specific steady-state baselines used for normalization */
+  baselines: ClearanceState;
   label: string;
-  /** Age at Phase 1 entry (null if never reached) */
   phase1Age: number | null;
-  /** Age at Phase 2 entry (null if never reached) */
   phase2Age: number | null;
-  /** Clearance at age 70 as fraction of clearance at age 30 */
   clearanceAt70: number;
-  /** ISF iron concentration at age 70 (µM) */
   isfAt70: number;
 }
 
-/** Scenario configuration for the UI */
 export interface ClearanceScenario {
   id: string;
   label: string;
   description: string;
-  parameters: Partial<ClearanceParameters>;
+  overrides: Partial<CoreParameters>;
+  extensionOverrides?: Partial<OptionalExtensions>;
 }
 
-/** Cell-type Fpn budget entry */
-export interface CellTypeBudget {
-  cellType: string;
-  fractionOfCells: number;
-  relativeFpnFlux: number;
-  weightedContribution: number;
-}
+// ── Parameter metadata for UI ───────────────────────────────────────
 
-/** Confidence level for parameter display */
-export type ConfidenceLevel = "high" | "moderate" | "low";
-
-/** Parameter metadata for slider display */
 export interface ParameterMeta {
-  key: keyof ClearanceParameters;
+  key: string;
   label: string;
   min: number;
   max: number;
   step: number;
   unit: string;
-  confidence: ConfidenceLevel;
-  group: "demographics" | "fpn" | "glymphatic" | "advanced";
+  source: ParamSource;
+  cite?: string;
+  /** Key into the citations record for full citation details */
+  citationKey?: string;
+  group: "core" | "clearance" | "thresholds" | "extensions";
 }

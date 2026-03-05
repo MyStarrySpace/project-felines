@@ -38,7 +38,7 @@ export default function DiseasePage() {
 
       {card && (
         <div className="flex items-baseline gap-3 mb-8">
-          <span className="text-3xl font-bold text-teal-400 font-mono">
+          <span className="text-3xl font-bold text-teal-400 font-serif">
             {card.stat}
           </span>
           <span className="text-gray-500">{card.statLabel}</span>
@@ -59,7 +59,7 @@ export default function DiseasePage() {
           <div className="space-y-3">
             {entry.layers.map((layer) => (
               <div key={layer} className="flex items-start gap-3">
-                <span className="text-teal-400 font-mono font-bold text-lg shrink-0 w-8">
+                <span className="text-teal-400 font-serif font-bold text-lg shrink-0 w-8">
                   {layer}
                 </span>
                 <p className="text-gray-300 text-sm leading-relaxed">

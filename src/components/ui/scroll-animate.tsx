@@ -1,7 +1,12 @@
 "use client";
 
 import { useRef, type ReactNode } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 type EnterFrom = "bottom" | "left" | "right" | "scale";
 
@@ -28,28 +33,36 @@ export function ScrollAnimate({
   enterFrom = "bottom",
 }: ScrollAnimateProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const prefersReducedMotion = useReducedMotion();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
   });
 
-  const opacity = useTransform(scrollYProgress, [start, end], [0, 1]);
-
-  // Direction-specific transforms (all called unconditionally)
+  // With reduced motion: content always fully visible, no transforms
+  const opacity = useTransform(
+    scrollYProgress,
+    [start, end],
+    prefersReducedMotion ? [1, 1] : [0, 1]
+  );
   const y = useTransform(
     scrollYProgress,
     [start, end],
-    enterFrom === "bottom" ? [20, 0] : [0, 0]
+    enterFrom === "bottom" && !prefersReducedMotion ? [20, 0] : [0, 0]
   );
   const x = useTransform(
     scrollYProgress,
     [start, end],
-    enterFrom === "left" ? [-40, 0] : enterFrom === "right" ? [40, 0] : [0, 0]
+    !prefersReducedMotion && enterFrom === "left"
+      ? [-40, 0]
+      : !prefersReducedMotion && enterFrom === "right"
+        ? [40, 0]
+        : [0, 0]
   );
   const scale = useTransform(
     scrollYProgress,
     [start, end],
-    enterFrom === "scale" ? [0.92, 1] : [1, 1]
+    enterFrom === "scale" && !prefersReducedMotion ? [0.92, 1] : [1, 1]
   );
 
   return (

@@ -1,17 +1,17 @@
 /** Alert and insight text for each chart section on the clearance page */
 
 export const compartmentChartContent = {
-  title: "4-compartment iron levels",
+  title: "Iron accumulation by compartment",
   description:
-    "Iron flows through a serial pathway: intracellular LIP exits via ferroportin to ISF, then glymphatic flow carries it to CSF, then drainage removes it from the brain. Each step declines with age.",
+    "All values normalized to young-adult baseline (1.0\u00D7). Above 1.2\u00D7 LIP baseline, cells enter sublethal stress. ISF rises faster than LIP because glymphatic clearance declines earlier (age 30) than ferroportin (age 40).",
   above: {
     title: "Serial, not parallel",
-    text: "Earlier models treated ferroportin and glymphatic clearance as competing routes. In reality they are sequential steps. Failure at either bottleneck traps iron upstream.",
+    text: "Iron exits via two sequential steps: ferroportin (cell to ISF), then glymphatic flow (ISF to CSF). Failure at either bottleneck traps iron upstream.",
     variant: "info" as const,
   },
   below: {
     title: "Net accumulation: ~0.5 mg/year",
-    text: "Healthy brains accumulate ~20 mg of iron between age 30 and 70. Most Fpn-exported iron (rho ~85%) is recaptured by neighboring cells before reaching CSF. The system redistributes iron, not exports it.",
+    text: "Healthy brains accumulate ~20 mg of iron between age 30 and 70. Most Fpn-exported iron (~85%) is recaptured by neighboring cells before reaching CSF.",
     badge: "Mass balance",
   },
 };
@@ -19,39 +19,39 @@ export const compartmentChartContent = {
 export const ferroptosisChartContent = {
   title: "Ferroptosis phases",
   description:
-    "When labile iron exceeds 1.2x baseline, cells enter Phase 1 (sublethal stress). Above 1.5x, Phase 2 triggers frank ferroptosis and neuron death. Iron-coupled feedback loops accelerate progression between phases.",
+    "When labile iron exceeds 1.2\u00D7 baseline, cells enter Phase 1 (sublethal stress). Above 1.5\u00D7, Phase 2 triggers frank ferroptosis. The window between phases is the last opportunity for intervention.",
   above: {
     title: "Two thresholds, not one",
     text: "Phase 1 is clinically silent but measurable (MRI volume loss, elevated CSF ferritin). Phase 2 is irreversible. The window between Phase 1 and Phase 2 is the last opportunity for intervention.",
     variant: "warning" as const,
   },
   below: {
-    title: "The acceleration trap",
-    text: "Phase 2 neuron death reduces rho (ISF recapture fraction), causing more iron to remain in ISF, accelerating damage to surviving neurons. This positive feedback explains nonlinear cognitive decline.",
-    badge: "Positive feedback",
+    title: "Thresholds are illustrative",
+    text: "No direct LIP threshold for ferroptosis has been measured in human brain. A 2025 study (PMC12236665) found LIP may not increase during ferroptosis; redistribution may matter more than total level.",
+    badge: "Caveat",
   },
 };
 
-export const feedbackChartContent = {
-  title: "Iron-coupled feedback loops",
+export const clearanceDeclineContent = {
+  title: "Clearance pathway decline",
   description:
-    "Iron excess drives four self-reinforcing loops: Cu depletion degrades ferroxidase, LIP elevation triggers hepcidin, damage reduces ISF recapture, and protein aggregation mildly amplifies uptake. All are iron-coupled, not independent factors.",
+    "Both export steps decline with age. Ferroportin activity drops ~1%/year after age 40 (Raha 2022). Glymphatic flow drops ~1.2%/year after age 30 (Patterson 2015). Disease perturbations compound these declines.",
   above: {
-    title: "Not extra factors. Iron consequences.",
-    text: "Cu depletion, hepcidin elevation, and protein aggregation are commonly treated as independent disease mechanisms. In the FELINE model, each is a downstream consequence of iron overload feeding back to worsen the iron problem.",
+    title: "Two bottlenecks in series",
+    text: "Ferroportin moves iron from cell to ISF. Glymphatic flow moves it from ISF to CSF. Both must work for iron to leave the brain. A 50% drop in either pathway halves total clearance.",
     variant: "info" as const,
   },
   below: {
-    title: "The Cu-ferroxidase trap",
-    text: "Ferroportin needs ferroxidase (ceruloplasmin/hephaestin) to convert Fe\u00B2\u207A to Fe\u00B3\u207A for export. Oxidative damage depletes Cu, reducing ferroxidase activity, stalling Fpn even when the transporter is present.",
-    badge: "Feedback loop",
+    title: "Disease effects stack",
+    text: "Hypertension reduces glymphatic flow by ~32% (Mortensen 2019). Diabetes by ~84% (Jiang 2017). Sleep disruption by ~36% (Xie 2013). These compound with age-related decline.",
+    badge: "Comorbidities",
   },
 };
 
 export const cellTypeChartContent = {
   title: "Cell-type Fpn export budget",
   description:
-    "Microglia make up only 10% of brain cells but contribute 25-50% of total Fpn-mediated iron export. This explains why microglial iron retention (via hepcidin) has outsized effects on regional iron burden.",
+    "Microglia make up only 10% of brain cells but contribute 25\u201350% of total Fpn-mediated iron export. This explains why microglial iron retention (via hepcidin) has outsized effects on regional iron burden.",
   below: {
     title: "The microglial bottleneck",
     text: "Hepcidin-induced Fpn internalization hits microglia hardest because they handle the most iron per cell. Chronic neuroinflammation suppresses the cell type most responsible for iron export.",

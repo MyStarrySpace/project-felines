@@ -1,8 +1,21 @@
-export const insightLines = [
+import type { ReactNode } from "react";
+import { Cite } from "@/components/citation/cite";
+
+/** Each insight line is a ReactNode so it can include inline citations. */
+export const insightLines: ReactNode[] = [
   "Five are natural proteins the body already produces.",
-  "Total investment in them for neurodegeneration: one underpowered pilot.",
-  "ATH434 mimics what they do and is in active Phase 2 trials, starting with MSA because it progresses faster than Alzheimer\u2019s.",
+  <>
+    ATH434 mimics what they do in pill form and is in active Phase 2 trials,
+    starting with MSA because it progresses faster than Alzheimer{"\u2019"}s.
+    <Cite id="ath434-2025-msa" citationIds={["ath434-2025-msa-c2"]} />
+  </>,
   "Phase 3 success would open repurposing across neurodegenerative diseases.",
+  <>
+    Meanwhile: <span className="text-teal-400">$42.5 billion</span> went to
+    Alzheimer{"\u2019"}s drug development since 1995. Nearly all of it on
+    amyloid.
+    <Cite id="cummings-2022-alzdement" citationIds={["cummings-2022-alzdement-c1"]} />
+  </>,
 ];
 
 export interface FloatingProtein {

@@ -36,10 +36,10 @@ export function ChartSection({
 }: ChartSectionProps) {
   return (
     <motion.section variants={fadeInUp}>
-      <Heading level={2} className="mb-2">
+      <Heading level={2} className="mb-2 text-white">
         {title}
       </Heading>
-      <Body className="mb-4 max-w-[var(--width-reading)]">{description}</Body>
+      <Body className="mb-4 max-w-[var(--width-reading)] text-gray-400">{description}</Body>
 
       {above && (
         <Alert

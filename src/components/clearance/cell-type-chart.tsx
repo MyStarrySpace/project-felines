@@ -3,19 +3,35 @@
 import { useMemo } from "react";
 import { ResponsiveBar } from "@nivo/bar";
 import { felineTheme } from "@/components/kinetics/chart-theme";
-import { CELL_TYPE_COLORS } from "./chart-theme";
-import { computeCellTypeBudget } from "@/lib/clearance/derived";
+
+/**
+ * Static cell-type Fpn export budget data from FELINE reference document §4.5.
+ * Based on Bao 2021 back-calculation + cell-type expression ratios.
+ * Confidence: LOW-MODERATE (qualitative expression data, one direct measurement).
+ */
+const cellTypeBudget = [
+  { cellType: "Excitatory neurons", fractionOfCells: 0.16, relativeFlux: 1.0 },
+  { cellType: "Inhibitory neurons", fractionOfCells: 0.04, relativeFlux: 0.75 },
+  { cellType: "Astrocytes", fractionOfCells: 0.20, relativeFlux: 0.4 },
+  { cellType: "Oligodendrocytes", fractionOfCells: 0.45, relativeFlux: 0.075 },
+  { cellType: "Microglia", fractionOfCells: 0.10, relativeFlux: 3.5 },
+  { cellType: "Endothelial/pericyte", fractionOfCells: 0.05, relativeFlux: 0.75 },
+];
 
 export function CellTypeChart() {
-  const budget = useMemo(() => computeCellTypeBudget(), []);
-
   const barData = useMemo(() => {
-    return budget.map((c) => ({
+    const totalWeighted = cellTypeBudget.reduce(
+      (sum, c) => sum + c.fractionOfCells * c.relativeFlux,
+      0,
+    );
+    return cellTypeBudget.map((c) => ({
       cellType: c.cellType,
       "% of cells": Math.round(c.fractionOfCells * 100),
-      "% of Fpn export": Math.round(c.weightedContribution * 100),
+      "% of Fpn export": Math.round(
+        (c.fractionOfCells * c.relativeFlux / totalWeighted) * 100,
+      ),
     }));
-  }, [budget]);
+  }, []);
 
   return (
     <div className="h-[350px] w-full">

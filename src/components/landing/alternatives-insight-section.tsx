@@ -107,7 +107,7 @@ function InsightStage({ progress }: { progress: MotionValue<number> }) {
                 Meanwhile
               </p>
               <div className="flex items-baseline gap-3 mb-4">
-                <span className="font-mono text-[clamp(2rem,6vw,3.5rem)] text-red-400 leading-none">
+                <span className="font-serif text-[clamp(2rem,6vw,3.5rem)] text-red-400 leading-none">
                   {mabCritique.stat}
                 </span>
                 <span className="text-sm text-gray-400">
@@ -148,7 +148,7 @@ function InsightFlowing() {
               Meanwhile
             </p>
             <div className="flex items-baseline gap-3 mb-4">
-              <span className="font-mono text-[clamp(2rem,6vw,3.5rem)] text-red-400 leading-none">
+              <span className="font-serif text-[clamp(2rem,6vw,3.5rem)] text-red-400 leading-none">
                 {mabCritique.stat}
               </span>
               <span className="text-sm text-gray-400">

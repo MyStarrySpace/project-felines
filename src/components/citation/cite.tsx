@@ -21,6 +21,20 @@ export function Cite({ id, citationIds }: CiteProps) {
   // Cleanup timeout on unmount
   useEffect(() => () => clearTimeout(hideTimeout.current), []);
 
+  // Keep rect fresh while tooltip is visible (scroll/resize inside sticky stages)
+  useEffect(() => {
+    if (!hovered) return;
+    const sync = () => {
+      if (ref.current) setRect(ref.current.getBoundingClientRect());
+    };
+    window.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", sync);
+      window.removeEventListener("resize", sync);
+    };
+  }, [hovered]);
+
   const source = sourcesMap.get(id);
   if (!source) {
     if (process.env.NODE_ENV === "development") {

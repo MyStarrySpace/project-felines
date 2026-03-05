@@ -265,7 +265,7 @@ function ProteinTrialRow({
             className="overflow-hidden"
           >
             <div
-              className="py-5 px-5 text-base leading-relaxed rounded-b"
+              className="py-5 px-5 text-base leading-relaxed "
               style={{
                 color: `${DARK_TEXT}B3`,
                 backgroundColor: `${DARK_TEXT}06`,
@@ -369,7 +369,7 @@ function ProteinTrialRowMobile({
             className="overflow-hidden"
           >
             <div
-              className="py-5 px-5 text-base leading-relaxed rounded-b"
+              className="py-5 px-5 text-base leading-relaxed "
               style={{
                 color: `${DARK_TEXT}B3`,
                 backgroundColor: `${DARK_TEXT}06`,
@@ -398,7 +398,7 @@ export function ProteinTrialsMobile() {
           className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-[-0.02em]"
           style={{ color: DARK_TEXT }}
         >
-          49 drugs targeted the <em>protein.</em>
+          {proteinTrialContent.heading}
         </h2>
         <p
           className="text-lg sm:text-xl mt-2"
@@ -483,7 +483,7 @@ export function ProteinTrials({
           className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-[-0.02em]"
           style={{ color: DARK_TEXT }}
         >
-          49 drugs targeted the <em>protein.</em>
+          {proteinTrialContent.heading}
         </h2>
         <p
           className="text-lg sm:text-xl mt-2"

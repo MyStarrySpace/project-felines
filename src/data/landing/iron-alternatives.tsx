@@ -13,10 +13,10 @@ export interface IronAlternative {
   structureSource: "PDB" | "PubChem";
 }
 
-export const alternativesHeadline = "Other ways to redistribute iron";
+export const alternativesHeadline = "We can help redistribute iron.";
 
 export const alternativesBody =
-  "The body already redistributes iron with specialized proteins \u2014 " +
+  "The body already redistributes iron with specialized proteins: " +
   "binding reversibly, shuttling across barriers, oxidizing for export, storing safely. " +
   "Almost none have been trialed for neurodegeneration.";
 
@@ -183,7 +183,6 @@ export const alternatives: IronAlternative[] = [
 
 export const alternativesInsight =
   "Five are natural proteins the body already produces. " +
-  "Total investment in them for neurodegeneration: one underpowered pilot. " +
-  "ATH434 mimics what they do and is in active Phase 2 trials, " +
+  "ATH434 mimics what they do in pill form and is in active Phase 2 trials, " +
   "starting with MSA because it progresses faster than Alzheimer\u2019s. " +
   "Phase 3 success would open repurposing across neurodegenerative diseases.";

@@ -1,8 +1,7 @@
 /**
  * Data for Slide 0: Teaser hook
  *
- * Provocative paradigm-shift framing that builds intrigue
- * for the reframings to come.
+ * Curiosity-driven opener: a pattern hiding across five diseases.
  */
 
 export interface TrialBarSource {
@@ -99,9 +98,9 @@ export interface WhatIfLine {
 }
 
 export const whatIfLines: WhatIfLine[] = [
-  { label: "\u2026an immune weapon that never switched off?", underlineFrom: "left" },
-  { label: "\u2026not even unique to the brain?", underlineFrom: "right" },
-  { label: "\u2026iron, in every brain they\u2019ve checked?", underlineFrom: "left" },
+  { label: "...the defense itself?", underlineFrom: "left" },
+  { label: "...not even unique to the brain?", underlineFrom: "right" },
+  { label: "...driven by iron?", underlineFrom: "left" },
 ];
 
 export interface ProteinTrialStat {
@@ -148,20 +147,20 @@ export const proteinTrialStats: ProteinTrialStat[] = [
 ];
 
 export const proteinTrialContent = {
-  heading: "49 drugs targeted the protein.",
+  heading: "49 drugs targeted these proteins.",
   subhead: "Across five neurodegenerative diseases.",
-  punchline: "0 clear successes.",
+  punchline: "All five proteins bind iron.",
 };
 
 export const teaserContent = {
   quote: {
-    line1: "What makes our minds unique",
-    line1Gold: "is built on iron.",
-    line2: "What makes us lose our minds uniquely",
-    line2Gold: "is driven by iron.",
+    line1: "Every protein linked to neurodegeneration",
+    line1Gold: "binds iron.",
+    line2: "The research is there,",
+    line2Gold: "scattered across five diseases.",
   },
-  headline: "What if the protein isn\u2019t the only problem?",
-  subtextLeadIn: "What if it\u2019s\u2026",
+  headline: "What if they share a mechanism?",
+  subtextLeadIn: "What if it\u2019s...",
   context:
     "Every major protein targeted by drug trials binds iron. None of the trials addressed iron.",
   scrollHintDesktop: "Click or scroll to explore",

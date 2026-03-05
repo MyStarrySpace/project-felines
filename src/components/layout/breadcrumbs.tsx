@@ -49,7 +49,7 @@ export function Breadcrumbs() {
     <nav className="flex items-center gap-1 text-sm text-gray-400">
       {crumbs.map((crumb, i) => (
         <span key={crumb.href} className="flex items-center gap-1">
-          {i > 0 && <ChevronRight className="h-3 w-3 text-gray-600" />}
+          {i > 0 && <ChevronRight className="h-3 w-3 text-gray-500" />}
           {crumb.isLast ? (
             <span className="text-gray-300">{crumb.label}</span>
           ) : (

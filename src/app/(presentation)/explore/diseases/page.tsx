@@ -54,7 +54,7 @@ export default function DiseasesOverview() {
                 {defenseLayers.map((layer) => (
                   <th
                     key={layer}
-                    className="pb-3 px-4 text-center text-teal-400 font-mono font-bold"
+                    className="pb-3 px-4 text-center text-teal-400 font-serif font-bold"
                   >
                     {layer}
                   </th>
@@ -112,7 +112,7 @@ export default function DiseasesOverview() {
                   {disease.name}
                 </h3>
                 <div className="flex items-baseline gap-2 mb-3">
-                  <span className="text-2xl font-bold text-teal-400 font-mono">
+                  <span className="text-2xl font-bold text-teal-400 font-serif">
                     {disease.stat}
                   </span>
                   <span className="text-sm text-gray-500">

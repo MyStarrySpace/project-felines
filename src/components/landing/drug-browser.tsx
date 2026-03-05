@@ -7,6 +7,7 @@ import { ChevronDown, X } from "lucide-react";
 import {
   drugs,
   drugCategories,
+  categoryGroups,
   diseaseRows,
   phaseColumns,
   phaseToColumn,
@@ -20,6 +21,9 @@ import {
   type DrugCategory,
   type MoleculeType,
 } from "@/data/landing/drug-browser";
+import { Cite } from "@/components/citation";
+
+export type SpotlightPhase = "chelators" | "signals" | "dismissed";
 
 type ViewMode = "chart" | "grid" | "list";
 type GridMode = "dots" | "names";
@@ -51,7 +55,7 @@ function DrugTooltip({
     setPortalTarget(document.getElementById("citation-portal"));
   }, []);
 
-  if (!portalTarget || !anchorRect) return null;
+  if (!portalTarget || !anchorRect || (anchorRect.width === 0 && anchorRect.height === 0)) return null;
 
   const tooltipWidth = 300;
   let left = anchorRect.left + anchorRect.width / 2 - tooltipWidth / 2 + (nudge?.x ?? 0);
@@ -105,10 +109,12 @@ function DrugTooltip({
               </div>
             </div>
             <p className="text-xs text-gray-400 mb-1.5">{drug.company}</p>
-            <p className="text-xs text-gray-300">{drug.detail ?? drug.note}</p>
-            {drug.attribution && (
-              <p className="text-[10px] text-gray-500 italic mt-1.5">{drug.attribution}</p>
-            )}
+            <p className="text-xs text-gray-300">
+              {drug.detail ?? drug.note}
+              {drug.sourceId && (
+                <Cite id={drug.sourceId} citationIds={drug.citationIds} />
+              )}
+            </p>
           </div>
         </motion.div>
       )}
@@ -367,32 +373,30 @@ function CategoryPills({
   onSelect: (id: string | null) => void;
 }) {
   return (
-    <div className="flex flex-wrap gap-2 mb-8">
-      <button
-        type="button"
-        onClick={() => onSelect(null)}
-        className={`px-3 py-1.5 rounded-full text-sm transition-all duration-200 cursor-pointer border ${
-          selected === null
-            ? "border-teal-400/50 text-teal-400 bg-teal-400/10"
-            : "border-white/10 text-gray-400 hover:text-gray-300 hover:border-white/20"
-        }`}
-      >
-        All drugs
-      </button>
-      {drugCategories.map((cat) => (
-        <button
-          key={cat.id}
-          type="button"
-          onClick={() => onSelect(selected === cat.id ? null : cat.id)}
-          className={`px-3 py-1.5 rounded-full text-sm transition-all duration-200 cursor-pointer border ${
-            selected === cat.id
-              ? "border-teal-400/50 text-teal-400 bg-teal-400/10"
-              : "border-white/10 text-gray-400 hover:text-gray-300 hover:border-white/20"
-          }`}
-        >
-          {cat.shortLabel}
-        </button>
-      ))}
+    <div className="flex flex-wrap items-center gap-2 mb-8">
+      {categoryGroups.map((group, gi) => {
+        const cats = drugCategories.filter((c) => c.group === group.id);
+        return (
+          <div key={group.id} className="contents">
+            {gi > 0 && <span className="w-px h-5 bg-white/10 mx-1" />}
+            <span className="text-[10px] uppercase tracking-wider text-gray-500 mr-0.5">{group.label}</span>
+            {cats.map((cat) => (
+              <button
+                key={cat.id}
+                type="button"
+                onClick={() => onSelect(selected === cat.id ? null : cat.id)}
+                className={`px-3 py-1.5 text-sm transition-all duration-200 cursor-pointer border ${
+                  selected === cat.id
+                    ? "border-teal-400/50 text-teal-400 bg-teal-400/10"
+                    : "border-white/10 text-gray-400 hover:text-gray-300 hover:border-white/20"
+                }`}
+              >
+                {cat.shortLabel}
+              </button>
+            ))}
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -501,7 +505,7 @@ function GridModeToggle({
   onChange: (m: GridMode) => void;
 }) {
   return (
-    <div className="inline-flex rounded-full border border-white/10 mb-4 overflow-hidden">
+    <div className="inline-flex border border-white/10 overflow-hidden">
       <button
         type="button"
         onClick={() => onChange("dots")}
@@ -564,15 +568,17 @@ function DrugAccordionRow({ drug }: { drug: Drug }) {
             className="overflow-hidden"
           >
             <div className="px-3 pb-3 pt-1 ml-4 text-xs space-y-1">
-              <p className="text-gray-300">{drug.detail ?? drug.note}</p>
+              <p className="text-gray-300">
+                {drug.detail ?? drug.note}
+                {drug.sourceId && (
+                  <Cite id={drug.sourceId} citationIds={drug.citationIds} />
+                )}
+              </p>
               <p className="text-gray-500">
                 <span className="text-gray-400">{outcomeLabel(drug.outcome)}</span>
                 {" \u00B7 "}{drug.phase === "approved" ? "Approved" : `Phase ${drug.phase}`}
                 {" \u00B7 "}{drug.company}
               </p>
-              {drug.attribution && (
-                <p className="text-gray-500 italic">{drug.attribution}</p>
-              )}
             </div>
           </motion.div>
         )}
@@ -831,14 +837,22 @@ function MoleculeScalePlot({ selectedCategory }: { selectedCategory: string | nu
 /*  Grid table                                                         */
 /* ------------------------------------------------------------------ */
 
-// Tooltip nudges for spotlight mode: prevent overlap when multiple
+// Tooltip nudges for chelator spotlight: prevent overlap when multiple
 // iron chelators share the same grid cell (e.g. 27 + 30 in AD × Ph2).
-const spotlightNudge: Record<number, { x?: number; y?: number }> = {
-  26: { x: 165, y: 31 },    // Deferiprone PD
-  27: { x: -142, y: -183 }, // Deferiprone AD
-  28: { x: -132, y: 29 },   // Deferiprone HD
-  30: { x: 190, y: -110 },  // Deferoxamine AD
+const chelatorNudge: Record<number, { x?: number; y?: number }> = {
+  26: { x: 116, y: -154 },  // Deferiprone PD
+  27: { x: -122, y: -154 }, // Deferiprone AD
+  28: { x: -118, y: 29 },   // Deferiprone HD
 };
+
+// Tooltip nudges for signal-drug spotlight (beat 2).
+const signalNudge: Record<number, { x?: number; y?: number }> = {
+  29: { x: -50, y: 30 },      // ATH434 (MSA × Ph2)
+  30: { x: 148, y: -155 },   // Deferoxamine (AD × Ph2)
+  62: { x: -182, y: -144 },  // Lactoferrin (AD × Ph2)
+};
+
+const signalDrugIds = new Set([29, 30, 62]);
 
 function useIsMobile() {
   const [mobile, setMobile] = useState(false);
@@ -856,14 +870,22 @@ function DrugGrid({
   selectedCategory,
   grid,
   gridMode,
-  spotlight,
+  phase,
 }: {
   selectedCategory: string | null;
   grid: Map<string, Drug[]>;
   gridMode: GridMode;
-  spotlight?: boolean;
+  phase?: SpotlightPhase;
 }) {
   const isMobile = useIsMobile();
+  const spotlight = phase === "chelators" || phase === "signals";
+  const nudgeMap = phase === "signals" ? signalNudge : chelatorNudge;
+
+  const isHighlighted = (drug: Drug) => {
+    if (phase === "chelators") return drug.category === "iron-chelator" && !signalDrugIds.has(drug.id);
+    if (phase === "signals") return signalDrugIds.has(drug.id);
+    return false;
+  };
 
   return (
     <div className="overflow-x-auto -mx-6 sm:-mx-8 px-6 sm:px-8">
@@ -897,46 +919,31 @@ function DrugGrid({
                       {gridMode === "names" ? (
                         <div className="flex flex-wrap items-end gap-x-1.5 gap-y-0.5">
                           {cellDrugs.map((drug) => {
-                            const isIron = drug.category === "iron-chelator";
+                            const lit = isHighlighted(drug);
                             const dimmed = spotlight
-                              ? !isIron
+                              ? !lit
                               : (selectedCategory !== null && drug.category !== selectedCategory);
 
-                            if (spotlight && isIron) {
-                              return (
-                                <DrugNameChip
-                                  key={drug.id}
-                                  drug={drug}
-                                  dimmed={false}
-                                  forceTooltip={!isMobile}
-                                  tooltipNudge={!isMobile ? spotlightNudge[drug.id] : undefined}
-                                  spotlightPulse={isMobile}
-                                />
-                              );
-                            }
-
                             return (
-                              <span
+                              <DrugNameChip
                                 key={drug.id}
-                                className="text-[10px] leading-tight whitespace-nowrap transition-opacity duration-200"
-                                style={{
-                                  color: outcomeColor(drug.outcome),
-                                  opacity: dimmed ? 0.08 : 1,
-                                }}
-                              >
-                                {drug.name}
-                              </span>
+                                drug={drug}
+                                dimmed={dimmed}
+                                forceTooltip={spotlight && lit && !isMobile}
+                                tooltipNudge={spotlight && lit && !isMobile ? nudgeMap[drug.id] : undefined}
+                                spotlightPulse={spotlight && lit && isMobile}
+                              />
                             );
                           })}
                         </div>
                       ) : (
                         <div className="flex flex-wrap items-center gap-0.5">
                           {cellDrugs.map((drug) => {
-                            const isIron = drug.category === "iron-chelator";
+                            const lit = isHighlighted(drug);
                             const dimmed = spotlight
-                              ? !isIron
+                              ? !lit
                               : (selectedCategory !== null && drug.category !== selectedCategory);
-                            const desktopForce = spotlight && isIron && !isMobile;
+                            const desktopForce = spotlight && lit && !isMobile;
                             return (
                               <DrugChip
                                 key={drug.id}
@@ -944,8 +951,8 @@ function DrugGrid({
                                 dimmed={dimmed}
                                 dimOpacity={spotlight ? 0.08 : 0.15}
                                 forceTooltip={desktopForce}
-                                tooltipNudge={desktopForce ? spotlightNudge[drug.id] : undefined}
-                                spotlightPulse={spotlight && isIron && isMobile}
+                                tooltipNudge={desktopForce ? nudgeMap[drug.id] : undefined}
+                                spotlightPulse={spotlight && lit && isMobile}
                               />
                             );
                           })}
@@ -967,12 +974,26 @@ function DrugGrid({
 /*  Main DrugBrowser                                                   */
 /* ------------------------------------------------------------------ */
 
-export function DrugBrowser() {
+export function DrugBrowser({
+  spotlightPhase: externalPhase,
+  onDismissSpotlight,
+}: {
+  spotlightPhase?: SpotlightPhase;
+  onDismissSpotlight?: () => void;
+} = {}) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>("iron-chelator");
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [gridMode, setGridMode] = useState<GridMode>("names");
   const [mobileExpanded, setMobileExpanded] = useState(false);
-  const [spotlight, setSpotlight] = useState(true);
+  const [internalPhase, setInternalPhase] = useState<SpotlightPhase>("chelators");
+
+  const phase = externalPhase ?? internalPhase;
+  const spotlight = phase !== "dismissed";
+
+  const dismiss = () => {
+    setInternalPhase("dismissed");
+    onDismissSpotlight?.();
+  };
 
   // Build lookup: disease × phaseColumn → Drug[]
   const grid = useMemo(() => {
@@ -1009,7 +1030,20 @@ export function DrugBrowser() {
             style={spotlight ? { opacity: 0.3, pointerEvents: "none" } : undefined}
           >
             {viewMode === "grid" && (
-              <GridModeToggle mode={gridMode} onChange={setGridMode} />
+              <div className="flex items-center justify-between mb-4">
+                <GridModeToggle mode={gridMode} onChange={setGridMode} />
+                <button
+                  type="button"
+                  onClick={() => setSelectedCategory(selectedCategory === null ? "iron-chelator" : null)}
+                  className={`px-3 py-1 text-xs transition-all duration-200 cursor-pointer border ${
+                    selectedCategory === null
+                      ? "border-teal-400/50 text-teal-400 bg-teal-400/10"
+                      : "border-white/10 text-gray-400 hover:text-gray-300 hover:border-white/20"
+                  }`}
+                >
+                  {selectedCategory === null ? "Deselect drugs" : "All drugs"}
+                </button>
+              </div>
             )}
             {viewMode !== "list" && (
               <CategoryPills selected={selectedCategory} onSelect={setSelectedCategory} />
@@ -1019,7 +1053,7 @@ export function DrugBrowser() {
             <MoleculeScalePlot selectedCategory={selectedCategory} />
           )}
           {viewMode === "grid" && (
-            <DrugGrid selectedCategory={selectedCategory} grid={grid} gridMode={gridMode} spotlight={spotlight} />
+            <DrugGrid selectedCategory={selectedCategory} grid={grid} gridMode={gridMode} phase={phase} />
           )}
           {viewMode === "list" && (
             <DrugTreeList selectedCategory={null} />
@@ -1030,10 +1064,10 @@ export function DrugBrowser() {
         </div>
 
         {spotlight && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-10">
             <button
               type="button"
-              onClick={() => setSpotlight(false)}
+              onClick={dismiss}
               className="pointer-events-auto px-6 py-2.5 text-sm text-gray-200 border border-white/15 hover:text-white hover:border-white/30 transition-colors cursor-pointer bg-[#1A0F0A]"
             >
               Explore all {drugs.length} trials
@@ -1047,7 +1081,7 @@ export function DrugBrowser() {
             <button
               type="button"
               onClick={() => setMobileExpanded(true)}
-              className="relative -mt-4 px-4 py-1.5 rounded-full text-sm text-gray-400 border border-white/10 hover:text-gray-300 hover:border-white/20 transition-colors cursor-pointer bg-[#1A0F0A]"
+              className="relative -mt-4 px-4 py-1.5 text-sm text-gray-400 border border-white/10 hover:text-gray-300 hover:border-white/20 transition-colors cursor-pointer bg-[#1A0F0A]"
             >
               Show all {drugs.length} drugs
             </button>

@@ -69,7 +69,7 @@ function BarrierCardsSection() {
                   </span>
                   <h3 className="text-lg font-bold text-white">{card.name}</h3>
                 </div>
-                <ArrowRight className="h-4 w-4 text-gray-600 transition-transform group-hover:translate-x-0.5 group-hover:text-teal-400" />
+                <ArrowRight className="h-4 w-4 text-gray-500 transition-transform group-hover:translate-x-0.5 group-hover:text-teal-400" />
               </div>
               <p className="text-sm text-gray-400 mb-3">{card.cellTypes}</p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500">
@@ -284,7 +284,7 @@ function TradeoffSection() {
               <div className="flex items-start justify-between gap-4 mb-2">
                 <h4 className="text-sm font-bold text-white">{row.barrier}</h4>
                 <span
-                  className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium ${
+                  className={`shrink-0 px-2.5 py-0.5 text-xs font-medium ${
                     row.redundancy === "TRIPLE"
                       ? "bg-emerald-400/10 text-emerald-400"
                       : row.redundancy === "DOUBLE"

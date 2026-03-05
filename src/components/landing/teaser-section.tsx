@@ -163,7 +163,7 @@ function TeaserStage({ progress }: { progress: MotionValue<number> }) {
                 transition: "font-size 300ms ease",
               }}
             >
-              What if the protein isn&rsquo;t the <em>only</em> problem?
+              {teaserContent.headline}
             </h1>
           </ScrollBeat>
           <WhatIfLines progress={progress} onExpandChange={setAnyExpanded} />
@@ -260,7 +260,7 @@ function TeaserFlowing() {
             className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] max-w-[16ch]"
             style={{ color: DARK_TEXT }}
           >
-            What if the protein isn&rsquo;t the <em>only</em> problem?
+            {teaserContent.headline}
           </h1>
           <WhatIfLinesMobile />
         </div>
@@ -269,11 +269,11 @@ function TeaserFlowing() {
   );
 }
 
-const TEASER_BREAKPOINTS = [0, 0.50, 0.72];
+const TEASER_BREAKPOINTS = [0.34, 0.72];
 
 export function TeaserSection() {
   return (
-    <ScrollSection id="teaser" label="49 drugs, 0 clear successes" className="py-0" fullWidth breakpoints={TEASER_BREAKPOINTS}>
+    <ScrollSection id="teaser" label="Five proteins, one metal" className="py-0" fullWidth breakpoints={TEASER_BREAKPOINTS}>
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">
         <StickyScrollStage height={330}>

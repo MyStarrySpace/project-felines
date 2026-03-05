@@ -31,7 +31,7 @@ export default function LayerPage() {
   return (
     <Container width="reading" className="py-12">
       <div className="flex items-center gap-4 mb-8">
-        <span className="text-4xl font-bold text-teal-400 font-mono">
+        <span className="text-4xl font-bold text-teal-400 font-serif">
           {pillar.letter}
         </span>
         <div>

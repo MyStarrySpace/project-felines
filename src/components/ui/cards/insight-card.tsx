@@ -20,14 +20,14 @@ export function InsightCard({
 }: InsightCardProps) {
   const content = (
     <div
-      className={`border-l-4 border-l-teal-600 bg-surface p-6 shadow-sm ${href ? "transition-all duration-[var(--duration-fast)] hover:-translate-y-1 hover:shadow-md" : ""} ${className}`}
+      className={`border border-white/5 p-6 ${href ? "transition-all duration-[var(--duration-fast)] hover:-translate-y-1 hover:border-white/10" : ""} ${className}`}
     >
       <div className="mb-3 flex items-center gap-2">
-        {icon && <span className="text-teal-600">{icon}</span>}
+        {icon && <span className="text-teal-400">{icon}</span>}
         {badge && <Badge variant="accent">{badge}</Badge>}
       </div>
-      <h3 className="mb-2 font-serif text-lg text-navy-900">{title}</h3>
-      <div className="text-sm leading-relaxed text-text-secondary">
+      <h3 className="mb-2 font-serif text-lg text-gray-200">{title}</h3>
+      <div className="text-sm leading-relaxed text-gray-400">
         {children}
       </div>
     </div>

@@ -7,47 +7,49 @@ import { CLEARANCE_COLORS } from "./chart-theme";
 import { ClearanceSliceTooltip } from "./clearance-tooltip";
 import type { ClearanceResult } from "@/lib/clearance/types";
 
-interface FeedbackChartProps {
+interface ClearanceDeclineChartProps {
   data: ClearanceResult;
   reference?: ClearanceResult;
 }
 
-/** Shows cumulative damage, ferroxidase efficiency, and rho over time */
-export function FeedbackChart({ data, reference }: FeedbackChartProps) {
+/** Shows Fpn fraction and glymphatic fraction declining over time */
+export function ClearanceDeclineChart({ data, reference }: ClearanceDeclineChartProps) {
   const series: NumericSeries[] = useMemo(() => {
     const pts = data.timePoints;
     const result: NumericSeries[] = [
       {
-        id: "Cumulative damage",
+        id: "Fpn activity",
         data: pts.map((p) => ({
           x: p.age,
-          y: Math.round(p.damage * 1000) / 1000,
+          y: Math.round(p.fpn_fraction * 1000) / 1000,
         })),
       },
       {
-        id: "Ferroxidase efficiency",
+        id: "Glymphatic flow",
         data: pts.map((p) => ({
           x: p.age,
-          y: Math.round(p.ferroxidase_eff * 1000) / 1000,
-        })),
-      },
-      {
-        id: "Rho (recapture)",
-        data: pts.map((p) => ({
-          x: p.age,
-          y: Math.round(p.rho * 1000) / 1000,
+          y: Math.round(p.gly_fraction * 1000) / 1000,
         })),
       },
     ];
 
     if (reference) {
-      result.push({
-        id: "Damage (healthy ref)",
-        data: reference.timePoints.map((p) => ({
-          x: p.age,
-          y: Math.round(p.damage * 1000) / 1000,
-        })),
-      });
+      result.push(
+        {
+          id: "Fpn (healthy ref)",
+          data: reference.timePoints.map((p) => ({
+            x: p.age,
+            y: Math.round(p.fpn_fraction * 1000) / 1000,
+          })),
+        },
+        {
+          id: "Gly (healthy ref)",
+          data: reference.timePoints.map((p) => ({
+            x: p.age,
+            y: Math.round(p.gly_fraction * 1000) / 1000,
+          })),
+        },
+      );
     }
 
     return result;
@@ -55,16 +57,12 @@ export function FeedbackChart({ data, reference }: FeedbackChartProps) {
 
   const colors = reference
     ? [
-        CLEARANCE_COLORS.damage,
-        CLEARANCE_COLORS.ferroxidase,
-        CLEARANCE_COLORS.rho,
+        CLEARANCE_COLORS.fpn,
+        CLEARANCE_COLORS.gly,
+        "#4B5563", // gray-600 for refs
         "#6B7280",
       ]
-    : [
-        CLEARANCE_COLORS.damage,
-        CLEARANCE_COLORS.ferroxidase,
-        CLEARANCE_COLORS.rho,
-      ];
+    : [CLEARANCE_COLORS.fpn, CLEARANCE_COLORS.gly];
 
   return (
     <div className="h-[400px] w-full">
@@ -83,7 +81,7 @@ export function FeedbackChart({ data, reference }: FeedbackChartProps) {
         }}
         axisLeft={{
           tickValues: [0, 0.2, 0.4, 0.6, 0.8, 1.0],
-          legend: "Fraction (0-1)",
+          legend: "Fraction of young-adult capacity",
           legendOffset: -48,
           legendPosition: "middle",
         }}
@@ -100,7 +98,7 @@ export function FeedbackChart({ data, reference }: FeedbackChartProps) {
             anchor: "bottom",
             direction: "row",
             translateY: 56,
-            itemWidth: 150,
+            itemWidth: 130,
             itemHeight: 20,
             symbolSize: 12,
             symbolShape: "circle",

@@ -33,7 +33,7 @@ function GeneCard({ gene }: { gene: GwasGene }) {
         className="w-full flex items-center justify-between px-5 py-4 text-left"
       >
         <div className="flex items-baseline gap-3">
-          <span className="font-mono text-teal-400 text-sm">
+          <span className="font-serif text-teal-400 text-sm">
             {gene.primaryLayer}
           </span>
           <span className="text-white font-semibold">{gene.id}</span>
@@ -103,16 +103,17 @@ export default function GwasPage() {
           Genetics
         </p>
         <h1 className="text-4xl font-bold text-white sm:text-5xl">
-          AD risk genes map to iron defense
+          Risk genes map to iron defense
         </h1>
         <p className="mt-4 text-lg text-gray-400 max-w-2xl">
-          75+ GWAS loci, zero canonical iron genes. Nearly every hit maps to a
-          FELINE defense layer that protects against iron-driven damage.
+          217 AD and PD risk loci, zero canonical iron genes. Nearly every
+          hit maps to a FELINE defense layer that protects against
+          iron-driven damage.
         </p>
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-3 gap-6 mb-12">
+      <div className="grid grid-cols-2 gap-6 mb-12">
         {Object.values(gwasStats).map((stat) => (
           <div key={stat.label}>
             <p className="font-serif text-3xl text-white">{stat.value}</p>
@@ -124,7 +125,7 @@ export default function GwasPage() {
       {/* Why no iron genes */}
       <div className="glass-card p-6 mb-12">
         <h2 className="text-lg font-semibold text-white mb-2">
-          Why no iron genes?
+          {survivorshipBias.headline}
         </h2>
         <p className="text-sm text-gray-300 leading-relaxed">
           {survivorshipBias.body}
@@ -145,7 +146,7 @@ export default function GwasPage() {
           >
             {f.label}
             {f.id !== "All" && (
-              <span className="ml-1.5 text-gray-600">
+              <span className="ml-1.5 text-gray-500">
                 {grouped[f.id as (typeof defenseLayers)[number]]?.length ?? 0}
               </span>
             )}

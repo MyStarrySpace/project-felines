@@ -33,7 +33,7 @@ export default function ViralLayout({
                 <Link
                   key={topic.href}
                   href={topic.href}
-                  className={`whitespace-nowrap px-4 py-2 text-sm font-medium transition-colors rounded-t ${
+                  className={`whitespace-nowrap px-4 py-2 text-sm font-medium transition-colors ${
                     active
                       ? "text-teal-400 border-b-2 border-teal-400"
                       : "text-gray-400 hover:text-white"

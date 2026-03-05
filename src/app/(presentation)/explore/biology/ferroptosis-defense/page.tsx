@@ -290,7 +290,7 @@ export default function FerroptosisDefensePage() {
             <div className="space-y-3">
               {layerMapping.map((item) => (
                 <div key={item.layer} className="glass-card p-4 flex items-start gap-4">
-                  <span className="text-teal-400 font-mono font-bold text-lg shrink-0 w-8">
+                  <span className="text-teal-400 font-serif font-bold text-lg shrink-0 w-8">
                     {item.layer}
                   </span>
                   <p className="text-gray-300 text-sm leading-relaxed">

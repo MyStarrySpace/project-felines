@@ -46,12 +46,12 @@ export default function TrialsPage() {
                   <td className="py-3 pr-4 font-medium text-white">
                     {cat.category}
                   </td>
-                  <td className="py-3 pr-4 font-mono text-teal-400">
+                  <td className="py-3 pr-4 font-serif text-teal-400">
                     {cat.count}
                   </td>
                   <td className="py-3 pr-4">{cat.expectedOutcome}</td>
                   <td className="py-3 pr-4">{cat.actualOutcome}</td>
-                  <td className="py-3 font-mono text-teal-400">
+                  <td className="py-3 font-serif text-teal-400">
                     {cat.accuracy}
                   </td>
                 </tr>

@@ -8,7 +8,7 @@ import {
   type MotionValue,
 } from "framer-motion";
 import { Cite } from "@/components/citation/cite";
-import { whatIfLines } from "@/data/landing/teaser";
+import { whatIfLines, teaserContent } from "@/data/landing/teaser";
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -18,6 +18,21 @@ const LINE_RANGES: [enter: number, hold: number][] = [
   [0.75, 0.81],
   [0.78, 0.84],
 ];
+
+/* ------------------------------------------------------------------ */
+/*  Labeled fact group for structured expanded content                 */
+/* ------------------------------------------------------------------ */
+
+function FactGroup({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="pb-3 border-b border-[#1A0F0A]/10 last:border-b-0 last:pb-0">
+      <p className="text-[10px] uppercase tracking-wider text-[#1A0F0A]/40 mb-1.5">
+        {label}
+      </p>
+      <div className="space-y-1.5">{children}</div>
+    </div>
+  );
+}
 
 /* ------------------------------------------------------------------ */
 /*  Collapsible protein entry                                         */
@@ -107,26 +122,34 @@ function ImmuneWeapons() {
           isExpanded={expanded === "asyn"}
           onToggle={() => toggle("asyn")}
         >
-          <p>
-            &ldquo;Synuclein family members are not found outside
-            vertebrates.&rdquo;
-            <Cite id="george-2002-genomebiology" />{" "}
-            &alpha;-Synuclein provides &ldquo;strong evidence&rdquo; of being
-            &ldquo;a cellular ferrireductase, responsible for reducing iron
-            (III) to bio available iron (II).&rdquo;
-            <Cite
-              id="davies-2011-plosone"
-              citationIds={["davies-2011-plosone-c1"]}
-            />{" "}
-            The &alpha;-synuclein&ndash;iron complex &ldquo;can be readily
-            oxidized ... to the putative alpha-syn-Fe(III) complex, with
-            H&#x2082;O&#x2082; as a co-product.&rdquo;
-            <Cite
-              id="peng-2010-jinorgbiochem"
-              citationIds={["peng-2010-jinorgbiochem-c1"]}
-            />{" "}
-            Aggregation is signal amplification, not malfunction.
-          </p>
+          <FactGroup label="Origin">
+            <p>
+              Vertebrate-only: not found outside vertebrates, dating
+              to ~500 Mya.
+              <Cite id="george-2002-genomebiology" />
+            </p>
+          </FactGroup>
+          <FactGroup label="Function">
+            <p>
+              Cellular ferrireductase: reduces iron(III) to bioavailable
+              iron(II).
+              <Cite
+                id="davies-2011-plosone"
+                citationIds={["davies-2011-plosone-c1"]}
+              />
+            </p>
+          </FactGroup>
+          <FactGroup label="Mechanism">
+            <p>
+              The &alpha;-synuclein&ndash;iron complex oxidizes to produce
+              H&#x2082;O&#x2082; as a co-product.
+              <Cite
+                id="peng-2010-jinorgbiochem"
+                citationIds={["peng-2010-jinorgbiochem-c1"]}
+              />{" "}
+              Aggregation amplifies the signal, not a malfunction.
+            </p>
+          </FactGroup>
         </ProteinEntry>
 
         <ProteinEntry
@@ -135,77 +158,82 @@ function ImmuneWeapons() {
           isExpanded={expanded === "ab"}
           onToggle={() => toggle("ab")}
         >
-          <p>
-            &ldquo;The presence of an A&beta;PP-like sequence in hydra and sea
-            anemone genomes suggests that the ancestral gene arose ...
-            between 630&ndash;540 million years ago.&rdquo;
-            <Cite
-              id="tharp-2013-bmcgenomics"
-              citationIds={["tharp-2013-bmcgenomics-c1"]}
-            />{" "}
-            &ldquo;A&beta; is rapidly produced and cleared in the CNS in
-            humans.&rdquo;
-            <Cite
-              id="bateman-2006-natmed"
-              citationIds={["bateman-2006-natmed-c1"]}
-            />{" "}
-            In sporadic AD, the production rate doesn&rsquo;t change: clearance
-            drops by about a
-            third.
-            <Cite
-              id="mawuenyega-2010-science"
-              citationIds={["mawuenyega-2010-science-c1"]}
-            />
-          </p>
-          <p>
-            It regulates its own production: &ldquo;A&beta;42 forms a
-            non-productive E-S-like complex with &gamma;-secretase and its
-            binding is reversible.&rdquo;
-            <Cite
-              id="zoltowska-2024-elife"
-              citationIds={["zoltowska-2024-elife-c1"]}
-            />{" "}
-            This is species-specific: &ldquo;neither murine A&beta;42 nor human
-            A&beta;17&ndash;42 (p3), inhibit &gamma;-secretases.&rdquo;
-            <Cite
-              id="zoltowska-2024-elife"
-              citationIds={["zoltowska-2024-elife-c2"]}
-            />
-          </p>
-          <p>
-            A bona fide antimicrobial peptide that kills bacteria and
-            yeast.
-            <Cite id="soscia-2010-plosone" /> APP mRNA contains &ldquo;an
-            iron-responsive element type II in the 5&prime;-untranslated
-            region.&rdquo;
-            <Cite
-              id="rogers-2002-jbc"
-              citationIds={["rogers-2002-jbc-c1"]}
-            />{" "}
-            Aggregation produces &ldquo;redox-active iron formation following
-            aggregation of ferrihydrite and the ... peptide
-            &beta;-amyloid.&rdquo;
-            <Cite
-              id="everett-2014-nanoscale"
-              citationIds={["everett-2014-nanoscale-c1"]}
-            />
-          </p>
-          <p>
-            &ldquo;A&beta; oligomers promoted oligodendrocyte differentiation
-            and maturation, as well as cell survival.&rdquo;
-            <Cite
-              id="quintela-lopez-2019-celldeathdis"
-              citationIds={["quintela-lopez-2019-celldeathdis-c1"]}
-            />{" "}
-            They &ldquo;required integrin &beta;1 receptor, Src-family kinase
-            Fyn and Ca&#xB2;&#x207A;/CaMKII as effectors to modulate MBP
-            protein expression.&rdquo;
-            <Cite
-              id="quintela-lopez-2019-celldeathdis"
-              citationIds={["quintela-lopez-2019-celldeathdis-c2"]}
-            />
-          </p>
-          <p className="font-medium text-[#1A0F0A]/90">
+          <FactGroup label="Origin">
+            <p>
+              Ancestral gene arose 630&ndash;540 Mya, found in hydra and
+              sea anemone genomes.
+              <Cite
+                id="tharp-2013-bmcgenomics"
+                citationIds={["tharp-2013-bmcgenomics-c1"]}
+              />
+            </p>
+          </FactGroup>
+          <FactGroup label="Turnover">
+            <p>
+              Rapidly produced and cleared in healthy CNS.
+              <Cite
+                id="bateman-2006-natmed"
+                citationIds={["bateman-2006-natmed-c1"]}
+              />{" "}
+              In sporadic AD, production rate is unchanged; clearance drops
+              by about <strong>a third</strong>.
+              <Cite
+                id="mawuenyega-2010-science"
+                citationIds={["mawuenyega-2010-science-c1"]}
+              />
+            </p>
+          </FactGroup>
+          <FactGroup label="Self-regulation">
+            <p>
+              A&beta;42 reversibly inhibits &gamma;-secretase via a
+              non-productive enzyme&ndash;substrate complex.
+              <Cite
+                id="zoltowska-2024-elife"
+                citationIds={["zoltowska-2024-elife-c1"]}
+              />{" "}
+              Species-specific: neither murine A&beta;42 nor human
+              A&beta;17&ndash;42 inhibit &gamma;-secretases.
+              <Cite
+                id="zoltowska-2024-elife"
+                citationIds={["zoltowska-2024-elife-c2"]}
+              />
+            </p>
+          </FactGroup>
+          <FactGroup label="Iron &amp; antimicrobial">
+            <p>
+              Bona fide antimicrobial peptide: kills bacteria and
+              yeast.
+              <Cite id="soscia-2010-plosone" />{" "}
+              APP mRNA has an iron-responsive element in the
+              5&prime;-UTR.
+              <Cite
+                id="rogers-2002-jbc"
+                citationIds={["rogers-2002-jbc-c1"]}
+              />{" "}
+              A&beta;-ferrihydrite aggregation produces redox-active
+              iron.
+              <Cite
+                id="everett-2014-nanoscale"
+                citationIds={["everett-2014-nanoscale-c1"]}
+              />
+            </p>
+          </FactGroup>
+          <FactGroup label="Myelination">
+            <p>
+              A&beta; oligomers promote oligodendrocyte differentiation,
+              maturation, and survival
+              <Cite
+                id="quintela-lopez-2019-celldeathdis"
+                citationIds={["quintela-lopez-2019-celldeathdis-c1"]}
+              />{" "}
+              via integrin &beta;1 / Fyn / CaMKII signaling.
+              <Cite
+                id="quintela-lopez-2019-celldeathdis"
+                citationIds={["quintela-lopez-2019-celldeathdis-c2"]}
+              />
+            </p>
+          </FactGroup>
+          <p className="font-medium text-[#1A0F0A]/90 pt-1">
             No other proteinopathy protein both inhibits its own generating
             enzyme and actively promotes myelination as an extracellular signal.
           </p>
@@ -217,19 +245,24 @@ function ImmuneWeapons() {
           isExpanded={expanded === "tau"}
           onToggle={() => toggle("tau")}
         >
-          <p>
-            &ldquo;Confirmed presence in Chondrichthyes sets their period of
-            formation around 550+ million years ago.&rdquo;
-            <Cite id="sundermann-2016-bmcgenomics" />{" "}
-            &ldquo;Tau deficiency induces parkinsonism with dementia by
-            impairing APP-mediated iron export.&rdquo;
-            <Cite
-              id="lei-2012-natmed"
-              citationIds={["lei-2012-natmed-c1"]}
-            />{" "}
-            &ldquo;Tau-mediated iron export prevents ferroptotic damage.&rdquo;
-            <Cite id="tuo-2017" citationIds={["tuo-2017-c1"]} />
-          </p>
+          <FactGroup label="Origin">
+            <p>
+              Present in Chondrichthyes, dating to ~550+ Mya.
+              <Cite id="sundermann-2016-bmcgenomics" />
+            </p>
+          </FactGroup>
+          <FactGroup label="Function">
+            <p>
+              Tau deficiency impairs APP-mediated iron export, causing
+              parkinsonism with dementia.
+              <Cite
+                id="lei-2012-natmed"
+                citationIds={["lei-2012-natmed-c1"]}
+              />{" "}
+              Tau-mediated iron export prevents ferroptotic damage.
+              <Cite id="tuo-2017" citationIds={["tuo-2017-c1"]} />
+            </p>
+          </FactGroup>
         </ProteinEntry>
 
         <ProteinEntry
@@ -238,27 +271,31 @@ function ImmuneWeapons() {
           isExpanded={expanded === "prp"}
           onToggle={() => toggle("prp")}
         >
-          <p>
-            &ldquo;The prion gene family is phylogenetically derived from a
-            ZIP-like ancestral molecule&rdquo; at &ldquo;the base of the
-            chordate lineage.&rdquo;
-            <Cite
-              id="schmitt-ulms-2009-plosone"
-              citationIds={["schmitt-ulms-2009-plosone-c1", "schmitt-ulms-2009-plosone-c2"]}
-            />{" "}
-            &ldquo;PrP(C) mediates cellular iron uptake and transport, and
-            mutant PrP forms alter cellular iron levels.&rdquo;
-            <Cite
-              id="singh-2009-plosone"
-              citationIds={["singh-2009-plosone-c1"]}
-            />{" "}
-            &ldquo;Selective deletion of PrP in transgenic mice alters systemic
-            iron homeostasis.&rdquo;
-            <Cite
-              id="singh-2009-plosone-ko"
-              citationIds={["singh-2009-plosone-ko-c1"]}
-            />
-          </p>
+          <FactGroup label="Origin">
+            <p>
+              Descended from ZIP metal transporters at the base of the
+              chordate lineage.
+              <Cite
+                id="schmitt-ulms-2009-plosone"
+                citationIds={["schmitt-ulms-2009-plosone-c1", "schmitt-ulms-2009-plosone-c2"]}
+              />
+            </p>
+          </FactGroup>
+          <FactGroup label="Function">
+            <p>
+              Mediates cellular iron uptake and transport; mutant forms
+              alter cellular iron levels.
+              <Cite
+                id="singh-2009-plosone"
+                citationIds={["singh-2009-plosone-c1"]}
+              />{" "}
+              Knockout disrupts systemic iron homeostasis.
+              <Cite
+                id="singh-2009-plosone-ko"
+                citationIds={["singh-2009-plosone-ko-c1"]}
+              />
+            </p>
+          </FactGroup>
         </ProteinEntry>
       </div>
     </div>
@@ -275,102 +312,84 @@ const expandedContent: ReactNode[] = [
 
   // Line 1: not even unique to the brain — placental Aβ in preeclampsia
   <div key="exp-1" className="space-y-3">
-    <p>
-      A&beta; plaques are not just a brain problem. They accumulate in
-      preeclamptic placentas too, where hypoxia drives BACE-1 upregulation
-      and A&beta;
-      production.
-      <Cite
-        id="nishioka-2026-lsa"
-        citationIds={["nishioka-2026-lsa-c2"]}
-      />{" "}
-      &ldquo;A&beta;42 fibrils inhibited CTB syncytialization, a critical step
-      in maintaining pregnancy.&rdquo;
-      <Cite
-        id="nishioka-2026-lsa"
-        citationIds={["nishioka-2026-lsa-c1"]}
-      />
-    </p>
-    <p>
-      &ldquo;Patients with preeclampsia exhibited elevated hemoglobin, ferritin,
-      and serum iron levels from the second trimester, alongside placental iron
-      overload.&rdquo;
-      <Cite
-        id="yang-2026-hypertension"
-        citationIds={["yang-2026-hypertension-c1"]}
-      />{" "}
-      Iron-loaded trophoblasts die through both ferroptosis (lipid peroxidation
-      up, GPX4 down) and
-      apoptosis.
-      <Cite
-        id="yang-2026-hypertension"
-        citationIds={["yang-2026-hypertension-c2"]}
-      />{" "}
-      Deferoxamine (an iron chelator) and MitoQ (a mitochondrial antioxidant)
-      both rescue the
-      damage.
-      <Cite
-        id="yang-2026-hypertension"
-        citationIds={["yang-2026-hypertension-c3"]}
-      />
-    </p>
+    <FactGroup label="Brain parallel">
+      <p>
+        A&beta; plaques accumulate in preeclamptic placentas. Hypoxia
+        drives BACE-1 upregulation and A&beta; production.
+        <Cite
+          id="nishioka-2026-lsa"
+          citationIds={["nishioka-2026-lsa-c2"]}
+        />{" "}
+        A&beta;42 fibrils inhibit syncytialization, a critical step in
+        maintaining pregnancy.
+        <Cite
+          id="nishioka-2026-lsa"
+          citationIds={["nishioka-2026-lsa-c1"]}
+        />
+      </p>
+    </FactGroup>
+    <FactGroup label="Iron overload">
+      <p>
+        Patients with preeclampsia show elevated hemoglobin, ferritin,
+        and serum iron from the second trimester, alongside placental
+        iron overload.
+        <Cite
+          id="yang-2026-hypertension"
+          citationIds={["yang-2026-hypertension-c1"]}
+        />{" "}
+        Iron-loaded trophoblasts die through both ferroptosis (lipid
+        peroxidation up, GPX4 down) and apoptosis.
+        <Cite
+          id="yang-2026-hypertension"
+          citationIds={["yang-2026-hypertension-c2"]}
+        />{" "}
+        Deferoxamine (iron chelator) and MitoQ (mitochondrial
+        antioxidant) both rescue the damage.
+        <Cite
+          id="yang-2026-hypertension"
+          citationIds={["yang-2026-hypertension-c3"]}
+        />
+      </p>
+    </FactGroup>
   </div>,
 
-  // Line 2: iron, in every brain they've checked
+  // Line 2: iron detection across diseases
   <div key="exp-2" className="space-y-3">
+    <p>
+      Researchers can now measure iron in living brains. The same pattern
+      keeps showing up.
+    </p>
     <ul className="space-y-3 list-none pl-0">
       <li>
         <span className="font-serif font-semibold text-[#1A0F0A]">
-          Alzheimer&rsquo;s
+          Alzheimer&rsquo;s:
         </span>{" "}
-        &mdash; Iron-free A&beta; aggregates are non-toxic. Add iron during
-        aggregation, and they become
-        lethal.
-        <Cite id="liu-2011-jbc" citationIds={["liu-2011-jbc-c1"]} />
+        QSM-MRI shows hippocampal iron predicts cognitive decline
+        independently of amyloid and tau.
+        <Cite id="ayton-2017-brain" citationIds={["ayton-2017-brain-c2"]} />
+        {" "}CSF ferritin predicts MCI conversion to AD across 302 subjects
+        tracked over 7 years.
+        <Cite id="ayton-2015-natcomms" citationIds={["ayton-2015-natcomms-c3"]} />
       </li>
       <li>
         <span className="font-serif font-semibold text-[#1A0F0A]">
-          Parkinson&rsquo;s
+          Parkinson&rsquo;s:
         </span>{" "}
-        &mdash; Lewy bodies contain &ldquo;a crowded environment of membranes
-        ... including vesicular structures and dysmorphic organelles.&rdquo;
-        Fibrils were found in &ldquo;many, but not all&rdquo; inclusions.
-        <Cite
-          id="shahmoradian-2019-natneurosci"
-          citationIds={["shahmoradian-2019-natneurosci-c1", "shahmoradian-2019-natneurosci-c2"]}
-        />
+        Substantia nigra iron measured by QSM correlates with disease
+        severity on the UPDRS and Hoehn-Yahr scales.
+        <Cite id="an-2018-jneurolsci" citationIds={["an-2018-jneurolsci-c1"]} />
       </li>
       <li>
-        <span className="font-serif font-semibold text-[#1A0F0A]">ALS</span>{" "}
-        &mdash; GPX4 depletion, the hallmark of ferroptosis, appears across
-        SOD1, TDP-43, and C9orf72 models. Three mutations, one
-        endpoint.
-        <Cite
-          id="wang-2022-celldeathdiff"
-          citationIds={["wang-2022-celldeathdiff-c1"]}
-        />
-      </li>
-      <li>
-        <span className="font-serif font-semibold text-[#1A0F0A]">
-          Prion disease
-        </span>{" "}
-        &mdash; Ferroptosis confirmed via RAC3-dependent
-        pathway.
-        <Cite
-          id="peng-2025-natcomms"
-          citationIds={["peng-2025-natcomms-c1"]}
-        />{" "}
-        &ldquo;The prion gene family is phylogenetically derived from a
-        ZIP-like ancestral molecule.&rdquo;
-        <Cite
-          id="schmitt-ulms-2009-plosone"
-          citationIds={["schmitt-ulms-2009-plosone-c1"]}
-        />
+        <span className="font-serif font-semibold text-[#1A0F0A]">MS:</span>{" "}
+        Iron rim lesions, visible on susceptibility-weighted MRI, mark
+        chronic-active lesions that keep expanding. Iron-laden
+        phagocytes line the edge.
+        <Cite id="absinta-2019-jamaneurol" citationIds={["absinta-2019-jamaneurol-c1"]} />
       </li>
     </ul>
     <p>
-      The protein that aggregates depends on which cell type iron overwhelms.
-      The endpoint &mdash; ferroptosis &mdash; is always the same.
+      Different diseases, different brain regions, same metal accumulating
+      where damage progresses.
     </p>
   </div>,
 ];
@@ -506,7 +525,7 @@ export function WhatIfLines({
         style={{ opacity: leadInOpacity, y: leadInY }}
         className="font-serif text-[clamp(1.5rem,4vw,2.5rem)] text-[#92400E] leading-tight mb-6"
       >
-        What if it&rsquo;s&hellip;
+        {teaserContent.subtextLeadIn}
       </motion.p>
 
       {/* Three clickable lines */}
@@ -539,7 +558,7 @@ export function WhatIfLinesMobile() {
   return (
     <div className="mt-8">
       <p className="font-serif text-[clamp(1.5rem,4vw,2.5rem)] text-[#92400E] leading-tight mb-6">
-        What if it&rsquo;s&hellip;
+        {teaserContent.subtextLeadIn}
       </p>
 
       <div className="flex flex-col gap-4">

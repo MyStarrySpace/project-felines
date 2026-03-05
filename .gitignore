@@ -37,3 +37,4 @@ framework-docs/
 
 # Claim verification cache
 scripts/.claim-cache.json
+nul

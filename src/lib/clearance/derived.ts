@@ -1,10 +1,9 @@
 /**
  * Derived calculations from clearance simulation results.
- * Threshold detection, phase timelines, cell-type budget, comparison utils.
+ * Threshold detection, phase timelines, comparison utils.
  */
 
-import type { ClearanceResult, ClearanceTimePoint, CellTypeBudget } from "./types";
-import { cellTypeBudget } from "./parameters";
+import type { ClearanceResult, ClearanceTimePoint } from "./types";
 
 /** Find the age at which a compartment first crosses a threshold */
 export function findThresholdAge(
@@ -48,19 +47,6 @@ export function getPhaseTimeline(
   });
 
   return ranges;
-}
-
-/** Compute cell-type Fpn budget with weighted contributions */
-export function computeCellTypeBudget(): CellTypeBudget[] {
-  const total = cellTypeBudget.reduce(
-    (sum, c) => sum + c.weightedContribution,
-    0
-  );
-  return cellTypeBudget.map((c) => ({
-    ...c,
-    // Normalize to percentages
-    weightedContribution: c.weightedContribution / total,
-  }));
 }
 
 /** Get clearance fraction at a specific age */
@@ -110,7 +96,7 @@ export function summarize(result: ClearanceResult): ClearanceSummary {
     phase2Age: result.phase2Age,
     clearanceAt70Pct: Math.round(result.clearanceAt70 * 100),
     isfAt70: at70?.Fe_ISF ?? 1.0,
-    lipAt70: at70?.Fe_LIP ?? 2.5,
+    lipAt70: at70?.Fe_LIP ?? 0.8,
     ferritinAt70: at70?.Fe_ferritin ?? 25.0,
   };
 }

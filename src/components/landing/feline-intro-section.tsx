@@ -1,7 +1,7 @@
 "use client";
 
+import { useCallback, useLayoutEffect, useRef, useState, useMemo } from "react";
 import { motion, useTransform, type MotionValue } from "framer-motion";
-import { Cite } from "@/components/citation/cite";
 import { ScrollSection } from "@/components/ui/scroll-section";
 import { StickyScrollStage } from "@/components/ui/sticky-scroll-stage";
 import { ScrollBeat } from "@/components/ui/scroll-beat";
@@ -11,8 +11,37 @@ import {
   catReveal,
   felineLetters,
   felineLayers,
+  felineLayerSegments,
+  echoGenesForLayer,
   swissCheese,
+  type LayerSegment,
 } from "@/data/landing/feline-intro";
+
+/* ------------------------------------------------------------------ */
+/*  Accessibility: skip echo marquee for reduced-motion / slow devices  */
+/* ------------------------------------------------------------------ */
+
+function useCanShowEcho(): boolean {
+  const [ok, setOk] = useState(false);
+  useLayoutEffect(() => {
+    // Respect prefers-reduced-motion
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    // Skip on slow connections (2G / slow-3G)
+    const nav = navigator as Navigator & {
+      connection?: { effectiveType?: string; saveData?: boolean };
+    };
+    if (nav.connection?.saveData) return;
+    if (
+      nav.connection?.effectiveType === "slow-2g" ||
+      nav.connection?.effectiveType === "2g"
+    ) return;
+    // Skip on low-end devices (≤4 logical cores)
+    if (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4)
+      return;
+    setOk(true);
+  }, []);
+  return ok;
+}
 
 /* ------------------------------------------------------------------ */
 /*  Acronym bar — letters highlight as each layer is described          */
@@ -31,13 +60,15 @@ function AcronymBar({ progress }: { progress: MotionValue<number> }) {
 
   return (
     <motion.div
-      className="flex gap-3 sm:gap-5 mb-8"
+      className="flex gap-4 sm:gap-6 mb-8"
       style={{ opacity: barOpacity }}
+      aria-label="FELINE acronym"
+      role="img"
     >
       {felineLetters.map((fl, i) => (
         <motion.span
           key={fl.letter + fl.subscript}
-          className="font-mono text-teal-400 text-lg sm:text-xl"
+          className="font-serif text-teal-400 text-5xl sm:text-7xl"
           style={{ opacity: opacities[i] }}
         >
           {fl.letter}
@@ -69,6 +100,206 @@ function useBeatPointerEvents(
 }
 
 /* ------------------------------------------------------------------ */
+/*  Echo gene field — infinite marquee of gene names                     */
+/* ------------------------------------------------------------------ */
+
+/** Simple hash to shuffle genes differently per row */
+function stableHash(s: string, seed: number): number {
+  let h = seed;
+  for (let i = 0; i < s.length; i++) {
+    h = Math.imul(31, h) + s.charCodeAt(i) | 0;
+  }
+  return h;
+}
+
+function shuffleGenes(genes: string[], seed: number): string[] {
+  return [...genes].sort((a, b) => stableHash(a, seed) - stableHash(b, seed));
+}
+
+/** Build a single half of the marquee content (repeated enough to overshoot viewport) */
+function MarqueeHalf({
+  genes,
+  activeGenes,
+  baseOpacity,
+}: {
+  genes: string[];
+  activeGenes: string[];
+  baseOpacity: number;
+}) {
+  const count = Math.max(6, Math.ceil(32 / genes.length));
+  const repeated = Array.from({ length: count }, () => genes).flat();
+
+  return (
+    <span className="inline-flex items-center shrink-0" aria-hidden="true">
+      {repeated.map((gene, i) => (
+        <span key={i} className="inline-flex items-center">
+          <span
+            className="font-serif text-5xl sm:text-7xl text-teal-400 transition-opacity duration-300 mx-4 sm:mx-6"
+            style={{
+              opacity: activeGenes.includes(gene) ? 0.85 : baseOpacity,
+            }}
+          >
+            {gene}
+          </span>
+        </span>
+      ))}
+    </span>
+  );
+}
+
+/** Row config for each marquee line */
+interface MarqueeRowConfig {
+  genes: string[];
+  speed: number;
+  direction: "left" | "right";
+  baseOpacity: number;
+}
+
+/**
+ * Build rows that span roughly half the viewport height.
+ * Opacity decreases with distance from content (Rendomat-style echo).
+ */
+function buildRows(genes: string[], position: "top" | "bottom"): MarqueeRowConfig[] {
+  // 5 rows per position, alternating direction, decreasing opacity toward edges
+  const count = 5;
+  // Scale duration by gene count so visual speed stays consistent.
+  // The CSS animation moves by -50% of element width; more genes = wider element.
+  // Calibrated so ~6 genes ≈ 160s (the original speed).
+  const referenceCount = 6;
+  const referenceSpeed = 160;
+  const baseSpeed = referenceSpeed * (genes.length / referenceCount);
+  const speedJitter = 25;    // variation between rows
+
+  return Array.from({ length: count }, (_, i) => {
+    // distance from the content edge: 0 = closest, count-1 = farthest
+    const dist = position === "top" ? count - 1 - i : i;
+    // opacity fades toward edges
+    const baseOpacity = 0.10 - dist * 0.015;
+    // alternate direction per row
+    const direction: "left" | "right" = (i % 2 === 0) ? "left" : "right";
+    // stagger speed so rows don't move in lock-step
+    const speed = baseSpeed + (i % 3) * speedJitter;
+
+    return {
+      genes: shuffleGenes(genes, (position === "top" ? 0 : count) + i),
+      speed,
+      direction,
+      baseOpacity: Math.max(0.02, baseOpacity),
+    };
+  });
+}
+
+function EchoGeneField({
+  genes,
+  activeGenes,
+  position,
+  height,
+  padBottom = 0,
+}: {
+  genes: string[];
+  activeGenes: string[];
+  position: "top" | "bottom";
+  height: number;
+  padBottom?: number;
+}) {
+  const rows = buildRows(genes, position);
+
+  return (
+    <div
+      className="absolute left-1/2 -translate-x-1/2 w-[100vw] overflow-hidden pointer-events-none select-none"
+      style={{
+        ...(position === "top"
+          ? {
+              bottom: "100%",
+              height: height > 0 ? `${height}px` : "40vh",
+              paddingBottom: padBottom > 0 ? `${padBottom}px` : undefined,
+            }
+          : { top: "100%", height: height > 0 ? `${height}px` : "40vh" }),
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: position === "top" ? "flex-end" : "flex-start",
+      }}
+    >
+      {rows.map((row, ri) => (
+        <div
+          key={ri}
+          className="echo-marquee-row inline-flex whitespace-nowrap"
+          style={{
+            width: "max-content",
+            animation: `echo-scroll-${row.direction} ${row.speed}s linear infinite`,
+            willChange: "transform",
+            backfaceVisibility: "hidden",
+            lineHeight: "1.3",
+          }}
+        >
+          <MarqueeHalf genes={row.genes} activeGenes={activeGenes} baseOpacity={row.baseOpacity} />
+          <MarqueeHalf genes={row.genes} activeGenes={activeGenes} baseOpacity={row.baseOpacity} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Segmented description — structured lines with category labels        */
+/* ------------------------------------------------------------------ */
+
+function SegmentedDescription({
+  segments,
+  onHoverGenes,
+}: {
+  segments: LayerSegment[];
+  onHoverGenes: (genes: string[]) => void;
+}) {
+  return (
+    <div className="space-y-2.5 mb-2 max-w-[52ch]">
+      {segments.map((seg, i) => (
+        <div
+          key={i}
+          className="group cursor-default rounded-sm focus-visible:outline focus-visible:outline-1 focus-visible:outline-teal-400/50 focus-visible:outline-offset-2"
+          tabIndex={0}
+          role="group"
+          aria-label={seg.label}
+          onMouseEnter={() => onHoverGenes(seg.genes)}
+          onMouseLeave={() => onHoverGenes([])}
+          onFocus={() => onHoverGenes(seg.genes)}
+          onBlur={() => onHoverGenes([])}
+        >
+          <p className="text-[11px] uppercase tracking-wider text-teal-400/70 mb-0.5 group-hover:text-teal-400/90 group-focus-visible:text-teal-400/90 transition-colors duration-200">
+            {seg.label}
+          </p>
+          <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 group-focus-visible:text-gray-300 transition-colors duration-200">
+            {seg.text}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/** Mobile-only: structured segments without hover */
+function SegmentedDescriptionStatic({
+  segments,
+}: {
+  segments: LayerSegment[];
+}) {
+  return (
+    <div className="space-y-2.5 mb-2">
+      {segments.map((seg, i) => (
+        <div key={i}>
+          <p className="text-[11px] uppercase tracking-wider text-teal-400/70 mb-0.5">
+            {seg.label}
+          </p>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            {seg.text}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /*  Desktop: sticky scroll stage                                        */
 /* ------------------------------------------------------------------ */
 
@@ -86,6 +317,52 @@ const LAYER_BEATS = [
 const BEAT4 = { enter: 0.85, hold: 0.90 };
 
 function FelineStage({ progress }: { progress: MotionValue<number> }) {
+  const [hoveredGenes, setHoveredGenes] = useState<string[]>([]);
+  const showEcho = useCanShowEcho();
+  const layerGenes = useMemo(() => {
+    const result: Record<string, string[]> = {};
+    for (const layer of felineLayers) {
+      result[layer.id] = echoGenesForLayer(layer.id);
+    }
+    return result;
+  }, []);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const acronymRef = useRef<HTMLDivElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const [echoH, setEchoH] = useState({ top: 0, topPad: 0, bottom: 0 });
+
+  const measure = useCallback(() => {
+    const stage = stageRef.current;
+    const acronym = acronymRef.current;
+    const grid = gridRef.current;
+    if (!stage || !acronym || !grid) return;
+    const sr = stage.getBoundingClientRect();
+    const ar = acronym.getBoundingClientRect();
+    const gr = grid.getBoundingClientRect();
+    setEchoH({
+      // Full height from grid top to stage top
+      top: Math.max(0, gr.top - sr.top),
+      // Padding to keep rows above the acronym bar (measured from bar top, not bottom)
+      topPad: Math.max(0, gr.top - ar.top),
+      bottom: Math.max(0, sr.bottom - gr.bottom),
+    });
+  }, []);
+
+  // Measure after layout and on resize
+  useLayoutEffect(() => {
+    measure();
+    const raf = requestAnimationFrame(measure);
+    window.addEventListener("resize", measure);
+    const ro = new ResizeObserver(measure);
+    if (stageRef.current) ro.observe(stageRef.current);
+    if (gridRef.current) ro.observe(gridRef.current);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("resize", measure);
+      ro.disconnect();
+    };
+  }, [measure]);
+
   // Pointer-events gates
   const pe1 = useBeatPointerEvents(progress, BEAT1.enter, BEAT1.gone);
   const pe2 = useBeatPointerEvents(progress, BEAT2.enter, BEAT2.gone);
@@ -96,13 +373,16 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
   const pe4 = useBeatPointerEvents(progress, BEAT4.enter);
 
   return (
-    <div className="h-full flex flex-col justify-center px-6 sm:px-8">
+    <div ref={stageRef} className="h-full flex flex-col justify-center px-6 sm:px-8">
       <div className="reading-width w-full mx-auto">
         {/* Acronym bar — persistent from beat 2 onward */}
-        <AcronymBar progress={progress} />
+        <div ref={acronymRef}>
+          <AcronymBar progress={progress} />
+        </div>
 
         {/* Overlapping grid for beats */}
         <div
+          ref={gridRef}
           className="grid"
           style={{ gridTemplateColumns: "1fr", gridTemplateRows: "1fr" }}
         >
@@ -153,52 +433,85 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
               gone={BEAT2.gone}
               enterFrom="fade"
             >
-              <p className="font-serif text-[clamp(1.5rem,3.5vw,2.25rem)] leading-relaxed text-gray-200 mb-4 max-w-[28ch]">
+              <p className="font-serif text-[clamp(1.75rem,4.5vw,3rem)] leading-[1.15] tracking-[-0.01em] text-gray-200 max-w-[24ch]">
                 {catReveal.hookLine}
-              </p>
-              <p className="text-gray-400 text-base leading-relaxed max-w-[44ch]">
-                {catReveal.revealLine}
               </p>
             </ScrollBeat>
           </motion.div>
 
-          {/* Beat 3: Five defense layers — staggered */}
-          {felineLayers.map((layer, i) => (
-            <motion.div
-              key={layer.id}
-              className="col-start-1 row-start-1"
-              style={{ pointerEvents: peLayer[i] }}
-            >
-              <ScrollBeat
-                progress={progress}
-                enter={LAYER_BEATS[i].enter}
-                hold={LAYER_BEATS[i].hold}
-                exit={LAYER_BEATS[i].exit}
-                gone={LAYER_BEATS[i].gone}
-                enterFrom="bottom"
+          {/* Beat 3: Five defense layers — staggered, with echo gene fields */}
+          {felineLayers.map((layer, i) => {
+            const echoData = felineLayerSegments[layer.id];
+            return (
+              <motion.div
+                key={layer.id}
+                className="col-start-1 row-start-1"
+                style={{ pointerEvents: peLayer[i] }}
               >
-                <div className="flex items-baseline gap-3 mb-3">
-                  <span className="font-mono text-teal-400 text-2xl sm:text-3xl">
-                    {layer.letter}
-                    {layer.subscript && (
-                      <span className="text-[0.7em] align-baseline">
-                        {layer.subscript}
-                      </span>
+                <ScrollBeat
+                  progress={progress}
+                  enter={LAYER_BEATS[i].enter}
+                  hold={LAYER_BEATS[i].hold}
+                  exit={LAYER_BEATS[i].exit}
+                  gone={LAYER_BEATS[i].gone}
+                  enterFrom="bottom"
+                >
+                  <div className="relative overflow-visible">
+                    {/* Echo genes — top */}
+                    {showEcho && layerGenes[layer.id]?.length > 0 && (
+                      <EchoGeneField
+                        genes={layerGenes[layer.id]}
+                        activeGenes={hoveredGenes}
+                        position="top"
+                        height={echoH.top}
+                        padBottom={echoH.topPad}
+                      />
                     )}
-                  </span>
-                  <span className="font-serif text-white text-xl sm:text-2xl">
-                    {layer.name}
-                  </span>
-                </div>
-                <p className="text-gray-300 text-base leading-relaxed mb-2 max-w-[52ch]">
-                  {layer.protects}
-                </p>
-                <p className="text-gray-500 text-sm leading-relaxed max-w-[52ch]">
-                  {layer.failureMode}
-                </p>
-              </ScrollBeat>
-            </motion.div>
-          ))}
+
+                    <h3 className="flex items-baseline gap-3 mb-3">
+                      <span className="font-serif text-teal-400 text-2xl sm:text-3xl">
+                        {layer.letter}
+                        {layer.subscript && (
+                          <span className="text-[0.7em] align-baseline">
+                            {layer.subscript}
+                          </span>
+                        )}
+                      </span>
+                      <span className="font-serif text-white text-xl sm:text-2xl">
+                        {layer.name}
+                      </span>
+                    </h3>
+
+                    {/* Segmented description with hover highlights */}
+                    {echoData ? (
+                      <SegmentedDescription
+                        segments={echoData.segments}
+                        onHoverGenes={setHoveredGenes}
+                      />
+                    ) : (
+                      <p className="text-gray-300 text-base leading-relaxed mb-2 max-w-[52ch]">
+                        {layer.protects}
+                      </p>
+                    )}
+
+                    <p className="text-gray-400 text-sm leading-relaxed max-w-[52ch]">
+                      {layer.failureMode}
+                    </p>
+
+                    {/* Echo genes — bottom */}
+                    {showEcho && layerGenes[layer.id]?.length > 0 && (
+                      <EchoGeneField
+                        genes={layerGenes[layer.id]}
+                        activeGenes={hoveredGenes}
+                        position="bottom"
+                        height={echoH.bottom}
+                      />
+                    )}
+                  </div>
+                </ScrollBeat>
+              </motion.div>
+            );
+          })}
 
           {/* Beat 4: Swiss cheese summary */}
           <motion.div
@@ -257,11 +570,8 @@ function FelineFlowing() {
       {/* Cat connection */}
       <ScrollAnimate>
         <div className="reading-width mx-auto">
-          <p className="font-serif text-[clamp(1.5rem,3.5vw,2.25rem)] leading-relaxed text-gray-200 mb-4">
+          <p className="font-serif text-[clamp(1.75rem,4.5vw,3rem)] leading-[1.15] tracking-[-0.01em] text-gray-200">
             {catReveal.hookLine}
-          </p>
-          <p className="text-gray-400 text-base leading-relaxed">
-            {catReveal.revealLine}
           </p>
         </div>
       </ScrollAnimate>
@@ -269,11 +579,11 @@ function FelineFlowing() {
       {/* FELINE acronym bar */}
       <ScrollAnimate>
         <div className="reading-width mx-auto">
-          <div className="flex gap-3 sm:gap-5 mb-2">
+          <div className="flex gap-3 sm:gap-5 mb-2" aria-label="FELINE acronym" role="img">
             {felineLetters.map((fl) => (
               <span
                 key={fl.letter + fl.subscript}
-                className="font-mono text-teal-400 text-lg sm:text-xl"
+                className="font-serif text-teal-400 text-2xl sm:text-4xl"
               >
                 {fl.letter}
                 {fl.subscript && (
@@ -288,31 +598,38 @@ function FelineFlowing() {
       </ScrollAnimate>
 
       {/* Five layers */}
-      {felineLayers.map((layer) => (
-        <ScrollAnimate key={layer.id} enterFrom="bottom">
-          <div className="reading-width mx-auto">
-            <div className="flex items-baseline gap-3 mb-3">
-              <span className="font-mono text-teal-400 text-2xl">
-                {layer.letter}
-                {layer.subscript && (
-                  <span className="text-[0.7em] align-baseline">
-                    {layer.subscript}
-                  </span>
-                )}
-              </span>
-              <span className="font-serif text-white text-xl">
-                {layer.name}
-              </span>
+      {felineLayers.map((layer) => {
+        const echoData = felineLayerSegments[layer.id];
+        return (
+          <ScrollAnimate key={layer.id} enterFrom="bottom">
+            <div className="reading-width mx-auto">
+              <h3 className="flex items-baseline gap-3 mb-3">
+                <span className="font-serif text-teal-400 text-2xl">
+                  {layer.letter}
+                  {layer.subscript && (
+                    <span className="text-[0.7em] align-baseline">
+                      {layer.subscript}
+                    </span>
+                  )}
+                </span>
+                <span className="font-serif text-white text-xl">
+                  {layer.name}
+                </span>
+              </h3>
+              {echoData ? (
+                <SegmentedDescriptionStatic segments={echoData.segments} />
+              ) : (
+                <p className="text-gray-300 text-base leading-relaxed mb-2">
+                  {layer.protects}
+                </p>
+              )}
+              <p className="text-gray-400 text-sm leading-relaxed">
+                {layer.failureMode}
+              </p>
             </div>
-            <p className="text-gray-300 text-base leading-relaxed mb-2">
-              {layer.protects}
-            </p>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              {layer.failureMode}
-            </p>
-          </div>
-        </ScrollAnimate>
-      ))}
+          </ScrollAnimate>
+        );
+      })}
 
       {/* Swiss cheese summary */}
       <ScrollAnimate>
@@ -340,6 +657,7 @@ export function FelineIntroSection() {
       label="Cat parasite, five defenses"
       className="py-0"
       fullWidth
+      breakpoints={[0, 0.30, 0.40, 0.45, 0.50, 0.56, 0.61, 0.66, 0.77]}
     >
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">

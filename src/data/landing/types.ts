@@ -1,3 +1,16 @@
+export type DiseaseTarget =
+  | "AD"
+  | "PD"
+  | "ALS"
+  | "HD"
+  | "PSP"
+  | "MSA"
+  | "FTD"
+  | "MS"
+  | "DLB"
+  | "FRDA"
+  | "multi";
+
 export interface ProblemStat {
   value: string;
   label: string;

@@ -101,7 +101,7 @@ export const manifestClaims: ManifestClaim[] = [
     file: "src/data/landing/failed-trials.ts",
     claim: "Deferiprone worsened Parkinson's motor symptoms despite reducing substantia nigra iron.",
     sourceId: "devos-2022-nejm",
-    citationIds: ["devos-2022-nejm-c1"],
+    citationIds: ["devos-2022-nejm-c2", "devos-2022-nejm-c4"],
   },
 
   // ─── findings.ts (deferiprone) ────────────────────────────────────
@@ -145,7 +145,7 @@ export const manifestClaims: ManifestClaim[] = [
     file: "src/data/landing/predictions.ts",
     claim: "Iron chelation fails in PD. Deferiprone reduced substantia nigra iron but worsened motor symptoms.",
     sourceId: "devos-2022-nejm",
-    citationIds: ["devos-2022-nejm-c1"],
+    citationIds: ["devos-2022-nejm-c2", "devos-2022-nejm-c4"],
   },
   {
     file: "src/data/landing/predictions.ts",
@@ -155,7 +155,7 @@ export const manifestClaims: ManifestClaim[] = [
   },
   {
     file: "src/data/landing/predictions.ts",
-    claim: "BACE inhibitors worsen outcomes. Verubecestat worsened cognitive outcomes in trials.",
+    claim: "Verubecestat worsened cognitive outcomes in a Phase III trial.",
     sourceId: "egan-2019-verubecestat",
     citationIds: ["egan-2019-verubecestat-c1"],
   },

@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef, useCallback } from "react";
 import Image from "next/image";
 import { motion, useTransform, type MotionValue } from "framer-motion";
 import { ScrollSection } from "@/components/ui/scroll-section";
@@ -30,6 +31,7 @@ function ArcingProtein({
   protein: FloatingProtein;
   progress: MotionValue<number>;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
   const [sx, sy, mx, my, ex, ey] = protein.arc;
 
   const x = useTransform(progress, [0, 0.12, 0.50, 0.85], [sx, sx, mx, ex]);
@@ -46,9 +48,28 @@ function ArcingProtein({
     [0.12, 0.12, 1.0, 1.0, 0.3, 0.05]
   );
 
+  // DEV: log position in % and vh as you drag
+  const handleDrag = useCallback(() => {
+    const el = ref.current;
+    if (!el?.offsetParent) return;
+    const rect = el.getBoundingClientRect();
+    const parent = (el.offsetParent as HTMLElement).getBoundingClientRect();
+    const pctX = ((rect.left - parent.left) / parent.width) * 100;
+    const vhY = ((rect.top - parent.top) / window.innerHeight) * 100;
+    console.log(
+      `%c${protein.name}%c  x: ${pctX.toFixed(1)}%  y: ${vhY.toFixed(1)}vh`,
+      "color: #FBBF24; font-weight: bold",
+      "color: inherit"
+    );
+  }, [protein.name]);
+
   return (
     <motion.div
-      className="absolute pointer-events-none select-none"
+      ref={ref}
+      className="absolute select-none cursor-grab active:cursor-grabbing"
+      drag
+      dragMomentum={false}
+      onDrag={handleDrag}
       style={{
         left: xPct,
         top: yVh,
@@ -67,7 +88,7 @@ function ArcingProtein({
         alt={protein.name}
         width={400}
         height={400}
-        className="w-full h-auto mix-blend-lighten"
+        className="w-full h-auto mix-blend-lighten pointer-events-none"
       />
     </motion.div>
   );
@@ -218,7 +239,7 @@ function AlternativesFlowing() {
 
 export function IronAlternativesSection() {
   return (
-    <ScrollSection id="alternatives" label="The body's iron managers" className="py-0" fullWidth>
+    <ScrollSection id="alternatives" label="The body's iron managers" className="py-0" fullWidth breakpoints={[0, 0.25, 0.36, 0.434, 0.50, 0.66]}>
       {/* Desktop: sticky scroll stage */}
       <div className="hidden md:block">
         <StickyScrollStage height={350}>

@@ -10,7 +10,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2022,
     doi: "10.1038/s41588-022-01024-z",
     pmid: "35379992",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35379992/#:~:text=We%20found%2075%20risk%20loci",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9005347/#Sec2",
     tags: ["genetics", "alzheimers"],
     citations: [
       {
@@ -158,6 +158,53 @@ export const gwasGeneticsSources: Source[] = [
         context:
           "SPI1/PU.1 is the master transcription factor for microglial program — regulates ferritin and iron genes",
         projectRef: "GWAS section: SPI1 gene card — iron connection",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "leonard-2025-medrxiv",
+    title:
+      "Novel Parkinson's Disease Genetic Risk Factors Within and Across European Populations",
+    authors: "Leonard HL, Makarious MB, Vitale D, et al.",
+    journal: "medRxiv",
+    year: 2025,
+    doi: "10.1101/2025.03.14.24319455",
+    url: "https://www.medrxiv.org/content/10.1101/2025.03.14.24319455v1#:~:text=identified%20134%20risk%20loci%20(59%20novel)",
+    tags: ["genetics", "parkinsons"],
+    citations: [
+      {
+        citationId: "leonard-2025-medrxiv-c1",
+        sourceId: "leonard-2025-medrxiv",
+        quote:
+          "The final combined cross-European meta-analysis identified 134 risk loci (59 novel), with a total of 157 independent signals, significantly expanding our understanding of Parkinson's disease risk.",
+        context:
+          "Largest PD GWAS: 63,555 cases, 134 loci — defense-layer genes dominate, not iron transport genes",
+        projectRef: "GWAS section: PD loci count and layer mapping",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "lange-2025-npjpd",
+    title:
+      "Prioritizing Parkinson's disease risk genes in genome-wide association loci",
+    authors: "Lange LM, Cerquera-Cleves C, Schipper M, et al.",
+    journal: "npj Parkinson's Disease",
+    year: 2025,
+    doi: "10.1038/s41531-025-00933-0",
+    pmid: "40240380",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12003903/#:~:text=integrates%20genome-wide%20information%20from%20MAGMA",
+    tags: ["genetics", "parkinsons"],
+    citations: [
+      {
+        citationId: "lange-2025-npjpd-c1",
+        sourceId: "lange-2025-npjpd",
+        quote:
+          "The polygenic priority score (PoPS) integrates genome-wide information from MAGMA gene-level associations and over 57,000 gene-level features.",
+        context:
+          "Gene prioritization method used to nominate causal genes at PD GWAS loci",
+        projectRef: "GWAS section: PD gene prioritization methodology",
       },
     ],
     verificationStatus: "verified",

@@ -170,6 +170,28 @@ export const clinicalTrialsSources: Source[] = [
         projectRef:
           "Findings section: Deferiprone NTB z-score comparison",
       },
+      {
+        citationId: "ayton-2025-jamaneurol-c3",
+        sourceId: "ayton-2025-jamaneurol",
+        quote:
+          "81 were found to be eligible and consented to participate in a phase 2, double-masked, placebo-controlled randomized clinical trial",
+        context:
+          "3D trial enrollment: 81 patients randomized (53 deferiprone, 28 placebo)",
+        location: "Abstract, Methods",
+        projectRef:
+          "Drug browser: Deferiprone (AD) detail tooltip — enrollment",
+      },
+      {
+        citationId: "ayton-2025-jamaneurol-c4",
+        sourceId: "ayton-2025-jamaneurol",
+        quote:
+          "deferiprone decreased QSM (iron) of the hippocampus compared with placebo",
+        context:
+          "Iron chelation worked: hippocampal iron fell, but cognition worsened",
+        location: "Results",
+        projectRef:
+          "Drug browser: Deferiprone (AD) detail tooltip — hippocampal iron reduction",
+      },
     ],
     verificationStatus: "verified",
   },
@@ -966,6 +988,153 @@ export const clinicalTrialsSources: Source[] = [
           "CDR-SB accelerates early then decelerates, producing sigmoidal shape",
         projectRef:
           "Lecanemab critique section: sigmoidal trajectory detail",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  // ---- Multi-layer treatments & alternatives insight section ----
+  {
+    id: "cummings-2022-alzdement",
+    title:
+      "The costs of developing treatments for Alzheimer's disease: A retrospective exploration",
+    authors: "Cummings JL, Goldman DP, Simmons-Stern NR, Ponton E.",
+    journal: "Alzheimer's & Dementia",
+    year: 2022,
+    doi: "10.1002/alz.12450",
+    pmid: "34581499",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8940715/#:~:text=cumulative%20private%20expenditures%20on%20clinical%20stage%20AD%20R%26D%20were%20estimated%20at%20%2442.5%20billion",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "cummings-2022-alzdement-c1",
+        sourceId: "cummings-2022-alzdement",
+        quote:
+          "Since 1995, cumulative private expenditures on clinical stage AD R&D were estimated at $42.5 billion",
+        context: "Total private spending on Alzheimer's drug development",
+        projectRef:
+          "Alternatives insight: amyloid beta spending comparison",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "sabbagh-2025-alzdement",
+    title:
+      "Blarcamesine in Early Alzheimer Disease Phase 2b/3 Randomized Clinical Trial",
+    authors: "Sabbagh MN, Chezem WR, Jin K, Missling CU.",
+    journal: "Alzheimer's & Dementia",
+    year: 2025,
+    doi: "10.1002/alz.090729",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11713060/#:~:text=blarcamesine%20group%20demonstrated%20improvement%20compared%20to%20the%20placebo%20group%20in%20all%20clinical%20endpoints",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "sabbagh-2025-alzdement-c1",
+        sourceId: "sabbagh-2025-alzdement",
+        quote:
+          "The blarcamesine group demonstrated improvement compared to the placebo group in all clinical endpoints at 48 weeks",
+        context:
+          "Phase 2b/3 trial results for sigma-1 receptor agonist",
+        projectRef:
+          "Multi-layer treatments: blarcamesine efficacy",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "shen-2024-frontpharmacol",
+    title:
+      "Molecular mechanisms and therapeutic potential of lithium in Alzheimer's disease: repurposing an old class of drugs",
+    authors: "Shen Y, Zhao M, Zhao P, et al.",
+    journal: "Frontiers in Pharmacology",
+    year: 2024,
+    doi: "10.3389/fphar.2024.1408462",
+    url: "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1408462/full#:~:text=lithium%20can%20reduce%20amyloid%20deposition%20and%20tau%20phosphorylation%2C%20regulate%20autophagy",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "shen-2024-frontpharmacol-c1",
+        sourceId: "shen-2024-frontpharmacol",
+        quote:
+          "lithium can reduce amyloid deposition and tau phosphorylation, regulate autophagy, inflammation, oxidative stress",
+        context: "Lithium multi-target neuroprotection mechanisms",
+        projectRef:
+          "Multi-layer treatments: lithium multi-layer note",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "chan-2022-plosone",
+    title:
+      "Gamma frequency sensory stimulation in mild probable Alzheimer's dementia patients: Results of feasibility and pilot studies",
+    authors: "Chan D, Suk HJ, Jackson BL, et al.",
+    journal: "PLoS One",
+    year: 2022,
+    doi: "10.1371/journal.pone.0278412",
+    pmid: "36454969",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9714888/#:~:text=lesser%20ventricular%20dilation%20and%20hippocampal%20atrophy",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "chan-2022-plosone-c1",
+        sourceId: "chan-2022-plosone",
+        quote:
+          "the group receiving 40Hz stimulation showed lesser ventricular dilation and hippocampal atrophy, increased functional connectivity in the default mode network",
+        context:
+          "40Hz gamma stimulation reduces brain atrophy and improves connectivity",
+        projectRef:
+          "Multi-layer treatments: 40 Hz gamma stimulation note",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "yehia-2024-molneurodegen",
+    title:
+      "Melatonin: a ferroptosis inhibitor with potential therapeutic efficacy for the post-COVID-19 trajectory of accelerated brain aging and neurodegeneration",
+    authors: "Yehia A, Abulseoud OA.",
+    journal: "Molecular Neurodegeneration",
+    year: 2024,
+    doi: "10.1186/s13024-024-00728-6",
+    pmid: "38641847",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11031980/#:~:text=Melatonin%20can%20block%20the%20leading%20events%20of%20ferroptosis%20since%20it%20is%20an%20efficient%20anti-inflammatory%2C%20iron%20chelator",
+    tags: ["ferroptosis", "iron", "clinical-trials"],
+    citations: [
+      {
+        citationId: "yehia-2024-molneurodegen-c1",
+        sourceId: "yehia-2024-molneurodegen",
+        quote:
+          "Melatonin can block the leading events of ferroptosis since it is an efficient anti-inflammatory, iron chelator, antioxidant, angiotensin II antagonist, and clock gene regulator",
+        context:
+          "Melatonin as multi-mechanism ferroptosis inhibitor",
+        projectRef:
+          "Multi-layer treatments: melatonin note",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "song-2020-frontneurosci",
+    title:
+      "Nrf2 and Ferroptosis: A New Research Direction for Neurodegenerative Diseases",
+    authors: "Song X, Long D.",
+    journal: "Frontiers in Neuroscience",
+    year: 2020,
+    doi: "10.3389/fnins.2020.00267",
+    pmid: "32372896",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7186402/#:~:text=Nrf2%20can%20directly%20or%20indirectly%20regulate%20GPX4%20protein%20content",
+    tags: ["ferroptosis", "iron"],
+    citations: [
+      {
+        citationId: "song-2020-frontneurosci-c1",
+        sourceId: "song-2020-frontneurosci",
+        quote:
+          "Nrf2 can directly or indirectly regulate GPX4 protein content...intracellular free iron content...mitochondrial function...thereby regulating ferroptosis process",
+        context:
+          "Nrf2 as master regulator of ferroptosis pathways",
+        projectRef:
+          "Multi-layer treatments: sulforaphane Nrf2 note",
       },
     ],
     verificationStatus: "verified",

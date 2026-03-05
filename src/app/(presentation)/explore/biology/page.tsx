@@ -39,7 +39,7 @@ export default function BiologyOverview() {
             className="glass-card glass-card-hover p-6 group block"
           >
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-2xl font-bold text-teal-400 font-mono">
+              <span className="text-2xl font-bold text-teal-400 font-serif">
                 {pillar.letter}
               </span>
               <h3 className="text-lg font-bold text-white">

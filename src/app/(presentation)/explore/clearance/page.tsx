@@ -7,7 +7,7 @@ import { Expandable } from "@/components/ui/expandable";
 import { ChartSection } from "@/components/kinetics/chart-section";
 import { ClearanceChart } from "@/components/clearance/clearance-chart";
 import { FerroptosisPhaseChart } from "@/components/clearance/ferroptosis-phase-chart";
-import { FeedbackChart } from "@/components/clearance/feedback-chart";
+import { ClearanceDeclineChart } from "@/components/clearance/feedback-chart";
 import { CellTypeChart } from "@/components/clearance/cell-type-chart";
 import { ScenarioSelector } from "@/components/clearance/scenario-selector";
 import { ClearanceControls } from "@/components/clearance/clearance-controls";
@@ -18,94 +18,53 @@ import { scenarioResults, healthyResult } from "@/data/clearance/scenarios";
 import {
   compartmentChartContent,
   ferroptosisChartContent,
-  feedbackChartContent,
+  clearanceDeclineContent,
   cellTypeChartContent,
 } from "@/data/clearance/chart-content";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import type {
-  ClearanceParameters,
-  DiseasePerturbations,
+  CoreParameters,
+  OptionalExtensions,
 } from "@/lib/clearance/types";
 
 export default function ClearancePage() {
-  // Active scenario
   const [activeScenario, setActiveScenario] = useState("healthy");
-
-  // Parameter overrides (from sliders)
-  const [paramOverrides, setParamOverrides] = useState<
-    Partial<ClearanceParameters>
-  >({});
-
-  // Disease perturbation toggles
-  const [perturbations, setPerturbations] = useState<DiseasePerturbations>({
-    hypertension: false,
-    diabetes: false,
-    sleepDisruption: false,
-    chronicHepcidin: false,
-  });
-
-  // Compare to healthy reference
+  const [paramOverrides, setParamOverrides] = useState<Partial<CoreParameters>>({});
+  const [extensionOverrides, setExtensionOverrides] = useState<Partial<OptionalExtensions>>({});
   const [showReference, setShowReference] = useState(false);
-
-  // Mobile controls expanded
   const [mobileControlsOpen, setMobileControlsOpen] = useState(false);
 
-  // Whether user has customized (if so, run live simulation)
   const hasCustomizations =
     Object.keys(paramOverrides).length > 0 ||
-    perturbations.hypertension ||
-    perturbations.diabetes ||
-    perturbations.sleepDisruption ||
-    perturbations.chronicHepcidin;
+    Object.values(extensionOverrides).some((ext) => ext?.enabled);
 
-  // Active result: pre-computed if no customizations, live if customized
   const result = useMemo(() => {
     if (!hasCustomizations && scenarioResults[activeScenario]) {
       return scenarioResults[activeScenario];
     }
 
-    // Get scenario base params
     const scenario = clearanceScenarios.find((s) => s.id === activeScenario);
-    const scenarioParams = scenario?.parameters ?? {};
+    const mergedCore = { ...scenario?.overrides, ...paramOverrides };
+    const mergedExt = { ...scenario?.extensionOverrides, ...extensionOverrides };
 
-    return simulateClearance({
-      ...scenarioParams,
-      ...paramOverrides,
-      perturbations,
-    });
-  }, [activeScenario, paramOverrides, perturbations, hasCustomizations]);
+    return simulateClearance(mergedCore, mergedExt);
+  }, [activeScenario, paramOverrides, extensionOverrides, hasCustomizations]);
 
-  // Healthy reference for comparison
   const reference = showReference ? healthyResult : undefined;
-
-  // Summary stats
   const stats = useMemo(() => summarize(result), [result]);
 
-  // Handle scenario selection
-  const handleScenarioSelect = useCallback(
-    (id: string) => {
-      setActiveScenario(id);
+  const handleScenarioSelect = useCallback((id: string) => {
+    setActiveScenario(id);
+    setParamOverrides({});
 
-      // Apply scenario's perturbations if defined
-      const scenario = clearanceScenarios.find((s) => s.id === id);
-      if (scenario?.parameters?.perturbations) {
-        setPerturbations(scenario.parameters.perturbations);
-      } else {
-        setPerturbations({
-          hypertension: false,
-          diabetes: false,
-          sleepDisruption: false,
-          chronicHepcidin: false,
-        });
-      }
+    const scenario = clearanceScenarios.find((s) => s.id === id);
+    if (scenario?.extensionOverrides) {
+      setExtensionOverrides(scenario.extensionOverrides);
+    } else {
+      setExtensionOverrides({});
+    }
+  }, []);
 
-      // Reset slider overrides when switching scenarios
-      setParamOverrides({});
-    },
-    []
-  );
-
-  // Handle individual parameter change
   const handleParamChange = useCallback(
     (key: string, value: number | string) => {
       setParamOverrides((prev) => ({ ...prev, [key]: value }));
@@ -127,8 +86,7 @@ export default function ClearancePage() {
           <p className="text-gray-400 max-w-2xl">
             Iron exits the brain through a serial pathway: cell to ISF via
             ferroportin, ISF to CSF via glymphatic flow, CSF to periphery via
-            drainage. Each step declines with age, and iron-coupled feedback
-            loops accelerate the decline. Adjust parameters to see how
+            drainage. Each step declines with age. Adjust parameters to see how
             comorbidities, genetics, and sex affect the trajectory.
           </p>
         </Container>
@@ -158,10 +116,10 @@ export default function ClearancePage() {
               >
                 <ClearanceControls
                   params={paramOverrides}
-                  perturbations={perturbations}
+                  extensions={extensionOverrides}
                   showReference={showReference}
                   onParamChange={handleParamChange}
-                  onPerturbationsChange={setPerturbations}
+                  onExtensionsChange={setExtensionOverrides}
                   onToggleReference={() => setShowReference((v) => !v)}
                 />
               </Expandable>
@@ -194,14 +152,14 @@ export default function ClearancePage() {
                 <FerroptosisPhaseChart data={result} reference={reference} />
               </ChartSection>
 
-              {/* Chart 3: Feedback loops */}
+              {/* Chart 3: Clearance decline */}
               <ChartSection
-                title={feedbackChartContent.title}
-                description={feedbackChartContent.description}
-                above={feedbackChartContent.above}
-                below={feedbackChartContent.below}
+                title={clearanceDeclineContent.title}
+                description={clearanceDeclineContent.description}
+                above={clearanceDeclineContent.above}
+                below={clearanceDeclineContent.below}
               >
-                <FeedbackChart data={result} reference={reference} />
+                <ClearanceDeclineChart data={result} reference={reference} />
               </ChartSection>
 
               {/* Chart 4: Cell-type budget */}
@@ -219,10 +177,10 @@ export default function ClearancePage() {
               <div className="sticky top-20">
                 <ClearanceControls
                   params={paramOverrides}
-                  perturbations={perturbations}
+                  extensions={extensionOverrides}
                   showReference={showReference}
                   onParamChange={handleParamChange}
-                  onPerturbationsChange={setPerturbations}
+                  onExtensionsChange={setExtensionOverrides}
                   onToggleReference={() => setShowReference((v) => !v)}
                 />
               </div>
@@ -253,7 +211,7 @@ export default function ClearancePage() {
             <StatCard
               label="ISF iron at 70"
               value={`${stats.isfAt70.toFixed(3)} \u00B5M`}
-              detail="Baseline: ~0.005 \u00B5M"
+              detail="Baseline: 1.0 \u00B5M"
             />
           </div>
         </Container>
@@ -265,46 +223,40 @@ export default function ClearancePage() {
           <Expandable title="Model methodology and parameter sources" variant="dark">
             <div className="space-y-4 text-sm text-gray-400 leading-relaxed">
               <p>
-                This is a 5-variable serial ODE model (LIP, ferritin, ISF, CSF,
-                cumulative damage) with four iron-coupled feedback loops. The
-                model uses fourth-order Runge-Kutta integration with dt=0.05
-                years.
+                This is a 4-variable serial ODE model (LIP, ferritin, ISF, CSF)
+                with optional extensions for disease perturbations. The model
+                uses fourth-order Runge-Kutta integration with dt=0.05 years.
               </p>
               <p>
-                <strong className="text-gray-200">Feedback loops:</strong>{" "}
-                (1) Cu depletion: cumulative oxidative damage depletes Cu,
-                reducing ferroxidase activity and stalling Fpn export. (2)
-                Dynamic hepcidin: elevated LIP triggers microglial IL-6,
-                raising hepcidin, internalizing Fpn. (3) Rho decline: damage
-                causes neurite retraction (Phase 1) and neuron death (Phase 2),
-                reducing ISF recapture. (4) Protein-iron: above a damage
-                threshold, iron-protein interactions mildly amplify effective
-                iron burden.
+                <strong className="text-gray-200">Serial pathway:</strong>{" "}
+                Iron flows LIP {"\u2192"} ferroportin export {"\u2192"} ISF {"\u2192"}{" "}
+                glymphatic flow {"\u2192"} CSF {"\u2192"} drainage. ~85% of
+                Fpn-exported iron is recaptured by neighboring cells (rho = 0.85),
+                so the system primarily redistributes iron rather than exporting it.
               </p>
               <p>
-                <strong className="text-gray-200">
-                  Key parameter sources:
-                </strong>{" "}
-                Ferroportin flux from Bao et al. 2021 back-calculation. Glymphatic
-                decline from Kress et al. 2014 (mouse) extrapolated to human at
-                ~1.2%/year after age 30. ISF recapture fraction (rho ~0.85) from
-                mass balance. Disease perturbations from Mestre 2018 (HTN),
-                Jiang 2017 (DM), Xie 2013 (sleep).
+                <strong className="text-gray-200">Parameter sources:</strong>{" "}
+                Every parameter is classified as measured, derived, or assumed.
+                Derived parameters are computed from measured baselines via
+                steady-state constraints. LIP baseline 0.8 {"\u00B5"}M
+                (Kakhlon {"\u0026"} Cabantchik 2002). CSF iron 61 {"\u00B5"}g/L (LeVine 1998).
+                CSF turnover ~3.5{"\u00D7"}/day (Hladky {"\u0026"} Barrand 2022).
+                Iron uptake ~0.5 mg/year (Hallgren {"\u0026"} Sourander 1958).
               </p>
               <p>
-                <strong className="text-gray-200">Confidence levels:</strong>{" "}
-                Parameters are color-coded by confidence. Green (high) =
-                well-measured in human studies. Amber (moderate) = estimated from
-                animal data or indirect measurements. Red (low) = poorly
-                constrained, based on mechanistic reasoning.
+                <strong className="text-gray-200">Age-dependent decline:</strong>{" "}
+                Fpn activity declines ~1%/year after age 40 (direction confirmed
+                by Raha 2022, Lupo 2022; rate assumed). Glymphatic flow declines
+                ~1.2%/year after age 30 (Patterson 2015; total A{"\u03B2"} clearance,
+                not iron-specific).
               </p>
               <p>
-                <strong className="text-gray-200">Limitations:</strong> No
-                iron-specific glymphatic clearance rate has been directly
-                measured. Feedback loop coupling strengths are estimated from
-                mechanistic reasoning, not fitted to human longitudinal data.
-                Ferroptosis thresholds are estimated from Bao 2021 mouse
-                timelines with allometric scaling.
+                <strong className="text-gray-200">Limitations:</strong>{" "}
+                No iron-specific glymphatic clearance rate has been measured.
+                Ferroptosis thresholds (1.2{"\u00D7"}, 1.5{"\u00D7"} baseline) are
+                illustrative. A 2025 study (PMC12236665) found LIP may not
+                increase during ferroptosis; redistribution may matter more
+                than total LIP level.
               </p>
             </div>
           </Expandable>
@@ -332,7 +284,7 @@ function StatCard({
         {label}
       </p>
       <p className="font-serif text-2xl text-white">{value}</p>
-      <p className="text-xs text-gray-500 mt-1">{detail}</p>
+      <p className="text-xs text-gray-400 mt-1">{detail}</p>
     </motion.div>
   );
 }

@@ -42,7 +42,7 @@ export function Expandable({
 
   return (
     <div
-      className={`rounded-lg border ${dark ? "border-white/10" : "border-gray-200"} ${className}`}
+      className={`border ${dark ? "border-white/10" : "border-gray-200"} ${className}`}
     >
       <button
         onClick={toggle}

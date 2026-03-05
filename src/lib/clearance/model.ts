@@ -1,17 +1,11 @@
 /**
- * FELINE Clearance Model — 5-variable serial ODE system with feedback loops
+ * FELINE Clearance Model v2 — 3-state ODE, CSF algebraic
  *
- * State variables: LIP, Ferritin, ISF, CSF, cumulative Damage
- * Primary pathway: Cell --Fpn+ferroxidase--> ISF --glymphatic--> CSF --> periphery
- *
- * Iron-coupled feedback loops:
- *  1. Cu depletion: cumulative oxidative damage → ferroxidase loss → Fpn stall
- *  2. Hepcidin: LIP elevation → microglial activation → IL-6 → hepcidin → Fpn loss
- *  3. Rho decline: cumulative damage → reduced recapture → more ISF NTBI → more damage
- *  4. Protein-iron: once damage exceeds threshold, Aβ/tau interactions mildly amplify iron uptake
- *
- * Design: effective rate constants calibrated so healthy e3/e3 brain at age 30
- * is near steady state. Feedback loops produce nonlinear acceleration in later phases.
+ * State: [Fe_LIP, Fe_ferritin, Fe_ISF]
+ * Core pathway: uptake → LIP ⇌ ferritin, LIP → Fpn → ISF → glymphatic → out
+ * CSF computed algebraically (equilibrates in hours, model timescale = years).
+ * Acceleration from age-dependent decline in Fpn and glymphatic clearance.
+ * Optional extensions toggled independently.
  */
 
 import type {
@@ -20,16 +14,13 @@ import type {
   ClearanceTimePoint,
   ClearanceResult,
 } from "./types";
-import { buildClearanceParameters } from "./parameters";
+import { buildClearanceParameters, BASELINES, CSF_BASELINE_UM } from "./parameters";
+import type { CoreParameters, OptionalExtensions } from "./types";
 
-// ── State ↔ Array conversion ────────────────────────────────────────
+// ── State ↔ Array ───────────────────────────────────────────────────
 
 const STATE_KEYS: (keyof ClearanceState)[] = [
-  "Fe_LIP",
-  "Fe_ferritin",
-  "Fe_ISF",
-  "Fe_CSF",
-  "damage",
+  "Fe_LIP", "Fe_ferritin", "Fe_ISF",
 ];
 
 function stateToArray(s: ClearanceState): number[] {
@@ -37,59 +28,79 @@ function stateToArray(s: ClearanceState): number[] {
 }
 
 function arrayToState(a: number[]): ClearanceState {
-  const s: Record<string, number> = {};
-  STATE_KEYS.forEach((k, i) => {
-    s[k] = a[i];
-  });
-  return s as unknown as ClearanceState;
+  return {
+    Fe_LIP: a[0],
+    Fe_ferritin: a[1],
+    Fe_ISF: a[2],
+  };
 }
 
 // ── Age-dependent modifiers ─────────────────────────────────────────
 
-/** Fpn export modifier: age-dependent decline after 40 */
-function fpnAgeModifier(age: number, p: ClearanceParameters): number {
-  const decline = p.fpn_decline_rate * p.apoe_decline_accel;
-  return Math.max(0.2, 1.0 - decline * Math.max(0, age - 40));
+/** Fpn export modifier: linear decline after age 40 */
+function fpnAgeMod(age: number, p: ClearanceParameters): number {
+  const rate = p.fpn_decline_rate * p.apoe_decline_accel;
+  return Math.max(0.2, 1.0 - rate * Math.max(0, age - 40));
 }
 
-/** Glymphatic modifier: age-dependent decline after 30 */
-function glyModifier(age: number, p: ClearanceParameters): number {
-  const decline = p.gly_decline_rate * p.apoe_decline_accel;
-  return Math.max(0.2, 1.0 - decline * Math.max(0, age - 30));
+/** Glymphatic modifier: linear decline after age 30 */
+function glyAgeMod(age: number, p: ClearanceParameters): number {
+  const rate = p.gly_decline_rate * p.apoe_decline_accel;
+  return Math.max(0.2, 1.0 - rate * Math.max(0, age - 30));
 }
 
-/** Sex modifier for iron uptake rate */
-function sexModifier(age: number, p: ClearanceParameters): number {
+/** Sex modifier for iron uptake — smooth sigmoid menopause transition */
+function sexMod(age: number, p: ClearanceParameters): number {
   if (p.sex === "male") return 1.0;
-  if (age < 51) return 0.75;
-  return 1.1;
+  // Sigmoid transition centered at age 51, ~5-year perimenopause window
+  const preMeno = 0.75;  // menstrual iron loss offsets uptake
+  const postMeno = 1.1;  // accelerated accumulation
+  const sigmoid = 1 / (1 + Math.exp(-0.8 * (age - 51)));
+  return preMeno + (postMeno - preMeno) * sigmoid;
 }
 
-/** Disease perturbation multiplier on glymphatic clearance */
-function diseaseGlyMultiplier(p: ClearanceParameters): number {
-  let mult = 1.0;
-  if (p.perturbations.hypertension) mult *= 1.0 - p.htn_gly_factor;
-  if (p.perturbations.diabetes) mult *= 1.0 - p.dm_gly_factor;
-  if (p.perturbations.sleepDisruption) mult *= 1.0 - p.sleep_gly_factor;
-  return mult;
+// ── Sex-specific steady-state ────────────────────────────────────────
+
+/** Compute initial steady-state for given parameters (accounts for sex) */
+function computeSteadyState(p: ClearanceParameters): ClearanceState {
+  const sMod = sexMod(p.startAge, p);
+  const J = p.J_uptake * sMod;
+
+  // LIP: J_uptake * sexMod = k_fpn_eff * Fe_LIP (no age decline at startAge)
+  const Fe_LIP = J / p.k_fpn_eff;
+
+  // Ferritin: solve k_storage * LIP * capFrac = k_fp * Fe_ferritin
+  const Fe_ferritin = p.k_storage * Fe_LIP * p.ferritin_capacity /
+    (p.k_ferritinophagy_basal * p.ferritin_capacity + p.k_storage * Fe_LIP);
+
+  // ISF: (1-rho) * k_fpn_eff * Fe_LIP = k_gly * Fe_ISF
+  const Fe_ISF = (1 - p.rho) * p.k_fpn_eff * Fe_LIP / p.k_gly;
+
+  return { Fe_LIP, Fe_ferritin, Fe_ISF };
 }
 
-/** Static disease perturbation multiplier on Fpn (chronic hepcidin toggle + inflammaging) */
-function diseaseStaticFpnMultiplier(p: ClearanceParameters): number {
-  let mult = 1.0;
-  if (p.perturbations.chronicHepcidin) mult *= 1.0 - p.hepcidin_fpn_factor;
-  if (p.perturbations.hypertension) mult *= 0.95;
-  if (p.perturbations.diabetes) mult *= 0.90;
-  if (p.perturbations.sleepDisruption) mult *= 0.95;
-  return mult;
+// ── Extension modifiers ─────────────────────────────────────────────
+
+function diseaseGlyMultiplier(ext: OptionalExtensions): number {
+  let m = 1.0;
+  if (ext.hypertension.enabled) m *= (1.0 - ext.hypertension.gly_reduction);
+  if (ext.diabetes.enabled) m *= (1.0 - ext.diabetes.gly_reduction);
+  if (ext.sleepDisruption.enabled) m *= (1.0 - ext.sleepDisruption.gly_reduction);
+  return m;
 }
 
-// ── Ferroptosis phase detection ─────────────────────────────────────
+function diseaseFpnMultiplier(ext: OptionalExtensions): number {
+  let m = 1.0;
+  if (ext.chronicHepcidin.enabled) m *= (1.0 - ext.chronicHepcidin.fpn_reduction);
+  return m;
+}
+
+// ── Phase detection ─────────────────────────────────────────────────
 
 function getPhase(
   Fe_LIP: number,
   baseline: number,
-  p: ClearanceParameters
+  p: ClearanceParameters,
 ): 0 | 1 | 2 {
   const ratio = Fe_LIP / baseline;
   if (ratio >= p.phase2_threshold) return 2;
@@ -97,98 +108,71 @@ function getPhase(
   return 0;
 }
 
-// ── ODE derivatives ─────────────────────────────────────────────────
+// ── CSF algebraic computation ───────────────────────────────────────
+// CSF equilibrates in hours (turnover 3.5x/day). On our yearly timescale,
+// CSF concentration is always at quasi-steady-state:
+//   Fe_CSF = (J_glymphatic + J_CP) / k_CSF
+
+function computeCSF(
+  Fe_ISF: number,
+  age: number,
+  p: ClearanceParameters,
+): number {
+  const glyMod = glyAgeMod(age, p) * diseaseGlyMultiplier(p.extensions);
+  const J_gly = p.k_gly * Fe_ISF * glyMod;
+  return (J_gly + p.J_CP_secretion) / p.k_CSF_absorption;
+}
+
+// ── ODE derivatives (3-state) ───────────────────────────────────────
 
 function derivatives(
   age: number,
   state: number[],
   p: ClearanceParameters,
-  lipBaseline: number
+  lipBaseline: number,
 ): number[] {
   const s = arrayToState(state);
-  const d = new Array(STATE_KEYS.length).fill(0);
+  const ext = p.extensions;
 
-  const lipRatio = s.Fe_LIP / lipBaseline;
-  const lipExcess = Math.max(0, lipRatio - 1.0);
-  const D = s.damage;
+  // Modifiers
+  const fpnMod = fpnAgeMod(age, p) * diseaseFpnMultiplier(ext);
+  const glyMod = glyAgeMod(age, p) * diseaseGlyMultiplier(ext);
+  const sMod = sexMod(age, p);
 
-  // ── Feedback loop 1: Dynamic ferroxidase (Cu depletion) ─────────
-  // Cumulative oxidative damage depletes Cu → ferroxidase activity drops
-  const ferroxidase_eff = p.f_ferroxidase * Math.max(0.3, 1.0 - D);
+  // ── LIP ───────────────────────────────────────────────────────
+  const J_uptake = p.J_uptake * sMod;
 
-  // ── Feedback loop 2: Dynamic hepcidin response ──────────────────
-  // Elevated LIP → microglial activation → IL-6 → hepcidin → Fpn loss
-  const hepcidin_dynamic = Math.min(0.6, p.k_hepcidin_response * lipExcess);
+  // Ferritin storage (saturable)
+  const capFrac = Math.max(0, (p.ferritin_capacity - s.Fe_ferritin) / p.ferritin_capacity);
+  const J_storage = p.k_storage * s.Fe_LIP * capFrac;
 
-  // ── Combined Fpn modifier ───────────────────────────────────────
-  const fpnMod =
-    fpnAgeModifier(age, p) *
-    diseaseStaticFpnMultiplier(p) *
-    ferroxidase_eff *
-    (1.0 - hepcidin_dynamic);
+  // Ferritinophagy: basal (always active) + optional extra
+  const k_fp = p.k_ferritinophagy_basal
+    + (ext.ferritinophagy.enabled ? ext.ferritinophagy.k_ferritinophagy_extra : 0);
+  const J_ferritinophagy = k_fp * s.Fe_ferritin;
 
-  const glyMod =
-    glyModifier(age, p) * diseaseGlyMultiplier(p) * p.aqp4_polarity;
-  const sexMod = sexModifier(age, p);
+  // Fpn export
+  const J_fpn = p.k_fpn_eff * s.Fe_LIP * fpnMod;
 
-  // ── Feedback loop 4: Protein-iron amplifier ─────────────────────
-  // Once damage exceeds threshold, Aβ-iron concentration and tau transport
-  // disruption mildly increase effective iron burden
-  const proteinAmp =
-    D > p.protein_damage_threshold
-      ? 1.0 + p.k_protein_amplifier * (D - p.protein_damage_threshold)
-      : 1.0;
-
-  // ── Compartment 1: LIP ──────────────────────────────────────────
-
-  const J_uptake = p.J_uptake * sexMod * proteinAmp;
-  const J_ferritinophagy = p.k_ferritinophagy * s.Fe_ferritin;
-  const capFraction = Math.max(
-    0,
-    (p.ferritin_capacity - s.Fe_ferritin) / p.ferritin_capacity
-  );
-  const J_storage = p.k_storage * s.Fe_LIP * capFraction;
-
-  const k_fpn_eff = (p.N_fpn / 150) * (p.k_cat / 5.0);
-  const J_fpn_export = p.k_fpn_base * k_fpn_eff * s.Fe_LIP * fpnMod;
-
+  // Ferroptosis consumption (optional)
   const phase = getPhase(s.Fe_LIP, lipBaseline, p);
-  const J_ferroptosis =
-    phase === 2
-      ? p.k_ferroptosis * (s.Fe_LIP - lipBaseline * p.phase2_threshold)
-      : 0;
+  const J_ferroptosis = (ext.ferroptosisConsumption.enabled && phase === 2)
+    ? ext.ferroptosisConsumption.k_ferroptosis * (s.Fe_LIP - lipBaseline * p.phase2_threshold)
+    : 0;
 
-  d[0] =
-    J_uptake + J_ferritinophagy - J_storage - J_fpn_export - J_ferroptosis;
+  const dLIP = J_uptake + J_ferritinophagy - J_storage - J_fpn - J_ferroptosis;
 
-  // ── Compartment 2: Ferritin ─────────────────────────────────────
+  // ── Ferritin ──────────────────────────────────────────────────
+  const dFerritin = J_storage - J_ferritinophagy;
 
-  const J_EV = p.k_EV_secretion * s.Fe_ferritin;
-  d[1] = J_storage - J_ferritinophagy - J_EV;
-
-  // ── Compartment 3: ISF ──────────────────────────────────────────
-
-  // ── Feedback loop 3: Rho declines with cumulative damage ────────
-  // Damage → neurite retraction (Phase 1) + neuron death (Phase 2)
-  // → reduced recapture surface → more NTBI persists in ISF
-  const rho = p.rho * Math.max(0.4, 1.0 - p.k_rho_damage * D);
-
-  const J_fpn_to_ISF = (1 - rho) * J_fpn_export;
+  // ── ISF ───────────────────────────────────────────────────────
+  const J_fpn_to_ISF = (1 - p.rho) * J_fpn;
   const J_glymphatic = p.k_gly * s.Fe_ISF * glyMod;
+  const J_BBB = ext.bbbLeak.enabled ? ext.bbbLeak.J_BBB_leak : 0;
 
-  d[2] = J_fpn_to_ISF + p.J_cell_death + p.J_BBB_leak - J_glymphatic;
+  const dISF = J_fpn_to_ISF + J_BBB - J_glymphatic;
 
-  // ── Compartment 4: CSF ──────────────────────────────────────────
-
-  const J_CSF_absorption = p.k_CSF_absorption * s.Fe_CSF;
-  d[3] = J_glymphatic + p.J_CP_secretion - J_CSF_absorption;
-
-  // ── Cumulative damage ───────────────────────────────────────────
-  // Driven by LIP excess above baseline. Irreversible (no recovery term).
-  // Represents: Cu depletion, oxidized Cp, damaged transporters, protein aggregation
-  d[4] = p.k_oxidative_damage * lipExcess;
-
-  return d;
+  return [dLIP, dFerritin, dISF];
 }
 
 // ── RK4 solver ──────────────────────────────────────────────────────
@@ -198,65 +182,48 @@ function rk4Step(
   y: number[],
   dt: number,
   p: ClearanceParameters,
-  lipBaseline: number
+  lipBaseline: number,
 ): number[] {
   const k1 = derivatives(age, y, p, lipBaseline);
   const k2 = derivatives(
     age + dt / 2,
     y.map((v, i) => v + (dt / 2) * k1[i]),
-    p,
-    lipBaseline
+    p, lipBaseline,
   );
   const k3 = derivatives(
     age + dt / 2,
     y.map((v, i) => v + (dt / 2) * k2[i]),
-    p,
-    lipBaseline
+    p, lipBaseline,
   );
   const k4 = derivatives(
     age + dt,
     y.map((v, i) => v + dt * k3[i]),
-    p,
-    lipBaseline
+    p, lipBaseline,
   );
-
   return y.map(
-    (v, i) => v + (dt / 6) * (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i])
+    (v, i) => v + (dt / 6) * (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]),
   );
 }
 
-/** Enforce physical bounds */
 function clampState(y: number[]): number[] {
-  const c = [...y];
-  c[0] = Math.max(0.01, c[0]); // Fe_LIP > 0
-  c[1] = Math.max(0, c[1]); // Fe_ferritin >= 0
-  c[2] = Math.max(0, c[2]); // Fe_ISF >= 0
-  c[3] = Math.max(0, c[3]); // Fe_CSF >= 0
-  c[4] = Math.max(0, Math.min(1.0, c[4])); // damage 0-1
-  return c;
-}
-
-/** Initial state */
-function initialState(): ClearanceState {
-  return {
-    Fe_LIP: 2.5, // µM baseline
-    Fe_ferritin: 25.0, // µM
-    Fe_ISF: 0.005, // µM — near steady-state
-    Fe_CSF: 61.0, // µg/L
-    damage: 0.0, // no cumulative damage at start
-  };
+  return [
+    Math.max(0.01, y[0]),  // Fe_LIP > 0
+    Math.max(0, y[1]),      // Fe_ferritin >= 0
+    Math.max(0, y[2]),      // Fe_ISF >= 0
+  ];
 }
 
 // ── Main simulation ─────────────────────────────────────────────────
 
 export function simulateClearance(
-  overrides: Partial<ClearanceParameters> = {},
+  coreOverrides: Partial<CoreParameters> = {},
+  extensionOverrides: Partial<OptionalExtensions> = {},
   ageMax = 100,
   dt = 0.05,
-  sampleInterval = 0.5
+  sampleInterval = 0.5,
 ): ClearanceResult {
-  const p = buildClearanceParameters(overrides);
-  const init = initialState();
+  const p = buildClearanceParameters(coreOverrides, extensionOverrides);
+  const init = computeSteadyState(p);
   const lipBaseline = init.Fe_LIP;
   let y = stateToArray(init);
 
@@ -265,8 +232,7 @@ export function simulateClearance(
   let phase1Age: number | null = null;
   let phase2Age: number | null = null;
 
-  const initGly =
-    glyModifier(30, p) * diseaseGlyMultiplier(p) * p.aqp4_polarity;
+  const initGly = glyAgeMod(30, p) * diseaseGlyMultiplier(p.extensions);
 
   for (let age = p.startAge; age <= ageMax; age += dt) {
     if (age >= nextSample - dt / 2) {
@@ -276,22 +242,17 @@ export function simulateClearance(
       if (phase >= 1 && phase1Age === null) phase1Age = age;
       if (phase === 2 && phase2Age === null) phase2Age = age;
 
-      const D = s.damage;
-      const rho = p.rho * Math.max(0.4, 1.0 - p.k_rho_damage * D);
-      const ferroxidase_eff = p.f_ferroxidase * Math.max(0.3, 1.0 - D);
+      // CSF computed algebraically
+      const Fe_CSF = computeCSF(s.Fe_ISF, age, p);
 
       timePoints.push({
         age: Math.round(age * 10) / 10,
         Fe_LIP: s.Fe_LIP,
         Fe_ferritin: s.Fe_ferritin,
         Fe_ISF: s.Fe_ISF,
-        Fe_CSF: s.Fe_CSF,
-        fpn_fraction: fpnAgeModifier(age, p) * diseaseStaticFpnMultiplier(p),
-        gly_fraction:
-          glyModifier(age, p) * diseaseGlyMultiplier(p) * p.aqp4_polarity,
-        rho,
-        damage: D,
-        ferroxidase_eff,
+        Fe_CSF,
+        fpn_fraction: fpnAgeMod(age, p) * diseaseFpnMultiplier(p.extensions),
+        gly_fraction: glyAgeMod(age, p) * diseaseGlyMultiplier(p.extensions),
         phase,
       });
 
@@ -303,31 +264,32 @@ export function simulateClearance(
   }
 
   const at70 = timePoints.find((tp) => tp.age >= 70);
-  const clearanceAt70 =
-    at70 && initGly > 0 ? at70.gly_fraction / initGly : 1.0;
+  const clearanceAt70 = at70 && initGly > 0 ? at70.gly_fraction / initGly : 1.0;
 
   return {
     timePoints,
     parameters: p,
+    baselines: init,
     label: buildLabel(p),
     phase1Age,
     phase2Age,
     clearanceAt70,
-    isfAt70: at70?.Fe_ISF ?? 0.005,
+    isfAt70: at70?.Fe_ISF ?? init.Fe_ISF,
   };
 }
 
 function buildLabel(p: ClearanceParameters): string {
   const parts: string[] = [];
-
   if (p.apoe_genotype !== "e3/e3") parts.push(`APOE ${p.apoe_genotype}`);
   if (p.sex === "female") parts.push("Female");
 
+  const ext = p.extensions;
   const perturbs: string[] = [];
-  if (p.perturbations.hypertension) perturbs.push("HTN");
-  if (p.perturbations.diabetes) perturbs.push("DM");
-  if (p.perturbations.sleepDisruption) perturbs.push("Sleep");
-  if (p.perturbations.chronicHepcidin) perturbs.push("Hepcidin");
+  if (ext.hypertension.enabled) perturbs.push("HTN");
+  if (ext.diabetes.enabled) perturbs.push("DM");
+  if (ext.sleepDisruption.enabled) perturbs.push("Sleep");
+  if (ext.chronicHepcidin.enabled) perturbs.push("Hepcidin");
+  if (ext.bbbLeak.enabled) perturbs.push("BBB leak");
   if (perturbs.length > 0) parts.push(perturbs.join("+"));
 
   return parts.length > 0 ? parts.join(", ") : "Healthy aging";

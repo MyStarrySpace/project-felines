@@ -39,6 +39,11 @@ Always consult these documents when building content for the site to ensure scie
 - Export typed data structures — define interfaces/types alongside or in a shared `types.ts`.
 - Components should import data rather than hardcoding content inline.
 
+### Single Source of Truth for Copy
+- **Never duplicate text strings.** All user-visible copy must live in exactly one place (a data file in `src/data/`). Components must import and render these values, never hardcode their own copy of the same text.
+- **When searching for text to modify**, remember that source files encode special characters as Unicode escapes (`\u2019` for `'`, `\u2026` for `…`, `\u03B2` for `β`) or HTML entities (`&rsquo;`, `&hellip;`, `&beta;`). Always search for the plain ASCII portion of the string (e.g., search `What if` not `What if it\u2019s`). If a grep/search returns no results, try shorter substrings before assuming the text doesn't exist.
+- **Before writing new text in a component**, grep the codebase to confirm it isn't already defined in a data file. If it is, import it instead of duplicating.
+
 ### Modularity Principles
 - Prefer small, focused files over large monolithic ones.
 - Separate concerns: data, presentation, and logic should live in different files when practical.
@@ -91,6 +96,7 @@ Webflow-style scroll choreography. Dark theme, typography-driven, cinematic paci
 - Explore pages may use `glass-card` class (minimal border, no backdrop-blur)
 
 ### What NOT to add
+- Rounded corners (`rounded-*`) on bars, cards, or UI elements
 - Ambient orbs, parallax backgrounds, dot patterns
 - Glass/frosted cards with backdrop-filter
 - Gradient text (`text-gradient-teal` removed)

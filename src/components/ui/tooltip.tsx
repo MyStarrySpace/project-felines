@@ -45,7 +45,7 @@ export function Tooltip({ term, children, className = "" }: TooltipProps) {
         <span
           id="tooltip-content"
           role="tooltip"
-          className="absolute bottom-full left-1/2 z-50 mb-2 w-64 -translate-x-1/2 rounded-md bg-navy-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg"
+          className="absolute bottom-full left-1/2 z-50 mb-2 w-64 -translate-x-1/2 bg-navy-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg"
         >
           {children}
           <span className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-navy-900" />
