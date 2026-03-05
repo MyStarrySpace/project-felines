@@ -272,12 +272,12 @@ function SubcategoryGroup({
 }) {
   const description = subcategoryDescriptions[label];
   return (
-    <div className="mb-5">
-      <p className="text-[10px] uppercase tracking-wider text-gray-500 mb-1">
+    <div className="py-5 border-t border-white/5">
+      <p className="text-sm font-medium text-gray-300 mb-0.5">
         {label}
       </p>
       {description && (
-        <p className="text-xs text-gray-500 mb-2">{description}</p>
+        <p className="text-xs text-gray-500 mb-3">{description}</p>
       )}
       <div className="flex flex-wrap gap-1.5">
         {genes.map((gene) => (
@@ -316,7 +316,7 @@ export function GwasBrowser() {
           exit={{ opacity: 0, y: -4 }}
           transition={{ duration: 0.2 }}
         >
-          <p className="text-xs text-gray-500 mb-4">
+          <p className="text-base text-gray-400 mb-2">
             <span className="text-white font-medium">{layerLabels[activeLayer]}</span>
             {" "}&middot; {counts[activeLayer]} gene{counts[activeLayer] !== 1 ? "s" : ""}
           </p>
