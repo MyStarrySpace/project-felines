@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback, type ReactNode } from "react";
+import { Suspense, useState, useRef, useEffect, useCallback, type ReactNode } from "react";
 import {
   motion,
   AnimatePresence,
@@ -813,6 +813,14 @@ function IronBuildupMobile() {
 }
 
 export function IronBuildupSection() {
+  return (
+    <Suspense fallback={null}>
+      <IronBuildupInner />
+    </Suspense>
+  );
+}
+
+function IronBuildupInner() {
   const searchParams = useSearchParams();
   const editMode = searchParams.get("edit") === "iron";
   const { scrollToSection } = useScrollContext();
