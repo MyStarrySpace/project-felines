@@ -15,7 +15,7 @@ import { Cite } from "@/components/citation/cite";
 export const toxoPuzzle = {
   stat: "2.9\u00D7",
   statLabel: "dementia risk with T. gondii infection",
-  headline: "A cat parasite causes dementia without plaques.",
+  headline: (<>A cat parasite causes dementia <em>without plaques.</em></>),
   body: (
     <>
       <em>T. gondii</em> infection nearly triples dementia risk in a
@@ -26,8 +26,7 @@ export const toxoPuzzle = {
       <Cite id="yanes-2024-jinfectdis" />
     </>
   ),
-  paradox:
-    "Fewer plaques should mean less disease. T. gondii does the opposite.",
+  paradox: (<>Fewer plaques should mean less disease. <em>T. gondii does the opposite.</em></>),
   resolution: (
     <>
       T. gondii activates ferroptosis in the hippocampus

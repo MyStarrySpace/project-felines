@@ -568,6 +568,18 @@ export const drugs: Drug[] = [
     detail: "Phase 3: 252 patients with moderate-to-severe AD, 28 weeks. SIB improved 5.7 points vs placebo (p<0.001). ADCS-ADL improved 3.4 points (p=0.02). Approved 2003 for moderate-to-severe AD. Does not slow progression.",
     sourceId: "reisberg-2003-nejm",
   },
+
+  // 22. NAD+ boosters
+  {
+    id: 73, name: "Nicotinamide riboside", company: "ChromaDex/Academic", category: "nad", disease: "PD", phase: "1", outcome: "signal",
+    note: "NR-SAFE: 3000 mg/day safe; augmented NAD+ metabolome",
+    detail: "NR-SAFE: 20 PD patients, randomized 1:1, NR 1500 mg twice daily for 30 days. Safe with pronounced systemic NAD+ augmentation. No methyl donor depletion. Earlier NADPARK trial (n=30) showed cerebral NAD+ increase and reduced neuroinflammation markers.",
+  },
+  {
+    id: 74, name: "Nicotinamide riboside", company: "Academic", category: "nad", disease: "AD", phase: "2", outcome: "mixed",
+    note: "MCI trial: NAD+ increased; no cognitive benefit at 8 weeks",
+    detail: "Crossover RCT: older adults with MCI, NR 1 g/day for 8 weeks. Blood NAD+ levels significantly increased. No significant change in cognition (MoCA) or plasma AD biomarkers (pTau217, GFAP, NfL) at this dose and duration.",
+  },
 ];
 
 /** Map outcome to display color */
@@ -751,7 +763,7 @@ export function moleculeTypeLabel(type: MoleculeType): string {
   switch (type) {
     case "small":    return "Small molecule";
     case "peptide":  return "Peptide";
-    case "aso":      return "ASO";
+    case "aso":      return "Antisense oligonucleotide";
     case "protein":  return "Protein";
     case "antibody": return "Antibody";
   }

@@ -773,11 +773,7 @@ function MoleculeScalePlot({ selectedCategory }: { selectedCategory: string | nu
   ];
 
   // Find iron chelator x range for annotation
-  const ironDrugs = positioned.filter((p) => p.drug.category === "iron");
-  const ironX = ironDrugs.length > 0 ? ironDrugs[0].x : 0;
-  // Find antibody x range
-  const abDrugs = positioned.filter((p) => getMoleculeType(p.drug) === "antibody");
-  const abX = abDrugs.length > 0 ? abDrugs[0].x : 100;
+
 
   return (
     <div>
@@ -803,20 +799,6 @@ function MoleculeScalePlot({ selectedCategory }: { selectedCategory: string | nu
             </div>
           );
         })}
-
-        {/* Region annotations */}
-        <span
-          className="absolute text-[10px] text-teal-400/60 -translate-x-1/2 whitespace-nowrap"
-          style={{ left: `${ironX}%`, bottom: AXIS_H + maxY + 6 }}
-        >
-          Iron chelators
-        </span>
-        <span
-          className="absolute text-[10px] text-gray-500 -translate-x-1/2 whitespace-nowrap"
-          style={{ left: `${abX}%`, bottom: AXIS_H + maxY + 6 }}
-        >
-          Antibodies
-        </span>
 
         {/* Dots */}
         {positioned.map(({ drug, x, y }) => (
@@ -848,8 +830,8 @@ const chelatorNudge: Record<number, { x?: number; y?: number }> = {
 // Tooltip nudges for signal-drug spotlight (beat 2).
 const signalNudge: Record<number, { x?: number; y?: number }> = {
   29: { x: -50, y: 30 },      // ATH434 (MSA × Ph2)
-  30: { x: 148, y: -155 },   // Deferoxamine (AD × Ph2)
-  62: { x: -182, y: -144 },  // Lactoferrin (AD × Ph2)
+  30: { x: -152, y: -155 },   // Deferoxamine (AD × Ph2)
+  62: { x: 198, y: -144 },    // Lactoferrin (AD × Ph2)
 };
 
 const signalDrugIds = new Set([29, 30, 62]);

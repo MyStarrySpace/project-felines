@@ -128,10 +128,13 @@ export const multiLayerTreatments: MultiLayerTreatment[] = [
   {
     name: "NAD+ restoration (NR/NMN)",
     effects: [
-      { layer: "L", strength: "strong", rationale: "Restores SIRT3 and mitochondrial antioxidant machinery. Critical bottleneck in the ferroptosis defense chain." },
+      { layer: "L", strength: "strong", rationale: "Restores SIRT3 and mitochondrial antioxidant machinery. SIRT1 regulates Nrf2, GPX4, and FTH1, the core ferroptosis defense chain." },
+      { layer: "N", strength: "strong", rationale: "NAD+ rescues aging-induced BBB damage via the CX43-PARP1 axis. NMN maintains tight junction proteins (claudin-1, occludin, ZO-1) and reduces MMP9/MMP2 activity." },
+      { layer: "S", strength: "moderate", rationale: "NAD+ precursors enhance myelin production after demyelination by reducing astrogliosis and microgliosis at lesion sites, promoting remyelination." },
+      { layer: "I", strength: "moderate", rationale: "NAD+ treatment inhibits the NLRP3 inflammasome and activates autophagy. Nicotinamide reduces astrocyte and microglia accumulation at demyelination sites." },
     ],
     status: "Phase 1/2 / supplement",
-    note: "Single layer but critical bottleneck. SIRT3 decline with age directly impairs the L-layer\u2019s ability to neutralize iron-driven damage.",
+    note: "Hits four layers. SIRT3 decline with age impairs L-layer antioxidant defense; NAD+ also protects the BBB, promotes remyelination, and dampens neuroinflammation.",
   },
   {
     name: "40 Hz gamma stimulation",

@@ -84,16 +84,19 @@ export function ScrollProvider({ children }: { children: ReactNode }) {
     const entry = sectionsRef.current.find((s) => s.id === id);
     if (!entry) return;
 
+    // On touch devices the breakpoint formula doesn't apply (no StickyScrollStage)
+    const isMobile = window.matchMedia("(pointer: coarse)").matches;
+
     // If section has content breakpoints beyond 0, scroll to the first
     // content beat so fade-in animations are already visible
-    const firstContentBp = entry.breakpoints.find((b) => b > 0);
+    const firstContentBp = !isMobile ? entry.breakpoints.find((b) => b > 0) : undefined;
     if (firstContentBp) {
       const el = entry.element;
       const sh = el.offsetHeight;
       const scrollY = el.offsetTop + firstContentBp * (sh + window.innerHeight) - window.innerHeight;
       window.scrollTo({ top: Math.max(0, scrollY), behavior });
     } else {
-      entry.element.scrollIntoView({ behavior });
+      entry.element.scrollIntoView({ behavior, block: "start" });
     }
   }, []);
 

@@ -245,7 +245,7 @@ function TeaserFlowing() {
   return (
     <>
       {/* Dark bg section with quote */}
-      <div className="min-h-[80vh] flex items-center px-6 sm:px-8">
+      <div className="min-h-[100dvh] flex items-center px-6 sm:px-8 mobile-snap">
         <div className="reading-width mx-auto w-full">
           <QuoteText />
         </div>
@@ -269,7 +269,7 @@ function TeaserFlowing() {
   );
 }
 
-const TEASER_BREAKPOINTS = [0.34, 0.72];
+const TEASER_BREAKPOINTS = [0.34, 0.53, 0.72];
 
 export function TeaserSection() {
   return (

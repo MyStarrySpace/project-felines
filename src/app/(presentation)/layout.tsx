@@ -223,10 +223,10 @@ function PresentationContent({ children }: { children: ReactNode }) {
         <DrugBrowserSection />
         <IronAlternativesSection />
         <LecanemabCritiqueSection />
-        <ClearanceNarrativeSection />
         <FelineIntroSection />
         <GwasSection />
         <TheoriesMappingSection />
+        <ClearanceNarrativeSection />
         <ClosingCtaSection />
 
         <SectionIndicator />

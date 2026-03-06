@@ -300,6 +300,28 @@ function SegmentedDescriptionStatic({
 }
 
 /* ------------------------------------------------------------------ */
+/*  Gold background for T. gondii beat                                  */
+/* ------------------------------------------------------------------ */
+
+const GOLD_BG = "#FCEFC7";
+const GOLD_TEXT = "#1A0F0A";
+const GOLD_MUTED = "#5C4B1F";
+const GOLD_ACCENT = "#92400E";
+
+/** Cat scribble illustration for gold background */
+function CatDoodle({ className }: { className?: string }) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/illustrations/cat-scribble.svg"
+      alt=""
+      aria-hidden="true"
+      className={className}
+    />
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /*  Desktop: sticky scroll stage                                        */
 /* ------------------------------------------------------------------ */
 
@@ -331,6 +353,13 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
   const acronymRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const [echoH, setEchoH] = useState({ top: 0, topPad: 0, bottom: 0 });
+
+  // Gold background for Beat 1 (T. gondii)
+  const goldOpacity = useTransform(
+    progress,
+    [BEAT1.enter, BEAT1.enter + 0.02, BEAT1.exit, BEAT1.gone],
+    [0, 1, 1, 0]
+  );
 
   const measure = useCallback(() => {
     const stage = stageRef.current;
@@ -374,7 +403,16 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
   const pe4 = useBeatPointerEvents(progress, BEAT4.enter);
 
   return (
-    <div ref={stageRef} className="h-full flex flex-col justify-center px-6 sm:px-8">
+    <div ref={stageRef} className="h-full relative">
+      {/* Gold background for T. gondii beat */}
+      <motion.div
+        className="absolute inset-0"
+        style={{ backgroundColor: GOLD_BG, opacity: goldOpacity }}
+      >
+        <CatDoodle className="absolute inset-0 w-full h-full object-contain opacity-30" />
+      </motion.div>
+
+      <div className="relative h-full flex flex-col justify-center px-6 sm:px-8">
       <div className="reading-width w-full mx-auto">
         {/* Acronym bar — persistent from beat 2 onward */}
         <div ref={acronymRef}>
@@ -387,7 +425,7 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
           className="grid"
           style={{ gridTemplateColumns: "1fr", gridTemplateRows: "1fr" }}
         >
-          {/* Beat 1: T. gondii puzzle */}
+          {/* Beat 1: T. gondii puzzle (dark text on gold bg) */}
           <motion.div
             className="col-start-1 row-start-1"
             style={{ pointerEvents: pe1 }}
@@ -400,22 +438,22 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
               gone={BEAT1.gone}
               enterFrom="bottom"
             >
-              <p className="font-serif text-[clamp(2.5rem,6vw,4.5rem)] leading-none text-teal-400 mb-2">
+              <p className="font-serif text-[clamp(4rem,10vw,8rem)] leading-none mb-2" style={{ color: GOLD_ACCENT }}>
                 {toxoPuzzle.stat}
               </p>
-              <p className="text-gray-400 text-sm mb-6">
+              <p className="text-sm mb-6" style={{ color: GOLD_MUTED }}>
                 {toxoPuzzle.statLabel}
               </p>
-              <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-white mb-4">
+              <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] mb-4" style={{ color: GOLD_TEXT }}>
                 {toxoPuzzle.headline}
               </h2>
-              <p className="text-gray-400 text-base leading-relaxed mb-4 max-w-[52ch]">
+              <p className="text-base leading-relaxed mb-4 max-w-[52ch]" style={{ color: GOLD_MUTED }}>
                 {toxoPuzzle.body}
               </p>
-              <p className="text-gray-300 text-base leading-relaxed mb-3 max-w-[52ch]">
+              <p className="font-serif text-[clamp(1.25rem,3vw,1.75rem)] leading-[1.15] mb-3 max-w-[28ch]" style={{ color: GOLD_TEXT }}>
                 {toxoPuzzle.paradox}
               </p>
-              <p className="text-gray-400 text-base leading-relaxed max-w-[52ch]">
+              <p className="text-base leading-relaxed max-w-[52ch]" style={{ color: GOLD_MUTED }}>
                 {toxoPuzzle.resolution}
               </p>
             </ScrollBeat>
@@ -535,6 +573,7 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
           </motion.div>
         </div>
       </div>
+      </div>
     </div>
   );
 }
@@ -545,29 +584,34 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
 
 function FelineFlowing() {
   return (
-    <div className="py-24 space-y-16 px-6">
-      {/* T. gondii puzzle */}
-      <ScrollAnimate>
-        <div className="reading-width mx-auto">
-          <p className="font-serif text-[clamp(2.5rem,6vw,4.5rem)] leading-none text-teal-400 mb-2">
-            {toxoPuzzle.stat}
-          </p>
-          <p className="text-gray-400 text-sm mb-6">{toxoPuzzle.statLabel}</p>
-          <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-white mb-4">
-            {toxoPuzzle.headline}
-          </h2>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
-            {toxoPuzzle.body}
-          </p>
-          <p className="text-gray-300 text-base leading-relaxed mb-3">
-            {toxoPuzzle.paradox}
-          </p>
-          <p className="text-gray-400 text-base leading-relaxed">
-            {toxoPuzzle.resolution}
-          </p>
-        </div>
-      </ScrollAnimate>
+    <div className="space-y-16">
+      {/* T. gondii puzzle (gold background) */}
+      <div style={{ backgroundColor: GOLD_BG }} className="relative min-h-[100dvh] flex flex-col justify-center px-6 py-24 overflow-hidden mobile-snap">
+        <CatDoodle className="absolute inset-0 w-full h-full object-contain opacity-30" />
+        <ScrollAnimate>
+          <div className="reading-width mx-auto">
+            <p className="font-serif text-[clamp(4rem,10vw,8rem)] leading-none mb-2" style={{ color: GOLD_ACCENT }}>
+              {toxoPuzzle.stat}
+            </p>
+            <p className="text-sm mb-6" style={{ color: GOLD_MUTED }}>{toxoPuzzle.statLabel}</p>
+            <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] mb-4" style={{ color: GOLD_TEXT }}>
+              {toxoPuzzle.headline}
+            </h2>
+            <p className="text-base leading-relaxed mb-4" style={{ color: GOLD_MUTED }}>
+              {toxoPuzzle.body}
+            </p>
+            <p className="font-serif text-[clamp(1.25rem,3vw,1.75rem)] leading-[1.15] mb-3" style={{ color: GOLD_TEXT }}>
+              {toxoPuzzle.paradox}
+            </p>
+            <p className="text-base leading-relaxed" style={{ color: GOLD_MUTED }}>
+              {toxoPuzzle.resolution}
+            </p>
+          </div>
+        </ScrollAnimate>
+      </div>
 
+      {/* Remaining content on dark background */}
+      <div className="px-6 pt-8 space-y-16">
       {/* Cat connection */}
       <ScrollAnimate>
         <div className="reading-width mx-auto">
@@ -643,6 +687,7 @@ function FelineFlowing() {
           </p>
         </div>
       </ScrollAnimate>
+      </div>
     </div>
   );
 }

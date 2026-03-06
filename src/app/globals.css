@@ -135,6 +135,16 @@ body {
   border-color: rgba(255, 255, 255, 0.15);
 }
 
+/* Mobile scroll snap for full-screen sections */
+@media (pointer: coarse) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+  .mobile-snap {
+    scroll-snap-align: start;
+  }
+}
+
 /* Echo text marquee — infinite scroll for gene names */
 @keyframes echo-scroll-left {
   from { transform: translate3d(0, 0, 0); }

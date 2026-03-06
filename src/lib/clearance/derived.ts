@@ -92,11 +92,11 @@ export interface ClearanceSummary {
 export function summarize(result: ClearanceResult): ClearanceSummary {
   const at70 = result.timePoints.find((tp) => tp.age >= 70);
   return {
-    phase1Age: result.phase1Age,
-    phase2Age: result.phase2Age,
+    phase1Age: result.phase1Age !== null ? Math.round(result.phase1Age) : null,
+    phase2Age: result.phase2Age !== null ? Math.round(result.phase2Age) : null,
     clearanceAt70Pct: Math.round(result.clearanceAt70 * 100),
-    isfAt70: at70?.Fe_ISF ?? 1.0,
-    lipAt70: at70?.Fe_LIP ?? 0.8,
-    ferritinAt70: at70?.Fe_ferritin ?? 25.0,
+    isfAt70: Math.round((at70?.Fe_ISF ?? 1.0) * 100) / 100,
+    lipAt70: Math.round((at70?.Fe_LIP ?? 0.8) * 100) / 100,
+    ferritinAt70: Math.round((at70?.Fe_ferritin ?? 25.0) * 10) / 10,
   };
 }

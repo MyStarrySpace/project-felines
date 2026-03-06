@@ -369,7 +369,7 @@ const BEAT_OFFSETS: Record<string, DragOffset> = {
   "beat-dhodh": { x: 58, y: -36 },
   "beat-emerging-axes": { x: -9, y: -201 },
   "beat-ferroptosis-title": { x: 0, y: -427 },
-  "beat-ferroptosis-subtitle": { x: 0, y: -442 },
+  "beat-ferroptosis-subtitle": { x: 0, y: -450 },
 };
 
 function IronStage({

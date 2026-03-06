@@ -57,6 +57,67 @@ function computeCreamClip(
   return `inset(0% 0 ${clipBottom}% 0)`;
 }
 
+// Feline section Beat 1 progress ranges that drive the gold fill
+const GOLD_ENTER = 0.02;
+const GOLD_FADE_IN = 0.04; // fully visible by this point
+const GOLD_FADE_OUT_START = 0.16;
+const GOLD_GONE = 0.20;
+
+/**
+ * Compute the CSS clip-path that reveals the gold-mode sidebar layer
+ * in sync with the feline section's T. gondii beat background.
+ */
+function computeGoldClip(
+  sections: { id: string; element: HTMLElement }[],
+  sectionProgress: Record<string, number>
+): string {
+  const hidden = "inset(100% 0 0 0)";
+  if (typeof window === "undefined") return hidden;
+
+  const felineSection = sections.find((s) => s.id === "feline");
+  if (!felineSection) return hidden;
+
+  const fp = sectionProgress["feline"] ?? 0;
+  if (fp <= 0) return hidden;
+
+  const el = felineSection.element;
+  const sh = el.offsetHeight;
+  const vh = window.innerHeight;
+  if (sh <= 0 || vh <= 0) return hidden;
+
+  // Convert section-level progress → StickyScrollStage internal progress
+  const entryP = vh / (sh + vh);
+  const exitP = sh / (sh + vh);
+
+  if (fp < entryP) return hidden;
+
+  if (fp <= exitP) {
+    // Sticky phase
+    const stageP = (fp - entryP) / (exitP - entryP);
+    if (stageP < GOLD_ENTER) return hidden;
+    if (stageP > GOLD_GONE) return hidden;
+
+    // Gold fills the entire viewport during Beat 1
+    if (stageP >= GOLD_FADE_IN && stageP <= GOLD_FADE_OUT_START) {
+      return "inset(0% 0 0% 0)";
+    }
+
+    // Fade in: reveal from bottom
+    if (stageP < GOLD_FADE_IN) {
+      const t = (stageP - GOLD_ENTER) / (GOLD_FADE_IN - GOLD_ENTER);
+      const clipTop = (1 - t) * 100;
+      return `inset(${clipTop}% 0 0% 0)`;
+    }
+
+    // Fade out: hide from bottom
+    const t = (stageP - GOLD_FADE_OUT_START) / (GOLD_GONE - GOLD_FADE_OUT_START);
+    const clipBottom = t * 100;
+    return `inset(0% 0 ${clipBottom}% 0)`;
+  }
+
+  return hidden;
+}
+
 /** Color scheme for dark or cream backgrounds */
 interface Colors {
   track: string;
@@ -85,6 +146,15 @@ const CREAM: Colors = {
   inactiveLabel: "rgba(26,15,10,0.4)",
 };
 
+const GOLD: Colors = {
+  track: "rgba(26,15,10,0.10)",
+  fill: "#92400E",
+  activeDot: "#92400E",
+  inactiveDot: "rgba(26,15,10,0.20)",
+  activeLabel: "#92400E",
+  inactiveLabel: "rgba(26,15,10,0.35)",
+};
+
 export function ScrollProgress() {
   const { progress, activeSection, sections, sectionProgress, scrollToSection } =
     useScrollContext();
@@ -93,6 +163,7 @@ export function ScrollProgress() {
 
   const showLabels = trackHovered;
   const creamClip = computeCreamClip(sections, sectionProgress);
+  const goldClip = computeGoldClip(sections, sectionProgress);
 
   // Compute dot positions based on where each section becomes active
   // (its top edge crosses the viewport center)
@@ -252,6 +323,15 @@ export function ScrollProgress() {
         aria-hidden="true"
       >
         {renderTrack(CREAM, false)}
+      </div>
+
+      {/* Gold-mode overlay (clipped to T. gondii gold background, non-interactive) */}
+      <div
+        className="absolute inset-0 pointer-events-none flex items-center justify-end pr-3 sm:pr-4"
+        style={{ clipPath: goldClip }}
+        aria-hidden="true"
+      >
+        {renderTrack(GOLD, false)}
       </div>
     </nav>
   );

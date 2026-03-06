@@ -210,7 +210,7 @@ export default function ClearancePage() {
             />
             <StatCard
               label="ISF iron at 70"
-              value={`${stats.isfAt70.toFixed(3)} \u00B5M`}
+              value={`${stats.isfAt70.toFixed(2)} \u00B5M`}
               detail="Baseline: 1.0 \u00B5M"
             />
           </div>
