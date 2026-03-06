@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <h3 className="mb-3 font-serif text-lg text-white" id="footer-about">About</h3>
             <p className="text-sm leading-relaxed text-gray-400">
-              Project FELINE investigates how the brain&apos;s iron defense
+              Project FELINES investigates how the brain&apos;s iron defense
               systems fail in neurodegeneration: homeostasis, lysosomal
               defenses, insulation barriers, neurovascular integrity, and
               export pathways.
@@ -57,7 +57,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/5 py-6 text-center text-xs text-gray-400">
-          Project FELINE. For research and educational purposes.
+          Project FELINES. For research and educational purposes.
         </div>
       </Container>
     </footer>

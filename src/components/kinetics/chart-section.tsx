@@ -39,7 +39,7 @@ export function ChartSection({
       <Heading level={2} className="mb-2 text-white">
         {title}
       </Heading>
-      <Body className="mb-4 max-w-[var(--width-reading)] text-gray-400">{description}</Body>
+      <Body className="mb-4 max-w-[var(--width-reading)] text-gray-300">{description}</Body>
 
       {above && (
         <Alert

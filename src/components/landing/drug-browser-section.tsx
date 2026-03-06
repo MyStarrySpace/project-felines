@@ -155,7 +155,7 @@ function DrugCard({ drug }: { drug: Drug }) {
 
 function DrugBrowserFlowing() {
   return (
-    <div className="reading-width py-24 sm:py-32">
+    <div className="reading-width px-6 py-24 sm:py-32">
       <ScrollAnimate enterFrom="bottom">
         <p className="text-sm text-teal-400 tracking-wide uppercase mb-3">
           Drug trials

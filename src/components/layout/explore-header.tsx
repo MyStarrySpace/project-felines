@@ -29,7 +29,7 @@ export function ExploreHeader() {
               href="/"
               className="font-serif text-lg text-white transition-colors hover:text-teal-400"
             >
-              Project FELINE
+              Project FELINES
             </Link>
             <div className="hidden sm:block h-4 w-px bg-white/10" />
             <div className="hidden sm:block">

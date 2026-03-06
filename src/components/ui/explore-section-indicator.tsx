@@ -154,7 +154,7 @@ export function ExploreSectionIndicator() {
                     className="flex items-center gap-2 px-4 py-2 text-sm text-gray-500 transition-colors hover:text-white"
                   >
                     <ArrowLeft className="h-3 w-3" />
-                    Back to FELINE
+                    Back to FELINES
                   </Link>
 
                   <ul role="list">

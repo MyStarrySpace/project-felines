@@ -1,609 +1,814 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1277 745" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;fill:white;">
-    <style>
-        text { fill: white; }
-        .diagram-section {
-            transition: opacity 0.4s ease;
-        }
-    </style>
-    <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
-        <g transform="matrix(0.946066,0,0,0.795085,21.5735,6.14747)">
-            <path d="M400,30L400,690" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.2px;stroke-dasharray:8,6;"/>
-        </g>
-        <g transform="matrix(0.946066,0,0,0.795085,43.1471,6.14747)">
-            <path d="M800,30L800,690" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.2px;stroke-dasharray:8,6;"/>
-        </g>
-        <g transform="matrix(1.03448,0,0,1,-20.6897,-112.263)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <path d="M20,700L1180,700" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.5px;stroke-dasharray:8,6;"/>
-            </g>
-        </g>
-        <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
-            <path d="M46.553,115.709C276.144,2.182 523.834,2.171 753.447,115.709" style="fill:none;stroke:rgb(90,110,155);stroke-width:8px;stroke-linecap:round;"/>
-        </g>
-        <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
-            <path d="M50,135C277.334,22.418 522.644,22.407 750,135" style="fill:none;stroke:rgb(130,150,185);stroke-width:8px;stroke-linecap:round;"/>
-        </g>
-        <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
-            <path d="M46.553,115.709C265.347,7.521 500.663,2.382 721.132,100.53C723.741,101.691 737.363,107.756 753.447,115.709C752.298,122.139 751.149,128.57 750,135C522.666,22.418 277.356,22.407 50,135C48.851,128.57 47.702,122.139 46.553,115.709Z" style="fill:rgb(25,35,50);fill-opacity:0.4;"/>
-        </g>
-        <g transform="matrix(1.73749,0,0,1.13479,-109.107,41.7566)">
-            <g transform="matrix(0.301948,0,0,0.418733,69.2057,-65.6328)">
-                <path d="M196.475,296.12C206.036,284.264 218.42,275.504 230.058,275.172C241.696,274.839 242.693,279.494 254.996,280.492C267.299,281.489 284.921,264.864 300.549,284.482C316.177,304.1 293.566,452.397 278.936,452.729C264.306,453.062 251.006,447.742 251.006,447.742C251.006,447.742 242.361,457.052 224.738,452.729C207.115,448.407 212.768,384.898 212.768,384.898C212.768,384.898 188.162,306.427 196.475,296.12Z" style="fill:rgb(228,177,41);stroke:rgb(205,164,48);stroke-width:4.99px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g transform="matrix(1.73749,0,0,1.13479,-109.107,41.7566)">
-            <g transform="matrix(0.271291,0,0,0.418733,79.0295,-65.6861)">
-                <path d="M275.577,302.279C274.025,316.599 276.907,367.45 275.577,373.568C274.247,379.686 269.724,379.154 267.33,387.666C264.936,396.178 263.074,402.562 267.33,411.074C271.586,419.586 276.109,430.227 275.577,438.739C275.045,447.251 281.695,460.285 290.473,458.423C299.251,456.561 311.487,446.187 311.487,438.739C311.487,431.291 301.379,409.478 303.507,391.124C305.635,372.77 321.329,348.563 324.255,341.913C327.181,335.263 330.639,316.909 324.255,318.239C317.871,319.569 313.615,310.525 314.945,307.333C316.275,304.141 322.393,297.757 317.871,294.565C313.349,291.373 307.763,289.51 305.901,294.565C304.039,299.619 294.197,294.831 294.995,291.639C295.793,288.446 288.611,283.392 284.887,287.648C281.163,291.905 276.199,296.532 275.577,302.279Z" style="fill:rgb(236,195,81);stroke:rgb(205,164,48);stroke-width:5.28px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g transform="matrix(1.73749,0,0,1.13479,-109.107,41.7566)">
-            <g transform="matrix(0.262128,0,0,0.418733,76.1915,-65.6328)">
-                <path d="M191.519,307.333C191.519,311.855 191.519,317.973 185.401,318.239C179.283,318.505 172.367,319.303 176.889,330.209C181.411,341.115 193.647,362.806 197.105,372.31C200.563,381.814 202.159,409.744 200.297,416.66C198.435,423.576 188.327,446.453 204.553,454.433C220.78,462.413 227.696,451.507 232.484,444.059C237.272,436.611 235.41,310.259 232.484,303.343C229.558,296.427 221.046,286.78 212.534,286.017C204.021,285.254 189.125,287.914 188.593,294.033C188.061,300.151 191.519,302.811 191.519,307.333Z" style="fill:rgb(236,195,81);stroke:rgb(205,164,48);stroke-width:5.37px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,15,22.9665)">
-            <g transform="matrix(1,0,0,1,-6.56164,-68.9832)">
-                <ellipse cx="131" cy="478" rx="28" ry="16" style="fill:rgb(212,167,106);stroke:rgb(195,195,195);stroke-width:1.5px;"/>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,19,22.9665)">
-            <g transform="matrix(1,0,0,1,0,-65.5094)">
-                <ellipse cx="187" cy="550" rx="32" ry="16" style="fill:rgb(212,167,106);stroke:rgb(195,195,195);stroke-width:1.5px;"/>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,19,0)">
-            <g transform="matrix(1,0,0,1,14.0053,72.2088)">
-                <ellipse cx="520" cy="288" rx="30" ry="16" style="fill:rgb(212,167,106);stroke:rgb(195,195,195);stroke-width:1.5px;"/>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,20.4822,70.825)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <ellipse cx="969" cy="317" rx="32" ry="16" style="fill:rgb(212,167,106);stroke:rgb(195,195,195);stroke-width:1.5px;"/>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,0,22.9665)">
-            <g transform="matrix(1,0,0,1,0,-65.5094)">
-                <path d="M150,318L150,352C150,354.208 148.208,356 146,356L42,356C39.792,356 38,354.208 38,352L38,318C38,315.792 39.792,314 42,314L146,314C148.208,314 150,315.792 150,318Z" style="fill:rgb(30,40,55);stroke:rgb(100,120,160);stroke-width:1px;"/>
-            </g>
-        </g>
-        <g id="section-gsh-gpx4" class="diagram-section">
-        <g transform="matrix(1,0,0,1,91.969,28)">
-            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">Cyst(e)ine/GSH/GPX4 axis</text>
-        </g>
-        <g transform="matrix(1,0,0,1,113.457,83.1619)">
-            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Glutamate</text>
-        </g>
-        <g transform="matrix(1,0,0,1,205.038,87.7629)">
-            <g transform="matrix(1,0,0,1,5.30721,-6.79532)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">Erastin</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,113.457,201.128)">
-            <g transform="matrix(1,0,0,1,-24.6062,7.28217)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">System xc⁻</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,190.256,267.966)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Cystine</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,48,320.438)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">Transsulfuration</text>
-                <text x="0px" y="16px" style="font-family:'Helvetica';font-size:12px;fill:white;">pathway</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,326.166,274.247)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">Auranoﬁn</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,219.567,312.238)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">GSH/TXNRD1</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,186.363,360.438)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Cysteine</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,280.159,360.438)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">NAC</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,221.521,420.094)">
-            <g transform="matrix(1,0,0,1,-2.23647,-39.1572)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">γ-GCSc</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,290.474,461.292)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">BSO</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,191.642,468.157)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">GSH</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,110.524,404.749)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,124.201,469.968)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">GSR</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,18.0874,465.449)">
-            <g transform="matrix(1,0,0,1,8.30009,-35.9591)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,84.8412,506.124)">
-            <g transform="matrix(1,0,0,1,-27.4693,-10.0575)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">BCNU</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,105.02,544.174)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">GSSG</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,185.877,545.814)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">GPX4</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,282.307,535.325)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">RSL3,</text>
-                <text x="0px" y="17px" style="font-family:'Helvetica';font-size:12px;fill:white;">ML210</text>
-            </g>
-        </g>
-        <g id="arrow-systemxc-to-glutamate" transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,242.457,274.917)">
-            <g transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,283.496,260.179)">
-                <path d="M170.871,80.925L176.496,73.425L182.121,80.925L170.871,80.925Z" style="fill:white;"/>
-                <path d="M176.496,175.179L176.496,79.425" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-erastin-on-systemxc" transform="matrix(1,-0,-0,1,-41.0385,14.7373)">
-            <path d="M227.78,90.612L222.468,82.14" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-            <path d="M246.038,73.263C246.038,73.263 229.512,83.625 225.124,86.376" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-        </g>
-        <g id="arrow-systemxc-to-cystine" transform="matrix(0.921519,0,0,0.957197,32.4288,6.19198)">
-            <g transform="matrix(1.08517,-0,-0,1.04472,-79.7241,8.92744)">
-                <path d="M225.211,195.629L227.796,204.641L218.421,204.599L225.211,195.629Z" style="fill:white;"/>
-                <path d="M186.717,83.147C186.717,83.147 173.983,138.188 201.013,177.465C208.605,188.497 217.617,196.651 223.012,201.019" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-cystine-to-cysteine" transform="matrix(1,0,0,0.617506,0,73.3519)">
-            <g transform="matrix(1,-0,-0,1.61942,-41.0385,-94.9215)">
-                <path d="M256.692,282.642L251.038,290.179L245.385,282.642L256.692,282.642Z" style="fill:white;"/>
-                <path d="M251.038,230.281L251.038,284.149" style="fill:none;stroke:white;stroke-width:2.51px;"/>
-            </g>
-        </g>
-        <g id="tbar-auranofin-on-txnrd1" transform="matrix(0.670391,0.188348,0.188348,0.892373,55.0917,-64.4625)">
-            <g transform="matrix(1.5857,-0.334684,-0.334684,1.19125,-178.94,126.52)">
-                <path d="M339.09,252.011L334.128,243.328" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M367.038,230.281C367.038,230.281 342.152,244.502 336.609,247.669" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-transsulfuration-to-cysteine" transform="matrix(0.915563,-0.076027,-0.076027,0.931545,44.295,-25.6262)">
-            <g transform="matrix(1.09968,0.0897488,0.0897488,1.08081,-90.2167,35.9667)">
-                <path d="M219.329,293.155L221.138,302.353L211.801,301.515L219.329,293.155Z" style="fill:white;"/>
-                <path d="M199.876,283.209C199.876,283.209 210.445,292.725 216.68,298.339" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-nac-to-cysteine" transform="matrix(1.24124,0,0,1,-54.8379,-70.122)">
-            <g transform="matrix(0.805648,-0,-0,1,11.1175,84.8593)">
-                <path d="M296.274,314.481L287.821,308.141L296.274,301.801L296.274,314.481Z" style="fill:white;"/>
-                <path d="M317.611,308.141L294.584,308.141" style="fill:none;stroke:white;stroke-width:2.82px;"/>
-            </g>
-        </g>
-        <g id="arrow-ipp-to-gpx4" transform="matrix(1,0,0,1,0,-32.9815)">
-            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
-                <path d="M283.982,468.095L277.378,471.651L275.814,464.316L283.982,468.095Z" style="fill:white;"/>
-                <path d="M675.234,227.239C419.752,140.373 308.196,404.355 279.394,467.295" style="fill:none;stroke:white;stroke-width:2px;stroke-dasharray:8,5;"/>
-            </g>
-        </g>
-        <g id="arrow-cysteine-to-gsh" transform="matrix(1,0,0,0.763266,0,29.8946)">
-            <g transform="matrix(1,-0,-0,1.31016,-41.0385,-19.8585)">
-                <path d="M256.042,377.448L251.038,384.12L246.035,377.448L256.042,377.448Z" style="fill:white;"/>
-                <path d="M251.038,322.753L251.038,378.783" style="fill:none;stroke:white;stroke-width:2.22px;"/>
-            </g>
-        </g>
-        <g id="tbar-bso-on-gcsc" transform="matrix(1.21135,0.000281494,0.385558,1.14835,-234.594,-133.608)">
-            <g transform="matrix(0.82559,-0.000202376,-0.277191,0.870881,118.677,129.152)">
-                <path d="M296.457,381.505L301.129,375.01" style="fill:none;stroke:white;stroke-width:2px;stroke-miterlimit:10;"/>
-                <path d="M329.919,400.646C329.919,400.646 303.768,381.836 298.793,378.258" style="fill:none;stroke:white;stroke-width:2px;"/>
-            </g>
-        </g>
-        <g id="arrow-nadph-to-gsr-to-nadp" transform="matrix(1,0,0,1,-6.56164,-68.9832)">
-            <g transform="matrix(1,-0,-0,1,-34.4768,83.7205)">
-                <path d="M119.947,426.44L112.969,420.18L120.933,415.233L119.947,426.44Z" style="fill:white;"/>
-                <path d="M176.573,362.272C176.573,362.272 184.042,389.702 158.569,405.927C139.39,418.143 126.045,420.549 118.946,420.705" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-bcnu-on-gsr" transform="matrix(1.02051,-0.253587,0.170355,1.01914,-106.054,-44.4891)">
-            <g transform="matrix(0.940827,0.2341,-0.157264,0.942085,51.8537,71.0163)">
-                <path d="M150.9,431.459L158.613,437.84" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M129.028,465.752C129.028,465.752 150.335,439.995 154.757,434.649" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-gsh-to-gpx4-to-gssg" transform="matrix(1,0,0,1,0,-65.5094)">
-            <g transform="matrix(1,-0,-0,1,-41.0385,80.2467)">
-                <path d="M197.045,496.23L189.038,491.353L195.962,485.032L197.045,496.23Z" style="fill:white;"/>
-                <path d="M252.658,427.503C248.164,466.212 228.312,486.542 195.011,490.776" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-gssg-to-gsr-to-gsh" transform="matrix(0.757711,-0.65259,0.65259,0.757711,-320.305,224.464)">
-            <g transform="matrix(0.757711,0.65259,-0.65259,0.757711,348.469,23.3351)">
-                <path d="M222.102,415.721L230.566,419.753L224.326,426.75L222.102,415.721Z" style="fill:white;"/>
-                <path d="M165.652,481.136C168.114,458.73 183.865,430.313 224.685,420.939" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-rsl3-on-gpx4" transform="matrix(1.02188,-0.000683674,-0.000683674,1.00002,3.19283,-65.3589)">
-            <g transform="matrix(0.978591,0.000669023,0.000669023,0.999979,-43.2308,80.0649)">
-                <path d="M288.309,497.805L288.309,487.702" style="fill:none;stroke:white;stroke-width:2.53px;stroke-miterlimit:10;"/>
-                <path d="M317.252,492.753L288.309,492.753" style="fill:none;stroke:white;stroke-width:2.53px;"/>
-            </g>
-        </g>
-        <g id="tbar-gpx4-on-pepufaooh" transform="matrix(0.908081,-0.0835624,-0.0835624,0.924034,78.1568,5.54229)">
-            <g transform="matrix(1.11046,0.100422,0.100422,1.09129,-131.439,-1.93533)">
-                <path d="M340.71,585.674L334.278,593.331" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M251.677,517.425C251.677,517.425 328.036,581.559 337.494,589.503" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        </g>
-        <g id="section-fsp1-coq10" class="diagram-section">
-        <g transform="matrix(1,0,0,1,527.969,28)">
-            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">FSP1/CoQ10 axis</text>
-        </g>
-        <g transform="matrix(1,0,0,1,544.825,185.116)">
-            <g transform="matrix(1,0,0,1,0.762387,-0.762387)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Statins</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,625.025,184.4)">
-            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">HMG-CoA</text>
-        </g>
-        <g transform="matrix(1,0,0,1,644.614,260.594)">
-            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">IPP</text>
-        </g>
-        <g transform="matrix(1,0,0,1,691.758,338.202)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">FIN56</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,449.005,415.19)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,535.123,398.548)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">FSP1</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,533.908,355.489)">
-            <g transform="matrix(1,0,0,1,2.77904,-41.8642)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,465.407,459.99)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">iFSP1</text>
+<svg width="100%" height="100%" viewBox="0 0 1277 779" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,-2.61589e-05,-4.6875e-06)">
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g transform="matrix(0.946066,0,0,0.795085,21.5735,6.14747)">
+                <path d="M400,30L400,690" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.2px;stroke-dasharray:8,6;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g transform="matrix(0.946066,0,0,0.795085,43.1471,6.14747)">
+                <path d="M800,30L800,690" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.2px;stroke-dasharray:8,6;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g transform="matrix(1.03448,0,0,1,-20.6897,-145.245)">
+                <g>
+                    <path d="M20,700L1180,700" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.5px;stroke-dasharray:8,6;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g id="membrane">
+                <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
+                    <path d="M46.553,115.709C276.144,2.182 523.834,2.171 753.447,115.709" style="fill:none;stroke:rgb(228,177,41);stroke-width:8px;stroke-linecap:round;"/>
+                </g>
+                <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
+                    <path d="M50,135C277.334,22.418 522.644,22.407 750,135" style="fill:none;stroke:rgb(228,177,41);stroke-width:8px;stroke-linecap:round;"/>
+                </g>
+                <g transform="matrix(1.73749,0,0,1.13479,-97.7226,44.4413)">
+                    <path d="M46.553,115.709C265.347,7.521 500.663,2.382 721.132,100.53C723.741,101.691 737.363,107.756 753.447,115.709C752.298,122.139 751.149,128.57 750,135C522.666,22.418 277.356,22.407 50,135C48.851,128.57 47.702,122.139 46.553,115.709Z" style="fill:rgb(26,15,10);fill-opacity:0.4;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g id="membrane-channel">
+                <g transform="matrix(0.524632,0,0,0.475174,11.1372,-32.7228)">
+                    <g>
+                        <path d="M196.475,296.12C206.036,284.264 218.42,275.504 230.058,275.172C241.696,274.839 242.693,279.494 254.996,280.492C267.299,281.489 284.921,264.864 300.549,284.482C316.177,304.1 293.566,452.397 278.936,452.729C264.306,453.062 251.006,447.742 251.006,447.742C251.006,447.742 242.361,457.052 224.738,452.729C207.115,448.407 212.768,384.898 212.768,384.898C212.768,384.898 188.162,306.427 196.475,296.12Z" style="fill:rgb(228,177,41);stroke:rgb(205,164,48);stroke-width:4.99px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                    </g>
+                </g>
+                <g transform="matrix(0.471365,0,0,0.475174,28.206,-32.7833)">
+                    <g>
+                        <path d="M275.577,302.279C274.025,316.599 276.907,367.45 275.577,373.568C274.247,379.686 269.724,379.154 267.33,387.666C264.936,396.178 263.074,402.562 267.33,411.074C271.586,419.586 276.109,430.227 275.577,438.739C275.045,447.251 281.695,460.285 290.473,458.423C299.251,456.561 311.487,446.187 311.487,438.739C311.487,431.291 301.379,409.478 303.507,391.124C305.635,372.77 321.329,348.563 324.255,341.913C327.181,335.263 330.639,316.909 324.255,318.239C317.871,319.569 313.615,310.525 314.945,307.333C316.275,304.141 322.393,297.757 317.871,294.565C313.349,291.373 307.763,289.51 305.901,294.565C304.039,299.619 294.197,294.831 294.995,291.639C295.793,288.446 288.611,283.392 284.887,287.648C281.163,291.905 276.199,296.532 275.577,302.279Z" style="fill:rgb(236,195,81);stroke:rgb(205,164,48);stroke-width:5.28px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                    </g>
+                </g>
+                <g transform="matrix(0.455445,0,0,0.475174,23.275,-32.7228)">
+                    <g>
+                        <path d="M191.519,307.333C191.519,311.855 191.519,317.973 185.401,318.239C179.283,318.505 172.367,319.303 176.889,330.209C181.411,341.115 193.647,362.806 197.105,372.31C200.563,381.814 202.159,409.744 200.297,416.66C198.435,423.576 188.327,446.453 204.553,454.433C220.78,462.413 227.696,451.507 232.484,444.059C237.272,436.611 235.41,310.259 232.484,303.343C229.558,296.427 221.046,286.78 212.534,286.017C204.021,285.254 189.125,287.914 188.593,294.033C188.061,300.151 191.519,302.811 191.519,307.333Z" style="fill:rgb(236,195,81);stroke:rgb(205,164,48);stroke-width:5.37px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g transform="matrix(1,0,0,1,8.43836,-46.0167)">
+                <ellipse cx="131" cy="478" rx="28" ry="16" style="fill:rgb(150,84,32);stroke:rgb(99,44,24);stroke-width:1.5px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g transform="matrix(1,0,0,1,19,-42.5429)">
+                <ellipse cx="187" cy="550" rx="32" ry="16" style="fill:rgb(150,84,32);stroke:rgb(99,44,24);stroke-width:1.5px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g transform="matrix(1,0,0,1,33.0053,72.2088)">
+                <ellipse cx="520" cy="288" rx="30" ry="16" style="fill:rgb(150,84,32);stroke:rgb(99,44,24);stroke-width:1.5px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g transform="matrix(1,0,0,1,20.4822,37.8435)">
+                <ellipse cx="969" cy="317" rx="32" ry="16" style="fill:rgb(150,84,32);stroke:rgb(99,44,24);stroke-width:1.5px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g transform="matrix(1,0,0,1,0,-42.5429)">
+                <g>
+                    <path d="M150,318L150,352C150,354.208 148.208,356 146,356L42,356C39.792,356 38,354.208 38,352L38,318C38,315.792 39.792,314 42,314L146,314C148.208,314 150,315.792 150,318Z" style="fill:rgb(150,84,32);stroke:rgb(99,44,24);stroke-width:1px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g id="section-gsh-gpx4">
+                <g transform="matrix(1,0,0,1,91.969,28)">
+                    <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">Cyst(e)ine/GSH/GPX4 axis</text>
+                </g>
+                <g transform="matrix(1,0,0,1,113.457,83.1619)">
+                    <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Glutamate</text>
+                </g>
+                <g transform="matrix(1,0,0,1,210.345,80.9676)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">Erastin</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,88.8508,208.41)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">System xc⁻</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,190.256,234.985)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Cystine</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,48,287.457)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">T<tspan x="6.891px " y="0px ">r</tspan>anssulfuration</text>
+                        <g transform="matrix(1,0,0,1,0,16)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">pathway</text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,326.166,241.266)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">Auranoﬁn</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,219.567,279.257)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">GSH/TXNRD1</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,186.363,327.457)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Cysteine</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,280.159,327.457)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">NAC</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,219.285,380.937)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">γ-GCSc</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,290.474,428.31)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">BSO</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,191.642,435.175)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">GSH</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,110.524,371.768)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,124.201,436.987)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">GSR</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,26.3875,429.49)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,57.3719,496.067)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">BCNU</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,105.02,511.192)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">GSSG</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,185.877,512.832)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">GPX4</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,282.307,502.344)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">RSL3,</text>
+                        <g transform="matrix(1,0,0,1,0,17)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">ML210</text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.039,14.738)">
+                    <g id="arrow-systemxc-to-glutamate">
+                        <g>
+                            <path d="M170.871,80.925L176.496,73.425L182.121,80.925L170.871,80.925Z" style="fill:white;"/>
+                            <path d="M176.496,175.179L176.496,79.425" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="tbar-erastin-on-systemxc" transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <path d="M227.78,90.612L222.468,82.14" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                    <path d="M246.038,73.263C246.038,73.263 229.512,83.625 225.124,86.376" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-systemxc-to-cystine">
+                        <g>
+                            <path d="M225.211,195.629L227.796,204.641L218.421,204.599L225.211,195.629Z" style="fill:white;"/>
+                            <path d="M186.717,83.147C186.717,83.147 173.983,138.188 201.013,177.465C208.605,188.497 217.617,196.651 223.012,201.019" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-cystine-to-cysteine">
+                        <g>
+                            <path d="M256.692,282.642L251.038,290.179L245.385,282.642L256.692,282.642Z" style="fill:white;"/>
+                            <path d="M251.038,230.281L251.038,284.149" style="fill:none;stroke:white;stroke-width:2.51px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,4.58468e-07,4.13556e-07,1,-41.0383,14.7375)">
+                    <g id="tbar-auranofin-on-txnrd1">
+                        <g>
+                            <path d="M339.09,252.011L334.128,243.328" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M367.038,230.281C367.038,230.281 342.152,244.502 336.609,247.669" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,-3.25464e-07,-6.12956e-08,1,-41.0385,14.7373)">
+                    <g id="arrow-transsulfuration-to-cysteine">
+                        <g>
+                            <path d="M219.329,293.155L221.138,302.353L211.801,301.515L219.329,293.155Z" style="fill:white;"/>
+                            <path d="M199.876,283.209C199.876,283.209 210.445,292.725 216.68,298.339" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0384,14.7373)">
+                    <g id="arrow-nac-to-cysteine">
+                        <g>
+                            <path d="M296.274,314.481L287.821,308.141L296.274,301.801L296.274,314.481Z" style="fill:white;"/>
+                            <path d="M317.611,308.141L294.584,308.141" style="fill:none;stroke:white;stroke-width:2.82px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-ipp-to-gpx4">
+                        <g>
+                            <path d="M283.982,468.095L277.378,471.651L275.814,464.316L283.982,468.095Z" style="fill:white;"/>
+                            <path d="M675.234,227.239C419.752,140.373 308.196,404.355 279.394,467.295" style="fill:none;stroke:white;stroke-width:2px;stroke-dasharray:8,5;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-cysteine-to-gsh">
+                        <g>
+                            <path d="M256.042,377.448L251.038,384.12L246.035,377.448L256.042,377.448Z" style="fill:white;"/>
+                            <path d="M251.038,322.753L251.038,378.783" style="fill:none;stroke:white;stroke-width:2.22px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,1.5186e-10,-1.81252e-07,0.999998,-41.039,14.7371)">
+                    <g id="tbar-bso-on-gcsc">
+                        <g>
+                            <path d="M296.457,381.505L301.129,375.01" style="fill:none;stroke:white;stroke-width:2px;stroke-miterlimit:10;"/>
+                            <path d="M329.919,400.646C329.919,400.646 303.768,381.836 298.793,378.258" style="fill:none;stroke:white;stroke-width:2px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0384,14.7373)">
+                    <g id="arrow-nadph-to-gsr-to-nadp">
+                        <g>
+                            <path d="M119.947,426.44L112.969,420.18L120.933,415.233L119.947,426.44Z" style="fill:white;"/>
+                            <path d="M176.573,362.272C176.573,362.272 184.042,389.702 158.569,405.927C139.39,418.143 126.045,420.549 118.946,420.705" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,-8.22449e-07,-5.94465e-07,0.999997,-41.0388,14.737)">
+                    <g id="tbar-bcnu-on-gsr">
+                        <g>
+                            <path d="M150.9,431.459L158.613,437.84" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M129.028,465.752C129.028,465.752 150.335,439.995 154.757,434.649" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-gsh-to-gpx4-to-gssg">
+                        <g>
+                            <path d="M197.045,496.23L189.038,491.353L195.962,485.032L197.045,496.23Z" style="fill:white;"/>
+                            <path d="M252.658,427.503C248.164,466.212 228.312,486.542 195.011,490.776" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.038,14.7379)">
+                    <g id="arrow-gssg-to-gsr-to-gsh">
+                        <g>
+                            <path d="M222.102,415.721L230.566,419.753L224.326,426.75L222.102,415.721Z" style="fill:white;"/>
+                            <path d="M165.652,481.136C168.114,458.73 183.865,430.313 224.685,420.939" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,-8.42874e-10,1.58039e-09,0.999999,-41.0386,14.7372)">
+                    <g id="tbar-rsl3-on-gpx4">
+                        <g>
+                            <path d="M288.309,497.805L288.309,487.702" style="fill:none;stroke:white;stroke-width:2.53px;stroke-miterlimit:10;"/>
+                            <path d="M317.252,492.753L288.309,492.753" style="fill:none;stroke:white;stroke-width:2.53px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(0.999996,6.39644e-07,4.98686e-07,0.999998,-41.0387,14.7373)">
+                    <g id="tbar-gpx4-on-pepufaooh">
+                        <g>
+                            <path d="M340.71,585.674L334.278,593.331" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M251.677,517.425C251.677,517.425 328.036,581.559 337.494,589.503" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g id="section-fsp1-coq10">
+                <g transform="matrix(1,0,0,1,527.969,28)">
+                    <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">FSP1/CoQ10 axis</text>
+                </g>
+                <g transform="matrix(1,0,0,1,545.587,184.354)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">Statins</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,625.025,184.4)">
+                    <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">HMG-CoA</text>
+                </g>
+                <g transform="matrix(1,0,0,1,644.614,260.594)">
+                    <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">IPP</text>
+                </g>
+                <g transform="matrix(1,0,0,1,691.758,305.221)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">FIN56</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,449.005,382.209)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,535.123,365.567)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">FSP1</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,536.687,313.625)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,465.407,427.009)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">iFSP1</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,3.11211,-9.17377)">
+                    <g transform="matrix(1,0,0,1,623.282,368.036)">
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">CoQ10H2/</text>
+                    </g>
+                    <g>
+                        <g transform="matrix(1,0,0,1,623.282,381.036)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-T</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,643.264,381.036)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">OH</text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-111.059,68.0219)">
+                    <g transform="matrix(1,0,0,1,623.282,368.036)">
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">CoQ10(H)/</text>
+                    </g>
+                    <g>
+                        <g transform="matrix(1,0,0,1,623.282,381.036)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-T</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,643.264,381.036)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">OH</text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0384,14.7373)">
+                    <g id="tbar-statins-on-hmgcoa">
+                        <g>
+                            <path d="M660.454,160.577L660.299,170.576" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M633.584,165.161C633.584,165.161 654.936,165.492 660.377,165.577" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,0.999996,-41.0384,14.7373)">
+                    <g id="arrow-hmgcoa-to-ipp">
+                        <g>
+                            <path d="M700.957,219.169L695.332,226.669L689.707,219.169L700.957,219.169Z" style="fill:white;"/>
+                            <path d="M695.332,183.527L695.332,220.669" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0384,14.7373)">
+                    <g id="arrow-ipp-to-coq10h2">
+                        <g>
+                            <path d="M702.02,319.6L696.469,327.154L690.77,319.71L702.02,319.6Z" style="fill:white;"/>
+                            <path d="M695.755,254.246C695.755,254.246 696.239,303.712 696.41,321.155" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,6.19286e-07,8.2231e-07,1,-41.0384,14.7371)">
+                    <g id="tbar-fin56-on-coq10">
+                        <g>
+                            <path d="M721.857,324.7L715.715,319.568" style="fill:none;stroke:white;stroke-width:2px;stroke-miterlimit:10;"/>
+                            <path d="M740.511,296.132C740.511,296.132 722.445,317.755 718.786,322.134" style="fill:none;stroke:white;stroke-width:2px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-nadph-to-fsp1-to-nadp-center">
+                        <g>
+                            <path d="M582.216,312.696L590.193,307.77L592.688,316.807L582.216,312.696Z" style="fill:white;"/>
+                            <path d="M526.137,353.471C551.6,351.465 577.912,335.045 588,313.355" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="tbar-ifsp1-on-fsp1">
+                        <g>
+                            <path d="M559.279,359.508L567.324,365.446" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M536.698,398.524C536.698,398.524 558.927,368.405 563.302,362.477" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-coq10h-to-coq10h2">
+                        <g>
+                            <path d="M679.237,368.497L685.445,361.471L690.45,369.398L679.237,368.497Z" style="fill:white;"/>
+                            <path d="M617.652,427.369C649.142,423.96 680.331,407.802 684.964,367.452" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-coq10h2-to-coq10h">
+                        <g>
+                            <path d="M584.935,402.534L576.645,406.912L574.763,397.728L584.935,402.534Z" style="fill:white;"/>
+                            <path d="M658.659,350.945C626.669,341.142 598.867,361.508 579.208,401.487" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,-3.8768e-07,6.26484e-07,0.999998,-41.0388,14.7374)">
+                    <g id="tbar-coq10h2-on-pepufaoo">
+                        <g>
+                            <path d="M762.29,573.175L753.704,578.302" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M667.085,423.501C667.085,423.501 749.865,562.121 757.997,575.738" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g id="section-gch1-bh4">
+                <g transform="matrix(1,0,0,1,908.985,28)">
+                    <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">GCH1/BH4/DHFR axis</text>
+                </g>
+                <g transform="matrix(1,0,0,1,975,206.223)">
+                    <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">GCH1</text>
+                </g>
+                <g transform="matrix(1,0,0,1,1074.92,207.204)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">GTP</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,948.064,289.792)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,861.33,348.338)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">BH4/</text>
+                        <g transform="matrix(1,0,0,1,0,18)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">α-T<tspan x="21.52px " y="0px ">O</tspan>H</text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,968.337,360.224)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">DHFR</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,1062.43,334.879)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,1049.26,401.894)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">MTX</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,948.406,420.132)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">BH2/</text>
+                        <g transform="matrix(1,0,0,1,0,18)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-T<tspan x="19.982px " y="0px ">O</tspan>H·</text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.039,14.7373)">
+                    <g id="arrow-gtp-to-gch1">
+                        <g>
+                            <path d="M1066.13,193.432L1058.63,187.807L1066.13,182.182L1066.13,193.432Z" style="fill:white;"/>
+                            <path d="M1106.79,187.807L1064.63,187.807" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-gch1-to-bh4">
+                        <g>
+                            <path d="M932.696,314.033L925.138,319.581L921.928,310.773L932.696,314.033Z" style="fill:white;"/>
+                            <path d="M1016.04,201.281C968.54,239.913 938.819,277.433 926.877,313.839" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-bh4-to-bh2">
+                        <g>
+                            <path d="M977.862,393.976L983.738,401.281L975.08,404.877L977.862,393.976Z" style="fill:white;"/>
+                            <path d="M941.038,352.281C943.216,376.641 954.968,392.937 977.925,399.798" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-nadph-to-dhfr-to-nadp-right">
+                        <g>
+                            <path d="M1086.81,322.487L1095.34,326.381L1089.21,333.478L1086.81,322.487Z" style="fill:white;"/>
+                            <path d="M1008.18,285.946C1024.56,322.745 1052.51,334.842 1089.48,327.662" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-bh2-to-bh4">
+                        <g>
+                            <path d="M962.172,338.737L954.021,334.106L960.75,327.578L962.172,338.737Z" style="fill:white;"/>
+                            <path d="M1011.07,386.731C1013.59,353.837 995.696,330.144 959.973,333.347" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="arrow-bh4-to-coq10h2" transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <path d="M743.195,325.086L733.822,324.876L736.648,315.937L743.195,325.086Z" style="fill:white;"/>
+                    <path d="M898.899,324.876C847.738,289.278 804.109,275.666 738.701,321.385" style="fill:none;stroke:white;stroke-width:2.5px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:7.5,7.5,0,0,0,0;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="tbar-mtx-on-dhfr">
+                        <g>
+                            <path d="M1060.69,357.098L1066.4,348.894" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M1089.61,371.165C1089.61,371.165 1068.49,356.441 1063.55,352.996" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(0.999995,-2.09298e-07,1.81739e-07,1,-41.0385,14.7374)">
+                    <g id="tbar-bh4-on-pepufaoo">
+                        <g>
+                            <path d="M836.24,591.724L827.579,586.724" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M942.555,397.597C942.555,397.597 840.844,573.751 831.91,589.224" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g id="section-lipid-perox">
+                <g transform="matrix(1,0,0,1,40,596.474)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:16px;fill:white;">Lipid peroxidation</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,130,624.334)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PUF<tspan x="27.234px " y="0px ">A</tspan></text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,301.769,624.334)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PE-PUF<tspan x="50.572px " y="0px ">A</tspan>-OOH</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,132.279,681.768)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:11px;fill:white;">ACSL4 inhibitor<tspan x="75.829px " y="0px ">,</tspan> D-</text>
+                        <g transform="matrix(1,0,0,1,0,16)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:11px;fill:white;">PUF<tspan x="21.398px " y="0px ">A</tspan>, MUF<tspan x="58.072px " y="0px ">A</tspan></text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,510.664,626.061)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:17px;fill:rgb(232,150,30);">Autoxidation</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,369.92,715.161)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">Iron chelator</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,714.879,624.334)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PE-PUF<tspan x="50.572px " y="0px ">A</tspan>-OO·</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,920.603,615.969)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">R<tspan x="8.455px 14.9px 22.248px " y="0px 0px 0px ">TA </tspan>(e.g. α-T<tspan x="71.373px " y="0px ">O</tspan>H,</text>
+                        <g transform="matrix(1,0,0,1,0,16)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">Fer-1, Lip-1)</text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,657.418,695.373)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">FINO2,</text>
+                        <g transform="matrix(1,0,0,1,0,16)">
+                            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">nanoparticles</text>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,517.257,756.005)">
+                    <g>
+                        <text x="0px" y="0px" style="font-family:'Helvetica';font-size:16px;fill:white;">Ferroptosis</text>
+                    </g>
+                </g>
+                <g transform="matrix(1,1.39144e-06,6.13824e-07,1,-41.0389,14.7373)">
+                    <g id="tbar-acsl4-inhib-on-pepufaooh">
+                        <g>
+                            <path d="M275.408,612.16L280.52,620.755" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M229.053,645.547C229.053,645.547 270.7,620.778 277.964,616.458" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="arrow-pepufaoo-to-pepufaooh" transform="matrix(1,0,0,1,-5.21317,-78.8545)">
+                    <path d="M716.075,708C604.9,746.329 503.704,743.912 411.828,703.436" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                </g>
+                <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+                    <path d="M1103.67,1527.91C1101.98,1534.99 1109.42,1544.08 1119.63,1545.25C1129.85,1546.42 1132.19,1538.55 1132.62,1533.44C1133.04,1528.34 1126.23,1525.14 1119.63,1523.23C1113.04,1521.31 1107.08,1513.65 1103.67,1527.91Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+                    <path d="M1165.33,1466.41C1159.19,1466.11 1154.53,1474.92 1162.19,1478.97C1169.86,1483.01 1171.98,1480.67 1175.82,1476.2C1179.64,1471.73 1174,1466.84 1165.33,1466.41Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+                    <path d="M1262.02,1446.55C1257.77,1446.74 1258.53,1442.73 1255.05,1443.71C1251.56,1444.69 1246.87,1451.12 1253.3,1457.33C1259.73,1463.54 1268.56,1459.62 1271.06,1457.33C1273.57,1455.04 1273.89,1446 1262.02,1446.55Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+                    <path d="M1398.87,1580.04C1387.27,1583.09 1388.48,1594.17 1393.93,1603.19C1399.38,1612.21 1406.87,1618.34 1416.4,1614.26C1425.94,1610.17 1429.17,1595.36 1421,1586C1412.83,1576.63 1402.1,1579.18 1398.87,1580.04Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
+                    <path d="M1148.45,1662.6C1152.04,1660.71 1157.58,1663.56 1160.3,1660.42C1163.02,1657.29 1160.98,1654.16 1153.76,1652.93C1146.54,1651.71 1130.47,1654.3 1130.06,1659.06C1129.65,1663.83 1133.47,1670.5 1148.45,1662.6Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.380785,0,0,0.397718,73.5389,58.7883)">
+                    <path d="M1361.69,1523.61C1355.87,1524.81 1350.47,1517.38 1350.47,1504.08C1350.47,1490.78 1333.02,1463.76 1305.17,1462.93C1277.32,1462.1 1284.39,1466.67 1267.76,1472.9C1251.13,1479.14 1236.17,1467.5 1222.04,1469.16C1207.91,1470.83 1164.27,1504.08 1159.28,1513.22C1154.29,1522.36 1151.42,1541.48 1150.55,1558.94C1149.69,1576.4 1138.46,1598.01 1145.53,1617.54C1152.6,1637.08 1158.41,1632.51 1164.23,1642.07C1170.05,1651.63 1164.23,1657.44 1177.12,1671.58C1190,1685.71 1200.46,1702.75 1222.04,1696.93C1243.62,1691.11 1244.03,1682.8 1256.09,1677.81C1268.14,1672.82 1284.35,1672.41 1283.52,1677.81C1282.69,1683.21 1282.27,1690.28 1272.3,1691.11C1262.32,1691.94 1261.15,1703.16 1267.76,1702.33C1274.38,1701.5 1275.62,1698.59 1283.52,1696.93C1291.42,1695.27 1293.57,1677.39 1305.17,1671.58C1316.77,1665.76 1338.38,1665.34 1343.37,1671.58C1348.36,1677.81 1359.58,1701.92 1367.06,1702.33C1374.54,1702.75 1379.53,1694.85 1374.54,1691.11C1369.56,1687.37 1357.99,1681.97 1361.69,1677.81C1365.4,1673.65 1366.64,1675.73 1367.06,1666.59C1367.48,1657.44 1369.56,1656.2 1374.54,1659.94C1379.53,1663.68 1378.28,1670.33 1389.92,1671.58C1401.56,1672.82 1401.56,1664.1 1395.74,1659.94C1389.92,1655.78 1383.69,1650.79 1389.92,1645.81C1396.15,1640.82 1394.49,1626.27 1383.69,1622.95C1372.88,1619.62 1356.67,1602.17 1357.92,1593.85C1359.16,1585.54 1366.23,1565.59 1374.54,1570.58C1382.86,1575.57 1384.6,1577.54 1385.96,1574.28C1387.33,1571.01 1370.85,1555.34 1370.16,1551.12C1369.48,1546.9 1367.44,1534.92 1372.34,1523.61C1377.25,1512.31 1375.2,1505.23 1372.34,1508.22C1369.48,1511.22 1366.98,1522.52 1361.69,1523.61Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.42px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:19.26,19.26,0,0,0,0;"/>
+                </g>
+                <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+                    <path d="M1302.84,1537.62C1294.84,1539.75 1287.15,1536.55 1288.75,1543.47C1290.34,1550.38 1295.13,1550.92 1291.67,1559.16C1288.21,1567.41 1288.75,1569.01 1288.75,1576.72C1288.75,1584.43 1291.14,1595.34 1285.29,1596.4C1279.44,1597.47 1263.48,1591.88 1262.14,1599.86C1260.82,1607.84 1266.13,1606.51 1265.87,1610.5C1265.6,1614.49 1256.29,1618.48 1262.14,1623.54C1268,1628.59 1271.72,1619.55 1279.44,1619.01C1287.15,1618.48 1295.13,1619.28 1305.24,1614.23C1315.35,1609.17 1312.95,1595.34 1316.68,1589.49C1320.4,1583.64 1320.4,1566.61 1316.68,1559.16C1312.95,1551.72 1313.48,1552.78 1316.68,1546.66C1319.87,1540.54 1314.81,1534.42 1302.84,1537.62Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+                    <path d="M1243.31,1572.08C1240.07,1574.71 1240.86,1586.52 1245.22,1587.61C1249.58,1588.7 1258.7,1588.7 1263.2,1583.79C1267.69,1578.89 1266.6,1573.58 1267.15,1570.04C1267.69,1566.5 1272.6,1564.45 1275.32,1562.68C1278.04,1560.91 1274.78,1548.93 1270.14,1548.11C1265.51,1547.29 1256.39,1546.88 1254.62,1555.87C1252.85,1564.86 1248.35,1568 1243.31,1572.08Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+                    <path d="M1239.23,1600.14C1235.56,1601.84 1239.77,1609.67 1243.31,1613.21C1246.86,1616.75 1253.12,1615.25 1253.12,1611.85C1253.12,1608.44 1246.86,1596.6 1239.23,1600.14Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+                    <path d="M1229.29,1528.23C1225.94,1531.13 1223.84,1535.31 1224.93,1540.76C1226.02,1546.2 1235.3,1545.25 1237.81,1544.57C1240.32,1543.89 1249.94,1535.85 1245.46,1530.4C1240.99,1524.96 1232.43,1525.5 1229.29,1528.23Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
+                    <path d="M1227.23,1503.44C1228.18,1507.42 1230.09,1506.84 1232.68,1506.03C1235.27,1505.21 1235,1502.49 1232.68,1501.26C1230.37,1500.03 1226.55,1500.58 1227.23,1503.44Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                </g>
+                <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+                    <path d="M1200,1542.86C1195.44,1549.53 1202.93,1556.16 1208.52,1545.25C1214.1,1534.35 1213.3,1529.83 1208.52,1531.42C1203.73,1533.02 1203.45,1537.81 1200,1542.86Z" style="fill:rgb(157,100,57);"/>
+                </g>
+                <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+                    <path d="M1164.94,1578.72C1165.72,1572.78 1170.27,1563.4 1172.39,1561.48C1174.52,1559.57 1174.73,1550.2 1168.56,1551.05C1162.39,1551.9 1162.18,1568.93 1159.41,1578.72C1156.64,1588.51 1155.58,1598.72 1159.41,1600C1163.24,1601.27 1164.31,1583.61 1164.94,1578.72Z" style="fill:rgb(157,100,57);"/>
+                </g>
+                <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+                    <path d="M1195.3,1605.73C1198.13,1608.3 1195.71,1611.45 1192.71,1612.26C1189.71,1613.08 1188.49,1613.35 1187.94,1615.94C1187.4,1618.53 1190.17,1635.42 1198.59,1635.28C1207.01,1635.14 1200.75,1629.7 1200,1627.25C1199.25,1624.79 1195.71,1615.81 1200,1617.98C1204.29,1620.16 1203.06,1621.12 1207.96,1627.25C1212.87,1633.37 1226.35,1639.37 1234.52,1638.82C1242.69,1638.28 1231.12,1632.01 1228.39,1630.51C1225.67,1629.02 1225.67,1625.34 1228.39,1625.47C1231.12,1625.61 1237.11,1628.47 1239.15,1627.25C1241.2,1626.02 1240.11,1618.39 1233.16,1615.94C1226.21,1613.49 1225.53,1602.16 1222.27,1600.06C1219,1597.96 1207.28,1593.61 1207.96,1590.34C1208.65,1587.07 1209.05,1577.67 1214.5,1571.13C1219.95,1564.6 1217.81,1559.83 1212.41,1563.23C1207.01,1566.64 1204.56,1579.85 1204.02,1584.62C1203.47,1589.38 1201.84,1594.97 1207.96,1601.64C1214.09,1608.31 1219.13,1611.72 1218.59,1614.72C1218.04,1617.71 1215.5,1618.66 1212.41,1615.94C1209.33,1613.22 1201.98,1605.16 1200,1600.06C1198.02,1594.97 1196.85,1584.48 1198.59,1577.94C1200.34,1571.4 1199.93,1558.88 1195.3,1564.19C1190.67,1569.5 1187.94,1599.05 1195.3,1605.73Z" style="fill:rgb(157,100,57);"/>
+                </g>
+                <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+                    <path d="M1222.27,1645.74C1219.74,1646.84 1220.42,1649.41 1223.42,1652.27C1226.42,1655.13 1224.51,1657.18 1226.69,1659.63C1228.87,1662.08 1233.63,1656.36 1232.14,1652.27C1230.64,1648.19 1226.01,1644.1 1222.27,1645.74Z" style="fill:rgb(157,100,57);"/>
+                </g>
+                <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+                    <path d="M1339.49,1555.65C1335.56,1553.15 1332.84,1558.25 1336.83,1562.1C1340.82,1565.96 1342.48,1571.8 1342.48,1575.53C1342.48,1579.26 1342.81,1586.24 1346.8,1584.25C1350.79,1582.25 1348.47,1575.6 1346.8,1568.29C1345.14,1560.97 1343.15,1557.98 1339.49,1555.65Z" style="fill:rgb(157,100,57);"/>
+                </g>
+                <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
+                    <path d="M1343.68,1590.68C1341.49,1591.28 1342.57,1593.89 1344.24,1594.73C1345.91,1595.56 1346.54,1598.15 1344.24,1600.06C1341.94,1601.98 1339.15,1605.81 1342.84,1607.28C1346.54,1608.74 1350.1,1605.61 1351,1603.72C1351.91,1601.84 1353.1,1588.1 1343.68,1590.68Z" style="fill:rgb(157,100,57);"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7374)">
+                    <g id="arrow-pufa-to-pepufaooh">
+                        <g>
+                            <path d="M327.003,598.682L335.038,604.709L327.003,610.735L327.003,598.682Z" style="fill:white;"/>
+                            <path d="M215.038,604.709L328.61,604.709" style="fill:none;stroke:white;stroke-width:2.68px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,2.13159e-24,-2.13159e-24,1,-41.0386,14.7378)">
+                    <g id="arrow-pepufaooh-to-pepufaoo">
+                        <g>
+                            <path d="M744.506,591.128L749.134,599.281L740.011,601.44L744.506,591.128Z" style="fill:white;"/>
+                            <path d="M447.653,597.596C552.205,555.845 648.872,556.366 743.634,596.883" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="tbar-ironchelator-on-autoxidation">
+                        <g>
+                            <path d="M494.543,644.878L502.53,650.896" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M472.578,682.333C472.578,682.333 494.199,653.642 498.536,647.887" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,-3.06649e-09,-6.48079e-09,1,-41.0393,14.7372)">
+                    <g id="tbar-rta-on-pepufaoo">
+                        <g>
+                            <path d="M853.683,609.423L853.629,599.423" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M954.398,603.886C954.398,603.886 865.302,604.361 853.656,604.423" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,-41.0385,14.7373)">
+                    <g id="arrow-fino2-to-ferroptosis">
+                        <g>
+                            <path d="M676.659,654.531L673.21,646.889L681.394,648.714L676.659,654.531Z" style="fill:white;"/>
+                            <path d="M694.985,664.611C694.985,664.611 684.259,655.882 677.863,650.676" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g id="section-dhodh-coqh2">
+                <g transform="matrix(1,0,0,1,968.535,793.197)">
+                    <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">Mitochondrial inner membrane</text>
+                </g>
+                <g transform="matrix(1,0,0,1,1035.3,766.744)">
+                    <text x="-39.354px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">Dihydroorotate</text>
+                </g>
+                <g id="arrow-dihydroorotate-to-dhodh" transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,1421.43,1295.11)">
+                    <g transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,1462.47,1280.37)">
+                        <g id="arrow-dihydroorotate-to-dhodh1" serif:id="arrow-dihydroorotate-to-dhodh">
+                            <path d="M1001.97,753.995L994.466,748.37L1001.97,742.745L1001.97,753.995Z" style="fill:white;"/>
+                            <path d="M1026.47,748.37L1000.47,748.37" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,921.616,768.364)">
+                    <text x="-23.832px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:rgb(253,255,254);">DHODH</text>
+                </g>
+                <g transform="matrix(-0.912195,1.11712e-16,-1.22465e-16,-1,1370.82,1295.07)">
+                    <g id="arrow-dhodh-to-coqh2">
+                        <g transform="matrix(-1.09626,-1.22465e-16,1.34253e-16,-1,1547.76,1280.33)">
+                            <path d="M908.596,752.642L902.853,748.335L908.596,744.028L908.596,752.642Z" style="fill:white;"/>
+                            <path d="M932.044,748.335L907.447,748.335" style="fill:none;stroke:white;stroke-width:1.91px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,837.928,767.628)">
+                    <text x="-18.337px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">CoQH₂</text>
+                </g>
+                <g transform="matrix(-0.97722,-0.212228,0.212228,-0.97722,1298.52,1441.43)">
+                    <g id="tbar-dhodh-coqh2-on-pepufaoo">
+                        <g transform="matrix(-0.97722,0.212228,-0.212228,-0.97722,1648.81,1086.78)">
+                            <path d="M790.712,629.379L800.706,629.019" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M850.12,748.37C779.485,748.045 799.028,723.854 795.709,629.199" style="fill:none;stroke:white;stroke-width:2.5px;stroke-dasharray:10,6.67;"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="mitochondrion" transform="matrix(1.19234,0,0,1.19234,966.663,194.616)">
+                    <g id="Mitochondria" transform="matrix(0.536464,0,0,0.536464,-417.959,172.085)">
+                        <path d="M925.579,540.726C904.207,538.8 892.046,524.421 891.424,503.84C890.701,479.886 909.515,464.762 928.381,461.753C956.635,457.247 1009.72,464.917 1051.67,504.246C1066.69,518.329 1075.38,536.461 1067.64,555.541C1058.66,577.673 1024.46,584.904 1008.22,572.252C966.235,539.56 948.182,542.763 925.579,540.726Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:3.91px;stroke-linejoin:round;stroke-miterlimit:2;"/>
+                    </g>
+                    <g id="Mitochondria-christae" serif:id="Mitochondria christae" transform="matrix(1,0,0,1,-583.747,173.323)">
+                        <path d="M654.161,255.466C653.829,256.398 652.964,256.731 654.627,258.461C656.291,260.191 660.017,262.919 656.69,263.784C653.363,264.649 652.431,257.928 649.969,260.524C647.507,263.119 646.642,273.233 649.37,272.767C652.098,272.302 654.827,269.973 656.291,270.372C657.755,270.771 659.085,272.235 657.621,273.233C656.158,274.231 650.102,274.658 651.633,277.472C653.163,280.287 654.76,281.884 657.089,282.216C659.418,282.549 661.88,276.893 662.878,275.695C663.876,274.497 666.072,272.834 667.004,274.63C667.935,276.427 660.35,285.144 665.141,284.811C669.932,284.479 673.126,277.292 673.725,276.028C674.324,274.764 674.457,273.265 676.054,273.981C677.651,274.697 674.057,280.752 674.856,282.948C675.654,285.144 676.985,285.41 679.381,285.81C681.776,286.209 683.307,283.148 683.772,278.556C684.238,273.965 684.771,267.91 688.364,270.106C691.957,272.302 684.85,286.408 687.705,288.538C690.56,290.667 693.022,291.277 694.02,290.872C695.018,290.467 700.408,277.958 702.937,280.22C705.465,282.482 701.122,287.34 700,289.403C698.878,291.466 697.014,293.063 698.478,294.26C699.942,295.458 701.14,296.39 702.537,295.924C703.935,295.458 708.526,284.213 710.922,285.876C713.317,287.54 710.323,290.534 708.792,293.595C707.262,296.656 704.6,298.985 707.528,301.181C710.456,303.377 711.121,302.778 712.718,302.046C714.315,301.314 714.515,292.863 717.11,292.796C719.705,292.73 718.441,298.319 718.108,301.447C717.775,304.574 720.637,304.574 723.432,303.909C726.226,303.244 726.958,300.249 725.827,297.787C724.696,295.325 723.698,292.198 726.359,292.53C729.021,292.863 728.644,297.654 731.417,297.787C734.189,297.92 736.718,288.072 735.121,286.874C733.524,285.676 732.859,286.076 729.465,286.475C726.071,286.874 726.337,283.68 728.733,282.616C731.128,281.551 733.457,280.619 731.395,278.357C729.332,276.094 727.735,277.824 725.672,279.422C723.609,281.019 720.615,278.49 721.813,276.893C723.01,275.296 726.537,273.832 724.142,270.771C721.746,267.71 719.883,266.313 718.552,267.244C717.221,268.176 714.36,278.317 710.5,277.472C706.641,276.627 710.035,271.969 711.099,270.704C712.164,269.44 716.09,264.782 713.229,261.987C710.367,259.193 705.776,255.599 704.179,258.993C702.582,262.387 700.519,273.832 697.192,272.9C693.865,271.969 698.257,263.851 699.321,260.058C700.386,256.265 699.521,255.2 695.595,254.069C691.669,252.938 691.736,254.468 690.804,257.13C689.872,259.792 689.14,260.856 687.011,260.257C684.882,259.659 687.467,254.734 687.705,253.137C687.943,251.54 686.146,250.675 683.817,250.276C681.488,249.877 676.83,248.546 676.697,253.869C676.564,259.193 676.764,264.45 675.566,266.047C674.368,267.644 672.106,266.779 671.973,265.381C671.839,263.984 672.825,249.989 669.997,249.823C667.169,249.656 662.677,250.072 663.26,252.568C663.842,255.063 667.252,259.471 664.84,260.553C662.428,261.634 660.265,252.401 658.352,252.9C656.439,253.399 654.494,254.535 654.161,255.466Z" style="fill:rgb(150,84,32);stroke:rgb(99,44,24);stroke-width:2.1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,41.0385,-14.7373)">
+            <g id="section-emerging-axes">
+                <g transform="matrix(1,0,0,1,1088.19,621.901)">
+                    <text x="-15.53px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">iNOS</text>
+                </g>
+                <g id="arrow-inos-to-no" transform="matrix(4.49975e-17,-0.734865,1.38615,8.48769e-17,59.4863,1345.02)">
+                    <g transform="matrix(8.33246e-17,0.721425,-1.36079,4.41745e-17,1810.23,-72.5211)">
+                        <g id="arrow-inos-to-no1" serif:id="arrow-inos-to-no">
+                            <path d="M1091.66,649.972L1084.3,644.159L1091.94,638.726L1091.66,649.972Z" style="fill:white;"/>
+                            <path d="M1124.34,617.904C1126.4,637.373 1112.71,644.311 1090.3,644.311" style="fill:none;stroke:white;stroke-width:2.5px;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,1027.97,663.701)">
+                    <text x="-11.556px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">NO·</text>
+                </g>
+                <g transform="matrix(1.61302,0,0,0.515501,-490.139,308.509)">
+                    <g id="tbar-no-on-pepufaoo">
+                        <g transform="matrix(0.619954,-0,-0,1.93986,278.421,-569.877)">
+                            <path d="M836.511,625.184L845.661,621.149" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M1046.36,644.311C1004.75,643.755 856.279,653.336 841.086,623.166" style="fill:none;stroke:white;stroke-width:2.5px;stroke-dasharray:10,6.67;"/>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,141.551,746.82)">
+                    <text x="-19.862px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">7-DHC</text>
+                </g>
+                <g transform="matrix(1,0,0,1,62.8814,10.0039)">
+                    <g id="tbar-7dhc-on-pepufaooh">
+                        <g transform="matrix(1,-0,-0,1,-103.92,4.73345)">
+                            <path d="M385.536,622.827L395.369,624.645" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
+                            <path d="M208.687,727.376C303.216,728.409 374.419,708.719 390.453,623.736" style="fill:none;stroke:white;stroke-width:2.5px;stroke-dasharray:10,6.67;"/>
+                        </g>
+                    </g>
+                </g>
             </g>
-        </g>
-        <g transform="matrix(1,0,0,1,3.11211,-9.17377)">
-            <text x="623.282px" y="368.036px" style="font-family:'Helvetica';font-size:13px;fill:white;">CoQ10H2/</text>
-            <g transform="matrix(13,0,0,13,662.764,381.036)">
-            </g>
-            <text x="623.282px" y="381.036px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-T<tspan x="643.264px " y="381.036px ">O</tspan>H</text>
-        </g>
-        <g transform="matrix(1,0,0,1,-111.059,68.0219)">
-            <text x="623.282px" y="368.036px" style="font-family:'Helvetica';font-size:13px;fill:white;">CoQ10(H)/</text>
-            <g transform="matrix(13,0,0,13,662.764,381.036)">
-            </g>
-            <text x="623.282px" y="381.036px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-T<tspan x="643.264px " y="381.036px ">O</tspan>H</text>
-        </g>
-        <g id="tbar-statins-on-hmgcoa" transform="matrix(1,0,0,1,5.58828,12.3334)">
-            <g transform="matrix(1,-0,-0,1,-46.6267,2.40393)">
-                <path d="M660.454,160.577L660.299,170.576" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M633.584,165.161C633.584,165.161 654.936,165.492 660.377,165.577" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-hmgcoa-to-ipp" transform="matrix(1,0,0,0.685544,9.29367,76.2377)">
-            <g transform="matrix(1,-0,-0,1.45869,-50.3321,-89.7103)">
-                <path d="M700.957,219.169L695.332,226.669L689.707,219.169L700.957,219.169Z" style="fill:white;"/>
-                <path d="M695.332,183.527L695.332,220.669" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-ipp-to-coq10h2" transform="matrix(0.750972,0,0,0.750972,168.087,84.9946)">
-            <g transform="matrix(1.33161,-0,-0,1.33161,-278.473,-93.5551)">
-                <path d="M702.02,319.6L696.469,327.154L690.77,319.71L702.02,319.6Z" style="fill:white;"/>
-                <path d="M695.755,254.246C695.755,254.246 696.239,303.712 696.41,321.155" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-fin56-on-coq10" transform="matrix(1.40153,-0.385464,-0.385464,1.37005,-163.539,166.395)">
-            <g transform="matrix(0.773351,0.217583,0.217583,0.79112,61.7376,-93.3253)">
-                <path d="M721.857,324.7L715.715,319.568" style="fill:none;stroke:white;stroke-width:2px;stroke-miterlimit:10;"/>
-                <path d="M740.511,296.132C740.511,296.132 722.445,317.755 718.786,322.134" style="fill:none;stroke:white;stroke-width:2px;"/>
-            </g>
-        </g>
-        <g id="arrow-nadph-to-fsp1-to-nadp-center" transform="matrix(1,0,0,1,14.0053,72.2088)">
-            <g transform="matrix(1,-0,-0,1,-55.0438,-57.4715)">
-                <path d="M582.216,312.696L590.193,307.77L592.688,316.807L582.216,312.696Z" style="fill:white;"/>
-                <path d="M526.137,353.471C551.6,351.465 577.912,335.045 588,313.355" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-ifsp1-on-fsp1" transform="matrix(1,0,0,1,14.0053,72.2088)">
-            <g transform="matrix(1,-0,-0,1,-55.0438,-57.4715)">
-                <path d="M559.279,359.508L567.324,365.446" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M536.698,398.524C536.698,398.524 558.927,368.405 563.302,362.477" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-coq10h-to-coq10h2" transform="matrix(1,0,0,1,14.0053,72.2088)">
-            <g transform="matrix(1,-0,-0,1,-55.0438,-57.4715)">
-                <path d="M679.237,368.497L685.445,361.471L690.45,369.398L679.237,368.497Z" style="fill:white;"/>
-                <path d="M617.652,427.369C649.142,423.96 680.331,407.802 684.964,367.452" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-coq10h2-to-coq10h" transform="matrix(1,0,0,1,14.0053,72.2088)">
-            <g transform="matrix(1,-0,-0,1,-55.0438,-57.4715)">
-                <path d="M584.935,402.534L576.645,406.912L574.763,397.728L584.935,402.534Z" style="fill:white;"/>
-                <path d="M658.659,350.945C626.669,341.142 598.867,361.508 579.208,401.487" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-coq10h2-on-pepufaoo" transform="matrix(0.943416,-0.145969,-0.120169,0.540224,94.1301,321.918)">
-            <g transform="matrix(1.09776,0.296615,0.244189,1.91706,-223.393,-628.978)">
-                <path d="M762.29,573.175L753.704,578.302" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M667.085,423.501C667.085,423.501 749.865,562.121 757.997,575.738" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        </g>
-        <g id="section-gch1-bh4" class="diagram-section">
-        <g transform="matrix(1,0,0,1,908.985,28)">
-            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:18px;fill:white;">GCH1/BH4/DHFR axis</text>
-        </g>
-        <g transform="matrix(1,0,0,1,975,206.223)">
-            <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">GCH1</text>
-        </g>
-        <g transform="matrix(1,0,0,1,1074.92,240.185)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">GTP</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,948.064,322.773)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)H</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,861.33,381.319)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">BH4/</text>
-                <text x="0px" y="18px" style="font-family:'Helvetica';font-size:14px;fill:white;">α-TOH</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,968.337,393.205)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:15px;fill:white;">DHFR</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,1062.43,367.86)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">NAD(P)+</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,1049.26,434.876)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">MTX</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,948.406,453.113)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">BH2/</text>
-                <text x="0px" y="18px" style="font-family:'Helvetica';font-size:13px;fill:white;">α-TOH·</text>
-            </g>
-        </g>
-        <g id="arrow-gtp-to-gch1" transform="matrix(0.718708,0,0,1,282.358,-36.4553)">
-            <g transform="matrix(1.39139,-0,-0,1,-449.97,51.1926)">
-                <path d="M1066.13,193.432L1058.63,187.807L1066.13,182.182L1066.13,193.432Z" style="fill:white;"/>
-                <path d="M1106.79,187.807L1064.63,187.807" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-gch1-to-bh4" transform="matrix(1,0,0,1,0,-32.9815)">
-            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
-                <path d="M932.696,314.033L925.138,319.581L921.928,310.773L932.696,314.033Z" style="fill:white;"/>
-                <path d="M1016.04,201.281C968.54,239.913 938.819,277.433 926.877,313.839" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-bh4-to-bh2" transform="matrix(1,0,0,1,0,-32.9815)">
-            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
-                <path d="M977.862,393.976L983.738,401.281L975.08,404.877L977.862,393.976Z" style="fill:white;"/>
-                <path d="M941.038,352.281C943.216,376.641 954.968,392.937 977.925,399.798" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-nadph-to-dhfr-to-nadp-right" transform="matrix(1,0,0,1,0,-32.9815)">
-            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
-                <path d="M1086.81,322.487L1095.34,326.381L1089.21,333.478L1086.81,322.487Z" style="fill:white;"/>
-                <path d="M1008.18,285.946C1024.56,322.745 1052.51,334.842 1089.48,327.662" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-bh2-to-bh4" transform="matrix(1,0,0,1,0,-32.9815)">
-            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
-                <path d="M962.172,338.737L954.021,334.106L960.75,327.578L962.172,338.737Z" style="fill:white;"/>
-                <path d="M1011.07,386.731C1013.59,353.837 995.696,330.144 959.973,333.347" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-bh4-to-coq10h2" transform="matrix(1,-0,-0,1,-41.0385,14.7373)">
-            <path d="M743.195,325.086L733.822,324.876L736.648,315.937L743.195,325.086Z" style="fill:white;"/>
-            <path d="M898.899,324.876C847.738,289.278 804.109,275.666 738.701,321.385" style="fill:none;stroke:white;stroke-width:2.5px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:7.5,7.5,0,0,0,0;"/>
-        </g>
-        <g id="tbar-mtx-on-dhfr" transform="matrix(1,0,0,1,0,-32.9815)">
-            <g transform="matrix(1,-0,-0,1,-41.0385,47.7188)">
-                <path d="M1060.69,357.098L1066.4,348.894" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M1089.61,371.165C1089.61,371.165 1068.49,356.441 1063.55,352.996" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-bh4-on-pepufaoo" transform="matrix(0.978881,0.0526447,0.0526447,0.868769,-2.95743,-25.6093)">
-            <g transform="matrix(1.02491,-0.0621066,-0.0621066,1.15482,-41.5356,48.9581)">
-                <path d="M836.24,591.724L827.579,586.724" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M942.555,397.597C942.555,397.597 840.844,573.751 831.91,589.224" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        </g>
-        <g id="section-lipid-perox" class="diagram-section">
-        <g transform="matrix(1,0,0,1,40,629.455)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:16px;fill:white;">Lipid peroxidation</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,130,657.315)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PUFA</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,301.769,657.315)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PE-PUFA-OOH</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,132.279,714.749)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:11px;fill:white;">ACSL4 inhibitor, D-</text>
-                <text x="0px" y="16px" style="font-family:'Helvetica';font-size:11px;fill:white;">PUFA, MUFA</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,510.664,659.042)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:17px;fill:rgb(232,150,30);">Autoxidation</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,408.458,728.354)">
-            <g transform="matrix(1,0,0,1,-38.5382,-13.1926)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:13px;fill:white;">Iron chelator</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,714.879,657.315)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:14px;fill:white;">PE-PUFA-OO·</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,920.603,648.95)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">RTA (e.g. α-TOH,</text>
-                <text x="0px" y="16px" style="font-family:'Helvetica';font-size:12px;fill:white;">Fer-1, Lip-1)</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,657.418,728.354)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:12px;fill:white;">FINO2,</text>
-                <text x="0px" y="16px" style="font-family:'Helvetica';font-size:12px;fill:white;">nanoparticles</text>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1,517.257,788.986)">
-            <g transform="matrix(1,0,0,1,0,-32.9815)">
-                <text x="0px" y="0px" style="font-family:'Helvetica';font-size:16px;fill:white;">Ferroptosis</text>
-            </g>
-        </g>
-        <g id="tbar-acsl4-inhib-on-pepufaooh" transform="matrix(0.297408,-0.740413,0.67275,0.601028,-264.028,448.862)">
-            <g transform="matrix(0.88796,1.09389,-0.993922,0.439392,629.492,53.1745)">
-                <path d="M275.408,612.16L280.52,620.755" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M229.053,645.547C229.053,645.547 270.7,620.778 277.964,616.458" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-pepufaoo-to-pepufaooh" transform="matrix(1,0,0,1,-5.21317,-78.8545)">
-            <path d="M716.075,708C604.9,746.329 503.704,743.912 411.828,703.436" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-        </g>
-        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
-            <path d="M1103.67,1527.91C1101.98,1534.99 1109.42,1544.08 1119.63,1545.25C1129.85,1546.42 1132.19,1538.55 1132.62,1533.44C1133.04,1528.34 1126.23,1525.14 1119.63,1523.23C1113.04,1521.31 1107.08,1513.65 1103.67,1527.91Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
-            <path d="M1165.33,1466.41C1159.19,1466.11 1154.53,1474.92 1162.19,1478.97C1169.86,1483.01 1171.98,1480.67 1175.82,1476.2C1179.64,1471.73 1174,1466.84 1165.33,1466.41Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
-            <path d="M1262.02,1446.55C1257.77,1446.74 1258.53,1442.73 1255.05,1443.71C1251.56,1444.69 1246.87,1451.12 1253.3,1457.33C1259.73,1463.54 1268.56,1459.62 1271.06,1457.33C1273.57,1455.04 1273.89,1446 1262.02,1446.55Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
-            <path d="M1398.87,1580.04C1387.27,1583.09 1388.48,1594.17 1393.93,1603.19C1399.38,1612.21 1406.87,1618.34 1416.4,1614.26C1425.94,1610.17 1429.17,1595.36 1421,1586C1412.83,1576.63 1402.1,1579.18 1398.87,1580.04Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.394969,0,0,0.394969,53.7052,62.5431)">
-            <path d="M1148.45,1662.6C1152.04,1660.71 1157.58,1663.56 1160.3,1660.42C1163.02,1657.29 1160.98,1654.16 1153.76,1652.93C1146.54,1651.71 1130.47,1654.3 1130.06,1659.06C1129.65,1663.83 1133.47,1670.5 1148.45,1662.6Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.33px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.380785,0,0,0.397718,73.5389,58.7883)">
-            <path d="M1361.69,1523.61C1355.87,1524.81 1350.47,1517.38 1350.47,1504.08C1350.47,1490.78 1333.02,1463.76 1305.17,1462.93C1277.32,1462.1 1284.39,1466.67 1267.76,1472.9C1251.13,1479.14 1236.17,1467.5 1222.04,1469.16C1207.91,1470.83 1164.27,1504.08 1159.28,1513.22C1154.29,1522.36 1151.42,1541.48 1150.55,1558.94C1149.69,1576.4 1138.46,1598.01 1145.53,1617.54C1152.6,1637.08 1158.41,1632.51 1164.23,1642.07C1170.05,1651.63 1164.23,1657.44 1177.12,1671.58C1190,1685.71 1200.46,1702.75 1222.04,1696.93C1243.62,1691.11 1244.03,1682.8 1256.09,1677.81C1268.14,1672.82 1284.35,1672.41 1283.52,1677.81C1282.69,1683.21 1282.27,1690.28 1272.3,1691.11C1262.32,1691.94 1261.15,1703.16 1267.76,1702.33C1274.38,1701.5 1275.62,1698.59 1283.52,1696.93C1291.42,1695.27 1293.57,1677.39 1305.17,1671.58C1316.77,1665.76 1338.38,1665.34 1343.37,1671.58C1348.36,1677.81 1359.58,1701.92 1367.06,1702.33C1374.54,1702.75 1379.53,1694.85 1374.54,1691.11C1369.56,1687.37 1357.99,1681.97 1361.69,1677.81C1365.4,1673.65 1366.64,1675.73 1367.06,1666.59C1367.48,1657.44 1369.56,1656.2 1374.54,1659.94C1379.53,1663.68 1378.28,1670.33 1389.92,1671.58C1401.56,1672.82 1401.56,1664.1 1395.74,1659.94C1389.92,1655.78 1383.69,1650.79 1389.92,1645.81C1396.15,1640.82 1394.49,1626.27 1383.69,1622.95C1372.88,1619.62 1356.67,1602.17 1357.92,1593.85C1359.16,1585.54 1366.23,1565.59 1374.54,1570.58C1382.86,1575.57 1384.6,1577.54 1385.96,1574.28C1387.33,1571.01 1370.85,1555.34 1370.16,1551.12C1369.48,1546.9 1367.44,1534.92 1372.34,1523.61C1377.25,1512.31 1375.2,1505.23 1372.34,1508.22C1369.48,1511.22 1366.98,1522.52 1361.69,1523.61Z" style="fill:rgb(178,117,70);stroke:rgb(99,44,24);stroke-width:6.42px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:19.26,19.26,0,0,0,0;"/>
-        </g>
-        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
-            <path d="M1302.84,1537.62C1294.84,1539.75 1287.15,1536.55 1288.75,1543.47C1290.34,1550.38 1295.13,1550.92 1291.67,1559.16C1288.21,1567.41 1288.75,1569.01 1288.75,1576.72C1288.75,1584.43 1291.14,1595.34 1285.29,1596.4C1279.44,1597.47 1263.48,1591.88 1262.14,1599.86C1260.82,1607.84 1266.13,1606.51 1265.87,1610.5C1265.6,1614.49 1256.29,1618.48 1262.14,1623.54C1268,1628.59 1271.72,1619.55 1279.44,1619.01C1287.15,1618.48 1295.13,1619.28 1305.24,1614.23C1315.35,1609.17 1312.95,1595.34 1316.68,1589.49C1320.4,1583.64 1320.4,1566.61 1316.68,1559.16C1312.95,1551.72 1313.48,1552.78 1316.68,1546.66C1319.87,1540.54 1314.81,1534.42 1302.84,1537.62Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
-            <path d="M1243.31,1572.08C1240.07,1574.71 1240.86,1586.52 1245.22,1587.61C1249.58,1588.7 1258.7,1588.7 1263.2,1583.79C1267.69,1578.89 1266.6,1573.58 1267.15,1570.04C1267.69,1566.5 1272.6,1564.45 1275.32,1562.68C1278.04,1560.91 1274.78,1548.93 1270.14,1548.11C1265.51,1547.29 1256.39,1546.88 1254.62,1555.87C1252.85,1564.86 1248.35,1568 1243.31,1572.08Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
-            <path d="M1239.23,1600.14C1235.56,1601.84 1239.77,1609.67 1243.31,1613.21C1246.86,1616.75 1253.12,1615.25 1253.12,1611.85C1253.12,1608.44 1246.86,1596.6 1239.23,1600.14Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
-            <path d="M1229.29,1528.23C1225.94,1531.13 1223.84,1535.31 1224.93,1540.76C1226.02,1546.2 1235.3,1545.25 1237.81,1544.57C1240.32,1543.89 1249.94,1535.85 1245.46,1530.4C1240.99,1524.96 1232.43,1525.5 1229.29,1528.23Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.34395,0,0,0.318376,121.486,181.966)">
-            <path d="M1227.23,1503.44C1228.18,1507.42 1230.09,1506.84 1232.68,1506.03C1235.27,1505.21 1235,1502.49 1232.68,1501.26C1230.37,1500.03 1226.55,1500.58 1227.23,1503.44Z" style="fill:rgb(150,84,32);stroke:rgb(138,81,38);stroke-width:7.54px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        </g>
-        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
-            <path d="M1200,1542.86C1195.44,1549.53 1202.93,1556.16 1208.52,1545.25C1214.1,1534.35 1213.3,1529.83 1208.52,1531.42C1203.73,1533.02 1203.45,1537.81 1200,1542.86Z" style="fill:rgb(157,100,57);"/>
-        </g>
-        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
-            <path d="M1164.94,1578.72C1165.72,1572.78 1170.27,1563.4 1172.39,1561.48C1174.52,1559.57 1174.73,1550.2 1168.56,1551.05C1162.39,1551.9 1162.18,1568.93 1159.41,1578.72C1156.64,1588.51 1155.58,1598.72 1159.41,1600C1163.24,1601.27 1164.31,1583.61 1164.94,1578.72Z" style="fill:rgb(157,100,57);"/>
-        </g>
-        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
-            <path d="M1195.3,1605.73C1198.13,1608.3 1195.71,1611.45 1192.71,1612.26C1189.71,1613.08 1188.49,1613.35 1187.94,1615.94C1187.4,1618.53 1190.17,1635.42 1198.59,1635.28C1207.01,1635.14 1200.75,1629.7 1200,1627.25C1199.25,1624.79 1195.71,1615.81 1200,1617.98C1204.29,1620.16 1203.06,1621.12 1207.96,1627.25C1212.87,1633.37 1226.35,1639.37 1234.52,1638.82C1242.69,1638.28 1231.12,1632.01 1228.39,1630.51C1225.67,1629.02 1225.67,1625.34 1228.39,1625.47C1231.12,1625.61 1237.11,1628.47 1239.15,1627.25C1241.2,1626.02 1240.11,1618.39 1233.16,1615.94C1226.21,1613.49 1225.53,1602.16 1222.27,1600.06C1219,1597.96 1207.28,1593.61 1207.96,1590.34C1208.65,1587.07 1209.05,1577.67 1214.5,1571.13C1219.95,1564.6 1217.81,1559.83 1212.41,1563.23C1207.01,1566.64 1204.56,1579.85 1204.02,1584.62C1203.47,1589.38 1201.84,1594.97 1207.96,1601.64C1214.09,1608.31 1219.13,1611.72 1218.59,1614.72C1218.04,1617.71 1215.5,1618.66 1212.41,1615.94C1209.33,1613.22 1201.98,1605.16 1200,1600.06C1198.02,1594.97 1196.85,1584.48 1198.59,1577.94C1200.34,1571.4 1199.93,1558.88 1195.3,1564.19C1190.67,1569.5 1187.94,1599.05 1195.3,1605.73Z" style="fill:rgb(157,100,57);"/>
-        </g>
-        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
-            <path d="M1222.27,1645.74C1219.74,1646.84 1220.42,1649.41 1223.42,1652.27C1226.42,1655.13 1224.51,1657.18 1226.69,1659.63C1228.87,1662.08 1233.63,1656.36 1232.14,1652.27C1230.64,1648.19 1226.01,1644.1 1222.27,1645.74Z" style="fill:rgb(157,100,57);"/>
-        </g>
-        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
-            <path d="M1339.49,1555.65C1335.56,1553.15 1332.84,1558.25 1336.83,1562.1C1340.82,1565.96 1342.48,1571.8 1342.48,1575.53C1342.48,1579.26 1342.81,1586.24 1346.8,1584.25C1350.79,1582.25 1348.47,1575.6 1346.8,1568.29C1345.14,1560.97 1343.15,1557.98 1339.49,1555.65Z" style="fill:rgb(157,100,57);"/>
-        </g>
-        <g transform="matrix(0.37896,0,0,0.386292,75.6623,78.3223)">
-            <path d="M1343.68,1590.68C1341.49,1591.28 1342.57,1593.89 1344.24,1594.73C1345.91,1595.56 1346.54,1598.15 1344.24,1600.06C1341.94,1601.98 1339.15,1605.81 1342.84,1607.28C1346.54,1608.74 1350.1,1605.61 1351,1603.72C1351.91,1601.84 1353.1,1588.1 1343.68,1590.68Z" style="fill:rgb(157,100,57);"/>
-        </g>
-        <g id="arrow-pufa-to-pepufaooh" transform="matrix(1.07143,0,0,1.07143,-8.14286,-128.411)">
-            <g transform="matrix(0.933333,-0,-0,0.933333,-30.7026,133.605)">
-                <path d="M327.003,598.682L335.038,604.709L327.003,610.735L327.003,598.682Z" style="fill:white;"/>
-                <path d="M215.038,604.709L328.61,604.709" style="fill:none;stroke:white;stroke-width:2.68px;"/>
-            </g>
-        </g>
-        <g id="arrow-pepufaooh-to-pepufaoo" transform="matrix(2.04193,-3.46945e-18,3.46945e-18,2.04193,-328.479,-812.932)">
-            <g transform="matrix(0.489733,8.32108e-19,-8.32108e-19,0.489733,140.769,405.337)">
-                <path d="M744.506,591.128L749.134,599.281L740.011,601.44L744.506,591.128Z" style="fill:white;"/>
-                <path d="M447.653,597.596C552.205,555.845 648.872,556.366 743.634,596.883" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-ironchelator-on-autoxidation" transform="matrix(1,0,0,1,-38.5382,-53.8524)">
-            <g transform="matrix(1,-0,-0,1,-2.50028,68.5897)">
-                <path d="M494.543,644.878L502.53,650.896" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M472.578,682.333C472.578,682.333 494.199,653.642 498.536,647.887" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="tbar-rta-on-pepufaoo" transform="matrix(0.815983,-0.00294428,-0.00294428,0.999953,168.796,-76.474)">
-            <g transform="matrix(1.22553,0.00360847,0.00360847,1.00006,-256.83,90.4593)">
-                <path d="M853.683,609.423L853.629,599.423" style="fill:none;stroke:white;stroke-width:2.5px;stroke-miterlimit:10;"/>
-                <path d="M954.398,603.886C954.398,603.886 865.302,604.361 853.656,604.423" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
-        <g id="arrow-fino2-to-ferroptosis" transform="matrix(1,0,0,1,0,-73.6413)">
-            <g transform="matrix(1,-0,-0,1,-41.0385,88.3786)">
-                <path d="M676.659,654.531L673.21,646.889L681.394,648.714L676.659,654.531Z" style="fill:white;"/>
-                <path d="M694.985,664.611C694.985,664.611 684.259,655.882 677.863,650.676" style="fill:none;stroke:white;stroke-width:2.5px;"/>
-            </g>
-        </g>
         </g>
     </g>
 </svg>

@@ -33,7 +33,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "E",
     subcategory: "Complement",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["I", "S"],
     function:
       "This gene is a member of the receptors of complement activation (RCA) family and is located in the 'cluster RCA' region of chromosome 1.",
     ironConnection: (
@@ -53,7 +53,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["E", "I"],
+    secondaryLayers: ["E", "S"],
     function:
       "This gene encodes several isoforms of a nucleocytoplasmic adaptor protein, one of which was initially identified as a MYC-interacting protein with features of a tumor suppressor.",
     ironConnection: (
@@ -72,9 +72,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Inositol Polyphosphate-5-phosphatase D",
     chromosome: "2",
     disease: "AD",
-    primaryLayer: "L",
+    primaryLayer: "I",
     subcategory: "Innate immunity",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["L", "S"],
     function:
       "This gene is a member of the inositol polyphosphate-5-phosphatase (INPP5) family and encodes a protein with an N-terminal SH2 domain, an inositol phosphatase domain, and two C-terminal protein interaction domains.",
     ironConnection: (
@@ -94,6 +94,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "N",
     subcategory: "Endothelial & vascular",
+    secondaryLayers: ["I"],
     function:
       "MIST is a member of the SLP76 family of adaptors (see LCP2, MIM 601603; BLNK, MIM 604515).",
     ironConnection: (
@@ -111,9 +112,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Major Histocompatibility Complex, Class II, DQ Alpha 1",
     chromosome: "6",
     disease: "AD",
-    primaryLayer: "L",
-    subcategory: "Innate immunity",
-    secondaryLayers: ["I"],
+    primaryLayer: "I",
+    subcategory: "Antigen presentation",
+    secondaryLayers: ["L", "S"],
     function:
       "HLA-DQA1 belongs to the HLA class II alpha chain paralogues.  The class II molecule is a heterodimer consisting of an alpha (DQA) and a beta chain (DQB), both anchored in the membrane.",
     ironConnection: (
@@ -133,7 +134,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Innate immunity",
-    secondaryLayers: ["E", "Fe"],
+    secondaryLayers: ["I", "E", "Fe"],
     function:
       "This gene encodes a membrane protein that forms a receptor signaling complex with the TYRO protein tyrosine kinase binding protein.",
     ironConnection: (
@@ -152,7 +153,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "CD2 Associated Protein",
     chromosome: "6",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Cytoskeletal",
     function:
       "This gene encodes a scaffolding molecule that regulates the actin cytoskeleton.",
@@ -171,7 +172,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "NME/NM23 Family Member 8",
     chromosome: "7",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Cytoskeletal",
     function:
       "This gene encodes a protein with an N-terminal thioredoxin domain and three C-terminal nucleoside diphosphate kinase (NDK) domains, but the NDK domains are thought to be catalytically inactive.",
@@ -190,7 +191,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Zinc Finger CW-type And PWWP Domain Containing 1 / Neuronal Tyrosine Phosphorylated Phosphoinositide-3-kinase Adaptor 1",
     chromosome: "7",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Enables methyl-CpG binding activity and methylated histone binding activity.  Predicted to be involved in meiosis I; positive regulation of DNA metabolic process; and spermatogenesis.",
@@ -211,6 +212,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "N",
     subcategory: "Receptor kinases",
+    secondaryLayers: ["I"],
     function:
       "This gene belongs to the ephrin receptor subfamily of the protein-tyrosine kinase family.  EPH and EPH-related receptors have been implicated in mediating developmental events, particularly in the nervous system.",
     ironConnection: (
@@ -230,7 +232,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "N",
     subcategory: "Receptor kinases",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a cytoplasmic protein tyrosine kinase which is involved in calcium-induced regulation of ion channels and activation of the map kinase signaling pathway.",
     ironConnection: (
@@ -267,7 +269,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Enoyl-CoA Hydratase Domain Containing 3",
     chromosome: "10",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "Predicted to enable enoyl-CoA hydratase activity.  Involved in positive regulation of cellular response to insulin stimulus.",
@@ -286,7 +288,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "CUGBP Elav-like Family Member 1",
     chromosome: "11",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Members of the CELF/BRUNOL protein family contain two N-terminal RNA recognition motif (RRM) domains, one C-terminal RRM domain, and a divergent segment of 160-230 aa between the second and third RRM domains.",
@@ -305,8 +307,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Spi-1 Proto-oncogene",
     chromosome: "11",
     disease: "AD",
-    primaryLayer: "L",
-    subcategory: "Innate immunity",
+    primaryLayer: "I",
+    subcategory: "Microglial regulation",
+    secondaryLayers: ["L"],
     function:
       "This gene encodes an ETS-domain transcription factor that activates gene expression during myeloid and B-lymphoid cell development.",
     ironConnection: (
@@ -324,8 +327,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "MS4A",
     chromosome: "?",
     disease: "AD",
-    primaryLayer: "L",
-    subcategory: "Innate immunity",
+    primaryLayer: "I",
+    subcategory: "Microglial regulation",
+    secondaryLayers: ["L"],
     function:
       "MS4A gene product.",
     ironConnection: (
@@ -381,7 +385,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "N",
     subcategory: "Receptor kinases",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables several functions, including actin binding activity; phosphatidylinositol-3,4,5-trisphosphate binding activity; and type I transforming growth factor beta receptor binding activity.",
     ironConnection: (
@@ -456,7 +460,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Lysine Acetyltransferase 8",
     chromosome: "16",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a member of the MYST histone acetylase protein family.  The encoded protein has a characteristic MYST domain containing an acetyl-CoA-binding site, a chromodomain typical of proteins which bind histones, and a C2HC-type zinc finger.",
@@ -475,8 +479,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Interleukin 34",
     chromosome: "16",
     disease: "AD",
-    primaryLayer: "L",
-    subcategory: "Innate immunity",
+    primaryLayer: "I",
+    subcategory: "Cytokine signaling",
+    secondaryLayers: ["L"],
     function:
       "Interleukin-34 is a cytokine that promotes the differentiation and viability of monocytes and macrophages through the colony-stimulating factor-1 receptor (CSF1R; MIM 164770) (Lin et al. , 2008 [PubMed 18467591]).",
     ironConnection: (
@@ -496,7 +501,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Innate immunity",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["I", "S"],
     function:
       "The protein encoded by this gene is a transmembrane signaling enzyme that catalyzes the conversion of 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate to 1D-myo-inositol 1,4,5-trisphosphate (IP3) and diacylglycerol (DAG) using calcium as a cofactor.",
     ironConnection: (
@@ -514,8 +519,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "SLP Adaptor And CSK Interacting Membrane Protein / Rabaptin, RAB GTPase Binding Effector Protein 1",
     chromosome: "17",
     disease: "AD",
-    primaryLayer: "L",
+    primaryLayer: "I",
     subcategory: "Innate immunity",
+    secondaryLayers: ["L"],
     function:
       "This gene encodes a transmembrane adaptor protein that is expressed in antigen-presenting cells and is localized in the immunologic synapse.",
     ironConnection: (
@@ -533,7 +539,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Microtubule Associated Protein Tau",
     chromosome: "17",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes the microtubule-associated protein tau (MAPT) whose transcript undergoes complex, regulated alternative splicing, giving rise to several mRNA species.",
@@ -554,6 +560,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Signaling & regulation",
+    secondaryLayers: ["I"],
     function:
       "This gene encodes a member of an adaptor protein family.",
     ironConnection: (
@@ -592,7 +599,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "N",
     subcategory: "Endothelial & vascular",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes an enzyme involved in blood pressure regulation and electrolyte balance.  It catalyzes the conversion of angiotensin I into a physiologically active peptide angiotensin II.",
     ironConnection: (
@@ -610,7 +617,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "ATP Binding Cassette Subfamily A Member 7",
     chromosome: "19",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Lipid transport",
     function:
       "The protein encoded by this gene is a member of the superfamily of ATP-binding cassette (ABC) transporters.  ABC proteins transport various molecules across extra- and intra-cellular membranes.",
@@ -688,7 +695,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "E",
     subcategory: "Lipid export",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a member of the ADAM (a disintegrin and metalloprotease domain) family.",
     ironConnection: (
@@ -708,7 +715,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "E",
     subcategory: "Lipid export",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables enzyme binding activity.  Involved in positive regulation of Notch signaling pathway; protein localization to plasma membrane; and protein maturation.",
     ironConnection: (
@@ -726,7 +733,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "ATP Binding Cassette Subfamily A Member 1",
     chromosome: "9",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Lipid transport",
     secondaryLayers: ["E"],
     function:
@@ -767,7 +774,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables ATPase binding activity.  Involved in dendrite morphogenesis and lysosome localization.",
     ironConnection: (
@@ -787,7 +794,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "N",
     subcategory: "Endothelial & vascular",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "The Sec61 complex is the central component of the protein translocation apparatus of the endoplasmic reticulum (ER) membrane.",
     ironConnection: (
@@ -805,8 +812,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "B Cell Linker",
     chromosome: "10",
     disease: "AD",
-    primaryLayer: "L",
-    subcategory: "Signaling & regulation",
+    primaryLayer: "I",
+    subcategory: "Adaptive immunity",
+    secondaryLayers: ["L"],
     function:
       "This gene encodes a cytoplasmic linker or adaptor protein that plays a critical role in B cell development.",
     ironConnection: (
@@ -826,6 +834,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
+    secondaryLayers: ["I"],
     function:
       "This gene encodes an A20-binding protein which plays a role in autoimmunity and tissue homeostasis through the regulation of nuclear factor kappa-B activation.",
     ironConnection: (
@@ -843,7 +852,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Ankyrin 3",
     chromosome: "10",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Ankyrins are a family of proteins that are believed to link the integral membrane proteins to the underlying spectrin-actin cytoskeleton and play key roles in activities such as cell motility, activation, proliferation, contact, and the maintenance of specialized membrane domains.",
@@ -864,6 +873,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Signaling & regulation",
+    secondaryLayers: ["I"],
     function:
       "Enables polyubiquitin modification-dependent protein binding activity.  Involved in protein linear polyubiquitination and regulation of signal transduction.",
     ironConnection: (
@@ -902,6 +912,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Autophagy & degradation",
+    secondaryLayers: ["I"],
     function:
       "This gene encodes a member of the peptidase C65 family of ubiquitin isopeptidases.  Members of this family remove ubiquitin from proteins.",
     ironConnection: (
@@ -979,7 +990,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a protein with an arfaptin homology domain that is found both in the cytosol and as membrane-bound form on the Golgi complex and immature secretory granules.",
     ironConnection: (
@@ -997,7 +1008,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Diacylglycerol Kinase Theta",
     chromosome: "4",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "The protein encoded by this gene contains three cysteine-rich domains, a proline-rich region, and a pleckstrin homology domain with an overlapping Ras-associating domain.",
@@ -1018,7 +1029,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "E",
     subcategory: "Lipid export",
-    secondaryLayers: ["Fe", "I"],
+    secondaryLayers: ["Fe", "S"],
     function:
       "The protein encoded by this gene is a major apoprotein of the chylomicron.  It binds to a specific liver and peripheral cell receptor, and is essential for the normal catabolism of triglyceride-rich lipoprotein constituents.",
     ironConnection: (
@@ -1036,9 +1047,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "CD33 Molecule",
     chromosome: "19",
     disease: "AD",
-    primaryLayer: "L",
-    subcategory: "Innate immunity",
-    secondaryLayers: ["I"],
+    primaryLayer: "I",
+    subcategory: "Microglial regulation",
+    secondaryLayers: ["L", "S"],
     function:
       "Enables protein phosphatase binding activity and sialic acid binding activity.",
     ironConnection: (
@@ -1115,6 +1126,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
+    secondaryLayers: ["I"],
     function:
       "The protein encoded by this gene is a member of the Ras superfamily of guanosine triphosphate (GTP)-metabolizing enzymes.",
     ironConnection: (
@@ -1191,7 +1203,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "E",
     subcategory: "Complement",
-    secondaryLayers: ["L"],
+    secondaryLayers: ["I", "L"],
     function:
       "Immunoglobulins recognize foreign antigens and initiate immune responses such as phagocytosis and the complement system.  Each immunoglobulin molecule consists of two identical heavy chains and two identical light chains.",
     ironConnection: (
@@ -1247,7 +1259,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "MAF BZIP Transcription Factor",
     chromosome: "16",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "The protein encoded by this gene is a DNA-binding, leucine zipper-containing transcription factor that acts as a homodimer or as a heterodimer.",
@@ -1285,7 +1297,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "PR/SET Domain 7",
     chromosome: "16",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a member of a family of proteins that may have roles in transcription and other nuclear processes.",
@@ -1342,7 +1354,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "KLF Transcription Factor 16",
     chromosome: "19",
     disease: "AD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Enables sequence-specific double-stranded DNA binding activity.  Predicted to be involved in regulation of transcription by RNA polymerase II.",
@@ -1361,8 +1373,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Sialic Acid Binding Ig Like Lectin 11",
     chromosome: "19",
     disease: "AD",
-    primaryLayer: "L",
-    subcategory: "Innate immunity",
+    primaryLayer: "I",
+    subcategory: "Microglial regulation",
+    secondaryLayers: ["L"],
     function:
       "This gene encodes a member of the sialic acid-binding immunoglobulin-like lectin family.",
     ironConnection: (
@@ -1380,8 +1393,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Leukocyte Immunoglobulin Like Receptor B2",
     chromosome: "19",
     disease: "AD",
-    primaryLayer: "L",
-    subcategory: "Innate immunity",
+    primaryLayer: "I",
+    subcategory: "Microglial regulation",
+    secondaryLayers: ["L"],
     function:
       "This gene is a member of the leukocyte immunoglobulin-like receptor (LIR) family, which is found in a gene cluster at chromosomal region 19q13. 4.",
     ironConnection: (
@@ -1401,6 +1415,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "AD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
+    secondaryLayers: ["I"],
     function:
       "The protein encoded by this gene is similar to mouse UIP28/UbcM4 interacting protein.  Alternative splicing has been observed at this locus, resulting in distinct isoforms.",
     ironConnection: (
@@ -1496,7 +1511,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "multi",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["I", "S"],
     function:
       "This gene encodes a member of the GXGD family of aspartic proteases, which are transmembrane proteins with two conserved catalytic motifs localized within the membrane-spanning regions, as well as a member of the signal peptide peptidase-like protease (SPPL) family.",
     ironConnection: (
@@ -1533,7 +1548,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Potassium Voltage-gated Channel Subfamily D Member 3",
     chromosome: "1",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Ion channels",
     secondaryLayers: ["E"],
     function:
@@ -1555,7 +1570,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Autophagy & degradation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a lysosomal membrane protein that cleaves the beta-glucosidic linkage of glycosylceramide, an intermediate in glycolipid metabolism.",
     ironConnection: (
@@ -1594,7 +1609,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "Fe",
     subcategory: "Mitochondrial",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes one of four nuclear-encoded subunits that comprise succinate dehydrogenase, also known as mitochondrial complex II, a key enzyme complex of the tricarboxylic acid cycle and aerobic respiratory chains of mitochondria.",
     ironConnection: (
@@ -1614,7 +1629,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Synaptobrevins/VAMPs, syntaxins, and the 25-kD synaptosomal-associated protein SNAP25 are the main components of a protein complex involved in the docking and/or fusion of synaptic vesicles with the presynaptic membrane.",
     ironConnection: (
@@ -1708,7 +1723,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Potassium Voltage-gated Channel Modifier Subfamily S Member 3",
     chromosome: "2",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Ion channels",
     function:
       "Voltage-gated potassium channels form the largest and most diversified class of ion channels and are present in both excitable and nonexcitable cells.",
@@ -1744,7 +1759,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Steroid 5 Alpha-reductase 2",
     chromosome: "2",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "This gene encodes a microsomal protein expressed at high levels in androgen-sensitive tissues such as the prostate.  The encoded protein is active at acidic pH and is sensitive to the 4-azasteroid inhibitor finasteride.",
@@ -1804,7 +1819,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a member of the SNF1 subfamily of serine/threonine protein kinases.",
     ironConnection: (
@@ -1822,7 +1837,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Potassium Voltage-gated Channel Interacting Protein 3",
     chromosome: "2",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Ion channels",
     function:
       "This gene encodes a member of the family of voltage-gated potassium (Kv) channel-interacting proteins, which belong to the recoverin branch of the EF-hand superfamily.",
@@ -1843,7 +1858,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Predicted to enable GTPase activator activity.  Predicted to be involved in activation of GTPase activity and intracellular protein transport.",
     ironConnection: (
@@ -1920,6 +1935,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Signaling & regulation",
+    secondaryLayers: ["I"],
     function:
       "The TRAF (tumor necrosis factor receptor-associated factor) family of proteins associate with and transduce signals from members of the tumor necrosis factor receptor superfamily.",
     ironConnection: (
@@ -1956,7 +1972,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Glutamate Metabotropic Receptor 7",
     chromosome: "3",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "L-glutamate is the major excitatory neurotransmitter in the central nervous system, and it activates both ionotropic and metabotropic glutamate receptors.",
@@ -1977,7 +1993,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables AP-2 adaptor complex binding activity and retromer complex binding activity.  Involved in several processes, including macroautophagy; positive regulation of receptor internalization; and retrograde transport, endosome to Golgi.",
     ironConnection: (
@@ -1995,7 +2011,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "RNA Binding Motif Single Stranded Interacting Protein 3",
     chromosome: "3",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes an RNA-binding protein that belongs to the c-myc gene single-strand binding protein family.",
@@ -2014,7 +2030,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Myelin Associated Oligodendrocyte Basic Protein",
     chromosome: "3",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Myelin & structural",
     function:
       "Predicted to enable actin binding activity and myosin binding activity.  Predicted to be a structural constituent of myelin sheath.",
@@ -2052,7 +2068,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Adenylate Cyclase 5",
     chromosome: "3",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a member of the membrane-bound adenylyl cyclase enzymes.  Adenylyl cyclases mediate G protein-coupled receptor signaling through the synthesis of the second messenger cAMP.",
@@ -2071,7 +2087,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Mediator Complex Subunit 12L",
     chromosome: "3",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "The protein encoded by this gene is part of the Mediator complex, which is involved in transcriptional coactivation of nearly all RNA polymerase II-dependent genes.",
@@ -2109,7 +2125,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Phospholipase C Eta 1",
     chromosome: "3",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "PLCH1 is a member of the PLC-eta family of the phosphoinositide-specific phospholipase C (PLC) superfamily of enzymes that cleave phosphatidylinositol 4,5-bisphosphate (PtdIns(4,5)P2) to generate second messengers inositol 1,4,5-trisphosphate (IP3) and diacylglycerol (DAG) (Hwang et al.",
@@ -2128,7 +2144,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Serine Palmitoyltransferase Small Subunit B",
     chromosome: "3",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "Serine palmitoyltransferase (SPT; EC 2. 3.",
@@ -2187,7 +2203,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables potassium ion leak channel activity.  Involved in potassium ion transmembrane transport.",
     ironConnection: (
@@ -2241,7 +2257,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Ligand Dependent Nuclear Receptor Corepressor Like",
     chromosome: "4",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a transcription factor that appears to function in spermatogenesis.  Polymorphisms in this gene are associated with measures of skeletal frame size and adult height.",
@@ -2262,7 +2278,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "Fe",
     subcategory: "Iron transport & metabolism",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables enzyme binding activity and glycogen binding activity.  Involved in glycophagy and intracellular transport.",
     ironConnection: (
@@ -2282,7 +2298,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "Fe",
     subcategory: "Signaling & regulation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Alpha-synuclein is a member of the synuclein family, which also includes beta- and gamma-synuclein.  Synucleins are abundantly expressed in the brain and alpha- and beta-synuclein inhibit phospholipase D2 selectively.",
     ironConnection: (
@@ -2321,7 +2337,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a member of the voltage-gated chloride channel (ClC) family.  The encoded protein is present in all cell types and localized in plasma membranes and in intracellular vesicles.",
     ironConnection: (
@@ -2358,7 +2374,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "ELOVL Fatty Acid Elongase 7",
     chromosome: "5",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "Enables fatty acid elongase activity.  Involved in fatty acid elongation, polyunsaturated fatty acid; fatty acid elongation, saturated fatty acid; and very long-chain fatty acid biosynthetic process.",
@@ -2379,7 +2395,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Predicted to enable transmembrane transporter activity.  Predicted to be involved in chemical synaptic transmission; neurotransmitter transport; and transmembrane transport.",
     ironConnection: (
@@ -2397,7 +2413,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Family With Sequence Similarity 151 Member B",
     chromosome: "5",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "Predicted to be active in extracellular space.",
@@ -2416,7 +2432,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Zinc Finger Protein 608",
     chromosome: "5",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Predicted to enable metal ion binding activity.  Predicted to be involved in negative regulation of transcription by RNA polymerase II.",
@@ -2435,7 +2451,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Receptor Accessory Protein 2",
     chromosome: "5",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a member of the receptor expression enhancing protein family.  Studies of a related gene in mouse suggest that the encoded protein is found in the cell membrane and enhances the function of sweet taste receptors.",
@@ -2473,7 +2489,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Membrane Bound Glycerophospholipid O-acyltransferase 1",
     chromosome: "6",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene belongs to the membrane-bound O-acetyltransferase superfamily.  The encoded transmembrane protein is an enzyme that transfers organic compounds, preferably from oleoyl-CoA, to hydroxyl groups of protein targets in membranes.",
@@ -2492,7 +2508,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "POM121 Transmembrane Nucleoporin Like 2",
     chromosome: "6",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     secondaryLayers: ["E"],
     function:
@@ -2512,7 +2528,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Zinc Finger Protein 311",
     chromosome: "6",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Predicted to enable DNA-binding transcription factor activity, RNA polymerase II-specific and RNA polymerase II cis-regulatory region sequence-specific DNA binding activity.",
@@ -2531,9 +2547,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Major Histocompatibility Complex, Class II, DR Beta 1",
     chromosome: "6",
     disease: "PD",
-    primaryLayer: "N",
-    subcategory: "Endothelial & vascular",
-    secondaryLayers: ["I"],
+    primaryLayer: "I",
+    subcategory: "Antigen presentation",
+    secondaryLayers: ["N", "S"],
     function:
       "HLA-DRB1 belongs to the HLA class II beta chain paralogs.  The class II molecule is a heterodimer consisting of an alpha (DRA) and a beta chain (DRB), both anchored in the membrane.",
     ironConnection: (
@@ -2553,7 +2569,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "Fe",
     subcategory: "Iron transport & metabolism",
-    secondaryLayers: ["L", "I"],
+    secondaryLayers: ["L", "S"],
     function:
       "This gene encodes a lysosomal membrane protein that may be involved in the transport and metabolism of cobalamin.",
     ironConnection: (
@@ -2592,7 +2608,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "N",
     subcategory: "Receptor kinases",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene is a member of the protein-tyrosine kinase oncogene family.  It encodes a membrane-associated tyrosine kinase that has been implicated in the control of cell growth.",
     ironConnection: (
@@ -2612,7 +2628,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "The protein encoded by this gene is a syntaxin family membrane receptor involved in vesicle transport.  The encoded protein binds alpha-SNAP, an important regulator of transport vesicle fusion.",
     ironConnection: (
@@ -2649,7 +2665,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Dynein Cytoplasmic 1 Intermediate Chain 1",
     chromosome: "7",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Cytoskeletal",
     secondaryLayers: ["L"],
     function:
@@ -2669,7 +2685,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Neuronal Tyrosine Phosphorylated Phosphoinositide-3-kinase Adaptor 1",
     chromosome: "7",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Growth & signaling",
     function:
       "Predicted to be involved in neuron projection morphogenesis and phosphatidylinositol 3-kinase signaling.",
@@ -2710,7 +2726,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Autophagy & degradation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a transmembrane protein belonging to a family of proteins containing TLC domains, which are postulated to function in lipid synthesis, transport, or sensing.",
     ironConnection: (
@@ -2747,7 +2763,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Fibroblast Growth Factor 20",
     chromosome: "8",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Growth & signaling",
     function:
       "The protein encoded by this gene is a member of the fibroblast growth factor family.",
@@ -2768,7 +2784,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "The product of this gene is a member of the BAR domain protein family.",
     ironConnection: (
@@ -2788,7 +2804,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Syntabulin/GOLSYN is part of a kinesin motor-adaptor complex that is critical for the anterograde axonal transport of active zone components and contributes to activity-dependent presynaptic assembly during neuronal development (Cai et al.",
     ironConnection: (
@@ -2808,6 +2824,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Signaling & regulation",
+    secondaryLayers: ["I"],
     function:
       "Enables small GTPase binding activity.  Involved in several processes, including cellular response to molecule of bacterial origin; negative regulation of small GTPase mediated signal transduction; and regulation of organelle organization.",
     ironConnection: (
@@ -2866,7 +2883,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "N",
     subcategory: "Endothelial & vascular",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Integrins are heterodimeric transmembrane receptor proteins that mediate numerous cellular processes including cell adhesion, cytoskeletal rearrangement, and activation of cell signaling pathways.  Integrins are composed of alpha and beta subunits.",
     ironConnection: (
@@ -2941,7 +2958,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Discs Large MAGUK Scaffold Protein 2",
     chromosome: "11",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Ion channels",
     function:
       "This gene encodes a member of the membrane-associated guanylate kinase (MAGUK) family.",
@@ -2979,7 +2996,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Immunoglobulin Superfamily Member 9B",
     chromosome: "11",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "Predicted to enable kinase binding activity.  Predicted to be involved in synaptic membrane adhesion.",
@@ -3019,7 +3036,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Signaling & regulation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene is a member of the leucine-rich repeat kinase family and encodes a protein with an ankryin repeat region, a leucine-rich repeat (LRR) domain, a kinase domain, a DFG-like motif, a RAS domain, a GTPase domain, a MLK-like domain, and a WD40 domain.",
     ironConnection: (
@@ -3039,7 +3056,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "Fe",
     subcategory: "Iron transport & metabolism",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables neutral amino acid:sodium symporter activity.  Involved in several processes, including amino acid transport; cellular response to arsenite(3-); and positive regulation of RNA splicing.",
     ironConnection: (
@@ -3057,7 +3074,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Potassium Voltage-gated Channel Subfamily H Member 3",
     chromosome: "12",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Ion channels",
     function:
       "The protein encoded by this gene is a voltage-gated potassium channel alpha subunit predominantly expressed in the forebrain.  Studies in mice have found that cognitive function increases when this gene is knocked out.",
@@ -3078,7 +3095,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene belongs to the Rab family of monomeric GTPases, which are involved in the control of cellular membrane traffic.  The encoded protein plays a role in the targeted trafficking of integrins via its association with integrin alpha tails.",
     ironConnection: (
@@ -3096,7 +3113,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Anoctamin 4",
     chromosome: "12",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "Enables intracellular calcium activated chloride channel activity.  Involved in chloride transport.",
@@ -3132,7 +3149,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Mevalonate Kinase",
     chromosome: "12",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes the peroxisomal enzyme mevalonate kinase.  Mevalonate is a key intermediate, and mevalonate kinase a key early enzyme, in isoprenoid and sterol synthesis.",
@@ -3153,7 +3170,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables several functions, including phosphatidylinositol phosphate binding activity; phosphatidylinositol-3,4-bisphosphate binding activity; and protein homodimerization activity.",
     ironConnection: (
@@ -3190,7 +3207,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Muscleblind Like Splicing Regulator 2",
     chromosome: "13",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene is a member of the muscleblind protein family which was initially described in Drosophila melanogaster.  This gene encodes a C3H-type zinc finger protein that modulates alternative splicing of pre-mRNAs.",
@@ -3209,8 +3226,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Insulin Receptor Substrate 2",
     chromosome: "13",
     disease: "PD",
-    primaryLayer: "L",
+    primaryLayer: "I",
     subcategory: "Innate immunity",
+    secondaryLayers: ["L"],
     function:
       "This gene encodes the insulin receptor substrate 2, a cytoplasmic signaling molecule that mediates effects of insulin, insulin-like growth factor 1, and other cytokines by acting as a molecular adaptor between diverse receptor tyrosine kinases and downstream effectors.",
     ironConnection: (
@@ -3228,8 +3246,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Ral GTPase Activating Protein Catalytic Subunit Alpha 1",
     chromosome: "14",
     disease: "PD",
-    primaryLayer: "L",
+    primaryLayer: "I",
     subcategory: "Innate immunity",
+    secondaryLayers: ["L"],
     function:
       "This gene encodes a major subunit of the RAL-GTPase activating protein.  A similar protein in mouse binds E12, a transcriptional regulator of immunoglobulin genes.",
     ironConnection: (
@@ -3266,7 +3285,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Galactosylceramidase",
     chromosome: "14",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Myelin & structural",
     secondaryLayers: ["L"],
     function:
@@ -3286,7 +3305,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Delta Like Non-canonical Notch Ligand 1",
     chromosome: "14",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Growth & signaling",
     function:
       "This gene encodes a transmembrane protein that contains multiple epidermal growth factor repeats that functions as a regulator of cell growth.  The encoded protein is involved in the differentiation of several cell types including adipocytes.",
@@ -3326,7 +3345,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gen encodes a member of the HERC protein family.  This protein stimulates guanine nucleotide exchange on ARF1 and Rab proteins.",
     ironConnection: (
@@ -3346,7 +3365,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "E",
     subcategory: "Lipid export",
-    secondaryLayers: ["L", "I"],
+    secondaryLayers: ["L", "S"],
     function:
       "This gene encodes a preproprotein that is proteolytically processed to form multiple protein products.  The major encoded protein product, lactadherin, is a membrane glycoprotein that promotes phagocytosis of apoptotic cells.",
     ironConnection: (
@@ -3364,7 +3383,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Cramped Chromatin Regulator 1",
     chromosome: "16",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Predicted to enable chromatin binding activity.  Predicted to be involved in pattern specification process.",
@@ -3385,7 +3404,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Predicted to enable several functions, including calcium ion binding activity; phospholipid binding activity; and syntaxin binding activity.  Involved in positive regulation of dendrite extension.",
     ironConnection: (
@@ -3424,7 +3443,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Enables sphingomyelin phosphodiesterase activator activity.  Involved in several processes, including cornified envelope assembly; positive regulation of immune effector process; and positive regulation of protein localization.",
     ironConnection: (
@@ -3461,7 +3480,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "TOX High Mobility Group Box Family Member 3",
     chromosome: "16",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "The protein encoded by this gene contains an HMG-box, indicating that it may be involved in bending and unwinding of DNA and alteration of chromatin structure.",
@@ -3480,7 +3499,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Chromodomain Helicase DNA Binding Protein 9",
     chromosome: "16",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Predicted to enable ATP binding activity; ATP-dependent activity, acting on DNA; and DNA binding activity.  Predicted to be involved in DNA duplex unwinding and chromatin organization.",
@@ -3501,7 +3520,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "N",
     subcategory: "Endothelial & vascular",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Glycoprotein Ib (GP Ib) is a platelet surface membrane glycoprotein composed of a heterodimer, an alpha chain and a beta chain, that is linked by disulfide bonds.  The Gp Ib functions as a receptor for von Willebrand factor (VWF).",
     ironConnection: (
@@ -3519,7 +3538,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "PHD Finger Protein 23",
     chromosome: "17",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "Predicted to enable metal ion binding activity.  Involved in negative regulation of autophagosome assembly; negative regulation of autophagosome maturation; and positive regulation of protein ubiquitination.",
@@ -3538,7 +3557,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Nuclear Receptor Corepressor 1",
     chromosome: "17",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a protein that mediates ligand-independent transcription repression of thyroid-hormone and retinoic-acid receptors by promoting chromatin condensation and preventing access of the transcription machinery.",
@@ -3557,7 +3576,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Sterol Regulatory Element Binding Transcription Factor 1",
     chromosome: "17",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a basic helix-loop-helix-leucine zipper (bHLH-Zip) transcription factor that binds to the sterol regulatory element-1 (SRE1), which is a motif that is found in the promoter of the low density lipoprotein receptor gene and other genes involved in sterol biosynthesis.",
@@ -3576,7 +3595,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Oligodendrocyte Myelin Glycoprotein",
     chromosome: "17",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Myelin & structural",
     function:
       "Predicted to enable identical protein binding activity.  Predicted to be involved in neuron projection regeneration.",
@@ -3595,7 +3614,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Tubulin Gamma 1",
     chromosome: "17",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Cytoskeletal",
     function:
       "This gene encodes a member of the tubulin superfamily.  The encoded protein localizes to the centrosome where it binds to microtubules as part of a complex referred to as the gamma-tubulin ring complex.",
@@ -3614,7 +3633,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "KAT8 Regulatory NSL Complex Subunit 1",
     chromosome: "17",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a nuclear protein that is a subunit of two protein complexes involved with histone acetylation, the MLL1 complex and the NSL1 complex.",
@@ -3635,7 +3654,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Proteolysis",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes the puromycin-sensitive aminopeptidase, a zinc metallopeptidase which hydrolyzes amino acids from the N-terminus of its substrate.  The protein has been localized to both the cytoplasm and to cellular membranes.",
     ironConnection: (
@@ -3653,7 +3672,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Protein Phosphatase 1 Regulatory Subunit 9B",
     chromosome: "17",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Structural & other",
     function:
       "This gene encodes a scaffold protein that functions as a regulatory subunit of protein phosphatase 1a.",
@@ -3693,7 +3712,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "Fe",
     subcategory: "Iron transport & metabolism",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "Predicted to enable monocarboxylic acid transmembrane transporter activity.  Predicted to be involved in monocarboxylic acid transport.",
     ironConnection: (
@@ -3732,7 +3751,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "The protein encoded by this gene contains a UBX domain and interacts with glucose transporter type 4 (GLUT4).",
     ironConnection: (
@@ -3750,7 +3769,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Microtubule Associated Protein RP/EB Family Member 2",
     chromosome: "18",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "The protein encoded by this gene shares significant homology to the adenomatous polyposis coli (APC) protein-binding EB1 gene family.  This protein is a microtubule-associated protein that is necessary for spindle symmetry during mitosis.",
@@ -3790,7 +3809,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a member of the GXGD family of aspartic proteases.  The GXGD proteases are transmembrane proteins with two conserved catalytic motifs localized within the membrane-spanning regions.",
     ironConnection: (
@@ -3808,7 +3827,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Inositol-3-phosphate Synthase 1",
     chromosome: "19",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes an inositol-3-phosphate synthase enzyme.  The encoded protein plays a critical role in the myo-inositol biosynthesis pathway by catalyzing the rate-limiting conversion of glucose 6-phosphate to myoinositol 1-phosphate.",
@@ -3846,7 +3865,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "PPFI Scaffold Protein A3",
     chromosome: "19",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Growth & signaling",
     function:
       "The protein encoded by this gene is a member of the LAR protein-tyrosine phosphatase-interacting protein (liprin) family.",
@@ -3886,7 +3905,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "Fe",
     subcategory: "Mitochondrial",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a member of the CDP-alcohol phosphatidyltransferase class-I family of proteins.",
     ironConnection: (
@@ -3904,7 +3923,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "TPX2 Microtubule Nucleation Factor",
     chromosome: "20",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Cytoskeletal",
     function:
       "Enables importin-alpha family protein binding activity and protein kinase binding activity.  Involved in activation of protein kinase activity; microtubule cytoskeleton organization; and negative regulation of microtubule depolymerization.",
@@ -3923,8 +3942,9 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Protein Tyrosine Phosphatase Non-receptor Type 1",
     chromosome: "20",
     disease: "PD",
-    primaryLayer: "L",
+    primaryLayer: "I",
     subcategory: "Innate immunity",
+    secondaryLayers: ["L"],
     function:
       "The protein encoded by this gene is the founding member of the protein tyrosine phosphatase (PTP) family, which was isolated and identified based on its enzymatic activity and amino acid sequence.",
     ironConnection: (
@@ -3942,7 +3962,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Dual Specificity Tyrosine Phosphorylation Regulated Kinase 1A",
     chromosome: "21",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes a member of the Dual-specificity tyrosine phosphorylation-regulated kinase (DYRK) family.",
@@ -3961,7 +3981,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "DS Cell Adhesion Molecule",
     chromosome: "21",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene is a member of the immunoglobulin superfamily of cell adhesion molecules (Ig-CAMs), and is involved in human central and peripheral nervous system development.",
@@ -3982,7 +4002,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "E",
     subcategory: "Lipid export",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "The protein encoded by this gene is a member of the superfamily of ATP-binding cassette (ABC) transporters.  ABC proteins transport various molecules across extra- and intra-cellular membranes.",
     ironConnection: (
@@ -4019,7 +4039,7 @@ export const gwasGenes: GwasGene[] = [
     fullName: "Adenosine Deaminase RNA Specific B1",
     chromosome: "21",
     disease: "PD",
-    primaryLayer: "I",
+    primaryLayer: "S",
     subcategory: "Chromatin & transcription",
     function:
       "This gene encodes the enzyme responsible for pre-mRNA editing of the glutamate receptor subunit B by site-specific deamination of adenosines.",
@@ -4152,6 +4172,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Lysosomal regulation",
+    secondaryLayers: ["I"],
     function:
       "The protein encoded by this gene is a type I transmembrane glycoprotein which shows homology to the pMEL17 precursor, a melanocyte-specific protein.",
     ironConnection: (
@@ -4171,7 +4192,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "This gene encodes a protein that belongs to the ubiquitin-specific processing protease family of proteins.",
     ironConnection: (
@@ -4191,7 +4212,7 @@ export const gwasGenes: GwasGene[] = [
     disease: "PD",
     primaryLayer: "L",
     subcategory: "Endosomal trafficking",
-    secondaryLayers: ["I"],
+    secondaryLayers: ["S"],
     function:
       "The protein encoded by this gene is a type III glycoprotein that is located primarily in limiting membranes of lysosomes and endosomes.",
     ironConnection: (
@@ -4215,16 +4236,29 @@ export const gwasStats = {
 };
 
 export const survivorshipBias = {
-  headline: "Survivorship bias",
+  headline: "Why no iron genes?",
   body: "GWAS studies elderly cohorts. Severe iron gene mutations (HFE, TFR2, HAMP, SLC40A1) cause organ failure decades earlier. These individuals never reach enrollment age. The genetics we see in AD encodes the defense against iron, not iron itself.",
+};
+
+export const closingSummary = {
+  lines: [
+    "Neurodegenerative diseases aren\u2019t caused by the proteins we find at the scene.",
+    "They\u2019re caused by the failure of the defense systems that were producing them.",
+    "FELINES maps six of those systems, predicts where they break, and identifies the therapeutic gaps nobody\u2019s filling yet.",
+  ],
+  cta: {
+    text: "Explore the model",
+    href: "/explore/clearance",
+  },
 };
 
 export const layerLabels: Record<FelineLayerId, string> = {
   Fe: "Iron homeostasis",
   L: "Lysosome / antioxidant",
-  I: "Insulation / buffering",
+  I: "Immune / inflammatory",
   N: "Neurovascular",
   E: "Export",
+  S: "Sheathing",
 };
 
 /** Group genes by their primary FELINE layer */

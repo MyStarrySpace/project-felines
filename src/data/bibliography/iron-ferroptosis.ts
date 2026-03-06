@@ -719,4 +719,189 @@ export const ironFerrOptosisSources: Source[] = [
     ],
     verificationStatus: "verified",
   },
+  {
+    id: "mao-2021-nature",
+    title:
+      "DHODH-mediated ferroptosis defence is a targetable vulnerability in cancer",
+    authors: "Mao C, Liu X, Zhang Y, et al.",
+    journal: "Nature",
+    year: 2021,
+    doi: "10.1038/s41586-021-03539-7",
+    pmid: "33981038",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8895686/#:~:text=DHODH%20operates%20in%20parallel%20to%20mitochondrial%20GPX4",
+    tags: ["ferroptosis"],
+    citations: [
+      {
+        citationId: "mao-2021-nature-c1",
+        sourceId: "mao-2021-nature",
+        quote:
+          "DHODH operates in parallel to mitochondrial GPX4 (but independent of cytosolic GPX4 or FSP1) to inhibit ferroptosis in the mitochondrial inner membrane, through reducing ubiquinone (CoQ) to ubiquinol (CoQH2)",
+        context:
+          "Fourth ferroptosis defense axis: DHODH in mitochondrial inner membrane, independent of cytosolic defenses",
+        location: "Abstract",
+        projectRef:
+          "Iron buildup section: DHODH/CoQH2 fourth defense axis beat",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "alves-2025-sttt",
+    title: "In defence of ferroptosis",
+    authors: "Alves F, Lane D, Nguyen TPM, Bush AI, Ayton S.",
+    journal: "Signal Transduction and Targeted Therapy",
+    year: 2025,
+    doi: "10.1038/s41392-024-02088-5",
+    pmid: "39746918",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11696223/#:~:text=a%20key%20cellular%20reductant",
+    tags: ["ferroptosis"],
+    citations: [
+      {
+        citationId: "alves-2025-sttt-c1",
+        sourceId: "alves-2025-sttt",
+        quote:
+          "NADPH is a key cellular reductant that is essential for maintaining the antioxidant systems that counteract ferroptosis",
+        context:
+          "NADPH is the shared upstream reductant powering GPX4, FSP1, and DHODH anti-ferroptosis systems",
+        projectRef:
+          "Iron buildup section: NADPH as unifying reductant across all defense axes",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "zhou-2024-medcomm",
+    title:
+      "Ferroptosis: mechanisms and therapeutic targets",
+    authors: "Zhou J, Zhang L, Yan J, et al.",
+    journal: "MedComm",
+    year: 2024,
+    doi: "10.1002/mco2.70010",
+    pmid: "39568772",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11577306/#:~:text=iNOS%20acts%20as%20another%20GPX4-independent%20ferroptosis%20resistance%20factor",
+    tags: ["ferroptosis"],
+    citations: [
+      {
+        citationId: "zhou-2024-medcomm-c1",
+        sourceId: "zhou-2024-medcomm",
+        quote:
+          "iNOS acts as another GPX4-independent ferroptosis resistance factor",
+        context:
+          "iNOS generates NO radicals that trap lipid peroxyl radicals, preventing chain propagation",
+        projectRef:
+          "Iron buildup section: emerging defense axes (iNOS)",
+      },
+      {
+        citationId: "zhou-2024-medcomm-c2",
+        sourceId: "zhou-2024-medcomm",
+        quote:
+          "By reducing lipid peroxyl radicals, 7-DHC neutralizes PL peroxidation",
+        context:
+          "7-dehydrocholesterol acts as a radical-trapping agent in cell membranes",
+        projectRef:
+          "Iron buildup section: emerging defense axes (7-DHC)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "bersuker-2019-nature",
+    title:
+      "The CoQ oxidoreductase FSP1 acts parallel to GPX4 to inhibit ferroptosis",
+    authors: "Bersuker K, Hendricks JM, Li Z, et al.",
+    journal: "Nature",
+    year: 2019,
+    doi: "10.1038/s41586-019-1705-2",
+    pmid: "31634900",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31634900/#:~:text=a%20key%20component%20of%20a%20non-mitochondrial%20CoQ%20antioxidant%20system",
+    tags: ["ferroptosis", "iron"],
+    citations: [
+      {
+        citationId: "bersuker-2019-nature-c1",
+        sourceId: "bersuker-2019-nature",
+        quote:
+          "FSP1 as a key component of a non-mitochondrial CoQ antioxidant system that acts in parallel to the canonical glutathione-based GPX4 pathway",
+        context:
+          "Co-discovery of FSP1/CoQ10 as a GPX4-independent ferroptosis defense axis",
+        projectRef:
+          "Iron buildup section: FSP1/CoQ10 defense axis beat",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "kraft-2020-acscentsci",
+    title:
+      "GTP Cyclohydrolase 1/Tetrahydrobiopterin Counteract Ferroptosis through Lipid Remodeling",
+    authors: "Kraft VAN, Bezjian CT, Pfeiffer S, et al.",
+    journal: "ACS Central Science",
+    year: 2020,
+    doi: "10.1021/acscentsci.9b01063",
+    pmid: "31989025",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6978838/#:~:text=Synthesis%20of%20BH4%2FBH2%20by%20GCH1-expressing%20cells%20caused%20lipid%20remodeling",
+    tags: ["ferroptosis", "iron"],
+    citations: [
+      {
+        citationId: "kraft-2020-acscentsci-c1",
+        sourceId: "kraft-2020-acscentsci",
+        quote:
+          "Synthesis of BH4/BH2 by GCH1-expressing cells caused lipid remodeling, suppressing ferroptosis",
+        context:
+          "Discovery of GCH1/BH4 as a third independent ferroptosis defense axis",
+        projectRef:
+          "Iron buildup section: GCH1/BH4 defense axis beat",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "kapralov-2020-natchembiol",
+    title:
+      "Redox lipid reprogramming commands susceptibility of macrophages and microglia to ferroptotic death",
+    authors: "Kapralov AA, Yang Q, Dar HH, et al.",
+    journal: "Nature Chemical Biology",
+    year: 2020,
+    doi: "10.1038/s41589-019-0462-8",
+    pmid: "32080625",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32080625/#:~:text=iNOS%2FNO-enrichment%20of%20activated%20M1",
+    tags: ["ferroptosis", "microglia"],
+    citations: [
+      {
+        citationId: "kapralov-2020-natchembiol-c1",
+        sourceId: "kapralov-2020-natchembiol",
+        quote:
+          "iNOS/NO\u00B7-enrichment of activated M1 (but not alternatively activated M2) macrophages/microglia modulates susceptibility to ferroptosis",
+        context:
+          "Discovery that iNOS/NO acts as a GPX4-independent ferroptosis resistance mechanism",
+        projectRef:
+          "Iron buildup section: emerging defense axes (iNOS/NO)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "freitas-2024-nature",
+    title:
+      "7-Dehydrocholesterol is an endogenous suppressor of ferroptosis",
+    authors: "Freitas FP, Alborzinia H, Dos Santos AF, et al.",
+    journal: "Nature",
+    year: 2024,
+    doi: "10.1038/s41586-023-06878-9",
+    pmid: "38297129",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38297129/#:~:text=7-DHC%20effectively%20shields%20(phospho)lipids%20from%20autoxidation",
+    tags: ["ferroptosis", "iron"],
+    citations: [
+      {
+        citationId: "freitas-2024-nature-c1",
+        sourceId: "freitas-2024-nature",
+        quote:
+          "7-DHC effectively shields (phospho)lipids from autoxidation and subsequent fragmentation",
+        context:
+          "Discovery of 7-dehydrocholesterol as an endogenous ferroptosis suppressor",
+        projectRef:
+          "Iron buildup section: emerging defense axes (7-DHC)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
 ];

@@ -49,7 +49,7 @@ function useCanShowEcho(): boolean {
 
 function AcronymBar({ progress }: { progress: MotionValue<number> }) {
   // Each letter transitions from dim to bright as its layer enters
-  const layerStarts = [0.35, 0.47, 0.56, 0.65, 0.74];
+  const layerStarts = [0.35, 0.44, 0.52, 0.60, 0.68, 0.76];
   const opacities = layerStarts.map((start) =>
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useTransform(progress, [start, start + 0.04], [0.15, 1])
@@ -62,7 +62,7 @@ function AcronymBar({ progress }: { progress: MotionValue<number> }) {
     <motion.div
       className="flex gap-4 sm:gap-6 mb-8"
       style={{ opacity: barOpacity }}
-      aria-label="FELINE acronym"
+      aria-label="FELINES acronym"
       role="img"
     >
       {felineLetters.map((fl, i) => (
@@ -308,13 +308,14 @@ const BEAT1 = { enter: 0.02, hold: 0.06, exit: 0.16, gone: 0.20 };
 const BEAT2 = { enter: 0.20, hold: 0.25, exit: 0.32, gone: 0.35 };
 // Layers: staggered, each one exits as next enters
 const LAYER_BEATS = [
-  { enter: 0.35, hold: 0.39, exit: 0.44, gone: 0.47 },
-  { enter: 0.47, hold: 0.50, exit: 0.53, gone: 0.56 },
-  { enter: 0.56, hold: 0.59, exit: 0.62, gone: 0.65 },
-  { enter: 0.65, hold: 0.68, exit: 0.71, gone: 0.74 },
-  { enter: 0.74, hold: 0.77, exit: 0.80, gone: 0.83 },
+  { enter: 0.35, hold: 0.38, exit: 0.42, gone: 0.44 },
+  { enter: 0.44, hold: 0.47, exit: 0.50, gone: 0.52 },
+  { enter: 0.52, hold: 0.55, exit: 0.58, gone: 0.60 },
+  { enter: 0.60, hold: 0.63, exit: 0.66, gone: 0.68 },
+  { enter: 0.68, hold: 0.71, exit: 0.74, gone: 0.76 },
+  { enter: 0.76, hold: 0.79, exit: 0.82, gone: 0.84 },
 ];
-const BEAT4 = { enter: 0.85, hold: 0.90 };
+const BEAT4 = { enter: 0.86, hold: 0.90 };
 
 function FelineStage({ progress }: { progress: MotionValue<number> }) {
   const [hoveredGenes, setHoveredGenes] = useState<string[]>([]);
@@ -420,7 +421,7 @@ function FelineStage({ progress }: { progress: MotionValue<number> }) {
             </ScrollBeat>
           </motion.div>
 
-          {/* Beat 2: Cat connection + FELINE reveal */}
+          {/* Beat 2: Cat connection + FELINES reveal */}
           <motion.div
             className="col-start-1 row-start-1"
             style={{ pointerEvents: pe2 }}
@@ -576,10 +577,10 @@ function FelineFlowing() {
         </div>
       </ScrollAnimate>
 
-      {/* FELINE acronym bar */}
+      {/* FELINES acronym bar */}
       <ScrollAnimate>
         <div className="reading-width mx-auto">
-          <div className="flex gap-3 sm:gap-5 mb-2" aria-label="FELINE acronym" role="img">
+          <div className="flex gap-3 sm:gap-5 mb-2" aria-label="FELINES acronym" role="img">
             {felineLetters.map((fl) => (
               <span
                 key={fl.letter + fl.subscript}

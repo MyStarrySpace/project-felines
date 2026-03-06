@@ -78,7 +78,7 @@ export function ProgressionSection() {
           </Button>
         </div>
         <p className="mt-8 text-xs text-gray-500 text-center">
-          Project FELINE. For research and educational purposes.
+          Project FELINES. For research and educational purposes.
         </p>
       </ScrollAnimate>
     </ScrollSection>

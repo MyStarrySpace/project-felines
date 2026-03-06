@@ -70,7 +70,7 @@ export function ClearanceDeclineChart({ data, reference }: ClearanceDeclineChart
         data={series}
         theme={felineTheme}
         colors={colors}
-        margin={{ top: 24, right: 24, bottom: 56, left: 60 }}
+        margin={{ top: 24, right: 24, bottom: 80, left: 60 }}
         xScale={{ type: "linear", min: 20, max: 100 }}
         yScale={{ type: "linear", min: 0, max: 1, stacked: false }}
         axisBottom={{
@@ -97,7 +97,7 @@ export function ClearanceDeclineChart({ data, reference }: ClearanceDeclineChart
           {
             anchor: "bottom",
             direction: "row",
-            translateY: 56,
+            translateY: 72,
             itemWidth: 130,
             itemHeight: 20,
             symbolSize: 12,

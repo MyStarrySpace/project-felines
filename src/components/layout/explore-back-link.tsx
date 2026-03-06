@@ -11,7 +11,7 @@ export function ExploreBackLink() {
   return (
     <Link
       href="/"
-      aria-label="Back to Project FELINE presentation"
+      aria-label="Back to Project FELINES presentation"
       className="fixed top-4 left-4 z-40 hidden md:flex items-center gap-1.5 py-1.5 transition-colors"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -26,7 +26,7 @@ export function ExploreBackLink() {
         transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
         className="overflow-hidden whitespace-nowrap text-sm font-medium text-gray-400"
       >
-        Project FELINE
+        Project FELINES
       </motion.span>
     </Link>
   );

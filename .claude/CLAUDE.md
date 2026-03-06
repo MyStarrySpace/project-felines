@@ -1,10 +1,10 @@
-# FELINE Framework Project
+# FELINES Framework Project
 
 ## Overview
 
-This is the presentation site for the **FELINE (Fe-Lysosome-Insulation-Neurovascular-Export) Framework**, a novel biological framework modeling latent neurodegeneration as multi-layer defense failure (as distinct from acute neurodegeneration caused by infection or autoimmune attack):
+This is the presentation site for the **FELINES (Fe-Lysosome-Immune-Neurovascular-Export-Sheathing) Framework**, a novel biological framework modeling latent neurodegeneration as multi-layer defense failure (as distinct from acute neurodegeneration caused by infection or autoimmune attack):
 
-**Defense layers:** Fe (iron homeostasis) · Lysosome (GPX4, NAD+/SIRT3, GSH) · Insulation (myelin sheaths, lysosomes, ferritin, tau, alpha-synuclein; oligodendrocytes provide both electrical insulation and iron insulation via FTH1 export) · Neurovascular (pericytes, BBB, astrocyte endfeet, Schwann cell vasculature) · Export (brain-level: ferroportin/Cp, glymphatic, AQP4; systemic: liver hepcidin/bile, spleen recycling, gut absorption/microbiome)
+**Defense layers:** Fe (iron homeostasis) · Lysosome (GPX4, NAD+/SIRT3, GSH) · Immune (microglia, complement cascade, cytokine signaling, T/B cell regulation, hepcidin-driven iron sequestration) · Neurovascular (pericytes, BBB, astrocyte endfeet, Schwann cell vasculature) · Export (brain-level: ferroportin/Cp, glymphatic, AQP4; systemic: liver hepcidin/bile, spleen recycling, gut absorption/microbiome) · Sheathing (myelin sheaths, ferritin, tau, alpha-synuclein; oligodendrocytes provide both electrical insulation and iron insulation via FTH1 export)
 
 When multiple defense layers fail simultaneously, iron-driven ferroptosis cascades through oligodendrocytes, producing the white matter damage seen across neurodegenerative diseases.
 

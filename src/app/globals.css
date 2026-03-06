@@ -30,7 +30,7 @@
   --background: var(--off-white);
   --foreground: var(--navy-900);
   --text-primary: var(--navy-900);
-  --text-secondary: var(--charcoal);
+  --text-secondary: var(--gray-400);
   --text-muted: var(--gray-500);
   --border: var(--gray-200);
   --surface: #FFFFFF;

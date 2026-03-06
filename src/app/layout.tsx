@@ -16,7 +16,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Project FELINE",
+  title: "Project FELINES",
   description:
     "Investigating ferroptosis in neurodegeneration",
 };

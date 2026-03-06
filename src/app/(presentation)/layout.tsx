@@ -12,7 +12,7 @@ import { ClearanceNarrativeSection } from "@/components/landing/clearance-narrat
 import { FelineIntroSection } from "@/components/landing/feline-intro-section";
 import { TheoriesMappingSection } from "@/components/landing/theories-mapping-section";
 import { GwasSection } from "@/components/landing/gwas-section";
-import { SurvivorshipBiasSection } from "@/components/landing/survivorship-bias-section";
+import { ClosingCtaSection } from "@/components/landing/survivorship-bias-section";
 import { SectionIndicator } from "@/components/ui/section-indicator";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { ScrollProvider, useScrollContext } from "@/components/providers/scroll-context";
@@ -193,7 +193,7 @@ function PresentationContent({ children }: { children: ReactNode }) {
         if (minDist > 0 && minDist < threshold) {
           smoothScrollTo(nearest, 800);
         }
-      }, 1500);
+      }, 1000);
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -227,7 +227,7 @@ function PresentationContent({ children }: { children: ReactNode }) {
         <FelineIntroSection />
         <GwasSection />
         <TheoriesMappingSection />
-        <SurvivorshipBiasSection />
+        <ClosingCtaSection />
 
         <SectionIndicator />
         <ScrollProgress />

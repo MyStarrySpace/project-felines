@@ -29,9 +29,9 @@ export function Header() {
           <a
             href="/"
             className="font-serif text-xl text-white transition-colors"
-            aria-label="Project FELINE, navigate to start"
+            aria-label="Project FELINES, navigate to start"
           >
-            Project FELINE
+            Project FELINES
           </a>
 
           <nav className="hidden items-center gap-8 md:flex" aria-label="Site sections">

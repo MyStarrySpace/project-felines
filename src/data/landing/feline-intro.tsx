@@ -1,5 +1,5 @@
 /**
- * Data for FELINE Introduction section.
+ * Data for FELINES Introduction section.
  *
  * Uses T. gondii (cat parasite → AD without plaques) to motivate the acronym,
  * then walks through each defense layer.
@@ -40,11 +40,11 @@ export const toxoPuzzle = {
 };
 
 // ---------------------------------------------------------------------------
-// Beat 2: Cat connection + FELINE reveal
+// Beat 2: Cat connection + FELINES reveal
 // ---------------------------------------------------------------------------
 
 export const catReveal = {
-  hookLine: "Speaking of cats, the other name we give to them is also a useful acronym to understand ferroptosis vulnerability.",
+  hookLine: "Speaking of cats, the other name we give to them is a useful acronym for six defense layers against ferroptosis.",
   revealLine: "",
 };
 
@@ -54,6 +54,7 @@ export const felineLetters = [
   { letter: "I", subscript: "" },
   { letter: "N", subscript: "" },
   { letter: "E", subscript: "" },
+  { letter: "S", subscript: "" },
 ] as const;
 
 // ---------------------------------------------------------------------------
@@ -94,18 +95,11 @@ export const felineLayers: FelineLayer[] = [
     id: "I",
     letter: "I",
     subscript: "",
-    name: "Insulation / buffering",
-    protects: (
-      <>
-        Myelin sheaths wrap axons in iron-rich lipid bilayers. Ferritin, tau,
-        and \u03B1-synuclein each bind or buffer iron in different compartments.
-        Oligodendrocytes are the brain&apos;s most iron-dense cells and provide
-        both electrical insulation and iron insulation via FTH1 export to
-        neighboring neurons.
-      </>
-    ),
+    name: "Immune / inflammatory",
+    protects:
+      "Microglia survey the brain for damage and clear debris. The complement cascade tags damaged myelin for removal. T cells regulate microglial activation states. Astrocyte cytokine signaling coordinates the inflammatory response. Hepcidin sequesters iron during infection to starve pathogens.",
     failureMode:
-      "Demyelination exposes sequestered iron. Tau hyperphosphorylation and \u03B1-synuclein aggregation release the iron these proteins were managing, seeding new Fenton reactions.",
+      "Chronic activation: complement tags healthy myelin, microglia attack oligodendrocytes instead of protecting them. Hepcidin traps iron in cells that can\u2019t export it. Each infection leaves residual immune priming that lowers the threshold for the next.",
   },
   {
     id: "N",
@@ -126,6 +120,23 @@ export const felineLayers: FelineLayer[] = [
       "Ferroportin/ceruloplasmin oxidize and export iron from cells. The glymphatic system (AQP4-dependent) clears interstitial waste during sleep. Systemically, liver hepcidin regulates gut absorption and spleen recycling.",
     failureMode:
       "Ceruloplasmin decline stalls ferroportin. AQP4 depolarization reduces glymphatic clearance. Iron accumulates at normal dietary intake because export, not intake, is the bottleneck.",
+  },
+  {
+    id: "S",
+    letter: "S",
+    subscript: "",
+    name: "Sheathing",
+    protects: (
+      <>
+        Myelin sheaths wrap axons in iron-rich lipid bilayers. Ferritin, tau,
+        and \u03B1-synuclein each bind or buffer iron in different compartments.
+        Oligodendrocytes are the brain&apos;s most iron-dense cells and provide
+        both electrical insulation and iron insulation via FTH1 export to
+        neighboring neurons.
+      </>
+    ),
+    failureMode:
+      "Demyelination exposes sequestered iron. Tau hyperphosphorylation and \u03B1-synuclein aggregation release the iron these proteins were managing, seeding new Fenton reactions.",
   },
 ];
 
@@ -250,52 +261,28 @@ export const felineLayerSegments: Record<string, EchoLayerData> = {
   I: {
     segments: [
       {
-        label: "Myelin sheath integrity",
-        text: (
-          <>
-            Oligodendrocytes have the highest iron concentration of any
-            brain cell: 3.05 mM, fivefold higher than neurons.
-            <Cite id="reinert-2019" />
-          </>
-        ),
-        genes: ["ANK3", "CELF1", "KAT8", "MOBP", "OMG", "GALC"],
+        label: "Microglial surveillance",
+        text:
+          "Microglia survey the brain for damage and clear debris via TREM2-dependent phagocytosis. Their activation state determines whether they protect or attack neighboring cells.",
+        genes: ["TREM2", "SPI1", "CD33", "PLCG2", "GPNMB"],
       },
       {
-        label: "Iron buffering proteins",
-        text: (
-          <>
-            Tau,
-            <Cite id="lei-2012-natmed" /> {"\u03B1"}-synuclein,
-            <Cite id="peng-2010-jinorgbiochem" /> and ferritin each bind or
-            buffer iron in different compartments. Hyperphosphorylation or
-            aggregation releases the iron they were managing.
-          </>
-        ),
-        genes: ["MAPT", "CD2AP", "SNCA"],
+        label: "Complement cascade",
+        text:
+          "C1q tags damaged myelin for removal. C3/C4 opsonize synapses for pruning. When dysregulated, complement attacks healthy oligodendrocytes and strips functional synapses.",
+        genes: ["CR1", "CLU"],
       },
       {
-        label: "Fatty acid peroxidation buffering",
-        text: (
-          <>
-            Glial ABCA1 is required for cholesterol efflux to apoE in the
-            brain.
-            <Cite id="hirsch-reinshagen-2004-jbc" />
-            {" "}When lipid metabolism fails, toxic species accumulate and
-            trigger oligodendrocyte lipoapoptosis.
-          </>
-        ),
-        genes: ["ABCA1", "DGKQ", "ECHDC3", "ELOVL7", "SREBF1", "MVK"],
+        label: "Cytokine signaling",
+        text:
+          "Pro-inflammatory cytokines (IL-1\u03B2, TNF-\u03B1, IFN\u03B3) drive reactive astrogliosis, hepcidin induction, and microglial polarization. Each infection primes a lower threshold for the next.",
+        genes: ["HLA-DRB1", "EPHA1", "SPPL2A"],
       },
       {
-        label: "Reactive astrocyte damage",
-        text: (
-          <>
-            Neurotoxic A1 astrocytes secrete a soluble toxin that kills
-            oligodendrocytes, compounding insulation loss from within.
-            <Cite id="liddelow-2017-nature" />
-          </>
-        ),
-        genes: ["NME8", "PRDM7"],
+        label: "Adaptive immunity",
+        text:
+          "CD8 T cells have stage-dependent roles: early effectors suppress microglial clearance via CCL5, while exhausted/regulatory T cells can enhance it. Tregs boost microglial phagocytosis via PD-L1/PD-1.",
+        genes: ["IGH"],
       },
     ],
   },
@@ -385,6 +372,58 @@ export const felineLayerSegments: Record<string, EchoLayerData> = {
         text:
           "Complement-mediated clearance of immune complexes routes waste to liver and spleen for recycling.",
         genes: ["CR1", "IGH", "DOC2A", "MFGE8"],
+      },
+    ],
+  },
+  S: {
+    segments: [
+      {
+        label: "Myelin sheath integrity",
+        text: (
+          <>
+            Oligodendrocytes have the highest iron concentration of any
+            brain cell: 3.05 mM, fivefold higher than neurons.
+            <Cite id="reinert-2019" />
+          </>
+        ),
+        genes: ["ANK3", "CELF1", "KAT8", "MOBP", "OMG", "GALC"],
+      },
+      {
+        label: "Iron buffering proteins",
+        text: (
+          <>
+            Tau,
+            <Cite id="lei-2012-natmed" /> {"\u03B1"}-synuclein,
+            <Cite id="peng-2010-jinorgbiochem" /> and ferritin each bind or
+            buffer iron in different compartments. Hyperphosphorylation or
+            aggregation releases the iron they were managing.
+          </>
+        ),
+        genes: ["MAPT", "CD2AP", "SNCA"],
+      },
+      {
+        label: "Fatty acid peroxidation buffering",
+        text: (
+          <>
+            Glial ABCA1 is required for cholesterol efflux to apoE in the
+            brain.
+            <Cite id="hirsch-reinshagen-2004-jbc" />
+            {" "}When lipid metabolism fails, toxic species accumulate and
+            trigger oligodendrocyte lipoapoptosis.
+          </>
+        ),
+        genes: ["ABCA1", "DGKQ", "ECHDC3", "ELOVL7", "SREBF1", "MVK"],
+      },
+      {
+        label: "Reactive astrocyte damage",
+        text: (
+          <>
+            Neurotoxic A1 astrocytes secrete a soluble toxin that kills
+            oligodendrocytes, compounding sheathing loss from within.
+            <Cite id="liddelow-2017-nature" />
+          </>
+        ),
+        genes: ["NME8", "PRDM7"],
       },
     ],
   },

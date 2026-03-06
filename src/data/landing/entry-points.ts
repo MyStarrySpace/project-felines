@@ -33,9 +33,10 @@ export const diseaseEntryPoints: DiseaseEntryPoint[] = [
   },
   {
     disease: "MS",
-    layers: ["I", "L"],
+    layers: ["I", "S", "L"],
     tooltips: {
-      I: "EBV latent proteins disrupt oligodendrocyte iron buffering. Demyelination exposes neurons to free iron.",
+      I: "EBV reactivation triggers immune-mediated attack on oligodendrocytes via molecular mimicry and complement activation.",
+      S: "Demyelination exposes sequestered iron and strips axonal insulation. Oligodendrocytes are the primary target.",
       L: "Lysosomal iron release in oligodendrocytes overwhelms local antioxidant defenses.",
     },
   },
@@ -48,4 +49,4 @@ export const diseaseEntryPoints: DiseaseEntryPoint[] = [
   },
 ];
 
-export const defenseLayers = ["Fe", "L", "I", "N", "E"] as const;
+export const defenseLayers = ["Fe", "L", "I", "N", "E", "S"] as const;
