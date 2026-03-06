@@ -391,6 +391,84 @@ export const proteinopathySources: Source[] = [
     verificationStatus: "verified",
   },
   {
+    id: "simakov-2020-natecol",
+    title:
+      "Deeply conserved synteny resolves early events in vertebrate evolution",
+    authors: "Simakov O, Marl\u00E9taz F, Yue JX, et al.",
+    journal: "Nature Ecology & Evolution",
+    year: 2020,
+    doi: "10.1038/s41559-020-1156-z",
+    pmid: "32313176",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7269912/#:~:text=preceded%20the%20divergence%20of%20lamprey",
+    tags: ["genetics"],
+    citations: [
+      {
+        citationId: "simakov-2020-natecol-c1",
+        sourceId: "simakov-2020-natecol",
+        quote:
+          "The first\u2014an autotetraploidization (1R)\u2014preceded the divergence of lamprey and jawed vertebrate lineages ~490 million years ago (Ma)",
+        context:
+          "WGD1 timing: mid/late Cambrian, ~490 Ma. This is the duplication that generated the synuclein gene family.",
+        location: "Conclusion",
+        projectRef:
+          "Landing teaser: \u03B1-synuclein evolutionary origin dating (~490 Mya via WGD1)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "marin-2023-biology",
+    title: "Emergence of the Synucleins",
+    authors: "Mar\u00EDn I",
+    journal: "Biology",
+    year: 2023,
+    doi: "10.3390/biology12081053",
+    pmid: "37626939",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37626939/",
+    tags: ["parkinsons", "genetics"],
+    citations: [
+      {
+        citationId: "marin-2023-biology-c1",
+        sourceId: "marin-2023-biology",
+        quote:
+          "A single synuclein-coding gene was present in the ancestor of all vertebrates. WGD1 generated two different genes prior to the agnathan/gnathostome split",
+        context:
+          "Synucleins arose from the first vertebrate WGD; the second WGD produced the three classical synuclein genes SNCA, SNCB, SNCG",
+        location: "Abstract",
+        projectRef:
+          "Landing teaser: \u03B1-synuclein origin via vertebrate WGD1",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "cortez-2022-protsci",
+    title:
+      "Probing the origin of prion protein misfolding via reconstruction of ancestral proteins",
+    authors:
+      "Cortez LM, Morrison AJ, Garen CR, Patterson S, Uyesugi T, Petrosyan R, Sekar RV, Harms MJ, Woodside MT, Sim VL",
+    journal: "Protein Science",
+    year: 2022,
+    doi: "10.1002/pro.4477",
+    pmid: "36254680",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9667828/#:~:text=PrP%20likely%20evolved%20from%20the%20ZIP%20family",
+    tags: ["prion", "genetics"],
+    citations: [
+      {
+        citationId: "cortez-2022-protsci-c1",
+        sourceId: "cortez-2022-protsci",
+        quote:
+          "PrP likely evolved from the ZIP family of transmembrane proteins when vertebrates emerged roughly 500 million years ago",
+        context:
+          "Specific dating of PrP origin to ~500 Mya, confirming the chordate-lineage timing from Schmitt-Ulms 2009",
+        location: "Introduction",
+        projectRef:
+          "Landing teaser: PrP evolutionary origin dating (~500 Mya)",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
     id: "bateman-2006-natmed",
     title:
       "Human amyloid-beta synthesis and clearance rates as measured in cerebrospinal fluid in vivo",

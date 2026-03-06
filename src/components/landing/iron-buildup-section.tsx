@@ -329,7 +329,7 @@ function IronStage({ progress, editMode }: { progress: MotionValue<number>; edit
             onLoad={handleSvgLoad}
           />
           <p className="text-right text-xs text-gray-500 mt-1 pointer-events-auto">
-            Adapted from Zhao et al. 2023{" "}
+            Core pathways adapted from Zhao et al. 2023{" "}
             <Cite id="zhao-2023-biompharm" />
           </p>
         </motion.div>
@@ -430,7 +430,7 @@ function IronBuildupFlowing() {
             className="w-full max-w-md mx-auto"
           />
           <p className="text-right text-xs text-gray-500 mt-1">
-            Adapted from Zhao et al. 2023{" "}
+            Core pathways adapted from Zhao et al. 2023{" "}
             <Cite id="zhao-2023-biompharm" />
           </p>
         </div>

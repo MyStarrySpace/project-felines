@@ -118,15 +118,17 @@ function ImmuneWeapons() {
       <div>
         <ProteinEntry
           name="&alpha;-Synuclein"
-          summary="Vertebrate ferrireductase (~500 Mya). Converts stored iron into reactive Fe²⁺ for Fenton chemistry."
+          summary="Vertebrate ferrireductase (~490 Mya, WGD1). Converts stored iron into reactive Fe²⁺ for Fenton chemistry."
           isExpanded={expanded === "asyn"}
           onToggle={() => toggle("asyn")}
         >
           <FactGroup label="Origin">
             <p>
-              Vertebrate-only: not found outside vertebrates, dating
-              to ~500 Mya.
-              <Cite id="george-2002-genomebiology" />
+              Vertebrate-only: arose from the first vertebrate
+              whole-genome duplication (WGD1), which preceded the
+              lamprey/gnathostome split ~490 Mya.
+              <Cite id="marin-2023-biology" citationIds={["marin-2023-biology-c1"]} />
+              <Cite id="simakov-2020-natecol" citationIds={["simakov-2020-natecol-c1"]} />
             </p>
           </FactGroup>
           <FactGroup label="Function">
@@ -252,7 +254,7 @@ function ImmuneWeapons() {
           <FactGroup label="Origin">
             <p>
               Present in Chondrichthyes, dating to ~550+ Mya.
-              <Cite id="sundermann-2016-bmcgenomics" />
+              <Cite id="sundermann-2016-bmcgenomics" citationIds={["sundermann-2016-bmcgenomics-c1"]} />
             </p>
           </FactGroup>
           <FactGroup label="Function">
@@ -271,17 +273,21 @@ function ImmuneWeapons() {
 
         <ProteinEntry
           name="PrP"
-          summary="Descended from ZIP metal transporters (~530 Mya). Knockout disrupts iron homeostasis."
+          summary="Descended from ZIP metal transporters (~500 Mya). Knockout disrupts iron homeostasis."
           isExpanded={expanded === "prp"}
           onToggle={() => toggle("prp")}
         >
           <FactGroup label="Origin">
             <p>
-              Descended from ZIP metal transporters at the base of the
-              chordate lineage.
+              Descended from ZIP metal transporters when vertebrates
+              emerged ~500 Mya.
               <Cite
                 id="schmitt-ulms-2009-plosone"
                 citationIds={["schmitt-ulms-2009-plosone-c1", "schmitt-ulms-2009-plosone-c2"]}
+              />
+              <Cite
+                id="cortez-2022-protsci"
+                citationIds={["cortez-2022-protsci-c1"]}
               />
             </p>
           </FactGroup>
