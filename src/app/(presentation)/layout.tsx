@@ -23,36 +23,23 @@ const chevronYBuffer = 0.15; // portion of viewport height at top/bottom reserve
 
 function PresentationContent({ children }: { children: ReactNode }) {
   const { phase, completeExpand } = useExploreTransition();
-  const { scrollToSection, sections, getBreakpointScrollPositions } = useScrollContext();
+  const { getBreakpointScrollPositions } = useScrollContext();
   const presentationRef = useRef<HTMLDivElement>(null);
   const savedScrollRef = useRef(0);
   const didJumpRef = useRef(false);
   const rafIdRef = useRef(0);
   const isAnimatingRef = useRef(false);
 
+
   const showPresentation = phase === "idle" || phase === "expanding";
   const showExplore = phase === "explore";
 
-  // Disable browser scroll restoration so we always start from the top
-  useEffect(() => {
-    if ("scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
-    }
-  }, []);
-
-  // Scroll to top on fresh page load (honor ?section= for shared links)
+  // Ensure presentation always starts at the top on fresh load
   useEffect(() => {
     if (didJumpRef.current) return;
     didJumpRef.current = true;
-
-    const target = new URLSearchParams(window.location.search).get("section");
-    if (target && sections.length > 0 && sections.some((s) => s.id === target)) {
-      scrollToSection(target, "instant");
-      return;
-    }
-
     window.scrollTo(0, 0);
-  }, [sections, scrollToSection]);
+  }, []);
 
   // Continuously track scroll position while presentation is visible
   useEffect(() => {
