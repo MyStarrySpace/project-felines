@@ -23,40 +23,36 @@ const chevronYBuffer = 0.15; // portion of viewport height at top/bottom reserve
 
 function PresentationContent({ children }: { children: ReactNode }) {
   const { phase, completeExpand } = useExploreTransition();
-  const { scrollToSection, sections, activeSection, getBreakpointScrollPositions } = useScrollContext();
+  const { scrollToSection, sections, getBreakpointScrollPositions } = useScrollContext();
   const presentationRef = useRef<HTMLDivElement>(null);
   const savedScrollRef = useRef(0);
   const didJumpRef = useRef(false);
   const rafIdRef = useRef(0);
   const isAnimatingRef = useRef(false);
-  const activeSectionRef = useRef(activeSection);
-  activeSectionRef.current = activeSection;
-  const sectionsRef = useRef(sections);
-  sectionsRef.current = sections;
 
   const showPresentation = phase === "idle" || phase === "expanding";
   const showExplore = phase === "explore";
 
-  // Jump to section from ?section= query param on initial load
+  // Disable browser scroll restoration so we always start from the top
+  useEffect(() => {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+  }, []);
+
+  // Scroll to top on fresh page load (honor ?section= for shared links)
   useEffect(() => {
     if (didJumpRef.current) return;
-    const target = new URLSearchParams(window.location.search).get("section");
-    if (!target || sections.length === 0) return;
-    if (sections.some((s) => s.id === target)) {
-      didJumpRef.current = true;
-      scrollToSection(target, "instant");
-    }
-  }, [sections, scrollToSection]);
+    didJumpRef.current = true;
 
-  // Update URL query param as active section changes
-  useEffect(() => {
-    if (!activeSection || !showPresentation) return;
-    const url = new URL(window.location.href);
-    if (url.searchParams.get("section") !== activeSection) {
-      url.searchParams.set("section", activeSection);
-      window.history.replaceState({}, "", url.toString());
+    const target = new URLSearchParams(window.location.search).get("section");
+    if (target && sections.length > 0 && sections.some((s) => s.id === target)) {
+      scrollToSection(target, "instant");
+      return;
     }
-  }, [activeSection, showPresentation]);
+
+    window.scrollTo(0, 0);
+  }, [sections, scrollToSection]);
 
   // Continuously track scroll position while presentation is visible
   useEffect(() => {
