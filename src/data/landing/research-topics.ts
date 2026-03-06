@@ -33,7 +33,7 @@ export const researchTopics: ResearchTopic[] = [
   {
     slug: "diseases",
     title: "Disease Profiles",
-    description: "Same iron signature across six diseases",
+    description: "A shared iron signature across six diseases?",
     href: "/explore/diseases",
   },
   {
@@ -45,7 +45,7 @@ export const researchTopics: ResearchTopic[] = [
   {
     slug: "viral",
     title: "Viral Mechanisms",
-    description: "How viruses drive neurodegeneration without reactivating",
+    description: "Could viruses drive neurodegeneration without reactivating?",
     href: "/explore/viral",
   },
   {

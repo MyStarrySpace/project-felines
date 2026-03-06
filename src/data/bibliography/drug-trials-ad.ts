@@ -89,14 +89,14 @@ export const drugTrialsAdSources: Source[] = [
     year: 2023,
     doi: "10.1056/NEJMoa2304430",
     pmid: "37966285",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37966285/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37966285/#:~:text=gantenerumab%20led%20to%20a%20lower%20amyloid%20plaque%20burden%20than%20placebo",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
         citationId: "bateman-2023-nejm-c1",
         sourceId: "bateman-2023-nejm",
-        quote: "Two Phase 3 Trials of Gantenerumab in Early Alzheimer's Disease",
-        projectRef: "Drug browser: Gantenerumab GRADUATE failure",
+        quote: "the use of gantenerumab led to a lower amyloid plaque burden than placebo at 116 weeks but was not associated with slower clinical decline.",
+        projectRef: "Drug browser: Gantenerumab GRADUATE I/II trial result",
       },
     ],
     verificationStatus: "verified",
@@ -644,8 +644,52 @@ export const drugTrialsAdSources: Source[] = [
       {
         citationId: "edison-2026-natmed-c1",
         sourceId: "edison-2026-natmed",
-        quote: "Liraglutide in mild to moderate Alzheimer's disease: a phase 2b clinical trial",
-        projectRef: "Drug browser: Liraglutide ELAD primary missed, 50% less brain atrophy",
+        quote: "The primary outcome showed no significant differences in cerebral glucose metabolism (difference = -0.17; 95% confidence interval: -0.39 to 0.06; P = 0.14) between the two groups.",
+        projectRef: "Drug browser: Liraglutide ELAD primary outcome negative, secondary cognition signal",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Kinase inhibitors ─────────────────────────────────────────────
+  {
+    id: "vandyck-2019-jama-neurol",
+    title: "Effect of AZD0530 on Cerebral Metabolic Decline in Alzheimer Disease: A Randomized Clinical Trial",
+    authors: "van Dyck CH, Nygaard HB, Chen K, et al.",
+    journal: "JAMA Neurology",
+    year: 2019,
+    doi: "10.1001/jamaneurol.2019.2050",
+    pmid: "31329216",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31329216/#:~:text=Statistically%20significant%20effects%20of%20AZD0530%20treatment%20were%20not%20found",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "vandyck-2019-jama-neurol-c1",
+        sourceId: "vandyck-2019-jama-neurol",
+        quote: "Statistically significant effects of AZD0530 treatment were not found on relative CMRgl reduction in an Alzheimer disease-associated region of interest or on secondary clinical or biomarker measures.",
+        projectRef: "Drug browser: Saracatinib Fyn kinase inhibitor Phase 2a AD result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── TREM2 ─────────────────────────────────────────────────────────
+  {
+    id: "long-2024-alz-res-ther",
+    title: "Preclinical and first-in-human evaluation of AL002, a novel TREM2 agonistic antibody for Alzheimer\u2019s disease",
+    authors: "Long H, Simmons A, Mayorga A, et al.",
+    journal: "Alzheimer\u2019s Research & Therapy",
+    year: 2024,
+    doi: "10.1186/s13195-024-01599-1",
+    pmid: "39444037",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11515656/#:~:text=AL002%20is%20currently%20being%20tested%20in%20a%20phase%202",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "long-2024-alz-res-ther-c1",
+        sourceId: "long-2024-alz-res-ther",
+        quote: "AL002 is currently being tested in a phase 2, randomized, double-blind, placebo-controlled study in early AD.",
+        projectRef: "Drug browser: AL002 TREM2 agonist Phase 1/2 and INVOKE-2 context",
       },
     ],
     verificationStatus: "verified",

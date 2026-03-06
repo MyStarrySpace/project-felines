@@ -211,7 +211,12 @@
       "Bash(while read f)",
       "Read(//c/Users/quest/Programming/plig-framework/**)",
       "Bash(done)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(npx next:*)",
+      "Bash(rmdir:*)",
+      "WebFetch(domain:huntingtonsdiseasenews.com)",
+      "WebFetch(domain:www.passagebio.com)",
+      "Bash(PYTHONIOENCODING=utf-8 python:*)"
     ]
   }
 }

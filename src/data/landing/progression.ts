@@ -10,7 +10,7 @@ export const progressionHeadline = "Decades of silence. Then collapse.";
 export const progressionBody =
   "Neurodegeneration follows a sigmoidal curve: years of invisible iron buildup, " +
   "then rapid acceleration once defense thresholds are crossed. " +
-  "Four iron-coupled feedback loops explain the shape.";
+  "Four iron-coupled feedback loops may explain the shape.";
 
 export interface FeedbackLoop {
   title: string;
@@ -63,8 +63,8 @@ export const feedbackLoops: FeedbackLoop[] = [
 
 export const progressionInsight =
   "Each loop alone is gradual. When two or more engage simultaneously, " +
-  "progression becomes self-reinforcing. By the time symptoms appear, " +
-  "multiple loops are already active.";
+  "progression could become self-reinforcing. By the time symptoms appear, " +
+  "multiple loops may already be active.";
 
 export const progressionCta = {
   primary: "Explore the model",

@@ -4237,14 +4237,14 @@ export const gwasStats = {
 
 export const survivorshipBias = {
   headline: "Why no iron genes?",
-  body: "GWAS studies elderly cohorts. Severe iron gene mutations (HFE, TFR2, HAMP, SLC40A1) cause organ failure decades earlier. These individuals never reach enrollment age. The genetics we see in AD encodes the defense against iron, not iron itself.",
+  body: "GWAS studies elderly cohorts. Severe iron gene mutations (HFE, TFR2, HAMP, SLC40A1) cause organ failure decades earlier. These individuals never reach enrollment age. The genetics we see in AD may encode the defense against iron, not iron itself.",
 };
 
 export const closingSummary = {
   lines: [
-    "Neurodegenerative diseases aren\u2019t caused by the proteins we find at the scene.",
-    "They\u2019re caused by the failure of the defense systems that were producing them.",
-    "FELINES maps six of those systems, predicts where they break, and identifies the therapeutic gaps nobody\u2019s filling yet.",
+    "What if neurodegenerative diseases aren\u2019t caused by the proteins we find at the scene?",
+    "What if they\u2019re caused by the failure of the defense systems that were producing them?",
+    "FELINES maps six of those systems across 400+ papers and asks where the gaps are.",
   ],
   cta: {
     text: "Explore the model",

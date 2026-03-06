@@ -177,4 +177,68 @@ export const drugTrialsAlsSources: Source[] = [
     ],
     verificationStatus: "verified",
   },
+
+  // ── C9orf72 ─────────────────────────────────────────────────────────
+  {
+    id: "vandenberg-2024-lancet-neurol",
+    title: "Safety, tolerability, and pharmacokinetics of antisense oligonucleotide BIIB078 in adults with C9orf72-associated amyotrophic lateral sclerosis: a phase 1, randomised, double blinded, placebo-controlled, multiple ascending dose study",
+    authors: "van den Berg LH, Rothstein JD, Shaw PJ, et al.",
+    journal: "The Lancet Neurology",
+    year: 2024,
+    doi: "10.1016/S1474-4422(24)00216-3",
+    pmid: "39059407",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39059407/#:~:text=BIIB078%20clinical%20development%20has%20been%20discontinued",
+    tags: ["clinical-trials", "als"],
+    citations: [
+      {
+        citationId: "vandenberg-2024-lancet-neurol-c1",
+        sourceId: "vandenberg-2024-lancet-neurol",
+        quote: "On the basis of these phase 1 study results, including secondary and exploratory findings showing no reduction in neurofilament levels and no benefit on clinical outcomes relative to the placebo cohort, BIIB078 clinical development has been discontinued.",
+        projectRef: "Drug browser: BIIB078 C9orf72 ASO trial discontinuation",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "liu-2022-mol-ther-na",
+    title: "Preclinical evaluation of WVE-004, an investigational stereopure oligonucleotide for the treatment of C9orf72-associated ALS or FTD",
+    authors: "Liu Y, Andreucci A, Iwamoto N, et al.",
+    journal: "Molecular Therapy. Nucleic Acids",
+    year: 2022,
+    doi: "10.1016/j.omtn.2022.04.007",
+    pmid: "35592494",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9092894/#:~:text=WVE-004%20dose-dependently%20and%20selectively%20reduces%20repeat-containing%20transcripts",
+    tags: ["clinical-trials", "als"],
+    citations: [
+      {
+        citationId: "liu-2022-mol-ther-na-c1",
+        sourceId: "liu-2022-mol-ther-na",
+        quote: "WVE-004 dose-dependently and selectively reduces repeat-containing transcripts in patient-derived motor neurons.",
+        projectRef: "Drug browser: WVE-004 preclinical selective C9orf72 repeat knockdown",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Stem cell therapy ─────────────────────────────────────────────
+  {
+    id: "cudkowicz-2022-muscle-nerve",
+    title: "A randomized placebo-controlled phase 3 study of mesenchymal stem cells induced to secrete high levels of neurotrophic factors in amyotrophic lateral sclerosis",
+    authors: "Cudkowicz ME, Lindborg SR, Goyal NA, et al.",
+    journal: "Muscle & Nerve",
+    year: 2022,
+    doi: "10.1002/mus.27472",
+    pmid: "34890069",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34890069/#:~:text=the%20primary%20endpoint%20was%20not%20met",
+    tags: ["clinical-trials", "als"],
+    citations: [
+      {
+        citationId: "cudkowicz-2022-muscle-nerve-c1",
+        sourceId: "cudkowicz-2022-muscle-nerve",
+        quote: "Thirty-three percent of MSC-NTF and 28% of placebo participants met clinical response criteria at 28 wk (odds ratio [OR] = 1.33, P = .45); thus, the primary endpoint was not met.",
+        projectRef: "Drug browser: NurOwn MSC-NTF Phase 3 ALS result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
 ];

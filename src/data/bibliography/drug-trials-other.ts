@@ -74,4 +74,419 @@ export const drugTrialsOtherSources: Source[] = [
     ],
     verificationStatus: "unverified",
   },
+
+  // ── Mitochondrial ───────────────────────────────────────────────────
+  {
+    id: "kosa-2020-msard",
+    title: "Idebenone does not inhibit disability progression in primary progressive MS",
+    authors: "Kosa P, Wu T, Phillips J, et al.",
+    journal: "Multiple Sclerosis and Related Disorders",
+    year: 2020,
+    doi: "10.1016/j.msard.2020.102434",
+    pmid: "32784117",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9386688/#:~:text=the%20IPPoMS%20trial%20did%20not%20achieve%20efficacy%20on%20any%20of%20its%20primary%20or%20secondary%20endpoints",
+    tags: ["clinical-trials", "ms"],
+    citations: [
+      {
+        citationId: "kosa-2020-msard-c1",
+        sourceId: "kosa-2020-msard",
+        quote: "While idebenone was safe and well-tolerated, the IPPoMS trial did not achieve efficacy on any of its primary or secondary endpoints, providing high confidence that idebenone does not inhibit disability progression or CNS tissue destruction in PPMS.",
+        projectRef: "Drug browser: Idebenone IPPoMS trial result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "lynch-2021-ann-neurol",
+    title: "Safety and Efficacy of Omaveloxolone in Friedreich Ataxia (MOXIe Study)",
+    authors: "Lynch DR, Chin MP, Delatycki MB, et al.",
+    journal: "Annals of Neurology",
+    year: 2021,
+    doi: "10.1002/ana.25934",
+    pmid: "33068037",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7894504/#:~:text=omaveloxolone%20significantly%20improved%20neurological%20function%20compared%20to%20placebo",
+    tags: ["clinical-trials", "frda"],
+    citations: [
+      {
+        citationId: "lynch-2021-ann-neurol-c1",
+        sourceId: "lynch-2021-ann-neurol",
+        quote: "In the MOXIe trial, omaveloxolone significantly improved neurological function compared to placebo and was generally safe and well tolerated.",
+        projectRef: "Drug browser: Omaveloxolone MOXIe trial result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "parkinson-study-group-2014-jama-neurol",
+    title: "A randomized clinical trial of high-dosage coenzyme Q10 in early Parkinson disease: no evidence of benefit",
+    authors: "Parkinson Study Group QE3 Investigators, Beal MF, Oakes D, et al.",
+    journal: "JAMA Neurology",
+    year: 2014,
+    doi: "10.1001/jamaneurol.2014.131",
+    pmid: "24664227",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24664227/#:~:text=Coenzyme%20Q10%20was%20safe%20and%20well%20tolerated%20in%20this%20population%2C%20but%20showed%20no%20evidence%20of%20clinical%20benefit",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "parkinson-study-group-2014-jama-neurol-c1",
+        sourceId: "parkinson-study-group-2014-jama-neurol",
+        quote: "Coenzyme Q10 was safe and well tolerated in this population, but showed no evidence of clinical benefit.",
+        projectRef: "Drug browser: CoQ10 QE3 trial result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "snow-2010-mov-disord",
+    title: "A double-blind, placebo-controlled study to assess the mitochondria-targeted antioxidant MitoQ as a disease-modifying therapy in Parkinson's disease",
+    authors: "Snow BJ, Rolfe FL, Lockhart MM, et al.",
+    journal: "Movement Disorders",
+    year: 2010,
+    doi: "10.1002/mds.23148",
+    pmid: "20568096",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20568096/#:~:text=no%20difference%20between%20MitoQ%20and%20placebo%20on%20any%20measure%20of%20PD%20progression",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "snow-2010-mov-disord-c1",
+        sourceId: "snow-2010-mov-disord",
+        quote: "We showed no difference between MitoQ and placebo on any measure of PD progression.",
+        projectRef: "Drug browser: MitoQ Parkinson trial result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── NAD+ boosters ──────────────────────────────────────────────────
+  {
+    id: "berven-2023-nat-commun",
+    title: "NR-SAFE: a randomized, double-blind safety trial of high dose nicotinamide riboside in Parkinson's disease",
+    authors: "Berven H, Kverneng S, Sheard E, et al.",
+    journal: "Nature Communications",
+    year: 2023,
+    doi: "10.1038/s41467-023-43514-6",
+    pmid: "38016950",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10684646/#:~:text=NR%20greatly%20augmented%20the%20blood%20NAD%20metabolome",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "berven-2023-nat-commun-c1",
+        sourceId: "berven-2023-nat-commun",
+        quote: "NR greatly augmented the blood NAD metabolome with up to 5-fold increase in blood NAD+ levels.",
+        projectRef: "Drug browser: NR-SAFE high-dose NR safety and NAD+ augmentation in PD",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "wu-2025-alzheimers-dement",
+    title: "Cognitive and Alzheimer\u2019s disease biomarker effects of oral nicotinamide riboside (NR) supplementation in older adults with subjective cognitive decline and mild cognitive impairment",
+    authors: "Wu CY, Kupferschmid AC, Chen L, et al.",
+    journal: "Alzheimer\u2019s & Dementia: Translational Research & Clinical Interventions",
+    year: 2025,
+    doi: "10.1002/trc2.70023",
+    pmid: "39817194",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11733434/#:~:text=NR%20supplementation%20did%20not%20alter%20cognition",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "wu-2025-alzheimers-dement-c1",
+        sourceId: "wu-2025-alzheimers-dement",
+        quote: "NR supplementation did not alter cognition as measured by conventional or novel digital assessments.",
+        projectRef: "Drug browser: NR crossover RCT in MCI, no cognitive benefit",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Gene therapy ────────────────────────────────────────────────────
+  {
+    id: "voyager-2021-vyhtt01",
+    title: "VY-HTT01 for Huntington\u2019s Disease",
+    authors: "Huntington\u2019s Disease News (Voyager Therapeutics).",
+    journal: "Huntington\u2019s Disease News",
+    year: 2021,
+    url: "https://huntingtonsdiseasenews.com/vy-htt01/",
+    tags: ["clinical-trials", "huntingtons"],
+    citations: [
+      {
+        citationId: "voyager-2021-vyhtt01-c1",
+        sourceId: "voyager-2021-vyhtt01",
+        quote: "Voyager abandoned VY-HTT01 to pursue alternative gene therapies using intravenous administration, a less invasive delivery route.",
+        projectRef: "Drug browser: VY-HTT01 discontinued before human trials",
+      },
+    ],
+    verificationStatus: "unverifiable",
+  },
+  {
+    id: "lexeo-2024-lx1001",
+    title: "LX1001 (AAVrh.10-APOE2)",
+    authors: "Lexeo Therapeutics / AlzForum.",
+    journal: "AlzForum Therapeutics",
+    year: 2024,
+    url: "https://www.alzforum.org/therapeutics/lx1001",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "lexeo-2024-lx1001-c1",
+        sourceId: "lexeo-2024-lx1001",
+        quote: "APOE2 protein was detectable in cerebrospinal fluid across all participants.",
+        projectRef: "Drug browser: LX1001 APOE2 gene therapy Phase 1/2 results",
+      },
+    ],
+    verificationStatus: "unverifiable",
+  },
+  {
+    id: "passagebio-2025-pbft02",
+    title: "Passage Bio Announces Interim Data from upliFT-D Study in FTD-GRN and Provides Business Updates",
+    authors: "Passage Bio.",
+    journal: "Press release (GlobeNewsWire)",
+    year: 2025,
+    url: "https://www.globenewswire.com/news-release/2025/01/10/3007546/0/en/Passage-Bio-Announces-Interim-Data-from-upliFT-D-Study-in-FTD-GRN-and-Provides-Business-Updates.html",
+    tags: ["clinical-trials", "ftd"],
+    citations: [
+      {
+        citationId: "passagebio-2025-pbft02-c1",
+        sourceId: "passagebio-2025-pbft02",
+        quote: "PBFT02 consistently increased CSF PGRN expression in all patients from below 3 ng/mL at baseline to 13\u201327 ng/mL at six months and 22\u201334 ng/mL at 12 months.",
+        projectRef: "Drug browser: PBFT02 upliFT-D CSF progranulin restoration",
+      },
+    ],
+    verificationStatus: "unverifiable",
+  },
+  {
+    id: "sevigny-2024-nat-med",
+    title: "Progranulin AAV gene therapy for frontotemporal dementia: translational studies and phase 1/2 trial interim results",
+    authors: "Sevigny J, Uspenskaya O, Heckman LD, et al.",
+    journal: "Nature Medicine",
+    year: 2024,
+    doi: "10.1038/s41591-024-02973-0",
+    pmid: "38745011",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11108785/#:~:text=One-time%20administration%20of%20PR006%20into%20the%20cisterna%20magna%20was%20generally%20safe%20and%20well%20tolerated",
+    tags: ["clinical-trials", "ftd"],
+    citations: [
+      {
+        citationId: "sevigny-2024-nat-med-c1",
+        sourceId: "sevigny-2024-nat-med",
+        quote: "One-time administration of PR006 into the cisterna magna was generally safe and well tolerated.",
+        projectRef: "Drug browser: PR006 gene therapy safety result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Progranulin ─────────────────────────────────────────────────────
+  {
+    id: "ward-2024-alzheimers-dement",
+    title: "Phase 1 study of latozinemab in progranulin-associated frontotemporal dementia",
+    authors: "Ward M, Carter LP, Huang JY, et al.",
+    journal: "Alzheimer\u2019s & Dementia: Translational Research & Clinical Interventions",
+    year: 2024,
+    doi: "10.1002/trc2.12452",
+    pmid: "38356474",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10865485/#:~:text=Multiple%E2%80%90dose%20administration%20of%20latozinemab%20increased%20plasma%20and%20CSF%20PGRN%20levels",
+    tags: ["clinical-trials", "ftd"],
+    citations: [
+      {
+        citationId: "ward-2024-alzheimers-dement-c1",
+        sourceId: "ward-2024-alzheimers-dement",
+        quote: "Multiple\u2010dose administration of latozinemab increased plasma and CSF PGRN levels in participants with FTD\u2010GRN to levels that approximated those seen in healthy volunteers.",
+        projectRef: "Drug browser: Latozinemab Phase 1 progranulin result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Kinase inhibitors ─────────────────────────────────────────────
+  {
+    id: "jiang-2022-nat-commun",
+    title: "Preclinical and randomized clinical evaluation of the p38\u03B1 kinase inhibitor neflamapimod for basal forebrain cholinergic degeneration",
+    authors: "Jiang Y, Alam JJ, Gomperts SN, et al.",
+    journal: "Nature Communications",
+    year: 2022,
+    doi: "10.1038/s41467-022-32944-3",
+    pmid: "36130946",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9492714/#:~:text=Neflamapimod%20does%20not%20show%20an%20effect%20in%20the%20clinical%20study%20on%20the%20primary%20endpoint",
+    tags: ["clinical-trials", "dlb"],
+    citations: [
+      {
+        citationId: "jiang-2022-nat-commun-c1",
+        sourceId: "jiang-2022-nat-commun",
+        quote: "Neflamapimod does not show an effect in the clinical study on the primary endpoint, a cognitive-test battery.",
+        projectRef: "Drug browser: Neflamapimod AscenD-LB missed primary, secondary signals",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
+    id: "tolosa-2014-mov-disord",
+    title: "A phase 2 trial of the GSK-3 inhibitor tideglusib in progressive supranuclear palsy",
+    authors: "Tolosa E, Litvan I, H\u00F6glinger GU, et al.",
+    journal: "Movement Disorders",
+    year: 2014,
+    doi: "10.1002/mds.25824",
+    pmid: "24532007",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24532007/#:~:text=No%20significant%20differences%20were%20detected%20in%20the%20primary%20or%20secondary%20endpoints",
+    tags: ["clinical-trials", "psp"],
+    citations: [
+      {
+        citationId: "tolosa-2014-mov-disord-c1",
+        sourceId: "tolosa-2014-mov-disord",
+        quote: "No significant differences were detected in the primary or secondary endpoints at week 52 between placebo and either dose of tideglusib.",
+        projectRef: "Drug browser: Tideglusib TAUROS PSP trial result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Sigma-1 receptor ──────────────────────────────────────────────
+  {
+    id: "reilmann-2025-nat-med",
+    title: "Pridopidine in early-stage manifest Huntington\u2019s disease: a phase 3 trial",
+    authors: "Reilmann R, Feigin A, Rosser AE, et al.",
+    journal: "Nature Medicine",
+    year: 2025,
+    doi: "10.1038/s41591-025-03920-3",
+    pmid: "40913168",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40913168/#:~:text=primary%20and%20key%20secondary%20endpoints%20were%20not%20met",
+    tags: ["clinical-trials", "huntingtons"],
+    citations: [
+      {
+        citationId: "reilmann-2025-nat-med-c1",
+        sourceId: "reilmann-2025-nat-med",
+        quote: "The TFC least-squares mean difference between pridopidine and placebo was -0.18 (95% confidence interval -0.49 to 0.14; P = 0.26).",
+        projectRef: "Drug browser: Pridopidine PROOF-HD Phase 3 HD result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Serotonin modulators ──────────────────────────────────────────
+  {
+    id: "cummings-2014-lancet",
+    title: "Pimavanserin for patients with Parkinson\u2019s disease psychosis: a randomised, placebo-controlled phase 3 trial",
+    authors: "Cummings J, Isaacson S, Mills R, et al.",
+    journal: "Lancet",
+    year: 2014,
+    doi: "10.1016/S0140-6736(13)62106-6",
+    pmid: "24183563",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24183563/#:~:text=pimavanserin%20was%20associated%20with%20a%20-5%C2%B779%20decrease%20in%20SAPS-PD%20scores",
+    tags: ["clinical-trials", "parkinsons"],
+    citations: [
+      {
+        citationId: "cummings-2014-lancet-c1",
+        sourceId: "cummings-2014-lancet",
+        quote: "pimavanserin was associated with a -5\u00B779 decrease in SAPS-PD scores compared with -2\u00B773 for placebo",
+        projectRef: "Drug browser: Pimavanserin PD psychosis pivotal trial result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Lithium (GSK-3β) ─────────────────────────────────────────────
+  {
+    id: "morrison-2013-lancet-neurol",
+    title: "Lithium in patients with amyotrophic lateral sclerosis (LiCALS): a phase 3 multicentre, randomised, double-blind, placebo-controlled trial",
+    authors: "Morrison KE, Dhariwal S, Hornabrook R, et al.",
+    journal: "Lancet Neurology",
+    year: 2013,
+    doi: "10.1016/S1474-4422(13)70037-1",
+    pmid: "23453347",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3610091/#:~:text=We%20found%20no%20evidence%20of%20benefit%20of%20lithium%20on%20survival",
+    tags: ["clinical-trials", "als"],
+    citations: [
+      {
+        citationId: "morrison-2013-lancet-neurol-c1",
+        sourceId: "morrison-2013-lancet-neurol",
+        quote: "We found no evidence of benefit of lithium on survival in patients with ALS.",
+        projectRef: "Drug browser: Lithium carbonate LiCALS Phase 3 ALS result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Sigma-1 receptor (AD) ────────────────────────────────────────
+  {
+    id: "macfarlane-2025-j-prev-alzheimers-dis",
+    title: "Blarcamesine for the treatment of Early Alzheimer's Disease: Results from the ANAVEX2-73-AD-004 Phase IIB/III trial",
+    authors: "Macfarlane S, Grimmer T, Teo K, et al.",
+    journal: "Journal of Prevention of Alzheimer's Disease",
+    year: 2025,
+    doi: "10.1016/j.tjpad.2024.100016",
+    pmid: "39800452",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39800452/#:~:text=significantly%20slowed%20clinical%20progression%20by%2036.3%25",
+    tags: ["clinical-trials", "alzheimers"],
+    citations: [
+      {
+        citationId: "macfarlane-2025-j-prev-alzheimers-dis-c1",
+        sourceId: "macfarlane-2025-j-prev-alzheimers-dis",
+        quote: "Blarcamesine significantly slowed clinical progression by 36.3% at 48 weeks.",
+        projectRef: "Drug browser: Blarcamesine ANAVEX2-73 Phase 2b/3 AD result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── mTOR / autophagy ────────────────────────────────────────────
+  {
+    id: "mandrioli-2023-nat-commun",
+    title: "Randomized, double-blind, placebo-controlled trial of rapamycin in amyotrophic lateral sclerosis",
+    authors: "Mandrioli J, D\u2019Amico R, Zucchi E, et al.",
+    journal: "Nature Communications",
+    year: 2023,
+    doi: "10.1038/s41467-023-40734-8",
+    pmid: "37591957",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37591957/#:~:text=primary%20outcome%2C%20the%20number%20of%20patients%20exhibiting%20an%20increase",
+    tags: ["clinical-trials", "als"],
+    citations: [
+      {
+        citationId: "mandrioli-2023-nat-commun-c1",
+        sourceId: "mandrioli-2023-nat-commun",
+        quote: "The primary outcome, the number of patients exhibiting an increase >30% in regulatory T cells from baseline to treatment end, was not attained.",
+        projectRef: "Drug browser: Rapamycin RANsOM Phase 2 ALS result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Catalytic nanomedicine ──────────────────────────────────────
+  {
+    id: "vucic-2023-eclinmedicine",
+    title: "Efficacy and safety of CNM-Au8 in amyotrophic lateral sclerosis (RESCUE-ALS study): a phase 2, randomised, double-blind, placebo-controlled trial and open label extension",
+    authors: "Vucic S, Menon P, Huynh W, et al.",
+    journal: "eClinicalMedicine",
+    year: 2023,
+    doi: "10.1016/j.eclinm.2023.102036",
+    pmid: "37396808",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10314176/#:~:text=no%20significant%20difference%20in%20the%20summated%20MUNIX%20score",
+    tags: ["clinical-trials", "als"],
+    citations: [
+      {
+        citationId: "vucic-2023-eclinmedicine-c1",
+        sourceId: "vucic-2023-eclinmedicine",
+        quote: "There was no significant difference in the summated MUNIX score percent change between the active and placebo treated groups at week 36.",
+        projectRef: "Drug browser: CNM-Au8 RESCUE-ALS Phase 2 result",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+
+  // ── Verdiperstat (MSA) ────────────────────────────────────────────
+  {
+    id: "verdiperstat-2024-mstar",
+    title: "Verdiperstat M-STAR Phase 3 trial in multiple system atrophy",
+    authors: "Biohaven Pharmaceuticals.",
+    journal: "ClinicalTrials.gov (NCT03952806)",
+    year: 2024,
+    tags: ["clinical-trials", "msa"],
+    citations: [
+      {
+        citationId: "verdiperstat-2024-mstar-c1",
+        sourceId: "verdiperstat-2024-mstar",
+        quote: "The M-STAR trial failed to meet its primary and key secondary endpoints.",
+        projectRef: "Drug browser: Verdiperstat MPO inhibitor MSA Phase 3 failure",
+      },
+    ],
+    verificationStatus: "unverifiable",
+  },
 ];

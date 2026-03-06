@@ -25,7 +25,7 @@ export const falsificationContent = {
     },
   ],
   afterSearch:
-    "After searching 400+ papers: none observed.",
+    "We looked across 400+ papers and haven\u2019t found one yet.",
   ctaPrimary: "Explore the research",
   ctaSecondary: "Back to top",
 };

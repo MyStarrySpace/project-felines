@@ -56,8 +56,8 @@ export interface ComparisonColumn {
 }
 
 export const mislocalizationContent = {
-  kicker: "The real problem",
-  headline: "Not too much iron. Iron in the wrong places.",
+  kicker: "A different reading",
+  headline: "What if it\u2019s not too much iron, but iron in the wrong places?",
   columns: [
     {
       label: "Conventional view",
@@ -170,7 +170,7 @@ export const antiviralContent = {
     },
   ],
   resolution:
-    "Viral reactivation isn\u2019t really reactivation. It\u2019s failed clearance of old damage.",
+    "What if viral reactivation isn\u2019t really reactivation, but failed clearance of old damage?",
   fragmentModel: [
     "Initial infection deposits viral DNA, proteins, and modified host proteins",
     "Autophagy normally clears these fragments",
@@ -179,7 +179,7 @@ export const antiviralContent = {
     "No viral replication needed \u2014 just failed clearance",
   ],
   insight:
-    "Prevention works because it prevents fragment deposition. Treatment fails because antivirals can\u2019t clear fragments that aren\u2019t replicating.",
+    "If this model is right, prevention works because it prevents fragment deposition. Treatment fails because antivirals can\u2019t clear fragments that aren\u2019t replicating.",
   metaAnalysis: {
     hr: "0.88",
     label: "pooled HR for antiviral prevention of dementia",

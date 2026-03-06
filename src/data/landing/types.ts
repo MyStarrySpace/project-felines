@@ -61,7 +61,7 @@ export interface ChelationRow {
 
 export interface Prediction {
   prediction: string;
-  status: "confirmed" | "consistent";
+  status: "consistent" | "open";
   evidence: string;
 }
 

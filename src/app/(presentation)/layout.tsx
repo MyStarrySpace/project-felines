@@ -34,11 +34,24 @@ function PresentationContent({ children }: { children: ReactNode }) {
   const showPresentation = phase === "idle" || phase === "expanding";
   const showExplore = phase === "explore";
 
-  // Ensure presentation always starts at the top on fresh load
+  // On fresh load: scroll to hash target if present, otherwise start at top
   useEffect(() => {
     if (didJumpRef.current) return;
     didJumpRef.current = true;
-    window.scrollTo(0, 0);
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      // Delay to allow sections to register and render
+      requestAnimationFrame(() => {
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "instant", block: "start" });
+        } else {
+          window.scrollTo(0, 0);
+        }
+      });
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   // Continuously track scroll position while presentation is visible

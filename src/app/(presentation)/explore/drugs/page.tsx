@@ -12,7 +12,7 @@ export default function DrugsPage() {
         <p className="text-sm font-medium uppercase tracking-wide text-teal-400 mb-3">
           Drug Browser
         </p>
-        <h1 className="text-4xl font-bold text-white sm:text-5xl">
+        <h1 className="font-serif text-4xl text-white sm:text-5xl">
           {drugs.length} drugs across six diseases
         </h1>
         <p className="mt-4 text-lg text-gray-400 max-w-2xl">
@@ -23,7 +23,7 @@ export default function DrugsPage() {
       </div>
 
       {/* Full interactive browser */}
-      <DrugBrowser />
+      <DrugBrowser defaultExpanded />
     </Container>
   );
 }

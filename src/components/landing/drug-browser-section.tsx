@@ -69,7 +69,7 @@ function DrugBrowserStage({ progress }: { progress: MotionValue<number> }) {
                   Deferiprone failed by working.
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed max-w-[52ch]">
-                  72 drugs across six diseases. Deferiprone, the only iron
+                  {drugs.length} drugs across six diseases. Deferiprone, the only iron
                   chelator trialed in neurodegeneration, reduced brain iron
                   exactly as designed. Patients got worse. The problem
                   isn&rsquo;t too much iron. It&rsquo;s iron in the wrong places.
@@ -109,6 +109,18 @@ function DrugBrowserStage({ progress }: { progress: MotionValue<number> }) {
           spotlightPhase={phase}
           onDismissSpotlight={handleDismiss}
         />
+
+        {phase === "dismissed" && (
+          <div className="mt-6">
+            <Link
+              href="/explore/drugs"
+              className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-teal-400 transition-colors"
+            >
+              Full drug browser with filters
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -178,13 +190,6 @@ function DrugBrowserFlowing() {
           ))}
         </div>
 
-        <Link
-          href="/explore/drugs"
-          className="inline-flex items-center gap-2 px-5 py-2.5 text-sm text-gray-200 border border-white/15 hover:text-white hover:border-white/30 transition-colors"
-        >
-          Browse all {drugs.length} drugs
-          <ArrowRight className="h-3.5 w-3.5" />
-        </Link>
       </ScrollAnimate>
     </div>
   );

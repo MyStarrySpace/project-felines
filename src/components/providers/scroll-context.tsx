@@ -171,6 +171,14 @@ export function ScrollProvider({ children }: { children: ReactNode }) {
       setActiveSection(bestId);
       rafRef.current = null;
 
+      // Sync active section to URL hash (replaceState to avoid history spam)
+      if (bestId && typeof window !== "undefined") {
+        const currentHash = window.location.hash.slice(1);
+        if (currentHash !== bestId) {
+          history.replaceState(null, "", `#${bestId}`);
+        }
+      }
+
       // Debug: log position on every scroll update
       if (process.env.NODE_ENV === "development") {
         const parts = Object.entries(newSectionProgress)

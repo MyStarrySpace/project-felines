@@ -10,7 +10,7 @@
 // ---------------------------------------------------------------------------
 
 export const hookContent = {
-  headline: "Six proteins. Six diseases. One exposed secret.",
+  headline: "Six proteins. Six diseases. One overlooked connection.",
   subhead: "Every protein the field has targeted binds iron.",
   stat: {
     value: "0",
@@ -30,7 +30,7 @@ export const mopContent = {
     "The field concluded: the proteins are the disease. Remove them, cure the patient.",
   ],
   reframe:
-    "All six proteins bind iron. All six aggregate around iron. In every case, removing the protein left the iron unmanaged\u2009\u2014\u2009and patients got worse.",
+    "All six proteins bind iron. All six aggregate around iron. In every case, removing the protein left the iron unmanaged\u2009\u2014\u2009and patients got worse. What if the proteins aren\u2019t the disease?",
 };
 
 // ---------------------------------------------------------------------------
@@ -81,7 +81,7 @@ export const convergenceContent = {
     },
   ] as ProteinRow[],
   insight:
-    "Five proteins. Four cause disease. One stores memories. All share the same A11-reactive oligomeric fold. The difference is regulation, not structure. The protein is the mop. Iron is the waste.",
+    "Five proteins. Four cause disease. One stores memories. All share the same A11-reactive oligomeric fold. The difference may be regulation, not structure. What if the protein is the mop, and iron is the waste?",
 };
 
 // ---------------------------------------------------------------------------
@@ -97,8 +97,8 @@ export interface TrialRow {
 }
 
 export const trialContent = {
-  kicker: "What the trials actually show",
-  headline: "Therapies that handle the waste outperform those that merely remove the mop.",
+  kicker: "Another way to read the trials",
+  headline: "Therapies that handle the waste tend to outperform those that merely remove the mop.",
   rows: [
     {
       drug: "Donanemab",

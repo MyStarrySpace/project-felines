@@ -959,15 +959,17 @@ function DrugGrid({
 export function DrugBrowser({
   spotlightPhase: externalPhase,
   onDismissSpotlight,
+  defaultExpanded = false,
 }: {
   spotlightPhase?: SpotlightPhase;
   onDismissSpotlight?: () => void;
+  defaultExpanded?: boolean;
 } = {}) {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>("iron-chelator");
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(defaultExpanded ? null : "iron-chelator");
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [gridMode, setGridMode] = useState<GridMode>("names");
-  const [mobileExpanded, setMobileExpanded] = useState(false);
-  const [internalPhase, setInternalPhase] = useState<SpotlightPhase>("chelators");
+  const [mobileExpanded, setMobileExpanded] = useState(defaultExpanded);
+  const [internalPhase, setInternalPhase] = useState<SpotlightPhase>(defaultExpanded ? "dismissed" : "chelators");
 
   const phase = externalPhase ?? internalPhase;
   const spotlight = phase !== "dismissed";
@@ -990,16 +992,19 @@ export function DrugBrowser({
     return map;
   }, []);
 
+  // Landing page: grid-only with spotlight narrative, no controls
+  // Explore page (defaultExpanded): full controls, all views
+  const showControls = defaultExpanded;
+
   return (
     <div>
-      <div
-        className="transition-opacity duration-300"
-        style={spotlight ? { opacity: 0.3, pointerEvents: "none" } : undefined}
-      >
-        <ViewTabs mode={viewMode} onChange={setViewMode}>
-          <OutcomeLegend />
-        </ViewTabs>
-      </div>
+      {showControls && (
+        <div>
+          <ViewTabs mode={viewMode} onChange={setViewMode}>
+            <OutcomeLegend />
+          </ViewTabs>
+        </div>
+      )}
 
       <div className="relative">
         <div
@@ -1007,37 +1012,46 @@ export function DrugBrowser({
             mobileExpanded || spotlight ? "" : "max-h-[280px]"
           }`}
         >
-          <div
-            className="transition-opacity duration-300"
-            style={spotlight ? { opacity: 0.3, pointerEvents: "none" } : undefined}
-          >
-            {viewMode === "grid" && (
-              <div className="flex items-center justify-between mb-4">
-                <GridModeToggle mode={gridMode} onChange={setGridMode} />
-                <button
-                  type="button"
-                  onClick={() => setSelectedCategory(selectedCategory === null ? "iron-chelator" : null)}
-                  className={`px-3 py-1 text-xs transition-all duration-200 cursor-pointer border ${
-                    selectedCategory === null
-                      ? "border-teal-400/50 text-teal-400 bg-teal-400/10"
-                      : "border-white/10 text-gray-400 hover:text-gray-300 hover:border-white/20"
-                  }`}
-                >
-                  {selectedCategory === null ? "Deselect drugs" : "All drugs"}
-                </button>
-              </div>
-            )}
-            {viewMode !== "list" && (
-              <CategoryPills selected={selectedCategory} onSelect={setSelectedCategory} />
-            )}
-          </div>
-          {viewMode === "chart" && (
+          {showControls && (
+            <div
+              className="transition-opacity duration-300"
+              style={spotlight ? { opacity: 0.3, pointerEvents: "none" } : undefined}
+            >
+              {viewMode === "grid" && (
+                <div className="flex items-center justify-between mb-4">
+                  <GridModeToggle mode={gridMode} onChange={setGridMode} />
+                  <button
+                    type="button"
+                    onClick={() => setSelectedCategory(selectedCategory === null ? "iron-chelator" : null)}
+                    className={`px-3 py-1 text-xs transition-all duration-200 cursor-pointer border ${
+                      selectedCategory === null
+                        ? "border-teal-400/50 text-teal-400 bg-teal-400/10"
+                        : "border-white/10 text-gray-400 hover:text-gray-300 hover:border-white/20"
+                    }`}
+                  >
+                    {selectedCategory === null ? "Deselect drugs" : "All drugs"}
+                  </button>
+                </div>
+              )}
+              {viewMode !== "list" && (
+                <CategoryPills selected={selectedCategory} onSelect={setSelectedCategory} />
+              )}
+            </div>
+          )}
+
+          {!showControls && !spotlight && (
+            <div className="mb-4">
+              <OutcomeLegend />
+            </div>
+          )}
+
+          {viewMode === "chart" && showControls && (
             <MoleculeScalePlot selectedCategory={selectedCategory} />
           )}
           {viewMode === "grid" && (
             <DrugGrid selectedCategory={selectedCategory} grid={grid} gridMode={gridMode} phase={phase} />
           )}
-          {viewMode === "list" && (
+          {viewMode === "list" && showControls && (
             <DrugTreeList selectedCategory={null} />
           )}
           {viewMode === "grid" && gridMode === "dots" && (
@@ -1052,7 +1066,7 @@ export function DrugBrowser({
               onClick={dismiss}
               className="pointer-events-auto px-6 py-2.5 text-sm text-gray-200 border border-white/15 hover:text-white hover:border-white/30 transition-colors cursor-pointer bg-[#1A0F0A]"
             >
-              Explore all {drugs.length} trials
+              Explore {drugs.length} drugs
             </button>
           </div>
         )}
@@ -1065,7 +1079,7 @@ export function DrugBrowser({
               onClick={() => setMobileExpanded(true)}
               className="relative -mt-4 px-4 py-1.5 text-sm text-gray-400 border border-white/10 hover:text-gray-300 hover:border-white/20 transition-colors cursor-pointer bg-[#1A0F0A]"
             >
-              Show all {drugs.length} drugs
+              Show {drugs.length} drugs
             </button>
           </div>
         )}

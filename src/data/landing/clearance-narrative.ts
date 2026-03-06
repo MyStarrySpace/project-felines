@@ -204,6 +204,6 @@ export const thresholdAnnotations = {
 
 export const narrativeHeadline = "Why some brains fail faster";
 export const narrativeClosing =
-  "Each risk factor alone is survivable. Together, they overwhelm your brain\u2019s iron drainage.";
+  "Each risk factor alone is survivable. Together, they may overwhelm the brain\u2019s iron drainage.";
 export const narrativeExploreLabel = "Explore the full model";
 export const narrativeExploreHref = "/explore/clearance";

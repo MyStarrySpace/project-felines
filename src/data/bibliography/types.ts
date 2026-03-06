@@ -21,6 +21,8 @@ export type TopicTag =
   | "ftd"
   | "dlb"
   | "frda"
+  | "psp"
+  | "msa"
   | "tbi"
   | "ebv"
   | "viral"

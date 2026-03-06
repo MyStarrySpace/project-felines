@@ -22,7 +22,7 @@ export const problemStats: ProblemStat[] = [
 ];
 
 export const problemInsight = {
-  title: "The wrong model, not the wrong drugs",
+  title: "A pattern in the failures",
   content:
-    "These drugs hit their molecular targets. Amyloid levels dropped. Tau tangles cleared. But the disease continued. The problem isn't drug design. It's the assumption that one target drives the disease.",
+    "These drugs hit their molecular targets. Amyloid levels dropped. Tau tangles cleared. But the disease continued. What if the problem isn\u2019t drug design, but the assumption that one target drives the disease?",
 };
