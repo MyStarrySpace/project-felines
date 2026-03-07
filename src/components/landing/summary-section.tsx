@@ -12,7 +12,7 @@ export function SummarySection() {
   const { scrollToSection } = useScrollContext();
 
   return (
-    <ScrollSection id="summary" label="Four predictions, none broken" className="py-24 sm:py-32">
+    <ScrollSection id="summary" label="Falsifiability" className="py-24 sm:py-32">
       <ScrollAnimate enterFrom="scale">
         <h2 className="font-serif text-[clamp(1.75rem,5vw,3.5rem)] leading-[1.2] tracking-[-0.02em] text-white mb-10 text-center">
           {falsificationContent.headline}

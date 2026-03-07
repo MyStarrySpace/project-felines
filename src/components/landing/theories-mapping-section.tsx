@@ -17,14 +17,12 @@ const ALL_LAYERS = ["Fe", "L", "I", "N", "E", "S"] as const;
 
 const strengthOpacity: Record<Strength, string> = {
   strong: "opacity-100",
-  moderate: "opacity-50",
-  weak: "opacity-25",
+  moderate: "opacity-40",
 };
 
 const strengthLabel: Record<Strength, string> = {
   strong: "Strong evidence",
   moderate: "Moderate evidence",
-  weak: "Weak evidence",
 };
 
 function LayerTooltip({

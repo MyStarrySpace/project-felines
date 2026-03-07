@@ -172,6 +172,30 @@ export const glialSources: Source[] = [
     verificationStatus: "verified",
   },
   {
+    id: "bullock-2005-science",
+    title: "Neuroscience. The neuron doctrine, redux",
+    authors: "Bullock TH, Bennett MVL, Johnston D, Josephson R, Marder E, Fields RD",
+    journal: "Science",
+    year: 2005,
+    doi: "10.1126/science.1114394",
+    pmid: "16272104",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16272104/",
+    tags: ["glia", "astrocyte", "gap-junctions", "neuron-doctrine"],
+    citations: [
+      {
+        citationId: "bullock-2005-science-c1",
+        sourceId: "bullock-2005-science",
+        quote:
+          "Perspectives piece challenging the classical neuron doctrine, arguing that non-synaptic communication (gap junctions, glial signaling) is functionally important and systematically underappreciated",
+        context:
+          "Foundational argument that glia and non-neuronal signaling are essential to brain function, not just support cells",
+        projectRef:
+          "Cell vulnerability section: why the cells that fail first in neurodegeneration are not neurons",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
     id: "nakatomi-2014-jnuclmed",
     title:
       "Neuroinflammation in Patients with Chronic Fatigue Syndrome/Myalgic Encephalomyelitis: An ¹¹C-(R)-PK11195 PET Study",
