@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Project FELINES",
     description:
       "Every major protein linked to neurodegeneration binds iron. This site pulls together the evidence from 400+ papers across five diseases.",
-    images: [{ url: "/images/og-preview.png", width: 1200, height: 630 }],
+    images: [{ url: "/illustrations/ferroptosis-cell.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Project FELINES",
     description:
       "Every major protein linked to neurodegeneration binds iron. This site pulls together the evidence from 400+ papers across five diseases.",
-    images: ["/images/og-preview.png"],
+    images: ["/illustrations/ferroptosis-cell.png"],
   },
 };
 
