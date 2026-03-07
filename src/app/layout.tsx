@@ -18,7 +18,21 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   title: "Project FELINES",
   description:
-    "Investigating ferroptosis in neurodegeneration",
+    "Every major protein linked to neurodegeneration binds iron. This site pulls together the evidence from 400+ papers across five diseases.",
+  openGraph: {
+    title: "Project FELINES",
+    description:
+      "Every major protein linked to neurodegeneration binds iron. This site pulls together the evidence from 400+ papers across five diseases.",
+    images: [{ url: "/images/og-preview.png", width: 1200, height: 630 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Project FELINES",
+    description:
+      "Every major protein linked to neurodegeneration binds iron. This site pulls together the evidence from 400+ papers across five diseases.",
+    images: ["/images/og-preview.png"],
+  },
 };
 
 export default function RootLayout({
