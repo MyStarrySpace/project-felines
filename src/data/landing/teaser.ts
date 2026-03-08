@@ -149,7 +149,7 @@ export const proteinTrialStats: ProteinTrialStat[] = [
 export const proteinTrialContent = {
   heading: "49 drugs targeted these proteins.",
   subhead: "Across five neurodegenerative diseases.",
-  punchline: "All five proteins bind iron.",
+  punchline: "All five proteins bind iron. Some physically cooperate to manage it.",
 };
 
 export const teaserContent = {

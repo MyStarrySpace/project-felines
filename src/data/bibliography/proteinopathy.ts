@@ -229,6 +229,31 @@ export const proteinopathySources: Source[] = [
     verificationStatus: "verified",
   },
   {
+    id: "kaiser-2012-plosone",
+    title:
+      "Amyloid beta precursor protein and prion protein have a conserved interaction affecting cell adhesion and CNS development",
+    authors: "Kaiser DM, Acharya M, Leighton PLA, et al.",
+    journal: "PLoS ONE",
+    year: 2012,
+    doi: "10.1371/journal.pone.0051305",
+    pmid: "23236467",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3516539/#:~:text=APP%20and%20PrP%20interact%20with%20each%20other",
+    tags: ["iron", "prion", "alzheimers"],
+    citations: [
+      {
+        citationId: "kaiser-2012-plosone-c1",
+        sourceId: "kaiser-2012-plosone",
+        quote:
+          "APP and PrP interact with each other and that the interaction is conserved in Drosophila and zebrafish",
+        context:
+          "APP and PrPC physically interact in a conserved complex across vertebrates and invertebrates, suggesting a shared ancestral iron-management function",
+        projectRef:
+          "Reframe section: APP-PrPC conserved physical interaction as evidence of cooperative iron handling",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
     id: "davies-2011-plosone",
     title: "Alpha-Synuclein Is a Cellular Ferrireductase",
     authors: "Davies P, Moualla D, Brown DR",

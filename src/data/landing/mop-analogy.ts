@@ -69,7 +69,7 @@ export const convergenceContent = {
     {
       name: "PrP",
       disease: "Prion disease",
-      ironRole: "Descended from ZIP metal transporter family",
+      ironRole: "Ferrireductase (Fe\u00B3\u207A\u2192Fe\u00B2\u207A); descended from ZIP metal transporter family; physically interacts with APP",
       withoutIron: "PrP-null mice show altered brain iron homeostasis",
     },
     {
@@ -81,7 +81,7 @@ export const convergenceContent = {
     },
   ] as ProteinRow[],
   insight:
-    "Five proteins. Four cause disease. One stores memories. All share the same A11-reactive oligomeric fold. The difference may be regulation, not structure. What if the protein is the mop, and iron is the waste?",
+    "Five proteins. Four cause disease. One stores memories. All share the same A11-reactive oligomeric fold. APP and PrP physically interact in a conserved complex from flies to humans. When ceruloplasmin is deleted from oligodendrocytes alone, the full iron-ferroptosis cascade follows. What if the protein is the mop, and iron is the waste?",
 };
 
 // ---------------------------------------------------------------------------

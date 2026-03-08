@@ -172,6 +172,31 @@ export const glialSources: Source[] = [
     verificationStatus: "verified",
   },
   {
+    id: "santiago-gonzalez-2021-redoxbiol",
+    title:
+      "Ceruloplasmin deletion in myelinating glial cells induces myelin disruption and oxidative stress in the central and peripheral nervous systems",
+    authors: "Santiago González DA, Cheli VT, Rosenblum SL, Denaroso G, Paez PM",
+    journal: "Redox Biology",
+    year: 2021,
+    doi: "10.1016/j.redox.2021.102118",
+    pmid: "34474395",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8411591/#:~:text=ceruloplasmin%20deletion%20in%20myelinating%20glial%20cells",
+    tags: ["oligodendrocyte", "iron", "glia"],
+    citations: [
+      {
+        citationId: "santiago-gonzalez-2021-redoxbiol-c1",
+        sourceId: "santiago-gonzalez-2021-redoxbiol",
+        quote:
+          "Ceruloplasmin conditional knockout in oligodendrocytes reproduces the full iron-ferroptosis cascade: iron accumulation, lipid peroxidation, and demyelination",
+        context:
+          "Removing ceruloplasmin specifically from oligodendrocytes is sufficient to trigger the entire FELINES cascade in those cells",
+        projectRef:
+          "Reframe section: ceruloplasmin KO reproduces full cascade in OLs",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
     id: "bullock-2005-science",
     title: "Neuroscience. The neuron doctrine, redux",
     authors: "Bullock TH, Bennett MVL, Johnston D, Josephson R, Marder E, Fields RD",

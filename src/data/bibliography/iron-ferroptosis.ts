@@ -423,6 +423,31 @@ export const ironFerrOptosisSources: Source[] = [
     verificationStatus: "verified",
   },
   {
+    id: "kruer-2010-annneurol",
+    title:
+      "Defective FA2H leads to a novel form of neurodegeneration with brain iron accumulation (NBIA)",
+    authors: "Kruer MC, Paisán-Ruiz C, Boddaert N, et al.",
+    journal: "Annals of Neurology",
+    year: 2010,
+    doi: "10.1002/ana.22122",
+    pmid: "20853438",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20853438/#:~:text=Defective%20FA2H%20leads%20to%20a%20novel%20form",
+    tags: ["iron", "ferroptosis"],
+    citations: [
+      {
+        citationId: "kruer-2010-annneurol-c1",
+        sourceId: "kruer-2010-annneurol",
+        quote:
+          "FA2H mutations cause fatty acid hydroxylase-associated neurodegeneration (FAHN), a form of NBIA with progressive spastic paraplegia, dystonia, and cerebellar atrophy",
+        context:
+          "FA2H hydroxylates myelin lipids; loss-of-function causes iron accumulation and neurodegeneration, linking myelin lipid composition directly to iron homeostasis",
+        projectRef:
+          "Reframe section: FA2H/NBIA as evidence that myelin lipid metabolism and iron are mechanistically coupled",
+      },
+    ],
+    verificationStatus: "verified",
+  },
+  {
     id: "patel-2002-jneurosci",
     title:
       "Ceruloplasmin regulates iron levels in the CNS and prevents free radical injury",
