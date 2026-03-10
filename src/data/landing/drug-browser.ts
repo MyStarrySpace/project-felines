@@ -296,7 +296,7 @@ export const drugs: Drug[] = [
   {
     id: 29, name: "ATH434", company: "Alterity", category: "iron-redist", disease: "MSA", phase: "2", outcome: "signal",
     note: "Iron redistribution (not chelation)",
-    detail: "Redistributes iron rather than chelating it out. Slower brain atrophy, reduced basal ganglia iron, stable NfL. 43% stable and 30% improved on clinical scales.",
+    detail: "Redistributes iron rather than chelating it out. 48% slowing of clinical progression at 50 mg (p=0.03). Reduced basal ganglia iron accumulation. Trends in preserved brain volume.",
     sourceId: "ath434-2025-msa",
   },
   {
@@ -764,7 +764,7 @@ export const drugs: Drug[] = [
   {
     id: 99, name: "Ambroxol", company: "Various/Academic", category: "gba", disease: "PD", phase: "2", outcome: "signal",
     note: "GCase chaperone; AIM-PD showed target engagement",
-    detail: "AIM-PD: 17 PD patients (with and without GBA mutations), open-label, 186 days, high-dose (1260 mg/day). CSF ambroxol and GCase activity increased significantly. CSF \u03B1-synuclein decreased. Well-tolerated. Repurposed mucolytic available for ~$0.10/day. Larger placebo-controlled trial needed.",
+    detail: "AIM-PD: 17 PD patients (with and without GBA mutations), open-label, 186 days, high-dose (1260 mg/day). CSF ambroxol and GCase protein increased 35%. CSF \u03B1-synuclein increased 13%. Well-tolerated. Repurposed mucolytic available for ~$0.10/day. Larger placebo-controlled trial needed.",
     sourceId: "mullin-2020-jama-neurol",
   },
 
