@@ -10,7 +10,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2022,
     doi: "10.1038/s41588-022-01024-z",
     pmid: "35379992",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9005347/#:~:text=found%2075%20risk%20loci%2C%20of%20which",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9005347/",
     tags: ["genetics", "alzheimers"],
     citations: [
       {
@@ -20,6 +20,7 @@ export const gwasGeneticsSources: Source[] = [
           "We found 75 risk loci, of which 42 were new at the time of analysis.",
         context: "AD GWAS landmark: 75 loci, none are canonical iron genes",
         projectRef: "GWAS section: headline stat — 75+ risk loci",
+        fragmentText: "We found 75 risk loci, of which 42",
       },
       {
         citationId: "bellenguez-2022-natgenet-c2",
@@ -30,6 +31,7 @@ export const gwasGeneticsSources: Source[] = [
           "Pathway enrichment shows microglia, not iron — but microglial function IS iron management (TREM2, CD33, SPI1)",
         projectRef:
           "GWAS section: lysosome layer enrichment for microglial genes",
+          fragmentText: "Pathway enrichment analyses confirmed the involvement of amyloidtau",
       },
     ],
     verificationStatus: "verified",
@@ -43,7 +45,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2016,
     doi: "10.1186/s13024-016-0124-1",
     pmid: "27488240",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27488240/#:~:text=large%20majority%20of%20BIN1%20is%20expressed%20in%20mature%20oligodendrocytes",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27488240/",
     tags: ["genetics", "oligodendrocyte", "alzheimers"],
     citations: [
       {
@@ -54,6 +56,7 @@ export const gwasGeneticsSources: Source[] = [
         context:
           "AD risk gene #2 is an oligodendrocyte gene — the most iron-rich cells in the brain",
         projectRef: "GWAS section: BIN1 gene card — iron connection",
+        fragmentText: "the large majority of BIN1 is expressed in",
       },
     ],
     verificationStatus: "verified",
@@ -67,7 +70,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2012,
     doi: "10.1371/journal.pone.0044252",
     pmid: "22952941",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22952941/#:~:text=PICALM%20plays%20a%20critical%20role%20in%20iron%20homeostasis",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22952941/",
     tags: ["genetics", "iron", "alzheimers"],
     citations: [
       {
@@ -77,6 +80,7 @@ export const gwasGeneticsSources: Source[] = [
         context:
           "PICALM controls transferrin receptor endocytosis — literally the iron import mechanism",
         projectRef: "GWAS section: PICALM gene card — iron connection",
+        fragmentText: "PICALM plays a critical role in iron homeostasis",
       },
     ],
     verificationStatus: "verified",
@@ -90,7 +94,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2024,
     doi: "10.1038/s41380-022-01568-w",
     pmid: "35484240",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35484240/#:~:text=apoE%20is%20a%20potent%20inhibitor%20of%20ferroptosis",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35484240/",
     tags: ["genetics", "iron", "ferroptosis", "alzheimers"],
     citations: [
       {
@@ -100,6 +104,7 @@ export const gwasGeneticsSources: Source[] = [
           "apoE is a potent inhibitor of ferroptosis (EC50 approximately 10 nM; N27 neurons)",
         context: "ApoE directly blocks ferroptosis — links #1 risk gene to iron death",
         projectRef: "GWAS section: APOE gene card — ferroptosis inhibition",
+        fragmentText: "apoE is a potent inhibitor of ferroptosis EC50",
       },
       {
         citationId: "belaidi-2024-molpsychiatry-c2",
@@ -110,6 +115,7 @@ export const gwasGeneticsSources: Source[] = [
           "Risk comes from lower APOE4 abundance, not weaker function per molecule",
         projectRef:
           "GWAS section: APOE gene card — why epsilon4 is risky",
+          fragmentText: "While protection against ferroptosis did not differ between",
       },
     ],
     verificationStatus: "verified",
@@ -123,7 +129,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2015,
     doi: "10.1007/s00401-015-1388-1",
     pmid: "25631124",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25631124/#:~:text=defective%20clearance%20of%20myelin%20debris",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25631124/",
     tags: ["genetics", "microglia", "alzheimers"],
     citations: [
       {
@@ -134,6 +140,7 @@ export const gwasGeneticsSources: Source[] = [
         context:
           "TREM2 loss-of-function = failed myelin debris clearance, accumulation of iron-loaded debris",
         projectRef: "GWAS section: TREM2 gene card — iron connection",
+        fragmentText: "mice had defective clearance of myelin debris and",
       },
     ],
     verificationStatus: "verified",
@@ -147,7 +154,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2017,
     doi: "10.1038/nn.4587",
     pmid: "28628103",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5759334/#:~:text=lower%20SPI1%20expression%20reduces%20AD%20risk",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5759334/",
     tags: ["genetics", "microglia", "alzheimers"],
     citations: [
       {
@@ -158,6 +165,7 @@ export const gwasGeneticsSources: Source[] = [
         context:
           "SPI1/PU.1 is the master transcription factor for microglial program — regulates ferritin and iron genes",
         projectRef: "GWAS section: SPI1 gene card — iron connection",
+        fragmentText: "lower SPI1 expression reduces AD risk by regulating",
       },
     ],
     verificationStatus: "verified",
@@ -170,7 +178,7 @@ export const gwasGeneticsSources: Source[] = [
     journal: "medRxiv",
     year: 2025,
     doi: "10.1101/2025.03.14.24319455",
-    url: "https://www.medrxiv.org/content/10.1101/2025.03.14.24319455v1#:~:text=identified%20134%20risk%20loci%20(59%20novel)",
+    url: "https://www.medrxiv.org/content/10.1101/2025.03.14.24319455v1",
     tags: ["genetics", "parkinsons"],
     citations: [
       {
@@ -181,6 +189,7 @@ export const gwasGeneticsSources: Source[] = [
         context:
           "Largest PD GWAS: 63,555 cases, 134 loci — defense-layer genes dominate, not iron transport genes",
         projectRef: "GWAS section: PD loci count and layer mapping",
+        fragmentText: "The final combined cross-European meta-analysis identified 134 risk",
       },
     ],
     verificationStatus: "verified",
@@ -194,7 +203,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41531-025-00933-0",
     pmid: "40240380",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12003903/#:~:text=integrates%20genome-wide%20information%20from%20MAGMA",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12003903/",
     tags: ["genetics", "parkinsons"],
     citations: [
       {
@@ -205,6 +214,7 @@ export const gwasGeneticsSources: Source[] = [
         context:
           "Gene prioritization method used to nominate causal genes at PD GWAS loci",
         projectRef: "GWAS section: PD gene prioritization methodology",
+        fragmentText: "The polygenic priority score PoPS integrates genome-wide information",
       },
     ],
     verificationStatus: "verified",

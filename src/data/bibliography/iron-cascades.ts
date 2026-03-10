@@ -14,7 +14,7 @@ export const ironCascadesSources: Source[] = [
     year: 2002,
     doi: "10.1074/jbc.M207435200",
     pmid: "12198135",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12198135/#:~:text=iron%20responsive%20element%20type%20II%20in%20the",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12198135/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -26,6 +26,7 @@ export const ironCascadesSources: Source[] = [
           "APP mRNA contains a functional IRE, placing APP under direct iron-dependent translational control",
         projectRef:
           "Iron cascades: Iron drives APP translation via IRE (mechanism step 1)",
+          fragmentText: "An iron-responsive element type II in the 5-untranslated",
       },
     ],
     verificationStatus: "verified",
@@ -39,7 +40,7 @@ export const ironCascadesSources: Source[] = [
     year: 2010,
     doi: "10.1074/jbc.M110.149161",
     pmid: "20558735",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20558735/#:~:text=Selective%20translational%20control%20of%20the%20Alzheimer",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20558735/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -51,6 +52,7 @@ export const ironCascadesSources: Source[] = [
           "IRP2 regulates APP translation; IRP2 knockout increases APP and Abeta",
         projectRef:
           "Iron cascades: Iron drives APP translation via IRE (mechanism step 1)",
+          fragmentText: "Selective translational control of the Alzheimer amyloid precursor",
       },
     ],
     verificationStatus: "verified",
@@ -64,7 +66,7 @@ export const ironCascadesSources: Source[] = [
     year: 2010,
     doi: "10.1016/j.cell.2010.08.014",
     pmid: "20817278",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20817278/#:~:text=Iron%20export%20ferroxidase%20activity%20of%20beta%20amyloid%20precursor",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20817278/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -76,6 +78,7 @@ export const ironCascadesSources: Source[] = [
           "Original ferroxidase claim later corrected by Wong 2014; APP stabilizes ferroportin instead",
         projectRef:
           "Iron cascades: APP stabilizes ferroportin, not ferroxidase (mechanism step 3)",
+          fragmentText: "Iron-export ferroxidase activity of -amyloid precursor protein is",
       },
     ],
     verificationStatus: "verified",
@@ -89,7 +92,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1371/journal.pone.0114174",
     pmid: "25464026",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25464026/#:~:text=beta%20Amyloid%20precursor%20protein%20does%20not%20possess",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25464026/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -101,6 +104,7 @@ export const ironCascadesSources: Source[] = [
           "Correction of Duce 2010: APP lacks ferroxidase activity, stabilizes ferroportin instead",
         projectRef:
           "Iron cascades: APP stabilizes ferroportin, not ferroxidase (mechanism step 3)",
+          fragmentText: "-Amyloid precursor protein does not possess ferroxidase activity",
       },
     ],
     verificationStatus: "verified",
@@ -114,7 +118,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1016/j.neurobiolaging.2014.04.019",
     pmid: "24863668",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24863668/#:~:text=Iron%20overload%20accelerates%20neuronal%20amyloid%20beta%20production",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24863668/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -126,6 +130,7 @@ export const ironCascadesSources: Source[] = [
           "Iron shifts APP processing toward amyloidogenic pathway via BACE1",
         projectRef:
           "Iron cascades: Iron shifts APP to amyloidogenic processing (mechanism step 2)",
+          fragmentText: "Iron overload accelerates neuronal amyloid- production and cognitive",
       },
     ],
     verificationStatus: "verified",
@@ -139,7 +144,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1007/s11064-019-02747-y",
     pmid: "30796750",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30796750/#:~:text=Post%20translational%20modulation%20of%20beta%20amyloid%20precursor",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30796750/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -151,6 +156,7 @@ export const ironCascadesSources: Source[] = [
           "Confirms APP-ferroportin stabilization mechanism; trafficking modulation affects iron export",
         projectRef:
           "Iron cascades: APP stabilizes ferroportin (mechanism step 3)",
+          fragmentText: "Post Translational Modulation of -Amyloid Precursor Protein Trafficking",
       },
     ],
     verificationStatus: "verified",
@@ -164,7 +170,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1021/ic402406g",
     pmid: "24559299",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24559299/#:~:text=Evidence%20of%20redox%20active%20iron%20formation%20following",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24559299/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -176,6 +182,7 @@ export const ironCascadesSources: Source[] = [
           "Abeta reduces Fe3+ to Fe2+, confirmed by synchrotron X-ray spectromicroscopy",
         projectRef:
           "Iron cascades: Aβ concentrates and reduces iron (mechanism step 4)",
+          fragmentText: "Evidence of redox-active iron formation following aggregation of",
       },
     ],
     verificationStatus: "verified",
@@ -189,7 +196,7 @@ export const ironCascadesSources: Source[] = [
     year: 2017,
     doi: "10.1016/j.chembiol.2017.07.014",
     pmid: "28890316",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28890316/#:~:text=Iron%20biochemistry%20is%20correlated%20with%20amyloid",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28890316/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -201,6 +208,7 @@ export const ironCascadesSources: Source[] = [
           "Abeta converts ferrihydrite to magnetite and zero-valent iron nanoparticles",
         projectRef:
           "Iron cascades: Aβ concentrates and reduces iron (mechanism step 4)",
+          fragmentText: "Iron Biochemistry is Correlated with Amyloid Plaque Morphology",
       },
     ],
     verificationStatus: "verified",
@@ -214,7 +222,7 @@ export const ironCascadesSources: Source[] = [
     year: 2007,
     doi: "10.1021/bi701079z",
     pmid: "17929832",
-    url: "https://pubmed.ncbi.nlm.nih.gov/17929832/#:~:text=Three%20histidine%20residues%20of%20amyloid%20beta%20peptide",
+    url: "https://pubmed.ncbi.nlm.nih.gov/17929832/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -226,6 +234,7 @@ export const ironCascadesSources: Source[] = [
           "His6, His13, His14 identified as the primary iron coordination site in Abeta",
         projectRef:
           "Iron cascades: His6/His13/His14 binding biophysics (mechanism step 5)",
+          fragmentText: "peptide control the redox activity of copper and",
       },
     ],
     verificationStatus: "verified",
@@ -239,7 +248,7 @@ export const ironCascadesSources: Source[] = [
     year: 2010,
     doi: "10.3233/JAD-2010-1346",
     pmid: "20164601",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20164601/#:~:text=NMR%20studies%20of%20zinc%2C%20copper%2C%20and",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20164601/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -251,6 +260,7 @@ export const ironCascadesSources: Source[] = [
           "Fe3+ binding induces Abeta conformational shift toward aggregation",
         projectRef:
           "Iron cascades: His6/His13/His14 binding biophysics (mechanism step 5)",
+          fragmentText: "NMR studies of zinc, copper, and iron binding",
       },
     ],
     verificationStatus: "verified",
@@ -264,7 +274,7 @@ export const ironCascadesSources: Source[] = [
     year: 2006,
     doi: "10.1016/j.freeradbiomed.2005.09.013",
     pmid: "16458186",
-    url: "https://pubmed.ncbi.nlm.nih.gov/16458186/#:~:text=Redox%20cycling%20of%20iron%20by%20Abeta42",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16458186/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -276,6 +286,7 @@ export const ironCascadesSources: Source[] = [
           "Abeta42 redox-cycles iron, generating reactive oxygen species",
         projectRef:
           "Iron cascades: Aβ concentrates and reduces iron (supporting evidence)",
+          fragmentText: "Redox cycling of iron by",
       },
     ],
     verificationStatus: "verified",
@@ -333,7 +344,7 @@ export const ironCascadesSources: Source[] = [
     year: 1991,
     doi: "10.1002/ana.410300509",
     pmid: "1763893",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1763893/#:~:text=Expression%20patterns%20of%20beta%20amyloid%20precursor%20protein",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1763893/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -345,6 +356,7 @@ export const ironCascadesSources: Source[] = [
           "APP mRNA abundant in peripheral tissues including gut",
         projectRef:
           "Iron cascades: Aβ is not brain-exclusive (mechanism step 6)",
+          fragmentText: "Expression patterns of beta-amyloid precursor protein beta-APP in",
       },
     ],
     verificationStatus: "verified",
@@ -358,7 +370,7 @@ export const ironCascadesSources: Source[] = [
     year: 2016,
     doi: "10.1016/j.neuroimage.2016.05.057",
     pmid: "27233149",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27233149/#:~:text=Laser%20ablation%20inductively%20coupled%20plasma%20mass%20spectrometry%20imaging",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27233149/",
     tags: ["iron", "alzheimers", "imaging"],
     citations: [
       {
@@ -370,6 +382,7 @@ export const ironCascadesSources: Source[] = [
           "Iron and Abeta colocalize at sub-plaque resolution",
         projectRef:
           "Iron cascades: Iron-Aβ colocalization in vivo (mechanism step 7)",
+          fragmentText: "Laser ablation-inductively coupled plasma-mass spectrometry imaging of white",
       },
     ],
     verificationStatus: "verified",
@@ -383,7 +396,7 @@ export const ironCascadesSources: Source[] = [
     year: 2015,
     doi: "10.1038/ncomms7760",
     pmid: "25988319",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25988319/#:~:text=Ferritin%20was%20strongly%20associated%20with%20CSF",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25988319/",
     tags: ["iron", "alzheimers", "biomarkers"],
     citations: [
       {
@@ -395,6 +408,7 @@ export const ironCascadesSources: Source[] = [
           "CSF ferritin correlates with amyloid PET and predicts cognitive decline; R²=0.80 in MCI",
         projectRef:
           "Iron cascades: Iron-Aβ colocalization in vivo (mechanism step 7)",
+          fragmentText: "Ferritin levels in the cerebrospinal fluid predict Alzheimers",
       },
     ],
     verificationStatus: "verified",
@@ -413,7 +427,7 @@ export const ironCascadesSources: Source[] = [
     year: 2012,
     doi: "10.1038/nm.2613",
     pmid: "22286308",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22286308/#:~:text=Tau%20deficiency%20induces%20parkinsonism%20with%20dementia",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22286308/",
     tags: ["iron", "alzheimers", "parkinsons"],
     citations: [
       {
@@ -425,6 +439,7 @@ export const ironCascadesSources: Source[] = [
           "Tau knockout leads to brain iron accumulation; tau is essential for APP trafficking and iron export",
         projectRef:
           "Iron cascades: Tau's normal job: APP trafficking for iron export (mechanism step 1)",
+          fragmentText: "Tau deficiency induces parkinsonism with dementia by impairing",
       },
       {
         citationId: "lei-2012-natmed-c2",
@@ -435,6 +450,7 @@ export const ironCascadesSources: Source[] = [
         location: "Results",
         projectRef:
           "Reframe section: Tau facilitates APP trafficking",
+          fragmentText: "loss of tau also causes iron retention, by",
       },
       {
         citationId: "lei-2012-natmed-c3",
@@ -445,6 +461,7 @@ export const ironCascadesSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Reframe section: APP-ferroportin coupling for iron export",
+          fragmentText: "Amyloid precursor protein APP ferroxidase activity couples with",
       },
     ],
     verificationStatus: "verified",
@@ -458,7 +475,7 @@ export const ironCascadesSources: Source[] = [
     year: 2017,
     doi: "10.1038/mp.2017.171",
     pmid: "28886009",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28886009/#:~:text=Tau%20mediated%20iron%20export%20prevents%20ferroptotic%20damage",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28886009/",
     tags: ["iron", "alzheimers", "ferroptosis"],
     citations: [
       {
@@ -470,6 +487,7 @@ export const ironCascadesSources: Source[] = [
           "Tau deficiency causes age-dependent brain iron accumulation rescued by iron chelation",
         projectRef:
           "Iron cascades: Tau's normal job: APP trafficking (mechanism step 1)",
+          fragmentText: "Tau-mediated iron export prevents ferroptotic damage after ischemic",
       },
     ],
     verificationStatus: "verified",
@@ -483,7 +501,7 @@ export const ironCascadesSources: Source[] = [
     year: 2013,
     doi: "10.1016/j.neuint.2012.12.005",
     pmid: "23262393",
-    url: "https://pubmed.ncbi.nlm.nih.gov/23262393/#:~:text=Deferoxamine%20inhibits%20iron%20induced%20hippocampal%20tau",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23262393/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -495,6 +513,7 @@ export const ironCascadesSources: Source[] = [
           "Iron activates GSK-3\u03B2 driving tau phosphorylation at Thr205, Thr231, Ser396",
         projectRef:
           "Iron cascades: Iron activates GSK-3\u03B2/CDK5 \u2192 tau hyperphosphorylation (mechanism step 2)",
+          fragmentText: "Deferoxamine inhibits iron induced hippocampal tau phosphorylation in",
       },
       {
         citationId: "guo-2013-iron-tau-c2",
@@ -505,6 +524,7 @@ export const ironCascadesSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Reframe section: Iron activates GSK3\u03B2 and CDK5 to hyperphosphorylate tau",
+          fragmentText: "intranasal DFO treatment exerts its suppressive effects on",
       },
     ],
     verificationStatus: "verified",
@@ -518,7 +538,7 @@ export const ironCascadesSources: Source[] = [
     year: 1999,
     doi: "10.1021/bi981874p",
     pmid: "10090741",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10090741/#:~:text=Phosphorylation%20that%20detaches%20tau%20protein%20from",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10090741/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -530,6 +550,7 @@ export const ironCascadesSources: Source[] = [
           "Some tau phosphorylation is initially protective against PHF formation",
         projectRef:
           "Iron cascades: Some phosphorylation is initially protective (mechanism step 3)",
+          fragmentText: "Phosphorylation that detaches tau protein from microtubules Ser262,",
       },
     ],
     verificationStatus: "verified",
@@ -543,7 +564,7 @@ export const ironCascadesSources: Source[] = [
     year: 2002,
     doi: "10.1046/j.1471-4159.2002.t01-1-01061.x",
     pmid: "12358761",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12358761/#:~:text=Iron%20III%20induces%20aggregation%20of%20hyperphosphorylated",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12358761/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -555,6 +576,7 @@ export const ironCascadesSources: Source[] = [
           "Fe3+ promotes PHF assembly; Fe2+ reverses it. Iron redox state determines tau aggregation",
         projectRef:
           "Iron cascades: Fe³⁺ directly aggregates hyperphosphorylated tau (mechanism step 4)",
+          fragmentText: "Iron III induces aggregation of hyperphosphorylated tau and",
       },
     ],
     verificationStatus: "verified",
@@ -568,7 +590,7 @@ export const ironCascadesSources: Source[] = [
     year: 2022,
     doi: "10.1007/s12035-022-02731-8",
     pmid: "34997541",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34997541/#:~:text=Ferroptosis%20promotes%20microtubule%20associated%20protein%20tau%20aggregation",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34997541/",
     tags: ["iron", "ferroptosis", "alzheimers"],
     citations: [
       {
@@ -580,6 +602,7 @@ export const ironCascadesSources: Source[] = [
           "Ferroptotic signaling activates GSK-3β, driving tau aggregation and proteasome inhibition",
         projectRef:
           "Iron cascades: Ferroptosis → GSK-3β → tau aggregation (mechanism step 5)",
+          fragmentText: "Ferroptosis promotes microtubule-associated protein tau aggregation via GSK-3",
       },
     ],
     verificationStatus: "verified",
@@ -593,7 +616,7 @@ export const ironCascadesSources: Source[] = [
     year: 2018,
     doi: "10.3389/fnmol.2018.00276",
     pmid: "30174587",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30174587/#:~:text=Untangling%20tau%20and%20iron%3A%20exploring%20the",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30174587/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -605,6 +628,7 @@ export const ironCascadesSources: Source[] = [
           "Review linking iron to tau pathology; chelators reduce pTau in animal models",
         projectRef:
           "Iron cascades: Iron-tau colocalization; chelators reduce pTau (mechanism step 6)",
+          fragmentText: "Untangling Tau and Iron Exploring the Interaction Between",
       },
     ],
     verificationStatus: "verified",
@@ -618,7 +642,7 @@ export const ironCascadesSources: Source[] = [
     year: 2003,
     doi: "10.1023/A:1020727218493",
     pmid: "12572681",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12572681/#:~:text=Iron%20induced%20oxidative%20stress%20modify%20tau%20phosphorylation",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12572681/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -630,6 +654,7 @@ export const ironCascadesSources: Source[] = [
           "Iron-tau colocalization in NFT-bearing neurons",
         projectRef:
           "Iron cascades: Iron-tau colocalization (tau section supporting evidence)",
+          fragmentText: "Iron-induced oxidative stress modify tau phosphorylation patterns in",
       },
     ],
     verificationStatus: "verified",
@@ -645,7 +670,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1038/s41380-020-0762-0",
     pmid: "32444869",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32444869/#:~:text=Endocytotic%20amyloidogenic%20processing%20of%20APP%20impairs",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32444869/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -657,6 +682,7 @@ export const ironCascadesSources: Source[] = [
           "Amyloidogenic processing removes APP from surface, destabilizing ferroportin; non-amyloidogenic processing preserves it",
         projectRef:
           "Iron cascades: APP dual function (mechanism step 3)",
+          fragmentText: "endocytotic amyloidogenic processing of APP impairs iron export",
       },
       {
         citationId: "tsatsanis-2020-molpsych-c2",
@@ -667,6 +693,7 @@ export const ironCascadesSources: Source[] = [
           "Intact APP at the cell surface stabilizes ferroportin for iron export",
         projectRef:
           "FELINE intro: Fe layer — Iron export segment",
+          fragmentText: "APP promotes neuronal iron efflux by stabilizing the",
       },
     ],
     verificationStatus: "verified",
@@ -680,7 +707,7 @@ export const ironCascadesSources: Source[] = [
     year: 2015,
     doi: "10.1242/dmm.019042",
     pmid: "26035384",
-    url: "https://pubmed.ncbi.nlm.nih.gov/26035384/#:~:text=Iron%20is%20a%20specific%20cofactor%20for",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26035384/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -692,6 +719,7 @@ export const ironCascadesSources: Source[] = [
           "Iron is specific cofactor for A\u03B2 toxicity; not seen for other aggregation-prone polypeptides; His6/13/14 mediate metal-dependent mechanisms",
         projectRef:
           "Iron cascades: Iron determines oligomer toxicity (mechanism step 6)",
+          fragmentText: "Iron is a specific cofactor for distinct oxidation-",
       },
     ],
     verificationStatus: "verified",
@@ -705,7 +733,7 @@ export const ironCascadesSources: Source[] = [
     year: 2012,
     doi: "10.1016/j.bpj.2011.11.4006",
     pmid: "22225807",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22225807/#:~:text=zinc%20coordination%20site%20was%20found%20to",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22225807/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -717,6 +745,7 @@ export const ironCascadesSources: Source[] = [
           "Rat A\u03B2 with Arg13 (vs human His13) forms dimers that block further oligomerization; explains why mice don't get spontaneous AD",
         projectRef:
           "Iron cascades: His13 as linchpin (mechanism step 5)",
+          fragmentText: "The zinc coordination site was found to involve",
       },
     ],
     verificationStatus: "verified",
@@ -730,7 +759,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1016/j.actbio.2023.07.046",
     pmid: "37574159",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37574159/#:~:text=J20%20zinc%20and%20iron%20and%20TgF344",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37574159/",
     tags: ["iron", "alzheimers", "imaging"],
     citations: [
       {
@@ -742,6 +771,7 @@ export const ironCascadesSources: Source[] = [
           "Different transgenic constructs produce plaques with different metal profiles; metal accumulation drives plaque detection",
         projectRef:
           "Iron cascades: His13 as linchpin (mechanism step 5, cross-species comparison)",
+          fragmentText: "J20 zinc and iron and TgF344 copper strains",
       },
     ],
     verificationStatus: "verified",
@@ -755,7 +785,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.1038/s41598-024-61691-2",
     pmid: "38740836",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38740836/#:~:text=Amyloid%20beta%20antibody%20binding%20to%20cerebral%20amyloid",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38740836/",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -767,6 +797,7 @@ export const ironCascadesSources: Source[] = [
           "ARIA rates correlate with CAA fibril binding affinity, not parenchymal plaque clearance; solanezumab 0% ARIA vs aducanumab ~35%",
         projectRef:
           "Iron cascades: ARIA mechanism (mechanism step 10); ARIA binding table",
+          fragmentText: "Amyloid-beta antibody binding to cerebral amyloid angiopathy fibrils",
       },
     ],
     verificationStatus: "verified",
@@ -780,7 +811,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.1186/s13024-024-00758-0",
     pmid: "39434125",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39434125/#:~:text=Amyloid%20beta%20Abeta%20immunotherapy%20induced%20microhemorrhages%20are",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39434125/",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -792,6 +823,7 @@ export const ironCascadesSources: Source[] = [
           "CAA-A\u03B2 antibody immune complex triggers perivascular macrophage activation, smooth muscle cell destruction, vascular fibrosis, BBB breakdown",
         projectRef:
           "Iron cascades: ARIA mechanism (mechanism step 10)",
+          fragmentText: "Amyloid- A immunotherapy induced microhemorrhages are linked to",
       },
     ],
     verificationStatus: "verified",
@@ -805,7 +837,7 @@ export const ironCascadesSources: Source[] = [
     year: 2011,
     doi: "10.1016/j.biocel.2011.02.009",
     pmid: "21376832",
-    url: "https://pubmed.ncbi.nlm.nih.gov/21376832/#:~:text=Both%20aluminumIII%20and%20ironIII%20ions%20were",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21376832/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -815,6 +847,7 @@ export const ironCascadesSources: Source[] = [
           "Both aluminum(III) and iron(III) ions were found to induce peculiar aggregation properties, ultimately leading to the formation of annular protofibrils and of fibrillar oligomers",
         context:
           "Fe\u00B3\u207A produces annular protofibrils (most toxic form); Cu\u00B2\u207A produces amorphous aggregates; Zn\u00B2\u207A stabilizes non-fibrillar oligomers",
+          fragmentText: "Both aluminumIII and ironIII ions were found to",
         projectRef:
           "Iron cascades: Iron determines oligomer toxicity (mechanism step 6); metal-oligomer morphology table",
       },
@@ -830,7 +863,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1038/s41598-020-67117-z",
     pmid: "32587293",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32587293/#:~:text=Iron%20stored%20in%20ferritin%20is%20chemically",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32587293/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -842,6 +875,7 @@ export const ironCascadesSources: Source[] = [
           "A\u03B2 creates reducing environment that converts safe ferric ferritin core to reactive ferrous iron; no reduction without A\u03B2",
         projectRef:
           "Iron cascades: A\u03B2 concentrates and reduces iron (mechanism step 4)",
+          fragmentText: "Iron stored in ferritin is chemically reduced in",
       },
     ],
     verificationStatus: "verified",
@@ -855,7 +889,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1124/pharmrev.123.000823",
     pmid: "39952690",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39952690/#:~:text=Ferroptosis%20and%20pathogenesis%20of%20neuritic%20plaques",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39952690/",
     tags: ["iron", "alzheimers", "ferroptosis"],
     citations: [
       {
@@ -867,6 +901,7 @@ export const ironCascadesSources: Source[] = [
           "Iron-mediated neuronal ferroptosis is the first step in neuritic plaque creation; challenges traditional amyloid cascade theory",
         projectRef:
           "Iron cascades: Compaction as damage control (mechanism step 7, supporting evidence)",
+          fragmentText: "Ferroptosis and pathogenesis of neuritic plaques in Alzheimer",
       },
     ],
     verificationStatus: "verified",
@@ -880,7 +915,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41593-025-02125-8",
     pmid: "41286448",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41286448/#:~:text=Alzheimers%20therapeutic%20Lecanemab%20attenuates%20Abeta%20pathology",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41286448/",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -892,6 +927,7 @@ export const ironCascadesSources: Source[] = [
           "Fc-silenced lecanemab fails to induce microglial clearance program; benefit comes from microglial reprogramming, not plaque binding alone",
         projectRef:
           "Iron cascades: Anti-amyloid trials through the iron lens (mechanism step 8)",
+          fragmentText: "The Alzheimers therapeutic Lecanemab attenuates A pathology by",
       },
     ],
     verificationStatus: "verified",
@@ -907,7 +943,7 @@ export const ironCascadesSources: Source[] = [
     year: 2018,
     doi: "10.1073/pnas.1810058115",
     pmid: "30538196",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30538196/#:~:text=Cofactors%20are%20essential%20constituents%20of%20stable",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30538196/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -919,6 +955,7 @@ export const ironCascadesSources: Source[] = [
           "Heparin/RNA-induced tau fibrils depolymerize when cofactor is removed; brain-derived seeds lose propagation after one generation without cofactors",
         projectRef:
           "Iron cascades: Remove the cofactor, reverse the aggregation (mechanism step 6)",
+          fragmentText: "Cofactors are essential constituents of stable and seeding-active",
       },
     ],
     verificationStatus: "verified",
@@ -932,7 +969,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1016/j.jinorgbio.2019.02.007",
     pmid: "30826589",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30826589/#:~:text=Interaction%20of%20metal%20ions%20with%20tau",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30826589/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -944,6 +981,7 @@ export const ironCascadesSources: Source[] = [
           "Both Fe2+ and Fe3+ induce conformational changes in full-length tau promoting aggregation; phosphorylation by GSK3\u03B2 reduced metal binding affinity",
         projectRef:
           "Iron cascades: Iron is the in vivo cofactor (mechanism step 5)",
+          fragmentText: "Interaction of metal ions with tau protein. The",
       },
     ],
     verificationStatus: "verified",
@@ -957,7 +995,7 @@ export const ironCascadesSources: Source[] = [
     year: 2012,
     doi: "10.1186/1750-1326-7-35",
     pmid: "22824345",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22824345/#:~:text=Synergistic%20influence%20of%20phosphorylation%20and%20metal",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22824345/",
     tags: ["iron", "alzheimers", "parkinsons"],
     citations: [
       {
@@ -969,6 +1007,7 @@ export const ironCascadesSources: Source[] = [
           "Fe3+ promotes tau-\u03B1Syn co-aggregation; phosphorylated tau produces oligomers averaging 53 tau + 10 \u03B1-syn monomers",
         projectRef:
           "Iron cascades: Iron is the in vivo cofactor (mechanism step 5)",
+          fragmentText: "Synergistic influence of phosphorylation and metal ions on",
       },
     ],
     verificationStatus: "verified",
@@ -982,7 +1021,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1038/s43587-023-00523-w",
     pmid: "38012285",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38012285/#:~:text=TANGO%3A%20a%20placebo%20controlled%20randomized%20phase%202",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38012285/",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -994,6 +1033,7 @@ export const ironCascadesSources: Source[] = [
           "98% reduction in CSF unbound N-terminal tau, yet no cognitive benefit; worsened cognition in early AD",
         projectRef:
           "Iron cascades: Anti-tau antibodies confirm the cofactor model (mechanism step 10); trial table",
+          fragmentText: "TANGO a placebo-controlled randomized phase 2 study of",
       },
     ],
     verificationStatus: "verified",
@@ -1007,7 +1047,7 @@ export const ironCascadesSources: Source[] = [
     year: 2021,
     doi: "10.1016/S1474-4422(20)30489-0",
     pmid: "33609476",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33609476/#:~:text=Safety%20and%20efficacy%20of%20tilavonemab%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33609476/",
     tags: ["clinical-trials"],
     citations: [
       {
@@ -1019,6 +1059,7 @@ export const ironCascadesSources: Source[] = [
           "Tilavonemab (N-terminal anti-tau) showed no benefit in PSP; discontinued",
         projectRef:
           "Iron cascades: Anti-tau trial table (tilavonemab row)",
+          fragmentText: "Safety and efficacy of tilavonemab in progressive supranuclear",
       },
     ],
     verificationStatus: "verified",
@@ -1032,7 +1073,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1038/s41591-023-02326-3",
     pmid: "37095250",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37095250/#:~:text=Tau%20targeting%20antisense%20oligonucleotide%20MAPTRx%20in%20mild",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37095250/",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -1044,6 +1085,7 @@ export const ironCascadesSources: Source[] = [
           "BIIB080/MAPTRx reduced CSF total tau ~50-60%, slowed tau PET; favorable cognitive trends; FDA fast-tracked",
         projectRef:
           "Iron cascades: Anti-tau trial table (BIIB080 row); mechanism step 10",
+          fragmentText: "in mild Alzheimers disease a phase 1b, randomized,",
       },
     ],
     verificationStatus: "verified",
@@ -1057,7 +1099,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.7554/eLife.43584",
     pmid: "30720432",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30720432/#:~:text=Heparin%20induced%20tau%20filaments%20are%20polymorphic%20and",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30720432/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1069,6 +1111,7 @@ export const ironCascadesSources: Source[] = [
           "Cryo-EM shows heparin-induced tau fibrils differ from disease-derived fibrils; raises questions about in vitro model relevance",
         projectRef:
           "Iron cascades: The aggregation paradox (mechanism step 4)",
+          fragmentText: "Heparin-induced tau filaments are polymorphic and differ from",
       },
     ],
     verificationStatus: "verified",
@@ -1082,7 +1125,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1212/WNL.0000000000207663",
     pmid: "37643887",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37643887/#:~:text=Randomized%20phase%20II%20study%20of%20the",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37643887/",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -1094,6 +1137,7 @@ export const ironCascadesSources: Source[] = [
           "Semorinemab (N-terminal anti-tau) failed in early AD; modest ADAS-Cog signal in moderate AD",
         projectRef:
           "Iron cascades: Anti-tau trial table (semorinemab row)",
+          fragmentText: "Randomized Phase II Study of the Safety and",
       },
     ],
     verificationStatus: "verified",
@@ -1107,7 +1151,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.3390/ijms25094969",
     pmid: "38732197",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38732197/#:~:text=Enigma%20of%20Tau%20Protein%20Aggregation%3A%20Mechanistic",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38732197/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1119,6 +1163,7 @@ export const ironCascadesSources: Source[] = [
           "Review: tau is intrinsically disordered and heat-stable; 150 \u03BCM recombinant tau won't fibrilize without cofactor",
         projectRef:
           "Iron cascades: The aggregation paradox (mechanism step 4)",
+          fragmentText: "The Enigma of Tau Protein Aggregation Mechanistic Insights",
       },
     ],
     verificationStatus: "verified",
@@ -1137,11 +1182,12 @@ export const ironCascadesSources: Source[] = [
         citationId: "barton-2024-ctad-c1",
         sourceId: "barton-2024-ctad",
         quote:
-          "Bepranemab Phase 2a TOGETHER study results",
+          "In the overall study population, no beneficial effect of low- or high-dose bepranemab compared with placebo was observed on the primary endpoint.",
         context:
-          "Tau PET slowed 33-58% vs placebo; cognitive signal in APOE4 non-carriers with low baseline tau only",
+          "Bepranemab Phase 2a TOGETHER study: no primary endpoint benefit in overall population",
         projectRef:
           "Iron cascades: Anti-tau trial table (bepranemab row); mechanism step 10",
+          fragmentText: "In the overall study population, no beneficial effect",
       },
     ],
     verificationStatus: "verified", // Conference presentation, verified via UCB press release
@@ -1160,7 +1206,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1186/s12868-019-0507-7",
     pmid: "31142282",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6542065/#:~:text=average%20iron%20concentration%20of%20oligodendrocytes%20is%20fivefold%20higher",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6542065/",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1172,6 +1218,7 @@ export const ironCascadesSources: Source[] = [
           "OLs 3.05 mM, microglia 1.76 mM, astrocytes 1.29 mM, neurons 0.57 mM",
         projectRef:
           "Iron cascades: Triple vulnerability (mechanism step 1); iron concentration table",
+          fragmentText: "The average intracellular iron concentration is",
       },
       {
         citationId: "reinert-2019-c2",
@@ -1182,6 +1229,7 @@ export const ironCascadesSources: Source[] = [
           "5× ratio between OL and neuron iron, supporting 5.4× calculated from 3.05/0.57",
         projectRef:
           "Reframe section: OL vs neuron iron ratio (5.4×)",
+          fragmentText: "oligodendrocytes is fivefold higher",
       },
     ],
     verificationStatus: "verified",
@@ -1195,7 +1243,7 @@ export const ironCascadesSources: Source[] = [
     year: 1996,
     doi: "10.1046/j.1471-4159.1996.67031014.x",
     pmid: "8752107",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8752107/#:~:text=Low%20glutathione%20and%20high%20iron%20govern",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8752107/",
     tags: ["iron", "oligodendrocyte", "ferroptosis"],
     citations: [
       {
@@ -1207,6 +1255,7 @@ export const ironCascadesSources: Source[] = [
           "Oligodendrocytes have ~1/3 the GSH of astrocytes, explaining ferroptosis vulnerability",
         projectRef:
           "Iron cascades: Triple vulnerability (mechanism step 1)",
+          fragmentText: "Low glutathione and high iron govern the susceptibility",
       },
     ],
     verificationStatus: "verified",
@@ -1220,7 +1269,7 @@ export const ironCascadesSources: Source[] = [
     year: 1998,
     doi: "10.1523/JNEUROSCI.18-16-06241.1998",
     pmid: "9698317",
-    url: "https://pubmed.ncbi.nlm.nih.gov/9698317/#:~:text=Maturation%20dependent%20vulnerability%20of%20oligodendrocytes%20to%20oxidative",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9698317/",
     tags: ["oligodendrocyte", "ferroptosis"],
     citations: [
       {
@@ -1232,6 +1281,7 @@ export const ironCascadesSources: Source[] = [
           "Oligodendrocyte precursors are selectively vulnerable to oxidative stress from GSH depletion",
         projectRef:
           "Iron cascades: Triple vulnerability (mechanism step 1, supporting evidence)",
+          fragmentText: "Maturation-dependent vulnerability of oligodendrocytes to oxidative stress-induced death",
       },
     ],
     verificationStatus: "verified",
@@ -1245,7 +1295,7 @@ export const ironCascadesSources: Source[] = [
     year: 1996,
     doi: "10.1002/(SICI)1098-1136(199606)17:2<83::AID-GLIA1>3.0.CO;2-7",
     pmid: "8776576",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8776576/#:~:text=Relationship%20of%20iron%20to%20oligodendrocytes%20and",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8776576/",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1257,6 +1307,7 @@ export const ironCascadesSources: Source[] = [
           "Developmental window where iron acquisition peaks during active myelination",
         projectRef:
           "Iron cascades: Iron paradox: essential for myelination (mechanism step 2)",
+          fragmentText: "Relationship of iron to oligodendrocytes and myelination",
       },
     ],
     verificationStatus: "verified",
@@ -1270,7 +1321,7 @@ export const ironCascadesSources: Source[] = [
     year: 2009,
     doi: "10.1002/glia.20784",
     pmid: "18837051",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18837051/#:~:text=Oligodendrocytes%20and%20myelination%3A%20the%20role%20of",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18837051/",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1282,6 +1333,7 @@ export const ironCascadesSources: Source[] = [
           "Review of the dual role of iron in OL biology: essential for myelin synthesis but toxic in excess",
         projectRef:
           "Iron cascades: Iron paradox: essential for myelination (mechanism step 2)",
+          fragmentText: "Oligodendrocytes and myelination the role of iron",
       },
     ],
     verificationStatus: "verified",
@@ -1295,7 +1347,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1523/JNEUROSCI.1281-20.2020",
     pmid: "32868463",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32868463/#:~:text=Impaired%20postnatal%20myelination%20in%20a%20conditional",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32868463/",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1307,6 +1359,7 @@ export const ironCascadesSources: Source[] = [
           "Fth conditional knockout blocks OPC differentiation",
         projectRef:
           "Iron cascades: OPC remyelination requires iron (mechanism step 3)",
+          fragmentText: "Impaired Postnatal Myelination in a Conditional Knockout Mouse",
       },
     ],
     verificationStatus: "verified",
@@ -1320,7 +1373,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1523/JNEUROSCI.1383-22.2023",
     pmid: "36977582",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36977582/#:~:text=Transferrin%20receptor%20is%20necessary%20for%20proper",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36977582/",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1332,6 +1385,7 @@ export const ironCascadesSources: Source[] = [
           "TfR critical for OPC but not mature OLs; stage-specific iron requirements",
         projectRef:
           "Iron cascades: OPC remyelination requires iron via TfR (mechanism step 3)",
+          fragmentText: "Transferrin Receptor Is Necessary for Proper Oligodendrocyte Iron",
       },
     ],
     verificationStatus: "verified",
@@ -1345,7 +1399,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1016/j.cmet.2020.05.019",
     pmid: "32531201",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32531201/#:~:text=Oligodendrocytes%20provide%20antioxidant%20defense%20function%20for",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32531201/",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1357,6 +1411,7 @@ export const ironCascadesSources: Source[] = [
           "OLs secrete FTH1 via EVs, 20x enriched vs neurons, 17-day turnover",
         projectRef:
           "Iron cascades: FTH1 as iron insulation (mechanism step 4)",
+          fragmentText: "Oligodendrocytes Provide Antioxidant Defense Function for Neurons by",
       },
     ],
     verificationStatus: "verified",
@@ -1370,7 +1425,7 @@ export const ironCascadesSources: Source[] = [
     year: 2017,
     doi: "10.1007/s00401-016-1636-z",
     pmid: "27796537",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27796537/#:~:text=Slow%20expansion%20of%20multiple%20sclerosis%20iron",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27796537/",
     tags: ["iron", "ms", "imaging"],
     citations: [
       {
@@ -1382,6 +1437,7 @@ export const ironCascadesSources: Source[] = [
           "Iron rim lesions expand at 2.2%/yr; iron-laden microglia drive slow centrifugal destruction",
         projectRef:
           "Iron cascades: Iron rim lesions (mechanism step 6)",
+          fragmentText: "Slow expansion of multiple sclerosis iron rim lesions",
       },
     ],
     verificationStatus: "verified",
@@ -1395,7 +1451,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1001/jamaneurol.2019.2399",
     pmid: "31403674",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31403674/#:~:text=Association%20of%20chronic%20active%20multiple%20sclerosis",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31403674/",
     tags: ["iron", "ms", "imaging"],
     citations: [
       {
@@ -1407,6 +1463,7 @@ export const ironCascadesSources: Source[] = [
           "50-65% prevalence of paramagnetic rim lesions; predict worse disability outcomes",
         projectRef:
           "Iron cascades: Iron rim lesions (mechanism step 6)",
+          fragmentText: "Association of Chronic Active Multiple Sclerosis Lesions With",
       },
     ],
     verificationStatus: "verified",
@@ -1422,7 +1479,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1002/glia.70043",
     pmid: "40401729",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40401729/#:~:text=brain%20has%20the%20highest%20rate%20of",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40401729/",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1434,6 +1491,7 @@ export const ironCascadesSources: Source[] = [
           "Confirms OLs have highest iron and metabolic rate of any brain cell; comprehensive review of OL iron biology",
         projectRef:
           "Iron cascades: Triple vulnerability (mechanism step 1)",
+          fragmentText: "The brain has the highest rate of energy",
       },
     ],
     verificationStatus: "verified",
@@ -1447,7 +1505,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1016/j.redox.2024.103463",
     pmid: "39671850",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39671850/#:~:text=physiological%20and%20maturation%20dependent%20increase%20in%20iron",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39671850/",
     tags: ["iron", "oligodendrocyte", "ferroptosis"],
     citations: [
       {
@@ -1459,6 +1517,7 @@ export const ironCascadesSources: Source[] = [
           "AKR1C1 is key anti-ferroptotic defense in mature OLs; neuroinflammation downregulates it via miRNAs in MS",
         projectRef:
           "Iron cascades: Multiple ferroptosis pathways converge on OLs (mechanism step 6)",
+          fragmentText: "the physiological and maturation-dependent increase in iron accumulation",
       },
     ],
     verificationStatus: "verified",
@@ -1485,6 +1544,7 @@ export const ironCascadesSources: Source[] = [
           "OPCs differentiate constitutively; demyelination doesn't increase rate; inflammation suppresses it; 'dandelion clock' structures (DACS) mark each attempt",
         projectRef:
           "Iron cascades: OPCs try to repair constantly but inflammation blocks them (mechanism step 7)",
+          fragmentText: "The generation of new oligodendrocytes",
       },
     ],
     verificationStatus: "verified",
@@ -1498,7 +1558,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.3389/fimmu.2024.1426975",
     pmid: "39399501",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39399501/#:~:text=C1q%20and%20MBP%20colocalization%20increased%20with",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39399501/",
     tags: ["oligodendrocyte", "aging"],
     citations: [
       {
@@ -1510,6 +1570,7 @@ export const ironCascadesSources: Source[] = [
           "C1q-MBP colocalization correlates with cognitive impairment; OL CD47 mRNA decreases 38.7% in old animals; microglial C1qA increases 125.5%",
         projectRef:
           "Iron cascades: Complement targets myelin and blocks OPC repair (mechanism step 8)",
+          fragmentText: "C1q and MBP colocalization increased with age",
       },
     ],
     verificationStatus: "verified",
@@ -1523,7 +1584,7 @@ export const ironCascadesSources: Source[] = [
     year: 2022,
     doi: "10.1016/j.expneurol.2021.113947",
     pmid: "34902359",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34902359/#:~:text=C1q%20was%20involved%20in%20demyelination%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34902359/",
     tags: ["oligodendrocyte", "ms"],
     citations: [
       {
@@ -1535,6 +1596,7 @@ export const ironCascadesSources: Source[] = [
           "C1q blocks OPC differentiation via Wnt/\u03B2-catenin; C1s knockdown attenuated demyelination and promoted M2 microglia",
         projectRef:
           "Iron cascades: Complement targets myelin and blocks OPC repair (mechanism step 8)",
+          fragmentText: "C1q was involved in demyelination in response to",
       },
     ],
     verificationStatus: "verified",
@@ -1548,7 +1610,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1186/s12974-025-03592-3",
     pmid: "41146249",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41146249/#:~:text=Anti%20ferroptotic%20enzymes%20are%20upregulated%20in%20oligodendrocytes",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41146249/",
     tags: ["iron", "oligodendrocyte", "ferroptosis", "ms"],
     citations: [
       {
@@ -1558,6 +1620,7 @@ export const ironCascadesSources: Source[] = [
           "Anti-ferroptotic enzymes are upregulated in oligodendrocytes upon diroximel fumarate treatment as well as in cerebellum of dimethyl fumarate-treated mice and in peripheral blood mononuclear cells of patients receiving dimethyl fumarate",
         context:
           "DMF/DRF work via anti-ferroptotic Nrf2 pathway in OLs; inadvertent ferroptosis therapy for MS",
+          fragmentText: "mice and in peripheral blood mononuclear cells of",
         projectRef:
           "Iron cascades: MS drugs inadvertently treat OL ferroptosis (mechanism step 9)",
       },
@@ -1573,7 +1636,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1136/jnnp-2014-307712",
     pmid: "24899728",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24899728/#:~:text=Iron%20was%20stored%20primarily%20within%20oligodendrocytes",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24899728/",
     tags: ["iron", "ms"],
     citations: [
       {
@@ -1585,6 +1648,7 @@ export const ironCascadesSources: Source[] = [
           "Iron released from dying OLs accumulates in activated microglia at lesion edges; oxidative damage in all active MS lesions",
         projectRef:
           "Iron cascades: Iron rim lesions (mechanism step 11)",
+          fragmentText: "Iron was stored primarily within oligodendrocytes and myelin",
       },
     ],
     verificationStatus: "verified",
@@ -1603,7 +1667,7 @@ export const ironCascadesSources: Source[] = [
     year: 2012,
     doi: "10.3389/fncel.2012.00025",
     pmid: "22661928",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22661928/#:~:text=Modulation%20of%20iron%20metabolism%20in%20aging",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22661928/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -1615,6 +1679,7 @@ export const ironCascadesSources: Source[] = [
           "Choroid plexus secretes transferrin, ceruloplasmin and regulates CSF iron homeostasis",
         projectRef:
           "Iron cascades: Choroid plexus as iron gatekeeper (mechanism step 1)",
+          fragmentText: "Modulation of iron metabolism in aging and in",
       },
     ],
     verificationStatus: "verified",
@@ -1628,7 +1693,7 @@ export const ironCascadesSources: Source[] = [
     year: 2015,
     doi: "10.1016/j.brainres.2014.11.058",
     pmid: "25498860",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25498860/#:~:text=Dysregulated%20iron%20metabolism%20in%20the%20choroid",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25498860/",
     tags: ["iron"],
     citations: [
       {
@@ -1640,6 +1705,7 @@ export const ironCascadesSources: Source[] = [
           "FXTAS choroid plexus: decreased ferroportin, decreased ceruloplasmin, increased iron deposits",
         projectRef:
           "Iron cascades: Choroid plexus deteriorates with age/disease (mechanism step 2)",
+          fragmentText: "Dysregulated iron metabolism in the choroid plexus in",
       },
     ],
     verificationStatus: "verified",
@@ -1653,7 +1719,7 @@ export const ironCascadesSources: Source[] = [
     year: 2000,
     doi: "10.1023/A:1006948027674",
     pmid: "10690503",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10690503/#:~:text=Transferrin%20and%20transferrin%20receptor%20function%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10690503/",
     tags: ["iron"],
     citations: [
       {
@@ -1665,6 +1731,7 @@ export const ironCascadesSources: Source[] = [
           "Iron transport through the choroid plexus; 10-fold concentration gradient",
         projectRef:
           "Iron cascades: Choroid plexus as iron gatekeeper (mechanism step 1)",
+          fragmentText: "Transferrin and transferrin receptor function in brain barrier",
       },
     ],
     verificationStatus: "verified",
@@ -1678,7 +1745,7 @@ export const ironCascadesSources: Source[] = [
     year: 1981,
     doi: "10.1002/ana.410100203",
     pmid: "7283399",
-    url: "https://pubmed.ncbi.nlm.nih.gov/7283399/#:~:text=Alzheimer%20disease%3A%20evidence%20for%20selective%20loss",
+    url: "https://pubmed.ncbi.nlm.nih.gov/7283399/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1690,6 +1757,7 @@ export const ironCascadesSources: Source[] = [
           "Original documentation of selective nbM cholinergic neuron loss in AD",
         projectRef:
           "Iron cascades: Iron → lipid peroxidation → HNE → cholinergic neuron death (mechanism step 3)",
+          fragmentText: "Alzheimer disease evidence for selective loss of cholinergic",
       },
     ],
     verificationStatus: "verified",
@@ -1703,7 +1771,7 @@ export const ironCascadesSources: Source[] = [
     year: 1982,
     doi: "10.1126/science.7058341",
     pmid: "7058341",
-    url: "https://pubmed.ncbi.nlm.nih.gov/7058341/#:~:text=Alzheimers%20disease%20and%20senile%20dementia%3A%20loss",
+    url: "https://pubmed.ncbi.nlm.nih.gov/7058341/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1715,6 +1783,7 @@ export const ironCascadesSources: Source[] = [
           "60-80% ChAT loss in nucleus basalis of Meynert in AD",
         projectRef:
           "Iron cascades: 60-80% ChAT loss stat source",
+          fragmentText: "Alzheimers disease and senile dementia loss of neurons",
       },
     ],
     verificationStatus: "verified",
@@ -1728,7 +1797,7 @@ export const ironCascadesSources: Source[] = [
     year: 1997,
     doi: "10.1046/j.1471-4159.1997.68010255.x",
     pmid: "8978733",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8978733/#:~:text=role%20for%204%20hydroxynonenal%2C%20an%20aldehydic%20product",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8978733/",
     tags: ["iron", "ferroptosis", "alzheimers"],
     citations: [
       {
@@ -1740,6 +1809,7 @@ export const ironCascadesSources: Source[] = [
           "HNE selectively kills cholinergic neurons; direct causal chain from lipid peroxidation to cholinergic death",
         projectRef:
           "Iron cascades: Iron → lipid peroxidation → HNE → cholinergic neuron death (mechanism step 3)",
+          fragmentText: "A role for 4-hydroxynonenal, an aldehydic product of",
       },
     ],
     verificationStatus: "verified",
@@ -1753,7 +1823,7 @@ export const ironCascadesSources: Source[] = [
     year: 1998,
     doi: "10.1016/S0197-4580(98)00005-0",
     pmid: "9562505",
-    url: "https://pubmed.ncbi.nlm.nih.gov/9562505/#:~:text=Cerebral%20T2%20weighted%20signal%20decrease%20during%20aging",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9562505/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1765,6 +1835,7 @@ export const ironCascadesSources: Source[] = [
           "Age-related iron accumulation in non-human primate brain",
         projectRef:
           "Iron cascades: Cholinergic system (supporting evidence)",
+          fragmentText: "Cerebral T2-weighted signal decrease during aging in the",
       },
     ],
     verificationStatus: "unverified", // UNVERIFIED
@@ -1800,7 +1871,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1001/jamainternmed.2019.0677",
     pmid: "31233095",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31233095/#:~:text=Anticholinergic%20drug%20exposure%20and%20the%20risk",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31233095/",
     tags: ["alzheimers", "epidemiology"],
     citations: [
       {
@@ -1812,6 +1883,7 @@ export const ironCascadesSources: Source[] = [
           "284,343 UK patients: anticholinergic drugs increase dementia risk (OR 1.49 at highest exposure)",
         projectRef:
           "Iron cascades: Anticholinergic drugs as epidemiological signal (mechanism step 4)",
+          fragmentText: "Anticholinergic Drug Exposure and the Risk of Dementia",
       },
     ],
     verificationStatus: "verified",
@@ -1825,7 +1897,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1093/ageing/afaa090",
     pmid: "32603415",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32603415/#:~:text=Anticholinergic%20drugs%20and%20incident%20dementia%2C%20mild",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32603415/",
     tags: ["alzheimers", "epidemiology"],
     citations: [
       {
@@ -1837,6 +1909,7 @@ export const ironCascadesSources: Source[] = [
           "~10% population-attributable fraction; anticholinergic burden contributes meaningfully to dementia incidence",
         projectRef:
           "Iron cascades: ~10% AD cases attributable to anticholinergics stat source",
+          fragmentText: "Anticholinergic drugs and incident dementia, mild cognitive impairment",
       },
     ],
     verificationStatus: "verified",
@@ -1855,7 +1928,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.1016/j.neurobiolaging.2024.03.003",
     pmid: "38608458",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38608458/#:~:text=NbM%20may%20be%20a%20focal%20target",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38608458/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1867,6 +1940,7 @@ export const ironCascadesSources: Source[] = [
           "1,447 ADNI participants: NBM degeneration detected before entorhinal or hippocampal changes",
         projectRef:
           "Iron cascades: NBM degenerates first (mechanism step 3)",
+          fragmentText: "the NbM may be a focal target of",
       },
     ],
     verificationStatus: "verified",
@@ -1880,7 +1954,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.1016/j.nbd.2024.106677",
     pmid: "39307400",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39307400/#:~:text=Integrity%20of%20the%20lateral%20NBM%20tract",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39307400/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1892,6 +1966,7 @@ export const ironCascadesSources: Source[] = [
           "NBM white matter tract damage detectable in early MCI when NBM volume is still normal",
         projectRef:
           "Iron cascades: NBM degenerates first (mechanism step 3)",
+          fragmentText: "Integrity of the lateral NBM tract is most",
       },
     ],
     verificationStatus: "verified",
@@ -1917,6 +1992,7 @@ export const ironCascadesSources: Source[] = [
           "Original glymphatic paper: basal ganglia receive substantial CSF tracer influx via ventral perforating arteries",
         projectRef:
           "Iron cascades: NBM metabolic cul-de-sac (mechanism step 4)",
+          fragmentText: "Large amounts of tracer are observed in the",
       },
     ],
     verificationStatus: "verified",
@@ -1930,7 +2006,7 @@ export const ironCascadesSources: Source[] = [
     year: 2018,
     doi: "10.1172/jci.insight.121537",
     pmid: "29997300",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29997300/#:~:text=Clearance%20of%20the%20tracer%20substance%20was",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29997300/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1942,6 +2018,7 @@ export const ironCascadesSources: Source[] = [
           "In vivo evidence of delayed glymphatic clearance in dementia patients",
         projectRef:
           "Iron cascades: NBM metabolic cul-de-sac (mechanism step 4)",
+          fragmentText: "Clearance of the tracer substance was delayed in",
       },
     ],
     verificationStatus: "verified",
@@ -1955,7 +2032,7 @@ export const ironCascadesSources: Source[] = [
     year: 2008,
     doi: "10.1038/nn.2213",
     pmid: "18931664",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18931664/#:~:text=Genetic%20ablation%20or%20reduction%20of%20GIVA%20PLA2",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18931664/",
     tags: ["alzheimers", "ferroptosis"],
     citations: [
       {
@@ -1967,6 +2044,7 @@ export const ironCascadesSources: Source[] = [
           "cPLA2 knockout prevents AD pathology in hAPP mice; cPLA2 is rate-limiting enzyme for lipid peroxidation substrate",
         projectRef:
           "Iron cascades: cPLA2 → lipid peroxidation → HNE → cholinergic death (mechanism step 5)",
+          fragmentText: "Genetic ablation or reduction of GIVA-PLA2 protected hAPP",
       },
     ],
     verificationStatus: "verified",
@@ -1980,7 +2058,7 @@ export const ironCascadesSources: Source[] = [
     year: 2008,
     doi: "10.1016/j.autrev.2008.04.019",
     pmid: "18625446",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18625446/#:~:text=Aldehydic%20products%2C%20mainly%20the%204%20hydroxy%202%20alkenals%2C%20form",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18625446/",
     tags: ["ferroptosis", "iron"],
     citations: [
       {
@@ -1992,6 +2070,7 @@ export const ironCascadesSources: Source[] = [
           "4-HNE-modified proteins trigger epitope spreading; immunization with HNE-modified Ro autoantigen induces accelerated epitope spreading",
         projectRef:
           "Iron cascades: 4-HNE creates immunogenic neoantigens (mechanism step 6)",
+          fragmentText: "Aldehydic products, mainly the 4-hydroxy-2-alkenals, form adducts with",
       },
     ],
     verificationStatus: "verified",
@@ -2005,7 +2084,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41467-025-60812-3",
     pmid: "40550817",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40550817/#:~:text=Lesioning%20basal%20forebrain%20cholinergic%20neurons%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40550817/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -2017,6 +2096,7 @@ export const ironCascadesSources: Source[] = [
           "Cholinergic neurons regulate glymphatic waste clearance; their loss impairs the clearance system",
         projectRef:
           "Iron cascades: Cholinergic neurons regulate their own clearance (mechanism step 7)",
+          fragmentText: "Lesioning basal forebrain cholinergic neurons in female mice",
       },
     ],
     verificationStatus: "verified",
@@ -2030,7 +2110,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1016/j.nbd.2020.104831",
     pmid: "32145376",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32145376/#:~:text=Atrophy%20of%20Ch4%20precedes%20and%20predicts",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32145376/",
     tags: ["parkinsons"],
     citations: [
       {
@@ -2042,6 +2122,7 @@ export const ironCascadesSources: Source[] = [
           "Ch4 (NBM) atrophy predicts dementia conversion in Parkinson's disease",
         projectRef:
           "Iron cascades: Cross-disease NBM involvement (mechanism step 9)",
+          fragmentText: "Atrophy of Ch4 precedes and predicts future dementia",
       },
     ],
     verificationStatus: "verified",
@@ -2060,7 +2141,7 @@ export const ironCascadesSources: Source[] = [
     year: 2010,
     doi: "10.1371/journal.pone.0009505",
     pmid: "20209079",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2831066/#:~:text=peptides%20inhibited%20the%20growth%20of%20eight%20of%2012%20clinically%20important%20pathogens%20screened",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2831066/",
     tags: ["alzheimers", "iron"],
     citations: [
       {
@@ -2073,6 +2154,7 @@ export const ironCascadesSources: Source[] = [
         location: "Results",
         projectRef:
           "Teaser What-If line 0: A\u03B2 kills bacteria and yeast (ancient defense system)",
+          fragmentText: "A peptides inhibited the growth of eight of",
       },
     ],
     verificationStatus: "verified",
@@ -2086,7 +2168,7 @@ export const ironCascadesSources: Source[] = [
     year: 2016,
     doi: "10.1126/scitranslmed.aaf1059",
     pmid: "27225182",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27225182/#:~:text=findings%20raise%20the%20intriguing%20possibility%20that",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27225182/",
     tags: ["alzheimers", "iron"],
     citations: [
       {
@@ -2098,6 +2180,7 @@ export const ironCascadesSources: Source[] = [
           "In vivo evidence that Aβ protects against infection in mouse and worm AD models",
         projectRef:
           "Supporting evidence §8.14: Aβ antimicrobial innate immune function",
+          fragmentText: "Our findings raise the intriguing possibility that -amyloid",
       },
     ],
     verificationStatus: "verified",
@@ -2111,7 +2194,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1098/rsif.2014.0165",
     pmid: "24671940",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24671940/#:~:text=results%20demonstrate%20the%20ability%20of%20Abeta",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24671940/",
     tags: ["alzheimers", "iron"],
     citations: [
       {
@@ -2124,6 +2207,7 @@ export const ironCascadesSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Teaser What-If line 2: 'A\u03B2 accumulates iron within aggregates'",
+          fragmentText: "These results demonstrate the ability of A to",
       },
     ],
     verificationStatus: "verified",
@@ -2137,7 +2221,7 @@ export const ironCascadesSources: Source[] = [
     year: 1992,
     doi: "10.1038/359325a0",
     pmid: "1406936",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1406936/#:~:text=findings%20demonstrate%20that%20A%20beta%20is",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1406936/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -2149,6 +2233,7 @@ export const ironCascadesSources: Source[] = [
           "First detection of soluble Aβ in cerebrospinal fluid and plasma of healthy individuals",
         projectRef:
           "Supporting evidence §8.14: Aβ as normal metabolic product",
+          fragmentText: "These findings demonstrate that A beta is produced",
       },
     ],
     verificationStatus: "verified",
@@ -2162,7 +2247,7 @@ export const ironCascadesSources: Source[] = [
     year: 1992,
     doi: "10.1038/359322a0",
     pmid: "1383826",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1383826/#:~:text=beta%20is%20produced%20in%20soluble%20form",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1383826/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -2174,6 +2259,7 @@ export const ironCascadesSources: Source[] = [
           "Landmark discovery that Aβ production is a normal cellular process, not inherently pathological",
         projectRef:
           "Supporting evidence §8.14: Aβ as normal metabolic product",
+          fragmentText: "A beta is produced in soluble form in",
       },
     ],
     verificationStatus: "verified",
@@ -2187,7 +2273,7 @@ export const ironCascadesSources: Source[] = [
     year: 2004,
     doi: "10.1074/jbc.M407962200",
     pmid: "15269218",
-    url: "https://pubmed.ncbi.nlm.nih.gov/15269218/#:~:text=glial%20ABCA1%20is%20required%20for%20cholesterol%20efflux",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15269218/",
     tags: ["alzheimers", "genetics"],
     citations: [
       {
@@ -2199,6 +2285,7 @@ export const ironCascadesSources: Source[] = [
           "ABCA1 mediates brain cholesterol efflux to apolipoproteins",
         projectRef:
           "FELINE I layer: Cholesterol efflux and fatty acid processing",
+          fragmentText: "glial ABCA1 is required for cholesterol efflux to",
       },
     ],
     verificationStatus: "verified",
@@ -2212,7 +2299,7 @@ export const ironCascadesSources: Source[] = [
     year: 2011,
     doi: "10.1007/s00018-011-0684-8",
     pmid: "21505792",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11115182/#:~:text=plays%20a%20key%20role%20in%20an%20extracellular%20proteostasis%20system",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11115182/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -2224,6 +2311,7 @@ export const ironCascadesSources: Source[] = [
           "Clusterin (apolipoprotein J) is an extracellular chaperone that escorts misfolded proteins for clearance",
         projectRef:
           "FELINE E layer: Clusterin escorts misfolded proteins for clearance",
+          fragmentText: "CLU plays a key role in an extracellular",
       },
     ],
     verificationStatus: "verified",
@@ -2237,7 +2325,7 @@ export const ironCascadesSources: Source[] = [
     year: 2010,
     doi: "10.1038/emboj.2010.167",
     pmid: "20676056",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2944055/#:~:text=RNAi-mediated%20knockdown%20of%20ADAM10",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2944055/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -2249,6 +2337,7 @@ export const ironCascadesSources: Source[] = [
           "ADAM10 is the primary APP alpha-secretase; ADAM17 is not redundant for this role",
         projectRef:
           "FELINE E layer: ADAM10 cleaves APP as alpha-secretase",
+          fragmentText: "ADAM10 is the physiologically relevant, constitutive alpha-secretase of",
       },
     ],
     verificationStatus: "verified",
@@ -2267,7 +2356,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1001/jamaneurol.2019.2399",
     pmid: "31403674",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6694756/#:~:text=iron-laden%20phagocytes",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6694756/",
     tags: ["iron", "imaging", "ms"],
     citations: [
       {
@@ -2292,7 +2381,7 @@ export const ironCascadesSources: Source[] = [
     year: 2018,
     doi: "10.1016/j.jns.2018.01.008",
     pmid: "29406966",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29406966/#:~:text=iron%20content%20in%20the%20SN%20of%20PD%20patients%20was%20significantly%20correlated",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29406966/",
     tags: ["iron", "imaging", "parkinsons"],
     citations: [
       {
@@ -2304,6 +2393,7 @@ export const ironCascadesSources: Source[] = [
           "QSM iron in substantia nigra correlates with PD clinical severity",
         projectRef:
           "Teaser: 'driven by iron?' expanded content \u2014 PD iron detection via QSM",
+          fragmentText: "the iron content in the SN of PD",
       },
     ],
     verificationStatus: "verified",

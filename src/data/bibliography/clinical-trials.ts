@@ -32,7 +32,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2019,
     doi: "10.1056/NEJMoa1812840",
     pmid: "30970186",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30970186/#:~:text=trial%20was%20terminated%20for%20futility%20after",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30970186/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -44,6 +44,7 @@ export const clinicalTrialsSources: Source[] = [
           "BACE inhibitor caused cognitive worsening. Aβ production is a trigger, not the driver",
         projectRef:
           "Framework summary: Why every major trial has failed (BACE inhibitors)",
+          fragmentText: "Verubecestat did not improve",
       },
       {
         citationId: "egan-2019-verubecestat-c2",
@@ -53,6 +54,7 @@ export const clinicalTrialsSources: Source[] = [
         context: "Early stopping due to lack of efficacy",
         projectRef:
           "Failed trials: Verubecestat halted early",
+          fragmentText: "The trial was terminated for futility after 1454",
       },
     ],
     verificationStatus: "verified",
@@ -73,11 +75,12 @@ export const clinicalTrialsSources: Source[] = [
         citationId: "adapt-2006-plosct-c1",
         sourceId: "adapt-2006-plosct",
         quote:
-          "ADAPT trial of NSAIDs for Alzheimer's prevention showed potential harm rather than benefit",
+          "The data for naproxen, although not definitive, are suggestive of increased cardiovascular and cerebrovascular risk.",
         context:
-          "NSAIDs are too blunt: suppress both harmful and beneficial inflammatory clearance",
+          "ADAPT trial of NSAIDs suspended due to cardiovascular safety concerns",
         projectRef:
           "Framework summary: Why every major trial has failed (NSAIDs/ADAPT)",
+          fragmentText: "The data for naproxen, although not definitive, are",
       },
     ],
     verificationStatus: "verified",
@@ -111,18 +114,19 @@ export const clinicalTrialsSources: Source[] = [
     authors: "Alterity Therapeutics.",
     journal: "Press release (GlobeNewsWire)",
     year: 2025,
-    url: "https://www.globenewswire.com/news-release/2025/01/30/3017941/0/en/Alterity-Therapeutics-Announces-Positive-ATH434-Phase-2-Trial-Results-in-Multiple-System-Atrophy-Led-By-Robust-Clinical-Efficacy.html#:~:text=48%25%20slowing%20of%20clinical%20progression",
+    url: "https://www.globenewswire.com/news-release/2025/01/30/3017941/0/en/Alterity-Therapeutics-Announces-Positive-ATH434-Phase-2-Trial-Results-in-Multiple-System-Atrophy-Led-By-Robust-Clinical-Efficacy.html",
     tags: ["clinical-trials", "iron"],
     citations: [
       {
         citationId: "ath434-2025-msa-c1",
         sourceId: "ath434-2025-msa",
         quote:
-          "Iron redistribution therapy showed slower brain atrophy, reduced basal ganglia iron, stable NfL; 43% participants stable, 30% improved on clinical scales",
+          "ATH434 demonstrated 48% slowing of clinical progression at the 50 mg dose (p=0.03) and 62% slowing of progression (p=0.05) at Week 26. The 50 mg dose reduced iron accumulation in the substantia nigra, putamen, and globus pallidus. Trends in preservation of brain volume were observed in the 50 mg and 75 mg groups relative to placebo.",
         context:
-          "Iron REDISTRIBUTION (not chelation) shows benefit in MSA. Validates FELINE iron maldistribution model",
+          "ATH434 Phase 2 trial: 48-62% slowing of clinical progression in MSA",
         projectRef:
           "Cross-disease: MSA iron redistribution therapy validation",
+          fragmentText: "ATH434 demonstrated 48 slowing of clinical progression at",
       },
       {
         citationId: "ath434-2025-msa-c2",
@@ -134,6 +138,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Press release",
         projectRef:
           "Iron alternatives section: ATH434 trial status",
+          fragmentText: "The 50 mg dose declined by a mean",
       },
     ],
     verificationStatus: "verified",
@@ -146,7 +151,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2025,
     doi: "10.1001/jamaneurol.2024.3733",
     pmid: "39495531",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11536302/#:~:text=accelerated%20cognitive%20decline%20in%20patients%20with%20amyloid-confirmed%20early%20AD",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11536302/",
     tags: ["clinical-trials", "alzheimers", "iron"],
     citations: [
       {
@@ -159,6 +164,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract, Conclusions",
         projectRef:
           "Drug browser: Deferiprone (AD) detail tooltip",
+          fragmentText: "These trial findings show that deferiprone 15 mgkg",
       },
       {
         citationId: "ayton-2025-jamaneurol-c2",
@@ -169,6 +175,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Results",
         projectRef:
           "Findings section: Deferiprone NTB z-score comparison",
+          fragmentText: "change in NTB composite z score for deferiprone,",
       },
       {
         citationId: "ayton-2025-jamaneurol-c3",
@@ -180,6 +187,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract, Methods",
         projectRef:
           "Drug browser: Deferiprone (AD) detail tooltip — enrollment",
+          fragmentText: "phase 2, double-masked, placebo-controlled randomized clinical trial",
       },
       {
         citationId: "ayton-2025-jamaneurol-c4",
@@ -191,6 +199,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Results",
         projectRef:
           "Drug browser: Deferiprone (AD) detail tooltip — hippocampal iron reduction",
+          fragmentText: "the hippocampus compared with placebo",
       },
     ],
     verificationStatus: "verified",
@@ -204,7 +213,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 1991,
     doi: "10.1016/0140-6736(91)92978-b",
     pmid: "1674295",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1674295/#:~:text=significant%20reduction%20in%20the%20rate%20of%20decline",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1674295/",
     tags: ["clinical-trials", "alzheimers", "iron"],
     citations: [
       {
@@ -217,6 +226,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Drug browser: Deferoxamine (AD) detail tooltip",
+          fragmentText: "Desferrioxamine treatment led to significant reduction in the",
       },
     ],
     verificationStatus: "verified",
@@ -230,7 +240,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2018,
     doi: "10.1056/NEJMoa1705971",
     pmid: "29365294",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29365294/#:~:text=Solanezumab%20did%20not%20significantly%20affect%20cognitive",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29365294/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -242,6 +252,7 @@ export const clinicalTrialsSources: Source[] = [
           "Anti-Aβ antibody targeting soluble amyloid failed. Extracellular-only approach insufficient",
         projectRef:
           "Framework summary: Why every major trial has failed (Tau/Aβ antibodies)",
+          fragmentText: "did not significantly affect cognitive decline",
       },
     ],
     verificationStatus: "verified",
@@ -262,11 +273,12 @@ export const clinicalTrialsSources: Source[] = [
         citationId: "henley-2019-atabecestat-c1",
         sourceId: "henley-2019-atabecestat",
         quote:
-          "Atabecestat was associated with liver toxicity and cognitive worsening in at-risk individuals",
+          "Preliminary Results of a Trial of Atabecestat in Preclinical Alzheimer's Disease.",
         context:
-          "Another BACE inhibitor failure with cognitive worsening",
+          "Atabecestat trial halted due to liver enzyme elevations (NEJM correspondence, no abstract)",
         projectRef:
           "Framework summary: Why every major trial has failed (BACE inhibitors)",
+          fragmentText: "Preliminary Results of a Trial of Atabecestat in",
       },
     ],
     verificationStatus: "verified",
@@ -314,6 +326,7 @@ export const clinicalTrialsSources: Source[] = [
           "Landmark figure establishing AD as the hardest therapeutic area in drug development",
         projectRef:
           "Problem section: clinical trial success rate comparison bar chart (Alzheimer's bar)",
+          fragmentText: "The success rate for advancing",
       },
     ],
     verificationStatus: "verified",
@@ -339,6 +352,7 @@ export const clinicalTrialsSources: Source[] = [
           "Cross-therapeutic-area comparison showing oncology at 3.4% Phase I-to-approval success",
         projectRef:
           "Problem section: clinical trial success rate comparison bar chart (oncology, infectious disease bars)",
+          fragmentText: "ranges from a minimum of 3.4 for oncology",
       },
       {
         citationId: "wong-2019-biostatistics-c2",
@@ -349,6 +363,7 @@ export const clinicalTrialsSources: Source[] = [
           "Industry-wide baseline success rate across all therapeutic areas",
         projectRef:
           "Problem section: clinical trial success rate comparison bar chart (all drugs bar)",
+          fragmentText: "13.8 of all drug development programs eventually lead",
       },
     ],
     verificationStatus: "verified",
@@ -362,7 +377,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2022,
     doi: "10.3233/JAD-215699",
     pmid: "35342092",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35342092/#:~:text=two%20successes%20against%20the%2098%20failures",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35342092/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -374,6 +389,7 @@ export const clinicalTrialsSources: Source[] = [
           "Updated AD success rate (2003-2022): 2% at Phase II/III level",
         projectRef:
           "Problem section: clinical trial success rate context",
+          fragmentText: "These two successes against the 98 failures gives",
       },
       {
         citationId: "kim-2022-jad-c2",
@@ -384,6 +400,7 @@ export const clinicalTrialsSources: Source[] = [
           "AD drug development is 9x riskier, 40% slower, and 2.2x more expensive than industry average",
         projectRef:
           "Problem section: right-side explanatory text",
+          fragmentText: "risk measured by probability of success is almost",
       },
     ],
     verificationStatus: "verified",
@@ -396,7 +413,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2023,
     doi: "10.1056/NEJMoa2212948",
     pmid: "36449413",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10040446/#:~:text=least-squares%20mean%20change%20from%20baseline%20at%2018%20months",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10040446/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -407,6 +424,7 @@ export const clinicalTrialsSources: Source[] = [
         context:
           "27% slowing of decline (0.45/1.66) on CDR-SB scale, less than half a point on 18-point scale",
         location: "Results",
+        fragmentText: "The adjusted least-squares mean change from baseline at",
         projectRef:
           "Protein trials: Alzheimer's expanded detail (lecanemab efficacy)",
       },
@@ -420,6 +438,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Results, Safety",
         projectRef:
           "Protein trials: Alzheimer's expanded detail (ARIA incidence)",
+          fragmentText: "Lecanemab resulted in infusion-related reactions in 26.4 of",
       },
     ],
     verificationStatus: "verified",
@@ -434,7 +453,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2022,
     doi: "10.1186/s13195-022-01124-2",
     pmid: "36544184",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9768996/#:~:text=gradual%20re-accumulation%20of%20pathological%20biomarkers%20supports%20the%20need",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9768996/",
     tags: ["clinical-trials", "alzheimers", "biomarkers"],
     citations: [
       {
@@ -447,6 +466,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Discussion",
         projectRef:
           "Protein trials: Alzheimer's expanded detail (treatment discontinuation)",
+          fragmentText: "Clinical progression and gradual re-accumulation of pathological biomarkers",
       },
     ],
     verificationStatus: "verified",
@@ -459,7 +479,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2204705",
     pmid: "36129998",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11524200/#:~:text=tofersen%20reduced%20concentrations%20of%20SOD1",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11524200/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -470,6 +490,7 @@ export const clinicalTrialsSources: Source[] = [
         context:
           "Primary endpoint (ALSFRS-R) not met, P=0.97. FDA approved on biomarker surrogate only.",
         location: "Conclusions",
+        fragmentText: "In persons with SOD1 ALS, tofersen reduced concentrations",
         projectRef:
           "Protein trials: ALS expanded detail (tofersen VALOR trial failure)",
       },
@@ -485,7 +506,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2024,
     doi: "10.1186/s13195-024-01412-z",
     pmid: "38365811",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10870501/#:~:text=slowing%20in%20CDR-SB%20progression%20by",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10870501/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -498,6 +519,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Results",
         projectRef:
           "Protein trials: Alzheimer's expanded detail (practical meaning of 27%)",
+          fragmentText: "slowing in CDR-SB progression by 3.2 months at",
       },
     ],
     verificationStatus: "verified",
@@ -509,7 +531,7 @@ export const clinicalTrialsSources: Source[] = [
     authors: "Biogen Inc.",
     journal: "Press release (Biogen)",
     year: 2024,
-    url: "https://investors.biogen.com/news-releases/news-release-details/biogen-realign-resources-alzheimers-disease-franchise#:~:text=reprioritizing%20resources%20to%20build%20a%20leading%20franchise",
+    url: "https://investors.biogen.com/news-releases/news-release-details/biogen-realign-resources-alzheimers-disease-franchise",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -522,6 +544,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Press release",
         projectRef:
           "Protein trials: Alzheimer's expanded detail (aducanumab withdrawal)",
+          fragmentText: "Biogen is reprioritizing resources to build a leading",
       },
     ],
     verificationStatus: "verified",
@@ -538,7 +561,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2019,
     doi: "10.1016/j.biopha.2018.12.118",
     pmid: "30611996",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30611996/#:~:text=enhanced%20cognitive%20function%20assessed%20by%20the%20Mini-Mental%20State%20Examination",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30611996/",
     tags: ["clinical-trials", "iron", "alzheimers"],
     citations: [
       {
@@ -551,6 +574,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Iron alternatives section: Lactoferrin trial status",
+          fragmentText: "Improvement in the aforementioned AD surrogate markers post-LF",
       },
     ],
     verificationStatus: "verified",
@@ -564,7 +588,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2018,
     doi: "10.15252/emmm.201708361",
     pmid: "29183916",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5760856/#:~:text=treatment%20with%20Cp%20promoted%20a%20rescue%20of%20Purkinje%20cell%20loss",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5760856/",
     tags: ["clinical-trials", "iron"],
     citations: [
       {
@@ -577,6 +601,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Iron alternatives section: Ceruloplasmin trial status",
+          fragmentText: "Ceruloplasmin-treated mice showed amelioration of motor incoordination that",
       },
     ],
     verificationStatus: "verified",
@@ -588,7 +613,7 @@ export const clinicalTrialsSources: Source[] = [
     authors: "Kedrion Biopharma.",
     journal: "Press release (PR Newswire)",
     year: 2025,
-    url: "https://www.prnewswire.com/news-releases/kedrion-receives-fda-orphan-drug-designation-for-investigational-plasma-derived-treatment-for-congenital-aceruloplasminemia-302524420.html#:~:text=Orphan%20Drug%20Designation%20from%20the%20FDA",
+    url: "https://www.prnewswire.com/news-releases/kedrion-receives-fda-orphan-drug-designation-for-investigational-plasma-derived-treatment-for-congenital-aceruloplasminemia-302524420.html",
     tags: ["clinical-trials", "iron"],
     citations: [
       {
@@ -601,6 +626,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Press release",
         projectRef:
           "Iron alternatives section: Ceruloplasmin trial status",
+          fragmentText: "Receiving Orphan Drug Designation from the FDA is",
       },
     ],
     verificationStatus: "verified",
@@ -614,7 +640,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 1999,
     doi: "10.1074/jbc.274.11.7011",
     pmid: "10066755",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10066755/#:~:text=iron%20may%20cross%20the%20bovine%20brain%20capillary%20endothelial%20cells",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10066755/",
     tags: ["iron"],
     citations: [
       {
@@ -627,6 +653,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Iron alternatives section: Lactoferrin description",
+          fragmentText: "A specific unidirectional transport then occurred via a",
       },
     ],
     verificationStatus: "verified",
@@ -638,7 +665,7 @@ export const clinicalTrialsSources: Source[] = [
     authors: "Takeda Pharmaceutical Company.",
     journal: "Press release (Takeda)",
     year: 2026,
-    url: "https://www.takeda.com/newsroom/newsreleases/2025/new-drug-application-pv/#:~:text=mimics%20the%20action%20of%20hepcidin",
+    url: "https://www.takeda.com/newsroom/newsreleases/2025/new-drug-application-pv/",
     tags: ["clinical-trials", "iron"],
     citations: [
       {
@@ -651,6 +678,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Press release",
         projectRef:
           "Iron alternatives section: Hepcidin trial status",
+          fragmentText: "Rusfertide is a first-in-class investigational subcutaneous treatment that",
       },
     ],
     verificationStatus: "verified",
@@ -662,7 +690,7 @@ export const clinicalTrialsSources: Source[] = [
     authors: "PulseSight Therapeutics.",
     journal: "Press release (GlobeNewsWire)",
     year: 2025,
-    url: "https://www.globenewswire.com/news-release/2025/07/07/3110761/0/en/First-patient-dosed-in-the-Phase-I-clinical-trial-of-PulseSight-Therapeutics-PST-611-treatment-for-dry-AMD-Geographic-Atrophy.html#:~:text=expressing%20human%20transferrin",
+    url: "https://www.globenewswire.com/news-release/2025/07/07/3110761/0/en/First-patient-dosed-in-the-Phase-I-clinical-trial-of-PulseSight-Therapeutics-PST-611-treatment-for-dry-AMD-Geographic-Atrophy.html",
     tags: ["clinical-trials", "iron"],
     citations: [
       {
@@ -675,6 +703,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Press release",
         projectRef:
           "Iron alternatives section: Transferrin trial status",
+          fragmentText: "PST-611 is a first-in-class non-viral vectorized therapy for",
       },
     ],
     verificationStatus: "verified",
@@ -687,7 +716,7 @@ export const clinicalTrialsSources: Source[] = [
     journal: "International Journal of Nanomedicine",
     year: 2026,
     doi: "10.2147/IJN.S571993",
-    url: "https://www.dovepress.com/the-landscape-of-ferritin-nanocages-for-neurodegenerative-diseases-tre-peer-reviewed-fulltext-article-IJN#:~:text=high-affinity%20binding%20domains%20for%20transferrin%20receptor%201",
+    url: "https://www.dovepress.com/the-landscape-of-ferritin-nanocages-for-neurodegenerative-diseases-tre-peer-reviewed-fulltext-article-IJN",
     tags: ["iron"],
     citations: [
       {
@@ -700,6 +729,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Full text",
         projectRef:
           "Iron alternatives section: Ferritin nanocages description",
+          fragmentText: "Upon binding to TfR1, HFn is internalized via",
       },
     ],
     verificationStatus: "verified",
@@ -713,7 +743,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2023,
     doi: "10.1212/WNL.0000000000207156",
     pmid: "36973044",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10186239/#:~:text=enlargement%20of%20ventricles%20was%20strongly%20correlated%20with",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10186239/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -726,6 +756,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Results",
         projectRef:
           "Insight section: mAb critique (brain volume loss)",
+          fragmentText: "the enlargement of ventricles was strongly correlated with",
       },
     ],
     verificationStatus: "verified",
@@ -739,7 +770,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2024,
     doi: "10.1002/alz.13690",
     pmid: "38380503",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38380503/#:~:text=Psychological%20treatment%20effects%20due%20to%20unblinding",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38380503/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -752,6 +783,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Insight section: mAb critique (unblinding)",
+          fragmentText: "Psychological treatment effects due to unblinding may explain",
       },
     ],
     verificationStatus: "verified",
@@ -765,7 +797,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2024,
     doi: "10.1002/alz.13770",
     pmid: "38561021",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38561021/#:~:text=Average%20treatment%20effects%20in%20recent%20trials",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38561021/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -778,6 +810,7 @@ export const clinicalTrialsSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Insight section: mAb critique (clinical significance)",
+          fragmentText: "Average treatment effects in recent trials of anti-amyloid",
       },
     ],
     verificationStatus: "verified",
@@ -791,7 +824,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2017,
     doi: "10.1186/s40478-017-0456-2",
     pmid: "28659169",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5490188/#:~:text=binds%20iron%20sufficiently%20to%20abolish%20pathological%20reaction",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5490188/",
     tags: ["iron", "parkinsons", "clinical-trials"],
     citations: [
       {
@@ -803,6 +836,7 @@ export const clinicalTrialsSources: Source[] = [
           "ATH434 (formerly PBT434) moderate-affinity iron binding mechanism",
         projectRef:
           "Iron alternatives section: ATH434 description",
+          fragmentText: "PBT434, an orally bioavailable 8-hydroxyquinazolin-43H-one, binds iron sufficiently",
       },
     ],
     verificationStatus: "verified",
@@ -816,7 +850,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2025,
     doi: "10.1016/j.jbc.2025.110595",
     pmid: "40812418",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12450639/#:~:text=functioned%20as%20a%20ferrous%20iron%20chaperone",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12450639/",
     tags: ["iron", "clinical-trials"],
     citations: [
       {
@@ -828,6 +862,7 @@ export const clinicalTrialsSources: Source[] = [
           "ATH434 is an iron chaperone, not a chelator",
         projectRef:
           "Iron alternatives section: ATH434 description (chaperone vs chelator)",
+          fragmentText: "functioned as a ferrous iron chaperone in contrast",
       },
       {
         citationId: "bailey-2025-jbc-c2",
@@ -838,6 +873,7 @@ export const clinicalTrialsSources: Source[] = [
           "ATH434 mimics endogenous PCBP1/2 iron chaperones",
         projectRef:
           "Iron alternatives section: ATH434 description (PCBP1/2 mimicry)",
+          fragmentText: "supports the redistribution of excess iron, supplementing the",
       },
     ],
     verificationStatus: "verified",
@@ -851,7 +887,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2023,
     doi: "10.1056/NEJMoa2212948",
     pmid: "36449413",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36449413/#:~:text=adjusted%20least-squares%20mean%20change%20from%20baseline",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36449413/",
     tags: ["clinical-trials", "alzheimers", "clinical-trials"],
     citations: [
       {
@@ -863,6 +899,7 @@ export const clinicalTrialsSources: Source[] = [
           "CLARITY-AD primary endpoint: 0.45-point CDR-SB difference at 18 months",
         projectRef:
           "Lecanemab critique section: trial data for graph",
+          fragmentText: "The adjusted least-squares mean change from baseline at",
       },
     ],
     verificationStatus: "verified",
@@ -876,7 +913,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2024,
     doi: "10.1523/ENEURO.0319-23.2024",
     pmid: "38951040",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11218032/#:~:text=differences%20imperceptible%20to%20patients",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11218032/",
     tags: ["clinical-trials", "alzheimers", "clinical-trials"],
     citations: [
       {
@@ -888,6 +925,7 @@ export const clinicalTrialsSources: Source[] = [
           "Clinical imperceptibility of lecanemab effect size",
         projectRef:
           "Lecanemab critique section: effect size imperceptibility",
+          fragmentText: "Average changes of 3 on the iADRS and",
       },
       {
         citationId: "espay-2024-eneuro-c2",
@@ -898,6 +936,7 @@ export const clinicalTrialsSources: Source[] = [
           "Full-scale percentage reframing of lecanemab effect",
         projectRef:
           "Lecanemab critique section: 2.5% vs 27% framing",
+          fragmentText: "This translates to a treatment effect of 2.5",
       },
       {
         citationId: "espay-2024-eneuro-c3",
@@ -908,6 +947,7 @@ export const clinicalTrialsSources: Source[] = [
           "Linear divergence assumption underlying the 27% figure",
         projectRef:
           "Lecanemab critique section: linear assumption problem",
+          fragmentText: "for this metric to remain constant, the curves",
       },
       {
         citationId: "espay-2024-eneuro-c4",
@@ -918,6 +958,7 @@ export const clinicalTrialsSources: Source[] = [
           "Derivation of the 27% figure from trial data",
         projectRef:
           "Lecanemab critique section: 27% calculation explanation",
+          fragmentText: "This is how the 27 effect figure is",
       },
     ],
     verificationStatus: "verified",
@@ -931,7 +972,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2024,
     doi: "10.1002/alz.14114",
     pmid: "39096161",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11497653/#:~:text=slopes%20of%20the%20scales%20based%20on%20caregiver%20input%20diverge",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11497653/",
     tags: ["clinical-trials", "alzheimers", "clinical-trials"],
     citations: [
       {
@@ -943,6 +984,7 @@ export const clinicalTrialsSources: Source[] = [
           "CDR-SB diverges but ADAS-Cog14/MMSE parallel \u2014 measurement-dependent effect",
         projectRef:
           "Lecanemab critique section: caregiver vs objective measures",
+          fragmentText: "the slopes of the scales based on caregiver",
       },
       {
         citationId: "daly-2024-alz-dement-c2",
@@ -953,6 +995,7 @@ export const clinicalTrialsSources: Source[] = [
           "Anti-amyloid antibodies not confirmed disease-modifying",
         projectRef:
           "Lecanemab critique section: disease-modification conclusion",
+          fragmentText: "Available data do not confirm that lecanemab and",
       },
     ],
     verificationStatus: "verified",
@@ -966,7 +1009,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2014,
     doi: "10.2147/NDT.S62323",
     pmid: "24926196",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4049432/#:~:text=characteristic%20of%20an%20S-shaped%20progression%20curve",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4049432/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -978,6 +1021,7 @@ export const clinicalTrialsSources: Source[] = [
           "CDR-SB progression follows a sigmoidal (S-shaped) trajectory",
         projectRef:
           "Lecanemab critique section: sigmoidal disease progression",
+          fragmentText: "This inverted U-shaped relationship for progression rate vs",
       },
       {
         citationId: "samtani-2014-ndt-c2",
@@ -988,6 +1032,7 @@ export const clinicalTrialsSources: Source[] = [
           "CDR-SB accelerates early then decelerates, producing sigmoidal shape",
         projectRef:
           "Lecanemab critique section: sigmoidal trajectory detail",
+          fragmentText: "The results show that scores increase exponentially during",
       },
     ],
     verificationStatus: "verified",
@@ -1002,7 +1047,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2022,
     doi: "10.1002/alz.12450",
     pmid: "34581499",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8940715/#:~:text=cumulative%20private%20expenditures%20on%20clinical%20stage%20AD%20R%26D%20were%20estimated%20at%20%2442.5%20billion",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8940715/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -1013,6 +1058,7 @@ export const clinicalTrialsSources: Source[] = [
         context: "Total private spending on Alzheimer's drug development",
         projectRef:
           "Alternatives insight: amyloid beta spending comparison",
+          fragmentText: "Since 1995, cumulative private expenditures on clinical stage",
       },
     ],
     verificationStatus: "verified",
@@ -1025,7 +1071,7 @@ export const clinicalTrialsSources: Source[] = [
     journal: "Alzheimer's & Dementia",
     year: 2025,
     doi: "10.1002/alz.090729",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11713060/#:~:text=blarcamesine%20group%20demonstrated%20improvement%20compared%20to%20the%20placebo%20group%20in%20all%20clinical%20endpoints",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11713060/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -1037,6 +1083,7 @@ export const clinicalTrialsSources: Source[] = [
           "Phase 2b/3 trial results for sigma-1 receptor agonist",
         projectRef:
           "Multi-layer treatments: blarcamesine efficacy",
+          fragmentText: "The blarcamesine group demonstrated improvement compared to the",
       },
     ],
     verificationStatus: "verified",
@@ -1049,7 +1096,7 @@ export const clinicalTrialsSources: Source[] = [
     journal: "Frontiers in Pharmacology",
     year: 2024,
     doi: "10.3389/fphar.2024.1408462",
-    url: "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1408462/full#:~:text=lithium%20can%20reduce%20amyloid%20deposition%20and%20tau%20phosphorylation%2C%20regulate%20autophagy",
+    url: "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1408462/full",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -1060,6 +1107,7 @@ export const clinicalTrialsSources: Source[] = [
         context: "Lithium multi-target neuroprotection mechanisms",
         projectRef:
           "Multi-layer treatments: lithium multi-layer note",
+          fragmentText: "lithium can reduce amyloid deposition and tau phosphorylation,",
       },
     ],
     verificationStatus: "verified",
@@ -1073,7 +1121,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2022,
     doi: "10.1371/journal.pone.0278412",
     pmid: "36454969",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9714888/#:~:text=lesser%20ventricular%20dilation%20and%20hippocampal%20atrophy",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9714888/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -1085,6 +1133,7 @@ export const clinicalTrialsSources: Source[] = [
           "40Hz gamma stimulation reduces brain atrophy and improves connectivity",
         projectRef:
           "Multi-layer treatments: 40 Hz gamma stimulation note",
+          fragmentText: "increased functional connectivity in the default mode network",
       },
     ],
     verificationStatus: "verified",
@@ -1098,7 +1147,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2024,
     doi: "10.1186/s13024-024-00728-6",
     pmid: "38641847",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11031980/#:~:text=Melatonin%20can%20block%20the%20leading%20events%20of%20ferroptosis%20since%20it%20is%20an%20efficient%20anti-inflammatory%2C%20iron%20chelator",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11031980/",
     tags: ["ferroptosis", "iron", "clinical-trials"],
     citations: [
       {
@@ -1110,6 +1159,7 @@ export const clinicalTrialsSources: Source[] = [
           "Melatonin as multi-mechanism ferroptosis inhibitor",
         projectRef:
           "Multi-layer treatments: melatonin note",
+          fragmentText: "Melatonin can block the leading events of ferroptosis",
       },
     ],
     verificationStatus: "verified",
@@ -1123,7 +1173,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2020,
     doi: "10.3389/fnins.2020.00267",
     pmid: "32372896",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7186402/#:~:text=Nrf2%20can%20directly%20or%20indirectly%20regulate%20GPX4%20protein%20content",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7186402/",
     tags: ["ferroptosis", "iron"],
     citations: [
       {
@@ -1135,6 +1185,7 @@ export const clinicalTrialsSources: Source[] = [
           "Nrf2 as master regulator of ferroptosis pathways",
         projectRef:
           "Multi-layer treatments: sulforaphane Nrf2 note",
+          fragmentText: "Nrf2 can directly or indirectly regulate GPX4 protein",
       },
     ],
     verificationStatus: "verified",

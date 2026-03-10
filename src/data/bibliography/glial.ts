@@ -22,16 +22,18 @@ export const glialSources: Source[] = [
           "COVID brain fog shares identical cellular pathology with chemo brain",
         projectRef:
           "Kinetics model Part IX: brain fog, oligodendrocyte loss timeline",
+          fragmentText: "myelinated axon density at",
       },
       {
         citationId: "fernandez-castaneda-2022-cell-c2",
         sourceId: "fernandez-castaneda-2022-cell",
         quote:
-          "CCL11 elevated in brain fog patients; white matter-selective microglial activation",
+          "Concordantly, humans with lasting cognitive symptoms post-COVID exhibit elevated CCL11 levels.",
         context:
-          "CCL11 (eotaxin-1) mediates brain fog via oligodendrocyte loss and neurogenesis inhibition",
+          "Elevated CCL11 in humans with persistent cognitive symptoms after COVID",
         projectRef:
           "Kinetics model Part IX: brain fog mechanism, CCL11 as key mediator",
+          fragmentText: "Concordantly, humans with lasting cognitive symptoms post-COVID exhibit",
       },
     ],
     verificationStatus: "verified",
@@ -52,11 +54,12 @@ export const glialSources: Source[] = [
         citationId: "lonnemann-2020-pnas-c1",
         sourceId: "lonnemann-2020-pnas",
         quote:
-          "OLT1177 rescued cognitive impairment, synaptic plasticity, and reduced plaques in APP/PS1 mice",
+          "The Morris water maze test revealed an impaired learning and memory ability of 9-mo-old APP/PS1 mice (P = 0.001), which was completely rescued by OLT1177 fed to mice (P = 0.008 to untreated APP/PS1).",
         context:
-          "NLRP3 inflammasome inhibition as therapeutic approach for AD",
+          "OLT1177 (NLRP3 inhibitor) rescued cognitive impairment in APP/PS1 mice",
         projectRef:
           "Cross-disease: NLRP3 inflammasome inhibitors, dapansutrile preclinical data",
+          fragmentText: "The Morris water maze test revealed an impaired",
       },
     ],
     verificationStatus: "verified",
@@ -82,6 +85,7 @@ export const glialSources: Source[] = [
           "GFAP is the earliest blood biomarker of AD, reflecting astrocyte activation",
         projectRef:
           "Kinetics model Part VII: GFAP as earliest blood biomarker",
+          fragmentText: "Symptom onset in autosomal dominant",
       },
     ],
     verificationStatus: "verified",
@@ -107,6 +111,7 @@ export const glialSources: Source[] = [
           "Microglia-astrocyte crosstalk creates neurotoxic glial environment",
         projectRef:
           "Cross-disease: glial dysfunction pillar, microglia-astrocyte cascade",
+          fragmentText: "Il-1, TNF, and C1q",
       },
       {
         citationId: "liddelow-2017-nature-c2",
@@ -142,6 +147,7 @@ export const glialSources: Source[] = [
           "BBB dysfunction persists in cognitive Long COVID",
         projectRef:
           "Cross-disease biomarker: Long COVID BBB dysfunction evidence",
+          fragmentText: "long COVID-associated cognitive impairment",
       },
     ],
     verificationStatus: "verified",
@@ -162,11 +168,12 @@ export const glialSources: Source[] = [
         citationId: "newcombe-2022-brain-c1",
         sourceId: "newcombe-2022-brain",
         quote:
-          "GFAP shows biphasic pattern: initial spike, decline, then secondary increase months-years later",
+          "While GFAP values were within the normal range at ~8 months, many patients showed a secondary and temporally distinct elevations up to >5 years after injury.",
         context:
-          "Biphasic GFAP in TBI matches FELINE prediction of acute damage then chronic reactive astrogliosis",
+          "GFAP shows biphasic pattern with secondary elevation years after TBI",
         projectRef:
           "Cross-disease biomarker: TBI GFAP biphasic profile",
+          fragmentText: "months, many patients showed a secondary and temporally",
       },
     ],
     verificationStatus: "verified",
@@ -180,18 +187,19 @@ export const glialSources: Source[] = [
     year: 2021,
     doi: "10.1016/j.redox.2021.102118",
     pmid: "34474395",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8411591/#:~:text=ceruloplasmin%20deletion%20in%20myelinating%20glial%20cells",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8411591/",
     tags: ["oligodendrocyte", "iron", "glia"],
     citations: [
       {
         citationId: "santiago-gonzalez-2021-redoxbiol-c1",
         sourceId: "santiago-gonzalez-2021-redoxbiol",
         quote:
-          "Ceruloplasmin conditional knockout in oligodendrocytes reproduces the full iron-ferroptosis cascade: iron accumulation, lipid peroxidation, and demyelination",
+          "Cp loss in aged OLs (8 months) induced cell iron overload, apoptotic cell death, brain oxidative stress, neurodegeneration and myelin disruption.",
         context:
-          "Removing ceruloplasmin specifically from oligodendrocytes is sufficient to trigger the entire FELINES cascade in those cells",
+          "Ceruloplasmin loss in oligodendrocytes causes iron overload, cell death, and myelin disruption",
         projectRef:
           "Reframe section: ceruloplasmin KO reproduces full cascade in OLs",
+          fragmentText: "Cp loss in aged OLs 8 months induced",
       },
     ],
     verificationStatus: "verified",
@@ -211,9 +219,9 @@ export const glialSources: Source[] = [
         citationId: "bullock-2005-science-c1",
         sourceId: "bullock-2005-science",
         quote:
-          "Perspectives piece challenging the classical neuron doctrine, arguing that non-synaptic communication (gap junctions, glial signaling) is functionally important and systematically underappreciated",
+          "One hundred years since its inception, an examination of the Doctrine indicates that it no longer encompasses important aspects of neuron function.",
         context:
-          "Foundational argument that glia and non-neuronal signaling are essential to brain function, not just support cells",
+          "Science Perspectives piece reexamining the Neuron Doctrine after 100 years",
         projectRef:
           "Cell vulnerability section: why the cells that fail first in neurodegeneration are not neurons",
       },
@@ -241,6 +249,7 @@ export const glialSources: Source[] = [
           "PET imaging confirms widespread neuroinflammation in ME/CFS",
         projectRef:
           "Cross-disease biomarker: ME/CFS neuroinflammation PET evidence",
+          fragmentText: "hippocampus, amygdala, thalamus, midbrain",
       },
     ],
     verificationStatus: "verified",

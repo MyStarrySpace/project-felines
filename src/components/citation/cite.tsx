@@ -4,6 +4,7 @@ import { useRef, useState, useEffect, useCallback } from "react";
 import { useCitations } from "./citation-provider";
 import { CitationTooltip } from "./citation-tooltip";
 import { sourcesMap } from "@/data/bibliography";
+import { buildTextFragmentUrl } from "./text-fragment";
 
 type CiteProps = {
   id: string;
@@ -46,9 +47,15 @@ export function Cite({ id, citationIds }: CiteProps) {
   const number = registerCitation(id);
 
   const handleClick = () => {
-    const url =
+    const baseUrl =
       source.url || (source.doi ? `https://doi.org/${source.doi}` : undefined);
-    if (url) window.open(url, "_blank", "noopener,noreferrer");
+    if (!baseUrl) return;
+    // Use the first matching citation's fragmentText for deep-linking
+    const matchingCitation = citationIds
+      ? source.citations.find((c) => citationIds.includes(c.citationId) && c.fragmentText)
+      : source.citations.find((c) => c.fragmentText);
+    const url = buildTextFragmentUrl(baseUrl, matchingCitation?.fragmentText);
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   const show = useCallback(() => {

@@ -10,7 +10,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2023,
     doi: "10.1056/NEJMc2300400",
     pmid: "38055260",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38055260/#:~:text=Tominersen%20in%20Adults%20with%20Manifest%20Huntingtons",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38055260/",
     tags: ["clinical-trials", "huntingtons"],
     citations: [
       {
@@ -18,6 +18,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "mccolgan-2023-nejm",
         quote: "Tominersen in Adults with Manifest Huntington's Disease",
         projectRef: "Drug browser: Tominersen HTT ASO dose-dependent worsening",
+        fragmentText: "Tominersen in Adults with Manifest Huntingtons Disease",
       },
     ],
     verificationStatus: "verified",
@@ -84,7 +85,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2020,
     doi: "10.1016/j.msard.2020.102434",
     pmid: "32784117",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9386688/#:~:text=the%20IPPoMS%20trial%20did%20not%20achieve%20efficacy%20on%20any%20of%20its%20primary%20or%20secondary%20endpoints",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9386688/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -92,6 +93,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "kosa-2020-msard",
         quote: "While idebenone was safe and well-tolerated, the IPPoMS trial did not achieve efficacy on any of its primary or secondary endpoints, providing high confidence that idebenone does not inhibit disability progression or CNS tissue destruction in PPMS.",
         projectRef: "Drug browser: Idebenone IPPoMS trial result",
+        fragmentText: "not inhibit disability progression or CNS tissue destruction",
       },
     ],
     verificationStatus: "verified",
@@ -104,7 +106,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2021,
     doi: "10.1002/ana.25934",
     pmid: "33068037",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7894504/#:~:text=omaveloxolone%20significantly%20improved%20neurological%20function%20compared%20to%20placebo",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7894504/",
     tags: ["clinical-trials", "frda"],
     citations: [
       {
@@ -112,6 +114,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "lynch-2021-ann-neurol",
         quote: "In the MOXIe trial, omaveloxolone significantly improved neurological function compared to placebo and was generally safe and well tolerated.",
         projectRef: "Drug browser: Omaveloxolone MOXIe trial result",
+        fragmentText: "In the MOXIe trial, omaveloxolone significantly improved neurological",
       },
     ],
     verificationStatus: "verified",
@@ -124,7 +127,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2014,
     doi: "10.1001/jamaneurol.2014.131",
     pmid: "24664227",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24664227/#:~:text=Coenzyme%20Q10%20was%20safe%20and%20well%20tolerated%20in%20this%20population%2C%20but%20showed%20no%20evidence%20of%20clinical%20benefit",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24664227/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -132,6 +135,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "parkinson-study-group-2014-jama-neurol",
         quote: "Coenzyme Q10 was safe and well tolerated in this population, but showed no evidence of clinical benefit.",
         projectRef: "Drug browser: CoQ10 QE3 trial result",
+        fragmentText: "Coenzyme Q10 was safe and well tolerated in",
       },
     ],
     verificationStatus: "verified",
@@ -144,7 +148,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2010,
     doi: "10.1002/mds.23148",
     pmid: "20568096",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20568096/#:~:text=no%20difference%20between%20MitoQ%20and%20placebo%20on%20any%20measure%20of%20PD%20progression",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20568096/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -152,6 +156,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "snow-2010-mov-disord",
         quote: "We showed no difference between MitoQ and placebo on any measure of PD progression.",
         projectRef: "Drug browser: MitoQ Parkinson trial result",
+        fragmentText: "We showed no difference between MitoQ and placebo",
       },
     ],
     verificationStatus: "verified",
@@ -166,7 +171,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2023,
     doi: "10.1038/s41467-023-43514-6",
     pmid: "38016950",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10684646/#:~:text=NR%20greatly%20augmented%20the%20blood%20NAD%20metabolome",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10684646/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -174,6 +179,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "berven-2023-nat-commun",
         quote: "NR greatly augmented the blood NAD metabolome with up to 5-fold increase in blood NAD+ levels.",
         projectRef: "Drug browser: NR-SAFE high-dose NR safety and NAD+ augmentation in PD",
+        fragmentText: "NR greatly augmented the blood NAD metabolome with",
       },
     ],
     verificationStatus: "verified",
@@ -186,7 +192,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2025,
     doi: "10.1002/trc2.70023",
     pmid: "39817194",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11733434/#:~:text=NR%20supplementation%20did%20not%20alter%20cognition",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11733434/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -194,6 +200,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "wu-2025-alzheimers-dement",
         quote: "NR supplementation did not alter cognition as measured by conventional or novel digital assessments.",
         projectRef: "Drug browser: NR crossover RCT in MCI, no cognitive benefit",
+        fragmentText: "did not alter cognition as measured by conventional",
       },
     ],
     verificationStatus: "verified",
@@ -214,6 +221,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "voyager-2021-vyhtt01",
         quote: "Voyager abandoned VY-HTT01 to pursue alternative gene therapies using intravenous administration, a less invasive delivery route.",
         projectRef: "Drug browser: VY-HTT01 discontinued before human trials",
+        fragmentText: "administration, a less invasive delivery route.",
       },
     ],
     verificationStatus: "unverifiable",
@@ -232,6 +240,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "lexeo-2024-lx1001",
         quote: "APOE2 protein was detectable in cerebrospinal fluid across all participants.",
         projectRef: "Drug browser: LX1001 APOE2 gene therapy Phase 1/2 results",
+        fragmentText: "APOE2 protein was detectable in",
       },
     ],
     verificationStatus: "unverifiable",
@@ -250,6 +259,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "passagebio-2025-pbft02",
         quote: "PBFT02 consistently increased CSF PGRN expression in all patients from below 3 ng/mL at baseline to 13\u201327 ng/mL at six months and 22\u201334 ng/mL at 12 months.",
         projectRef: "Drug browser: PBFT02 upliFT-D CSF progranulin restoration",
+        fragmentText: "PBFT02 consistently increased CSF PGRN expression in all",
       },
     ],
     verificationStatus: "unverifiable",
@@ -262,7 +272,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2024,
     doi: "10.1038/s41591-024-02973-0",
     pmid: "38745011",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11108785/#:~:text=One-time%20administration%20of%20PR006%20into%20the%20cisterna%20magna%20was%20generally%20safe%20and%20well%20tolerated",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11108785/",
     tags: ["clinical-trials", "ftd"],
     citations: [
       {
@@ -270,6 +280,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "sevigny-2024-nat-med",
         quote: "One-time administration of PR006 into the cisterna magna was generally safe and well tolerated.",
         projectRef: "Drug browser: PR006 gene therapy safety result",
+        fragmentText: "One-time administration of PR006 into the cisterna magna",
       },
     ],
     verificationStatus: "verified",
@@ -284,7 +295,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2024,
     doi: "10.1002/trc2.12452",
     pmid: "38356474",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10865485/#:~:text=Multiple%E2%80%90dose%20administration%20of%20latozinemab%20increased%20plasma%20and%20CSF%20PGRN%20levels",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10865485/",
     tags: ["clinical-trials", "ftd"],
     citations: [
       {
@@ -292,6 +303,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "ward-2024-alzheimers-dement",
         quote: "Multiple\u2010dose administration of latozinemab increased plasma and CSF PGRN levels in participants with FTD\u2010GRN to levels that approximated those seen in healthy volunteers.",
         projectRef: "Drug browser: Latozinemab Phase 1 progranulin result",
+        fragmentText: "administration of latozinemab increased plasma and CSF PGRN",
       },
     ],
     verificationStatus: "verified",
@@ -306,7 +318,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2022,
     doi: "10.1038/s41467-022-32944-3",
     pmid: "36130946",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9492714/#:~:text=Neflamapimod%20does%20not%20show%20an%20effect%20in%20the%20clinical%20study%20on%20the%20primary%20endpoint",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9492714/",
     tags: ["clinical-trials", "dlb"],
     citations: [
       {
@@ -314,6 +326,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "jiang-2022-nat-commun",
         quote: "Neflamapimod does not show an effect in the clinical study on the primary endpoint, a cognitive-test battery.",
         projectRef: "Drug browser: Neflamapimod AscenD-LB missed primary, secondary signals",
+        fragmentText: "Neflamapimod does not show an effect in the",
       },
     ],
     verificationStatus: "verified",
@@ -326,7 +339,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2014,
     doi: "10.1002/mds.25824",
     pmid: "24532007",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24532007/#:~:text=No%20significant%20differences%20were%20detected%20in%20the%20primary%20or%20secondary%20endpoints",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24532007/",
     tags: ["clinical-trials", "psp"],
     citations: [
       {
@@ -334,6 +347,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "tolosa-2014-mov-disord",
         quote: "No significant differences were detected in the primary or secondary endpoints at week 52 between placebo and either dose of tideglusib.",
         projectRef: "Drug browser: Tideglusib TAUROS PSP trial result",
+        fragmentText: "No significant differences were detected in the primary",
       },
     ],
     verificationStatus: "verified",
@@ -348,7 +362,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41591-025-03920-3",
     pmid: "40913168",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40913168/#:~:text=primary%20and%20key%20secondary%20endpoints%20were%20not%20met",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40913168/",
     tags: ["clinical-trials", "huntingtons"],
     citations: [
       {
@@ -356,6 +370,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "reilmann-2025-nat-med",
         quote: "The TFC least-squares mean difference between pridopidine and placebo was -0.18 (95% confidence interval -0.49 to 0.14; P = 0.26).",
         projectRef: "Drug browser: Pridopidine PROOF-HD Phase 3 HD result",
+        fragmentText: "The TFC least-squares mean difference between pridopidine and",
       },
     ],
     verificationStatus: "verified",
@@ -370,7 +385,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2014,
     doi: "10.1016/S0140-6736(13)62106-6",
     pmid: "24183563",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24183563/#:~:text=pimavanserin%20was%20associated%20with%20a%20-5%C2%B779%20decrease%20in%20SAPS-PD%20scores",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24183563/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -378,6 +393,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "cummings-2014-lancet",
         quote: "pimavanserin was associated with a -5\u00B779 decrease in SAPS-PD scores compared with -2\u00B773 for placebo",
         projectRef: "Drug browser: Pimavanserin PD psychosis pivotal trial result",
+        fragmentText: "pimavanserin was associated with a -579 decrease in",
       },
     ],
     verificationStatus: "verified",
@@ -392,7 +408,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2013,
     doi: "10.1016/S1474-4422(13)70037-1",
     pmid: "23453347",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3610091/#:~:text=We%20found%20no%20evidence%20of%20benefit%20of%20lithium%20on%20survival",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3610091/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -400,6 +416,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "morrison-2013-lancet-neurol",
         quote: "We found no evidence of benefit of lithium on survival in patients with ALS.",
         projectRef: "Drug browser: Lithium carbonate LiCALS Phase 3 ALS result",
+        fragmentText: "We found no evidence of benefit of lithium",
       },
     ],
     verificationStatus: "verified",
@@ -414,7 +431,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2025,
     doi: "10.1016/j.tjpad.2024.100016",
     pmid: "39800452",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39800452/#:~:text=significantly%20slowed%20clinical%20progression%20by%2036.3%25",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39800452/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -422,6 +439,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "macfarlane-2025-j-prev-alzheimers-dis",
         quote: "Blarcamesine significantly slowed clinical progression by 36.3% at 48 weeks.",
         projectRef: "Drug browser: Blarcamesine ANAVEX2-73 Phase 2b/3 AD result",
+        fragmentText: "significantly slowed clinical progression by 36.3 at 48",
       },
     ],
     verificationStatus: "verified",
@@ -436,7 +454,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2023,
     doi: "10.1038/s41467-023-40734-8",
     pmid: "37591957",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37591957/#:~:text=primary%20outcome%2C%20the%20number%20of%20patients%20exhibiting%20an%20increase",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37591957/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -444,6 +462,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "mandrioli-2023-nat-commun",
         quote: "The primary outcome, the number of patients exhibiting an increase >30% in regulatory T cells from baseline to treatment end, was not attained.",
         projectRef: "Drug browser: Rapamycin RANsOM Phase 2 ALS result",
+        fragmentText: "The primary outcome, the number of patients exhibiting",
       },
     ],
     verificationStatus: "verified",
@@ -458,7 +477,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2023,
     doi: "10.1016/j.eclinm.2023.102036",
     pmid: "37396808",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10314176/#:~:text=no%20significant%20difference%20in%20the%20summated%20MUNIX%20score",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10314176/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -466,6 +485,7 @@ export const drugTrialsOtherSources: Source[] = [
         sourceId: "vucic-2023-eclinmedicine",
         quote: "There was no significant difference in the summated MUNIX score percent change between the active and placebo treated groups at week 36.",
         projectRef: "Drug browser: CNM-Au8 RESCUE-ALS Phase 2 result",
+        fragmentText: "there was no significant difference in the summated",
       },
     ],
     verificationStatus: "verified",

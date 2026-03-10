@@ -21,6 +21,7 @@ export const pericyteVascularSources: Source[] = [
           "Establishes pericytes as essential regulators of BBB integrity",
         projectRef:
           "Kinetics model Step 2: AQP4 depolarization onset within hours of pericyte loss",
+          fragmentText: "BBB-specific gene expression patterns in endothelial cells",
       },
     ],
     verificationStatus: "verified",
@@ -41,11 +42,12 @@ export const pericyteVascularSources: Source[] = [
         citationId: "roth-2025-jcbfm-c1",
         sourceId: "roth-2025-jcbfm",
         quote:
-          "Pericyte death onset at 1 hour post-insult with 30% pericyte death and 50% activation",
+          "We find that approximately 30% of the pericyte population dies as early as 1 hour after stroke, while ca 50% express markers that indicate activation.",
         context:
-          "Key timing data for acute cascade kinetics: pericytes respond before endothelial cells",
+          "Pericyte death (30%) and activation (50%) within 1 hour of stroke onset",
         projectRef:
           "Kinetics model Step 1: pericyte death onset, detachment, BBB leakage timeline",
+          fragmentText: "We find that approximately 30 of the pericyte",
       },
     ],
     verificationStatus: "verified",
@@ -59,7 +61,7 @@ export const pericyteVascularSources: Source[] = [
     year: 2024,
     doi: "10.1002/jmv.29671",
     pmid: "38747003",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38747003/#:~:text=SARS%20CoV%202%20causes%20pericyte%20damage%2C%20tight%20junction",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38747003/",
     tags: ["pericyte", "vascular", "covid"],
     citations: [
       {
@@ -70,6 +72,7 @@ export const pericyteVascularSources: Source[] = [
         context: "COVID-19 directly damages BBB pericytes",
         projectRef:
           "Cross-disease: COVID-19 pericyte/vascular pillar evidence",
+          fragmentText: "pericyte damage, tight junction loss, endothelial activation",
       },
     ],
     verificationStatus: "verified",
@@ -83,7 +86,7 @@ export const pericyteVascularSources: Source[] = [
     year: 2006,
     doi: "10.1073/pnas.0605796103",
     pmid: "16938871",
-    url: "https://pubmed.ncbi.nlm.nih.gov/16938871/#:~:text=Temporary%20loss%20of%20perivascular%20aquaporin%204%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16938871/",
     tags: ["pericyte", "vascular", "astrocyte"],
     citations: [
       {
@@ -93,6 +96,7 @@ export const pericyteVascularSources: Source[] = [
           "Temporary loss of perivascular aquaporin-4 in neocortex after transient middle cerebral artery occlusion",
         context: "AQP4 depolarization after ischemic insult",
         projectRef: "Kinetics model Step 2: AQP4 redistribution timeline",
+        fragmentText: "Temporary loss of perivascular aquaporin-4 in neocortex after",
       },
     ],
     verificationStatus: "verified",
@@ -106,18 +110,19 @@ export const pericyteVascularSources: Source[] = [
     year: 2011,
     doi: "10.1073/pnas.1110655108",
     pmid: "21990350",
-    url: "https://pubmed.ncbi.nlm.nih.gov/21990350/#:~:text=31%25%20reduction%20in%20glymphatic%20function%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21990350/",
     tags: ["pericyte", "vascular", "astrocyte"],
     citations: [
       {
         citationId: "haj-yasein-2011-pnas-c1",
         sourceId: "haj-yasein-2011-pnas",
         quote:
-          "31% reduction in glymphatic function in AQP4 knockout mice",
+          "Compared with litter controls, glial-conditional Aqp4 knockout mice showed a 31% reduction in brain water uptake after systemic hypoosmotic stress and a delayed postnatal resorption of brain water.",
         context:
-          "Quantifies the role of AQP4 in glymphatic clearance",
+          "AQP4 knockout reduces brain water uptake by 31% (BBB water transport, not glymphatic clearance)",
         projectRef:
           "Kinetics model Step 2: water uptake reduction in glial AQP4 KO",
+          fragmentText: "Compared with litter controls, glial-conditional Aqp4 knockout mice",
       },
     ],
     verificationStatus: "verified",
@@ -138,11 +143,12 @@ export const pericyteVascularSources: Source[] = [
         citationId: "tachibana-2019-braindev-c1",
         sourceId: "tachibana-2019-braindev",
         quote:
-          "Clasmatodendrosis in ALL examined brain regions with AQP4 shifted FROM perivascular endfeet TO fragmented processes",
+          "Clasmatodendrosis was present in all examined regions of the IAE brains, but none of the control brains. Furthermore, whereas aquaporin 4 was predominantly detected in the perivascular endfeet of astrocytes in the control brains, its primary localization site shifted to the fragmented perisynaptic processes in the IAE brains.",
         context:
-          "Evidence that clasmatodendrosis causes irreversible AQP4 redistribution",
+          "Clasmatodendrosis with AQP4 redistribution from perivascular endfeet to fragmented processes",
         projectRef:
           "Kinetics model Step 2b: clasmatodendrosis and AQP4 redistribution",
+          fragmentText: "Clasmatodendrosis was present in all examined regions of",
       },
     ],
     verificationStatus: "verified",
@@ -167,6 +173,7 @@ export const pericyteVascularSources: Source[] = [
           "Animal model showing COVID-induced BBB damage resembles vascular dementia",
         projectRef:
           "Cross-disease: COVID-19 pericyte/vascular pillar evidence",
+          fragmentText: "resembling small vessel disease",
       },
     ],
     verificationStatus: "verified",
@@ -180,7 +187,7 @@ export const pericyteVascularSources: Source[] = [
     year: 2019,
     doi: "10.1038/s41591-018-0297-y",
     pmid: "30643288",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30643288/#:~:text=Blood%20brain%20barrier%20breakdown%20is%20an%20early",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30643288/",
     tags: ["pericyte", "vascular", "alzheimers", "biomarkers"],
     citations: [
       {
@@ -192,6 +199,7 @@ export const pericyteVascularSources: Source[] = [
           "CSF sPDGFRβ elevated early in cognitive decline, independent of amyloid/tau",
         projectRef:
           "Cross-disease biomarker validation: sPDGFRβ as early AD marker",
+          fragmentText: "Blood-brain barrier breakdown is an early biomarker of",
       },
       {
         citationId: "nation-2019-natmed-c2",
@@ -201,6 +209,7 @@ export const pericyteVascularSources: Source[] = [
         context: "sPDGFR\u03B2 shed from damaged pericytes as BBB breakdown biomarker",
         projectRef:
           "Pillars section: Neurovascular layer pericyte loss evidence",
+          fragmentText: "brain capillary damage using a novel cerebrospinal fluid",
       },
     ],
     verificationStatus: "verified",
@@ -221,11 +230,12 @@ export const pericyteVascularSources: Source[] = [
         citationId: "miners-2019-alzrt-c1",
         sourceId: "miners-2019-alzrt",
         quote:
-          "CSF sPDGFRβ correlates with BBB dysfunction (r = 0.45 with albumin quotient) and tau pathology (r = 0.50 with t-tau, r = 0.41 with p-tau)",
+          "CSF sPDGFRβ level was significantly increased in AD (p = 0.0038) and correlated positively with albumin (r = 0.45, p = 0.007), total tau (r = 0.50, p = 0.0017) and phosphorylated tau (r = 0.41, p = 0.013) in AD but not in controls.",
         context:
-          "Links pericyte damage to both BBB breakdown and tau pathology in AD",
+          "CSF sPDGFRβ correlates with BBB dysfunction and tau pathology in AD",
         projectRef:
           "Cross-disease biomarker validation: AD sPDGFRβ correlations",
+          fragmentText: "CSF sPDGFR level was significantly increased in AD",
       },
     ],
     verificationStatus: "verified",

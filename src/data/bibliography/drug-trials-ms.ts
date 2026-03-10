@@ -9,7 +9,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2017,
     doi: "10.1056/NEJMoa1606468",
     pmid: "28002688",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28002688/#:~:text=ocrelizumab%20was%20associated%20with%20lower%20rates%20of%20clinical%20and%20MRI%20progression",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28002688/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -17,6 +17,7 @@ export const drugTrialsMsSources: Source[] = [
         sourceId: "montalban-2017-nejm",
         quote: "Among patients with primary progressive multiple sclerosis, ocrelizumab was associated with lower rates of clinical and MRI progression than placebo.",
         projectRef: "Drug browser: Ocrelizumab ORATORIO trial result",
+        fragmentText: "Among patients with primary progressive multiple sclerosis, ocrelizumab",
       },
     ],
     verificationStatus: "verified",
@@ -29,7 +30,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2006,
     doi: "10.1056/NEJMoa044397",
     pmid: "16510744",
-    url: "https://pubmed.ncbi.nlm.nih.gov/16510744/#:~:text=reduced%20the%20risk%20of%20the%20sustained%20progression%20of%20disability",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16510744/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -37,6 +38,7 @@ export const drugTrialsMsSources: Source[] = [
         sourceId: "polman-2006-nejm",
         quote: "Natalizumab reduced the risk of the sustained progression of disability and the rate of clinical relapse in patients with relapsing multiple sclerosis.",
         projectRef: "Drug browser: Natalizumab AFFIRM trial result",
+        fragmentText: "Natalizumab reduced the risk of the sustained progression",
       },
     ],
     verificationStatus: "verified",
@@ -49,7 +51,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2010,
     doi: "10.1056/NEJMoa0909494",
     pmid: "20089952",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20089952/#:~:text=both%20doses%20of%20oral%20fingolimod%20improved%20the%20relapse%20rate",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20089952/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -57,6 +59,7 @@ export const drugTrialsMsSources: Source[] = [
         sourceId: "kappos-2010-nejm",
         quote: "As compared with placebo, both doses of oral fingolimod improved the relapse rate, the risk of disability progression, and end points on MRI.",
         projectRef: "Drug browser: Fingolimod FREEDOMS trial result",
+        fragmentText: "As compared with placebo, both doses of oral",
       },
     ],
     verificationStatus: "verified",
@@ -69,7 +72,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2012,
     doi: "10.1056/NEJMoa1114287",
     pmid: "22992073",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22992073/#:~:text=both%20BG-12%20regimens%2C%20as%20compared%20with%20placebo%2C%20significantly%20reduced",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22992073/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -77,6 +80,7 @@ export const drugTrialsMsSources: Source[] = [
         sourceId: "gold-2012-nejm",
         quote: "In patients with relapsing-remitting multiple sclerosis, both BG-12 regimens, as compared with placebo, significantly reduced the proportion of patients who had a relapse, the annualized relapse rate, the rate of disability progression, and the number of lesions on MRI.",
         projectRef: "Drug browser: Dimethyl fumarate DEFINE trial result",
+        fragmentText: "In patients with relapsing-remitting multiple sclerosis, both BG-12",
       },
     ],
     verificationStatus: "verified",
@@ -89,7 +93,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2018,
     doi: "10.1016/S0140-6736(18)30475-6",
     pmid: "29576505",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29576505/#:~:text=Siponimod%20reduced%20the%20risk%20of%20disability%20progression",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29576505/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -97,6 +101,7 @@ export const drugTrialsMsSources: Source[] = [
         sourceId: "kappos-2018-lancet",
         quote: "Siponimod reduced the risk of disability progression with a safety profile similar to that of other S1P modulators and is likely to be a useful treatment for SPMS.",
         projectRef: "Drug browser: Siponimod EXPAND trial result",
+        fragmentText: "Siponimod reduced the risk of disability progression with",
       },
     ],
     verificationStatus: "verified",
@@ -109,7 +114,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2020,
     doi: "10.1056/NEJMoa1917246",
     pmid: "32757523",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32757523/#:~:text=ofatumumab%20was%20associated%20with%20lower%20annualized%20relapse%20rates",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32757523/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -117,6 +122,7 @@ export const drugTrialsMsSources: Source[] = [
         sourceId: "hauser-2020-nejm",
         quote: "Among patients with multiple sclerosis, ofatumumab was associated with lower annualized relapse rates than teriflunomide.",
         projectRef: "Drug browser: Ofatumumab ASCLEPIOS I/II trial result",
+        fragmentText: "Among patients with multiple sclerosis, ofatumumab was associated",
       },
     ],
     verificationStatus: "verified",
@@ -129,7 +135,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2010,
     doi: "10.1056/NEJMoa0902533",
     pmid: "20089960",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20089960/#:~:text=cladribine%20tablets%20significantly%20reduced%20relapse%20rates",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20089960/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -137,6 +143,7 @@ export const drugTrialsMsSources: Source[] = [
         sourceId: "giovannoni-2010-nejm",
         quote: "Treatment with cladribine tablets significantly reduced relapse rates, the risk of disability progression, and MRI measures of disease activity at 96 weeks.",
         projectRef: "Drug browser: Cladribine CLARITY trial result",
+        fragmentText: "Treatment with cladribine tablets significantly reduced relapse rates,",
       },
     ],
     verificationStatus: "verified",
@@ -151,7 +158,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2018,
     doi: "10.1056/NEJMoa1803583",
     pmid: "30157388",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30157388/#:~:text=phase%202%20trial%20involving%20patients%20with",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30157388/",
     tags: ["clinical-trials", "ms"],
     citations: [
       {
@@ -159,6 +166,7 @@ export const drugTrialsMsSources: Source[] = [
         sourceId: "fox-2018-nejm",
         quote: "In a phase 2 trial involving patients with progressive multiple sclerosis, ibudilast was associated with slower progression of brain atrophy than placebo.",
         projectRef: "Drug browser: Ibudilast SPRINT-MS brain atrophy signal",
+        fragmentText: "In a phase 2 trial involving patients with",
       },
     ],
     verificationStatus: "verified",

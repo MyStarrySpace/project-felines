@@ -1,6 +1,7 @@
 "use client";
 
 import { useCitations } from "./citation-provider";
+import { buildTextFragmentUrl } from "./text-fragment";
 
 export function References() {
   const { getOrderedCitations } = useCitations();
@@ -15,9 +16,11 @@ export function References() {
       </h3>
       <ol className="space-y-2 text-sm text-gray-400">
         {citations.map(({ number, source }) => {
-          const url =
+          const baseUrl =
             source.url ||
             (source.doi ? `https://doi.org/${source.doi}` : undefined);
+          const firstFragment = source.citations.find((c) => c.fragmentText)?.fragmentText;
+          const url = baseUrl ? buildTextFragmentUrl(baseUrl, firstFragment) : undefined;
 
           return (
             <li key={source.id} className="flex gap-2">

@@ -1,0 +1,3107 @@
+{
+  "ncbi-gene-cr1": {
+    "fragment": "This gene is a member of the receptors",
+    "method": "ncbi-gene",
+    "quoteHash": "58c15f442f62"
+  },
+  "ncbi-gene-inpp5d": {
+    "fragment": "This gene is a member of the inositol",
+    "method": "ncbi-gene",
+    "quoteHash": "b503c1b756c2"
+  },
+  "ncbi-gene-hla-dqa1": {
+    "fragment": "HLA-DQA1 belongs to the HLA class II alpha",
+    "method": "ncbi-gene",
+    "quoteHash": "068a7d4397b2"
+  },
+  "ncbi-gene-cd2ap": {
+    "fragment": "This gene encodes a scaffolding molecule that regulates",
+    "method": "ncbi-gene",
+    "quoteHash": "a6dc10607e59"
+  },
+  "ncbi-gene-nme8": {
+    "fragment": "This gene encodes a protein with an N-terminal",
+    "method": "ncbi-gene",
+    "quoteHash": "768dbed4370b"
+  },
+  "ncbi-gene-epha1": {
+    "fragment": "This gene belongs to the ephrin receptor subfamily",
+    "method": "ncbi-gene",
+    "quoteHash": "7bfb8d7c841a"
+  },
+  "ncbi-gene-ptk2b": {
+    "fragment": "This gene encodes a cytoplasmic protein tyrosine kinase",
+    "method": "ncbi-gene",
+    "quoteHash": "e0d1ea05121c"
+  },
+  "ncbi-gene-clu": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "153b1173ab1c"
+  },
+  "ncbi-gene-echdc3": {
+    "fragment": "Predicted to enable enoyl-CoA hydratase activity. Involved in",
+    "method": "ncbi-gene",
+    "quoteHash": "83cea04820a7"
+  },
+  "ncbi-gene-celf1": {
+    "fragment": "Members of the CELFBRUNOL protein family contain two",
+    "method": "ncbi-gene",
+    "quoteHash": "b43a296e2a29"
+  },
+  "ncbi-gene-sorl1": {
+    "fragment": "This gene encodes a mosaic protein that belongs",
+    "method": "ncbi-gene",
+    "quoteHash": "d63cce087420"
+  },
+  "ncbi-gene-fermt2": {
+    "fragment": "binding activity and type I transforming growth factor",
+    "method": "ncbi-gene",
+    "quoteHash": "cd6b77a4448d"
+  },
+  "ncbi-gene-sppl2a": {
+    "fragment": "This gene encodes a member of the GXGD",
+    "method": "ncbi-gene",
+    "quoteHash": "1049dc239c65"
+  },
+  "ncbi-gene-adam10": {
+    "fragment": "Members of the ADAM family are cell surface",
+    "method": "ncbi-gene",
+    "quoteHash": "9de342f87d16"
+  },
+  "ncbi-gene-aph1b": {
+    "fragment": "This gene encodes a multi-pass transmembrane protein that",
+    "method": "ncbi-gene",
+    "quoteHash": "a9bcb19241f9"
+  },
+  "ncbi-gene-kat8": {
+    "fragment": "This gene encodes a member of the MYST",
+    "method": "ncbi-gene",
+    "quoteHash": "9b0ff2e307a8"
+  },
+  "ncbi-gene-il34": {
+    "fragment": "Interleukin-34 is a cytokine that promotes the differentiation",
+    "method": "ncbi-gene",
+    "quoteHash": "725208970009"
+  },
+  "ncbi-gene-plcg2": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "934c78bd2b2f"
+  },
+  "ncbi-gene-mapt": {
+    "fragment": "This gene encodes the microtubule-associated protein tau MAPT",
+    "method": "ncbi-gene",
+    "quoteHash": "e1ee9785e735"
+  },
+  "ncbi-gene-abi3": {
+    "fragment": "This gene encodes a member of an adaptor",
+    "method": "ncbi-gene",
+    "quoteHash": "2b08440dfa99"
+  },
+  "ncbi-gene-tspoap1": {
+    "fragment": "involved in regulation of presynaptic cytosolic calcium",
+    "method": "ncbi-gene",
+    "quoteHash": "e5a98ffacbf3"
+  },
+  "ncbi-gene-ace": {
+    "fragment": "This gene encodes an enzyme involved in blood",
+    "method": "ncbi-gene",
+    "quoteHash": "b9fa539fe963"
+  },
+  "ncbi-gene-abca7": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "fd2247567558"
+  },
+  "ncbi-gene-cass4": {
+    "fragment": "Enables protein tyrosine kinase binding activity. Involved in",
+    "method": "ncbi-gene",
+    "quoteHash": "b9ecab4bb516"
+  },
+  "ncbi-gene-adamts1": {
+    "fragment": "This gene encodes a member of the ADAMTS",
+    "method": "ncbi-gene",
+    "quoteHash": "50152671f31e"
+  },
+  "ncbi-gene-sort1": {
+    "fragment": "This gene encodes a member of the VPS10-related",
+    "method": "ncbi-gene",
+    "quoteHash": "fcd45cd490df"
+  },
+  "ncbi-gene-adam17": {
+    "fragment": "This gene encodes a member of the ADAM",
+    "method": "ncbi-gene",
+    "quoteHash": "8c452214b063"
+  },
+  "ncbi-gene-tspan14": {
+    "fragment": "Enables enzyme binding activity. Involved in positive regulation",
+    "method": "ncbi-gene",
+    "quoteHash": "271bbd37a126"
+  },
+  "ncbi-gene-abca1": {
+    "fragment": "The membrane-associated protein encoded by this gene is",
+    "method": "ncbi-gene",
+    "quoteHash": "bb15d5530918"
+  },
+  "ncbi-gene-nck2": {
+    "fragment": "This gene encodes a member of the NCK",
+    "method": "ncbi-gene",
+    "quoteHash": "ed6313e248a0"
+  },
+  "ncbi-gene-tmem106b": {
+    "fragment": "Enables ATPase binding activity. Involved in dendrite morphogenesis",
+    "method": "ncbi-gene",
+    "quoteHash": "de81ff1cfe13"
+  },
+  "ncbi-gene-blnk": {
+    "fragment": "This gene encodes a cytoplasmic linker or adaptor",
+    "method": "ncbi-gene",
+    "quoteHash": "eba0a60c2826"
+  },
+  "ncbi-gene-tnip1": {
+    "fragment": "This gene encodes an A20-binding protein which plays",
+    "method": "ncbi-gene",
+    "quoteHash": "af1b0e8d0b68"
+  },
+  "ncbi-gene-ank3": {
+    "fragment": "Ankyrins are a family of proteins that are",
+    "method": "ncbi-gene",
+    "quoteHash": "1a42f5f5adda"
+  },
+  "ncbi-gene-sharpin": {
+    "fragment": "and regulation of signal transduction. Located in cytosol.",
+    "method": "ncbi-gene",
+    "quoteHash": "198e46210d82"
+  },
+  "ncbi-gene-hs3st5": {
+    "fragment": "HS3ST5 belongs to a group of heparan sulfate",
+    "method": "ncbi-gene",
+    "quoteHash": "0a3b019de03e"
+  },
+  "ncbi-gene-otulin": {
+    "fragment": "This gene encodes a member of the peptidase",
+    "method": "ncbi-gene",
+    "quoteHash": "185da9cb9936"
+  },
+  "ncbi-gene-wdr12": {
+    "fragment": "This gene encodes a member of the WD",
+    "method": "ncbi-gene",
+    "quoteHash": "c35e4768d42e"
+  },
+  "ncbi-gene-rasgef1c": {
+    "fragment": "Predicted to enable guanyl-nucleotide exchange factor activity. Predicted",
+    "method": "ncbi-gene",
+    "quoteHash": "edef471991dc"
+  },
+  "ncbi-gene-prkd3": {
+    "fragment": "This gene belongs to the multigene protein kinase",
+    "method": "ncbi-gene",
+    "quoteHash": "0cce122a6619"
+  },
+  "ncbi-gene-ctsb": {
+    "fragment": "This gene encodes a member of the C1",
+    "method": "ncbi-gene",
+    "quoteHash": "d53d98b5b9e0"
+  },
+  "ncbi-gene-ica1": {
+    "fragment": "This gene encodes a protein with an arfaptin",
+    "method": "ncbi-gene",
+    "quoteHash": "182447b3a020"
+  },
+  "ncbi-gene-dgkq": {
+    "fragment": "The protein encoded by this gene contains three",
+    "method": "ncbi-gene",
+    "quoteHash": "a04884531103"
+  },
+  "ncbi-gene-cd33": {
+    "fragment": "Golgi apparatus external side of plasma membrane and",
+    "method": "ncbi-gene",
+    "quoteHash": "3f246b781fc0"
+  },
+  "ncbi-gene-doc2a": {
+    "fragment": "There are at least two protein isoforms of",
+    "method": "ncbi-gene",
+    "quoteHash": "61add3610f1b"
+  },
+  "ncbi-gene-mme": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "23be522ed51a"
+  },
+  "ncbi-gene-idua": {
+    "fragment": "This gene encodes an enzyme that hydrolyzes the",
+    "method": "ncbi-gene",
+    "quoteHash": "5d4623fd3e83"
+  },
+  "ncbi-gene-rhoh": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "c4d364e14ba6"
+  },
+  "ncbi-gene-ankh": {
+    "fragment": "This gene encodes a multipass transmembrane protein that",
+    "method": "ncbi-gene",
+    "quoteHash": "689169bceb8c"
+  },
+  "ncbi-gene-cox7c": {
+    "fragment": "Cytochrome c oxidase COX, the terminal component of",
+    "method": "ncbi-gene",
+    "quoteHash": "558174702f9a"
+  },
+  "ncbi-gene-tpcn1": {
+    "fragment": "Voltage-gated Ca2 and Na channels have 4 homologous",
+    "method": "ncbi-gene",
+    "quoteHash": "58c4adec0338"
+  },
+  "ncbi-gene-igh": {
+    "fragment": "Immunoglobulins recognize foreign antigens and initiate immune responses",
+    "method": "ncbi-gene",
+    "quoteHash": "89bbcf95d377"
+  },
+  "ncbi-gene-snx1": {
+    "fragment": "This gene encodes a member of the sorting",
+    "method": "ncbi-gene",
+    "quoteHash": "a859650b2d1c"
+  },
+  "ncbi-gene-ctsh": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "c7c9010f1be5"
+  },
+  "ncbi-gene-maf": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "74aec436eae0"
+  },
+  "ncbi-gene-foxf1": {
+    "fragment": "This gene belongs to the forkhead family of",
+    "method": "ncbi-gene",
+    "quoteHash": "7ac53136b090"
+  },
+  "ncbi-gene-prdm7": {
+    "fragment": "This gene encodes a member of a family",
+    "method": "ncbi-gene",
+    "quoteHash": "1f1388d9174c"
+  },
+  "ncbi-gene-wdr81": {
+    "fragment": "This gene encodes a multi-domain transmembrane protein which",
+    "method": "ncbi-gene",
+    "quoteHash": "e67e6454acd3"
+  },
+  "ncbi-gene-myo15a": {
+    "fragment": "This gene encodes an unconventional myosin. This protein",
+    "method": "ncbi-gene",
+    "quoteHash": "1c151ad2f309"
+  },
+  "ncbi-gene-grn": {
+    "fragment": "Granulins are a family of secreted, glycosylated peptides",
+    "method": "ncbi-gene",
+    "quoteHash": "c93cf1bde67e"
+  },
+  "ncbi-gene-klf16": {
+    "fragment": "Enables sequence-specific double-stranded DNA binding activity. Predicted to",
+    "method": "ncbi-gene",
+    "quoteHash": "5c9b3aecd6f1"
+  },
+  "ncbi-gene-siglec11": {
+    "fragment": "This gene encodes a member of the sialic",
+    "method": "ncbi-gene",
+    "quoteHash": "f2eb9ac92f4a"
+  },
+  "ncbi-gene-lilrb2": {
+    "fragment": "This gene is a member of the leukocyte",
+    "method": "ncbi-gene",
+    "quoteHash": "e317d2f0cd46"
+  },
+  "ncbi-gene-slc2a4rg": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "579fda27a24e"
+  },
+  "ncbi-gene-app": {
+    "fragment": "This gene encodes a cell surface receptor and",
+    "method": "ncbi-gene",
+    "quoteHash": "078d2a5e471c"
+  },
+  "ncbi-gene-zyg11b": {
+    "fragment": "Involved in positive regulation of proteasomal ubiquitin-dependent protein",
+    "method": "ncbi-gene",
+    "quoteHash": "dd31aad300a5"
+  },
+  "ncbi-gene-kcnd3": {
+    "fragment": "Voltage-gated potassium Kv channels represent the most complex",
+    "method": "ncbi-gene",
+    "quoteHash": "2b70906ff3d4"
+  },
+  "ncbi-gene-gba1": {
+    "fragment": "This gene encodes a lysosomal membrane protein that",
+    "method": "ncbi-gene",
+    "quoteHash": "fa414ddbce7b"
+  },
+  "ncbi-gene-f11r": {
+    "fragment": "Tight junctions represent one mode of cell-to-cell adhesion",
+    "method": "ncbi-gene",
+    "quoteHash": "655f66c2f0dd"
+  },
+  "ncbi-gene-sdhc": {
+    "fragment": "This gene encodes one of four nuclear-encoded subunits",
+    "method": "ncbi-gene",
+    "quoteHash": "f7cded60c43b"
+  },
+  "ncbi-gene-vamp4": {
+    "fragment": "SynaptobrevinsVAMPs, syntaxins, and the 25-kD synaptosomal-associated protein SNAP25",
+    "method": "ncbi-gene",
+    "quoteHash": "6f12f15c03ae"
+  },
+  "ncbi-gene-rab29": {
+    "fragment": "Enables several functions, including dynein complex binding activity",
+    "method": "ncbi-gene",
+    "quoteHash": "150bdcfd76d0"
+  },
+  "ncbi-gene-itpkb": {
+    "fragment": "The protein encoded by this protein regulates inositol",
+    "method": "ncbi-gene",
+    "quoteHash": "626b0a88bb1f"
+  },
+  "ncbi-gene-sipa1l2": {
+    "fragment": "This gene encodes a member of the signal-induced",
+    "method": "ncbi-gene",
+    "quoteHash": "c5fde476d244"
+  },
+  "ncbi-gene-akt3": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "0984cc33bd4e"
+  },
+  "ncbi-gene-kcns3": {
+    "fragment": "Voltage-gated potassium channels form the largest and most",
+    "method": "ncbi-gene",
+    "quoteHash": "35a5f173ef0b"
+  },
+  "ncbi-gene-srd5a2": {
+    "fragment": "This gene encodes a microsomal protein expressed at",
+    "method": "ncbi-gene",
+    "quoteHash": "48bcca71a26e"
+  },
+  "ncbi-gene-birc6": {
+    "fragment": "This gene encodes a protein with a BIR",
+    "method": "ncbi-gene",
+    "quoteHash": "1bfc0643965b"
+  },
+  "ncbi-gene-xpo1": {
+    "fragment": "This cell-cycle-regulated gene encodes a protein that mediates",
+    "method": "ncbi-gene",
+    "quoteHash": "65215c6bf866"
+  },
+  "ncbi-gene-aak1": {
+    "fragment": "This gene encodes a member of the SNF1",
+    "method": "ncbi-gene",
+    "quoteHash": "8d10f3b8d723"
+  },
+  "ncbi-gene-kcnip3": {
+    "fragment": "This gene encodes a member of the family",
+    "method": "ncbi-gene",
+    "quoteHash": "6854f77ae6c0"
+  },
+  "ncbi-gene-tbc1d8": {
+    "fragment": "Predicted to be located in membrane. provided by",
+    "method": "ncbi-gene",
+    "quoteHash": "fe90503d2dd1"
+  },
+  "ncbi-gene-acmsd": {
+    "fragment": "The neuronal excitotoxin quinolinate is an intermediate in",
+    "method": "ncbi-gene",
+    "quoteHash": "7b069d7451e0"
+  },
+  "ncbi-gene-acvr2a": {
+    "fragment": "This gene encodes a receptor that mediates the",
+    "method": "ncbi-gene",
+    "quoteHash": "99a07f9256f1"
+  },
+  "ncbi-gene-acvr1": {
+    "fragment": "Activins are dimeric growth and differentiation factors which",
+    "method": "ncbi-gene",
+    "quoteHash": "9f6be2825843"
+  },
+  "ncbi-gene-tank": {
+    "fragment": "The TRAF tumor necrosis factor receptor-associated factor family",
+    "method": "ncbi-gene",
+    "quoteHash": "79d0f406124a"
+  },
+  "ncbi-gene-stk39": {
+    "fragment": "This gene encodes a serinethreonine kinase that is",
+    "method": "ncbi-gene",
+    "quoteHash": "0373a6155b39"
+  },
+  "ncbi-gene-grm7": {
+    "fragment": "L-glutamate is the major excitatory neurotransmitter in the",
+    "method": "ncbi-gene",
+    "quoteHash": "cfa1ff39cd07"
+  },
+  "ncbi-gene-tbc1d5": {
+    "fragment": "Enables AP-2 adaptor complex binding activity and retromer",
+    "method": "ncbi-gene",
+    "quoteHash": "6cb57915cfcd"
+  },
+  "ncbi-gene-rbms3": {
+    "fragment": "This gene encodes an RNA-binding protein that belongs",
+    "method": "ncbi-gene",
+    "quoteHash": "a955a792a74d"
+  },
+  "ncbi-gene-mobp": {
+    "fragment": "Predicted to be a structural constituent of myelin",
+    "method": "ncbi-gene",
+    "quoteHash": "96f32cbb9966"
+  },
+  "ncbi-gene-pxk": {
+    "fragment": "This gene encodes a phox PX domain-containing protein",
+    "method": "ncbi-gene",
+    "quoteHash": "8f6067fcff0f"
+  },
+  "ncbi-gene-adcy5": {
+    "fragment": "This gene encodes a member of the membrane-bound",
+    "method": "ncbi-gene",
+    "quoteHash": "d1bc48ec47ff"
+  },
+  "ncbi-gene-med12l": {
+    "fragment": "The protein encoded by this gene is part",
+    "method": "ncbi-gene",
+    "quoteHash": "3bc70b3b583e"
+  },
+  "ncbi-gene-sucnr1": {
+    "fragment": "This gene encodes a G-protein-coupled receptor for succinate,",
+    "method": "ncbi-gene",
+    "quoteHash": "26a7fb864192"
+  },
+  "ncbi-gene-plch1": {
+    "fragment": "PLCH1 is a member of the PLC-eta family",
+    "method": "ncbi-gene",
+    "quoteHash": "566bf5d02c33"
+  },
+  "ncbi-gene-sptssb": {
+    "fragment": "Serine palmitoyltransferase SPT EC 2.3.1.50 catalyzes the first",
+    "method": "ncbi-gene",
+    "quoteHash": "5f007ab3333e"
+  },
+  "ncbi-gene-pik3ca": {
+    "fragment": "Phosphatidylinositol 3-kinase is composed of an 85 kDa",
+    "method": "ncbi-gene",
+    "quoteHash": "58814eec07b7"
+  },
+  "ncbi-gene-mccc1": {
+    "fragment": "This gene encodes the large subunit of 3-methylcrotonyl-CoA",
+    "method": "ncbi-gene",
+    "quoteHash": "329cd09b2525"
+  },
+  "ncbi-gene-tmem175": {
+    "fragment": "lysosomal membrane. provided by Alliance of Genome Resources,",
+    "method": "ncbi-gene",
+    "quoteHash": "7783b64ec842"
+  },
+  "ncbi-gene-bst1": {
+    "fragment": "Bone marrow stromal cell antigen-1 is a stromal",
+    "method": "ncbi-gene",
+    "quoteHash": "79080ec92c1b"
+  },
+  "ncbi-gene-lcorl": {
+    "fragment": "This gene encodes a transcription factor that appears",
+    "method": "ncbi-gene",
+    "quoteHash": "37789bcaf2a0"
+  },
+  "ncbi-gene-stbd1": {
+    "fragment": "Enables enzyme binding activity and glycogen binding activity.",
+    "method": "ncbi-gene",
+    "quoteHash": "1f2e9ca560e4"
+  },
+  "ncbi-gene-snca": {
+    "fragment": "Alpha-synuclein is a member of the synuclein family,",
+    "method": "ncbi-gene",
+    "quoteHash": "379fc00fcd2b"
+  },
+  "ncbi-gene-camk2d": {
+    "fragment": "The product of this gene belongs to the",
+    "method": "ncbi-gene",
+    "quoteHash": "10120a7813ba"
+  },
+  "ncbi-gene-clcn3": {
+    "fragment": "This gene encodes a member of the voltage-gated",
+    "method": "ncbi-gene",
+    "quoteHash": "aacbb5fa0800"
+  },
+  "ncbi-gene-slc6a3": {
+    "fragment": "This gene encodes a dopamine transporter which is",
+    "method": "ncbi-gene",
+    "quoteHash": "ac371277d390"
+  },
+  "ncbi-gene-elovl7": {
+    "fragment": "Enables fatty acid elongase activity. Involved in fatty",
+    "method": "ncbi-gene",
+    "quoteHash": "3a3009929da8"
+  },
+  "ncbi-gene-sv2c": {
+    "fragment": "Predicted to be located in plasma membrane and",
+    "method": "ncbi-gene",
+    "quoteHash": "a211d64e9a8d"
+  },
+  "ncbi-gene-fam151b": {
+    "fragment": "Predicted to be active in extracellular space. provided",
+    "method": "ncbi-gene",
+    "quoteHash": "ea8320829309"
+  },
+  "ncbi-gene-znf608": {
+    "fragment": "ion binding activity. Predicted to be involved in",
+    "method": "ncbi-gene",
+    "quoteHash": "34645696b13b"
+  },
+  "ncbi-gene-reep2": {
+    "fragment": "This gene encodes a member of the receptor",
+    "method": "ncbi-gene",
+    "quoteHash": "f18ff3b4050f"
+  },
+  "ncbi-gene-ranbp9": {
+    "fragment": "This gene encodes a protein that binds RAN,",
+    "method": "ncbi-gene",
+    "quoteHash": "3d1c60680b14"
+  },
+  "ncbi-gene-mboat1": {
+    "fragment": "This gene belongs to the membrane-bound O-acetyltransferase superfamily.",
+    "method": "ncbi-gene",
+    "quoteHash": "592d80c5b370"
+  },
+  "ncbi-gene-pom121l2": {
+    "fragment": "Predicted to enable nuclear localization sequence binding activity.",
+    "method": "ncbi-gene",
+    "quoteHash": "3dce26f18202"
+  },
+  "ncbi-gene-znf311": {
+    "fragment": "Predicted to enable DNA-binding transcription factor activity, RNA",
+    "method": "ncbi-gene",
+    "quoteHash": "dc97a4c80ce9"
+  },
+  "ncbi-gene-hla-drb1": {
+    "fragment": "HLA-DRB1 belongs to the HLA class II beta",
+    "method": "ncbi-gene",
+    "quoteHash": "f3194ac4b1b2"
+  },
+  "ncbi-gene-lmbrd1": {
+    "fragment": "This gene encodes a lysosomal membrane protein that",
+    "method": "ncbi-gene",
+    "quoteHash": "697ffe5c5852"
+  },
+  "ncbi-gene-rims1": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "e334e60b7f6b"
+  },
+  "ncbi-gene-fyn": {
+    "fragment": "This gene is a member of the protein-tyrosine",
+    "method": "ncbi-gene",
+    "quoteHash": "932ba5802a3f"
+  },
+  "ncbi-gene-stx7": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "ee67d66fdfc3"
+  },
+  "ncbi-gene-klhl7": {
+    "fragment": "This gene encodes a BTB-Kelch-related protein. The encoded",
+    "method": "ncbi-gene",
+    "quoteHash": "7cbe30580e99"
+  },
+  "ncbi-gene-dync1i1": {
+    "fragment": "Enables spectrin binding activity. Involved in vesicle transport",
+    "method": "ncbi-gene",
+    "quoteHash": "cad1c24ca4ea"
+  },
+  "ncbi-gene-nyap1": {
+    "fragment": "Predicted to be involved in neuron projection morphogenesis",
+    "method": "ncbi-gene",
+    "quoteHash": "ffbc1929abb1"
+  },
+  "ncbi-gene-ptprn2": {
+    "fragment": "This gene encodes a protein with sequence similarity",
+    "method": "ncbi-gene",
+    "quoteHash": "0fb3ba918c18"
+  },
+  "ncbi-gene-cln8": {
+    "fragment": "This gene encodes a transmembrane protein belonging to",
+    "method": "ncbi-gene",
+    "quoteHash": "f8fbeff95911"
+  },
+  "ncbi-gene-prag1": {
+    "fragment": "This gene encodes an enzyme that belongs to",
+    "method": "ncbi-gene",
+    "quoteHash": "ae4d656315f3"
+  },
+  "ncbi-gene-fgf20": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "f662784b8297"
+  },
+  "ncbi-gene-bin3": {
+    "fragment": "The product of this gene is a member",
+    "method": "ncbi-gene",
+    "quoteHash": "f7a0b4f93116"
+  },
+  "ncbi-gene-sybu": {
+    "fragment": "SyntabulinGOLSYN is part of a kinesin motor-adaptor complex",
+    "method": "ncbi-gene",
+    "quoteHash": "f139923462ab"
+  },
+  "ncbi-gene-cyrib": {
+    "fragment": "Enables small GTPase binding activity. Involved in several",
+    "method": "ncbi-gene",
+    "quoteHash": "f3e64f24d5aa"
+  },
+  "ncbi-gene-sh3gl2": {
+    "fragment": "Enables identical protein binding activity. Involved in negative",
+    "method": "ncbi-gene",
+    "quoteHash": "564dfcdaaba2"
+  },
+  "ncbi-gene-ubap1": {
+    "fragment": "This gene is a member of the UBA",
+    "method": "ncbi-gene",
+    "quoteHash": "7abfbaaa77aa"
+  },
+  "ncbi-gene-itga8": {
+    "fragment": "Integrins are heterodimeric transmembrane receptor proteins that mediate",
+    "method": "ncbi-gene",
+    "quoteHash": "60abfb6b5e35"
+  },
+  "ncbi-gene-psd": {
+    "fragment": "This gene encodes a Plekstrin homology and SEC7",
+    "method": "ncbi-gene",
+    "quoteHash": "f0b6d9502056"
+  },
+  "ncbi-gene-as3mt": {
+    "fragment": "AS3MT catalyzes the transfer of a methyl group",
+    "method": "ncbi-gene",
+    "quoteHash": "636cce638633"
+  },
+  "ncbi-gene-bag3": {
+    "fragment": "BAG proteins compete with Hip for binding to",
+    "method": "ncbi-gene",
+    "quoteHash": "98231f5af5e0"
+  },
+  "ncbi-gene-dlg2": {
+    "fragment": "This gene encodes a member of the membrane-associated",
+    "method": "ncbi-gene",
+    "quoteHash": "07fc958526c2"
+  },
+  "ncbi-gene-zw10": {
+    "fragment": "This gene encodes a protein that is one",
+    "method": "ncbi-gene",
+    "quoteHash": "2820b1d3967e"
+  },
+  "ncbi-gene-igsf9b": {
+    "fragment": "Predicted to enable kinase binding activity. Predicted to",
+    "method": "ncbi-gene",
+    "quoteHash": "e1d6d5a8a4d0"
+  },
+  "ncbi-gene-wnk1": {
+    "fragment": "This gene encodes a member of the WNK",
+    "method": "ncbi-gene",
+    "quoteHash": "3d251d72a5a1"
+  },
+  "ncbi-gene-lrrk2": {
+    "fragment": "This gene is a member of the leucine-rich",
+    "method": "ncbi-gene",
+    "quoteHash": "6167f56b0c2a"
+  },
+  "ncbi-gene-slc38a2": {
+    "fragment": "and positive regulation of RNA splicing. Located in",
+    "method": "ncbi-gene",
+    "quoteHash": "c0b5ec5ea3bc"
+  },
+  "ncbi-gene-kcnh3": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "afeda52340c8"
+  },
+  "ncbi-gene-rab21": {
+    "fragment": "This gene belongs to the Rab family of",
+    "method": "ncbi-gene",
+    "quoteHash": "c9a2e1cc5340"
+  },
+  "ncbi-gene-ano4": {
+    "fragment": "transport. Located in plasma membrane. provided by Alliance",
+    "method": "ncbi-gene",
+    "quoteHash": "4671fbe8f3a2"
+  },
+  "ncbi-gene-mvk": {
+    "fragment": "This gene encodes the peroxisomal enzyme mevalonate kinase.",
+    "method": "ncbi-gene",
+    "quoteHash": "dbd00772e7a8"
+  },
+  "ncbi-gene-hip1r": {
+    "fragment": "Enables several functions, including phosphatidylinositol phosphate binding activity",
+    "method": "ncbi-gene",
+    "quoteHash": "bc520715b2a4"
+  },
+  "ncbi-gene-cab39l": {
+    "fragment": "Predicted to enable protein serinethreonine kinase activator activity.",
+    "method": "ncbi-gene",
+    "quoteHash": "50e8b14a66da"
+  },
+  "ncbi-gene-mbnl2": {
+    "fragment": "This gene is a member of the muscleblind",
+    "method": "ncbi-gene",
+    "quoteHash": "5cd1c926c26d"
+  },
+  "ncbi-gene-irs2": {
+    "fragment": "This gene encodes the insulin receptor substrate 2,",
+    "method": "ncbi-gene",
+    "quoteHash": "ad225a7d1bb8"
+  },
+  "ncbi-gene-ralgapa1": {
+    "fragment": "This gene encodes a major subunit of the",
+    "method": "ncbi-gene",
+    "quoteHash": "6b5fe11e6f70"
+  },
+  "ncbi-gene-gch1": {
+    "fragment": "This gene encodes a member of the GTP",
+    "method": "ncbi-gene",
+    "quoteHash": "114ea1ad1995"
+  },
+  "ncbi-gene-galc": {
+    "fragment": "This gene encodes a lysosomal protein which hydrolyzes",
+    "method": "ncbi-gene",
+    "quoteHash": "28589c85660f"
+  },
+  "ncbi-gene-dlk1": {
+    "fragment": "This gene encodes a transmembrane protein that contains",
+    "method": "ncbi-gene",
+    "quoteHash": "fbac4e6fa190"
+  },
+  "ncbi-gene-herc1": {
+    "fragment": "This gen encodes a member of the HERC",
+    "method": "ncbi-gene",
+    "quoteHash": "bafea3e60217"
+  },
+  "ncbi-gene-mfge8": {
+    "fragment": "This gene encodes a preproprotein that is proteolytically",
+    "method": "ncbi-gene",
+    "quoteHash": "34b685247ac6"
+  },
+  "ncbi-gene-cramp1": {
+    "fragment": "Predicted to enable chromatin binding activity. Predicted to",
+    "method": "ncbi-gene",
+    "quoteHash": "705f02ef6a35"
+  },
+  "ncbi-gene-syt17": {
+    "fragment": "binding activity. Involved in positive regulation of dendrite",
+    "method": "ncbi-gene",
+    "quoteHash": "80b54956966b"
+  },
+  "ncbi-gene-atp2a1": {
+    "fragment": "This gene encodes one of the SERCA Ca2-ATPases,",
+    "method": "ncbi-gene",
+    "quoteHash": "625e10c79f36"
+  },
+  "ncbi-gene-stx4": {
+    "fragment": "Enables sphingomyelin phosphodiesterase activator activity. Involved in several",
+    "method": "ncbi-gene",
+    "quoteHash": "d7a92fc5cba2"
+  },
+  "ncbi-gene-cyld": {
+    "fragment": "This gene is encodes a cytoplasmic protein with",
+    "method": "ncbi-gene",
+    "quoteHash": "0ad8392e8c4b"
+  },
+  "ncbi-gene-tox3": {
+    "fragment": "The protein encoded by this gene contains an",
+    "method": "ncbi-gene",
+    "quoteHash": "dc3e13fcf71f"
+  },
+  "ncbi-gene-chd9": {
+    "fragment": "chromatin organization. Located in cytosol and nucleoplasm. provided",
+    "method": "ncbi-gene",
+    "quoteHash": "442b0389269c"
+  },
+  "ncbi-gene-gp1ba": {
+    "fragment": "Glycoprotein Ib GP Ib is a platelet surface",
+    "method": "ncbi-gene",
+    "quoteHash": "8f9bc2bd27d1"
+  },
+  "ncbi-gene-phf23": {
+    "fragment": "ion binding activity. Involved in negative regulation of",
+    "method": "ncbi-gene",
+    "quoteHash": "46d00a805bfa"
+  },
+  "ncbi-gene-ncor1": {
+    "fragment": "This gene encodes a protein that mediates ligand-independent",
+    "method": "ncbi-gene",
+    "quoteHash": "4e469a22e801"
+  },
+  "ncbi-gene-srebf1": {
+    "fragment": "This gene encodes a basic helix-loop-helix-leucine zipper bHLH-Zip",
+    "method": "ncbi-gene",
+    "quoteHash": "6dde7ef83055"
+  },
+  "ncbi-gene-omg": {
+    "fragment": "Predicted to enable identical protein binding activity. Predicted",
+    "method": "ncbi-gene",
+    "quoteHash": "1978e19ed17e"
+  },
+  "ncbi-gene-tubg1": {
+    "fragment": "This gene encodes a member of the tubulin",
+    "method": "ncbi-gene",
+    "quoteHash": "bd62567ede08"
+  },
+  "ncbi-gene-kansl1": {
+    "fragment": "This gene encodes a nuclear protein that is",
+    "method": "ncbi-gene",
+    "quoteHash": "f3e0b5af89e2"
+  },
+  "ncbi-gene-npepps": {
+    "fragment": "This gene encodes the puromycin-sensitive aminopeptidase, a zinc",
+    "method": "ncbi-gene",
+    "quoteHash": "7a9a7f28a666"
+  },
+  "ncbi-gene-ppp1r9b": {
+    "fragment": "This gene encodes a scaffold protein that functions",
+    "method": "ncbi-gene",
+    "quoteHash": "b79f2e5c44cb"
+  },
+  "ncbi-gene-strada": {
+    "fragment": "The protein encoded by this gene contains a",
+    "method": "ncbi-gene",
+    "quoteHash": "54cd0b1b987b"
+  },
+  "ncbi-gene-slc16a6": {
+    "fragment": "Predicted to enable monocarboxylic acid transmembrane transporter activity.",
+    "method": "ncbi-gene",
+    "quoteHash": "6362d4a33e23"
+  },
+  "ncbi-gene-rptor": {
+    "fragment": "This gene encodes a component of a signaling",
+    "method": "ncbi-gene",
+    "quoteHash": "906d2a29ac69"
+  },
+  "ncbi-gene-aspscr1": {
+    "fragment": "The protein encoded by this gene contains a",
+    "method": "ncbi-gene",
+    "quoteHash": "df9752fa7357"
+  },
+  "ncbi-gene-mapre2": {
+    "fragment": "The protein encoded by this gene shares significant",
+    "method": "ncbi-gene",
+    "quoteHash": "f62aa916a670"
+  },
+  "ncbi-gene-rit2": {
+    "fragment": "RIN belongs to the RAS HRAS MIM 190020",
+    "method": "ncbi-gene",
+    "quoteHash": "8b6777f25cff"
+  },
+  "ncbi-gene-sppl2b": {
+    "fragment": "This gene encodes a member of the GXGD",
+    "method": "ncbi-gene",
+    "quoteHash": "f1222d212c44"
+  },
+  "ncbi-gene-isyna1": {
+    "fragment": "This gene encodes an inositol-3-phosphate synthase enzyme. The",
+    "method": "ncbi-gene",
+    "quoteHash": "eb77cdc1721f"
+  },
+  "ncbi-gene-pdcd5": {
+    "fragment": "This gene encodes a protein that is upregulated",
+    "method": "ncbi-gene",
+    "quoteHash": "2092ff5baa2a"
+  },
+  "ncbi-gene-ppfia3": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "98ca9364c0db"
+  },
+  "ncbi-gene-ddrgk1": {
+    "fragment": "The protein encoded by this gene interacts with",
+    "method": "ncbi-gene",
+    "quoteHash": "63cfc210dfd6"
+  },
+  "ncbi-gene-crls1": {
+    "fragment": "This gene encodes a member of the CDP-alcohol",
+    "method": "ncbi-gene",
+    "quoteHash": "7e7d0bd227b3"
+  },
+  "ncbi-gene-tpx2": {
+    "fragment": "and protein kinase binding activity. Involved in activation",
+    "method": "ncbi-gene",
+    "quoteHash": "02c1d5691756"
+  },
+  "ncbi-gene-ptpn1": {
+    "fragment": "The protein encoded by this gene is the",
+    "method": "ncbi-gene",
+    "quoteHash": "7dd68b235ae5"
+  },
+  "ncbi-gene-dyrk1a": {
+    "fragment": "This gene encodes a member of the Dual-specificity",
+    "method": "ncbi-gene",
+    "quoteHash": "848d2419c4c6"
+  },
+  "ncbi-gene-dscam": {
+    "fragment": "This gene is a member of the immunoglobulin",
+    "method": "ncbi-gene",
+    "quoteHash": "ddb0f0347852"
+  },
+  "ncbi-gene-abcg1": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "6e7eeff2dbec"
+  },
+  "ncbi-gene-trpm2": {
+    "fragment": "The protein encoded by this gene",
+    "method": "ncbi-gene",
+    "quoteHash": "aff327146d6b"
+  },
+  "ncbi-gene-adarb1": {
+    "fragment": "This gene encodes the enzyme responsible for pre-mRNA",
+    "method": "ncbi-gene",
+    "quoteHash": "6fc43dfc3d62"
+  },
+  "ncbi-gene-pink1": {
+    "fragment": "This gene encodes a serinethreonine protein kinase that",
+    "method": "ncbi-gene",
+    "quoteHash": "fa95b3ea4042"
+  },
+  "ncbi-gene-prkn": {
+    "fragment": "The precise function of this gene is unknown",
+    "method": "ncbi-gene",
+    "quoteHash": "8d65add2afcf"
+  },
+  "ncbi-gene-vps35": {
+    "fragment": "This gene belongs to a group of vacuolar",
+    "method": "ncbi-gene",
+    "quoteHash": "74753306818e"
+  },
+  "ncbi-gene-gak": {
+    "fragment": "In all eukaryotes, the cell cycle is governed",
+    "method": "ncbi-gene",
+    "quoteHash": "48ae61ac4bd8"
+  },
+  "ncbi-gene-inpp5f": {
+    "fragment": "The protein encoded by this gene is an",
+    "method": "ncbi-gene",
+    "quoteHash": "0a7f1141e12e"
+  },
+  "ncbi-gene-gpnmb": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "d7b4513b7072"
+  },
+  "ncbi-gene-usp8": {
+    "fragment": "This gene encodes a protein that belongs to",
+    "method": "ncbi-gene",
+    "quoteHash": "ed37334a6a09"
+  },
+  "ncbi-gene-clnk-hs3st1": {
+    "fragment": "MIST is a member of the SLP76 family",
+    "method": "ncbi-gene",
+    "quoteHash": "4d6e5765f2aa"
+  },
+  "ncbi-gene-zcwpw1-nyap1": {
+    "fragment": "and methylated histone binding activity. Predicted to be",
+    "method": "ncbi-gene",
+    "quoteHash": "bb589dd9e393"
+  },
+  "ncbi-gene-slc24a4-rin3": {
+    "fragment": "This gene encodes a sodiumpotassiumcalcium exchange protein. The",
+    "method": "ncbi-gene",
+    "quoteHash": "a0651f7c3453"
+  },
+  "ncbi-gene-scimp-rabep1": {
+    "fragment": "This gene encodes a transmembrane adaptor protein that",
+    "method": "ncbi-gene",
+    "quoteHash": "6a664b55a795"
+  },
+  "ncbi-gene-sec61g-egfr": {
+    "fragment": "The Sec61 complex is the central component of",
+    "method": "ncbi-gene",
+    "quoteHash": "8df9120b439a"
+  },
+  "ncbi-gene-rbck1": {
+    "fragment": null,
+    "method": "miss",
+    "quoteHash": "21f0d0ce6d21"
+  },
+  "ncbi-gene-vps13c": {
+    "fragment": null,
+    "method": "miss",
+    "quoteHash": "0db035c7f325"
+  },
+  "ncbi-gene-scarb2": {
+    "fragment": "The protein encoded by this gene is a",
+    "method": "ncbi-gene",
+    "quoteHash": "f49a7e8230c4"
+  },
+  "armulik-2010-nature-c1": {
+    "fragment": "BBB-specific gene expression patterns in endothelial cells",
+    "method": "pubmed-abstract",
+    "quoteHash": "80cf10497c23"
+  },
+  "qiao-2024-jmv-c1": {
+    "fragment": "pericyte damage, tight junction loss, endothelial activation",
+    "method": "pubmed-abstract",
+    "quoteHash": "b37654c49cf6"
+  },
+  "frydenlund-2006-pnas-c1": {
+    "fragment": "Temporary loss of perivascular aquaporin-4 in neocortex after",
+    "method": "pubmed-abstract",
+    "quoteHash": "5fe0e0b24004"
+  },
+  "kim-2023-eid-c1": {
+    "fragment": "resembling small vessel disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "d2ebefcd08d5"
+  },
+  "nation-2019-natmed-c1": {
+    "fragment": "Blood-brain barrier breakdown is an early biomarker of",
+    "method": "pubmed-abstract",
+    "quoteHash": "ea227b819910"
+  },
+  "nation-2019-natmed-c2": {
+    "fragment": "brain capillary damage using a novel cerebrospinal fluid",
+    "method": "pubmed-abstract",
+    "quoteHash": "0757bbc5ac5f"
+  },
+  "hassanin-2025-npjpd-c1": {
+    "fragment": "depends on variant severity and polygenic background",
+    "method": "pubmed-abstract",
+    "quoteHash": "763f189ed387"
+  },
+  "pang-2022-translneurodegen-c1": {
+    "fragment": "in the regulation of autophagy",
+    "method": "pubmed-abstract",
+    "quoteHash": "cf16ff834291"
+  },
+  "kim-2018-actaneuropathcomm-c1": {
+    "fragment": "D409H GBA1 mutation accelerates the progression of pathology",
+    "method": "pubmed-abstract",
+    "quoteHash": "8f7145032875"
+  },
+  "lieberman-2012-autophagy-c1": {
+    "fragment": "of lysosomal storage disorders",
+    "method": "europe-pmc",
+    "quoteHash": "968f9b97f7c4"
+  },
+  "shao-2022-science-c1": {
+    "fragment": "Two FTD-ALS genes converge on the endosomal pathway",
+    "method": "pubmed-abstract",
+    "quoteHash": "5b1c66f1d699"
+  },
+  "paushter-2018-actaneuropathol-c1": {
+    "fragment": "most striking being that homozygous GRN mutation leads",
+    "method": "pubmed-abstract",
+    "quoteHash": "32af9fe064d9"
+  },
+  "devos-2022-nejm-c1": {
+    "fragment": "A total of 372 participants were enrolled 186",
+    "method": "pubmed-abstract",
+    "quoteHash": "6f1b3edcd0a7"
+  },
+  "devos-2022-nejm-c2": {
+    "fragment": "The mean MDS-UPDRS total score at baseline was",
+    "method": "pubmed-abstract",
+    "quoteHash": "eb559accf13b"
+  },
+  "devos-2022-nejm-c3": {
+    "fragment": "Progression of symptoms led to the initiation of",
+    "method": "pubmed-abstract",
+    "quoteHash": "f0282ae73c16"
+  },
+  "devos-2022-nejm-c4": {
+    "fragment": "Nigrostriatal iron content decreased more in the deferiprone",
+    "method": "pubmed-abstract",
+    "quoteHash": "1e84ff08e5dc"
+  },
+  "agrawal-2018-frbm-c1": {
+    "fragment": "A 10-day oral deferiprone treatment in 9-week R62",
+    "method": "pubmed-abstract",
+    "quoteHash": "ca1286c6bda4"
+  },
+  "ayton-2017-brain-c2": {
+    "fragment": "higher hippocampal quantitative susceptibility mapping levels predicted accelerated",
+    "method": "pubmed-abstract",
+    "quoteHash": "c08c45a2cdcc"
+  },
+  "ayton-2015-natcomms-c1": {
+    "fragment": "and is regulated by APOE",
+    "method": "europe-pmc",
+    "quoteHash": "905c043f08d3"
+  },
+  "ayton-2015-natcomms-c2": {
+    "fragment": "Ferritin was strongly associated with CSF apolipoprotein E",
+    "method": "pubmed-abstract",
+    "quoteHash": "3090b0bbb1eb"
+  },
+  "ayton-2015-natcomms-c3": {
+    "fragment": "baseline CSF ferritin levels were negatively associated with",
+    "method": "pubmed-abstract",
+    "quoteHash": "6fb18810a6aa"
+  },
+  "peng-2025-natcomms-c1": {
+    "fragment": "prions trigger ferroptotic markers and",
+    "method": "pubmed-abstract",
+    "quoteHash": "5a78776f4609"
+  },
+  "stockwell-2022-cell-c1": {
+    "fragment": "cell death driven by",
+    "method": "pubmed-abstract",
+    "quoteHash": "2d986f88840c"
+  },
+  "stockwell-2022-cell-c2": {
+    "fragment": "Cysteine and glutamate are used in the biosynthesis",
+    "method": "url-page",
+    "quoteHash": "828ab80252ab"
+  },
+  "jhelum-2020-jneurosci-c1": {
+    "fragment": "Ferroptosis Mediates Cuprizone-Induced Loss of",
+    "method": "pubmed-abstract",
+    "quoteHash": "9f5a2ceb1c31"
+  },
+  "filo-2023-natcomms-c1": {
+    "fragment": "iron mobilization capacity transferriniron",
+    "method": "europe-pmc",
+    "quoteHash": "87db2f01a6e0"
+  },
+  "patel-2002-jneurosci-c1": {
+    "fragment": "By oxidizing the ferrous Fe II form of",
+    "method": "url-page",
+    "quoteHash": "964cf584398d"
+  },
+  "patel-2002-jneurosci-c2": {
+    "fragment": "in the brain could also potentially play a",
+    "method": "url-page",
+    "quoteHash": "68227bae9db5"
+  },
+  "luck-2012-currtopics-c1": {
+    "fragment": "Each lobe N- and C-lobe of hTF forms",
+    "method": "pubmed-abstract",
+    "quoteHash": "283b3b83f8c1"
+  },
+  "luck-2012-currtopics-c2": {
+    "fragment": "generates superoxide, which can ultimately lead to the",
+    "method": "url-page",
+    "quoteHash": "dc22fb9c0afb"
+  },
+  "luck-2012-currtopics-c3": {
+    "fragment": "Iron-bearing hTF in the blood binds tightly to",
+    "method": "pubmed-abstract",
+    "quoteHash": "f02f8e9855f0"
+  },
+  "luck-2012-currtopics-c4": {
+    "fragment": "Once inside the cell, iron is compartmentalized in",
+    "method": "url-page",
+    "quoteHash": "d4899d2fd211"
+  },
+  "nemeth-2004-science-c1": {
+    "fragment": "hepcidin bound to ferroportin in tissue culture cells.",
+    "method": "pubmed-abstract",
+    "quoteHash": "7f57894e7576"
+  },
+  "you-2022-celldeath-c1": {
+    "fragment": "FPN1 of BMVECs is a gateway for iron",
+    "method": "pubmed-abstract",
+    "quoteHash": "8a4f423cb343"
+  },
+  "you-2022-celldeath-c2": {
+    "fragment": "the controller of this gateway is hepcidin secreted",
+    "method": "pubmed-abstract",
+    "quoteHash": "7ada6c5fc358"
+  },
+  "harrison-arosio-1996-bba-c1": {
+    "fragment": "All ferritins have 24 protein subunits arranged in",
+    "method": "pubmed-abstract",
+    "quoteHash": "aa668917bc6e"
+  },
+  "levi-2014-frontpharmacol-c1": {
+    "fragment": "The average age of onset is 39 years",
+    "method": "europe-pmc",
+    "quoteHash": "db3bdecb9b27"
+  },
+  "levi-2014-frontpharmacol-c2": {
+    "fragment": "The symptoms include neurological signs with first appearance",
+    "method": "europe-pmc",
+    "quoteHash": "507bf5f26373"
+  },
+  "levi-2014-frontpharmacol-c3": {
+    "fragment": "The classic form usually manifests in the first",
+    "method": "europe-pmc",
+    "quoteHash": "6eb358215568"
+  },
+  "levi-2014-frontpharmacol-c4": {
+    "fragment": "Iron deposits in the cerebellum, basal ganglia and",
+    "method": "europe-pmc",
+    "quoteHash": "551aeda4d8c8"
+  },
+  "brissot-2018-natrevdisprimers-c1": {
+    "fragment": "Non-HFE forms of haemochromatosis due to mutations in",
+    "method": "pubmed-abstract",
+    "quoteHash": "354536bcaa2d"
+  },
+  "brissot-2018-natrevdisprimers-c2": {
+    "fragment": "Cardiac symptoms consist of cardiac rhythm disorders and",
+    "method": "url-page",
+    "quoteHash": "b0f020dea7eb"
+  },
+  "brissot-2018-natrevdisprimers-c3": {
+    "fragment": "haemochromatosis, they develop symptoms only around",
+    "method": "url-page",
+    "quoteHash": "cd672a2fa07c"
+  },
+  "brissot-2018-natrevdisprimers-c4": {
+    "fragment": "Cellular iron excess in HFE and non-HFE forms",
+    "method": "pubmed-abstract",
+    "quoteHash": "f5ecd383ec51"
+  },
+  "zhao-2023-biompharm-c1": {
+    "fragment": "ferroptosis is a newly discovered programmed cell death",
+    "method": "pubmed-abstract",
+    "quoteHash": "3384d5914473"
+  },
+  "mao-2021-nature-c1": {
+    "fragment": "of cytosolic GPX4 or FSP1 to inhibit ferroptosis",
+    "method": "pubmed-abstract",
+    "quoteHash": "cf645e7f2872"
+  },
+  "alves-2025-sttt-c1": {
+    "fragment": "a key cellular reductant",
+    "method": "pubmed-abstract",
+    "quoteHash": "683f10e94fbb"
+  },
+  "zhou-2024-medcomm-c1": {
+    "fragment": "iNOS acts as another",
+    "method": "europe-pmc",
+    "quoteHash": "1f0e32624149"
+  },
+  "zhou-2024-medcomm-c2": {
+    "fragment": "By reducing lipid peroxyl radicals,",
+    "method": "europe-pmc",
+    "quoteHash": "225f83569b45"
+  },
+  "bersuker-2019-nature-c1": {
+    "fragment": "FSP1 as a key component of a non-mitochondrial",
+    "method": "pubmed-abstract",
+    "quoteHash": "47e66135e1da"
+  },
+  "kraft-2020-acscentsci-c1": {
+    "fragment": "Synthesis of BH4BH2 by GCH1-expressing cells caused lipid",
+    "method": "pubmed-abstract",
+    "quoteHash": "73e0524cfd3d"
+  },
+  "kapralov-2020-natchembiol-c1": {
+    "fragment": "of activated M1 but not alternatively activated M2",
+    "method": "pubmed-abstract",
+    "quoteHash": "e3307f9c610c"
+  },
+  "freitas-2024-nature-c1": {
+    "fragment": "7-DHC effectively shields phospholipids from autoxidation and subsequent",
+    "method": "pubmed-abstract",
+    "quoteHash": "437f121d0da5"
+  },
+  "fernandez-castaneda-2022-cell-c1": {
+    "fragment": "myelinated axon density at",
+    "method": "europe-pmc",
+    "quoteHash": "85f3b0931342"
+  },
+  "johansson-2023-brain-c1": {
+    "fragment": "Symptom onset in autosomal dominant",
+    "method": "europe-pmc",
+    "quoteHash": "d391fb2aa2bf"
+  },
+  "liddelow-2017-nature-c1": {
+    "fragment": "Il-1, TNF, and C1q",
+    "method": "url-page",
+    "quoteHash": "6da0f4430a94"
+  },
+  "liddelow-2017-nature-c2": {
+    "fragment": null,
+    "method": "miss",
+    "quoteHash": "6c529394969d"
+  },
+  "greene-2024-natneurosci-c1": {
+    "fragment": "long COVID-associated cognitive impairment",
+    "method": "pubmed-abstract",
+    "quoteHash": "d472c461e038"
+  },
+  "nakatomi-2014-jnuclmed-c1": {
+    "fragment": "hippocampus, amygdala, thalamus, midbrain",
+    "method": "pubmed-abstract",
+    "quoteHash": "d48d56f0e7b1"
+  },
+  "pagano-2024-invoke2-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "82ae21e13c3c"
+  },
+  "egan-2019-verubecestat-c1": {
+    "fragment": "Verubecestat did not improve",
+    "method": "pubmed-abstract",
+    "quoteHash": "ff17f4c0e928"
+  },
+  "egan-2019-verubecestat-c2": {
+    "fragment": "The trial was terminated for futility after 1454",
+    "method": "pubmed-abstract",
+    "quoteHash": "8d3886302099"
+  },
+  "evoke-2024-semaglutide-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "a2f92e95baad"
+  },
+  "ath434-2025-msa-c2": {
+    "fragment": "The 50 mg dose declined by a mean",
+    "method": "url-page",
+    "quoteHash": "0a9bcc03f755"
+  },
+  "ayton-2025-jamaneurol-c1": {
+    "fragment": "These trial findings show that deferiprone 15 mgkg",
+    "method": "pubmed-abstract",
+    "quoteHash": "21f2f604a1a4"
+  },
+  "ayton-2025-jamaneurol-c2": {
+    "fragment": "change in NTB composite z score for deferiprone,",
+    "method": "pubmed-abstract",
+    "quoteHash": "525a84f12d89"
+  },
+  "ayton-2025-jamaneurol-c3": {
+    "fragment": "phase 2, double-masked, placebo-controlled randomized clinical trial",
+    "method": "pubmed-abstract",
+    "quoteHash": "89e3890e35d5"
+  },
+  "ayton-2025-jamaneurol-c4": {
+    "fragment": "the hippocampus compared with placebo",
+    "method": "pubmed-abstract",
+    "quoteHash": "d7d2044797f3"
+  },
+  "crapper-mclachlan-1991-lancet-c1": {
+    "fragment": "Desferrioxamine treatment led to significant reduction in the",
+    "method": "pubmed-abstract",
+    "quoteHash": "25955e0c14c3"
+  },
+  "honig-2018-solanezumab-c1": {
+    "fragment": "did not significantly affect cognitive decline",
+    "method": "pubmed-abstract",
+    "quoteHash": "1197bb50dba0"
+  },
+  "dapansutrile-pd-2025-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "550d944e224b"
+  },
+  "cummings-2014-alzrt-c1": {
+    "fragment": "The success rate for advancing",
+    "method": "pubmed-abstract",
+    "quoteHash": "0d1f338fd60e"
+  },
+  "wong-2019-biostatistics-c1": {
+    "fragment": "ranges from a minimum of 3.4 for oncology",
+    "method": "europe-pmc",
+    "quoteHash": "28222ea602ad"
+  },
+  "wong-2019-biostatistics-c2": {
+    "fragment": "13.8 of all drug development programs eventually lead",
+    "method": "europe-pmc",
+    "quoteHash": "ebd965bd52c4"
+  },
+  "kim-2022-jad-c1": {
+    "fragment": "These two successes against the 98 failures gives",
+    "method": "pubmed-abstract",
+    "quoteHash": "a570d1adc786"
+  },
+  "kim-2022-jad-c2": {
+    "fragment": "risk measured by probability of success is almost",
+    "method": "europe-pmc",
+    "quoteHash": "757a631e3049"
+  },
+  "vandyck-2023-nejm-lecanemab-c1": {
+    "fragment": "The adjusted least-squares mean change from baseline at",
+    "method": "pubmed-abstract",
+    "quoteHash": "86c667e42a37"
+  },
+  "vandyck-2023-nejm-lecanemab-c2": {
+    "fragment": "Lecanemab resulted in infusion-related reactions in 26.4 of",
+    "method": "pubmed-abstract",
+    "quoteHash": "53e0c44ed9c2"
+  },
+  "mcdade-2022-alz-res-ther-c1": {
+    "fragment": "Clinical progression and gradual re-accumulation of pathological biomarkers",
+    "method": "europe-pmc",
+    "quoteHash": "b8edb5d5083e"
+  },
+  "miller-2022-nejm-tofersen-c1": {
+    "fragment": "In persons with SOD1 ALS, tofersen reduced concentrations",
+    "method": "pubmed-abstract",
+    "quoteHash": "29a63c20484e"
+  },
+  "tarawneh-2024-alz-res-ther-c1": {
+    "fragment": "slowing in CDR-SB progression by 3.2 months at",
+    "method": "europe-pmc",
+    "quoteHash": "47bca36598cf"
+  },
+  "biogen-2024-aduhelm-withdrawal-c1": {
+    "fragment": "Biogen is reprioritizing resources to build a leading",
+    "method": "url-page",
+    "quoteHash": "b4b12d499df2"
+  },
+  "mohamed-2019-biomed-pharmacother-c1": {
+    "fragment": "Improvement in the aforementioned AD surrogate markers post-LF",
+    "method": "pubmed-abstract",
+    "quoteHash": "d90929d6bf8f"
+  },
+  "zanardi-2018-embo-c1": {
+    "fragment": "Ceruloplasmin-treated mice showed amelioration of motor incoordination that",
+    "method": "pubmed-abstract",
+    "quoteHash": "1327d3ad4248"
+  },
+  "kedrion-2025-fda-orphan-c1": {
+    "fragment": "Receiving Orphan Drug Designation from the FDA is",
+    "method": "url-page",
+    "quoteHash": "6039789a5864"
+  },
+  "fillebeen-1999-jbc-c1": {
+    "fragment": "A specific unidirectional transport then occurred via a",
+    "method": "pubmed-abstract",
+    "quoteHash": "8afa7dcf7caf"
+  },
+  "takeda-2026-rusfertide-nda-c1": {
+    "fragment": "Rusfertide is a first-in-class investigational subcutaneous treatment that",
+    "method": "url-page",
+    "quoteHash": "6b5f6e4da4d9"
+  },
+  "pulsesight-2025-pst611-c1": {
+    "fragment": "PST-611 is a first-in-class non-viral vectorized therapy for",
+    "method": "url-page",
+    "quoteHash": "0f3f450b44df"
+  },
+  "wen-2026-ijn-ferritin-c1": {
+    "fragment": "Upon binding to TfR1, HFn is internalized via",
+    "method": "url-page",
+    "quoteHash": "10336c39c900"
+  },
+  "alves-2023-neurology-c1": {
+    "fragment": "the enlargement of ventricles was strongly correlated with",
+    "method": "url-page",
+    "quoteHash": "27a74bcafc0d"
+  },
+  "wolters-2024-alz-dement-c1": {
+    "fragment": "Psychological treatment effects due to unblinding may explain",
+    "method": "pubmed-abstract",
+    "quoteHash": "9870557a0efe"
+  },
+  "muir-2024-alz-dement-c1": {
+    "fragment": "Average treatment effects in recent trials of anti-amyloid",
+    "method": "pubmed-abstract",
+    "quoteHash": "e2e29c489fc6"
+  },
+  "finkelstein-2017-actaneuropathol-c1": {
+    "fragment": "PBT434, an orally bioavailable 8-hydroxyquinazolin-43H-one, binds iron sufficiently",
+    "method": "europe-pmc",
+    "quoteHash": "aa10236b28b6"
+  },
+  "bailey-2025-jbc-c1": {
+    "fragment": "functioned as a ferrous iron chaperone in contrast",
+    "method": "europe-pmc",
+    "quoteHash": "c9a2dac7a4ce"
+  },
+  "bailey-2025-jbc-c2": {
+    "fragment": "supports the redistribution of excess iron, supplementing the",
+    "method": "europe-pmc",
+    "quoteHash": "73c7fee8c70c"
+  },
+  "vandyck-2023-nejm-c1": {
+    "fragment": "The adjusted least-squares mean change from baseline at",
+    "method": "pubmed-abstract",
+    "quoteHash": "01285ca6f5a1"
+  },
+  "espay-2024-eneuro-c1": {
+    "fragment": "Average changes of 3 on the iADRS and",
+    "method": "europe-pmc",
+    "quoteHash": "89de9c1f5ad2"
+  },
+  "espay-2024-eneuro-c2": {
+    "fragment": "This translates to a treatment effect of 2.5",
+    "method": "europe-pmc",
+    "quoteHash": "82f132dba405"
+  },
+  "espay-2024-eneuro-c3": {
+    "fragment": "for this metric to remain constant, the curves",
+    "method": "europe-pmc",
+    "quoteHash": "fac4806cec39"
+  },
+  "espay-2024-eneuro-c4": {
+    "fragment": "This is how the 27 effect figure is",
+    "method": "europe-pmc",
+    "quoteHash": "7c21a7dfbc5d"
+  },
+  "daly-2024-alz-dement-c1": {
+    "fragment": "the slopes of the scales based on caregiver",
+    "method": "europe-pmc",
+    "quoteHash": "ada161c16c6e"
+  },
+  "daly-2024-alz-dement-c2": {
+    "fragment": "Available data do not confirm that lecanemab and",
+    "method": "europe-pmc",
+    "quoteHash": "bfad72092065"
+  },
+  "samtani-2014-ndt-c1": {
+    "fragment": "This inverted U-shaped relationship for progression rate vs",
+    "method": "europe-pmc",
+    "quoteHash": "5e3ccf8b20e3"
+  },
+  "samtani-2014-ndt-c2": {
+    "fragment": "The results show that scores increase exponentially during",
+    "method": "europe-pmc",
+    "quoteHash": "b966dc08b3ad"
+  },
+  "cummings-2022-alzdement-c1": {
+    "fragment": "Since 1995, cumulative private expenditures on clinical stage",
+    "method": "pubmed-abstract",
+    "quoteHash": "3ab034e4526d"
+  },
+  "sabbagh-2025-alzdement-c1": {
+    "fragment": "The blarcamesine group demonstrated improvement compared to the",
+    "method": "url-page",
+    "quoteHash": "5cd57c9cb394"
+  },
+  "shen-2024-frontpharmacol-c1": {
+    "fragment": "lithium can reduce amyloid deposition and tau phosphorylation,",
+    "method": "url-page",
+    "quoteHash": "c7de46856306"
+  },
+  "chan-2022-plosone-c1": {
+    "fragment": "increased functional connectivity in the default mode network",
+    "method": "pubmed-abstract",
+    "quoteHash": "62c66bdc58bc"
+  },
+  "yehia-2024-molneurodegen-c1": {
+    "fragment": "Melatonin can block the leading events of ferroptosis",
+    "method": "pubmed-abstract",
+    "quoteHash": "8ae09b6bfcbd"
+  },
+  "song-2020-frontneurosci-c1": {
+    "fragment": "Nrf2 can directly or indirectly regulate GPX4 protein",
+    "method": "europe-pmc",
+    "quoteHash": "50a53be9638d"
+  },
+  "barthelemy-2024-annneurol-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "c94352faac09"
+  },
+  "barthelemy-2021-neurology-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "789d1d36dede"
+  },
+  "taquet-2024-natmed-c1": {
+    "fragment": "17 increase in diagnosis-free time, translating",
+    "method": "pubmed-abstract",
+    "quoteHash": "d992998eaca3"
+  },
+  "taquet-2025-npjvaccines-c1": {
+    "fragment": "shingles and RSV vaccines",
+    "method": "europe-pmc",
+    "quoteHash": "5a5098c5d99f"
+  },
+  "larosa-2020-biomolecules-c1": {
+    "fragment": "lowering the ferroptosis threshold",
+    "method": "pubmed-abstract",
+    "quoteHash": "2813c4a8a02b"
+  },
+  "gibson-2018-cell-c1": {
+    "fragment": "Methotrexate Chemotherapy Induces Persistent Tri-glial Dysregulation",
+    "method": "pubmed-abstract",
+    "quoteHash": "b07e6717f10a"
+  },
+  "rogers-2002-jbc-c1": {
+    "fragment": "An iron-responsive element type II in the 5-untranslated",
+    "method": "pubmed-abstract",
+    "quoteHash": "4486dc2c8c3a"
+  },
+  "cho-2010-jbc-c1": {
+    "fragment": "Selective translational control of the Alzheimer amyloid precursor",
+    "method": "pubmed-abstract",
+    "quoteHash": "f62bf20154ca"
+  },
+  "duce-2010-cell-c1": {
+    "fragment": "Iron-export ferroxidase activity of -amyloid precursor protein is",
+    "method": "pubmed-abstract",
+    "quoteHash": "a4d4b35f1bb8"
+  },
+  "wong-2014-plosone-c1": {
+    "fragment": "-Amyloid precursor protein does not possess ferroxidase activity",
+    "method": "pubmed-abstract",
+    "quoteHash": "d6dfcbdebe61"
+  },
+  "becerril-ortega-2014-c1": {
+    "fragment": "Iron overload accelerates neuronal amyloid- production and cognitive",
+    "method": "pubmed-abstract",
+    "quoteHash": "300aa5c41dc6"
+  },
+  "tsatsanis-2019-c1": {
+    "fragment": "Post Translational Modulation of -Amyloid Precursor Protein Trafficking",
+    "method": "pubmed-abstract",
+    "quoteHash": "5420a1541d84"
+  },
+  "everett-2014-nanoscale-c1": {
+    "fragment": "Evidence of redox-active iron formation following aggregation of",
+    "method": "pubmed-abstract",
+    "quoteHash": "54cf191d90ca"
+  },
+  "telling-2017-cellchembiol-c1": {
+    "fragment": "Iron Biochemistry is Correlated with Amyloid Plaque Morphology",
+    "method": "pubmed-abstract",
+    "quoteHash": "82354bf1a546"
+  },
+  "nakamura-2007-jacs-c1": {
+    "fragment": "peptide control the redox activity of copper and",
+    "method": "pubmed-abstract",
+    "quoteHash": "e7c445db4869"
+  },
+  "nair-2010-c1": {
+    "fragment": "NMR studies of zinc, copper, and iron binding",
+    "method": "pubmed-abstract",
+    "quoteHash": "d54089217b8c"
+  },
+  "khan-2006-c1": {
+    "fragment": "Redox cycling of iron by",
+    "method": "pubmed-abstract",
+    "quoteHash": "49e3004ae1c4"
+  },
+  "guo-2014-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "afdaba2b182b"
+  },
+  "jin-2023-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "28da37f6cc99"
+  },
+  "arai-1991-c1": {
+    "fragment": "Expression patterns of beta-amyloid precursor protein beta-APP in",
+    "method": "pubmed-abstract",
+    "quoteHash": "d1c25e904698"
+  },
+  "hare-2016-c1": {
+    "fragment": "Laser ablation-inductively coupled plasma-mass spectrometry imaging of white",
+    "method": "pubmed-abstract",
+    "quoteHash": "46d5072dd05a"
+  },
+  "ayton-2015-annneur-c1": {
+    "fragment": "Ferritin levels in the cerebrospinal fluid predict Alzheimers",
+    "method": "pubmed-abstract",
+    "quoteHash": "a46e5290296a"
+  },
+  "lei-2012-natmed-c1": {
+    "fragment": "Tau deficiency induces parkinsonism with dementia by impairing",
+    "method": "pubmed-abstract",
+    "quoteHash": "0da83a327e4e"
+  },
+  "lei-2012-natmed-c2": {
+    "fragment": "loss of tau also causes iron retention, by",
+    "method": "pubmed-abstract",
+    "quoteHash": "f23f237b4b38"
+  },
+  "lei-2012-natmed-c3": {
+    "fragment": "Amyloid precursor protein APP ferroxidase activity couples with",
+    "method": "pubmed-abstract",
+    "quoteHash": "78b3c7414462"
+  },
+  "tuo-2017-c1": {
+    "fragment": "Tau-mediated iron export prevents ferroptotic damage after ischemic",
+    "method": "pubmed-abstract",
+    "quoteHash": "a364c7b8146f"
+  },
+  "guo-2013-iron-tau-c1": {
+    "fragment": "Deferoxamine inhibits iron induced hippocampal tau phosphorylation in",
+    "method": "pubmed-abstract",
+    "quoteHash": "b0122a95f914"
+  },
+  "guo-2013-iron-tau-c2": {
+    "fragment": "intranasal DFO treatment exerts its suppressive effects on",
+    "method": "pubmed-abstract",
+    "quoteHash": "3f65c3fe104c"
+  },
+  "schneider-1999-c1": {
+    "fragment": "Phosphorylation that detaches tau protein from microtubules Ser262,",
+    "method": "pubmed-abstract",
+    "quoteHash": "9a4c8f38597a"
+  },
+  "yamamoto-2002-c1": {
+    "fragment": "Iron III induces aggregation of hyperphosphorylated tau and",
+    "method": "pubmed-abstract",
+    "quoteHash": "14c4533e7fab"
+  },
+  "wang-2022-ferroptosis-tau-c1": {
+    "fragment": "Ferroptosis promotes microtubule-associated protein tau aggregation via GSK-3",
+    "method": "pubmed-abstract",
+    "quoteHash": "59dabd51fa13"
+  },
+  "rao-adlard-2018-c1": {
+    "fragment": "Untangling Tau and Iron Exploring the Interaction Between",
+    "method": "pubmed-abstract",
+    "quoteHash": "2db204cdf5fa"
+  },
+  "egana-2003-c1": {
+    "fragment": "Iron-induced oxidative stress modify tau phosphorylation patterns in",
+    "method": "pubmed-abstract",
+    "quoteHash": "80c6b2adb42e"
+  },
+  "tsatsanis-2020-molpsych-c1": {
+    "fragment": "endocytotic amyloidogenic processing of APP impairs iron export",
+    "method": "pubmed-abstract",
+    "quoteHash": "f99943106427"
+  },
+  "tsatsanis-2020-molpsych-c2": {
+    "fragment": "APP promotes neuronal iron efflux by stabilizing the",
+    "method": "pubmed-abstract",
+    "quoteHash": "5ef47a560728"
+  },
+  "ott-2015-dismodelmech-c1": {
+    "fragment": "Iron is a specific cofactor for distinct oxidation-",
+    "method": "pubmed-abstract",
+    "quoteHash": "e85874a6974f"
+  },
+  "istrate-2012-biophysj-c1": {
+    "fragment": "The zinc coordination site was found to involve",
+    "method": "pubmed-abstract",
+    "quoteHash": "84a52d70e4cf"
+  },
+  "chourrout-2023-actabiomater-c1": {
+    "fragment": "J20 zinc and iron and TgF344 copper strains",
+    "method": "pubmed-abstract",
+    "quoteHash": "bab06b23106f"
+  },
+  "soderberg-2024-scirep-c1": {
+    "fragment": "Amyloid-beta antibody binding to cerebral amyloid angiopathy fibrils",
+    "method": "pubmed-abstract",
+    "quoteHash": "bded1b637675"
+  },
+  "taylor-2024-molneurodeg-c1": {
+    "fragment": "Amyloid- A immunotherapy induced microhemorrhages are linked to",
+    "method": "pubmed-abstract",
+    "quoteHash": "f81cb97b2fcc"
+  },
+  "bolognin-2011-ijbcb-c1": {
+    "fragment": "Both aluminumIII and ironIII ions were found to",
+    "method": "pubmed-abstract",
+    "quoteHash": "6dac8b85c6b8"
+  },
+  "everett-2020-scirep-c1": {
+    "fragment": "Iron stored in ferritin is chemically reduced in",
+    "method": "pubmed-abstract",
+    "quoteHash": "5d94f288eb95"
+  },
+  "streit-2025-pharmrev-c1": {
+    "fragment": "Ferroptosis and pathogenesis of neuritic plaques in Alzheimer",
+    "method": "pubmed-abstract",
+    "quoteHash": "1940e776c757"
+  },
+  "albertini-2025-natneurosci-c1": {
+    "fragment": "The Alzheimers therapeutic Lecanemab attenuates A pathology by",
+    "method": "pubmed-abstract",
+    "quoteHash": "d6912fe838e7"
+  },
+  "fichou-2018-pnas-c1": {
+    "fragment": "Cofactors are essential constituents of stable and seeding-active",
+    "method": "pubmed-abstract",
+    "quoteHash": "fc8a7b45c654"
+  },
+  "ahmadi-2019-jinorgbio-c1": {
+    "fragment": "Interaction of metal ions with tau protein. The",
+    "method": "pubmed-abstract",
+    "quoteHash": "9b81c56e18e7"
+  },
+  "nubling-2012-molneurodegener-c1": {
+    "fragment": "Synergistic influence of phosphorylation and metal ions on",
+    "method": "pubmed-abstract",
+    "quoteHash": "f7a38e4c5b86"
+  },
+  "shulman-2023-nataging-c1": {
+    "fragment": "TANGO a placebo-controlled randomized phase 2 study of",
+    "method": "pubmed-abstract",
+    "quoteHash": "96b6b18db26a"
+  },
+  "hoglinger-2021-lancetneurol-c1": {
+    "fragment": "Safety and efficacy of tilavonemab in progressive supranuclear",
+    "method": "pubmed-abstract",
+    "quoteHash": "97a7b41e2d94"
+  },
+  "mummery-2023-natmed-c1": {
+    "fragment": "in mild Alzheimers disease a phase 1b, randomized,",
+    "method": "pubmed-abstract",
+    "quoteHash": "15f5eb30eef7"
+  },
+  "zhang-2019-elife-c1": {
+    "fragment": "Heparin-induced tau filaments are polymorphic and differ from",
+    "method": "pubmed-abstract",
+    "quoteHash": "609c7ccaf934"
+  },
+  "monteiro-2023-neurology-c1": {
+    "fragment": "Randomized Phase II Study of the Safety and",
+    "method": "pubmed-abstract",
+    "quoteHash": "2619f60b2449"
+  },
+  "zheng-2024-ijms-c1": {
+    "fragment": "The Enigma of Tau Protein Aggregation Mechanistic Insights",
+    "method": "pubmed-abstract",
+    "quoteHash": "ce14b6971a27"
+  },
+  "reinert-2019-c1": {
+    "fragment": "The average intracellular iron concentration is",
+    "method": "europe-pmc",
+    "quoteHash": "64313757d9c0"
+  },
+  "reinert-2019-c2": {
+    "fragment": "oligodendrocytes is fivefold higher",
+    "method": "pubmed-abstract",
+    "quoteHash": "dc67dbcac2ca"
+  },
+  "thorburne-juurlink-1996-c1": {
+    "fragment": "Low glutathione and high iron govern the susceptibility",
+    "method": "pubmed-abstract",
+    "quoteHash": "e81436ce96b4"
+  },
+  "back-1998-c1": {
+    "fragment": "Maturation-dependent vulnerability of oligodendrocytes to oxidative stress-induced death",
+    "method": "pubmed-abstract",
+    "quoteHash": "0dd8afc891a8"
+  },
+  "connor-menzies-1996-c1": {
+    "fragment": "Relationship of iron to oligodendrocytes and myelination",
+    "method": "pubmed-abstract",
+    "quoteHash": "3b5a7515da10"
+  },
+  "todorich-2009-c1": {
+    "fragment": "Oligodendrocytes and myelination the role of iron",
+    "method": "pubmed-abstract",
+    "quoteHash": "56c247008daf"
+  },
+  "cheli-2020-jneurosci-c1": {
+    "fragment": "Impaired Postnatal Myelination in a Conditional Knockout Mouse",
+    "method": "pubmed-abstract",
+    "quoteHash": "4c57729ea5f3"
+  },
+  "cheli-2023-c1": {
+    "fragment": "Transferrin Receptor Is Necessary for Proper Oligodendrocyte Iron",
+    "method": "pubmed-abstract",
+    "quoteHash": "9160285b8238"
+  },
+  "mukherjee-2020-c1": {
+    "fragment": "Oligodendrocytes Provide Antioxidant Defense Function for Neurons by",
+    "method": "pubmed-abstract",
+    "quoteHash": "6a5d410619a8"
+  },
+  "dal-bianco-2017-c1": {
+    "fragment": "Slow expansion of multiple sclerosis iron rim lesions",
+    "method": "pubmed-abstract",
+    "quoteHash": "04b714bb4814"
+  },
+  "absinta-2019-c1": {
+    "fragment": "Association of Chronic Active Multiple Sclerosis Lesions With",
+    "method": "pubmed-abstract",
+    "quoteHash": "8bea385c2cde"
+  },
+  "wade-connor-2025-glia-c1": {
+    "fragment": "The brain has the highest rate of energy",
+    "method": "pubmed-abstract",
+    "quoteHash": "0aff06745dff"
+  },
+  "saverio-2025-redoxbiol-c1": {
+    "fragment": "the physiological and maturation-dependent increase in iron accumulation",
+    "method": "pubmed-abstract",
+    "quoteHash": "2df4a93cb634"
+  },
+  "mironova-2026-science-c1": {
+    "fragment": "The generation of new oligodendrocytes",
+    "method": "pubmed-abstract",
+    "quoteHash": "2b6fa59a9045"
+  },
+  "devries-2024-frontimmunol-c1": {
+    "fragment": "C1q and MBP colocalization increased with age",
+    "method": "europe-pmc",
+    "quoteHash": "77954cb89e82"
+  },
+  "gao-2022-expneurol-c1": {
+    "fragment": "C1q was involved in demyelination in response to",
+    "method": "pubmed-abstract",
+    "quoteHash": "b36941ad81de"
+  },
+  "fischer-2025-jneuroinflamm-c1": {
+    "fragment": "mice and in peripheral blood mononuclear cells of",
+    "method": "pubmed-abstract",
+    "quoteHash": "95aec16d6730"
+  },
+  "haider-2014-jnnp-c1": {
+    "fragment": "Iron was stored primarily within oligodendrocytes and myelin",
+    "method": "pubmed-abstract",
+    "quoteHash": "f9349cde40e8"
+  },
+  "mesquita-2012-c1": {
+    "fragment": "Modulation of iron metabolism in aging and in",
+    "method": "pubmed-abstract",
+    "quoteHash": "fc250149eff0"
+  },
+  "ariza-2015-c1": {
+    "fragment": "Dysregulated iron metabolism in the choroid plexus in",
+    "method": "pubmed-abstract",
+    "quoteHash": "edc7110d2aaf"
+  },
+  "moos-morgan-2000-c1": {
+    "fragment": "Transferrin and transferrin receptor function in brain barrier",
+    "method": "pubmed-abstract",
+    "quoteHash": "36adc7a08675"
+  },
+  "whitehouse-1981-c1": {
+    "fragment": "Alzheimer disease evidence for selective loss of cholinergic",
+    "method": "pubmed-abstract",
+    "quoteHash": "95042de87a62"
+  },
+  "whitehouse-1982-c1": {
+    "fragment": "Alzheimers disease and senile dementia loss of neurons",
+    "method": "pubmed-abstract",
+    "quoteHash": "77202ed35697"
+  },
+  "mark-1997-c1": {
+    "fragment": "A role for 4-hydroxynonenal, an aldehydic product of",
+    "method": "pubmed-abstract",
+    "quoteHash": "ffe73bbd2d18"
+  },
+  "dhenain-1998-c1": {
+    "fragment": "Cerebral T2-weighted signal decrease during aging in the",
+    "method": "pubmed-abstract",
+    "quoteHash": "36606d3a5566"
+  },
+  "sudo-2007-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "bc21af14f69e"
+  },
+  "coupland-2019-c1": {
+    "fragment": "Anticholinergic Drug Exposure and the Risk of Dementia",
+    "method": "pubmed-abstract",
+    "quoteHash": "a316fce32a17"
+  },
+  "pieper-2020-c1": {
+    "fragment": "Anticholinergic drugs and incident dementia, mild cognitive impairment",
+    "method": "pubmed-abstract",
+    "quoteHash": "97376a1f0a3e"
+  },
+  "shafiee-2024-c1": {
+    "fragment": "the NbM may be a focal target of",
+    "method": "pubmed-abstract",
+    "quoteHash": "9f8036c13b31"
+  },
+  "crockett-2024-c1": {
+    "fragment": "Integrity of the lateral NBM tract is most",
+    "method": "pubmed-abstract",
+    "quoteHash": "b4b2853f1de5"
+  },
+  "iliff-2012-c1": {
+    "fragment": "Large amounts of tracer are observed in the",
+    "method": "url-page",
+    "quoteHash": "22272d3bcd11"
+  },
+  "ringstad-2018-c1": {
+    "fragment": "Clearance of the tracer substance was delayed in",
+    "method": "pubmed-abstract",
+    "quoteHash": "96fd6041eefb"
+  },
+  "sanchez-mejia-2008-c1": {
+    "fragment": "Genetic ablation or reduction of GIVA-PLA2 protected hAPP",
+    "method": "pubmed-abstract",
+    "quoteHash": "d9af354849fd"
+  },
+  "kurien-2008-c1": {
+    "fragment": "Aldehydic products, mainly the 4-hydroxy-2-alkenals, form adducts with",
+    "method": "pubmed-abstract",
+    "quoteHash": "8b7db93630e0"
+  },
+  "chuang-2025-c1": {
+    "fragment": "Lesioning basal forebrain cholinergic neurons in female mice",
+    "method": "pubmed-abstract",
+    "quoteHash": "8a9ac4ef9bc7"
+  },
+  "pereira-2020-c1": {
+    "fragment": "Atrophy of Ch4 precedes and predicts future dementia",
+    "method": "pubmed-abstract",
+    "quoteHash": "7381da907d20"
+  },
+  "soscia-2010-plosone-c1": {
+    "fragment": "A peptides inhibited the growth of eight of",
+    "method": "europe-pmc",
+    "quoteHash": "7f5105a14c3c"
+  },
+  "kumar-2016-stm-c1": {
+    "fragment": "Our findings raise the intriguing possibility that -amyloid",
+    "method": "pubmed-abstract",
+    "quoteHash": "dfcda3a89a6a"
+  },
+  "everett-2014-jrsinterface-c1": {
+    "fragment": "These results demonstrate the ability of A to",
+    "method": "pubmed-abstract",
+    "quoteHash": "8e24fe582469"
+  },
+  "seubert-1992-nature-c1": {
+    "fragment": "These findings demonstrate that A beta is produced",
+    "method": "pubmed-abstract",
+    "quoteHash": "a340f4dba35a"
+  },
+  "haass-1992-nature-c1": {
+    "fragment": "A beta is produced in soluble form in",
+    "method": "pubmed-abstract",
+    "quoteHash": "8244009e0b5e"
+  },
+  "hirsch-reinshagen-2004-jbc-c1": {
+    "fragment": "glial ABCA1 is required for cholesterol efflux to",
+    "method": "pubmed-abstract",
+    "quoteHash": "72626c261888"
+  },
+  "wyatt-2011-cmls-c1": {
+    "fragment": "CLU plays a key role in an extracellular",
+    "method": "pubmed-abstract",
+    "quoteHash": "be94fd32b25a"
+  },
+  "kuhn-2010-emboj-c1": {
+    "fragment": "ADAM10 is the physiologically relevant, constitutive alpha-secretase of",
+    "method": "pubmed-abstract",
+    "quoteHash": "658ab279634f"
+  },
+  "absinta-2019-jamaneurol-c1": {
+    "fragment": null,
+    "method": "miss",
+    "quoteHash": "9c7c7e621377"
+  },
+  "an-2018-jneurolsci-c1": {
+    "fragment": "the iron content in the SN of PD",
+    "method": "pubmed-abstract",
+    "quoteHash": "0f21ca12c64c"
+  },
+  "liang-2009-natmed-c1": {
+    "fragment": "Inhibition of the histone demethylase LSD1 blocks alpha-herpesvirus",
+    "method": "pubmed-abstract",
+    "quoteHash": "4d6ad16aa73c"
+  },
+  "liang-2013-scitranslmed-c1": {
+    "fragment": "Targeting the JMJD2 histone demethylases to epigenetically control",
+    "method": "pubmed-abstract",
+    "quoteHash": "fe1e467fe224"
+  },
+  "hong-2007-pnas-c1": {
+    "fragment": "Identification of JmjC domain-containing UTX and JMJD3 as",
+    "method": "pubmed-abstract",
+    "quoteHash": "32d2350152cd"
+  },
+  "yang-2017-plospathogens-c1": {
+    "fragment": "SUMO modification of a heterochromatin histone demethylase JMJD2A",
+    "method": "pubmed-abstract",
+    "quoteHash": "a75625ff56de"
+  },
+  "messer-2015-jvirol-c1": {
+    "fragment": "Inhibition of H3K27me3-specific histone demethylases JMJD3 and UTX",
+    "method": "pubmed-abstract",
+    "quoteHash": "b688ed66a99e"
+  },
+  "ye-2011-plospathogens-c1": {
+    "fragment": "Reactive oxygen species hydrogen peroxide mediates Kaposis sarcoma-associated",
+    "method": "pubmed-abstract",
+    "quoteHash": "f167dea0fd88"
+  },
+  "li-2011-jvirol-c1": {
+    "fragment": "Oxidative stress induces reactivation of Kaposis sarcoma-associated herpesvirus",
+    "method": "pubmed-abstract",
+    "quoteHash": "fecb133544ce"
+  },
+  "jones-2023-ccmr-c1": {
+    "fragment": "human alpha-herpes virus 1 HSV-1 reactivation from latency",
+    "method": "pubmed-abstract",
+    "quoteHash": "fee3927f7e96"
+  },
+  "mathew-2010-frbm-c1": {
+    "fragment": "Accumulation of oxidized proteins in Herpesvirus infected cells",
+    "method": "pubmed-abstract",
+    "quoteHash": "12220fe51e81"
+  },
+  "bloom-2010-bba-c1": {
+    "fragment": "Epigenetic regulation of latent HSV-1 gene expression",
+    "method": "pubmed-abstract",
+    "quoteHash": "6002b84a7d33"
+  },
+  "knipe-2008-nrmicro-c1": {
+    "fragment": "Chromatin control of herpes simplex virus lytic and",
+    "method": "pubmed-abstract",
+    "quoteHash": "9b5f984f3367"
+  },
+  "cliffe-2015-cellhostmicrobe-c1": {
+    "fragment": "Neuronal Stress Pathway Mediating a Histone MethylPhospho Switch",
+    "method": "pubmed-abstract",
+    "quoteHash": "9c7e73e6dd17"
+  },
+  "xie-2025-cell-c1": {
+    "fragment": "The effect of shingles vaccination at different stages",
+    "method": "pubmed-abstract",
+    "quoteHash": "74bf0863e04d"
+  },
+  "polisky-2025-natmed-c1": {
+    "fragment": "Varicella-zoster virus reactivation and the risk of dementia",
+    "method": "pubmed-abstract",
+    "quoteHash": "7a970d45d5cc"
+  },
+  "cairns-2022-jad-c1": {
+    "fragment": "Potential Involvement of Varicella Zoster Virus in Alzheimers",
+    "method": "pubmed-abstract",
+    "quoteHash": "edb98139dfc0"
+  },
+  "readhead-2018-neuron-c1": {
+    "fragment": "Multiscale Analysis of Independent Alzheimers Cohorts Finds Disruption",
+    "method": "pubmed-abstract",
+    "quoteHash": "e966040a41b4"
+  },
+  "bjornevik-2022-science-c1": {
+    "fragment": "Longitudinal analysis reveals high prevalence of Epstein-Barr virus",
+    "method": "pubmed-abstract",
+    "quoteHash": "03107b708123"
+  },
+  "drakesmith-2008-nrmicro-c1": {
+    "fragment": "Viral infection and iron metabolism",
+    "method": "pubmed-abstract",
+    "quoteHash": "717236108570"
+  },
+  "gilden-2009-lancetneurol-c1": {
+    "fragment": "Varicella zoster virus vasculopathies diverse clinical manifestations, laboratory",
+    "method": "pubmed-abstract",
+    "quoteHash": "b1344bc30ca3"
+  },
+  "aquino-2009-radiology-c1": {
+    "fragment": "Age-related iron deposition in the basal ganglia quantitative",
+    "method": "pubmed-abstract",
+    "quoteHash": "1b142f4c7e83"
+  },
+  "xiang-2026-natcomm-c1": {
+    "fragment": "Counteracting FOX proteins epigenetically control the herpesvirus lytic-latent",
+    "method": "url-page",
+    "quoteHash": "e1db9ea05f00"
+  },
+  "liu-2011-jbc-c1": {
+    "fragment": "iron specifically enhances A toxicity but only if",
+    "method": "pubmed-abstract",
+    "quoteHash": "df4c620f4d52"
+  },
+  "shahmoradian-2019-natneurosci-c1": {
+    "fragment": "a crowded environment of membranes therein, including vesicular",
+    "method": "pubmed-abstract",
+    "quoteHash": "7c58ace41b3e"
+  },
+  "shahmoradian-2019-natneurosci-c2": {
+    "fragment": "Filaments interspersed between the membranes and organelles were",
+    "method": "pubmed-abstract",
+    "quoteHash": "6266f00b9c28"
+  },
+  "peng-2010-jinorgbiochem-c1": {
+    "fragment": "The complex is of a 11 stoichiometry and",
+    "method": "pubmed-abstract",
+    "quoteHash": "8feb83ca60dd"
+  },
+  "singh-2009-plosone-c1": {
+    "fragment": "PrPC mediates cellular iron uptake and transport, and",
+    "method": "pubmed-abstract",
+    "quoteHash": "6634409485d8"
+  },
+  "singh-2009-plosone-ko-c1": {
+    "fragment": "selective deletion of PrP in transgenic mice PrPKO",
+    "method": "pubmed-abstract",
+    "quoteHash": "b83d376e0ca1"
+  },
+  "schmitt-ulms-2009-plosone-c1": {
+    "fragment": "the prion gene family is phylogenetically derived from",
+    "method": "pubmed-abstract",
+    "quoteHash": "0bb18b392746"
+  },
+  "schmitt-ulms-2009-plosone-c2": {
+    "fragment": "The level of sequence homology and the presence",
+    "method": "pubmed-abstract",
+    "quoteHash": "77fffe1b6209"
+  },
+  "tharp-2013-bmcgenomics-c1": {
+    "fragment": "that the ancestral gene",
+    "method": "pubmed-abstract",
+    "quoteHash": "6e695c553e0e"
+  },
+  "tharp-2013-bmcgenomics-c2": {
+    "fragment": "Invertebrate species genomes encode a single homologue referred",
+    "method": "europe-pmc",
+    "quoteHash": "db4b5a155ec5"
+  },
+  "tharp-2013-bmcgenomics-c3": {
+    "fragment": "fruit flies express APPL-1 only in neurons",
+    "method": "europe-pmc",
+    "quoteHash": "d874dcb2dcf3"
+  },
+  "kaiser-2012-plosone-c1": {
+    "fragment": "APP and PrP Interact",
+    "method": "europe-pmc",
+    "quoteHash": "011bf33d9e4c"
+  },
+  "davies-2011-plosone-c1": {
+    "fragment": "Here we provide strong evidence that S is",
+    "method": "pubmed-abstract",
+    "quoteHash": "110d248947c6"
+  },
+  "sundermann-2016-bmcgenomics-c1": {
+    "fragment": "sets their period of formation around 550 million",
+    "method": "europe-pmc",
+    "quoteHash": "eee842df1821"
+  },
+  "nishioka-2026-lsa-c1": {
+    "fragment": "A42 fibrils inhibited CTB syncytialization, a critical step",
+    "method": "pubmed-abstract",
+    "quoteHash": "2bdc049db4c0"
+  },
+  "nishioka-2026-lsa-c2": {
+    "fragment": "levels of hypoxia-inducible factor 1- and -secretase BACE-1",
+    "method": "pubmed-abstract",
+    "quoteHash": "79a6736051b5"
+  },
+  "yang-2026-hypertension-c1": {
+    "fragment": "Patients with preeclampsia exhibited elevated hemoglobin, ferritin, and",
+    "method": "pubmed-abstract",
+    "quoteHash": "83f4bf018dc6"
+  },
+  "yang-2026-hypertension-c2": {
+    "fragment": "Iron overload induced ferroptosis and apoptosis in trophoblasts,",
+    "method": "pubmed-abstract",
+    "quoteHash": "5353ee7fa248"
+  },
+  "yang-2026-hypertension-c3": {
+    "fragment": "Both deferoxamine and MitoQ rescued these effects in",
+    "method": "pubmed-abstract",
+    "quoteHash": "8b50dcf6efe1"
+  },
+  "george-2002-genomebiology-c1": {
+    "fragment": "Synuclein family members are not found outside vertebrates",
+    "method": "pubmed-abstract",
+    "quoteHash": "c6a3cf564d74"
+  },
+  "simakov-2020-natecol-c1": {
+    "fragment": "the divergence of lamprey and jawed vertebrate lineages",
+    "method": "europe-pmc",
+    "quoteHash": "522c81be2b2d"
+  },
+  "marin-2023-biology-c1": {
+    "fragment": "A single synuclein-coding gene was present in the",
+    "method": "europe-pmc",
+    "quoteHash": "3a9ed0f03a68"
+  },
+  "cortez-2022-protsci-c1": {
+    "fragment": "PrP likely evolved from the ZIP family of",
+    "method": "url-page",
+    "quoteHash": "9e8686d1c7af"
+  },
+  "bateman-2006-natmed-c1": {
+    "fragment": "Our results indicate A is rapidly produced and",
+    "method": "url-page",
+    "quoteHash": "cfec411b2c2f"
+  },
+  "mawuenyega-2010-science-c1": {
+    "fragment": "in the development of",
+    "method": "pubmed-abstract",
+    "quoteHash": "d846c0b000b5"
+  },
+  "zoltowska-2024-elife-c1": {
+    "fragment": "Collectively, our analyses support a model wherein A42",
+    "method": "europe-pmc",
+    "quoteHash": "868c2f73bfbe"
+  },
+  "zoltowska-2024-elife-c2": {
+    "fragment": "neither murine A42 nor human A17-42 p3, inhibit",
+    "method": "pubmed-abstract",
+    "quoteHash": "e1726014876b"
+  },
+  "quintela-lopez-2019-celldeathdis-c1": {
+    "fragment": "as well as cell survival in cultured oligodendrocytes",
+    "method": "europe-pmc",
+    "quoteHash": "6b92de842fc4"
+  },
+  "quintela-lopez-2019-celldeathdis-c2": {
+    "fragment": "A oligomers required integrin 1 receptor, Src-family kinase",
+    "method": "pubmed-abstract",
+    "quoteHash": "eaff86f0f4f4"
+  },
+  "kayed-2003-science-c1": {
+    "fragment": "all of the soluble oligomers tested display a",
+    "method": "pubmed-abstract",
+    "quoteHash": "fcfc4324ef5b"
+  },
+  "fioriti-2015-neuron-c1": {
+    "fragment": "persistence of long-term memory results from the assembly",
+    "method": "pubmed-abstract",
+    "quoteHash": "4c097fdbd8fa"
+  },
+  "majumdar-2012-cell-c1": {
+    "fragment": null,
+    "method": "miss",
+    "quoteHash": "b8b8ccd66756"
+  },
+  "hervas-2020-science-c1": {
+    "fragment": "Unlike the hydrophobic core of pathogenic amyloids, the",
+    "method": "pubmed-abstract",
+    "quoteHash": "2da895925631"
+  },
+  "chen-2026-actaneuropathol-c1": {
+    "fragment": "tauopathies and FTLD-TDP-43, correlations between Flortaucipir signal and",
+    "method": "url-page",
+    "quoteHash": "237b9d666ae4"
+  },
+  "chen-2026-actaneuropathol-c2": {
+    "fragment": "ferric iron was the main positive predictor in",
+    "method": "url-page",
+    "quoteHash": "bd8fc9175eed"
+  },
+  "chen-2006-jbiochem-c1": {
+    "fragment": "Only in 5 and 25 TFE can Abeta",
+    "method": "pubmed-abstract",
+    "quoteHash": "814e07942d8d"
+  },
+  "lipinski-2013-currneurovascres-c1": {
+    "fragment": "trivalent iron FeIII initiates a hydroxyl radical-catalyzed conversion",
+    "method": "pubmed-abstract",
+    "quoteHash": "ca4b59be05e6"
+  },
+  "bellenguez-2022-natgenet-c1": {
+    "fragment": "We found 75 risk loci, of which 42",
+    "method": "pubmed-abstract",
+    "quoteHash": "8a75ea53069e"
+  },
+  "bellenguez-2022-natgenet-c2": {
+    "fragment": "Pathway enrichment analyses confirmed the involvement of amyloidtau",
+    "method": "pubmed-abstract",
+    "quoteHash": "174ea9427408"
+  },
+  "derossi-2016-molneurodegen-c1": {
+    "fragment": "the large majority of BIN1 is expressed in",
+    "method": "pubmed-abstract",
+    "quoteHash": "cd568c086d6b"
+  },
+  "scotland-2012-plosone-c1": {
+    "fragment": "PICALM plays a critical role in iron homeostasis",
+    "method": "pubmed-abstract",
+    "quoteHash": "eb9c6f6f1058"
+  },
+  "belaidi-2024-molpsychiatry-c1": {
+    "fragment": "apoE is a potent inhibitor of ferroptosis EC50",
+    "method": "pubmed-abstract",
+    "quoteHash": "ff5582140274"
+  },
+  "belaidi-2024-molpsychiatry-c2": {
+    "fragment": "While protection against ferroptosis did not differ between",
+    "method": "pubmed-abstract",
+    "quoteHash": "b11c1cda85a5"
+  },
+  "cantoni-2015-actaneuropathol-c1": {
+    "fragment": "mice had defective clearance of myelin debris and",
+    "method": "pubmed-abstract",
+    "quoteHash": "38e9d2d9ad0d"
+  },
+  "huang-2017-natneurosci-c1": {
+    "fragment": "lower SPI1 expression reduces AD risk by regulating",
+    "method": "pubmed-abstract",
+    "quoteHash": "449c5935b431"
+  },
+  "leonard-2025-medrxiv-c1": {
+    "fragment": "The final combined cross-European meta-analysis identified 134 risk",
+    "method": "url-page",
+    "quoteHash": "bf16221e2cab"
+  },
+  "lange-2025-npjpd-c1": {
+    "fragment": "The polygenic priority score PoPS integrates genome-wide information",
+    "method": "pubmed-abstract",
+    "quoteHash": "a244c57e680d"
+  },
+  "yang-2021-parasitesvectors-c1": {
+    "fragment": "the adjusted HR was 2.878 95 CI 1.709-4.968,",
+    "method": "pubmed-abstract",
+    "quoteHash": "86c200015d12"
+  },
+  "yang-2021-parasitesvectors-c2": {
+    "fragment": "The usage of sulfadiazine or clindamycin in the",
+    "method": "pubmed-abstract",
+    "quoteHash": "663ae0d8b43c"
+  },
+  "yanes-2024-jinfectdis-c1": {
+    "fragment": "T. gondii infection decreased amyloid burden in the",
+    "method": "pubmed-abstract",
+    "quoteHash": "9eff2fbaafd7"
+  },
+  "wang-2023-plosntd-c1": {
+    "fragment": "TgCtwh3 infection is followed by the activation of",
+    "method": "pubmed-abstract",
+    "quoteHash": "57fddb00b4b9"
+  },
+  "wang-2023-plosntd-c2": {
+    "fragment": "The use of DFP led to ferroptosis resistance",
+    "method": "pubmed-abstract",
+    "quoteHash": "0ee6b47f5a09"
+  },
+  "olivera-2021-elife-c1": {
+    "fragment": "The integrity of the microvascular BBB restricts parasite",
+    "method": "pubmed-abstract",
+    "quoteHash": "0c3cda76ef1d"
+  },
+  "gilman-2005-neurology-c1": {
+    "fragment": "Clinical effects of Abeta immunization AN1792 in patients",
+    "method": "pubmed-abstract",
+    "quoteHash": "e5702f8fcf97"
+  },
+  "salloway-2014-nejm-c1": {
+    "fragment": "Two phase 3 trials of bapineuzumab in mild-to-moderate",
+    "method": "pubmed-abstract",
+    "quoteHash": "0c8b12a68f29"
+  },
+  "honig-2018-nejm-c1": {
+    "fragment": "Trial of Solanezumab for Mild Dementia Due to",
+    "method": "pubmed-abstract",
+    "quoteHash": "219d1887e229"
+  },
+  "ostrowitzki-2022-jamaneurol-c1": {
+    "fragment": "Evaluating the Safety and Efficacy of Crenezumab vs",
+    "method": "pubmed-abstract",
+    "quoteHash": "aeff8ae51090"
+  },
+  "bateman-2023-nejm-c1": {
+    "fragment": "the use of gantenerumab led to a lower",
+    "method": "pubmed-abstract",
+    "quoteHash": "dd77f9b18062"
+  },
+  "budd-haeberlein-2022-jpad-c1": {
+    "fragment": "Two Randomized Phase 3 Studies of Aducanumab in",
+    "method": "pubmed-abstract",
+    "quoteHash": "74cc700e239f"
+  },
+  "van-dyck-2023-nejm-c1": {
+    "fragment": "Lecanemab in Early Alzheimers Disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "4b6bc109cc5c"
+  },
+  "sims-2023-jama-c1": {
+    "fragment": "Donanemab in Early Symptomatic Alzheimer Disease The TRAILBLAZER-ALZ",
+    "method": "pubmed-abstract",
+    "quoteHash": "4bdded036819"
+  },
+  "egan-2018-nejm-verubecestat-c1": {
+    "fragment": "Randomized Trial of Verubecestat for Mild-to-Moderate Alzheimers Disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "0f50489dea35"
+  },
+  "sperling-2021-jamaneurol-c1": {
+    "fragment": "Findings of Efficacy, Safety, and Biomarker Outcomes of",
+    "method": "pubmed-abstract",
+    "quoteHash": "d52955dfe953"
+  },
+  "wessels-2020-jamaneurol-c1": {
+    "fragment": "Efficacy and Safety of Lanabecestat for Treatment of",
+    "method": "pubmed-abstract",
+    "quoteHash": "4a1e1284bb30"
+  },
+  "eisai-2019-elenbecestat-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "d314f1702a5a"
+  },
+  "tariot-2024-alzdement-c1": {
+    "fragment": "Reversibility of cognitive worsening observed with BACE inhibitor",
+    "method": "pubmed-abstract",
+    "quoteHash": "b0e238c2d58c"
+  },
+  "fleisher-2024-neurology-c1": {
+    "fragment": "Assessment of Efficacy and Safety of Zagotenemab Results",
+    "method": "pubmed-abstract",
+    "quoteHash": "31f319b8f4aa"
+  },
+  "wildsmith-2025-jpad-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "079d4ff54064"
+  },
+  "adapt-2008-archneurol-c1": {
+    "fragment": "Cognitive function over time in the Alzheimers Disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "698fda72f8e6"
+  },
+  "xiao-2021-alzresther-c1": {
+    "fragment": "A 36-week multicenter, randomized, double-blind, placebo-controlled, parallel-group, phase",
+    "method": "pubmed-abstract",
+    "quoteHash": "3c8a4153bdb8"
+  },
+  "cummings-2025-alzresther-c1": {
+    "fragment": "semaglutide in early-stage symptomatic Alzheimers disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "49fb1439805d"
+  },
+  "alector-2024-al002-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "ffdbfa5354fc"
+  },
+  "marchetti-2018-pnas-c1": {
+    "fragment": "OLT1177, a -sulfonyl nitrile compound, safe in humans,",
+    "method": "pubmed-abstract",
+    "quoteHash": "58a1cd1122ff"
+  },
+  "potter-2021-alzdemtrci-c1": {
+    "fragment": "Safety and efficacy of sargramostim GM-CSF in the",
+    "method": "pubmed-abstract",
+    "quoteHash": "261648ce6403"
+  },
+  "burns-2021-lancetneurol-c1": {
+    "fragment": "Safety and efficacy of pioglitazone for the delay",
+    "method": "pubmed-abstract",
+    "quoteHash": "e338104afcfe"
+  },
+  "devanand-2026-jama-c1": {
+    "fragment": "Valacyclovir Treatment of Early Symptomatic Alzheimer Disease The",
+    "method": "pubmed-abstract",
+    "quoteHash": "63b9ad1b5100"
+  },
+  "doody-2008-lancet-c1": {
+    "fragment": "Effect of dimebon on cognition, activities of daily",
+    "method": "pubmed-abstract",
+    "quoteHash": "e44a54d10186"
+  },
+  "gauthier-2016-lancet-c1": {
+    "fragment": "Efficacy and safety of tau-aggregation inhibitor therapy in",
+    "method": "pubmed-abstract",
+    "quoteHash": "927f5e8582b1"
+  },
+  "biohaven-2021-troriluzole-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "efffb200b6f0"
+  },
+  "doody-2013-nejm-c1": {
+    "fragment": "A phase 3 trial of semagacestat for treatment",
+    "method": "pubmed-abstract",
+    "quoteHash": "0b3a0d127996"
+  },
+  "coric-2015-jamaneurol-c1": {
+    "fragment": "Targeting Prodromal Alzheimer Disease With Avagacestat",
+    "method": "pubmed-abstract",
+    "quoteHash": "e14d6b812367"
+  },
+  "rogers-1998-neurology-c1": {
+    "fragment": "Donepezil improves cognition and global function in Alzheimer",
+    "method": "pubmed-abstract",
+    "quoteHash": "52cdda2287b6"
+  },
+  "corey-bloom-1998-ijgp-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "a5ce3aa26dec"
+  },
+  "raskind-2000-neurology-c1": {
+    "fragment": "Galantamine in AD A 6-month randomized, placebo-controlled trial",
+    "method": "pubmed-abstract",
+    "quoteHash": "358790186edb"
+  },
+  "reisberg-2003-nejm-c1": {
+    "fragment": "Memantine in moderate-to-severe Alzheimers disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "fa4766ea9cc1"
+  },
+  "edison-2026-natmed-c1": {
+    "fragment": "The primary outcome showed no significant differences in",
+    "method": "pubmed-abstract",
+    "quoteHash": "e38491cfeecb"
+  },
+  "vandyck-2019-jama-neurol-c1": {
+    "fragment": "Statistically significant effects of AZD0530 treatment were not",
+    "method": "pubmed-abstract",
+    "quoteHash": "00120ede391d"
+  },
+  "long-2024-alz-res-ther-c1": {
+    "fragment": "AL002 is currently being tested in a phase",
+    "method": "pubmed-abstract",
+    "quoteHash": "ab016c2c131d"
+  },
+  "pagano-2022-nejm-c1": {
+    "fragment": "Trial of Prasinezumab in Early-Stage Parkinsons Disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "610582d9386d"
+  },
+  "lang-2022-nejm-c1": {
+    "fragment": "Trial of Cinpanemab in Early Parkinsons Disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "146c3282f3a1"
+  },
+  "shering-2025-braincomm-c1": {
+    "fragment": "Phase 1, randomized trials of MEDI1341 cerebrospinal fluid",
+    "method": "pubmed-abstract",
+    "quoteHash": "73f03eeeae46"
+  },
+  "ucb-2024-minzasolmin-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "aa83dab1259b"
+  },
+  "jennings-2023-movdisord-c1": {
+    "fragment": "LRRK2 Inhibition by BIIB122 in Healthy Participants and",
+    "method": "pubmed-abstract",
+    "quoteHash": "c9ca1d4040f5"
+  },
+  "giladi-2023-lancetneurol-c1": {
+    "fragment": "Safety and efficacy of venglustat in GBA1-associated Parkinsons",
+    "method": "pubmed-abstract",
+    "quoteHash": "c915b8b1e3a7"
+  },
+  "vijiaratnam-2025-lancet-c1": {
+    "fragment": "Exenatide once a week versus placebo as a",
+    "method": "pubmed-abstract",
+    "quoteHash": "42e1069457e5"
+  },
+  "meissner-2024-nejm-c1": {
+    "fragment": "In participants with early Parkinsons disease, lixisenatide therapy",
+    "method": "pubmed-abstract",
+    "quoteHash": "3a2e674bc67a"
+  },
+  "psg-2014-jamaneurol-c1": {
+    "fragment": "A randomized clinical trial of high-dosage coenzyme Q10",
+    "method": "pubmed-abstract",
+    "quoteHash": "dbd3a14b3e1b"
+  },
+  "schwarzschild-2021-jama-c1": {
+    "fragment": "Effect of Urate-Elevating Inosine on Early Parkinson Disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "e151b323e78a"
+  },
+  "fahn-2004-nejm-c1": {
+    "fragment": "The severity of parkinsonism increased more in the",
+    "method": "pubmed-abstract",
+    "quoteHash": "9998b6674602"
+  },
+  "parkinson-study-group-2000-jama-c1": {
+    "fragment": "Initial pramipexole treatment resulted in significantly less development",
+    "method": "pubmed-abstract",
+    "quoteHash": "7414da89719e"
+  },
+  "olanow-2009-nejm-c1": {
+    "fragment": "Early treatment with rasagiline at a dose of",
+    "method": "pubmed-abstract",
+    "quoteHash": "32ca7befb707"
+  },
+  "ferreira-2016-lancet-neurol-c1": {
+    "fragment": "Treatment with opicapone 50 mg was superior to",
+    "method": "pubmed-abstract",
+    "quoteHash": "4fc59e10bc30"
+  },
+  "jennings-2023-mov-disord-c1": {
+    "fragment": "At generally safe and well-tolerated doses, BIIB122 achieved",
+    "method": "pubmed-abstract",
+    "quoteHash": "1d5fc568d81c"
+  },
+  "giladi-2023-lancet-neurol-c1": {
+    "fragment": "In people with GBA1-associated Parkinsons disease in our",
+    "method": "pubmed-abstract",
+    "quoteHash": "039f0637964f"
+  },
+  "mullin-2020-jama-neurol-c1": {
+    "fragment": "Mean SD scores on part 3 of the",
+    "method": "pubmed-abstract",
+    "quoteHash": "fef2d4c3d4bc"
+  },
+  "simuni-2021-jama-neurol-c1": {
+    "fragment": "the low CSF exposure and lack of biomarkers",
+    "method": "pubmed-abstract",
+    "quoteHash": "9f5413f0c588"
+  },
+  "psg-2020-ann-intern-med-c1": {
+    "fragment": "Long-term treatment with immediate-release isradipine did not slow",
+    "method": "pubmed-abstract",
+    "quoteHash": "2a2aae4c4e65"
+  },
+  "miller-2022-nejm-c1": {
+    "fragment": "Trial of Antisense Oligonucleotide Tofersen for SOD1 ALS",
+    "method": "pubmed-abstract",
+    "quoteHash": "fce136552afc"
+  },
+  "edaravone-2017-lancetneurol-c1": {
+    "fragment": "Safety and efficacy of edaravone in well defined",
+    "method": "pubmed-abstract",
+    "quoteHash": "7045b6871c11"
+  },
+  "lacomblez-1996-lancet-c1": {
+    "fragment": "Dose-ranging study of riluzole in amyotrophic lateral sclerosis",
+    "method": "pubmed-abstract",
+    "quoteHash": "4565491579f6"
+  },
+  "paganoni-2020-nejm-c1": {
+    "fragment": "Trial of Sodium Phenylbutyrate-Taurursodiol for Amyotrophic Lateral Sclerosis",
+    "method": "pubmed-abstract",
+    "quoteHash": "80bee5660928"
+  },
+  "benatar-2024-lancetneurol-c1": {
+    "fragment": "Safety and efficacy of arimoclomol in",
+    "method": "pubmed-abstract",
+    "quoteHash": "4c97861e2adb"
+  },
+  "cudkowicz-2013-lancetneurol-c1": {
+    "fragment": "Dexpramipexole versus placebo for patients with amyotrophic lateral",
+    "method": "pubmed-abstract",
+    "quoteHash": "cd5089360a1e"
+  },
+  "elia-2016-eurjneurol-c1": {
+    "fragment": "Tauroursodeoxycholic acid in the treatment of patients with",
+    "method": "pubmed-abstract",
+    "quoteHash": "757ac6d75b3a"
+  },
+  "gordon-2007-lancetneurol-c1": {
+    "fragment": "Efficacy of minocycline in patients with amyotrophic lateral",
+    "method": "pubmed-abstract",
+    "quoteHash": "ec6acb0bbfbe"
+  },
+  "mora-2020-alsftd-c1": {
+    "fragment": "Masitinib as an add-on therapy to riluzole in",
+    "method": "pubmed-abstract",
+    "quoteHash": "31ab31044f81"
+  },
+  "vandenberg-2024-lancet-neurol-c1": {
+    "fragment": "On the basis of these phase 1 study",
+    "method": "pubmed-abstract",
+    "quoteHash": "a30da65b1ecd"
+  },
+  "liu-2022-mol-ther-na-c1": {
+    "fragment": "WVE-004 dose-dependently and selectively reduces repeat-containing transcripts in",
+    "method": "pubmed-abstract",
+    "quoteHash": "b90e118fc8b0"
+  },
+  "cudkowicz-2022-muscle-nerve-c1": {
+    "fragment": "Thirty-three percent of MSC-NTF and 28 of placebo",
+    "method": "pubmed-abstract",
+    "quoteHash": "06875242fdf4"
+  },
+  "montalban-2017-nejm-c1": {
+    "fragment": "Among patients with primary progressive multiple sclerosis, ocrelizumab",
+    "method": "pubmed-abstract",
+    "quoteHash": "1cadcd4a31ca"
+  },
+  "polman-2006-nejm-c1": {
+    "fragment": "Natalizumab reduced the risk of the sustained progression",
+    "method": "pubmed-abstract",
+    "quoteHash": "9c7daf55a58b"
+  },
+  "kappos-2010-nejm-c1": {
+    "fragment": "As compared with placebo, both doses of oral",
+    "method": "pubmed-abstract",
+    "quoteHash": "a6ea43148d98"
+  },
+  "gold-2012-nejm-c1": {
+    "fragment": "In patients with relapsing-remitting multiple sclerosis, both BG-12",
+    "method": "pubmed-abstract",
+    "quoteHash": "ca7b7fbfe9bb"
+  },
+  "kappos-2018-lancet-c1": {
+    "fragment": "Siponimod reduced the risk of disability progression with",
+    "method": "pubmed-abstract",
+    "quoteHash": "5e9bf41e7eff"
+  },
+  "hauser-2020-nejm-c1": {
+    "fragment": "Among patients with multiple sclerosis, ofatumumab was associated",
+    "method": "pubmed-abstract",
+    "quoteHash": "f4194f1d0e57"
+  },
+  "giovannoni-2010-nejm-c1": {
+    "fragment": "Treatment with cladribine tablets significantly reduced relapse rates,",
+    "method": "pubmed-abstract",
+    "quoteHash": "4a8679004ba2"
+  },
+  "fox-2018-nejm-c1": {
+    "fragment": "In a phase 2 trial involving patients with",
+    "method": "pubmed-abstract",
+    "quoteHash": "188c2efec99d"
+  },
+  "mccolgan-2023-nejm-c1": {
+    "fragment": "Tominersen in Adults with Manifest Huntingtons Disease",
+    "method": "pubmed-abstract",
+    "quoteHash": "827b34e534c8"
+  },
+  "wave-2024-wve003-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "39c69c130f1d"
+  },
+  "ptc-2025-votoplam-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "5da669b542f3"
+  },
+  "borowsky-2026-natmed-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "08dcb3a5f3d3"
+  },
+  "kosa-2020-msard-c1": {
+    "fragment": "not inhibit disability progression or CNS tissue destruction",
+    "method": "pubmed-abstract",
+    "quoteHash": "234b0a6daf93"
+  },
+  "lynch-2021-ann-neurol-c1": {
+    "fragment": "In the MOXIe trial, omaveloxolone significantly improved neurological",
+    "method": "pubmed-abstract",
+    "quoteHash": "19e65cea90f2"
+  },
+  "parkinson-study-group-2014-jama-neurol-c1": {
+    "fragment": "Coenzyme Q10 was safe and well tolerated in",
+    "method": "pubmed-abstract",
+    "quoteHash": "b5c6db39906e"
+  },
+  "snow-2010-mov-disord-c1": {
+    "fragment": "We showed no difference between MitoQ and placebo",
+    "method": "pubmed-abstract",
+    "quoteHash": "15727f499d55"
+  },
+  "berven-2023-nat-commun-c1": {
+    "fragment": "NR greatly augmented the blood NAD metabolome with",
+    "method": "pubmed-abstract",
+    "quoteHash": "e69b340192af"
+  },
+  "wu-2025-alzheimers-dement-c1": {
+    "fragment": "did not alter cognition as measured by conventional",
+    "method": "pubmed-abstract",
+    "quoteHash": "788623d2d4b4"
+  },
+  "voyager-2021-vyhtt01-c1": {
+    "fragment": "administration, a less invasive delivery route.",
+    "method": "url-page",
+    "quoteHash": "03714bb394e2"
+  },
+  "lexeo-2024-lx1001-c1": {
+    "fragment": "APOE2 protein was detectable in",
+    "method": "url-page",
+    "quoteHash": "1a397d6af218"
+  },
+  "passagebio-2025-pbft02-c1": {
+    "fragment": "PBFT02 consistently increased CSF PGRN expression in all",
+    "method": "url-page",
+    "quoteHash": "351459c7a335"
+  },
+  "sevigny-2024-nat-med-c1": {
+    "fragment": "One-time administration of PR006 into the cisterna magna",
+    "method": "pubmed-abstract",
+    "quoteHash": "79fc5dba5531"
+  },
+  "ward-2024-alzheimers-dement-c1": {
+    "fragment": "administration of latozinemab increased plasma and CSF PGRN",
+    "method": "pubmed-abstract",
+    "quoteHash": "0a7d7f0f0f5e"
+  },
+  "jiang-2022-nat-commun-c1": {
+    "fragment": "Neflamapimod does not show an effect in the",
+    "method": "pubmed-abstract",
+    "quoteHash": "91d71c3d867f"
+  },
+  "tolosa-2014-mov-disord-c1": {
+    "fragment": "No significant differences were detected in the primary",
+    "method": "pubmed-abstract",
+    "quoteHash": "16d216fb52bd"
+  },
+  "reilmann-2025-nat-med-c1": {
+    "fragment": "The TFC least-squares mean difference between pridopidine and",
+    "method": "pubmed-abstract",
+    "quoteHash": "1d6f32d2699e"
+  },
+  "cummings-2014-lancet-c1": {
+    "fragment": "pimavanserin was associated with a -579 decrease in",
+    "method": "pubmed-abstract",
+    "quoteHash": "4a2f890875d6"
+  },
+  "morrison-2013-lancet-neurol-c1": {
+    "fragment": "We found no evidence of benefit of lithium",
+    "method": "pubmed-abstract",
+    "quoteHash": "95c700acf512"
+  },
+  "macfarlane-2025-j-prev-alzheimers-dis-c1": {
+    "fragment": "significantly slowed clinical progression by 36.3 at 48",
+    "method": "pubmed-abstract",
+    "quoteHash": "e20b53aab146"
+  },
+  "mandrioli-2023-nat-commun-c1": {
+    "fragment": "The primary outcome, the number of patients exhibiting",
+    "method": "pubmed-abstract",
+    "quoteHash": "565c313f542f"
+  },
+  "vucic-2023-eclinmedicine-c1": {
+    "fragment": "there was no significant difference in the summated",
+    "method": "pubmed-abstract",
+    "quoteHash": "9c5183d3a6e4"
+  },
+  "verdiperstat-2024-mstar-c1": {
+    "fragment": null,
+    "method": "skip",
+    "quoteHash": "ad9f8a803392"
+  },
+  "roth-2025-jcbfm-c1": {
+    "fragment": "We find that approximately 30 of the pericyte",
+    "method": "pubmed-abstract",
+    "quoteHash": "0e02b7cfbea1"
+  },
+  "haj-yasein-2011-pnas-c1": {
+    "fragment": "Compared with litter controls, glial-conditional Aqp4 knockout mice",
+    "method": "pubmed-abstract",
+    "quoteHash": "6f0746a04670"
+  },
+  "tachibana-2019-braindev-c1": {
+    "fragment": "Clasmatodendrosis was present in all examined regions of",
+    "method": "pubmed-abstract",
+    "quoteHash": "d732a5b5d9a4"
+  },
+  "miners-2019-alzrt-c1": {
+    "fragment": "CSF sPDGFR level was significantly increased in AD",
+    "method": "pubmed-abstract",
+    "quoteHash": "49cf77943c18"
+  },
+  "mullin-2020-jamaneurol-c1": {
+    "fragment": "The study results suggest that ambroxol therapy was",
+    "method": "pubmed-abstract",
+    "quoteHash": "b700b409d10f"
+  },
+  "clarke-2021-biomedicines-c1": {
+    "fragment": "Gaucher and Fabry mouse models displayed proteinase K-resistant",
+    "method": "pubmed-abstract",
+    "quoteHash": "c5ba567b2c89"
+  },
+  "seo-2025-natcomms-c1": {
+    "fragment": "Cog-PASC showed elevated astroglial damage-associated proteins and structural",
+    "method": "pubmed-abstract",
+    "quoteHash": "39e301652a74"
+  },
+  "hanson-2024-natimmunol-c1": {
+    "fragment": "A multivariate signature detected beyond two weeks of",
+    "method": "pubmed-abstract",
+    "quoteHash": "45994fc5559b"
+  },
+  "ayton-2017-brain-c1": {
+    "fragment": "Among participants with amyloid pathology n 45, higher",
+    "method": "pubmed-abstract",
+    "quoteHash": "f6de2e3e29ea"
+  },
+  "ayton-2021-alzdement-c1": {
+    "fragment": "We provide new evidence from a large post",
+    "method": "pubmed-abstract",
+    "quoteHash": "d4e3dba7d605"
+  },
+  "wang-2022-celldeathdiff-c1": {
+    "fragment": "GPX4 depletion was also an early and universal",
+    "method": "pubmed-abstract",
+    "quoteHash": "22dad1ac85ef"
+  },
+  "hallgren-1958-jneurochem-c1": {
+    "fragment": "The effect of age on the non-haemin iron",
+    "method": "pubmed-abstract",
+    "quoteHash": "47b94291f869"
+  },
+  "sanz-alcazar-2024-redoxbiol-c1": {
+    "fragment": "A lack of frataxin induced upregulation of transferrin",
+    "method": "pubmed-abstract",
+    "quoteHash": "784f3371759b"
+  },
+  "kruer-2010-annneurol-c1": {
+    "fragment": "Using autozygosity mapping and candidate gene sequencing, we",
+    "method": "pubmed-abstract",
+    "quoteHash": "551f4251bffa"
+  },
+  "fernandez-castaneda-2022-cell-c2": {
+    "fragment": "Concordantly, humans with lasting cognitive symptoms post-COVID exhibit",
+    "method": "pubmed-abstract",
+    "quoteHash": "e99f665252bf"
+  },
+  "lonnemann-2020-pnas-c1": {
+    "fragment": "The Morris water maze test revealed an impaired",
+    "method": "pubmed-abstract",
+    "quoteHash": "0d63c6c61263"
+  },
+  "newcombe-2022-brain-c1": {
+    "fragment": "months, many patients showed a secondary and temporally",
+    "method": "pubmed-abstract",
+    "quoteHash": "acfc728272fc"
+  },
+  "santiago-gonzalez-2021-redoxbiol-c1": {
+    "fragment": "Cp loss in aged OLs 8 months induced",
+    "method": "pubmed-abstract",
+    "quoteHash": "4d2287b6d599"
+  },
+  "bullock-2005-science-c1": {
+    "fragment": null,
+    "method": "miss",
+    "quoteHash": "931824401e2b"
+  },
+  "adapt-2006-plosct-c1": {
+    "fragment": "The data for naproxen, although not definitive, are",
+    "method": "pubmed-abstract",
+    "quoteHash": "f7cc7fbd5438"
+  },
+  "ath434-2025-msa-c1": {
+    "fragment": "ATH434 demonstrated 48 slowing of clinical progression at",
+    "method": "url-page",
+    "quoteHash": "f17265c32b0d"
+  },
+  "henley-2019-atabecestat-c1": {
+    "fragment": "Preliminary Results of a Trial of Atabecestat in",
+    "method": "pubmed-abstract",
+    "quoteHash": "29b439dc00a9"
+  },
+  "jagust-2021-neurology-c1": {
+    "fragment": "The relationship between time and brain A was",
+    "method": "pubmed-abstract",
+    "quoteHash": "2a68fdc6c091"
+  },
+  "jansen-2022-jamaneurol-c1": {
+    "fragment": "This cross-sectional, individual-participant pooled study included participants from",
+    "method": "pubmed-abstract",
+    "quoteHash": "2eed3f4a293f"
+  },
+  "eyting-2025-nature-c1": {
+    "fragment": "Using these comparison groups in a regression discontinuity",
+    "method": "pubmed-abstract",
+    "quoteHash": "1a2c588c34eb"
+  },
+  "hulse-2001-glia-c1": {
+    "fragment": "a significant reduction in astrocytic process length occurred",
+    "method": "pubmed-abstract",
+    "quoteHash": "d3638ae83877"
+  },
+  "ward-2014-lancetneurol-c1": {
+    "fragment": "During ageing, different iron complexes accumulate in brain",
+    "method": "pubmed-abstract",
+    "quoteHash": "15940010a258"
+  },
+  "wang-2022-molneurodegen-c1": {
+    "fragment": "In lifetime, CSF sPDGFR continually increased since age",
+    "method": "pubmed-abstract",
+    "quoteHash": "f42fbcb09579"
+  },
+  "shahim-2024-alzdement-c1": {
+    "fragment": "TBI patients showed progressive volume loss regardless of",
+    "method": "pubmed-abstract",
+    "quoteHash": "a008e404dd51"
+  },
+  "monje-2022-neuron-c1": {
+    "fragment": "Persistent neurological and neuropsychiatric symptoms affect a substantial",
+    "method": "pubmed-abstract",
+    "quoteHash": "5b649c015410"
+  },
+  "villeda-2011-nature-c1": {
+    "fragment": "We identify chemokines--including CCL11 also known as eotaxin--the",
+    "method": "pubmed-abstract",
+    "quoteHash": "995501c30762"
+  },
+  "whittington-2018-jnuclmed-c1": {
+    "fragment": "Our results provided evidence that A accumulation starts",
+    "method": "pubmed-abstract",
+    "quoteHash": "4aaf6f0be63b"
+  },
+  "barton-2024-ctad-c1": {
+    "fragment": "In the overall study population, no beneficial effect",
+    "method": "url-page",
+    "quoteHash": "7e3b8513cdfd"
+  }
+}

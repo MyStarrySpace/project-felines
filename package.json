@@ -10,6 +10,7 @@
     "verify-bib": "npx tsx scripts/verify-bibliography.ts",
     "verify-claims": "npx tsx scripts/verify-claims.ts",
     "verify-quotes": "npx tsx scripts/verify-quotes.ts",
+    "verify-fragments": "npx tsx scripts/verify-fragments.ts",
     "test": "vitest run"
   },
   "dependencies": {

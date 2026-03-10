@@ -10,7 +10,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2202867",
     pmid: "35921451",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35921451/#:~:text=Trial%20of%20Prasinezumab%20in%20Early%20Stage%20Parkinsons",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35921451/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -18,6 +18,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "pagano-2022-nejm",
         quote: "Trial of Prasinezumab in Early-Stage Parkinson's Disease",
         projectRef: "Drug browser: Prasinezumab PASADENA motor subscale signal",
+        fragmentText: "Trial of Prasinezumab in Early-Stage Parkinsons Disease",
       },
     ],
     verificationStatus: "verified",
@@ -30,7 +31,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2203395",
     pmid: "35921450",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35921450/#:~:text=Trial%20of%20Cinpanemab%20in%20Early%20Parkinsons",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35921450/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -38,6 +39,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "lang-2022-nejm",
         quote: "Trial of Cinpanemab in Early Parkinson's Disease",
         projectRef: "Drug browser: Cinpanemab SPARK failure, no motor or imaging benefit",
+        fragmentText: "Trial of Cinpanemab in Early Parkinsons Disease",
       },
     ],
     verificationStatus: "verified",
@@ -50,7 +52,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2025,
     doi: "10.1093/braincomms/fcaf304",
     pmid: "40936651",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40936651/#:~:text=Phase%201%2C%20randomized%20trials%20of%20MEDI1341%3A",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40936651/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -58,6 +60,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "shering-2025-braincomm",
         quote: "Phase 1, randomized trials of MEDI1341: cerebrospinal fluid free α-synuclein lowered by >50",
         projectRef: "Drug browser: TAK-341 CSF α-syn −59%, MSA Phase 2 failure",
+        fragmentText: "Phase 1, randomized trials of MEDI1341 cerebrospinal fluid",
       },
     ],
     verificationStatus: "verified",
@@ -88,7 +91,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2023,
     doi: "10.1002/mds.29297",
     pmid: "36807624",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36807624/#:~:text=LRRK2%20Inhibition%20by%20BIIB122%20in%20Healthy",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36807624/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -96,6 +99,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "jennings-2023-movdisord",
         quote: "LRRK2 Inhibition by BIIB122 in Healthy Participants and Patients with Parkinson's Disease",
         projectRef: "Drug browser: BIIB122 Phase 2b LUMA ongoing",
+        fragmentText: "LRRK2 Inhibition by BIIB122 in Healthy Participants and",
       },
     ],
     verificationStatus: "verified",
@@ -109,7 +113,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2023,
     doi: "10.1016/S1474-4422(23)00205-3",
     pmid: "37479372",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37479372/#:~:text=Safety%20and%20efficacy%20of%20venglustat%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37479372/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -117,6 +121,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "giladi-2023-lancetneurol",
         quote: "Safety and efficacy of venglustat in GBA1-associated Parkinson's disease",
         projectRef: "Drug browser: Venglustat MOVES-PD motor worsening despite substrate reduction",
+        fragmentText: "Safety and efficacy of venglustat in GBA1-associated Parkinsons",
       },
     ],
     verificationStatus: "verified",
@@ -131,7 +136,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2025,
     doi: "10.1016/S0140-6736(24)02808-3",
     pmid: "39919773",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39919773/#:~:text=Exenatide%20once%20a%20week%20versus%20placebo",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39919773/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -139,6 +144,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "vijiaratnam-2025-lancet",
         quote: "Exenatide once a week versus placebo as a potential disease-modifying treatment for people with Parkinson's disease",
         projectRef: "Drug browser: Exenatide Phase 3 no motor benefit vs Phase 2 positive",
+        fragmentText: "Exenatide once a week versus placebo as a",
       },
     ],
     verificationStatus: "verified",
@@ -151,7 +157,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2024,
     doi: "10.1056/NEJMoa2312323",
     pmid: "38598572",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38598572/#:~:text=lixisenatide%20therapy%20resulted%20in%20less%20progression%20of%20motor%20disability",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38598572/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -159,6 +165,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "meissner-2024-nejm",
         quote: "In participants with early Parkinson\u2019s disease, lixisenatide therapy resulted in less progression of motor disability than placebo at 12 months but was associated with gastrointestinal side effects.",
         projectRef: "Drug browser: Lixisenatide LixiPark motor stability signal",
+        fragmentText: "In participants with early Parkinsons disease, lixisenatide therapy",
       },
     ],
     verificationStatus: "verified",
@@ -171,7 +178,7 @@ export const drugTrialsPdSources: Source[] = [
     journal: "JAMA Neurology",
     year: 2014,
     pmid: "24664227",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24664227/#:~:text=randomized%20clinical%20trial%20of%20high%20dosage%20coenzyme",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24664227/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -179,6 +186,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "psg-2014-jamaneurol",
         quote: "A randomized clinical trial of high-dosage coenzyme Q10 in early Parkinson disease: no evidence of benefit",
         projectRef: "Drug browser: CoQ10 QE3 terminated for futility",
+        fragmentText: "A randomized clinical trial of high-dosage coenzyme Q10",
       },
     ],
     verificationStatus: "verified",
@@ -190,7 +198,7 @@ export const drugTrialsPdSources: Source[] = [
     journal: "JAMA",
     year: 2021,
     pmid: "34519802",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34519802/#:~:text=Effect%20of%20Urate%20Elevating%20Inosine%20on%20Early",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34519802/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -198,6 +206,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "schwarzschild-2021-jama",
         quote: "Effect of Urate-Elevating Inosine on Early Parkinson Disease Progression: The SURE-PD3 Randomized Clinical Trial",
         projectRef: "Drug browser: Inosine SURE-PD3 futility",
+        fragmentText: "Effect of Urate-Elevating Inosine on Early Parkinson Disease",
       },
     ],
     verificationStatus: "verified",
@@ -212,7 +221,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2004,
     doi: "10.1056/NEJMoa033447",
     pmid: "15590952",
-    url: "https://pubmed.ncbi.nlm.nih.gov/15590952/#:~:text=The%20severity%20of%20parkinsonism%20increased%20more%20in%20the%20placebo%20group",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15590952/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -220,6 +229,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "fahn-2004-nejm",
         quote: "The severity of parkinsonism increased more in the placebo group than in all the groups receiving levodopa: the mean difference between the total score on the UPDRS at baseline and at 42 weeks was 7.8 units in the placebo group, 1.9 units in the group receiving levodopa at a dose of 150 mg daily, 1.9 in those receiving 300 mg daily, and -1.4 in those receiving 600 mg daily (P<0.001).",
         projectRef: "Drug browser: Levodopa/Carbidopa ELLDOPA trial result",
+        fragmentText: "The severity of parkinsonism increased more in the",
       },
     ],
     verificationStatus: "verified",
@@ -232,7 +242,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2000,
     doi: "10.1001/jama.284.15.1931",
     pmid: "11035889",
-    url: "https://pubmed.ncbi.nlm.nih.gov/11035889/#:~:text=Initial%20pramipexole%20treatment%20resulted%20in%20significantly%20less%20development",
+    url: "https://pubmed.ncbi.nlm.nih.gov/11035889/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -240,6 +250,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "parkinson-study-group-2000-jama",
         quote: "Initial pramipexole treatment resulted in significantly less development of wearing off, dyskinesias, or on-off motor fluctuations (28%) compared with levodopa (51%) (hazard ratio, 0.45; 95% confidence interval [CI], 0. 30-0.66; P<.001).",
         projectRef: "Drug browser: Pramipexole CALM-PD trial result",
+        fragmentText: "Initial pramipexole treatment resulted in significantly less development",
       },
     ],
     verificationStatus: "verified",
@@ -252,7 +263,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2009,
     doi: "10.1056/NEJMoa0809335",
     pmid: "19776408",
-    url: "https://pubmed.ncbi.nlm.nih.gov/19776408/#:~:text=Early%20treatment%20with%20rasagiline%20at%20a%20dose%20of%201%20mg%20per%20day%20provided%20benefits",
+    url: "https://pubmed.ncbi.nlm.nih.gov/19776408/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -260,6 +271,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "olanow-2009-nejm",
         quote: "Early treatment with rasagiline at a dose of 1 mg per day provided benefits that were consistent with a possible disease-modifying effect, but early treatment with rasagiline at a dose of 2 mg per day did not.",
         projectRef: "Drug browser: Rasagiline ADAGIO trial result",
+        fragmentText: "Early treatment with rasagiline at a dose of",
       },
     ],
     verificationStatus: "verified",
@@ -272,7 +284,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2016,
     doi: "10.1016/S1474-4422(15)00336-1",
     pmid: "26725544",
-    url: "https://pubmed.ncbi.nlm.nih.gov/26725544/#:~:text=Treatment%20with%20opicapone%2050%20mg%20was%20superior%20to%20placebo",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26725544/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -280,6 +292,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "ferreira-2016-lancet-neurol",
         quote: "Treatment with opicapone 50 mg was superior to placebo (mean difference in change from baseline -60\u00b78 min, 95% CI -97\u00b72 to -24\u00b74; p=0\u00b70015) and non-inferior to entacapone (-26\u00b72 min, -63\u00b78 to 11\u00b74; p=0\u00b70051).",
         projectRef: "Drug browser: Opicapone BIPARK-I trial result",
+        fragmentText: "Treatment with opicapone 50 mg was superior to",
       },
     ],
     verificationStatus: "verified",
@@ -294,7 +307,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2023,
     doi: "10.1002/mds.29297",
     pmid: "36807624",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36807624/#:~:text=BIIB122%20achieved%20substantial%20peripheral%20LRRK2%20kinase%20inhibition",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36807624/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -302,6 +315,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "jennings-2023-mov-disord",
         quote: "At generally safe and well-tolerated doses, BIIB122 achieved substantial peripheral LRRK2 kinase inhibition and modulation of lysosomal pathways downstream of LRRK2, with evidence of CNS distribution and target inhibition.",
         projectRef: "Drug browser: BIIB122 LRRK2 Phase 1 safety and target engagement",
+        fragmentText: "At generally safe and well-tolerated doses, BIIB122 achieved",
       },
     ],
     verificationStatus: "verified",
@@ -316,7 +330,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2023,
     doi: "10.1016/S1474-4422(23)00205-3",
     pmid: "37479372",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37479372/#:~:text=venglustat%20had%20a%20satisfactory%20safety%20profile%20but%20showed%20no%20beneficial%20treatment%20effect",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37479372/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -324,6 +338,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "giladi-2023-lancet-neurol",
         quote: "In people with GBA1-associated Parkinson's disease in our study, venglustat had a satisfactory safety profile but showed no beneficial treatment effect compared with placebo.",
         projectRef: "Drug browser: Venglustat MOVES-PD negative result",
+        fragmentText: "In people with GBA1-associated Parkinsons disease in our",
       },
     ],
     verificationStatus: "verified",
@@ -336,7 +351,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2020,
     doi: "10.1001/jamaneurol.2019.4611",
     pmid: "31930374",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990847/#:~:text=Mean%20(SD)%20scores%20on%20part%203%20of%20the%20Movement%20Disorders%20Society",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990847/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -344,6 +359,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "mullin-2020-jama-neurol",
         quote: "Mean (SD) scores on part 3 of the Movement Disorders Society Unified Parkinson Disease Rating Scale decreased (ie, improved) by 6.8 (7.1) points (95% CI, -10.4 to -3.1; P = .001).",
         projectRef: "Drug browser: Ambroxol AIM-PD motor improvement",
+        fragmentText: "Mean SD scores on part 3 of the",
       },
     ],
     verificationStatus: "verified",
@@ -358,7 +374,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2021,
     doi: "10.1001/jamaneurol.2020.4725",
     pmid: "33315105",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33315105/#:~:text=nilotinib%20should%20not%20be%20further%20tested%20in%20PD",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33315105/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -366,6 +382,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "simuni-2021-jama-neurol",
         quote: "the low CSF exposure and lack of biomarkers effect combined with the efficacy data trending in the negative direction indicate that nilotinib should not be further tested in PD",
         projectRef: "Drug browser: Nilotinib NILO-PD trial result",
+        fragmentText: "the low CSF exposure and lack of biomarkers",
       },
     ],
     verificationStatus: "verified",
@@ -380,7 +397,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2020,
     doi: "10.7326/M19-2534",
     pmid: "32227247",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32227247/#:~:text=Long-term%20treatment%20with%20immediate-release%20isradipine%20did%20not%20slow%20the%20clinical%20progression",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32227247/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -388,6 +405,7 @@ export const drugTrialsPdSources: Source[] = [
         sourceId: "psg-2020-ann-intern-med",
         quote: "Long-term treatment with immediate-release isradipine did not slow the clinical progression of early-stage PD.",
         projectRef: "Drug browser: Isradipine STEADY-PD III trial result",
+        fragmentText: "Long-term treatment with immediate-release isradipine did not slow",
       },
     ],
     verificationStatus: "verified",

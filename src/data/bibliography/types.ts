@@ -49,6 +49,8 @@ export interface Citation {
   location?: string;
   /** What text/section in this project uses or references this quote */
   projectRef?: string;
+  /** Verified text snippet for #:~:text= URL deep-linking (confirmed to exist on the source page) */
+  fragmentText?: string;
 }
 
 export interface Source {

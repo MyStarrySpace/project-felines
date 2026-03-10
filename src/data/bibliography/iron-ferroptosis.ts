@@ -9,7 +9,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2209254",
     pmid: "36449420",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36449420/#:~:text=increased%20(worsened)%20by%2015.6%20points%20and%206.3%20points",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36449420/",
     tags: ["iron", "parkinsons", "clinical-trials"],
     citations: [
       {
@@ -22,6 +22,7 @@ export const ironFerrOptosisSources: Source[] = [
         location: "Results",
         projectRef:
           "Framework summary: Why every major trial has failed (Deferiprone/FAIRPARK-II)",
+          fragmentText: "A total of 372 participants were enrolled 186",
       },
       {
         citationId: "devos-2022-nejm-c2",
@@ -31,6 +32,7 @@ export const ironFerrOptosisSources: Source[] = [
         context:
           "Motor worsening: deferiprone group declined 2.5× faster than placebo",
         location: "Results",
+        fragmentText: "The mean MDS-UPDRS total score at baseline was",
         projectRef:
           "Drug browser: Deferiprone (PD) detail tooltip — MDS-UPDRS worsening",
       },
@@ -44,6 +46,7 @@ export const ironFerrOptosisSources: Source[] = [
         location: "Results",
         projectRef:
           "Drug browser: Deferiprone (PD) detail tooltip — rescue therapy rate",
+          fragmentText: "Progression of symptoms led to the initiation of",
       },
       {
         citationId: "devos-2022-nejm-c4",
@@ -55,6 +58,7 @@ export const ironFerrOptosisSources: Source[] = [
         location: "Results",
         projectRef:
           "Drug browser: Deferiprone (PD) detail tooltip — iron reduction confirmed",
+          fragmentText: "Nigrostriatal iron content decreased more in the deferiprone",
       },
     ],
     verificationStatus: "verified",
@@ -68,7 +72,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2018,
     doi: "10.1016/j.freeradbiomed.2018.04.002",
     pmid: "29625173",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5940499/#:~:text=deferiprone%20removed%20mitochondrial%20iron",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5940499/",
     tags: ["iron", "huntingtons"],
     citations: [
       {
@@ -81,6 +85,7 @@ export const ironFerrOptosisSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Drug browser: Deferiprone (HD) detail tooltip",
+          fragmentText: "A 10-day oral deferiprone treatment in 9-week R62",
       },
     ],
     verificationStatus: "verified",
@@ -101,11 +106,12 @@ export const ironFerrOptosisSources: Source[] = [
         citationId: "seo-2025-natcomms-c1",
         sourceId: "seo-2025-natcomms",
         quote:
-          "Increased paramagnetic susceptibility (QSM) in hippocampus in Cog-PASC patients at 1 year post-infection",
+          "Cog-PASC showed elevated astroglial damage-associated proteins and structural and microstructural alterations across multiple cortical and subcortical regions, including cortical thinning in the cingulate and insular cortices, increased paramagnetic susceptibility in the hippocampus, and enlarged choroid plexus volume.",
         context:
-          "Brain iron does NOT clear after COVID. Elevated at 1 year in cognitively impaired Long COVID patients",
+          "Increased paramagnetic susceptibility (iron) in hippocampus in cognitive PASC",
         projectRef:
           "Kinetics model: iron does not clear in Long COVID (critical update)",
+          fragmentText: "Cog-PASC showed elevated astroglial damage-associated proteins and structural",
       },
     ],
     verificationStatus: "verified",
@@ -126,11 +132,12 @@ export const ironFerrOptosisSources: Source[] = [
         citationId: "hanson-2024-natimmunol-c1",
         sourceId: "hanson-2024-natimmunol",
         quote:
-          "Iron maldistribution differentiates those who develop PASC; iron-laden CD16+ classical and CD14+ nonclassical monocytes persist for months",
+          "A multivariate signature detected beyond two weeks of disease, encompassing unresolving inflammation, anemia, low serum iron, altered iron-homeostasis gene expression and emerging stress erythropoiesis; differentiated those who reported PASC months later, irrespective of COVID-19 severity.",
         context:
-          "Iron is compartmentally trapped, not cleared. Low serum iron + high intracellular monocyte iron",
+          "Iron maldistribution signature predicts PASC development",
         projectRef:
           "Kinetics model: iron maldistribution syndrome, compartmental trapping",
+          fragmentText: "A multivariate signature detected beyond two weeks of",
       },
     ],
     verificationStatus: "verified",
@@ -144,18 +151,19 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2017,
     doi: "10.1093/brain/awx137",
     pmid: "28899019",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28899019/#:~:text=higher%20hippocampal%20quantitative%20susceptibility%20mapping%20levels",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28899019/",
     tags: ["iron", "alzheimers", "imaging"],
     citations: [
       {
         citationId: "ayton-2017-brain-c1",
         sourceId: "ayton-2017-brain",
         quote:
-          "Iron accelerates decline only in amyloid-positive individuals",
+          "Among participants with amyloid pathology (n = 45), higher hippocampal quantitative susceptibility mapping levels predicted accelerated deterioration in composite cognition tests for episodic memory, executive function, and attention.",
         context:
-          "Iron acts as accelerator that requires existing amyloid pathology",
+          "Brain iron accelerates cognitive decline in amyloid-positive individuals",
         projectRef:
           "Kinetics model Part III: iron kinetics in AD, accelerator role",
+          fragmentText: "Among participants with amyloid pathology n 45, higher",
       },
       {
         citationId: "ayton-2017-brain-c2",
@@ -166,6 +174,7 @@ export const ironFerrOptosisSources: Source[] = [
           "QSM iron imaging in AD: hippocampal iron predicts cognitive decline independently of A\u03B2 and tau",
         projectRef:
           "Teaser: 'driven by iron?' expanded content \u2014 AD iron detection via QSM",
+          fragmentText: "higher hippocampal quantitative susceptibility mapping levels predicted accelerated",
       },
     ],
     verificationStatus: "verified",
@@ -179,7 +188,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2015,
     doi: "10.1038/ncomms7760",
     pmid: "25988319",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25988319/#:~:text=Ferritin%20was%20strongly%20associated%20with%20CSF",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25988319/",
     tags: ["iron", "alzheimers", "biomarkers"],
     citations: [
       {
@@ -191,6 +200,7 @@ export const ironFerrOptosisSources: Source[] = [
           "CSF ferritin as prognostic biomarker for AD progression",
         projectRef:
           "Kinetics model Part III: iron kinetics in AD, CSF ferritin predicts decline",
+          fragmentText: "and is regulated by APOE",
       },
       {
         citationId: "ayton-2015-natcomms-c2",
@@ -200,6 +210,7 @@ export const ironFerrOptosisSources: Source[] = [
         context:
           "APOE4 elevates CSF ferritin — connects #1 AD risk gene to iron",
         projectRef: "GWAS section: APOE gene card — iron connection",
+        fragmentText: "Ferritin was strongly associated with CSF apolipoprotein E",
       },
       {
         citationId: "ayton-2015-natcomms-c3",
@@ -210,6 +221,7 @@ export const ironFerrOptosisSources: Source[] = [
           "CSF ferritin is a predictive biomarker for AD progression and MCI\u2192AD conversion",
         projectRef:
           "Teaser: 'driven by iron?' expanded content \u2014 CSF ferritin predicts AD",
+          fragmentText: "baseline CSF ferritin levels were negatively associated with",
       },
     ],
     verificationStatus: "verified",
@@ -230,11 +242,12 @@ export const ironFerrOptosisSources: Source[] = [
         citationId: "ayton-2021-alzdement-c1",
         sourceId: "ayton-2021-alzdement",
         quote:
-          "Iron changes appear to occur AFTER the development of AD pathology markers",
+          "We provide new evidence from a large post mortem cohort that brain iron levels within the normal range were associated with accelerated ante mortem disease progression in cases with underlying proteinopathic neuropathology. These results corroborate recent findings that argue for an additional downstream role for iron as an effector of neurodegeneration, acting independently of tau or amyloid pathologies.",
         context:
-          "Iron is a late marker and accelerator, not the initial cause",
+          "Iron acts downstream of proteinopathy as an effector of neurodegeneration",
         projectRef:
           "Kinetics model Part III: iron is both trigger (acute) and late marker",
+          fragmentText: "We provide new evidence from a large post",
       },
     ],
     verificationStatus: "verified",
@@ -255,11 +268,12 @@ export const ironFerrOptosisSources: Source[] = [
         citationId: "wang-2022-celldeathdiff-c1",
         sourceId: "wang-2022-celldeathdiff",
         quote:
-          "GPX4 depletion is early and universal across SOD1, TDP-43, and C9orf72 mouse models; transgenic GPX4 overexpression delayed disease onset and prolonged lifespan",
+          "GPX4 depletion was also an early and universal feature of spinal cords and brains of transgenic mutant superoxide dismutase 1 (SOD1G93A), TDP-43 and C9orf72 mouse models of ALS.",
         context:
-          "Ferroptosis is the universal death mechanism across all ALS genetic subtypes",
+          "GPX4 depletion is early and universal across multiple ALS mouse models",
         projectRef:
           "Cross-disease: ALS/FTD ferroptosis pillar, universal GPX4 depletion",
+          fragmentText: "GPX4 depletion was also an early and universal",
       },
     ],
     verificationStatus: "verified",
@@ -284,6 +298,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Breakthrough: ferroptosis confirmed as primary death mechanism in prion disease via RAC3",
         projectRef:
           "Cross-disease: Prion disease ferroptosis confirmation",
+          fragmentText: "prions trigger ferroptotic markers and",
       },
     ],
     verificationStatus: "verified",
@@ -297,7 +312,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2022,
     doi: "10.1016/j.cell.2022.06.003",
     pmid: "35803244",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35803244/#:~:text=Ferroptosis%20is%20an%20iron%20dependent%20form%20of",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35803244/",
     tags: ["ferroptosis"],
     citations: [
       {
@@ -308,6 +323,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Landmark review defining ferroptosis mechanisms",
         projectRef:
           "Kinetics model Step 4: ferroptosis execution pathway",
+          fragmentText: "cell death driven by",
       },
       {
         citationId: "stockwell-2022-cell-c2",
@@ -318,6 +334,7 @@ export const ironFerrOptosisSources: Source[] = [
           "System xc- supplies cysteine for GSH; GPX4 uses GSH to neutralize lipid peroxides",
         projectRef:
           "FELINE intro: L layer — Lipid peroxide neutralization segment",
+          fragmentText: "Cysteine and glutamate are used in the biosynthesis",
       },
     ],
     verificationStatus: "verified",
@@ -331,7 +348,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2020,
     doi: "10.1523/JNEUROSCI.1749-20.2020",
     pmid: "33106352",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33106352/#:~:text=Ferroptosis%20mediates%20cuprizone%20induced%20loss%20of%20oligodendrocytes%3B",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33106352/",
     tags: ["ferroptosis", "oligodendrocyte"],
     citations: [
       {
@@ -343,6 +360,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Oligodendrocytes are uniquely vulnerable to ferroptosis due to high iron and PUFA-rich myelin",
         projectRef:
           "Kinetics model Step 4: ferroptosis execution timeline, OL loss",
+          fragmentText: "Ferroptosis Mediates Cuprizone-Induced Loss of",
       },
     ],
     verificationStatus: "verified",
@@ -368,6 +386,7 @@ export const ironFerrOptosisSources: Source[] = [
           "New MRI can distinguish iron forms in vivo; not just total iron matters",
         projectRef:
           "Framework summary: Step 2 iron maldistribution evidence (MRI 2023)",
+          fragmentText: "iron mobilization capacity transferriniron",
       },
     ],
     verificationStatus: "verified",
@@ -388,11 +407,12 @@ export const ironFerrOptosisSources: Source[] = [
         citationId: "hallgren-1958-jneurochem-c1",
         sourceId: "hallgren-1958-jneurochem",
         quote:
-          "Non-haemin iron increases with age in human brain; highest in substantia nigra and globus pallidus",
+          "The effect of age on the non-haemin iron in the human brain.",
         context:
-          "Foundational study on regional brain iron distribution across lifespan",
+          "Landmark study establishing age-dependent brain iron accumulation patterns (1958, no abstract available)",
         projectRef:
           "Kinetics model Step 3: iron content by cell type and brain region",
+          fragmentText: "The effect of age on the non-haemin iron",
       },
     ],
     verificationStatus: "verified",
@@ -413,11 +433,12 @@ export const ironFerrOptosisSources: Source[] = [
         citationId: "sanz-alcazar-2024-redoxbiol-c1",
         sourceId: "sanz-alcazar-2024-redoxbiol",
         quote:
-          "TFR1 upregulated, ferritin decreased, mitochondrial iron accumulation, NRF2 impairment via KEAP1, GSK3β, and LKB1/AMPK pathways; AMPK activation rescues the phenotype",
+          "A lack of frataxin induced upregulation of transferrin receptor 1 and decreased ferritin and mitochondrial iron accumulation, a source of oxidative stress.",
         context:
-          "Detailed ferroptosis pathway in Friedreich ataxia DRG neurons",
+          "Frataxin deficiency causes TFR1 upregulation, ferritin decrease, and mitochondrial iron accumulation",
         projectRef:
           "Cross-disease: FRDA ferroptosis pathway details",
+          fragmentText: "A lack of frataxin induced upregulation of transferrin",
       },
     ],
     verificationStatus: "verified",
@@ -431,18 +452,19 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2010,
     doi: "10.1002/ana.22122",
     pmid: "20853438",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20853438/#:~:text=Defective%20FA2H%20leads%20to%20a%20novel%20form",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20853438/",
     tags: ["iron", "ferroptosis"],
     citations: [
       {
         citationId: "kruer-2010-annneurol-c1",
         sourceId: "kruer-2010-annneurol",
         quote:
-          "FA2H mutations cause fatty acid hydroxylase-associated neurodegeneration (FAHN), a form of NBIA with progressive spastic paraplegia, dystonia, and cerebellar atrophy",
+          "Using autozygosity mapping and candidate gene sequencing, we identified mutations in the fatty acid hydroxylase gene FA2H, newly implicating abnormalities of ceramide metabolism in the pathogenesis of NBIA. These findings link white matter degeneration and NBIA for the first time.",
         context:
-          "FA2H hydroxylates myelin lipids; loss-of-function causes iron accumulation and neurodegeneration, linking myelin lipid composition directly to iron homeostasis",
+          "FA2H mutations link white matter degeneration and NBIA",
         projectRef:
           "Reframe section: FA2H/NBIA as evidence that myelin lipid metabolism and iron are mechanistically coupled",
+          fragmentText: "Using autozygosity mapping and candidate gene sequencing, we",
       },
     ],
     verificationStatus: "verified",
@@ -456,7 +478,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2002,
     doi: "10.1523/JNEUROSCI.22-15-06578.2002",
     pmid: "12151537",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6758125/#:~:text=oxidizing%20the%20ferrous%20%5BFe%20(II)%5D%20form%20of%20iron%20to%20the%20ferric",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6758125/",
     tags: ["iron"],
     citations: [
       {
@@ -468,6 +490,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Ceruloplasmin ferroxidase activity converts Fe2+ to Fe3+ for safe export",
         projectRef:
           "Iron alternatives section: Ceruloplasmin description",
+          fragmentText: "By oxidizing the ferrous Fe II form of",
       },
       {
         citationId: "patel-2002-jneurosci-c2",
@@ -477,6 +500,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Ceruloplasmin enables ferroportin (Ireg1) mediated iron export in the brain",
         projectRef:
           "Iron alternatives section: Ceruloplasmin ferroportin coupling",
+          fragmentText: "in the brain could also potentially play a",
       },
     ],
     verificationStatus: "verified",
@@ -489,7 +513,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2012,
     doi: "10.1016/B978-0-12-394390-3.00001-X",
     pmid: "23046645",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4479283/#:~:text=Each%20lobe%20(N-%20and%20C-lobe)%20of%20hTF%20forms%20a%20deep%20cleft",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4479283/",
     tags: ["iron"],
     citations: [
       {
@@ -500,6 +524,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Transferrin binds two Fe3+ ions, one per lobe",
         projectRef:
           "Iron alternatives section: Transferrin description",
+          fragmentText: "Each lobe N- and C-lobe of hTF forms",
       },
       {
         citationId: "luck-2012-currtopics-c2",
@@ -510,6 +535,7 @@ export const ironFerrOptosisSources: Source[] = [
           "When transferrin is saturated, unbound iron drives Fenton chemistry",
         projectRef:
           "Iron alternatives section: Transferrin description (Fenton danger)",
+          fragmentText: "generates superoxide, which can ultimately lead to the",
       },
       {
         citationId: "luck-2012-currtopics-c3",
@@ -519,6 +545,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Classic clathrin-dependent receptor-mediated endocytosis pathway for iron delivery",
         projectRef:
           "Iron alternatives section: Transferrin receptor-mediated endocytosis",
+          fragmentText: "Iron-bearing hTF in the blood binds tightly to",
       },
       {
         citationId: "luck-2012-currtopics-c4",
@@ -529,6 +556,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Iron compartmentalization includes heme synthesis and iron-sulfur clusters (mitochondrial processes)",
         projectRef:
           "FELINE intro: Fe layer — Mitochondrial iron use segment",
+          fragmentText: "Once inside the cell, iron is compartmentalized in",
       },
     ],
     verificationStatus: "verified",
@@ -542,7 +570,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2004,
     doi: "10.1126/science.1104742",
     pmid: "15514116",
-    url: "https://pubmed.ncbi.nlm.nih.gov/15514116/#:~:text=hepcidin%20bound%20to%20ferroportin%20in%20tissue%20culture%20cells",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15514116/",
     tags: ["iron"],
     citations: [
       {
@@ -554,6 +582,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Hepcidin degrades ferroportin to control iron flow",
         projectRef:
           "Iron alternatives section: Hepcidin description",
+          fragmentText: "hepcidin bound to ferroportin in tissue culture cells.",
       },
     ],
     verificationStatus: "verified",
@@ -567,7 +596,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2022,
     doi: "10.1038/s41419-022-05043-w",
     pmid: "35915080",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9343463/#:~:text=FPN1%20of%20BMVECs%20is%20a%20gateway%20for%20iron%20transport",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9343463/",
     tags: ["iron", "astrocyte", "vascular"],
     citations: [
       {
@@ -579,6 +608,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Astrocyte hepcidin guards the BBB iron gate",
         projectRef:
           "Iron alternatives section: Hepcidin description (BBB)",
+          fragmentText: "FPN1 of BMVECs is a gateway for iron",
       },
       {
         citationId: "you-2022-celldeath-c2",
@@ -588,6 +618,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Astrocyte endfeet secrete hepcidin to regulate endothelial ferroportin",
         projectRef:
           "Iron alternatives section: Astrocyte-derived hepcidin guards BBB",
+          fragmentText: "the controller of this gateway is hepcidin secreted",
       },
     ],
     verificationStatus: "verified",
@@ -601,7 +632,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 1996,
     doi: "10.1016/0005-2728(96)00022-9",
     pmid: "8695634",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8695634/#:~:text=4500%20Fe(III)%20atoms%20as%20an%20inorganic%20complex",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8695634/",
     tags: ["iron"],
     citations: [
       {
@@ -613,6 +644,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Definitive structural characterization of ferritin iron storage capacity",
         projectRef:
           "FELINE Fe layer: Ferritin cages store up to 4,500 iron atoms each",
+          fragmentText: "All ferritins have 24 protein subunits arranged in",
       },
     ],
     verificationStatus: "verified",
@@ -626,7 +658,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2014,
     doi: "10.3389/fphar.2014.00099",
     pmid: "24847269",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4019866/#:~:text=The%20average%20age%20of%20onset%20is%2039%20years",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4019866/",
     tags: ["iron"],
     citations: [
       {
@@ -637,6 +669,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Neuroferritinopathy (FTL mutations) onset age",
         projectRef:
           "GWAS section: FTL neuroferritinopathy onset in the 40s",
+          fragmentText: "The average age of onset is 39 years",
       },
       {
         citationId: "levi-2014-frontpharmacol-c2",
@@ -646,6 +679,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Aceruloplasminemia (CP mutations) onset and symptoms",
         projectRef:
           "GWAS section: CP aceruloplasminemia onset by age 50",
+          fragmentText: "The symptoms include neurological signs with first appearance",
       },
       {
         citationId: "levi-2014-frontpharmacol-c3",
@@ -655,6 +689,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "PKAN (PANK2 mutations) childhood onset",
         projectRef:
           "GWAS section: PANK2 NBIA childhood onset",
+          fragmentText: "The classic form usually manifests in the first",
       },
       {
         citationId: "levi-2014-frontpharmacol-c4",
@@ -664,6 +699,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Neuroferritinopathy basal ganglia iron accumulation",
         projectRef:
           "GWAS section: FTL basal ganglia iron deposits",
+          fragmentText: "Iron deposits in the cerebellum, basal ganglia and",
       },
     ],
     verificationStatus: "verified",
@@ -676,7 +712,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2018,
     doi: "10.1038/nrdp.2018.16",
     pmid: "29620054",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7775623/#:~:text=they%20develop%20symptoms%20only%20around%2030%E2%80%9340%20years%20of%20age",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7775623/",
     tags: ["iron"],
     citations: [
       {
@@ -687,6 +723,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Non-HFE hemochromatosis genes",
         projectRef:
           "GWAS section: HFE, TFR2, HAMP cause hemochromatosis",
+          fragmentText: "Non-HFE forms of haemochromatosis due to mutations in",
       },
       {
         citationId: "brissot-2018-natrevdisprimers-c2",
@@ -696,6 +733,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Hemochromatosis cardiac complications",
         projectRef:
           "GWAS section: hemochromatosis causes cardiac failure",
+          fragmentText: "Cardiac symptoms consist of cardiac rhythm disorders and",
       },
       {
         citationId: "brissot-2018-natrevdisprimers-c3",
@@ -705,6 +743,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Hemochromatosis symptom onset age",
         projectRef:
           "GWAS section: hemochromatosis symptoms decades before AD onset",
+          fragmentText: "haemochromatosis, they develop symptoms only around",
       },
       {
         citationId: "brissot-2018-natrevdisprimers-c4",
@@ -714,6 +753,7 @@ export const ironFerrOptosisSources: Source[] = [
         context: "Hemochromatosis hepatic and cardiac iron overload",
         projectRef:
           "GWAS section: hemochromatosis causes cirrhosis",
+          fragmentText: "Cellular iron excess in HFE and non-HFE forms",
       },
     ],
     verificationStatus: "verified",
@@ -727,7 +767,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2023,
     doi: "10.1016/j.biopha.2023.114312",
     pmid: "37210894",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37210894/#:~:text=ferroptosis%20is%20a%20newly%20discovered%20programmed%20cell%20death",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37210894/",
     tags: ["ferroptosis", "alzheimers", "iron"],
     citations: [
       {
@@ -740,6 +780,7 @@ export const ironFerrOptosisSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Iron buildup section: diagram attribution (Zhao et al. 2023 ferroptosis defense axes)",
+          fragmentText: "ferroptosis is a newly discovered programmed cell death",
       },
     ],
     verificationStatus: "verified",
@@ -753,7 +794,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2021,
     doi: "10.1038/s41586-021-03539-7",
     pmid: "33981038",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8895686/#:~:text=DHODH%20operates%20in%20parallel%20to%20mitochondrial%20GPX4",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8895686/",
     tags: ["ferroptosis"],
     citations: [
       {
@@ -766,6 +807,7 @@ export const ironFerrOptosisSources: Source[] = [
         location: "Abstract",
         projectRef:
           "Iron buildup section: DHODH/CoQH2 fourth defense axis beat",
+          fragmentText: "of cytosolic GPX4 or FSP1 to inhibit ferroptosis",
       },
     ],
     verificationStatus: "verified",
@@ -778,7 +820,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41392-024-02088-5",
     pmid: "39746918",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11696223/#:~:text=a%20key%20cellular%20reductant",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11696223/",
     tags: ["ferroptosis"],
     citations: [
       {
@@ -790,6 +832,7 @@ export const ironFerrOptosisSources: Source[] = [
           "NADPH is the shared upstream reductant powering GPX4, FSP1, and DHODH anti-ferroptosis systems",
         projectRef:
           "Iron buildup section: NADPH as unifying reductant across all defense axes",
+          fragmentText: "a key cellular reductant",
       },
     ],
     verificationStatus: "verified",
@@ -803,7 +846,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2024,
     doi: "10.1002/mco2.70010",
     pmid: "39568772",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11577306/#:~:text=iNOS%20acts%20as%20another%20GPX4-independent%20ferroptosis%20resistance%20factor",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11577306/",
     tags: ["ferroptosis"],
     citations: [
       {
@@ -815,6 +858,7 @@ export const ironFerrOptosisSources: Source[] = [
           "iNOS generates NO radicals that trap lipid peroxyl radicals, preventing chain propagation",
         projectRef:
           "Iron buildup section: emerging defense axes (iNOS)",
+          fragmentText: "iNOS acts as another",
       },
       {
         citationId: "zhou-2024-medcomm-c2",
@@ -825,6 +869,7 @@ export const ironFerrOptosisSources: Source[] = [
           "7-dehydrocholesterol acts as a radical-trapping agent in cell membranes",
         projectRef:
           "Iron buildup section: emerging defense axes (7-DHC)",
+          fragmentText: "By reducing lipid peroxyl radicals,",
       },
     ],
     verificationStatus: "verified",
@@ -838,7 +883,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2019,
     doi: "10.1038/s41586-019-1705-2",
     pmid: "31634900",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31634900/#:~:text=a%20key%20component%20of%20a%20non-mitochondrial%20CoQ%20antioxidant%20system",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31634900/",
     tags: ["ferroptosis", "iron"],
     citations: [
       {
@@ -850,6 +895,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Co-discovery of FSP1/CoQ10 as a GPX4-independent ferroptosis defense axis",
         projectRef:
           "Iron buildup section: FSP1/CoQ10 defense axis beat",
+          fragmentText: "FSP1 as a key component of a non-mitochondrial",
       },
     ],
     verificationStatus: "verified",
@@ -863,7 +909,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2020,
     doi: "10.1021/acscentsci.9b01063",
     pmid: "31989025",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6978838/#:~:text=Synthesis%20of%20BH4%2FBH2%20by%20GCH1-expressing%20cells%20caused%20lipid%20remodeling",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6978838/",
     tags: ["ferroptosis", "iron"],
     citations: [
       {
@@ -875,6 +921,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Discovery of GCH1/BH4 as a third independent ferroptosis defense axis",
         projectRef:
           "Iron buildup section: GCH1/BH4 defense axis beat",
+          fragmentText: "Synthesis of BH4BH2 by GCH1-expressing cells caused lipid",
       },
     ],
     verificationStatus: "verified",
@@ -888,7 +935,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2020,
     doi: "10.1038/s41589-019-0462-8",
     pmid: "32080625",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32080625/#:~:text=iNOS%2FNO-enrichment%20of%20activated%20M1",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32080625/",
     tags: ["ferroptosis", "microglia"],
     citations: [
       {
@@ -900,6 +947,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Discovery that iNOS/NO acts as a GPX4-independent ferroptosis resistance mechanism",
         projectRef:
           "Iron buildup section: emerging defense axes (iNOS/NO)",
+          fragmentText: "of activated M1 but not alternatively activated M2",
       },
     ],
     verificationStatus: "verified",
@@ -913,7 +961,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2024,
     doi: "10.1038/s41586-023-06878-9",
     pmid: "38297129",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38297129/#:~:text=7-DHC%20effectively%20shields%20(phospho)lipids%20from%20autoxidation",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38297129/",
     tags: ["ferroptosis", "iron"],
     citations: [
       {
@@ -925,6 +973,7 @@ export const ironFerrOptosisSources: Source[] = [
           "Discovery of 7-dehydrocholesterol as an endogenous ferroptosis suppressor",
         projectRef:
           "Iron buildup section: emerging defense axes (7-DHC)",
+          fragmentText: "7-DHC effectively shields phospholipids from autoxidation and subsequent",
       },
     ],
     verificationStatus: "verified",

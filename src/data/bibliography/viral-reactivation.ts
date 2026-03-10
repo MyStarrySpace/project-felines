@@ -14,7 +14,7 @@ export const viralReactivationSources: Source[] = [
     year: 2009,
     doi: "10.1038/nm.2051",
     pmid: "19855399",
-    url: "https://pubmed.ncbi.nlm.nih.gov/19855399/#:~:text=Inhibition%20of%20the%20histone%20demethylase%20LSD1",
+    url: "https://pubmed.ncbi.nlm.nih.gov/19855399/",
     tags: ["viral", "hsv", "iron"],
     citations: [
       {
@@ -26,6 +26,7 @@ export const viralReactivationSources: Source[] = [
           "LSD1 inhibition by tranylcypromine blocks HSV reactivation, demonstrating that histone demethylases are required gatekeepers of latency",
         projectRef:
           "Viral reactivation: JmjC mechanism step 3 — demethylase inhibitors block reactivation",
+          fragmentText: "Inhibition of the histone demethylase LSD1 blocks alpha-herpesvirus",
       },
     ],
     verificationStatus: "verified",
@@ -39,7 +40,7 @@ export const viralReactivationSources: Source[] = [
     year: 2013,
     doi: "10.1126/scitranslmed.3005145",
     pmid: "23303604",
-    url: "https://pubmed.ncbi.nlm.nih.gov/23303604/#:~:text=Targeting%20the%20JMJD2%20histone%20demethylases%20to",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23303604/",
     tags: ["viral", "hsv", "iron"],
     citations: [
       {
@@ -51,6 +52,7 @@ export const viralReactivationSources: Source[] = [
           "JMJD2 inhibitor ML324 blocks HSV-1 reactivation from latency, confirming iron-dependent demethylases as reactivation gatekeepers",
         projectRef:
           "Viral reactivation: JmjC mechanism step 3 — JMJD2 inhibition blocks HSV-1 reactivation",
+          fragmentText: "Targeting the JMJD2 histone demethylases to epigenetically control",
       },
     ],
     verificationStatus: "verified",
@@ -64,7 +66,7 @@ export const viralReactivationSources: Source[] = [
     year: 2007,
     doi: "10.1073/pnas.0707292104",
     pmid: "18003914",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18003914/#:~:text=Identification%20of%20JmjC%20domain%20containing%20UTX%20and",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18003914/",
     tags: ["viral", "iron"],
     citations: [
       {
@@ -76,6 +78,7 @@ export const viralReactivationSources: Source[] = [
           "Identified JmjC domain demethylases as H3K27-specific enzymes requiring Fe2+ and alpha-ketoglutarate as cofactors",
         projectRef:
           "Viral reactivation: JmjC mechanism step 1 — JmjC domain identification",
+          fragmentText: "Identification of JmjC domain-containing UTX and JMJD3 as",
       },
     ],
     verificationStatus: "verified",
@@ -89,7 +92,7 @@ export const viralReactivationSources: Source[] = [
     year: 2017,
     doi: "10.1371/journal.ppat.1006216",
     pmid: "28212444",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28212444/#:~:text=SUMO%20modification%20of%20a%20heterochromatin%20histone",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28212444/",
     tags: ["viral", "iron"],
     citations: [
       {
@@ -101,6 +104,7 @@ export const viralReactivationSources: Source[] = [
           "JMJD2A (iron-dependent JmjC demethylase) is required for KSHV lytic reactivation",
         projectRef:
           "Viral reactivation: JmjC mechanism — JMJD2A in KSHV reactivation",
+          fragmentText: "SUMO modification of a heterochromatin histone demethylase JMJD2A",
       },
     ],
     verificationStatus: "verified",
@@ -114,7 +118,7 @@ export const viralReactivationSources: Source[] = [
     year: 2015,
     doi: "10.1128/JVI.03052-14",
     pmid: "25552720",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25552720/#:~:text=Inhibition%20of%20H3K27me3%20specific%20histone%20demethylases%20JMJD3",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25552720/",
     tags: ["viral", "hsv", "iron"],
     citations: [
       {
@@ -126,6 +130,7 @@ export const viralReactivationSources: Source[] = [
           "GSK-J4 (JMJD3/UTX inhibitor) blocks HSV-1 reactivation from trigeminal ganglia neurons",
         projectRef:
           "Viral reactivation: JmjC mechanism — JMJD3/UTX inhibition blocks HSV-1",
+          fragmentText: "Inhibition of H3K27me3-specific histone demethylases JMJD3 and UTX",
       },
     ],
     verificationStatus: "verified",
@@ -144,7 +149,7 @@ export const viralReactivationSources: Source[] = [
     year: 2011,
     doi: "10.1371/journal.ppat.1002054",
     pmid: "21625536",
-    url: "https://pubmed.ncbi.nlm.nih.gov/21625536/#:~:text=Reactive%20oxygen%20species%20hydrogen%20peroxide%20mediates",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21625536/",
     tags: ["viral", "ferroptosis"],
     citations: [
       {
@@ -156,6 +161,7 @@ export const viralReactivationSources: Source[] = [
           "H2O2 mediates KSHV reactivation via ROS; GSH depletion and oxidative stress trigger lytic switch",
         projectRef:
           "Viral reactivation: GSH mechanism step 2 — oxidative stress activates KSHV lytic switch",
+          fragmentText: "Reactive oxygen species hydrogen peroxide mediates Kaposis sarcoma-associated",
       },
     ],
     verificationStatus: "verified",
@@ -169,7 +175,7 @@ export const viralReactivationSources: Source[] = [
     year: 2011,
     doi: "10.1128/JVI.01742-10",
     pmid: "21068240",
-    url: "https://pubmed.ncbi.nlm.nih.gov/21068240/#:~:text=Oxidative%20stress%20induces%20reactivation%20of%20Kaposis",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21068240/",
     tags: ["viral", "ferroptosis"],
     citations: [
       {
@@ -181,6 +187,7 @@ export const viralReactivationSources: Source[] = [
           "GSH depletion via diethyl maleate reactivates KSHV; direct evidence that antioxidant depletion triggers reactivation",
         projectRef:
           "Viral reactivation: GSH mechanism step 2 — GSH depletion reactivates KSHV",
+          fragmentText: "Oxidative stress induces reactivation of Kaposis sarcoma-associated herpesvirus",
       },
     ],
     verificationStatus: "verified",
@@ -199,7 +206,7 @@ export const viralReactivationSources: Source[] = [
     year: 2023,
     doi: "10.1007/s40588-023-00202-9",
     pmid: "38173564",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38173564/#:~:text=Intimate%20Relationship%20Between%20Stress%20and%20Human",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38173564/",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -211,6 +218,7 @@ export const viralReactivationSources: Source[] = [
           "GR activation via S134 phosphorylation by oxidative stress provides ligand-independent reactivation signal for HSV-1",
         projectRef:
           "Viral reactivation: GR mechanism — ligand-independent GR activation and HSV-1",
+          fragmentText: "human alpha-herpes virus 1 HSV-1 reactivation from latency",
       },
     ],
     verificationStatus: "verified",
@@ -228,7 +236,7 @@ export const viralReactivationSources: Source[] = [
     year: 2010,
     doi: "10.1016/j.freeradbiomed.2010.04.026",
     pmid: "20441790",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20441790/#:~:text=Accumulation%20of%20oxidized%20proteins%20in%20Herpesvirus",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20441790/",
     tags: ["viral", "hsv", "ferroptosis"],
     citations: [
       {
@@ -240,6 +248,7 @@ export const viralReactivationSources: Source[] = [
           "ROS-driven protein carbonylation damages heterochromatin maintenance proteins during herpesvirus infection",
         projectRef:
           "Viral reactivation: Heterochromatin mechanism — oxidized proteins erode viral silencing",
+          fragmentText: "Accumulation of oxidized proteins in Herpesvirus infected cells",
       },
     ],
     verificationStatus: "verified",
@@ -257,7 +266,7 @@ export const viralReactivationSources: Source[] = [
     year: 2010,
     doi: "10.1016/j.bbagrm.2009.12.001",
     pmid: "20045093",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20045093/#:~:text=Epigenetic%20regulation%20of%20latent%20HSV%201%20gene",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20045093/",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -269,6 +278,7 @@ export const viralReactivationSources: Source[] = [
           "Review of H3K9me2/me3 and H3K27me3 repressive marks on HSV-1 lytic promoters during latency",
         projectRef:
           "Viral reactivation: Latency background — epigenetic silencing of lytic genes",
+          fragmentText: "Epigenetic regulation of latent HSV-1 gene expression",
       },
     ],
     verificationStatus: "verified",
@@ -282,7 +292,7 @@ export const viralReactivationSources: Source[] = [
     year: 2008,
     doi: "10.1038/nrmicro1794",
     pmid: "18264117",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18264117/#:~:text=Chromatin%20control%20of%20herpes%20simplex%20virus",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18264117/",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -294,6 +304,7 @@ export const viralReactivationSources: Source[] = [
           "Foundational review of chromatin-based viral latency; heterochromatin maintenance as the gate to reactivation",
         projectRef:
           "Viral reactivation: Latency background — chromatin control of herpesvirus latency",
+          fragmentText: "Chromatin control of herpes simplex virus lytic and",
       },
     ],
     verificationStatus: "verified",
@@ -307,7 +318,7 @@ export const viralReactivationSources: Source[] = [
     year: 2015,
     doi: "10.1016/j.chom.2015.11.007",
     pmid: "26651941",
-    url: "https://pubmed.ncbi.nlm.nih.gov/26651941/#:~:text=Neuronal%20Stress%20Pathway%20Mediating%20a%20Histone",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26651941/",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -319,6 +330,7 @@ export const viralReactivationSources: Source[] = [
           "JNK-mediated histone methyl/phospho switch triggers HSV-1 reactivation; DLK pathway connects neuronal stress to epigenetic derepression",
         projectRef:
           "Viral reactivation: JmjC mechanism — stress-mediated epigenetic switch",
+          fragmentText: "Neuronal Stress Pathway Mediating a Histone MethylPhospho Switch",
       },
     ],
     verificationStatus: "verified",
@@ -339,7 +351,7 @@ export const viralReactivationSources: Source[] = [
     year: 2025,
     doi: "10.1016/j.cell.2025.11.007",
     pmid: "41338191",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41338191/#:~:text=effect%20of%20shingles%20vaccination%20at%20different",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41338191/",
     tags: ["viral", "epidemiology", "alzheimers"],
     citations: [
       {
@@ -351,6 +363,7 @@ export const viralReactivationSources: Source[] = [
           "Extended analysis confirmed dementia reduction and showed lower MCI and dementia mortality in vaccinated cohort",
         projectRef:
           "Viral reactivation: Epidemiological evidence — extended vaccine analysis",
+          fragmentText: "The effect of shingles vaccination at different stages",
       },
     ],
     verificationStatus: "verified",
@@ -366,7 +379,7 @@ export const viralReactivationSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41591-025-03972-5",
     pmid: "41053450",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41053450/#:~:text=Varicella%20zoster%20virus%20reactivation%20and%20the%20risk",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41053450/",
     tags: ["viral", "epidemiology", "alzheimers"],
     citations: [
       {
@@ -378,6 +391,7 @@ export const viralReactivationSources: Source[] = [
           "100M-person EHR study: recurrent herpes zoster increased dementia risk; vaccination reduced it dose-dependently",
         projectRef:
           "Viral reactivation: Epidemiological evidence — largest EHR study confirming reactivation-dementia link",
+          fragmentText: "Varicella-zoster virus reactivation and the risk of dementia",
       },
     ],
     verificationStatus: "verified",
@@ -391,7 +405,7 @@ export const viralReactivationSources: Source[] = [
     year: 2022,
     doi: "10.3233/JAD-220287",
     pmid: "35754275",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35754275/#:~:text=Potential%20Involvement%20of%20Varicella%20Zoster%20Virus",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35754275/",
     tags: ["viral", "hsv", "alzheimers"],
     citations: [
       {
@@ -403,6 +417,7 @@ export const viralReactivationSources: Source[] = [
           "VZV triggers HSV-1 reactivation in latently infected neural stem cells, producing AD-like changes. VZV alone produces neither Abeta nor pTau.",
         projectRef:
           "Viral reactivation: Epidemiological evidence — two-stage cascade VZV to HSV-1 to AD",
+          fragmentText: "Potential Involvement of Varicella Zoster Virus in Alzheimers",
       },
     ],
     verificationStatus: "verified",
@@ -421,7 +436,7 @@ export const viralReactivationSources: Source[] = [
     year: 2018,
     doi: "10.1016/j.neuron.2018.05.023",
     pmid: "29937276",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29937276/#:~:text=Multiscale%20Analysis%20of%20Independent%20Alzheimers%20Cohorts",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29937276/",
     tags: ["viral", "alzheimers"],
     citations: [
       {
@@ -433,6 +448,7 @@ export const viralReactivationSources: Source[] = [
           "HHV-6A and HHV-7 enriched in AD brains across independent cohorts; viral abundance correlated with clinical severity",
         projectRef:
           "Viral reactivation: Cross-virus table — HHV-6A in AD brains",
+          fragmentText: "Multiscale Analysis of Independent Alzheimers Cohorts Finds Disruption",
       },
     ],
     verificationStatus: "verified",
@@ -446,7 +462,7 @@ export const viralReactivationSources: Source[] = [
     year: 2022,
     doi: "10.1126/science.abj8222",
     pmid: "35025605",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35025605/#:~:text=Longitudinal%20analysis%20reveals%20high%20prevalence%20of",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35025605/",
     tags: ["viral", "ebv", "ms"],
     citations: [
       {
@@ -458,6 +474,7 @@ export const viralReactivationSources: Source[] = [
           "EBV infection increased MS risk 32-fold; virtually all MS patients were EBV-seropositive",
         projectRef:
           "Viral reactivation: Cross-virus table — EBV and MS risk",
+          fragmentText: "Longitudinal analysis reveals high prevalence of Epstein-Barr virus",
       },
     ],
     verificationStatus: "verified",
@@ -470,7 +487,7 @@ export const viralReactivationSources: Source[] = [
     year: 2008,
     doi: "10.1038/nrmicro1930",
     pmid: "18552864",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18552864/#:~:text=Viral%20infection%20and%20iron%20metabolism",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18552864/",
     tags: ["viral", "iron"],
     citations: [
       {
@@ -481,6 +498,7 @@ export const viralReactivationSources: Source[] = [
           "Comprehensive review of how pathogens manipulate host iron homeostasis for replication advantage",
         projectRef:
           "Viral reactivation: Cross-virus — pathogens manipulate iron",
+          fragmentText: "Viral infection and iron metabolism",
       },
     ],
     verificationStatus: "verified",
@@ -494,7 +512,7 @@ export const viralReactivationSources: Source[] = [
     year: 2009,
     doi: "10.1016/S1474-4422(09)70134-6",
     pmid: "19608099",
-    url: "https://pubmed.ncbi.nlm.nih.gov/19608099/#:~:text=Varicella%20zoster%20virus%20vasculopathies%3A%20diverse%20clinical",
+    url: "https://pubmed.ncbi.nlm.nih.gov/19608099/",
     tags: ["viral", "vascular"],
     citations: [
       {
@@ -506,6 +524,7 @@ export const viralReactivationSources: Source[] = [
           "VZV vasculopathy targets cerebral vessels, particularly in basal ganglia regions that are also the most iron-rich brain structures",
         projectRef:
           "Viral reactivation: Age window — VZV vasculopathy targets iron-rich regions",
+          fragmentText: "Varicella zoster virus vasculopathies diverse clinical manifestations, laboratory",
       },
     ],
     verificationStatus: "verified",
@@ -524,7 +543,7 @@ export const viralReactivationSources: Source[] = [
     year: 2009,
     doi: "10.1148/radiol.2522081399",
     pmid: "19561255",
-    url: "https://pubmed.ncbi.nlm.nih.gov/19561255/#:~:text=Age%20related%20iron%20deposition%20in%20the%20basal",
+    url: "https://pubmed.ncbi.nlm.nih.gov/19561255/",
     tags: ["iron", "aging", "imaging"],
     citations: [
       {
@@ -536,6 +555,7 @@ export const viralReactivationSources: Source[] = [
           "Basal ganglia iron concentration plateaus at age 50-60; most iron-rich structures AND primary VZV vasculopathy targets",
         projectRef:
           "Viral reactivation: Age window table — basal ganglia iron plateau",
+          fragmentText: "Age-related iron deposition in the basal ganglia quantitative",
       },
     ],
     verificationStatus: "verified",
@@ -550,7 +570,7 @@ export const viralReactivationSources: Source[] = [
     journal: "Nature Communications",
     year: 2026,
     doi: "10.1038/s41467-026-68915-1",
-    url: "https://www.nature.com/articles/s41467-026-68915-1#:~:text=Counteracting%20FOX%20proteins%20epigenetically%20control%20the",
+    url: "https://www.nature.com/articles/s41467-026-68915-1",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -562,6 +582,7 @@ export const viralReactivationSources: Source[] = [
           "FOX transcription factors regulate herpesvirus latency; neurons express repressive Fox genes abundantly, limiting reactivation",
         projectRef:
           "Viral reactivation: Latency background — FOX transcription factor control of latency",
+          fragmentText: "Counteracting FOX proteins epigenetically control the herpesvirus lytic-latent",
       },
     ],
     verificationStatus: "verified",

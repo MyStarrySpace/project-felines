@@ -9,7 +9,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Neurology",
     year: 2005,
     pmid: "15883316",
-    url: "https://pubmed.ncbi.nlm.nih.gov/15883316/#:~:text=Clinical%20effects%20of%20Abeta%20immunization%20AN1792",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15883316/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -17,6 +17,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "gilman-2005-neurology",
         quote: "Clinical effects of Abeta immunization (AN1792) in patients with AD in an interrupted trial",
         projectRef: "Drug browser: AN1792 active Aβ vaccine trial",
+        fragmentText: "Clinical effects of Abeta immunization AN1792 in patients",
       },
     ],
     verificationStatus: "verified",
@@ -29,7 +30,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2014,
     doi: "10.1056/NEJMoa1304839",
     pmid: "24450891",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24450891/#:~:text=Two%20phase%203%20trials%20of%20bapineuzumab",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24450891/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -37,6 +38,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "salloway-2014-nejm",
         quote: "Two phase 3 trials of bapineuzumab in mild-to-moderate Alzheimer's disease",
         projectRef: "Drug browser: Bapineuzumab Phase 3 failure",
+        fragmentText: "Two phase 3 trials of bapineuzumab in mild-to-moderate",
       },
     ],
     verificationStatus: "verified",
@@ -49,7 +51,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2018,
     doi: "10.1056/NEJMoa1705971",
     pmid: "29365294",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29365294/#:~:text=Solanezumab%20did%20not%20significantly%20affect%20cognitive",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29365294/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -57,6 +59,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "honig-2018-nejm",
         quote: "Trial of Solanezumab for Mild Dementia Due to Alzheimer's Disease",
         projectRef: "Drug browser: Solanezumab EXPEDITION3 failure",
+        fragmentText: "Trial of Solanezumab for Mild Dementia Due to",
       },
     ],
     verificationStatus: "verified",
@@ -69,7 +72,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2022,
     doi: "10.1001/jamaneurol.2022.2909",
     pmid: "36121669",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36121669/#:~:text=Evaluating%20the%20Safety%20and%20Efficacy%20of",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36121669/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -77,6 +80,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "ostrowitzki-2022-jamaneurol",
         quote: "Evaluating the Safety and Efficacy of Crenezumab vs Placebo in Adults With Early Alzheimer Disease",
         projectRef: "Drug browser: Crenezumab CREAD failure",
+        fragmentText: "Evaluating the Safety and Efficacy of Crenezumab vs",
       },
     ],
     verificationStatus: "verified",
@@ -89,7 +93,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2023,
     doi: "10.1056/NEJMoa2304430",
     pmid: "37966285",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37966285/#:~:text=gantenerumab%20led%20to%20a%20lower%20amyloid%20plaque%20burden%20than%20placebo",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37966285/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -97,6 +101,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "bateman-2023-nejm",
         quote: "the use of gantenerumab led to a lower amyloid plaque burden than placebo at 116 weeks but was not associated with slower clinical decline.",
         projectRef: "Drug browser: Gantenerumab GRADUATE I/II trial result",
+        fragmentText: "the use of gantenerumab led to a lower",
       },
     ],
     verificationStatus: "verified",
@@ -109,7 +114,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2022,
     doi: "10.14283/jpad.2022.30",
     pmid: "35542991",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35542991/#:~:text=Two%20Randomized%20Phase%203%20Studies%20of",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35542991/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -117,6 +122,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "budd-haeberlein-2022-jpad",
         quote: "Two Randomized Phase 3 Studies of Aducanumab in Early Alzheimer's Disease",
         projectRef: "Drug browser: Aducanumab EMERGE/ENGAGE contested approval",
+        fragmentText: "Two Randomized Phase 3 Studies of Aducanumab in",
       },
     ],
     verificationStatus: "verified",
@@ -129,7 +135,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2023,
     doi: "10.1056/NEJMoa2212948",
     pmid: "36449413",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36449413/#:~:text=Lecanemab%20in%20Early%20Alzheimers%20Disease",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36449413/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -137,6 +143,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "van-dyck-2023-nejm",
         quote: "Lecanemab in Early Alzheimer's Disease",
         projectRef: "Drug browser: Lecanemab CLARITY-AD modest benefit",
+        fragmentText: "Lecanemab in Early Alzheimers Disease",
       },
     ],
     verificationStatus: "verified",
@@ -149,7 +156,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2023,
     doi: "10.1001/jama.2023.13239",
     pmid: "37459141",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37459141/#:~:text=Donanemab%20in%20Early%20Symptomatic%20Alzheimer%20Disease%3A",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37459141/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -157,6 +164,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "sims-2023-jama",
         quote: "Donanemab in Early Symptomatic Alzheimer Disease: The TRAILBLAZER-ALZ 2 Randomized Clinical Trial",
         projectRef: "Drug browser: Donanemab TRAILBLAZER-ALZ 2 modest benefit",
+        fragmentText: "Donanemab in Early Symptomatic Alzheimer Disease The TRAILBLAZER-ALZ",
       },
     ],
     verificationStatus: "verified",
@@ -170,7 +178,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2018,
     doi: "10.1056/NEJMoa1706441",
     pmid: "29719179",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29719179/#:~:text=Randomized%20Trial%20of%20Verubecestat%20for%20Mild%20to%20Moderate",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29719179/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -178,6 +186,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "egan-2018-nejm-verubecestat",
         quote: "Randomized Trial of Verubecestat for Mild-to-Moderate Alzheimer's Disease",
         projectRef: "Drug browser: Verubecestat cognitive worsening",
+        fragmentText: "Randomized Trial of Verubecestat for Mild-to-Moderate Alzheimers Disease",
       },
     ],
     verificationStatus: "verified",
@@ -190,7 +199,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2021,
     doi: "10.1001/jamaneurol.2020.4857",
     pmid: "33464300",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33464300/#:~:text=Findings%20of%20Efficacy%2C%20Safety%2C%20and%20Biomarker",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33464300/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -198,6 +207,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "sperling-2021-jamaneurol",
         quote: "Findings of Efficacy, Safety, and Biomarker Outcomes of Atabecestat in Preclinical Alzheimer Disease",
         projectRef: "Drug browser: Atabecestat liver toxicity + cognitive worsening",
+        fragmentText: "Findings of Efficacy, Safety, and Biomarker Outcomes of",
       },
     ],
     verificationStatus: "verified",
@@ -210,7 +220,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2020,
     doi: "10.1001/jamaneurol.2019.3988",
     pmid: "31764959",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31764959/#:~:text=Efficacy%20and%20Safety%20of%20Lanabecestat%20for",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31764959/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -218,6 +228,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "wessels-2020-jamaneurol",
         quote: "Efficacy and Safety of Lanabecestat for Treatment of Early and Mild Alzheimer Disease",
         projectRef: "Drug browser: Lanabecestat futility halt",
+        fragmentText: "Efficacy and Safety of Lanabecestat for Treatment of",
       },
     ],
     verificationStatus: "verified",
@@ -247,7 +258,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2024,
     doi: "10.1002/alz.14237",
     pmid: "39320017",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39320017/#:~:text=Reversibility%20of%20cognitive%20worsening%20observed%20with",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39320017/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -255,6 +266,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "tariot-2024-alzdement",
         quote: "Reversibility of cognitive worsening observed with BACE inhibitor umibecestat",
         projectRef: "Drug browser: Umibecestat cognitive worsening in prevention trial",
+        fragmentText: "Reversibility of cognitive worsening observed with BACE inhibitor",
       },
     ],
     verificationStatus: "verified",
@@ -268,7 +280,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2024,
     doi: "10.1212/WNL.0000000000208061",
     pmid: "38386949",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38386949/#:~:text=Assessment%20of%20Efficacy%20and%20Safety%20of",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38386949/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -276,6 +288,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "fleisher-2024-neurology",
         quote: "Assessment of Efficacy and Safety of Zagotenemab: Results From PERISCOPE-ALZ",
         projectRef: "Drug browser: Zagotenemab MC1 epitope, missed endpoint",
+        fragmentText: "Assessment of Efficacy and Safety of Zagotenemab Results",
       },
     ],
     verificationStatus: "verified",
@@ -308,7 +321,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2008,
     doi: "10.1001/archneur.2008.65.7.nct70006",
     pmid: "18474729",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18474729/#:~:text=Cognitive%20function%20over%20time%20in%20the",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18474729/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -316,6 +329,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "adapt-2008-archneurol",
         quote: "Cognitive function over time in the Alzheimer's Disease Anti-inflammatory Prevention Trial (ADAPT)",
         projectRef: "Drug browser: ADAPT NSAIDs no disease modification",
+        fragmentText: "Cognitive function over time in the Alzheimers Disease",
       },
     ],
     verificationStatus: "verified",
@@ -328,7 +342,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2021,
     doi: "10.1186/s13195-021-00795-7",
     pmid: "33731209",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33731209/#:~:text=36%20week%20multicenter%2C%20randomized%2C%20double%20blind%2C%20placebo%20controlled%2C%20parallel%20group%2C",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33731209/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -336,6 +350,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "xiao-2021-alzresther",
         quote: "A 36-week multicenter, randomized, double-blind, placebo-controlled, parallel-group, phase 3 clinical trial of sodium oligomannate",
         projectRef: "Drug browser: GV-971 China conditional approval, no Western replication",
+        fragmentText: "A 36-week multicenter, randomized, double-blind, placebo-controlled, parallel-group, phase",
       },
     ],
     verificationStatus: "verified",
@@ -348,7 +363,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2025,
     doi: "10.1186/s13195-024-01666-7",
     pmid: "39780249",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39780249/#:~:text=EVOKE%20and%20EVOKE%2B%20design%20of%20two",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39780249/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -356,6 +371,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "cummings-2025-alzresther",
         quote: "EVOKE and EVOKE+ design of two large-scale phase 3 studies evaluating semaglutide in early-stage symptomatic Alzheimer's disease",
         projectRef: "Drug browser: Semaglutide EVOKE/EVOKE+ trial failure",
+        fragmentText: "semaglutide in early-stage symptomatic Alzheimers disease",
       },
     ],
     verificationStatus: "verified",
@@ -385,7 +401,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2018,
     doi: "10.1073/pnas.1716095115",
     pmid: "29378952",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29378952/#:~:text=OLT1177%2C%20a%20beta%20sulfonyl%20nitrile%20compound%2C%20safe",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29378952/",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -393,6 +409,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "marchetti-2018-pnas",
         quote: "OLT1177, a β-sulfonyl nitrile compound, safe in humans, inhibits the NLRP3 inflammasome",
         projectRef: "Drug browser: Dapansutrile NLRP3 inflammasome inhibitor",
+        fragmentText: "OLT1177, a -sulfonyl nitrile compound, safe in humans,",
       },
     ],
     verificationStatus: "verified",
@@ -404,7 +421,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Alzheimer's & Dementia: Translational Research & Clinical Interventions",
     year: 2021,
     pmid: "33778150",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33778150/#:~:text=Safety%20and%20efficacy%20of%20sargramostim%20GM%20CSF",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33778150/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -412,6 +429,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "potter-2021-alzdemtrci",
         quote: "Safety and efficacy of sargramostim (GM-CSF) in the treatment of Alzheimer's disease",
         projectRef: "Drug browser: Sargramostim GM-CSF immune-boosting approach",
+        fragmentText: "Safety and efficacy of sargramostim GM-CSF in the",
       },
     ],
     verificationStatus: "verified",
@@ -423,7 +441,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Lancet Neurology",
     year: 2021,
     pmid: "34146512",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34146512/#:~:text=Safety%20and%20efficacy%20of%20pioglitazone%20for",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34146512/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -431,6 +449,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "burns-2021-lancetneurol",
         quote: "Safety and efficacy of pioglitazone for the delay of cognitive impairment in people at risk of Alzheimer's disease (TOMMORROW)",
         projectRef: "Drug browser: Pioglitazone TOMMORROW futility",
+        fragmentText: "Safety and efficacy of pioglitazone for the delay",
       },
     ],
     verificationStatus: "verified",
@@ -444,7 +463,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2026,
     doi: "10.1001/jama.2025.21738",
     pmid: "41405855",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41405855/#:~:text=Valacyclovir%20Treatment%20of%20Early%20Symptomatic%20Alzheimer",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41405855/",
     tags: ["clinical-trials", "alzheimers", "hsv"],
     citations: [
       {
@@ -452,6 +471,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "devanand-2026-jama",
         quote: "Valacyclovir Treatment of Early Symptomatic Alzheimer Disease: The VALAD Randomized Clinical Trial",
         projectRef: "Drug browser: Valacyclovir VALAD worsened cognition",
+        fragmentText: "Valacyclovir Treatment of Early Symptomatic Alzheimer Disease The",
       },
     ],
     verificationStatus: "verified",
@@ -464,7 +484,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Lancet",
     year: 2008,
     pmid: "18640457",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18640457/#:~:text=Effect%20of%20dimebon%20on%20cognition%2C%20activities",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18640457/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -472,6 +492,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "doody-2008-lancet",
         quote: "Effect of dimebon on cognition, activities of daily living, behaviour, and global function in patients with mild-to-moderate Alzheimer's disease",
         projectRef: "Drug browser: Dimebon Phase 2 positive, all Phase 3 negative",
+        fragmentText: "Effect of dimebon on cognition, activities of daily",
       },
     ],
     verificationStatus: "verified",
@@ -483,7 +504,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Lancet",
     year: 2016,
     pmid: "27863809",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27863809/#:~:text=Efficacy%20and%20safety%20of%20tau%20aggregation%20inhibitor",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27863809/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -491,6 +512,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "gauthier-2016-lancet",
         quote: "Efficacy and safety of tau-aggregation inhibitor therapy in patients with mild or moderate Alzheimer's disease",
         projectRef: "Drug browser: LMTM tau aggregation inhibitor monotherapy subgroup only",
+        fragmentText: "Efficacy and safety of tau-aggregation inhibitor therapy in",
       },
     ],
     verificationStatus: "verified",
@@ -521,7 +543,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2013,
     doi: "10.1056/NEJMoa1210951",
     pmid: "23883379",
-    url: "https://pubmed.ncbi.nlm.nih.gov/23883379/#:~:text=phase%203%20trial%20of%20semagacestat%20for",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23883379/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -529,6 +551,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "doody-2013-nejm",
         quote: "A phase 3 trial of semagacestat for treatment of Alzheimer's disease",
         projectRef: "Drug browser: Semagacestat cognitive worsening + skin cancer",
+        fragmentText: "A phase 3 trial of semagacestat for treatment",
       },
     ],
     verificationStatus: "verified",
@@ -541,7 +564,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2015,
     doi: "10.1001/jamaneurol.2015.0607",
     pmid: "26414022",
-    url: "https://pubmed.ncbi.nlm.nih.gov/26414022/#:~:text=Targeting%20Prodromal%20Alzheimer%20Disease%20With%20Avagacestat",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26414022/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -549,6 +572,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "coric-2015-jamaneurol",
         quote: "Targeting Prodromal Alzheimer Disease With Avagacestat",
         projectRef: "Drug browser: Avagacestat cognitive worsening, Notch toxicity",
+        fragmentText: "Targeting Prodromal Alzheimer Disease With Avagacestat",
       },
     ],
     verificationStatus: "verified",
@@ -562,7 +586,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 1998,
     doi: "10.1001/archinte.158.9.1021",
     pmid: "9588436",
-    url: "https://pubmed.ncbi.nlm.nih.gov/9588436/#:~:text=Donepezil%20improves%20cognition%20and%20global%20function",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9588436/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -570,6 +594,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "rogers-1998-neurology",
         quote: "Donepezil improves cognition and global function in Alzheimer disease",
         projectRef: "Drug browser: Donepezil symptomatic only, no disease modification",
+        fragmentText: "Donepezil improves cognition and global function in Alzheimer",
       },
     ],
     verificationStatus: "verified",
@@ -581,7 +606,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "International Journal of Geriatric Psychopharmacology",
     year: 1998,
     pmid: "12578757",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12578757/#:~:text=randomized%20trial%20evaluating%20the%20efficacy%20and",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12578757/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -601,7 +626,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2000,
     doi: "10.1212/wnl.54.12.2261",
     pmid: "10881250",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10881250/#:~:text=Galantamine%20in%20AD%3A%20A%206%20month%20randomized%2C",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10881250/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -609,6 +634,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "raskind-2000-neurology",
         quote: "Galantamine in AD: A 6-month randomized, placebo-controlled trial with a 6-month extension",
         projectRef: "Drug browser: Galantamine symptomatic only",
+        fragmentText: "Galantamine in AD A 6-month randomized, placebo-controlled trial",
       },
     ],
     verificationStatus: "verified",
@@ -621,7 +647,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "New England Journal of Medicine",
     year: 2003,
     pmid: "12672860",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12672860/#:~:text=Memantine%20in%20moderate%20to%20severe%20Alzheimers%20disease",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12672860/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -629,6 +655,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "reisberg-2003-nejm",
         quote: "Memantine in moderate-to-severe Alzheimer's disease",
         projectRef: "Drug browser: Memantine symptomatic only",
+        fragmentText: "Memantine in moderate-to-severe Alzheimers disease",
       },
     ],
     verificationStatus: "verified",
@@ -642,7 +669,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2026,
     doi: "10.1038/s41591-025-04106-7",
     pmid: "41326666",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41326666/#:~:text=primary%20outcome%20showed%20no%20significant%20differences",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41326666/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -650,6 +677,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "edison-2026-natmed",
         quote: "The primary outcome showed no significant differences in cerebral glucose metabolism (difference = -0.17; 95% confidence interval: -0.39 to 0.06; P = 0.14) between the two groups.",
         projectRef: "Drug browser: Liraglutide ELAD primary outcome negative, secondary cognition signal",
+        fragmentText: "The primary outcome showed no significant differences in",
       },
     ],
     verificationStatus: "verified",
@@ -664,7 +692,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2019,
     doi: "10.1001/jamaneurol.2019.2050",
     pmid: "31329216",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31329216/#:~:text=Statistically%20significant%20effects%20of%20AZD0530%20treatment%20were%20not%20found",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31329216/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -672,6 +700,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "vandyck-2019-jama-neurol",
         quote: "Statistically significant effects of AZD0530 treatment were not found on relative CMRgl reduction in an Alzheimer disease-associated region of interest or on secondary clinical or biomarker measures.",
         projectRef: "Drug browser: Saracatinib Fyn kinase inhibitor Phase 2a AD result",
+        fragmentText: "Statistically significant effects of AZD0530 treatment were not",
       },
     ],
     verificationStatus: "verified",
@@ -686,7 +715,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2024,
     doi: "10.1186/s13195-024-01599-1",
     pmid: "39444037",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11515656/#:~:text=AL002%20is%20currently%20being%20tested%20in%20a%20phase%202",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11515656/",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -694,6 +723,7 @@ export const drugTrialsAdSources: Source[] = [
         sourceId: "long-2024-alz-res-ther",
         quote: "AL002 is currently being tested in a phase 2, randomized, double-blind, placebo-controlled study in early AD.",
         projectRef: "Drug browser: AL002 TREM2 agonist Phase 1/2 and INVOKE-2 context",
+        fragmentText: "AL002 is currently being tested in a phase",
       },
     ],
     verificationStatus: "verified",

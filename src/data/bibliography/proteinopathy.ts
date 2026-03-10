@@ -11,7 +11,7 @@ export const proteinopathySources: Source[] = [
     year: 2011,
     doi: "10.1074/jbc.M110.158980",
     pmid: "21147772",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3039358/#:~:text=iron%20specifically%20enhances%20A%CE%B2%20toxicity%20but%20only%20if%20the%20metal",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3039358/",
     tags: ["iron", "alzheimers", "ferroptosis"],
     citations: [
       {
@@ -24,6 +24,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: 'Without iron present during aggregation, these aggregates are non-toxic'",
+          fragmentText: "iron specifically enhances A toxicity but only if",
       },
     ],
     verificationStatus: "verified",
@@ -38,7 +39,7 @@ export const proteinopathySources: Source[] = [
     year: 2019,
     doi: "10.1038/s41593-019-0423-2",
     pmid: "31235907",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31235907/#:~:text=crowded%20environment%20of%20membranes%20therein",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31235907/",
     tags: ["parkinsons"],
     citations: [
       {
@@ -51,6 +52,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: 'Lewy bodies are not protein fibrils. They are crowded organelles and lipid membranes.'",
+          fragmentText: "a crowded environment of membranes therein, including vesicular",
       },
       {
         citationId: "shahmoradian-2019-natneurosci-c2",
@@ -62,6 +64,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing: Parkinson's evidence — fibrils not the dominant component of Lewy bodies",
+          fragmentText: "Filaments interspersed between the membranes and organelles were",
       },
     ],
     verificationStatus: "verified",
@@ -75,7 +78,7 @@ export const proteinopathySources: Source[] = [
     year: 2010,
     doi: "10.1016/j.jinorgbio.2009.11.005",
     pmid: "20005574",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2824027/#:~:text=1%3A1%20stoichiometry%20and%20can%20be%20readily%20oxidized",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2824027/",
     tags: ["iron", "parkinsons"],
     citations: [
       {
@@ -86,6 +89,7 @@ export const proteinopathySources: Source[] = [
         context:
           "Alpha-synuclein binds Fe\u00B3\u207A with ~1.2\u00D710\u00B9\u00B3 M\u207B\u00B9 affinity, demonstrating high-affinity iron binding",
         location: "Abstract",
+        fragmentText: "The complex is of a 11 stoichiometry and",
         projectRef:
           "Landing teaser: 'Alpha-synuclein binds ferric iron with 10\u00B9\u00B3 M\u207B\u00B9 affinity'",
       },
@@ -101,7 +105,7 @@ export const proteinopathySources: Source[] = [
     year: 2009,
     doi: "10.1371/journal.pone.0004468",
     pmid: "19212444",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2637434/#:~:text=mediates%20cellular%20iron%20uptake%20and%20transport",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2637434/",
     tags: ["iron", "prion"],
     citations: [
       {
@@ -114,6 +118,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: PrP iron uptake function (prion disease pathogenesis)",
+          fragmentText: "PrPC mediates cellular iron uptake and transport, and",
       },
     ],
     verificationStatus: "verified",
@@ -127,7 +132,7 @@ export const proteinopathySources: Source[] = [
     year: 2009,
     doi: "10.1371/journal.pone.0006115",
     pmid: "19568430",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2699477/#:~:text=selective%20deletion%20of%20PrP",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2699477/",
     tags: ["iron", "prion"],
     citations: [
       {
@@ -140,6 +145,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Reframe section convergence table: PrP-null mice iron homeostasis",
+          fragmentText: "selective deletion of PrP in transgenic mice PrPKO",
       },
     ],
     verificationStatus: "verified",
@@ -153,7 +159,7 @@ export const proteinopathySources: Source[] = [
     year: 2009,
     doi: "10.1371/journal.pone.0007208",
     pmid: "19784368",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2745754/#:~:text=prion%20gene%20family%20is%20phylogenetically%20derived",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2745754/",
     tags: ["iron", "prion"],
     citations: [
       {
@@ -166,6 +172,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: 'PrP descended from a zinc/iron transporter family'",
+          fragmentText: "the prion gene family is phylogenetically derived from",
       },
       {
         citationId: "schmitt-ulms-2009-plosone-c2",
@@ -177,6 +184,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: PrP evolutionary age (~530 Mya)",
+          fragmentText: "The level of sequence homology and the presence",
       },
     ],
     verificationStatus: "verified",
@@ -189,7 +197,7 @@ export const proteinopathySources: Source[] = [
     year: 2013,
     doi: "10.1186/1471-2164-14-290",
     pmid: "23627794",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3660159/#:~:text=The%20presence%20of%20an",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3660159/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -202,6 +210,7 @@ export const proteinopathySources: Source[] = [
         location: "Results",
         projectRef:
           "Landing teaser: APP evolutionary age (>540 Mya, ancient metazoan)",
+          fragmentText: "that the ancestral gene",
       },
       {
         citationId: "tharp-2013-bmcgenomics-c2",
@@ -213,6 +222,7 @@ export const proteinopathySources: Source[] = [
         location: "Background",
         projectRef:
           "Landing teaser: APP homologs in flies, worms, and cnidarians",
+          fragmentText: "Invertebrate species genomes encode a single homologue referred",
       },
       {
         citationId: "tharp-2013-bmcgenomics-c3",
@@ -224,6 +234,7 @@ export const proteinopathySources: Source[] = [
         location: "Results",
         projectRef:
           "Landing teaser: APP homologs in flies",
+          fragmentText: "fruit flies express APPL-1 only in neurons",
       },
     ],
     verificationStatus: "verified",
@@ -237,7 +248,7 @@ export const proteinopathySources: Source[] = [
     year: 2012,
     doi: "10.1371/journal.pone.0051305",
     pmid: "23236467",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3516539/#:~:text=APP%20and%20PrP%20interact%20with%20each%20other",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3516539/",
     tags: ["iron", "prion", "alzheimers"],
     citations: [
       {
@@ -249,6 +260,7 @@ export const proteinopathySources: Source[] = [
           "APP and PrPC physically interact in a conserved complex across vertebrates and invertebrates, suggesting a shared ancestral iron-management function",
         projectRef:
           "Reframe section: APP-PrPC conserved physical interaction as evidence of cooperative iron handling",
+          fragmentText: "APP and PrP Interact",
       },
     ],
     verificationStatus: "verified",
@@ -261,7 +273,7 @@ export const proteinopathySources: Source[] = [
     year: 2011,
     doi: "10.1371/journal.pone.0015814",
     pmid: "21249223",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3018422/#:~:text=a%20cellular%20ferrireductase%2C%20responsible%20for%20reducing",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3018422/",
     tags: ["iron", "parkinsons"],
     citations: [
       {
@@ -274,6 +286,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: '\u03B1-synuclein is a cellular ferrireductase'",
+          fragmentText: "Here we provide strong evidence that S is",
       },
     ],
     verificationStatus: "verified",
@@ -287,7 +300,7 @@ export const proteinopathySources: Source[] = [
     year: 2016,
     doi: "10.1186/s12864-016-2590-9",
     pmid: "27030133",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4815063/#:~:text=confirmed%20presence%20in%20Chondrichthyes",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4815063/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -300,6 +313,7 @@ export const proteinopathySources: Source[] = [
         location: "Discussion",
         projectRef:
           "Landing teaser: tau evolutionary age (~550 Mya, vertebrate WGD)",
+          fragmentText: "sets their period of formation around 550 million",
       },
     ],
     verificationStatus: "verified",
@@ -314,7 +328,7 @@ export const proteinopathySources: Source[] = [
     year: 2026,
     doi: "10.26508/lsa.202503453",
     pmid: "41558820",
-    url: "https://www.life-science-alliance.org/content/9/4/e202503453#:~:text=A%CE%B242%20fibrils%20inhibited%20CTB%20syncytialization",
+    url: "https://www.life-science-alliance.org/content/9/4/e202503453",
     tags: ["alzheimers", "iron"],
     citations: [
       {
@@ -327,6 +341,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: 'not even unique to the brain' \u2014 placental A\u03B2 plaques in preeclampsia",
+          fragmentText: "A42 fibrils inhibited CTB syncytialization, a critical step",
       },
       {
         citationId: "nishioka-2026-lsa-c2",
@@ -338,6 +353,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: hypoxia driving placental A\u03B2 production",
+          fragmentText: "levels of hypoxia-inducible factor 1- and -secretase BACE-1",
       },
     ],
     verificationStatus: "verified",
@@ -351,7 +367,7 @@ export const proteinopathySources: Source[] = [
     year: 2026,
     doi: "10.1161/HYPERTENSIONAHA.125.26344",
     pmid: "41608783",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41608783/#:~:text=elevated%20hemoglobin%2C%20ferritin%2C%20and%20serum%20iron",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41608783/",
     tags: ["iron", "ferroptosis"],
     citations: [
       {
@@ -364,6 +380,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: 'not even unique to the brain' \u2014 iron overload in preeclamptic placentas",
+          fragmentText: "Patients with preeclampsia exhibited elevated hemoglobin, ferritin, and",
       },
       {
         citationId: "yang-2026-hypertension-c2",
@@ -375,6 +392,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: 'not even unique to the brain' \u2014 iron-driven ferroptosis + apoptosis in placenta",
+          fragmentText: "Iron overload induced ferroptosis and apoptosis in trophoblasts,",
       },
       {
         citationId: "yang-2026-hypertension-c3",
@@ -386,6 +404,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: deferoxamine + MitoQ rescue of placental damage",
+          fragmentText: "Both deferoxamine and MitoQ rescued these effects in",
       },
     ],
     verificationStatus: "verified",
@@ -398,7 +417,7 @@ export const proteinopathySources: Source[] = [
     year: 2002,
     doi: "10.1186/gb-2001-3-1-reviews3002",
     pmid: "11806835",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC150459/#:~:text=not%20found%20outside%20vertebrates",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC150459/",
     tags: ["parkinsons"],
     citations: [
       {
@@ -411,6 +430,7 @@ export const proteinopathySources: Source[] = [
         location: "Gene organization and evolutionary history",
         projectRef:
           "Landing teaser: \u03B1-synuclein vertebrate-specific origin (~500 Mya)",
+          fragmentText: "Synuclein family members are not found outside vertebrates",
       },
     ],
     verificationStatus: "verified",
@@ -424,7 +444,7 @@ export const proteinopathySources: Source[] = [
     year: 2020,
     doi: "10.1038/s41559-020-1156-z",
     pmid: "32313176",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7269912/#:~:text=preceded%20the%20divergence%20of%20lamprey",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7269912/",
     tags: ["genetics"],
     citations: [
       {
@@ -437,6 +457,7 @@ export const proteinopathySources: Source[] = [
         location: "Conclusion",
         projectRef:
           "Landing teaser: \u03B1-synuclein evolutionary origin dating (~490 Mya via WGD1)",
+          fragmentText: "the divergence of lamprey and jawed vertebrate lineages",
       },
     ],
     verificationStatus: "verified",
@@ -462,6 +483,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: \u03B1-synuclein origin via vertebrate WGD1",
+          fragmentText: "A single synuclein-coding gene was present in the",
       },
     ],
     verificationStatus: "verified",
@@ -476,7 +498,7 @@ export const proteinopathySources: Source[] = [
     year: 2022,
     doi: "10.1002/pro.4477",
     pmid: "36254680",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9667828/#:~:text=PrP%20likely%20evolved%20from%20the%20ZIP%20family",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9667828/",
     tags: ["prion", "genetics"],
     citations: [
       {
@@ -489,6 +511,7 @@ export const proteinopathySources: Source[] = [
         location: "Introduction",
         projectRef:
           "Landing teaser: PrP evolutionary origin dating (~500 Mya)",
+          fragmentText: "PrP likely evolved from the ZIP family of",
       },
     ],
     verificationStatus: "verified",
@@ -503,7 +526,7 @@ export const proteinopathySources: Source[] = [
     year: 2006,
     doi: "10.1038/nm1438",
     pmid: "16799555",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2983090/#:~:text=rapidly%20produced%20and%20cleared%20in%20the%20CNS",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2983090/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -516,6 +539,7 @@ export const proteinopathySources: Source[] = [
         location: "Results",
         projectRef:
           "Landing teaser: A\u03B2 constitutive production and rapid turnover (~8h half-life)",
+          fragmentText: "Our results indicate A is rapidly produced and",
       },
     ],
     verificationStatus: "verified",
@@ -530,7 +554,7 @@ export const proteinopathySources: Source[] = [
     year: 2010,
     doi: "10.1126/science.1197623",
     pmid: "21148344",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3073454/#:~:text=30%25%20impairment%20in%20the%20clearance",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3073454/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -543,6 +567,7 @@ export const proteinopathySources: Source[] = [
         location: "Results",
         projectRef:
           "Landing teaser: In sporadic AD, A\u03B2 production unchanged, clearance drops ~30%",
+          fragmentText: "in the development of",
       },
     ],
     verificationStatus: "verified",
@@ -556,7 +581,7 @@ export const proteinopathySources: Source[] = [
     year: 2024,
     doi: "10.7554/eLife.90690",
     pmid: "39027984",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259434/#:~:text=non-productive%20E-S-like%20complex",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259434/",
     tags: ["alzheimers"],
     citations: [
       {
@@ -567,6 +592,7 @@ export const proteinopathySources: Source[] = [
         context:
           "A\u03B242 competitively inhibits \u03B3-secretase at IC50 ~1.3 \u03BCM (at KM substrate concentration); human-specific (murine A\u03B242 barely inhibits, max ~20%)",
         location: "Results",
+        fragmentText: "Collectively, our analyses support a model wherein A42",
         projectRef:
           "Landing teaser: A\u03B242 product feedback inhibition on \u03B3-secretase",
       },
@@ -580,6 +606,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: species specificity of A\u03B242 \u03B3-secretase inhibition",
+          fragmentText: "neither murine A42 nor human A17-42 p3, inhibit",
       },
     ],
     verificationStatus: "verified",
@@ -594,7 +621,7 @@ export const proteinopathySources: Source[] = [
     year: 2019,
     doi: "10.1038/s41419-019-1636-8",
     pmid: "31171765",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6554322/#:~:text=promoted%20oligodendrocyte%20differentiation%20and%20maturation",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6554322/",
     tags: ["alzheimers", "oligodendrocyte", "glia"],
     citations: [
       {
@@ -607,6 +634,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: A\u03B2 promotes myelination as an extracellular signal",
+          fragmentText: "as well as cell survival in cultured oligodendrocytes",
       },
       {
         citationId: "quintela-lopez-2019-celldeathdis-c2",
@@ -618,6 +646,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: A\u03B2 myelination signaling mechanism",
+          fragmentText: "A oligomers required integrin 1 receptor, Src-family kinase",
       },
     ],
     verificationStatus: "verified",
@@ -631,7 +660,7 @@ export const proteinopathySources: Source[] = [
     year: 2003,
     doi: "10.1126/science.1079469",
     pmid: "12702875",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12702875/#:~:text=common%20conformation-dependent%20structure%20that%20is%20unique%20to%20soluble%20oligomers",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12702875/",
     tags: ["alzheimers", "prion"],
     citations: [
       {
@@ -643,6 +672,7 @@ export const proteinopathySources: Source[] = [
           "A11 antibody recognizes shared oligomeric fold across A\u03B2, \u03B1-syn, PrP, IAPP, insulin amyloid",
         projectRef:
           "Reframe section: convergence table \u2014 shared A11 conformation across proteins",
+          fragmentText: "all of the soluble oligomers tested display a",
       },
     ],
     verificationStatus: "verified",
@@ -657,7 +687,7 @@ export const proteinopathySources: Source[] = [
     year: 2015,
     doi: "10.1016/j.neuron.2015.05.021",
     pmid: "26074003",
-    url: "https://pubmed.ncbi.nlm.nih.gov/26074003/#:~:text=Persistence%20of%20long-term%20memory%20results%20from%20the%20assembly%20of%20CPEB3%20into%20aggregates",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26074003/",
     tags: ["prion", "alzheimers"],
     citations: [
       {
@@ -669,6 +699,7 @@ export const proteinopathySources: Source[] = [
           "CPEB3 uses the same amyloid fold as pathological proteins, but for memory storage",
         projectRef:
           "Reframe section: convergence table \u2014 CPEB3 functional amyloid",
+          fragmentText: "persistence of long-term memory results from the assembly",
       },
     ],
     verificationStatus: "verified",
@@ -683,7 +714,7 @@ export const proteinopathySources: Source[] = [
     year: 2012,
     doi: "10.1016/j.cell.2012.01.004",
     pmid: "22284910",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22284910/#:~:text=oligomeric%20Orb2%20is%20amyloid%20in%20nature",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22284910/",
     tags: ["prion"],
     citations: [
       {
@@ -708,7 +739,7 @@ export const proteinopathySources: Source[] = [
     year: 2020,
     doi: "10.1126/science.aba3526",
     pmid: "32165583",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32165583/#:~:text=Unlike%20the%20hydrophobic%20core%20of%20pathogenic%20amyloids",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32165583/",
     tags: ["prion"],
     citations: [
       {
@@ -720,6 +751,7 @@ export const proteinopathySources: Source[] = [
           "Same cross-beta fold as pathological amyloids but hydrophilic/reversible \u2014 functional version",
         projectRef:
           "Reframe section: convergence table \u2014 CPEB3 hydrophilic vs pathological hydrophobic core",
+          fragmentText: "Unlike the hydrophobic core of pathogenic amyloids, the",
       },
     ],
     verificationStatus: "verified",
@@ -733,7 +765,7 @@ export const proteinopathySources: Source[] = [
     journal: "Acta Neuropathologica",
     year: 2026,
     doi: "10.1007/s00401-026-02983-x",
-    url: "https://link.springer.com/article/10.1007/s00401-026-02983-x#:~:text=Flortaucipir%20signal%20correlated%20more%20strongly%20with%20ferric%20iron",
+    url: "https://link.springer.com/article/10.1007/s00401-026-02983-x",
     tags: ["iron", "alzheimers", "imaging"],
     citations: [
       {
@@ -744,6 +776,7 @@ export const proteinopathySources: Source[] = [
         context:
           "The FDA-approved tau PET tracer binds ferric iron deposits, not just tau protein",
         location: "Abstract",
+        fragmentText: "tauopathies and FTLD-TDP-43, correlations between Flortaucipir signal and",
         projectRef:
           "Landing teaser: tau PET tracer binds ferric iron in non-AD tauopathies",
       },
@@ -757,6 +790,7 @@ export const proteinopathySources: Source[] = [
         location: "Discussion",
         projectRef:
           "Landing teaser: iron predicts tau PET signal better than tau in PSP/FTLD",
+          fragmentText: "ferric iron was the main positive predictor in",
       },
     ],
     verificationStatus: "verified",
@@ -770,7 +804,7 @@ export const proteinopathySources: Source[] = [
     year: 2006,
     doi: "10.1093/jb/mvj083",
     pmid: "16672274",
-    url: "https://pubmed.ncbi.nlm.nih.gov/16672274/#:~:text=a%20two-state%20transition%20for%20the%20metal-bound%20state",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16672274/",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -783,6 +817,7 @@ export const proteinopathySources: Source[] = [
         location: "Abstract",
         projectRef:
           "Landing teaser: Fe\u00B3\u207A promotes A\u03B2 beta-sheet transition",
+          fragmentText: "Only in 5 and 25 TFE can Abeta",
       },
     ],
     verificationStatus: "verified",
@@ -795,7 +830,7 @@ export const proteinopathySources: Source[] = [
     year: 2013,
     doi: "10.2174/15672026113109990016",
     pmid: "23721262",
-    url: "https://pubmed.ncbi.nlm.nih.gov/23721262/#:~:text=trivalent%20iron%20(FeIII)%20initiates%20a%20hydroxyl%20radical-catalyzed%20conversion",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23721262/",
     tags: ["iron", "vascular"],
     citations: [
       {
@@ -805,6 +840,7 @@ export const proteinopathySources: Source[] = [
           "trivalent iron (FeIII) initiates a hydroxyl radical-catalyzed conversion of fibrinogen into a fibrin-like polymer (parafibrin) that is remarkably resistant to the proteolytic dissolution and thus promotes its intravascular deposition",
         context:
           "Fenton-derived hydroxyl radicals convert fibrinogen into protease-resistant amyloid-like deposits",
+          fragmentText: "trivalent iron FeIII initiates a hydroxyl radical-catalyzed conversion",
         location: "Abstract",
         projectRef:
           "Landing teaser: Fenton radicals convert fibrinogen to amyloid",

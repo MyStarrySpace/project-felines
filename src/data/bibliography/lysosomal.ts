@@ -10,7 +10,7 @@ export const lysosomalSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41531-025-00997-y",
     pmid: "40506446",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40506446/#:~:text=GBA1%20penetrance%20depends%20on%20variant%20severity",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40506446/",
     tags: ["lysosomal", "parkinsons", "genetics"],
     citations: [
       {
@@ -22,6 +22,7 @@ export const lysosomalSources: Source[] = [
           "GBA1 mutations have incomplete penetrance; interacts with polygenic risk score",
         projectRef:
           "Framework summary: GBA1 incomplete penetrance and multi-pillar requirement",
+          fragmentText: "depends on variant severity and polygenic background",
       },
     ],
     verificationStatus: "verified",
@@ -35,18 +36,19 @@ export const lysosomalSources: Source[] = [
     year: 2020,
     doi: "10.1001/jamaneurol.2019.4611",
     pmid: "31930374",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31930374/#:~:text=Ambroxol%20increased%20CSF%20GCase%20activity%20and",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31930374/",
     tags: ["lysosomal", "parkinsons", "clinical-trials"],
     citations: [
       {
         citationId: "mullin-2020-jamaneurol-c1",
         sourceId: "mullin-2020-jamaneurol",
         quote:
-          "Ambroxol increased CSF GCase activity and reduced alpha-synuclein levels",
+          "The study results suggest that ambroxol therapy was safe and well tolerated; CSF penetration and target engagement of ambroxol were achieved, and CSF α-synuclein levels were increased.",
         context:
-          "GCase chaperone therapy showed target engagement but clinical benefit uncertain",
+          "Ambroxol increased CSF alpha-synuclein (not decreased as originally cited)",
         projectRef:
           "Framework summary: Why every major trial has failed (Ambroxol in PD dementia)",
+          fragmentText: "The study results suggest that ambroxol therapy was",
       },
     ],
     verificationStatus: "verified",
@@ -60,7 +62,7 @@ export const lysosomalSources: Source[] = [
     year: 2022,
     doi: "10.1186/s40035-022-00281-6",
     pmid: "35101134",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35101134/#:~:text=LRRK2%20and%20GBA%20interact%20in%20the",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35101134/",
     tags: ["lysosomal", "parkinsons"],
     citations: [
       {
@@ -72,6 +74,7 @@ export const lysosomalSources: Source[] = [
           "Dual GBA1+LRRK2 carriers have earlier onset than single carriers; supports multi-pillar convergence",
         projectRef:
           "Cross-disease: PD lysosomal pillar, GBA-LRRK2 interaction",
+          fragmentText: "in the regulation of autophagy",
       },
     ],
     verificationStatus: "verified",
@@ -85,7 +88,7 @@ export const lysosomalSources: Source[] = [
     year: 2018,
     doi: "10.1186/s40478-018-0538-9",
     pmid: "29703245",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29703245/#:~:text=D409H%20GBA1%20mutation%20accelerates%20the%20progression",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29703245/",
     tags: ["lysosomal", "parkinsons", "genetics"],
     citations: [
       {
@@ -97,6 +100,7 @@ export const lysosomalSources: Source[] = [
           "Double-hit mouse model confirms multi-pillar convergence accelerates disease",
         projectRef:
           "Framework summary: Testable prediction #2 (double-hit mouse models)",
+          fragmentText: "D409H GBA1 mutation accelerates the progression of pathology",
       },
     ],
     verificationStatus: "verified",
@@ -117,11 +121,12 @@ export const lysosomalSources: Source[] = [
         citationId: "clarke-2021-biomedicines-c1",
         sourceId: "clarke-2021-biomedicines",
         quote:
-          "Gaucher and Fabry models show protein aggregates but NO neuroinflammation, while Sandhoff and Niemann-Pick show neuroinflammation but NO proteinopathy",
+          "Gaucher and Fabry mouse models displayed proteinase K-resistant α-synuclein and tau aggregates but no neuroinflammation; whereas Sandhoff, NPA and NPC showed marked neuroinflammation and no overt proteinopathy.",
         context:
-          "LSD tissue specificity: specific substrate determines which downstream pathways activate",
+          "LSD models show dissociation between protein aggregation and neuroinflammation",
         projectRef:
           "Framework summary: Step 1 substrate specificity dissociation",
+          fragmentText: "Gaucher and Fabry mouse models displayed proteinase K-resistant",
       },
     ],
     verificationStatus: "verified",
@@ -146,6 +151,7 @@ export const lysosomalSources: Source[] = [
           "Not all lysosomal storage diseases cause neurodegeneration; substrate specificity matters",
         projectRef:
           "Framework summary: Step 1 critical nuance on substrate specificity",
+          fragmentText: "of lysosomal storage disorders",
       },
     ],
     verificationStatus: "verified",
@@ -159,7 +165,7 @@ export const lysosomalSources: Source[] = [
     year: 2022,
     doi: "10.1126/science.abq7860",
     pmid: "36201573",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36201573/#:~:text=Two%20FTD%20ALS%20genes%20converge%20on%20the",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36201573/",
     tags: ["lysosomal", "als"],
     citations: [
       {
@@ -171,6 +177,7 @@ export const lysosomalSources: Source[] = [
           "C9orf72 poly-GA aggregates sequester TBK1, impair endosomal pathway, cause TDP-43 mislocalization",
         projectRef:
           "Cross-disease: ALS/FTD lysosomal pillar, C9orf72 mechanism",
+          fragmentText: "Two FTD-ALS genes converge on the endosomal pathway",
       },
     ],
     verificationStatus: "verified",
@@ -184,7 +191,7 @@ export const lysosomalSources: Source[] = [
     year: 2018,
     doi: "10.1007/s00401-018-1861-8",
     pmid: "29744576",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6117207/#:~:text=growing%20evidence%20suggests%20a%20role%20for%20PGRN%20in%20the%20lysosome",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6117207/",
     tags: ["lysosomal", "ftd"],
     citations: [
       {
@@ -196,6 +203,7 @@ export const lysosomalSources: Source[] = [
           "Progranulin is essential for lysosomal integrity; loss causes lysosomal storage disease",
         projectRef:
           "FELINE L layer: Progranulin maintains lysosomal membranes",
+          fragmentText: "most striking being that homozygous GRN mutation leads",
       },
     ],
     verificationStatus: "verified",

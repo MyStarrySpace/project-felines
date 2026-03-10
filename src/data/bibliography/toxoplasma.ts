@@ -10,7 +10,7 @@ export const toxoplasmaSources: Source[] = [
     year: 2021,
     doi: "10.1186/s13071-021-04928-7",
     pmid: "34454590",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8401101/#:~:text=adjusted%20HR%20was%202.878",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8401101/",
     tags: ["toxoplasma", "alzheimers", "epidemiology"],
     citations: [
       {
@@ -22,6 +22,7 @@ export const toxoplasmaSources: Source[] = [
           "Taiwan nationwide cohort: T. gondii infection nearly triples dementia risk",
         projectRef:
           "FELINE intro: T. gondii puzzle — 2.9× dementia risk statistic",
+          fragmentText: "the adjusted HR was 2.878 95 CI 1.709-4.968,",
       },
       {
         citationId: "yang-2021-parasitesvectors-c2",
@@ -31,6 +32,7 @@ export const toxoplasmaSources: Source[] = [
         context: "Anti-parasitic treatment reduces the dementia risk",
         projectRef:
           "FELINE intro: treatment evidence supporting causal link",
+          fragmentText: "The usage of sulfadiazine or clindamycin in the",
       },
     ],
     verificationStatus: "verified",
@@ -44,7 +46,7 @@ export const toxoplasmaSources: Source[] = [
     year: 2024,
     doi: "10.1093/infdis/jiae227",
     pmid: "39255396",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39255396/#:~:text=infection%20decreased%20amyloid%20burden%20in%20the%20brain%20globally",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39255396/",
     tags: ["toxoplasma", "alzheimers"],
     citations: [
       {
@@ -56,6 +58,7 @@ export const toxoplasmaSources: Source[] = [
           "Paradox: infection causes dementia yet reduces the hallmark plaques",
         projectRef:
           "FELINE intro: T. gondii puzzle — plaques dissolve but disease worsens",
+          fragmentText: "T. gondii infection decreased amyloid burden in the",
       },
     ],
     verificationStatus: "verified",
@@ -69,7 +72,7 @@ export const toxoplasmaSources: Source[] = [
     year: 2023,
     doi: "10.1371/journal.pntd.0011607",
     pmid: "37651502",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10508604/#:~:text=activation%20of%20ferroptosis-related%20signaling%20pathways",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10508604/",
     tags: ["toxoplasma", "iron", "ferroptosis"],
     citations: [
       {
@@ -81,6 +84,7 @@ export const toxoplasmaSources: Source[] = [
           "T. gondii triggers ferroptosis via iron overload in the brain",
         projectRef:
           "FELINE intro: T. gondii attacks iron homeostasis (Fe layer)",
+          fragmentText: "TgCtwh3 infection is followed by the activation of",
       },
       {
         citationId: "wang-2023-plosntd-c2",
@@ -90,6 +94,7 @@ export const toxoplasmaSources: Source[] = [
         context: "Deferiprone (iron chelator) rescues the ferroptosis damage",
         projectRef:
           "FELINE intro: iron chelation reverses T. gondii brain damage",
+          fragmentText: "The use of DFP led to ferroptosis resistance",
       },
     ],
     verificationStatus: "verified",
@@ -103,7 +108,7 @@ export const toxoplasmaSources: Source[] = [
     year: 2021,
     doi: "10.7554/eLife.69182",
     pmid: "34877929",
-    url: "https://elifesciences.org/articles/69182#:~:text=integrity%20of%20the%20microvascular%20BBB%20restricts%20parasite%20transit",
+    url: "https://elifesciences.org/articles/69182",
     tags: ["toxoplasma", "vascular"],
     citations: [
       {
@@ -115,6 +120,7 @@ export const toxoplasmaSources: Source[] = [
           "T. gondii crosses the BBB via cortical capillaries, inflammation worsens permeability",
         projectRef:
           "FELINE intro: T. gondii attacks the neurovascular barrier (N layer)",
+          fragmentText: "The integrity of the microvascular BBB restricts parasite",
       },
     ],
     verificationStatus: "verified",

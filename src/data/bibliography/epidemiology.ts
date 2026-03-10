@@ -17,11 +17,12 @@ export const epidemiologySources: Source[] = [
         citationId: "jagust-2021-neurology-c1",
         sourceId: "jagust-2021-neurology",
         quote:
-          "Amyloid accumulation follows sigmoidal kinetics with pre-threshold rate ~0.02 SUVR/year, rapid phase ~0.05-0.1 SUVR/year over ~14 years, then plateau",
+          "The relationship between time and brain Aβ was sigmoidal, taking 6.4 years to transition from amyloid negative to positive and another 13.9 years to the onset of MCI.",
         context:
-          "Establishes sigmoidal kinetics for amyloid accumulation with carrying capacity",
+          "Amyloid accumulation follows sigmoidal kinetics: 6.4 years to positivity, 13.9 more to MCI",
         projectRef:
           "Kinetics model Part III: empirical data on amyloid accumulation, sigmoidal kinetics",
+          fragmentText: "The relationship between time and brain A was",
       },
     ],
     verificationStatus: "verified",
@@ -88,10 +89,11 @@ export const epidemiologySources: Source[] = [
         citationId: "jansen-2022-jamaneurol-c1",
         sourceId: "jansen-2022-jamaneurol",
         quote:
-          "Amyloid positivity prevalence increases steeply with age and APOE genotype",
+          "This cross-sectional, individual-participant pooled study included participants from 85 Amyloid Biomarker Study cohorts to estimate the prevalence of amyloid abnormality and examine the potential implications of age, sex, APOE genotype, cognitive status, and biomarker modality on these estimates.",
         context:
-          "Population-level data on amyloid accumulation prevalence from 85 cohorts",
+          "Amyloid prevalence meta-analysis across 85 cohorts by age, sex, APOE genotype",
         projectRef: "Epidemiology: amyloid prevalence data",
+        fragmentText: "This cross-sectional, individual-participant pooled study included participants from",
       },
     ],
     verificationStatus: "verified",
@@ -105,7 +107,7 @@ export const epidemiologySources: Source[] = [
     year: 2024,
     doi: "10.1038/s41591-024-03201-5",
     pmid: "39053634",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39053634/#:~:text=Recombinant%20vaccine%3A%2017%25%20increase%20in%20diagnosis%20free",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39053634/",
     tags: ["epidemiology", "covid"],
     citations: [
       {
@@ -117,6 +119,7 @@ export const epidemiologySources: Source[] = [
           "Shingles vaccination reduces dementia risk; vaccine prevents VZV-driven FELINE cascade",
         projectRef:
           "Cross-disease: VZV vaccination reduces dementia risk",
+          fragmentText: "17 increase in diagnosis-free time, translating",
       },
     ],
     verificationStatus: "verified",
@@ -142,6 +145,7 @@ export const epidemiologySources: Source[] = [
           "Suggests AS01 adjuvant itself provides neuroprotection via IFNγ pathway",
         projectRef:
           "Cross-disease: AS01 adjuvant mechanism for dementia prevention",
+          fragmentText: "shingles and RSV vaccines",
       },
     ],
     verificationStatus: "verified",
@@ -162,11 +166,12 @@ export const epidemiologySources: Source[] = [
         citationId: "eyting-2025-nature-c1",
         sourceId: "eyting-2025-nature",
         quote:
-          "Vaccine reduced dementia probability by ~20% over 7 years using quasi-randomization by birth date in Wales",
+          "Using these comparison groups in a regression discontinuity design, we show that receiving the zoster vaccine reduced the probability of a new dementia diagnosis over a follow-up period of 7 years by 3.5 percentage points (95% confidence interval (CI) = 0.6-7.1, P = 0.019), corresponding to a 20.0% (95% CI = 6.5-33.4) relative reduction.",
         context:
-          "Natural experiment: Wales HZ vaccination eligibility by birth date shows causal effect",
+          "Zoster vaccine reduced dementia diagnosis probability by 20% over 7 years",
         projectRef:
           "Cross-disease: VZV vaccine causal evidence for dementia prevention",
+          fragmentText: "Using these comparison groups in a regression discontinuity",
       },
     ],
     verificationStatus: "verified",

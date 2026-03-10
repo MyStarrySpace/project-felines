@@ -16,11 +16,12 @@ export const crossDiseaseSources: Source[] = [
         citationId: "hulse-2001-glia-c1",
         sourceId: "hulse-2001-glia",
         quote:
-          "Process beading begins 15 minutes post-insult; fragmentation at 15-60 minutes",
+          "A significant reduction in astrocytic process length occurred 15 min (and remained for 60 min) after exposure to acidic Ringer's and mitochondrial inhibition in the pyramidal cell body layer.",
         context:
-          "Establishes rapid timeline for irreversible astrocyte degeneration",
+          "Astrocyte process damage begins within 15 minutes of metabolic insult",
         projectRef:
           "Kinetics model Step 2b: clasmatodendrosis timeline",
+          fragmentText: "a significant reduction in astrocytic process length occurred",
       },
     ],
     verificationStatus: "verified",
@@ -41,11 +42,12 @@ export const crossDiseaseSources: Source[] = [
         citationId: "ward-2014-lancetneurol-c1",
         sourceId: "ward-2014-lancetneurol",
         quote:
-          "One astrocyte contains 10^6-10^8 iron atoms in ferritin nanocages",
+          "During ageing, different iron complexes accumulate in brain regions associated with motor and cognitive impairment.",
         context:
-          "Quantifies iron content per cell type in the brain",
+          "Review of brain iron accumulation in neurodegeneration",
         projectRef:
           "Kinetics model Step 3: iron per cell estimates",
+          fragmentText: "During ageing, different iron complexes accumulate in brain",
       },
     ],
     verificationStatus: "verified",
@@ -66,11 +68,12 @@ export const crossDiseaseSources: Source[] = [
         citationId: "wang-2022-molneurodegen-c1",
         sourceId: "wang-2022-molneurodegen",
         quote:
-          "CSF sPDGFRβ begins rising at age 20 and precedes p-tau (age 22) and Aβ decline (age 40)",
+          "In lifetime, CSF sPDGFRβ continually increased since age of 20 years, followed by the increases of phosphorylated tau-181 (P-tau181) and total tau (T-tau) at the age of 22.2 years and 31.7 years, respectively; CSF Aβ42 began to decline since the age of 39.6 years, indicating Aβ deposition.",
         context:
-          "Pericyte injury is upstream of classical AD pathology",
+          "Pericyte injury (CSF sPDGFRβ) is earliest AD biomarker, preceding tau and Aβ",
         projectRef:
           "Cross-disease biomarker: sPDGFRβ timing in AD, peaks at MCI",
+          fragmentText: "In lifetime, CSF sPDGFR continually increased since age",
       },
     ],
     verificationStatus: "verified",
@@ -84,18 +87,19 @@ export const crossDiseaseSources: Source[] = [
     year: 2024,
     doi: "10.1002/alz.13898",
     pmid: "38805359",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38805359/#:~:text=Brain%20atrophy%20continues%20for%20years%20even",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38805359/",
     tags: ["tbi", "biomarkers"],
     citations: [
       {
         citationId: "shahim-2024-alzdement-c1",
         sourceId: "shahim-2024-alzdement",
         quote:
-          "Brain atrophy continues for years even after mild TBI",
+          "TBI patients showed progressive volume loss regardless of injury severity over several years, and TAI was independently associated with accelerated brain atrophy.",
         context:
-          "Progressive neurodegeneration after TBI matches FELINE downstream cascade model",
+          "Progressive brain atrophy continues for years after TBI regardless of severity",
         projectRef:
           "Cross-disease biomarker: TBI progressive neurodegeneration",
+          fragmentText: "TBI patients showed progressive volume loss regardless of",
       },
     ],
     verificationStatus: "verified",
@@ -121,6 +125,7 @@ export const crossDiseaseSources: Source[] = [
           "FRDA demonstrates delayed ferroptosis onset despite congenital mutation",
         projectRef:
           "Cross-disease: FRDA ferroptosis threshold lowering mechanism",
+          fragmentText: "lowering the ferroptosis threshold",
       },
     ],
     verificationStatus: "verified",
@@ -140,11 +145,12 @@ export const crossDiseaseSources: Source[] = [
         citationId: "monje-2022-neuron-c1",
         sourceId: "monje-2022-neuron",
         quote:
-          "COVID brain fog shares cellular pathology with chemotherapy-induced cognitive impairment: white matter-selective microglial activation, oligodendrocyte loss, myelin loss, hippocampal neurogenesis inhibition",
+          "Persistent neurological and neuropsychiatric symptoms affect a substantial fraction of people after COVID-19 and represent a major component of the post-acute COVID-19 syndrome, also known as long COVID.",
         context:
-          "Key insight linking COVID brain fog to chemo brain mechanism",
+          "Review of post-acute COVID-19 neurological impact mechanisms",
         projectRef:
           "Kinetics model Part IX: chemo-brain parallel for COVID brain fog",
+          fragmentText: "Persistent neurological and neuropsychiatric symptoms affect a substantial",
       },
     ],
     verificationStatus: "verified",
@@ -170,6 +176,7 @@ export const crossDiseaseSources: Source[] = [
           "Establishes the tri-glial dysregulation model underlying cognitive impairment",
         projectRef:
           "Kinetics model Part IX: brain fog tri-glial mechanism reference",
+          fragmentText: "Methotrexate Chemotherapy Induces Persistent Tri-glial Dysregulation",
       },
     ],
     verificationStatus: "verified",
@@ -190,11 +197,12 @@ export const crossDiseaseSources: Source[] = [
         citationId: "villeda-2011-nature-c1",
         sourceId: "villeda-2011-nature",
         quote:
-          "CCL11 (eotaxin) increases with age and inhibits hippocampal neurogenesis",
+          "We identify chemokines--including CCL11 (also known as eotaxin)--the plasma levels of which correlate with reduced neurogenesis in heterochronic parabionts and aged mice, and the levels of which are increased in the plasma and cerebrospinal fluid of healthy ageing humans.",
         context:
-          "CCL11 as age-related mediator of cognitive decline",
+          "CCL11/eotaxin increases with age and correlates with reduced neurogenesis",
         projectRef:
           "Kinetics model Part IX: CCL11 as brain fog mediator",
+          fragmentText: "We identify chemokines--including CCL11 also known as eotaxin--the",
       },
     ],
     verificationStatus: "verified",
@@ -215,11 +223,12 @@ export const crossDiseaseSources: Source[] = [
         citationId: "whittington-2018-jnuclmed-c1",
         sourceId: "whittington-2018-jnuclmed",
         quote:
-          "Peak accumulation rate ~24-28 years after initiation; regional carrying capacity heterogeneous",
+          "Our results provided evidence that Aβ accumulation starts in all brain regions simultaneously and that its spatiotemporal distribution is due to heterogeneous regional carrying capacities for the aggregated protein rather than to longer-term spreading from seed regions.",
         context:
-          "Mathematical model: logistic growth with heterogeneous regional K values",
+          "Amyloid accumulation follows logistic growth with heterogeneous regional carrying capacities",
         projectRef:
           "Kinetics model Part III: mathematical model of amyloid accumulation",
+          fragmentText: "Our results provided evidence that A accumulation starts",
       },
     ],
     verificationStatus: "verified",

@@ -10,7 +10,7 @@ export const drugTrialsAlsSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2204705",
     pmid: "36129998",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36129998/#:~:text=Trial%20of%20Antisense%20Oligonucleotide%20Tofersen%20for",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36129998/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -18,6 +18,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "miller-2022-nejm",
         quote: "Trial of Antisense Oligonucleotide Tofersen for SOD1 ALS",
         projectRef: "Drug browser: Tofersen missed primary, approved on biomarker + OLE",
+        fragmentText: "Trial of Antisense Oligonucleotide Tofersen for SOD1 ALS",
       },
     ],
     verificationStatus: "verified",
@@ -31,7 +32,7 @@ export const drugTrialsAlsSources: Source[] = [
     year: 2017,
     doi: "10.1016/S1474-4422(17)30115-1",
     pmid: "28522181",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28522181/#:~:text=Safety%20and%20efficacy%20of%20edaravone%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28522181/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -39,6 +40,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "edaravone-2017-lancetneurol",
         quote: "Safety and efficacy of edaravone in well defined patients with amyotrophic lateral sclerosis",
         projectRef: "Drug browser: Edaravone free radical scavenger, later study negative",
+        fragmentText: "Safety and efficacy of edaravone in well defined",
       },
     ],
     verificationStatus: "verified",
@@ -50,7 +52,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Lancet",
     year: 1996,
     pmid: "8676624",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8676624/#:~:text=Dose%20ranging%20study%20of%20riluzole%20in%20amyotrophic",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8676624/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -58,6 +60,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "lacomblez-1996-lancet",
         quote: "Dose-ranging study of riluzole in amyotrophic lateral sclerosis",
         projectRef: "Drug browser: Riluzole glutamate modulator, ~3 month survival",
+        fragmentText: "Dose-ranging study of riluzole in amyotrophic lateral sclerosis",
       },
     ],
     verificationStatus: "verified",
@@ -69,7 +72,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "New England Journal of Medicine",
     year: 2020,
     pmid: "32877582",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32877582/#:~:text=Trial%20of%20Sodium%20Phenylbutyrate%20Taurursodiol%20for%20Amyotrophic",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32877582/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -77,6 +80,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "paganoni-2020-nejm",
         quote: "Trial of Sodium Phenylbutyrate-Taurursodiol for Amyotrophic Lateral Sclerosis",
         projectRef: "Drug browser: Relyvrio approved 2022, PHOENIX Phase 3 failed, withdrawn 2024",
+        fragmentText: "Trial of Sodium Phenylbutyrate-Taurursodiol for Amyotrophic Lateral Sclerosis",
       },
     ],
     verificationStatus: "verified",
@@ -88,7 +92,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Lancet Neurology",
     year: 2024,
     pmid: "38782015",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38782015/#:~:text=Safety%20and%20efficacy%20of%20arimoclomol%20in",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38782015/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -96,6 +100,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "benatar-2024-lancetneurol",
         quote: "Safety and efficacy of arimoclomol in amyotrophic lateral sclerosis (ORARIALS-01)",
         projectRef: "Drug browser: Arimoclomol heat shock amplifier failure",
+        fragmentText: "Safety and efficacy of arimoclomol in",
       },
     ],
     verificationStatus: "verified",
@@ -107,7 +112,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Lancet Neurology",
     year: 2013,
     pmid: "24067398",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24067398/#:~:text=Dexpramipexole%20versus%20placebo%20for%20patients%20with",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24067398/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -115,6 +120,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "cudkowicz-2013-lancetneurol",
         quote: "Dexpramipexole versus placebo for patients with amyotrophic lateral sclerosis (EMPOWER)",
         projectRef: "Drug browser: Dexpramipexole EMPOWER 943 pts no benefit",
+        fragmentText: "Dexpramipexole versus placebo for patients with amyotrophic lateral",
       },
     ],
     verificationStatus: "verified",
@@ -126,7 +132,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "European Journal of Neurology",
     year: 2016,
     pmid: "25664595",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25664595/#:~:text=Tauroursodeoxycholic%20acid%20in%20the%20treatment%20of",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25664595/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -134,6 +140,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "elia-2016-eurjneurol",
         quote: "Tauroursodeoxycholic acid in the treatment of patients with amyotrophic lateral sclerosis",
         projectRef: "Drug browser: TUDCA Phase 2 positive, Phase 3 negative",
+        fragmentText: "Tauroursodeoxycholic acid in the treatment of patients with",
       },
     ],
     verificationStatus: "verified",
@@ -146,7 +153,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Lancet Neurology",
     year: 2007,
     pmid: "17980667",
-    url: "https://pubmed.ncbi.nlm.nih.gov/17980667/#:~:text=Efficacy%20of%20minocycline%20in%20patients%20with",
+    url: "https://pubmed.ncbi.nlm.nih.gov/17980667/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -154,6 +161,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "gordon-2007-lancetneurol",
         quote: "Efficacy of minocycline in patients with amyotrophic lateral sclerosis: a phase III randomised trial",
         projectRef: "Drug browser: Minocycline faster ALSFRS-R decline than placebo",
+        fragmentText: "Efficacy of minocycline in patients with amyotrophic lateral",
       },
     ],
     verificationStatus: "verified",
@@ -165,7 +173,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Amyotrophic Lateral Sclerosis and Frontotemporal Degeneration",
     year: 2020,
     pmid: "31280619",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31280619/#:~:text=Masitinib%20as%20an%20add%20on%20therapy%20to",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31280619/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -173,6 +181,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "mora-2020-alsftd",
         quote: "Masitinib as an add-on therapy to riluzole in patients with amyotrophic lateral sclerosis",
         projectRef: "Drug browser: Masitinib 27% slowing, EMA rejected",
+        fragmentText: "Masitinib as an add-on therapy to riluzole in",
       },
     ],
     verificationStatus: "verified",
@@ -187,7 +196,7 @@ export const drugTrialsAlsSources: Source[] = [
     year: 2024,
     doi: "10.1016/S1474-4422(24)00216-3",
     pmid: "39059407",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39059407/#:~:text=BIIB078%20clinical%20development%20has%20been%20discontinued",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39059407/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -195,6 +204,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "vandenberg-2024-lancet-neurol",
         quote: "On the basis of these phase 1 study results, including secondary and exploratory findings showing no reduction in neurofilament levels and no benefit on clinical outcomes relative to the placebo cohort, BIIB078 clinical development has been discontinued.",
         projectRef: "Drug browser: BIIB078 C9orf72 ASO trial discontinuation",
+        fragmentText: "On the basis of these phase 1 study",
       },
     ],
     verificationStatus: "verified",
@@ -207,7 +217,7 @@ export const drugTrialsAlsSources: Source[] = [
     year: 2022,
     doi: "10.1016/j.omtn.2022.04.007",
     pmid: "35592494",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9092894/#:~:text=WVE-004%20dose-dependently%20and%20selectively%20reduces%20repeat-containing%20transcripts",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9092894/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -215,6 +225,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "liu-2022-mol-ther-na",
         quote: "WVE-004 dose-dependently and selectively reduces repeat-containing transcripts in patient-derived motor neurons.",
         projectRef: "Drug browser: WVE-004 preclinical selective C9orf72 repeat knockdown",
+        fragmentText: "WVE-004 dose-dependently and selectively reduces repeat-containing transcripts in",
       },
     ],
     verificationStatus: "verified",
@@ -229,7 +240,7 @@ export const drugTrialsAlsSources: Source[] = [
     year: 2022,
     doi: "10.1002/mus.27472",
     pmid: "34890069",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34890069/#:~:text=the%20primary%20endpoint%20was%20not%20met",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34890069/",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -237,6 +248,7 @@ export const drugTrialsAlsSources: Source[] = [
         sourceId: "cudkowicz-2022-muscle-nerve",
         quote: "Thirty-three percent of MSC-NTF and 28% of placebo participants met clinical response criteria at 28 wk (odds ratio [OR] = 1.33, P = .45); thus, the primary endpoint was not met.",
         projectRef: "Drug browser: NurOwn MSC-NTF Phase 3 ALS result",
+        fragmentText: "Thirty-three percent of MSC-NTF and 28 of placebo",
       },
     ],
     verificationStatus: "verified",

@@ -40,6 +40,7 @@ interface ClaimEntry {
   citationIds: string[];
   claimText: string;
   quotes: string[];
+  composite?: boolean;
 }
 
 interface CacheEntry {
@@ -246,21 +247,129 @@ function extractClaims(filePath: string): ClaimEntry[] {
   return entries;
 }
 
+// ── Composite Claim Extraction ─────────────────────────────────────
+
+interface CitePosition {
+  index: number;
+  endIndex: number;
+  line: number;
+  sourceId: string;
+  citationIds: string[];
+}
+
+/**
+ * Find groups of <Cite> tags within 2 lines of each other that reference
+ * different sources, and create composite claims for multi-source synthesis.
+ */
+function extractCompositeClaims(filePath: string): ClaimEntry[] {
+  const content = fs.readFileSync(filePath, "utf-8");
+  const relPath = path.relative(path.resolve(__dirname, ".."), filePath).replace(/\\/g, "/");
+
+  const citePositions: CitePosition[] = [];
+  const citeRegex = /<Cite\s+id="([^"]+)"(?:\s+citationIds=\{(\[[^\]]*\])\})?\s*\/?>/g;
+  let match: RegExpExecArray | null;
+
+  while ((match = citeRegex.exec(content)) !== null) {
+    const line = content.slice(0, match.index).split("\n").length;
+    const sourceId = match[1];
+    let citationIds: string[] = [];
+    if (match[2]) {
+      try { citationIds = JSON.parse(match[2].replace(/'/g, '"')); } catch {}
+    }
+    citePositions.push({ index: match.index, endIndex: match.index + match[0].length, line, sourceId, citationIds });
+  }
+
+  // Group cites within 2 lines of each other
+  const groups: CitePosition[][] = [];
+  let currentGroup: CitePosition[] = [];
+
+  for (const cite of citePositions) {
+    if (currentGroup.length === 0 || cite.line - currentGroup[currentGroup.length - 1].line <= 2) {
+      currentGroup.push(cite);
+    } else {
+      if (currentGroup.length > 1) groups.push(currentGroup);
+      currentGroup = [cite];
+    }
+  }
+  if (currentGroup.length > 1) groups.push(currentGroup);
+
+  const composites: ClaimEntry[] = [];
+
+  for (const group of groups) {
+    const sourceIds = new Set(group.map((c) => c.sourceId));
+    if (sourceIds.size <= 1) continue;
+
+    const firstCite = group[0];
+    const lastCite = group[group.length - 1];
+
+    // Find reasonable text span
+    const beforeFirst = content.slice(Math.max(0, firstCite.index - MAX_CONTEXT_CHARS * 3), firstCite.index);
+    const boundaryParts = beforeFirst.split(/<\/(?:p|div|span|h[1-6]|li|section)>|<(?:p|div|span|h[1-6]|li|section)[\s>]|>\s*\n/);
+    const startOffset = beforeFirst.length - (boundaryParts[boundaryParts.length - 1] || "").length;
+    const blockStart = Math.max(0, firstCite.index - MAX_CONTEXT_CHARS * 3) + startOffset;
+
+    const afterLast = content.slice(lastCite.endIndex, lastCite.endIndex + 300);
+    const sentenceEnd = afterLast.search(/[.!?]\s*(?:<|$)/);
+    const blockEnd = lastCite.endIndex + (sentenceEnd >= 0 ? Math.min(sentenceEnd + 1, 150) : 0);
+
+    const rawText = content.slice(blockStart, blockEnd);
+    const claimText = stripJsx(rawText);
+
+    if (!claimText || claimText.length < 20) continue;
+
+    // Collect all quotes, labeled by source
+    const labeledQuotes: string[] = [];
+    const allCitationIds: string[] = [];
+
+    for (const cite of group) {
+      const source = sourcesMap.get(cite.sourceId);
+      if (!source) continue;
+
+      const cids = cite.citationIds.length > 0 ? cite.citationIds : source.citations.map((c) => c.citationId);
+      for (const cid of cids) {
+        if (allCitationIds.includes(cid)) continue;
+        allCitationIds.push(cid);
+        const citation = source.citations.find((c) => c.citationId === cid);
+        if (citation) {
+          labeledQuotes.push(`[${cite.sourceId}] "${citation.quote}"`);
+        }
+      }
+    }
+
+    if (labeledQuotes.length < 2) continue;
+
+    composites.push({
+      file: relPath,
+      line: firstCite.line,
+      sourceId: [...sourceIds].join("+"),
+      citationIds: allCitationIds,
+      claimText,
+      quotes: labeledQuotes,
+      composite: true,
+    });
+  }
+
+  return composites;
+}
+
 // ── AI Verification ────────────────────────────────────────────────
 
 async function verifyClaim(
   claim: string,
   quotes: string[],
-  sourceId: string
+  sourceId: string,
+  composite = false
 ): Promise<{ supported: boolean; reason: string }> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     throw new Error("ANTHROPIC_API_KEY environment variable is required");
   }
 
-  const quotesFormatted = quotes.map((q, i) => `Quote ${i + 1}: "${q}"`).join("\n\n");
+  const quotesFormatted = quotes.map((q, i) => `Quote ${i + 1}: ${q}`).join("\n\n");
 
-  const prompt = `You are a strict fact-checker. Determine whether the CLAIM is supported by the SOURCE QUOTES.
+  const isComposite = composite || (quotesFormatted.includes("[") && quotes.some((q) => q.startsWith("[")));
+
+  const singleSourcePrompt = `You are a strict scientific fact-checker. Determine whether the CLAIM is fully supported by the SOURCE QUOTES.
 
 CLAIM (from website copy):
 "${claim}"
@@ -273,14 +382,44 @@ Rules:
 - UNSUPPORTED if the claim makes factual assertions (numbers, mechanisms, outcomes) not present in the quotes.
 - UNSUPPORTED if the claim generalizes a specific finding. Example: if the quote says "necessary for glymphatic clearance effects" but the claim says "necessary mediator" (implying necessary for everything), that is unsupported.
 - UNSUPPORTED if the claim draws an interpretive conclusion (e.g., "establishing X as Y") that the quote does not itself state.
-- UNSUPPORTED if the claim describes a different mechanism or process than what the quote describes.
-- If the claim is about a trial result, the numbers and direction must match exactly.
-- Generic framing language (e.g., "No one has proposed it for Alzheimer's") is editorial and should be marked SUPPORTED unless the quotes directly contradict it.
+- UNSUPPORTED if the claim describes a different mechanism or process than what the quote describes, even if both involve the same entities.
+- If the claim is about a trial result, the numbers, direction, and scope must all match.
+- Generic framing language without specific factual assertions (e.g., "This is worth exploring") is SUPPORTED.
+- When in doubt, mark UNSUPPORTED. False negatives are preferable to false positives.
 
 Respond with EXACTLY one line:
 SUPPORTED: <brief reason>
 or
 UNSUPPORTED: <what specific part of the claim is not backed by the quotes>`;
+
+  const compositePrompt = `You are a strict scientific fact-checker verifying a COMPOSITE CLAIM that synthesizes findings from multiple sources.
+
+COMPOSITE CLAIM (from website copy):
+"${claim}"
+
+SOURCE QUOTES (labeled by source):
+${quotesFormatted}
+
+Rules for composite claims:
+1. Every factual assertion in the claim must be DIRECTLY stated in at least one source quote.
+2. The synthesis is SUPPORTED if the combined claim follows from the quotes through VALID DEDUCTIVE INFERENCE ONLY:
+   - Modus ponens: If source A says "X causes Y" and source B says "X occurs", then "Y occurs" is supported.
+   - Conjunction: If source A says "X" and source B says "Y", then "X and Y" is supported.
+   - Transitivity: If source A says "X leads to Y" and source B says "Y leads to Z", then "X leads to Z" is supported.
+3. The synthesis is UNSUPPORTED if it requires:
+   - Inductive leaps or probabilistic reasoning not stated in any quote
+   - Causal claims beyond what the sources individually or jointly establish
+   - Assumptions or premises not stated in any quote
+   - Generalizations beyond the scope of any quote
+4. The conclusion must follow NECESSARILY from the premises.
+5. When in doubt, mark UNSUPPORTED. False negatives are preferable to false positives.
+
+Respond with EXACTLY one line:
+SUPPORTED: <brief explanation of the deductive chain>
+or
+UNSUPPORTED: <what logical step is not justified by the quotes>`;
+
+  const prompt = isComposite ? compositePrompt : singleSourcePrompt;
 
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -314,6 +453,7 @@ UNSUPPORTED: <what specific part of the claim is not backed by the quotes>`;
 // ── Main ───────────────────────────────────────────────────────────
 
 const DRY_RUN = process.argv.includes("--dry-run");
+const SKIP_BIB = process.argv.includes("--skip-bib");
 
 async function main() {
   console.log("Claim Verification");
@@ -334,10 +474,13 @@ async function main() {
 
   // Extract claims from <Cite> tags
   const allClaims: ClaimEntry[] = [];
+  const compositeClaims: ClaimEntry[] = [];
   for (const file of files) {
     allClaims.push(...extractClaims(file));
+    compositeClaims.push(...extractCompositeClaims(file));
   }
-  console.log(`Found ${allClaims.length} claims from <Cite> tags.`);
+  console.log(`Found ${allClaims.length} individual claims from <Cite> tags.`);
+  console.log(`Found ${compositeClaims.length} composite claims (multi-source).`);
 
   // Extract claims from manifest (data-file claims)
   let manifestCount = 0;
@@ -370,6 +513,9 @@ async function main() {
     manifestCount++;
   }
   console.log(`Found ${manifestCount} claims from manifest.`);
+
+  // Add composite claims
+  allClaims.push(...compositeClaims);
   console.log(`Total: ${allClaims.length} claims to verify.\n`);
 
   if (allClaims.length === 0) {
@@ -381,7 +527,8 @@ async function main() {
   if (DRY_RUN) {
     for (const entry of allClaims) {
       const loc = entry.line > 0 ? `${entry.file}:${entry.line}` : `${entry.file} (manifest)`;
-      console.log(`${loc} [${entry.sourceId}]`);
+      const tag = entry.composite ? " [COMPOSITE]" : "";
+      console.log(`${loc} [${entry.sourceId}]${tag}`);
       console.log(`  Claim: "${entry.claimText.slice(0, 150)}${entry.claimText.length > 150 ? "..." : ""}"`);
       console.log(`  Quotes: ${entry.quotes.length} quote(s)`);
       for (const q of entry.quotes) {
@@ -416,7 +563,7 @@ async function main() {
     // Verify with AI
     try {
       await sleep(API_DELAY_MS);
-      const result = await verifyClaim(entry.claimText, entry.quotes, entry.sourceId);
+      const result = await verifyClaim(entry.claimText, entry.quotes, entry.sourceId, entry.composite);
       apiCalls++;
 
       cache[key] = result;
@@ -440,7 +587,9 @@ async function main() {
 
   // Summary
   console.log("--- RESULTS ---");
-  console.log(`Total claims:  ${allClaims.length} (${allClaims.length - manifestCount} from <Cite>, ${manifestCount} from manifest)`);
+  const compositeCount = compositeClaims.length;
+  const citeCount = allClaims.length - manifestCount - compositeCount;
+  console.log(`Total claims:  ${allClaims.length} (${citeCount} from <Cite>, ${compositeCount} composite, ${manifestCount} from manifest)`);
   console.log(`Supported:     ${supported.length}`);
   console.log(`Unsupported:   ${unsupported.length}`);
   console.log(`Cache hits:    ${cacheHits}`);
@@ -452,7 +601,8 @@ async function main() {
     console.log("--- UNSUPPORTED CLAIMS ---\n");
     for (const { entry, reason } of unsupported) {
       const loc = entry.line > 0 ? `${entry.file}:${entry.line}` : `${entry.file} (manifest)`;
-      console.log(`${loc} [${entry.sourceId}]`);
+      const tag = entry.composite ? " [COMPOSITE]" : "";
+      console.log(`${loc} [${entry.sourceId}]${tag}`);
       console.log(`  Claim: "${entry.claimText.slice(0, 120)}${entry.claimText.length > 120 ? "..." : ""}"`);
       console.log(`  Reason: ${reason}`);
       console.log();

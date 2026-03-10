@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Source } from "@/data/bibliography";
+import { buildTextFragmentUrl } from "./text-fragment";
 
 type CitationTooltipProps = {
   source: Source;
@@ -45,7 +46,12 @@ export function CitationTooltip({
   }
 
   const doiUrl = source.doi ? `https://doi.org/${source.doi}` : undefined;
-  const linkUrl = source.url || doiUrl;
+  const baseUrl = source.url || doiUrl;
+  // Use the first matching citation's fragmentText for deep-linking
+  const matchingCitation = citationIds
+    ? source.citations.find((c) => citationIds.includes(c.citationId) && c.fragmentText)
+    : source.citations.find((c) => c.fragmentText);
+  const linkUrl = baseUrl ? buildTextFragmentUrl(baseUrl, matchingCitation?.fragmentText) : undefined;
 
   // Select quotes: specific citationIds if provided, otherwise first quote
   const quotes = citationIds
