@@ -84,7 +84,7 @@ export const crossDiseaseSources: Source[] = [
     year: 2024,
     doi: "10.1002/alz.13898",
     pmid: "38805359",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38805359/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38805359/#:~:text=Brain%20atrophy%20continues%20for%20years%20even",
     tags: ["tbi", "biomarkers"],
     citations: [
       {

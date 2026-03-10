@@ -10,7 +10,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2202867",
     pmid: "35921451",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35921451/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35921451/#:~:text=Trial%20of%20Prasinezumab%20in%20Early%20Stage%20Parkinsons",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -30,7 +30,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2203395",
     pmid: "35921450",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35921450/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35921450/#:~:text=Trial%20of%20Cinpanemab%20in%20Early%20Parkinsons",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -50,7 +50,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2025,
     doi: "10.1093/braincomms/fcaf304",
     pmid: "40936651",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40936651/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40936651/#:~:text=Phase%201%2C%20randomized%20trials%20of%20MEDI1341%3A",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -88,7 +88,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2023,
     doi: "10.1002/mds.29297",
     pmid: "36807624",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36807624/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36807624/#:~:text=LRRK2%20Inhibition%20by%20BIIB122%20in%20Healthy",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -109,7 +109,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2023,
     doi: "10.1016/S1474-4422(23)00205-3",
     pmid: "37479372",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37479372/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37479372/#:~:text=Safety%20and%20efficacy%20of%20venglustat%20in",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -131,7 +131,7 @@ export const drugTrialsPdSources: Source[] = [
     year: 2025,
     doi: "10.1016/S0140-6736(24)02808-3",
     pmid: "39919773",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39919773/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39919773/#:~:text=Exenatide%20once%20a%20week%20versus%20placebo",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -171,7 +171,7 @@ export const drugTrialsPdSources: Source[] = [
     journal: "JAMA Neurology",
     year: 2014,
     pmid: "24664227",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24664227/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24664227/#:~:text=randomized%20clinical%20trial%20of%20high%20dosage%20coenzyme",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -186,11 +186,11 @@ export const drugTrialsPdSources: Source[] = [
   {
     id: "schwarzschild-2021-jama",
     title: "Effect of Urate-Elevating Inosine on Early Parkinson Disease Progression: The SURE-PD3 Randomized Clinical Trial.",
-    authors: "Schwarzschild MA, et al.",
+    authors: "Parkinson Study Group SURE-PD3 Investigators; Schwarzschild MA, et al.",
     journal: "JAMA",
     year: 2021,
     pmid: "34519802",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34519802/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34519802/#:~:text=Effect%20of%20Urate%20Elevating%20Inosine%20on%20Early",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {

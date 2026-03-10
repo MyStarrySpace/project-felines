@@ -13,7 +13,7 @@ export const geneFunctionDbSources: Source[] = [
     id: "ncbi-gene-refseq",
     title:
       "Database resources of the National Center for Biotechnology Information in 2025",
-    authors: "NCBI Resource Coordinators",
+    authors: "Sayers EW, Bolton EE, Brister JR, et al.",
     journal: "Nucleic Acids Research",
     year: 2025,
     doi: "10.1093/nar/gkae979",

@@ -9,7 +9,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Neurology",
     year: 2005,
     pmid: "15883316",
-    url: "https://pubmed.ncbi.nlm.nih.gov/15883316/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15883316/#:~:text=Clinical%20effects%20of%20Abeta%20immunization%20AN1792",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -29,7 +29,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2014,
     doi: "10.1056/NEJMoa1304839",
     pmid: "24450891",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24450891/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24450891/#:~:text=Two%20phase%203%20trials%20of%20bapineuzumab",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -49,7 +49,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2018,
     doi: "10.1056/NEJMoa1705971",
     pmid: "29365294",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29365294/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29365294/#:~:text=Solanezumab%20did%20not%20significantly%20affect%20cognitive",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -69,7 +69,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2022,
     doi: "10.1001/jamaneurol.2022.2909",
     pmid: "36121669",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36121669/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36121669/#:~:text=Evaluating%20the%20Safety%20and%20Efficacy%20of",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -109,7 +109,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2022,
     doi: "10.14283/jpad.2022.30",
     pmid: "35542991",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35542991/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35542991/#:~:text=Two%20Randomized%20Phase%203%20Studies%20of",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -129,7 +129,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2023,
     doi: "10.1056/NEJMoa2212948",
     pmid: "36449413",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36449413/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36449413/#:~:text=Lecanemab%20in%20Early%20Alzheimers%20Disease",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -149,7 +149,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2023,
     doi: "10.1001/jama.2023.13239",
     pmid: "37459141",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37459141/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37459141/#:~:text=Donanemab%20in%20Early%20Symptomatic%20Alzheimer%20Disease%3A",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -170,7 +170,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2018,
     doi: "10.1056/NEJMoa1706441",
     pmid: "29719179",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29719179/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29719179/#:~:text=Randomized%20Trial%20of%20Verubecestat%20for%20Mild%20to%20Moderate",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -190,7 +190,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2021,
     doi: "10.1001/jamaneurol.2020.4857",
     pmid: "33464300",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33464300/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33464300/#:~:text=Findings%20of%20Efficacy%2C%20Safety%2C%20and%20Biomarker",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -210,7 +210,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2020,
     doi: "10.1001/jamaneurol.2019.3988",
     pmid: "31764959",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31764959/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31764959/#:~:text=Efficacy%20and%20Safety%20of%20Lanabecestat%20for",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -247,7 +247,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2024,
     doi: "10.1002/alz.14237",
     pmid: "39320017",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39320017/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39320017/#:~:text=Reversibility%20of%20cognitive%20worsening%20observed%20with",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -268,7 +268,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2024,
     doi: "10.1212/WNL.0000000000208061",
     pmid: "38386949",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38386949/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38386949/#:~:text=Assessment%20of%20Efficacy%20and%20Safety%20of",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -308,7 +308,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2008,
     doi: "10.1001/archneur.2008.65.7.nct70006",
     pmid: "18474729",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18474729/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18474729/#:~:text=Cognitive%20function%20over%20time%20in%20the",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -328,7 +328,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2021,
     doi: "10.1186/s13195-021-00795-7",
     pmid: "33731209",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33731209/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33731209/#:~:text=36%20week%20multicenter%2C%20randomized%2C%20double%20blind%2C%20placebo%20controlled%2C%20parallel%20group%2C",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -348,7 +348,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2025,
     doi: "10.1186/s13195-024-01666-7",
     pmid: "39780249",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39780249/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39780249/#:~:text=EVOKE%20and%20EVOKE%2B%20design%20of%20two",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -385,7 +385,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2018,
     doi: "10.1073/pnas.1716095115",
     pmid: "29378952",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29378952/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29378952/#:~:text=OLT1177%2C%20a%20beta%20sulfonyl%20nitrile%20compound%2C%20safe",
     tags: ["clinical-trials", "parkinsons"],
     citations: [
       {
@@ -404,7 +404,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Alzheimer's & Dementia: Translational Research & Clinical Interventions",
     year: 2021,
     pmid: "33778150",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33778150/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33778150/#:~:text=Safety%20and%20efficacy%20of%20sargramostim%20GM%20CSF",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -423,7 +423,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Lancet Neurology",
     year: 2021,
     pmid: "34146512",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34146512/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34146512/#:~:text=Safety%20and%20efficacy%20of%20pioglitazone%20for",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -444,7 +444,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2026,
     doi: "10.1001/jama.2025.21738",
     pmid: "41405855",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41405855/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41405855/#:~:text=Valacyclovir%20Treatment%20of%20Early%20Symptomatic%20Alzheimer",
     tags: ["clinical-trials", "alzheimers", "hsv"],
     citations: [
       {
@@ -464,7 +464,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Lancet",
     year: 2008,
     pmid: "18640457",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18640457/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18640457/#:~:text=Effect%20of%20dimebon%20on%20cognition%2C%20activities",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -483,7 +483,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "Lancet",
     year: 2016,
     pmid: "27863809",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27863809/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27863809/#:~:text=Efficacy%20and%20safety%20of%20tau%20aggregation%20inhibitor",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -519,8 +519,9 @@ export const drugTrialsAdSources: Source[] = [
     authors: "Doody RS, et al.",
     journal: "New England Journal of Medicine",
     year: 2013,
-    pmid: "24024838",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24024838/",
+    doi: "10.1056/NEJMoa1210951",
+    pmid: "23883379",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23883379/#:~:text=phase%203%20trial%20of%20semagacestat%20for",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -538,8 +539,9 @@ export const drugTrialsAdSources: Source[] = [
     authors: "Coric V, et al.",
     journal: "JAMA Neurology",
     year: 2015,
-    pmid: "25799451",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25799451/",
+    doi: "10.1001/jamaneurol.2015.0607",
+    pmid: "26414022",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26414022/#:~:text=Targeting%20Prodromal%20Alzheimer%20Disease%20With%20Avagacestat",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -556,10 +558,11 @@ export const drugTrialsAdSources: Source[] = [
     id: "rogers-1998-neurology",
     title: "Donepezil improves cognition and global function in Alzheimer disease: a 15-week, double-blind, placebo-controlled study.",
     authors: "Rogers SL, et al.",
-    journal: "Neurology",
+    journal: "Archives of Internal Medicine",
     year: 1998,
-    pmid: "9443460",
-    url: "https://pubmed.ncbi.nlm.nih.gov/9443460/",
+    doi: "10.1001/archinte.158.9.1021",
+    pmid: "9588436",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9588436/#:~:text=Donepezil%20improves%20cognition%20and%20global%20function",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -578,7 +581,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "International Journal of Geriatric Psychopharmacology",
     year: 1998,
     pmid: "12578757",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12578757/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12578757/#:~:text=randomized%20trial%20evaluating%20the%20efficacy%20and",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -596,8 +599,9 @@ export const drugTrialsAdSources: Source[] = [
     authors: "Raskind MA, et al.",
     journal: "Neurology",
     year: 2000,
-    pmid: "10971048",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10971048/",
+    doi: "10.1212/wnl.54.12.2261",
+    pmid: "10881250",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10881250/#:~:text=Galantamine%20in%20AD%3A%20A%206%20month%20randomized%2C",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -617,7 +621,7 @@ export const drugTrialsAdSources: Source[] = [
     journal: "New England Journal of Medicine",
     year: 2003,
     pmid: "12672860",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12672860/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12672860/#:~:text=Memantine%20in%20moderate%20to%20severe%20Alzheimers%20disease",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -638,7 +642,7 @@ export const drugTrialsAdSources: Source[] = [
     year: 2026,
     doi: "10.1038/s41591-025-04106-7",
     pmid: "41326666",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41326666/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41326666/#:~:text=primary%20outcome%20showed%20no%20significant%20differences",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {

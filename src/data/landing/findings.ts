@@ -152,8 +152,8 @@ export const antiviralContent = {
   prevention: [
     {
       label: "VZV vaccine",
-      effect: "17\u201328% dementia reduction",
-      source: "Drinkall et al. 2025 meta-analysis",
+      effect: "~20% dementia reduction over 7 years",
+      source: "Eyting et al. 2025, Nature",
     },
     {
       label: "Taiwan early antivirals",
@@ -165,8 +165,8 @@ export const antiviralContent = {
     {
       label: "VALAD trial (valacyclovir)",
       effect: "WORSENED cognition",
-      detail: "ADAS-Cog11: +10.86 (drug) vs. +6.92 (placebo)",
-      source: "Devanand et al. 2025, JAMA",
+      detail: "Valacyclovir group showed worse cognitive decline than placebo",
+      source: "Devanand et al. 2026, JAMA",
     },
   ],
   resolution:

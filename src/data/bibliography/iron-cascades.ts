@@ -14,7 +14,7 @@ export const ironCascadesSources: Source[] = [
     year: 2002,
     doi: "10.1074/jbc.M207435200",
     pmid: "12198135",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12198135/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12198135/#:~:text=iron%20responsive%20element%20type%20II%20in%20the",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -39,7 +39,7 @@ export const ironCascadesSources: Source[] = [
     year: 2010,
     doi: "10.1074/jbc.M110.149161",
     pmid: "20558735",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20558735/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20558735/#:~:text=Selective%20translational%20control%20of%20the%20Alzheimer",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -64,7 +64,7 @@ export const ironCascadesSources: Source[] = [
     year: 2010,
     doi: "10.1016/j.cell.2010.08.014",
     pmid: "20817278",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20817278/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20817278/#:~:text=Iron%20export%20ferroxidase%20activity%20of%20beta%20amyloid%20precursor",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -89,7 +89,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1371/journal.pone.0114174",
     pmid: "25464026",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25464026/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25464026/#:~:text=beta%20Amyloid%20precursor%20protein%20does%20not%20possess",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -114,7 +114,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1016/j.neurobiolaging.2014.04.019",
     pmid: "24863668",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24863668/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24863668/#:~:text=Iron%20overload%20accelerates%20neuronal%20amyloid%20beta%20production",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -139,7 +139,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1007/s11064-019-02747-y",
     pmid: "30796750",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30796750/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30796750/#:~:text=Post%20translational%20modulation%20of%20beta%20amyloid%20precursor",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -164,7 +164,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1021/ic402406g",
     pmid: "24559299",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24559299/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24559299/#:~:text=Evidence%20of%20redox%20active%20iron%20formation%20following",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -189,7 +189,7 @@ export const ironCascadesSources: Source[] = [
     year: 2017,
     doi: "10.1016/j.chembiol.2017.07.014",
     pmid: "28890316",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28890316/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28890316/#:~:text=Iron%20biochemistry%20is%20correlated%20with%20amyloid",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -214,7 +214,7 @@ export const ironCascadesSources: Source[] = [
     year: 2007,
     doi: "10.1021/bi701079z",
     pmid: "17929832",
-    url: "https://pubmed.ncbi.nlm.nih.gov/17929832/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/17929832/#:~:text=Three%20histidine%20residues%20of%20amyloid%20beta%20peptide",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -239,7 +239,7 @@ export const ironCascadesSources: Source[] = [
     year: 2010,
     doi: "10.3233/JAD-2010-1346",
     pmid: "20164601",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20164601/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20164601/#:~:text=NMR%20studies%20of%20zinc%2C%20copper%2C%20and",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -264,7 +264,7 @@ export const ironCascadesSources: Source[] = [
     year: 2006,
     doi: "10.1016/j.freeradbiomed.2005.09.013",
     pmid: "16458186",
-    url: "https://pubmed.ncbi.nlm.nih.gov/16458186/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16458186/#:~:text=Redox%20cycling%20of%20iron%20by%20Abeta42",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -333,7 +333,7 @@ export const ironCascadesSources: Source[] = [
     year: 1991,
     doi: "10.1002/ana.410300509",
     pmid: "1763893",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1763893/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1763893/#:~:text=Expression%20patterns%20of%20beta%20amyloid%20precursor%20protein",
     tags: ["alzheimers"],
     citations: [
       {
@@ -358,7 +358,7 @@ export const ironCascadesSources: Source[] = [
     year: 2016,
     doi: "10.1016/j.neuroimage.2016.05.057",
     pmid: "27233149",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27233149/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27233149/#:~:text=Laser%20ablation%20inductively%20coupled%20plasma%20mass%20spectrometry%20imaging",
     tags: ["iron", "alzheimers", "imaging"],
     citations: [
       {
@@ -383,7 +383,7 @@ export const ironCascadesSources: Source[] = [
     year: 2015,
     doi: "10.1038/ncomms7760",
     pmid: "25988319",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25988319/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25988319/#:~:text=Ferritin%20was%20strongly%20associated%20with%20CSF",
     tags: ["iron", "alzheimers", "biomarkers"],
     citations: [
       {
@@ -413,7 +413,7 @@ export const ironCascadesSources: Source[] = [
     year: 2012,
     doi: "10.1038/nm.2613",
     pmid: "22286308",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22286308/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22286308/#:~:text=Tau%20deficiency%20induces%20parkinsonism%20with%20dementia",
     tags: ["iron", "alzheimers", "parkinsons"],
     citations: [
       {
@@ -458,7 +458,7 @@ export const ironCascadesSources: Source[] = [
     year: 2017,
     doi: "10.1038/mp.2017.171",
     pmid: "28886009",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28886009/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28886009/#:~:text=Tau%20mediated%20iron%20export%20prevents%20ferroptotic%20damage",
     tags: ["iron", "alzheimers", "ferroptosis"],
     citations: [
       {
@@ -483,7 +483,7 @@ export const ironCascadesSources: Source[] = [
     year: 2013,
     doi: "10.1016/j.neuint.2012.12.005",
     pmid: "23262393",
-    url: "https://pubmed.ncbi.nlm.nih.gov/23262393/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23262393/#:~:text=Deferoxamine%20inhibits%20iron%20induced%20hippocampal%20tau",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -518,7 +518,7 @@ export const ironCascadesSources: Source[] = [
     year: 1999,
     doi: "10.1021/bi981874p",
     pmid: "10090741",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10090741/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10090741/#:~:text=Phosphorylation%20that%20detaches%20tau%20protein%20from",
     tags: ["alzheimers"],
     citations: [
       {
@@ -543,7 +543,7 @@ export const ironCascadesSources: Source[] = [
     year: 2002,
     doi: "10.1046/j.1471-4159.2002.t01-1-01061.x",
     pmid: "12358761",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12358761/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12358761/#:~:text=Iron%20III%20induces%20aggregation%20of%20hyperphosphorylated",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -568,7 +568,7 @@ export const ironCascadesSources: Source[] = [
     year: 2022,
     doi: "10.1007/s12035-022-02731-8",
     pmid: "34997541",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34997541/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34997541/#:~:text=Ferroptosis%20promotes%20microtubule%20associated%20protein%20tau%20aggregation",
     tags: ["iron", "ferroptosis", "alzheimers"],
     citations: [
       {
@@ -593,7 +593,7 @@ export const ironCascadesSources: Source[] = [
     year: 2018,
     doi: "10.3389/fnmol.2018.00276",
     pmid: "30174587",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30174587/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30174587/#:~:text=Untangling%20tau%20and%20iron%3A%20exploring%20the",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -618,7 +618,7 @@ export const ironCascadesSources: Source[] = [
     year: 2003,
     doi: "10.1023/A:1020727218493",
     pmid: "12572681",
-    url: "https://pubmed.ncbi.nlm.nih.gov/12572681/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12572681/#:~:text=Iron%20induced%20oxidative%20stress%20modify%20tau%20phosphorylation",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -645,7 +645,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1038/s41380-020-0762-0",
     pmid: "32444869",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32444869/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32444869/#:~:text=Endocytotic%20amyloidogenic%20processing%20of%20APP%20impairs",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -680,7 +680,7 @@ export const ironCascadesSources: Source[] = [
     year: 2015,
     doi: "10.1242/dmm.019042",
     pmid: "26035384",
-    url: "https://pubmed.ncbi.nlm.nih.gov/26035384/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26035384/#:~:text=Iron%20is%20a%20specific%20cofactor%20for",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -705,7 +705,7 @@ export const ironCascadesSources: Source[] = [
     year: 2012,
     doi: "10.1016/j.bpj.2011.11.4006",
     pmid: "22225807",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22225807/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22225807/#:~:text=zinc%20coordination%20site%20was%20found%20to",
     tags: ["alzheimers"],
     citations: [
       {
@@ -730,7 +730,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1016/j.actbio.2023.07.046",
     pmid: "37574159",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37574159/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37574159/#:~:text=J20%20zinc%20and%20iron%20and%20TgF344",
     tags: ["iron", "alzheimers", "imaging"],
     citations: [
       {
@@ -755,7 +755,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.1038/s41598-024-61691-2",
     pmid: "38740836",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38740836/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38740836/#:~:text=Amyloid%20beta%20antibody%20binding%20to%20cerebral%20amyloid",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -780,7 +780,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.1186/s13024-024-00758-0",
     pmid: "39434125",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39434125/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39434125/#:~:text=Amyloid%20beta%20Abeta%20immunotherapy%20induced%20microhemorrhages%20are",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -805,7 +805,7 @@ export const ironCascadesSources: Source[] = [
     year: 2011,
     doi: "10.1016/j.biocel.2011.02.009",
     pmid: "21376832",
-    url: "https://pubmed.ncbi.nlm.nih.gov/21376832/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21376832/#:~:text=Both%20aluminumIII%20and%20ironIII%20ions%20were",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -830,7 +830,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1038/s41598-020-67117-z",
     pmid: "32587293",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32587293/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32587293/#:~:text=Iron%20stored%20in%20ferritin%20is%20chemically",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -855,7 +855,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1124/pharmrev.123.000823",
     pmid: "39952690",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39952690/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39952690/#:~:text=Ferroptosis%20and%20pathogenesis%20of%20neuritic%20plaques",
     tags: ["iron", "alzheimers", "ferroptosis"],
     citations: [
       {
@@ -880,7 +880,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41593-025-02125-8",
     pmid: "41286448",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41286448/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41286448/#:~:text=Alzheimers%20therapeutic%20Lecanemab%20attenuates%20Abeta%20pathology",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -907,7 +907,7 @@ export const ironCascadesSources: Source[] = [
     year: 2018,
     doi: "10.1073/pnas.1810058115",
     pmid: "30538196",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30538196/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30538196/#:~:text=Cofactors%20are%20essential%20constituents%20of%20stable",
     tags: ["alzheimers"],
     citations: [
       {
@@ -932,7 +932,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1016/j.jinorgbio.2019.02.007",
     pmid: "30826589",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30826589/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30826589/#:~:text=Interaction%20of%20metal%20ions%20with%20tau",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -957,7 +957,7 @@ export const ironCascadesSources: Source[] = [
     year: 2012,
     doi: "10.1186/1750-1326-7-35",
     pmid: "22824345",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22824345/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22824345/#:~:text=Synergistic%20influence%20of%20phosphorylation%20and%20metal",
     tags: ["iron", "alzheimers", "parkinsons"],
     citations: [
       {
@@ -982,7 +982,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1038/s43587-023-00523-w",
     pmid: "38012285",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38012285/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38012285/#:~:text=TANGO%3A%20a%20placebo%20controlled%20randomized%20phase%202",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -1007,7 +1007,7 @@ export const ironCascadesSources: Source[] = [
     year: 2021,
     doi: "10.1016/S1474-4422(20)30489-0",
     pmid: "33609476",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33609476/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33609476/#:~:text=Safety%20and%20efficacy%20of%20tilavonemab%20in",
     tags: ["clinical-trials"],
     citations: [
       {
@@ -1032,7 +1032,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1038/s41591-023-02326-3",
     pmid: "37095250",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37095250/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37095250/#:~:text=Tau%20targeting%20antisense%20oligonucleotide%20MAPTRx%20in%20mild",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -1057,7 +1057,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.7554/eLife.43584",
     pmid: "30720432",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30720432/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30720432/#:~:text=Heparin%20induced%20tau%20filaments%20are%20polymorphic%20and",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1082,7 +1082,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1212/WNL.0000000000207663",
     pmid: "37643887",
-    url: "https://pubmed.ncbi.nlm.nih.gov/37643887/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/37643887/#:~:text=Randomized%20phase%20II%20study%20of%20the",
     tags: ["alzheimers", "clinical-trials"],
     citations: [
       {
@@ -1107,7 +1107,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.3390/ijms25094969",
     pmid: "38732197",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38732197/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38732197/#:~:text=Enigma%20of%20Tau%20Protein%20Aggregation%3A%20Mechanistic",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1195,7 +1195,7 @@ export const ironCascadesSources: Source[] = [
     year: 1996,
     doi: "10.1046/j.1471-4159.1996.67031014.x",
     pmid: "8752107",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8752107/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8752107/#:~:text=Low%20glutathione%20and%20high%20iron%20govern",
     tags: ["iron", "oligodendrocyte", "ferroptosis"],
     citations: [
       {
@@ -1220,7 +1220,7 @@ export const ironCascadesSources: Source[] = [
     year: 1998,
     doi: "10.1523/JNEUROSCI.18-16-06241.1998",
     pmid: "9698317",
-    url: "https://pubmed.ncbi.nlm.nih.gov/9698317/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9698317/#:~:text=Maturation%20dependent%20vulnerability%20of%20oligodendrocytes%20to%20oxidative",
     tags: ["oligodendrocyte", "ferroptosis"],
     citations: [
       {
@@ -1245,7 +1245,7 @@ export const ironCascadesSources: Source[] = [
     year: 1996,
     doi: "10.1002/(SICI)1098-1136(199606)17:2<83::AID-GLIA1>3.0.CO;2-7",
     pmid: "8776576",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8776576/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8776576/#:~:text=Relationship%20of%20iron%20to%20oligodendrocytes%20and",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1270,7 +1270,7 @@ export const ironCascadesSources: Source[] = [
     year: 2009,
     doi: "10.1002/glia.20784",
     pmid: "18837051",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18837051/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18837051/#:~:text=Oligodendrocytes%20and%20myelination%3A%20the%20role%20of",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1295,7 +1295,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1523/JNEUROSCI.1281-20.2020",
     pmid: "32868463",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32868463/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32868463/#:~:text=Impaired%20postnatal%20myelination%20in%20a%20conditional",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1320,7 +1320,7 @@ export const ironCascadesSources: Source[] = [
     year: 2023,
     doi: "10.1523/JNEUROSCI.1383-22.2023",
     pmid: "36977582",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36977582/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36977582/#:~:text=Transferrin%20receptor%20is%20necessary%20for%20proper",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1345,7 +1345,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1016/j.cmet.2020.05.019",
     pmid: "32531201",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32531201/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32531201/#:~:text=Oligodendrocytes%20provide%20antioxidant%20defense%20function%20for",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1370,7 +1370,7 @@ export const ironCascadesSources: Source[] = [
     year: 2017,
     doi: "10.1007/s00401-016-1636-z",
     pmid: "27796537",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27796537/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27796537/#:~:text=Slow%20expansion%20of%20multiple%20sclerosis%20iron",
     tags: ["iron", "ms", "imaging"],
     citations: [
       {
@@ -1395,7 +1395,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1001/jamaneurol.2019.2399",
     pmid: "31403674",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31403674/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31403674/#:~:text=Association%20of%20chronic%20active%20multiple%20sclerosis",
     tags: ["iron", "ms", "imaging"],
     citations: [
       {
@@ -1422,7 +1422,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1002/glia.70043",
     pmid: "40401729",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40401729/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40401729/#:~:text=brain%20has%20the%20highest%20rate%20of",
     tags: ["iron", "oligodendrocyte"],
     citations: [
       {
@@ -1447,7 +1447,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1016/j.redox.2024.103463",
     pmid: "39671850",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39671850/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39671850/#:~:text=physiological%20and%20maturation%20dependent%20increase%20in%20iron",
     tags: ["iron", "oligodendrocyte", "ferroptosis"],
     citations: [
       {
@@ -1498,7 +1498,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.3389/fimmu.2024.1426975",
     pmid: "39399501",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39399501/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39399501/#:~:text=C1q%20and%20MBP%20colocalization%20increased%20with",
     tags: ["oligodendrocyte", "aging"],
     citations: [
       {
@@ -1523,7 +1523,7 @@ export const ironCascadesSources: Source[] = [
     year: 2022,
     doi: "10.1016/j.expneurol.2021.113947",
     pmid: "34902359",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34902359/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/34902359/#:~:text=C1q%20was%20involved%20in%20demyelination%20in",
     tags: ["oligodendrocyte", "ms"],
     citations: [
       {
@@ -1548,7 +1548,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1186/s12974-025-03592-3",
     pmid: "41146249",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41146249/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41146249/#:~:text=Anti%20ferroptotic%20enzymes%20are%20upregulated%20in%20oligodendrocytes",
     tags: ["iron", "oligodendrocyte", "ferroptosis", "ms"],
     citations: [
       {
@@ -1573,7 +1573,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1136/jnnp-2014-307712",
     pmid: "24899728",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24899728/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24899728/#:~:text=Iron%20was%20stored%20primarily%20within%20oligodendrocytes",
     tags: ["iron", "ms"],
     citations: [
       {
@@ -1603,7 +1603,7 @@ export const ironCascadesSources: Source[] = [
     year: 2012,
     doi: "10.3389/fncel.2012.00025",
     pmid: "22661928",
-    url: "https://pubmed.ncbi.nlm.nih.gov/22661928/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22661928/#:~:text=Modulation%20of%20iron%20metabolism%20in%20aging",
     tags: ["iron", "alzheimers"],
     citations: [
       {
@@ -1628,7 +1628,7 @@ export const ironCascadesSources: Source[] = [
     year: 2015,
     doi: "10.1016/j.brainres.2014.11.058",
     pmid: "25498860",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25498860/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25498860/#:~:text=Dysregulated%20iron%20metabolism%20in%20the%20choroid",
     tags: ["iron"],
     citations: [
       {
@@ -1653,7 +1653,7 @@ export const ironCascadesSources: Source[] = [
     year: 2000,
     doi: "10.1023/A:1006948027674",
     pmid: "10690503",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10690503/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10690503/#:~:text=Transferrin%20and%20transferrin%20receptor%20function%20in",
     tags: ["iron"],
     citations: [
       {
@@ -1678,7 +1678,7 @@ export const ironCascadesSources: Source[] = [
     year: 1981,
     doi: "10.1002/ana.410100203",
     pmid: "7283399",
-    url: "https://pubmed.ncbi.nlm.nih.gov/7283399/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/7283399/#:~:text=Alzheimer%20disease%3A%20evidence%20for%20selective%20loss",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1703,7 +1703,7 @@ export const ironCascadesSources: Source[] = [
     year: 1982,
     doi: "10.1126/science.7058341",
     pmid: "7058341",
-    url: "https://pubmed.ncbi.nlm.nih.gov/7058341/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/7058341/#:~:text=Alzheimers%20disease%20and%20senile%20dementia%3A%20loss",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1724,11 +1724,11 @@ export const ironCascadesSources: Source[] = [
     title:
       "A role for 4-hydroxynonenal, an aldehydic product of lipid peroxidation, in disruption of ion homeostasis and neuronal death induced by amyloid beta-peptide",
     authors: "Mark RJ, Lovell MA, Markesbery WR, et al.",
-    journal: "Journal of Molecular Neuroscience",
+    journal: "Journal of Neurochemistry",
     year: 1997,
-    doi: "10.1007/BF02736761",
+    doi: "10.1046/j.1471-4159.1997.68010255.x",
     pmid: "8978733",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8978733/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8978733/#:~:text=role%20for%204%20hydroxynonenal%2C%20an%20aldehydic%20product",
     tags: ["iron", "ferroptosis", "alzheimers"],
     citations: [
       {
@@ -1753,7 +1753,7 @@ export const ironCascadesSources: Source[] = [
     year: 1998,
     doi: "10.1016/S0197-4580(98)00005-0",
     pmid: "9562505",
-    url: "https://pubmed.ncbi.nlm.nih.gov/9562505/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9562505/#:~:text=Cerebral%20T2%20weighted%20signal%20decrease%20during%20aging",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1800,7 +1800,7 @@ export const ironCascadesSources: Source[] = [
     year: 2019,
     doi: "10.1001/jamainternmed.2019.0677",
     pmid: "31233095",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31233095/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31233095/#:~:text=Anticholinergic%20drug%20exposure%20and%20the%20risk",
     tags: ["alzheimers", "epidemiology"],
     citations: [
       {
@@ -1825,7 +1825,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1093/ageing/afaa090",
     pmid: "32603415",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32603415/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32603415/#:~:text=Anticholinergic%20drugs%20and%20incident%20dementia%2C%20mild",
     tags: ["alzheimers", "epidemiology"],
     citations: [
       {
@@ -1855,7 +1855,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.1016/j.neurobiolaging.2024.03.003",
     pmid: "38608458",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38608458/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38608458/#:~:text=NbM%20may%20be%20a%20focal%20target",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1880,7 +1880,7 @@ export const ironCascadesSources: Source[] = [
     year: 2024,
     doi: "10.1016/j.nbd.2024.106677",
     pmid: "39307400",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39307400/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39307400/#:~:text=Integrity%20of%20the%20lateral%20NBM%20tract",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1930,7 +1930,7 @@ export const ironCascadesSources: Source[] = [
     year: 2018,
     doi: "10.1172/jci.insight.121537",
     pmid: "29997300",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29997300/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29997300/#:~:text=Clearance%20of%20the%20tracer%20substance%20was",
     tags: ["alzheimers"],
     citations: [
       {
@@ -1955,7 +1955,7 @@ export const ironCascadesSources: Source[] = [
     year: 2008,
     doi: "10.1038/nn.2213",
     pmid: "18931664",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18931664/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18931664/#:~:text=Genetic%20ablation%20or%20reduction%20of%20GIVA%20PLA2",
     tags: ["alzheimers", "ferroptosis"],
     citations: [
       {
@@ -1980,7 +1980,7 @@ export const ironCascadesSources: Source[] = [
     year: 2008,
     doi: "10.1016/j.autrev.2008.04.019",
     pmid: "18625446",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18625446/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18625446/#:~:text=Aldehydic%20products%2C%20mainly%20the%204%20hydroxy%202%20alkenals%2C%20form",
     tags: ["ferroptosis", "iron"],
     citations: [
       {
@@ -2005,7 +2005,7 @@ export const ironCascadesSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41467-025-60812-3",
     pmid: "40550817",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40550817/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40550817/#:~:text=Lesioning%20basal%20forebrain%20cholinergic%20neurons%20in",
     tags: ["alzheimers"],
     citations: [
       {
@@ -2030,7 +2030,7 @@ export const ironCascadesSources: Source[] = [
     year: 2020,
     doi: "10.1016/j.nbd.2020.104831",
     pmid: "32145376",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32145376/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32145376/#:~:text=Atrophy%20of%20Ch4%20precedes%20and%20predicts",
     tags: ["parkinsons"],
     citations: [
       {
@@ -2086,7 +2086,7 @@ export const ironCascadesSources: Source[] = [
     year: 2016,
     doi: "10.1126/scitranslmed.aaf1059",
     pmid: "27225182",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27225182/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27225182/#:~:text=findings%20raise%20the%20intriguing%20possibility%20that",
     tags: ["alzheimers", "iron"],
     citations: [
       {
@@ -2111,7 +2111,7 @@ export const ironCascadesSources: Source[] = [
     year: 2014,
     doi: "10.1098/rsif.2014.0165",
     pmid: "24671940",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24671940/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24671940/#:~:text=results%20demonstrate%20the%20ability%20of%20Abeta",
     tags: ["alzheimers", "iron"],
     citations: [
       {
@@ -2137,7 +2137,7 @@ export const ironCascadesSources: Source[] = [
     year: 1992,
     doi: "10.1038/359325a0",
     pmid: "1406936",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1406936/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1406936/#:~:text=findings%20demonstrate%20that%20A%20beta%20is",
     tags: ["alzheimers"],
     citations: [
       {
@@ -2162,7 +2162,7 @@ export const ironCascadesSources: Source[] = [
     year: 1992,
     doi: "10.1038/359322a0",
     pmid: "1383826",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1383826/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1383826/#:~:text=beta%20is%20produced%20in%20soluble%20form",
     tags: ["alzheimers"],
     citations: [
       {

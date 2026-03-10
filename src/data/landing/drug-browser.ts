@@ -1171,6 +1171,7 @@ export const drugs: Drug[] = [
     note: "Corticosteroid; no benefit, behavioral side effects",
     detail: "Controlled trial in AD patients, 1 year. No cognitive benefit and worsening behavioral symptoms. Systemic corticosteroids caused more harm than benefit. Chronic immunosuppression risks outweighed theoretical gains.",
   },
+];
 
 /** Map outcome to display color */
 export function outcomeColor(outcome: DrugOutcome): string {

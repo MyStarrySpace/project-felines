@@ -20,7 +20,7 @@ export const failedTrials: FailedTrial[] = [
     target: "Amyloid plaque removal",
     result: "Plaques cleared; no consistent clinical benefit",
     ironAnalysis:
-      "Dense-core plaques are compact structures that sequester toxic iron. Removing them releases that iron back into brain tissue. Amyloid removal is achievable but counterproductive.",
+      "A\u03B2 concentrates and reduces iron within plaques. Plaque removal may redistribute this iron. Amyloid removal is achievable but addressing a downstream process.",
   },
   {
     trial: "Semorinemab (Genentech)",

@@ -57,8 +57,8 @@ export const lifestyleInterventions: LifestyleIntervention[] = [
     effects: [
       { layer: "Fe", strength: "moderate", rationale: "Prevents infection-driven hepcidin surge \u2192 prevents acute iron sequestration in monocytes via ferroportin degradation." },
       { layer: "L", strength: "moderate", rationale: "Prevents viral hijacking of lysosomes: HSV-1 and VZV both exploit lysosomal trafficking (VZV gM degrades SNAP29)." },
-      { layer: "I", strength: "strong", rationale: "Each prevented infection is one fewer I-layer assault. Shingles vaccine reduces dementia 17\u201328% (Eyting 2023). Flu vaccine reduces AD risk ~40% (Bukhbinder 2022)." },
-      { layer: "N", strength: "strong", rationale: "Prevents tau-dependent neurovascular damage from peripheral infection. Each prevented pneumonia avoids tau-mediated BBB damage with incomplete repair (Eimer 2025)." },
+      { layer: "I", strength: "strong", rationale: "Each prevented infection is one fewer I-layer assault. Shingles vaccine reduced dementia probability by ~20% over 7 years (Eyting et al. 2025, Nature)." },
+      { layer: "N", strength: "moderate", rationale: "Prevents infection-driven neurovascular stress. Systemic infections increase BBB permeability and neuroinflammation." },
       { layer: "S", strength: "moderate", rationale: "Prevents infection-driven demyelination and complement-mediated myelin attack from chronic inflammation." },
     ],
     note: "Primarily an I-layer and N-layer intervention. Over decades, cumulative protection from prevented infections preserves reserves.",
@@ -67,9 +67,9 @@ export const lifestyleInterventions: LifestyleIntervention[] = [
     name: "Dental care",
     effects: [
       { layer: "Fe", strength: "moderate", rationale: "Chronic periodontal inflammation \u2192 sustained hepcidin \u2192 iron sequestration in monocytes via ferroportin degradation." },
-      { layer: "L", strength: "moderate", rationale: "P. gingivalis gingipains directly impair lysosomal function. Cathepsin B is a gingipain target (Dominy et al. 2019)." },
+      { layer: "L", strength: "moderate", rationale: "P. gingivalis gingipains impair lysosomal function. Chronic periodontal infection damages proteolytic pathways." },
       { layer: "I", strength: "strong", rationale: "Periodontal disease is a chronic I-layer assault: sustained bacteremia, chronic IL-1\u03B2/TNF-\u03B1/IL-6, NLRP3 activation, LPS\u2013TLR4 signaling." },
-      { layer: "N", strength: "moderate", rationale: "Periodontal bacteria and LPS damage endothelium. Periodontal disease is associated with increased stroke risk and cerebrovascular atherosclerosis (Dominy et al. 2019)." },
+      { layer: "N", strength: "moderate", rationale: "Periodontal bacteria and LPS damage endothelium. Chronic periodontal disease is associated with increased cerebrovascular risk." },
     ],
     note: "An underappreciated intervention. Decades of dental health may protect multiple layers, primarily through reducing chronic inflammatory burden.",
   },
@@ -86,22 +86,20 @@ export const multiLayerTreatments: MultiLayerTreatment[] = [
   {
     name: "40 Hz gamma stimulation",
     effects: [
-      { layer: "Fe", strength: "moderate", rationale: "Prussian blue staining showed ferric iron deposits only in CPZ controls, absent in 40Hz-treated group (Rodrigues-Amorim 2024). Mechanism upstream of iron clearance not yet characterized." },
-      { layer: "L", strength: "moderate", rationale: "snRNA-seq showed enhanced microglial phagocytic clearance of myelin debris, a lysosomal function. HMGB1 (DAMP released by ferroptotic cells) was reduced (Rodrigues-Amorim 2024)." },
-      { layer: "I", strength: "strong", rationale: "Reduced C1q and C3 complement expression. Reduced HMGB1 (pro-inflammatory DAMP). Reduced microgliosis and astrogliosis. snRNA-seq confirmed enhanced phagocytic microglial profile. Specific complement pathway modulation (Rodrigues-Amorim 2024, Prichard 2023)." },
-      { layer: "N", strength: "strong", rationale: "VIP-driven vasomotion enhancement directly measured (Murdock 2024, Nature). Improved arterial pulsatility enhances cerebrovascular function and perivascular drainage." },
-      { layer: "E", strength: "strong", rationale: "Adenosine \u2192 A2AR \u2192 AQP4 polarization \u2192 glymphatic flow (Sun 2024, double KO validated). VIP \u2192 arterial pulsatility \u2192 glymphatic flow (Murdock 2024, chemogenetic validated). Two independent pathways converging on clearance." },
-      { layer: "S", strength: "strong", rationale: "GPX4 upregulated, lipid peroxidation decreased. Oligodendrogenesis: increased OPCs, mature OLs, proliferating OLs. CC preservation in OVERTURE humans (p<0.004). Neurogenesis restored via TrkB (Trinchero 2025, Rodrigues-Amorim 2024)." },
+      { layer: "Fe", strength: "moderate", rationale: "Preclinical models show reduced iron deposits in 40Hz-treated groups. Mechanism upstream of iron clearance not yet characterized." },
+      { layer: "L", strength: "moderate", rationale: "Enhanced microglial phagocytic clearance of debris in preclinical models, a lysosomal function." },
+      { layer: "I", strength: "strong", rationale: "Reduced complement expression and neuroinflammation in preclinical models. Reduced microgliosis and astrogliosis." },
+      { layer: "N", strength: "moderate", rationale: "Improved arterial pulsatility may enhance cerebrovascular function and perivascular drainage." },
+      { layer: "E", strength: "moderate", rationale: "Preclinical evidence suggests glymphatic enhancement via adenosine/A2AR and vasomotion pathways." },
+      { layer: "S", strength: "moderate", rationale: "Preclinical models show GPX4 upregulation, reduced lipid peroxidation, and increased oligodendrogenesis." },
     ],
     status: "Phase 3 (HOPE, n=670; topline mid-2026)",
     note: (
       <>
-        Hits all six layers. Enhances glymphatic clearance
-        (adenosine/A2AR/AQP4), vasomotion (VIP), reduces complement (C1q/C3),
-        prevents iron deposition and oligodendrocyte ferroptosis. Phase 2
-        OVERTURE: preserved CC white matter (p&lt;0.004), &gt;80% adherence, zero ARIA.
+        Hits all six layers. Phase 2 showed lesser ventricular dilation
+        and hippocampal atrophy, increased functional connectivity.
         <Cite id="chan-2022-plosone" citationIds={["chan-2022-plosone-c1"]} />
-        {" "}FDA Breakthrough Device. Non-invasive, at-home.
+        {" "}FDA Breakthrough Device. Non-invasive, at-home. &gt;80% adherence, zero ARIA.
       </>
     ),
   },
@@ -109,7 +107,7 @@ export const multiLayerTreatments: MultiLayerTreatment[] = [
     name: "NAD+ restoration (NR/NMN)",
     effects: [
       { layer: "Fe", strength: "moderate", rationale: "SIRT3 deacetylates and activates antioxidant enzymes; NAD+ \u2192 NADPH \u2192 GSH (GPX4 substrate); maintains mitochondrial iron-sulfur cluster assembly." },
-      { layer: "L", strength: "strong", rationale: "SIRT1 activates TFEB \u2192 autophagy induction. Restoring NAD+ redirects pool toward SIRT1-mediated autophagy rather than emergency DNA repair (PARP competition). Hou et al. 2021 confirmed in AD mouse models." },
+      { layer: "L", strength: "strong", rationale: "SIRT1 activates TFEB \u2192 autophagy induction. Restoring NAD+ redirects pool toward SIRT1-mediated autophagy rather than emergency DNA repair (PARP competition)." },
       { layer: "I", strength: "moderate", rationale: "SIRT1 deacetylates NF-\u03BAB p65, reducing pro-inflammatory gene transcription. NAD+ depletion is itself pro-inflammatory. CD38 (NAD+ consumer) increases with aging on immune cells." },
       { layer: "N", strength: "moderate", rationale: "NAD+ rescues aging-induced BBB damage via the CX43-PARP1 axis. NMN maintains tight junction proteins (claudin-1, occludin, ZO-1) and reduces MMP9/MMP2 activity." },
       { layer: "S", strength: "strong", rationale: "NAD+ \u2192 SIRT3 \u2192 GPX4 deacetylation (keeps GPX4 active). NAD+ \u2192 NADPH \u2192 GSH (GPX4 substrate). Core ferroptosis defense pathway. Mitochondrial NAD+ required for oligodendrocyte energy metabolism during myelination." },
@@ -122,9 +120,9 @@ export const multiLayerTreatments: MultiLayerTreatment[] = [
     effects: [
       { layer: "Fe", strength: "moderate", rationale: "NRF2 upregulates ferritin (iron storage, reduces labile pool) and ferroportin (iron export). HO-1 upregulation is double-edged: releases iron from heme short-term before ferritin captures it." },
       { layer: "L", strength: "moderate", rationale: "NRF2 activates p62/SQSTM1 which promotes selective autophagy. NRF2 and autophagy are reciprocally regulated. Positive feedback loop established but functional significance for lysosomal integrity is moderate." },
-      { layer: "I", strength: "strong", rationale: "NRF2 suppresses NF-\u03BAB, reduces IL-1\u03B2/TNF-\u03B1/IL-6, inhibits NLRP3 inflammasome, shifts microglia toward anti-inflammatory phenotype (Kim 2021)." },
+      { layer: "I", strength: "strong", rationale: "NRF2 suppresses NF-\u03BAB, reduces IL-1\u03B2/TNF-\u03B1/IL-6, inhibits NLRP3 inflammasome, shifts microglia toward anti-inflammatory phenotype." },
       { layer: "N", strength: "moderate", rationale: "NRF2 protects endothelial cells from oxidative damage and maintains tight junction proteins. Evidence from stroke and vascular injury models." },
-      { layer: "S", strength: "strong", rationale: "NRF2 directly upregulates GPX4 transcription, glutathione synthesis enzymes (GCL, GSS), and thioredoxin system. Most direct ferroptosis defense mechanism available (Sedlak 2018)." },
+      { layer: "S", strength: "strong", rationale: "NRF2 directly upregulates GPX4 transcription, glutathione synthesis enzymes (GCL, GSS), and thioredoxin system." },
     ],
     status: "Phase 2 / supplement",
     note: (
@@ -140,8 +138,8 @@ export const multiLayerTreatments: MultiLayerTreatment[] = [
   {
     name: "Blarcamesine",
     effects: [
-      { layer: "L", strength: "strong", rationale: "SIGMAR1 \u2192 TFEB nuclear translocation \u2192 lysosome biogenesis; SIGMAR1 \u2192 LC3 translation \u2192 autophagosome formation. Validated in astrocyte cultures (Cao 2016, Kasahara 2017). Kaur et al. 2024 showed SIGMAR1 \u2192 AMPK/CAMKK2 \u2192 autophagy \u2192 A\u03B2 clearance in 5XFAD mice." },
-      { layer: "I", strength: "moderate", rationale: "Astrocyte-specific SIGMAR1 stimulation sufficient to ameliorate inflammation (Guo 2021). NLRP3 inflammasome inhibition. Anti-inflammatory effects demonstrated but not primary mechanism." },
+      { layer: "L", strength: "strong", rationale: "SIGMAR1 activates TFEB nuclear translocation for lysosome biogenesis and LC3 translation for autophagosome formation." },
+      { layer: "I", strength: "moderate", rationale: "SIGMAR1 activation inhibits NLRP3 inflammasome. Anti-inflammatory effects demonstrated but not primary mechanism." },
       { layer: "E", strength: "moderate", rationale: "SIGMAR1 regulates calcium signaling in astrocytes, which may affect AQP4 function. Muscarinic activation affects gliotransmitter release. Plausible but not directly tested for glymphatic." },
     ],
     status: "Phase 2b/3 (EMA rejected; re-examination pending)",

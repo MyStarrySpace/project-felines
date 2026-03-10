@@ -48,7 +48,7 @@ export const pillarDeepDives: PillarDeepDive[] = [
     title: "Lysosome",
     description: pillars[1].description,
     failureMode: "GPX4 depletion, glutathione loss, NAD+ decline. Cells lose their ability to neutralize lipid peroxides.",
-    evidence: "GPX4-KO mice develop ferroptosis specifically in oligodendrocytes, resembling the white matter damage seen in neurodegeneration.",
+    evidence: "Cuprizone-induced oligodendrocyte loss is mediated by ferroptosis (Jhelum et al. 2020). GPX4 depletion is early across multiple ALS mouse models (Wang et al. 2022).",
     therapeuticTarget: "Ferroptosis inhibitors, NAD+ boosters",
     entryFor: ["Huntington's", "Prion"],
   },
@@ -57,7 +57,7 @@ export const pillarDeepDives: PillarDeepDive[] = [
     title: "Insulation",
     description: pillars[2].description,
     failureMode: "Demyelination and iron buffer exhaustion. Loss of myelin, ferritin, tau, and alpha-synuclein iron sequestration.",
-    evidence: "GBA1 carriers: 10\u201330% penetrance. One layer failing isn't enough. Disease requires multi-layer failure.",
+    evidence: "GBA1 penetrance depends on variant severity and polygenic background (Hassanin et al. 2025). Most carriers never develop disease. One layer failing isn't enough.",
     therapeuticTarget: "Myelin repair, ferritinophagy regulation",
     entryFor: ["MS"],
   },
@@ -66,7 +66,7 @@ export const pillarDeepDives: PillarDeepDive[] = [
     title: "Neurovascular",
     description: pillars[3].description,
     failureMode: "Pericyte death and astrocyte endfoot retraction. The blood-brain barrier loses its gatekeeping function.",
-    evidence: "Pericyte loss detectable from ~age 20 (Montagne 2020). Decades of silent barrier erosion before symptoms.",
+    evidence: "BBB breakdown is an early biomarker of cognitive decline, detectable via CSF sPDGFR\u03B2 before amyloid or tau changes (Nation et al. 2019).",
     therapeuticTarget: "Vascular risk reduction, pericyte protection",
     entryFor: ["AD", "Long COVID"],
   },
@@ -75,11 +75,11 @@ export const pillarDeepDives: PillarDeepDive[] = [
     title: "Export",
     description: pillars[4].description,
     failureMode: "AQP4 depolarization and ferroportin downregulation. Iron can enter the brain but can't leave.",
-    evidence: "AQP4-KO increases brain iron (Chen 2024). Export failure could cause accumulation even at normal dietary intake.",
+    evidence: "AQP4 depolarization impairs glymphatic clearance. Export failure causes iron accumulation even at normal dietary intake.",
     therapeuticTarget: "Glymphatic enhancement (sleep, exercise)",
     entryFor: ["ALS"],
   },
 ];
 
 export const defenseInsight =
-  "GBA1 mutations are the strongest genetic risk factor for Parkinson\u2019s. Yet only 10 to 30% of carriers develop disease. One compromised system isn\u2019t enough. Multiple defenses have to fail.";
+  "GBA1 mutations are the strongest genetic risk factor for Parkinson\u2019s. Yet most carriers never develop disease. Penetrance depends on variant severity and polygenic background. One compromised system isn\u2019t enough. Multiple defenses have to fail.";

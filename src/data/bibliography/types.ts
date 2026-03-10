@@ -30,7 +30,9 @@ export type TopicTag =
   | "biomarkers"
   | "imaging"
   | "genetics"
-  | "toxoplasma";
+  | "toxoplasma"
+  | "gap-junctions"
+  | "neuron-doctrine";
 
 export type VerificationStatus = "verified" | "unverified" | "unverifiable";
 

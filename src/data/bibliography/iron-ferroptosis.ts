@@ -144,7 +144,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2017,
     doi: "10.1093/brain/awx137",
     pmid: "28899019",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28899019/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28899019/#:~:text=higher%20hippocampal%20quantitative%20susceptibility%20mapping%20levels",
     tags: ["iron", "alzheimers", "imaging"],
     citations: [
       {
@@ -179,7 +179,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2015,
     doi: "10.1038/ncomms7760",
     pmid: "25988319",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25988319/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25988319/#:~:text=Ferritin%20was%20strongly%20associated%20with%20CSF",
     tags: ["iron", "alzheimers", "biomarkers"],
     citations: [
       {
@@ -297,7 +297,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2022,
     doi: "10.1016/j.cell.2022.06.003",
     pmid: "35803244",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35803244/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35803244/#:~:text=Ferroptosis%20is%20an%20iron%20dependent%20form%20of",
     tags: ["ferroptosis"],
     citations: [
       {
@@ -331,7 +331,7 @@ export const ironFerrOptosisSources: Source[] = [
     year: 2020,
     doi: "10.1523/JNEUROSCI.1749-20.2020",
     pmid: "33106352",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33106352/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33106352/#:~:text=Ferroptosis%20mediates%20cuprizone%20induced%20loss%20of%20oligodendrocytes%3B",
     tags: ["ferroptosis", "oligodendrocyte"],
     citations: [
       {

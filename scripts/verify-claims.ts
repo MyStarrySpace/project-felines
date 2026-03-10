@@ -260,7 +260,7 @@ async function verifyClaim(
 
   const quotesFormatted = quotes.map((q, i) => `Quote ${i + 1}: "${q}"`).join("\n\n");
 
-  const prompt = `You are a fact-checker. Determine whether the CLAIM is supported by the SOURCE QUOTES.
+  const prompt = `You are a strict fact-checker. Determine whether the CLAIM is supported by the SOURCE QUOTES.
 
 CLAIM (from website copy):
 "${claim}"
@@ -269,11 +269,13 @@ SOURCE QUOTES (from ${sourceId}):
 ${quotesFormatted}
 
 Rules:
-- The claim does NOT need to match word-for-word. It can paraphrase, simplify, or contextualize the quote.
-- The claim IS supported if the source quote provides reasonable evidence for the factual assertions in the claim.
-- The claim is NOT supported if it makes specific factual assertions (numbers, outcomes, mechanisms) that the quotes don't cover.
+- The claim can paraphrase or simplify the quote, but must not ADD meaning, conclusions, or scope beyond what the quote states.
+- UNSUPPORTED if the claim makes factual assertions (numbers, mechanisms, outcomes) not present in the quotes.
+- UNSUPPORTED if the claim generalizes a specific finding. Example: if the quote says "necessary for glymphatic clearance effects" but the claim says "necessary mediator" (implying necessary for everything), that is unsupported.
+- UNSUPPORTED if the claim draws an interpretive conclusion (e.g., "establishing X as Y") that the quote does not itself state.
+- UNSUPPORTED if the claim describes a different mechanism or process than what the quote describes.
+- If the claim is about a trial result, the numbers and direction must match exactly.
 - Generic framing language (e.g., "No one has proposed it for Alzheimer's") is editorial and should be marked SUPPORTED unless the quotes directly contradict it.
-- If the claim is about a trial result, the numbers and direction must match.
 
 Respond with EXACTLY one line:
 SUPPORTED: <brief reason>

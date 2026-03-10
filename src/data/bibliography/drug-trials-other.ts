@@ -10,7 +10,7 @@ export const drugTrialsOtherSources: Source[] = [
     year: 2023,
     doi: "10.1056/NEJMc2300400",
     pmid: "38055260",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38055260/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38055260/#:~:text=Tominersen%20in%20Adults%20with%20Manifest%20Huntingtons",
     tags: ["clinical-trials", "huntingtons"],
     citations: [
       {

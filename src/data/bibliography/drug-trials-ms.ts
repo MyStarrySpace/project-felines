@@ -151,7 +151,7 @@ export const drugTrialsMsSources: Source[] = [
     year: 2018,
     doi: "10.1056/NEJMoa1803583",
     pmid: "30157388",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30157388/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30157388/#:~:text=phase%202%20trial%20involving%20patients%20with",
     tags: ["clinical-trials", "ms"],
     citations: [
       {

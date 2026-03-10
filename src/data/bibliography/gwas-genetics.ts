@@ -10,7 +10,7 @@ export const gwasGeneticsSources: Source[] = [
     year: 2022,
     doi: "10.1038/s41588-022-01024-z",
     pmid: "35379992",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9005347/#Sec2",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9005347/#:~:text=found%2075%20risk%20loci%2C%20of%20which",
     tags: ["genetics", "alzheimers"],
     citations: [
       {

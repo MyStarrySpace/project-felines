@@ -14,7 +14,7 @@ export const viralReactivationSources: Source[] = [
     year: 2009,
     doi: "10.1038/nm.2051",
     pmid: "19855399",
-    url: "https://pubmed.ncbi.nlm.nih.gov/19855399/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/19855399/#:~:text=Inhibition%20of%20the%20histone%20demethylase%20LSD1",
     tags: ["viral", "hsv", "iron"],
     citations: [
       {
@@ -39,7 +39,7 @@ export const viralReactivationSources: Source[] = [
     year: 2013,
     doi: "10.1126/scitranslmed.3005145",
     pmid: "23303604",
-    url: "https://pubmed.ncbi.nlm.nih.gov/23303604/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23303604/#:~:text=Targeting%20the%20JMJD2%20histone%20demethylases%20to",
     tags: ["viral", "hsv", "iron"],
     citations: [
       {
@@ -64,7 +64,7 @@ export const viralReactivationSources: Source[] = [
     year: 2007,
     doi: "10.1073/pnas.0707292104",
     pmid: "18003914",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18003914/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18003914/#:~:text=Identification%20of%20JmjC%20domain%20containing%20UTX%20and",
     tags: ["viral", "iron"],
     citations: [
       {
@@ -89,7 +89,7 @@ export const viralReactivationSources: Source[] = [
     year: 2017,
     doi: "10.1371/journal.ppat.1006216",
     pmid: "28212444",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28212444/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28212444/#:~:text=SUMO%20modification%20of%20a%20heterochromatin%20histone",
     tags: ["viral", "iron"],
     citations: [
       {
@@ -114,7 +114,7 @@ export const viralReactivationSources: Source[] = [
     year: 2015,
     doi: "10.1128/JVI.03052-14",
     pmid: "25552720",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25552720/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25552720/#:~:text=Inhibition%20of%20H3K27me3%20specific%20histone%20demethylases%20JMJD3",
     tags: ["viral", "hsv", "iron"],
     citations: [
       {
@@ -144,7 +144,7 @@ export const viralReactivationSources: Source[] = [
     year: 2011,
     doi: "10.1371/journal.ppat.1002054",
     pmid: "21625536",
-    url: "https://pubmed.ncbi.nlm.nih.gov/21625536/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21625536/#:~:text=Reactive%20oxygen%20species%20hydrogen%20peroxide%20mediates",
     tags: ["viral", "ferroptosis"],
     citations: [
       {
@@ -169,7 +169,7 @@ export const viralReactivationSources: Source[] = [
     year: 2011,
     doi: "10.1128/JVI.01742-10",
     pmid: "21068240",
-    url: "https://pubmed.ncbi.nlm.nih.gov/21068240/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21068240/#:~:text=Oxidative%20stress%20induces%20reactivation%20of%20Kaposis",
     tags: ["viral", "ferroptosis"],
     citations: [
       {
@@ -199,7 +199,7 @@ export const viralReactivationSources: Source[] = [
     year: 2023,
     doi: "10.1007/s40588-023-00202-9",
     pmid: "38173564",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38173564/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38173564/#:~:text=Intimate%20Relationship%20Between%20Stress%20and%20Human",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -228,7 +228,7 @@ export const viralReactivationSources: Source[] = [
     year: 2010,
     doi: "10.1016/j.freeradbiomed.2010.04.026",
     pmid: "20441790",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20441790/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20441790/#:~:text=Accumulation%20of%20oxidized%20proteins%20in%20Herpesvirus",
     tags: ["viral", "hsv", "ferroptosis"],
     citations: [
       {
@@ -257,7 +257,7 @@ export const viralReactivationSources: Source[] = [
     year: 2010,
     doi: "10.1016/j.bbagrm.2009.12.001",
     pmid: "20045093",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20045093/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/20045093/#:~:text=Epigenetic%20regulation%20of%20latent%20HSV%201%20gene",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -282,7 +282,7 @@ export const viralReactivationSources: Source[] = [
     year: 2008,
     doi: "10.1038/nrmicro1794",
     pmid: "18264117",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18264117/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18264117/#:~:text=Chromatin%20control%20of%20herpes%20simplex%20virus",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -307,7 +307,7 @@ export const viralReactivationSources: Source[] = [
     year: 2015,
     doi: "10.1016/j.chom.2015.11.007",
     pmid: "26651941",
-    url: "https://pubmed.ncbi.nlm.nih.gov/26651941/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26651941/#:~:text=Neuronal%20Stress%20Pathway%20Mediating%20a%20Histone",
     tags: ["viral", "hsv"],
     citations: [
       {
@@ -339,7 +339,7 @@ export const viralReactivationSources: Source[] = [
     year: 2025,
     doi: "10.1016/j.cell.2025.11.007",
     pmid: "41338191",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41338191/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41338191/#:~:text=effect%20of%20shingles%20vaccination%20at%20different",
     tags: ["viral", "epidemiology", "alzheimers"],
     citations: [
       {
@@ -366,7 +366,7 @@ export const viralReactivationSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41591-025-03972-5",
     pmid: "41053450",
-    url: "https://pubmed.ncbi.nlm.nih.gov/41053450/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41053450/#:~:text=Varicella%20zoster%20virus%20reactivation%20and%20the%20risk",
     tags: ["viral", "epidemiology", "alzheimers"],
     citations: [
       {
@@ -391,7 +391,7 @@ export const viralReactivationSources: Source[] = [
     year: 2022,
     doi: "10.3233/JAD-220287",
     pmid: "35754275",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35754275/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35754275/#:~:text=Potential%20Involvement%20of%20Varicella%20Zoster%20Virus",
     tags: ["viral", "hsv", "alzheimers"],
     citations: [
       {
@@ -421,7 +421,7 @@ export const viralReactivationSources: Source[] = [
     year: 2018,
     doi: "10.1016/j.neuron.2018.05.023",
     pmid: "29937276",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29937276/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29937276/#:~:text=Multiscale%20Analysis%20of%20Independent%20Alzheimers%20Cohorts",
     tags: ["viral", "alzheimers"],
     citations: [
       {
@@ -446,7 +446,7 @@ export const viralReactivationSources: Source[] = [
     year: 2022,
     doi: "10.1126/science.abj8222",
     pmid: "35025605",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35025605/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35025605/#:~:text=Longitudinal%20analysis%20reveals%20high%20prevalence%20of",
     tags: ["viral", "ebv", "ms"],
     citations: [
       {
@@ -470,7 +470,7 @@ export const viralReactivationSources: Source[] = [
     year: 2008,
     doi: "10.1038/nrmicro1930",
     pmid: "18552864",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18552864/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18552864/#:~:text=Viral%20infection%20and%20iron%20metabolism",
     tags: ["viral", "iron"],
     citations: [
       {
@@ -494,7 +494,7 @@ export const viralReactivationSources: Source[] = [
     year: 2009,
     doi: "10.1016/S1474-4422(09)70134-6",
     pmid: "19608099",
-    url: "https://pubmed.ncbi.nlm.nih.gov/19608099/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/19608099/#:~:text=Varicella%20zoster%20virus%20vasculopathies%3A%20diverse%20clinical",
     tags: ["viral", "vascular"],
     citations: [
       {
@@ -524,7 +524,7 @@ export const viralReactivationSources: Source[] = [
     year: 2009,
     doi: "10.1148/radiol.2522081399",
     pmid: "19561255",
-    url: "https://pubmed.ncbi.nlm.nih.gov/19561255/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/19561255/#:~:text=Age%20related%20iron%20deposition%20in%20the%20basal",
     tags: ["iron", "aging", "imaging"],
     citations: [
       {
@@ -550,7 +550,7 @@ export const viralReactivationSources: Source[] = [
     journal: "Nature Communications",
     year: 2026,
     doi: "10.1038/s41467-026-68915-1",
-    url: "https://www.nature.com/articles/s41467-026-68915-1",
+    url: "https://www.nature.com/articles/s41467-026-68915-1#:~:text=Counteracting%20FOX%20proteins%20epigenetically%20control%20the",
     tags: ["viral", "hsv"],
     citations: [
       {

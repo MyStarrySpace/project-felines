@@ -58,14 +58,14 @@ export const olContent = {
         <>
           OLs normally export ferritin heavy chain (FTH1) to neighboring
           cells.
-          <Cite id="mukherjee-2020" /> Dead OLs release free iron instead.
+          <Cite id="mukherjee-2020" /> When OLs die, this protection stops.
         </>
       ),
     },
     {
       title: "Iron cascades to neighbors",
       detail:
-        "Free iron from dead OLs triggers ferroptosis in adjacent cells. One death becomes many.",
+        "Iron released from dying OLs can trigger ferroptosis in adjacent cells.",
     },
   ],
   insight:
@@ -96,11 +96,11 @@ export const tauContent = {
     (
       <>
         Tau facilitates APP trafficking to the cell surface, where APP
-        stabilizes ferroportin for iron export.
+        couples with ferroportin to export iron.
         <Cite id="lei-2012-natmed" citationIds={["lei-2012-natmed-c2", "lei-2012-natmed-c3"]} />
       </>
     ),
-    "When iron rises, tau acts as an emergency buffer, binding iron directly.",
+    "When tau fails, iron can no longer exit neurons efficiently.",
     (
       <>
         But rising iron activates GSK3&#x3B2; and CDK5, which
@@ -120,7 +120,7 @@ export const tauContent = {
     ],
   },
   insight:
-    "This explains why Braak staging (tau spread) correlates with cognitive decline better than amyloid burden. Tau tracks iron management failure.",
+    "Iron drives tau aggregation and ferroptosis promotes further tau pathology via GSK-3\u03B2. Tau pathology may track iron management failure, not just protein toxicity.",
   source: (
     <>
       <Cite id="yamamoto-2002" />

@@ -105,7 +105,7 @@ export const epidemiologySources: Source[] = [
     year: 2024,
     doi: "10.1038/s41591-024-03201-5",
     pmid: "39053634",
-    url: "https://pubmed.ncbi.nlm.nih.gov/39053634/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/39053634/#:~:text=Recombinant%20vaccine%3A%2017%25%20increase%20in%20diagnosis%20free",
     tags: ["epidemiology", "covid"],
     citations: [
       {

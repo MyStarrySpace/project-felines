@@ -32,7 +32,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2019,
     doi: "10.1056/NEJMoa1812840",
     pmid: "30970186",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30970186/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30970186/#:~:text=trial%20was%20terminated%20for%20futility%20after",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -230,7 +230,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2018,
     doi: "10.1056/NEJMoa1705971",
     pmid: "29365294",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29365294/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29365294/#:~:text=Solanezumab%20did%20not%20significantly%20affect%20cognitive",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {
@@ -362,7 +362,7 @@ export const clinicalTrialsSources: Source[] = [
     year: 2022,
     doi: "10.3233/JAD-215699",
     pmid: "35342092",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35342092/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35342092/#:~:text=two%20successes%20against%20the%2098%20failures",
     tags: ["clinical-trials", "alzheimers"],
     citations: [
       {

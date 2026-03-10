@@ -10,7 +10,7 @@ export const drugTrialsAlsSources: Source[] = [
     year: 2022,
     doi: "10.1056/NEJMoa2204705",
     pmid: "36129998",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36129998/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36129998/#:~:text=Trial%20of%20Antisense%20Oligonucleotide%20Tofersen%20for",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -31,7 +31,7 @@ export const drugTrialsAlsSources: Source[] = [
     year: 2017,
     doi: "10.1016/S1474-4422(17)30115-1",
     pmid: "28522181",
-    url: "https://pubmed.ncbi.nlm.nih.gov/28522181/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28522181/#:~:text=Safety%20and%20efficacy%20of%20edaravone%20in",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -50,7 +50,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Lancet",
     year: 1996,
     pmid: "8676624",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8676624/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8676624/#:~:text=Dose%20ranging%20study%20of%20riluzole%20in%20amyotrophic",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -69,7 +69,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "New England Journal of Medicine",
     year: 2020,
     pmid: "32877582",
-    url: "https://pubmed.ncbi.nlm.nih.gov/32877582/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32877582/#:~:text=Trial%20of%20Sodium%20Phenylbutyrate%20Taurursodiol%20for%20Amyotrophic",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -83,12 +83,12 @@ export const drugTrialsAlsSources: Source[] = [
   },
   {
     id: "benatar-2024-lancetneurol",
-    title: "Safety and efficacy of arimoclomol in amyotrophic lateral sclerosis (ORARIALS-01): a randomised, double-blind, placebo-controlled, multicentre, phase 3 trial.",
+    title: "Safety and efficacy of arimoclomol in patients with early amyotrophic lateral sclerosis (ORARIALS-01): a randomised, double-blind, placebo-controlled, multicentre, phase 3 trial.",
     authors: "Benatar M, et al.",
     journal: "Lancet Neurology",
     year: 2024,
     pmid: "38782015",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38782015/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38782015/#:~:text=Safety%20and%20efficacy%20of%20arimoclomol%20in",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -107,7 +107,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Lancet Neurology",
     year: 2013,
     pmid: "24067398",
-    url: "https://pubmed.ncbi.nlm.nih.gov/24067398/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/24067398/#:~:text=Dexpramipexole%20versus%20placebo%20for%20patients%20with",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -126,7 +126,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "European Journal of Neurology",
     year: 2016,
     pmid: "25664595",
-    url: "https://pubmed.ncbi.nlm.nih.gov/25664595/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/25664595/#:~:text=Tauroursodeoxycholic%20acid%20in%20the%20treatment%20of",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -146,7 +146,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Lancet Neurology",
     year: 2007,
     pmid: "17980667",
-    url: "https://pubmed.ncbi.nlm.nih.gov/17980667/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/17980667/#:~:text=Efficacy%20of%20minocycline%20in%20patients%20with",
     tags: ["clinical-trials", "als"],
     citations: [
       {
@@ -165,7 +165,7 @@ export const drugTrialsAlsSources: Source[] = [
     journal: "Amyotrophic Lateral Sclerosis and Frontotemporal Degeneration",
     year: 2020,
     pmid: "31280619",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31280619/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31280619/#:~:text=Masitinib%20as%20an%20add%20on%20therapy%20to",
     tags: ["clinical-trials", "als"],
     citations: [
       {

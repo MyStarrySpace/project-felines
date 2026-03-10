@@ -59,7 +59,7 @@ export const pericyteVascularSources: Source[] = [
     year: 2024,
     doi: "10.1002/jmv.29671",
     pmid: "38747003",
-    url: "https://pubmed.ncbi.nlm.nih.gov/38747003/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/38747003/#:~:text=SARS%20CoV%202%20causes%20pericyte%20damage%2C%20tight%20junction",
     tags: ["pericyte", "vascular", "covid"],
     citations: [
       {
@@ -83,7 +83,7 @@ export const pericyteVascularSources: Source[] = [
     year: 2006,
     doi: "10.1073/pnas.0605796103",
     pmid: "16938871",
-    url: "https://pubmed.ncbi.nlm.nih.gov/16938871/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16938871/#:~:text=Temporary%20loss%20of%20perivascular%20aquaporin%204%20in",
     tags: ["pericyte", "vascular", "astrocyte"],
     citations: [
       {
@@ -106,7 +106,7 @@ export const pericyteVascularSources: Source[] = [
     year: 2011,
     doi: "10.1073/pnas.1110655108",
     pmid: "21990350",
-    url: "https://pubmed.ncbi.nlm.nih.gov/21990350/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/21990350/#:~:text=31%25%20reduction%20in%20glymphatic%20function%20in",
     tags: ["pericyte", "vascular", "astrocyte"],
     citations: [
       {
@@ -180,7 +180,7 @@ export const pericyteVascularSources: Source[] = [
     year: 2019,
     doi: "10.1038/s41591-018-0297-y",
     pmid: "30643288",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30643288/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30643288/#:~:text=Blood%20brain%20barrier%20breakdown%20is%20an%20early",
     tags: ["pericyte", "vascular", "alzheimers", "biomarkers"],
     citations: [
       {

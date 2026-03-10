@@ -10,7 +10,7 @@ export const lysosomalSources: Source[] = [
     year: 2025,
     doi: "10.1038/s41531-025-00997-y",
     pmid: "40506446",
-    url: "https://pubmed.ncbi.nlm.nih.gov/40506446/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/40506446/#:~:text=GBA1%20penetrance%20depends%20on%20variant%20severity",
     tags: ["lysosomal", "parkinsons", "genetics"],
     citations: [
       {
@@ -35,7 +35,7 @@ export const lysosomalSources: Source[] = [
     year: 2020,
     doi: "10.1001/jamaneurol.2019.4611",
     pmid: "31930374",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31930374/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31930374/#:~:text=Ambroxol%20increased%20CSF%20GCase%20activity%20and",
     tags: ["lysosomal", "parkinsons", "clinical-trials"],
     citations: [
       {
@@ -60,7 +60,7 @@ export const lysosomalSources: Source[] = [
     year: 2022,
     doi: "10.1186/s40035-022-00281-6",
     pmid: "35101134",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35101134/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/35101134/#:~:text=LRRK2%20and%20GBA%20interact%20in%20the",
     tags: ["lysosomal", "parkinsons"],
     citations: [
       {
@@ -85,7 +85,7 @@ export const lysosomalSources: Source[] = [
     year: 2018,
     doi: "10.1186/s40478-018-0538-9",
     pmid: "29703245",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29703245/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29703245/#:~:text=D409H%20GBA1%20mutation%20accelerates%20the%20progression",
     tags: ["lysosomal", "parkinsons", "genetics"],
     citations: [
       {
@@ -159,7 +159,7 @@ export const lysosomalSources: Source[] = [
     year: 2022,
     doi: "10.1126/science.abq7860",
     pmid: "36201573",
-    url: "https://pubmed.ncbi.nlm.nih.gov/36201573/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36201573/#:~:text=Two%20FTD%20ALS%20genes%20converge%20on%20the",
     tags: ["lysosomal", "als"],
     citations: [
       {
