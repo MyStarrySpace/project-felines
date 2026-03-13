@@ -52,7 +52,7 @@ function BarrierCardsSection() {
           id="barriers-heading"
           className="text-2xl font-bold text-white mb-8"
         >
-          Four FELINE compartments
+          Four FELINES compartments
         </h2>
 
         <div className="grid gap-4 sm:grid-cols-2">
@@ -161,10 +161,10 @@ function FelineMapSection() {
           id="feline-map-heading"
           className="text-2xl font-bold text-white mb-2"
         >
-          FELINE layer map across barriers
+          FELINES layer map across barriers
         </h2>
         <p className="text-gray-400 mb-8 max-w-2xl">
-          Every FELINE layer is conserved, but the cellular ecosystem around
+          Every FELINES layer is conserved, but the cellular ecosystem around
           each differs.
         </p>
 
@@ -321,7 +321,7 @@ const OVERVIEW_SECTIONS = [
   { id: "intro", label: "Introduction" },
   { id: "barriers", label: "Barrier Cards" },
   { id: "architecture", label: "Architecture" },
-  { id: "feline-map", label: "FELINE Map" },
+  { id: "feline-map", label: "FELINES Map" },
   { id: "tradeoff", label: "Tradeoff" },
 ];
 

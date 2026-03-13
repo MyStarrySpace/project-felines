@@ -38,7 +38,7 @@ export default function ShowcasePage() {
         <Container width="full" section>
           <Display>Component Showcase</Display>
           <Body size="lg" className="mt-4 max-w-[var(--width-reading)]">
-            Visual reference for the FELINE Framework design system. All
+            Visual reference for the FELINES Framework design system. All
             components, tokens, and patterns in one place.
           </Body>
         </Container>
@@ -106,7 +106,7 @@ export default function ShowcasePage() {
             <div className="space-y-8">
               <div>
                 <Caption>Display — 56px Instrument Serif</Caption>
-                <Display>The FELINE Framework</Display>
+                <Display>The FELINES Framework</Display>
               </div>
               <div>
                 <Caption>Heading 1 — 42px</Caption>
@@ -146,7 +146,7 @@ export default function ShowcasePage() {
               <div>
                 <Caption>Caption — 12px</Caption>
                 <div className="mt-1">
-                  <Caption>Source: FELINE Framework v1.0</Caption>
+                  <Caption>Source: FELINES Framework v1.0</Caption>
                 </div>
               </div>
               <div>

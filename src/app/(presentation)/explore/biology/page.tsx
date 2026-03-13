@@ -20,7 +20,7 @@ export default function BiologyOverview() {
           Defense Systems
         </p>
         <h1 className="text-4xl font-bold text-white sm:text-5xl">
-          Five defense layers. One cascade.
+          Six defense layers. One cascade.
         </h1>
         <p className="mt-4 text-lg text-gray-400 max-w-2xl">
           Neurodegeneration begins when multiple defense layers fail

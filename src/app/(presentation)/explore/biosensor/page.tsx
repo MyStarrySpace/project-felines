@@ -240,8 +240,8 @@ export default function BiosensorPage() {
             Two critical test populations
           </h2>
           <p className="text-gray-400 mb-8">
-            Long COVID and Gulf War Illness provide clean tests of the FELINE
-            causal ordering. Both have chronic neuroinflammation and FELINE
+            Long COVID and Gulf War Illness provide clean tests of the FELINES
+            causal ordering. Both have chronic neuroinflammation and FELINES
             layer disruptions, but it is unknown whether amyloid pathology has
             started.
           </p>
@@ -293,7 +293,7 @@ export default function BiosensorPage() {
                     Interpretation
                   </th>
                   <th className="text-left text-gray-500 font-medium py-3">
-                    FELINE
+                    FELINES
                   </th>
                 </tr>
               </thead>

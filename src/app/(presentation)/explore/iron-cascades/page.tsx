@@ -915,7 +915,7 @@ function CrossDiseaseNBMTableComponent() {
                 NBM status
               </th>
               <th className="px-4 py-3 text-left font-medium text-gray-400">
-                FELINE layer
+                FELINES layer
               </th>
             </tr>
           </thead>

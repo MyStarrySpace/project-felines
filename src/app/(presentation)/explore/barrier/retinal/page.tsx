@@ -166,7 +166,7 @@ function IronExportSection() {
 
         {/* FELINE layer mini-table */}
         <h3 className="text-lg font-bold text-white mt-12 mb-4">
-          FELINE layers in the retina
+          FELINES layers in the retina
         </h3>
         <div className="space-y-2 max-w-3xl">
           {felineLayerRows.map((row) => (
@@ -220,7 +220,7 @@ function ResearchSection() {
               What the research shows
             </h2>
             <p className="text-gray-400 max-w-2xl">
-              Key studies mapping the FELINE cascade in retinal tissue
+              Key studies mapping the FELINES cascade in retinal tissue
             </p>
           </div>
           <button
@@ -280,7 +280,7 @@ function ResearchSection() {
 
           {/* Predictions */}
           <Expandable
-            title="FELINE temporal ordering predictions"
+            title="FELINES temporal ordering predictions"
             variant="dark"
             open={allOpen}
             onOpenChange={() => setAllOpen((v) => !v)}

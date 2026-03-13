@@ -258,7 +258,7 @@ export const ageWindowTable: AgeWindowRow[] = [
 ];
 
 export const ageWindowExplanation =
-  "Under FELINE, the same iron threshold simultaneously unlocks viral genomes (via JmjC activation), provides tau with its aggregation cofactor, and overwhelms GPX4 capacity. The basal ganglia are the most iron-rich brain structures AND the primary VZV vasculopathy targets AND the primary site of PD degeneration. This convergence is not coincidental.";
+  "Under FELINES, the same iron threshold simultaneously unlocks viral genomes (via JmjC activation), provides tau with its aggregation cofactor, and overwhelms GPX4 capacity. The basal ganglia are the most iron-rich brain structures AND the primary VZV vasculopathy targets AND the primary site of PD degeneration. This convergence is not coincidental.";
 
 /* ── Epidemiological Evidence ────────────────────────────────────────── */
 
@@ -315,7 +315,7 @@ export const cairnsCascade = {
   finding:
     "VZV triggers HSV-1 reactivation in latently infected neural stem cells, producing AD-like changes (A\u03B2, pTau). VZV alone produces neither.",
   detail:
-    "This two-stage cascade (VZV \u2192 HSV-1 \u2192 AD pathology) fits the FELINE model: iron \u2192 VZV reactivation \u2192 hepcidin surge \u2192 more iron trapped \u2192 HSV-1 reactivation \u2192 neurodegeneration.",
+    "This two-stage cascade (VZV \u2192 HSV-1 \u2192 AD pathology) fits the FELINES model: iron \u2192 VZV reactivation \u2192 hepcidin surge \u2192 more iron trapped \u2192 HSV-1 reactivation \u2192 neurodegeneration.",
   felineInterpretation:
     "Preventing subclinical VZV reactivations (via vaccination) prevents hepcidin surges, which prevents iron trapping, which prevents HSV-1 reactivation. The vaccine effect is an iron-export protection effect.",
 };

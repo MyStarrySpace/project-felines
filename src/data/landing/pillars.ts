@@ -15,9 +15,9 @@ export const pillars: PillarData[] = [
   },
   {
     letter: "I",
-    title: "Insulation",
+    title: "Immune / inflammatory",
     description:
-      "Myelin, ferritin, tau, and alpha-synuclein all sequester iron. Oligodendrocytes provide both electrical and iron insulation. When these buffers fail, free iron triggers damage.",
+      "Microglia, complement cascade, cytokine signaling, and hepcidin-driven iron sequestration. Chronic activation turns protective immunity into a self-amplifying iron trap.",
   },
   {
     letter: "N",
@@ -30,6 +30,12 @@ export const pillars: PillarData[] = [
     title: "Export",
     description:
       "Brain-level (ferroportin, glymphatic, AQP4) and systemic (liver, spleen, gut) iron export. When export fails, iron accumulates even at normal dietary intake.",
+  },
+  {
+    letter: "S",
+    title: "Sheathing",
+    description:
+      "Myelin, ferritin, tau, and alpha-synuclein all sequester iron. Oligodendrocytes provide both electrical and iron insulation via FTH1 export. When these buffers fail, free iron triggers damage.",
   },
 ];
 
@@ -54,11 +60,11 @@ export const pillarDeepDives: PillarDeepDive[] = [
   },
   {
     letter: "I",
-    title: "Insulation",
+    title: "Immune / inflammatory",
     description: pillars[2].description,
-    failureMode: "Demyelination and iron buffer exhaustion. Loss of myelin, ferritin, tau, and alpha-synuclein iron sequestration.",
-    evidence: "GBA1 penetrance depends on variant severity and polygenic background (Hassanin et al. 2025). Most carriers never develop disease. One layer failing isn't enough.",
-    therapeuticTarget: "Myelin repair, ferritinophagy regulation",
+    failureMode: "Chronic activation: complement tags healthy myelin, microglia attack oligodendrocytes. Hepcidin traps iron in cells. Each infection primes a lower threshold for the next.",
+    evidence: "Shingles vaccine reduced dementia probability by ~20% over 7 years (Eyting et al. 2025). Each prevented infection is one fewer immune assault on iron-buffering systems.",
+    therapeuticTarget: "Immune modulation, hepcidin regulation",
     entryFor: ["MS"],
   },
   {
@@ -78,6 +84,15 @@ export const pillarDeepDives: PillarDeepDive[] = [
     evidence: "AQP4 depolarization impairs glymphatic clearance. Export failure causes iron accumulation even at normal dietary intake.",
     therapeuticTarget: "Glymphatic enhancement (sleep, exercise)",
     entryFor: ["ALS"],
+  },
+  {
+    letter: "S",
+    title: "Sheathing",
+    description: pillars[5].description,
+    failureMode: "Demyelination and iron buffer exhaustion. Loss of myelin, ferritin, tau, and alpha-synuclein iron sequestration.",
+    evidence: "GBA1 penetrance depends on variant severity and polygenic background (Hassanin et al. 2025). Most carriers never develop disease. One layer failing isn't enough.",
+    therapeuticTarget: "Myelin repair, ferritinophagy regulation",
+    entryFor: ["Friedreich's ataxia"],
   },
 ];
 

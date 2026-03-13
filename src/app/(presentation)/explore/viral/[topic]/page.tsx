@@ -22,7 +22,7 @@ const topicContent: Record<
       },
       {
         heading: "Why antivirals don't help established MS",
-        body: "Once structural damage is done, eliminating the virus doesn't reverse it. The iron distribution is already disrupted. Demyelinated axons are already exposed. This matches the FELINE prediction that prevention differs from treatment.",
+        body: "Once structural damage is done, eliminating the virus doesn't reverse it. The iron distribution is already disrupted. Demyelinated axons are already exposed. This matches the FELINES prediction that prevention differs from treatment.",
       },
     ],
   },

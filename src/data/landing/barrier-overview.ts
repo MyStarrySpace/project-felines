@@ -140,10 +140,10 @@ export const felineLayerMap: FelineLayerRow[] = [
   },
   {
     layer: "I",
-    layerFull: "Insulation",
-    bbb: "OL myelin (1:50 ratio); limited OPC regeneration",
-    brb: "No myelinated component (retinal neurons unmyelinated until optic nerve)",
-    bnb: "SC myelin (1:1 ratio); SC repair phenotype enables remyelination",
+    layerFull: "Immune / inflammatory",
+    bbb: "Microglial surveillance; complement-mediated pruning; limited immune cell entry past tight barrier",
+    brb: "Retinal microglia + perivascular macrophages; complement activation in AMD; limited immune infiltration",
+    bnb: "Endoneurial macrophages; complement-mediated debris clearance; permeable barrier allows immune cell entry",
   },
   {
     layer: "N",
@@ -158,6 +158,13 @@ export const felineLayerMap: FelineLayerRow[] = [
     bbb: "Glymphatic (sleep-dependent); astrocyte AQP4; slowest clearance (hours to days)",
     brb: "RPE basolateral Fpn\u2192choroidal blood; M\u00FCller glia Fpn; moderate clearance",
     bnb: "Schwann cell phagocytosis; macrophage clearance; FASTEST (minutes to hours)",
+  },
+  {
+    layer: "S",
+    layerFull: "Sheathing",
+    bbb: "OL myelin (1:50 ratio); limited OPC regeneration",
+    brb: "No myelinated component (retinal neurons unmyelinated until optic nerve)",
+    bnb: "SC myelin (1:1 ratio); SC repair phenotype enables remyelination",
   },
 ];
 
@@ -187,7 +194,7 @@ export const protectionGradient: GradientRow[] = [
     bnb: "Acute-remitting OR chronic (GBS recovers; diabetic neuropathy progresses)",
   },
   {
-    property: "FELINE cascade speed",
+    property: "FELINES cascade speed",
     bbb: "Slowest (decades; iron accumulates behind sealed barrier)",
     brb: "Moderate (years; RPE multi-tasking accelerates failure)",
     bnb: "Fastest initiation BUT fastest clearance \u2014 rarely reaches cascade unless clearance disabled",

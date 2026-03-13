@@ -107,7 +107,7 @@ export default function GwasPage() {
         </h1>
         <p className="mt-4 text-lg text-gray-400 max-w-2xl">
           217 AD and PD risk loci, zero canonical iron genes. Nearly every
-          hit maps to a FELINE defense layer that protects against
+          hit maps to a FELINES defense layer that protects against
           iron-driven damage.
         </p>
       </div>

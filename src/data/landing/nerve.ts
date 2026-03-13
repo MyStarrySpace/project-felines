@@ -144,10 +144,10 @@ export const felineLayerRows: FelineLayerRow[] = [
   },
   {
     layer: "I",
-    layerFull: "Insulation",
-    cns: "OL myelin (1:50 axons); limited OPC response",
-    pns: "SC myelin (1:1 axon); SC dedifferentiation enables repair",
-    keyDifference: "Different ratio; PNS regenerates",
+    layerFull: "Immune / inflammatory",
+    cns: "Microglia; complement pruning; limited immune cell entry past BBB",
+    pns: "Endoneurial macrophages; complement-mediated debris clearance; BNB permits immune cell entry",
+    keyDifference: "PNS immune access enables repair; CNS immune isolation traps damage",
   },
   {
     layer: "N",
@@ -162,6 +162,13 @@ export const felineLayerRows: FelineLayerRow[] = [
     cns: "Glymphatic (sleep-dependent); astrocyte-limited; hours to days",
     pns: "Macrophage phagocytosis; SC active phagocytosis; minutes to hours",
     keyDifference: "PNS superior: hours vs days",
+  },
+  {
+    layer: "S",
+    layerFull: "Sheathing",
+    cns: "OL myelin (1:50 axons); limited OPC response",
+    pns: "SC myelin (1:1 axon); SC dedifferentiation enables repair",
+    keyDifference: "Different ratio; PNS regenerates",
   },
 ];
 
@@ -181,7 +188,7 @@ export const researchFindings: ResearchFinding[] = [
     journal: "Journal of Neuroscience",
     year: 2021,
     finding: "Schwann cells express ferroportin + ceruloplasmin (Fpn+Cp). Same iron export machinery as astrocytes at the BBB.",
-    detail: "Confirms FELINE E-layer conservation: the same molecular export system operates in PNS and CNS, but the cellular context differs.",
+    detail: "Confirms FELINES E-layer conservation: the same molecular export system operates in PNS and CNS, but the cellular context differs.",
     group: "schwann",
   },
   {
@@ -190,7 +197,7 @@ export const researchFindings: ResearchFinding[] = [
     journal: "International Journal of Molecular Sciences",
     year: 2021,
     finding: "Diabetic peripheral neuropathy involves BNB breakdown through pericyte damage and basement membrane thickening, restricting macrophage access to the endoneurium.",
-    detail: "Diabetes specifically disrupts the BNB\u2019s compensatory clearance mechanism. FELINE predicts this should lead to endoneurial iron accumulation.",
+    detail: "Diabetes specifically disrupts the BNB\u2019s compensatory clearance mechanism. FELINES predicts this should lead to endoneurial iron accumulation.",
     group: "diabetic",
   },
   {
@@ -223,7 +230,7 @@ export const researchFindings: ResearchFinding[] = [
     paper: "Wang et al.",
     year: 2025,
     finding: "Schwann cell rejuvenation via partial reprogramming restored myelinating capacity in aged peripheral nerves.",
-    detail: "Validates FELINE\u2019s prediction that repair phenotype reactivation is achievable in PNS, where the barrier permits therapeutic access.",
+    detail: "Validates FELINES\u2019 prediction that repair phenotype reactivation is achievable in PNS, where the barrier permits therapeutic access.",
     group: "ferroptosis",
   },
 ];

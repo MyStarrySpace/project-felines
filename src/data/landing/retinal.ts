@@ -32,7 +32,7 @@ export const retinalHero = {
   kicker: "Blood-Retinal Barrier",
   title: "A window into the brain",
   subtitle:
-    "The retina shares embryological origin, cellular architecture, and barrier design with the brain. Retinal iron doubled in AD (85.9 vs 42.9 ng/g). Every FELINE layer has a retinal readout.",
+    "The retina shares embryological origin, cellular architecture, and barrier design with the brain. Retinal iron doubled in AD (85.9 vs 42.9 ng/g). Every FELINES layer has a retinal readout.",
 };
 
 export const architectureRows: ArchitectureRow[] = [
@@ -64,7 +64,7 @@ export const architectureRows: ArchitectureRow[] = [
 ];
 
 export const rpeVulnerability = {
-  title: "RPE: The most vulnerable cell in FELINE",
+  title: "RPE: The most vulnerable cell in FELINES",
   roles: [
     {
       layer: "E",
@@ -127,8 +127,8 @@ export const felineLayerRows: FelineLayerRow[] = [
   },
   {
     layer: "I",
-    layerFull: "Insulation",
-    retina: "No equivalent myelinated component (retinal neurons are unmyelinated until optic nerve)",
+    layerFull: "Immune / inflammatory",
+    retina: "Retinal microglia; perivascular macrophages; complement activation in AMD and diabetic retinopathy",
   },
   {
     layer: "N",
@@ -139,6 +139,11 @@ export const felineLayerRows: FelineLayerRow[] = [
     layer: "E",
     layerFull: "Export",
     retina: "RPE basolateral Fpn \u2192 choroidal blood; M\u00FCller glia Fpn; moderate clearance speed",
+  },
+  {
+    layer: "S",
+    layerFull: "Sheathing",
+    retina: "No equivalent myelinated component (retinal neurons are unmyelinated until optic nerve)",
   },
 ];
 
@@ -167,7 +172,7 @@ export const researchFindings: ResearchFinding[] = [
     journal: "Ageing Research Reviews",
     year: 2024,
     finding: "Compared BBB and BRB endothelial senescence in AD and AMD. Proposed vascular endothelial cell senescence as shared pathogenic mechanism.",
-    detail: "Senescent endothelial cells lose tight junction integrity; SASP drives local inflammation and iron sequestration. FELINE adds: senescent pericytes release iron, amplifying the cascade.",
+    detail: "Senescent endothelial cells lose tight junction integrity; SASP drives local inflammation and iron sequestration. FELINES adds: senescent pericytes release iron, amplifying the cascade.",
     group: "senescence",
   },
   {
@@ -176,7 +181,7 @@ export const researchFindings: ResearchFinding[] = [
     journal: "PNAS",
     year: 2004,
     finding: "Cp/Heph double-knockout mice developed retinal iron overload \u2192 RPE hypertrophy \u2192 photoreceptor degeneration \u2192 subretinal neovascularization. Phenocopies AMD.",
-    detail: "The clearest existing demonstration of E-layer failure leading to iron accumulation and neurodegeneration in any FELINE compartment. Neither single knockout caused pathology.",
+    detail: "The clearest existing demonstration of E-layer failure leading to iron accumulation and neurodegeneration in any FELINES compartment. Neither single knockout caused pathology.",
     group: "export",
   },
   {
@@ -194,7 +199,7 @@ export const researchFindings: ResearchFinding[] = [
     journal: "npj Digital Medicine",
     year: 2024,
     finding: "Eye-AD model achieved AUC 0.9355 for early-onset AD detection from OCTA retinal imaging alone.",
-    detail: "Demonstrates that AI-augmented retinal imaging can detect AD-associated vascular changes with clinical-grade accuracy. Basis for proposed FELINE-EYE study.",
+    detail: "Demonstrates that AI-augmented retinal imaging can detect AD-associated vascular changes with clinical-grade accuracy. Basis for proposed FELINES-EYE study.",
     group: "imaging",
   },
   {
@@ -249,7 +254,7 @@ export const predictions: Prediction[] = [
   },
   {
     id: 7,
-    prediction: "Retinal iron mapping on Cp/Heph KO vs AD vs AMD should show three distinct patterns, each reflecting which FELINE layer failed first",
+    prediction: "Retinal iron mapping on Cp/Heph KO vs AD vs AMD should show three distinct patterns, each reflecting which FELINES layer failed first",
     source: "\u00A73.3.13.4",
   },
 ];

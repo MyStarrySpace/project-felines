@@ -69,7 +69,7 @@ export const mislocalizationContent = {
       ],
     },
     {
-      label: "FELINE view",
+      label: "FELINES view",
       view: "Iron maldistribution",
       points: [
         "Iron in wrong compartments",
@@ -138,7 +138,7 @@ export const sizeTherapeuticsContent = {
       outcomeType: "positive" as const,
     },
   ] as TherapeuticMolecule[],
-  source: "FELINE Appendix 6.5; Devos 2022 NEJM; Small 2018; Mohamed 2019",
+  source: "FELINES Appendix 6.5; Devos 2022 NEJM; Small 2018; Mohamed 2019",
 };
 
 // ---------------------------------------------------------------------------

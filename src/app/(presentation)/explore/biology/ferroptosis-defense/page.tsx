@@ -77,7 +77,7 @@ export default function FerroptosisDefensePage() {
           <p className="text-lg text-gray-300 leading-relaxed">
             Ferroptosis is not a design flaw. It is an ancient, deliberately
             deployed immune weapon for tumor suppression, antimicrobial defense,
-            and elimination of damaged cells. The five FELINE defense layers
+            and elimination of damaged cells. The six FELINES defense layers
             exist to keep this weapon under control. Neurodegeneration is what
             happens when the safety systems fail.
           </p>
@@ -284,7 +284,7 @@ export default function FerroptosisDefensePage() {
             <p className="text-gray-300 leading-relaxed mb-6">
               The same iron-dependent lipid peroxidation that kills cancer cells
               and pathogens becomes devastating when chronic and dysregulated.
-              The FELINE defense layers map directly onto ferroptosis
+              The FELINES defense layers map directly onto ferroptosis
               containment:
             </p>
             <div className="space-y-3">

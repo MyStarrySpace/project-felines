@@ -576,7 +576,7 @@ export const demyelinationSection: CascadeSection = {
       title: "FTH1 as iron insulation: OLs protect neurons from iron",
       body: "Oligodendrocytes secrete ferritin heavy chain (FTH1) via extracellular vesicles, with 20\u00D7 enrichment compared to neurons. FTH1 has a 17-day turnover and acts as a secreted iron buffer, protecting the local microenvironment. Oligodendrocytes provide two types of insulation: electrical (myelin) and chemical (iron buffering).",
       detail:
-        "Mukherjee et al. (2020, Cell Metabolism) discovered that oligodendrocytes are the primary source of extracellular FTH1 in the brain. This paradigm-shifting finding means the I-layer (insulation) of the FELINE framework has both an electrical and a chemical component, both provided by the same cell type.",
+        "Mukherjee et al. (2020, Cell Metabolism) discovered that oligodendrocytes are the primary source of extracellular FTH1 in the brain. This paradigm-shifting finding means the S-layer (sheathing) of the FELINES framework has both an electrical and a chemical component, both provided by the same cell type.",
       keyPaper: "Mukherjee et al., Cell Metabolism, 2020",
     },
     {
@@ -584,7 +584,7 @@ export const demyelinationSection: CascadeSection = {
       title: "Double loss when oligodendrocytes die",
       body: "When an oligodendrocyte dies, the brain loses both electrical insulation (myelin sheaths) and iron insulation (FTH1 secretion). The 3.05 mM of iron safely stored in the dying cell is released into the extracellular space, potentially triggering ferroptosis in neighboring cells. This creates a cascade: OL death \u2192 demyelination + iron release \u2192 neighboring cell iron overload \u2192 more ferroptosis \u2192 expanding lesion.",
       detail:
-        "This double-loss mechanism explains the slow, centrifugal expansion of MS lesions. In AD, surviving oligodendrocytes in diseased tissue show massively reduced iron scores (the most iron-loaded, most vulnerable OLs have already died), consistent with a survivorship bias that validates the FELINE model.",
+        "This double-loss mechanism explains the slow, centrifugal expansion of MS lesions. In AD, surviving oligodendrocytes in diseased tissue show massively reduced iron scores (the most iron-loaded, most vulnerable OLs have already died), consistent with a survivorship bias that validates the FELINES model.",
     },
     {
       step: 6,
@@ -630,7 +630,7 @@ export const demyelinationSection: CascadeSection = {
       title: "Iron rim lesions: the signature of slow-burning destruction",
       body: "In MS, 50\u201365% of chronic lesions have an iron rim of iron-laden microglia/macrophages at the lesion edge. These paramagnetic rim lesions (PRLs) expand at 2.2% per year and predict worse disability (OR 2.24\u20132.87). The iron rim is both a marker and a driver of ongoing damage: released OL iron that cannot be cleared, visible on 7T MRI.",
       detail:
-        "Dal-Bianco et al. (2017) tracked iron rim lesion expansion over 4 years using 7T MRI. Absinta et al. (2019) showed PRLs are associated with more tissue damage and worse clinical outcomes. Haider et al. (2014) demonstrated oxidative damage and iron accumulation in all active MS lesions, with iron released from dying OLs trapped in activated microglia at the lesion edge. This is FELINE's I-layer failure made visible.",
+        "Dal-Bianco et al. (2017) tracked iron rim lesion expansion over 4 years using 7T MRI. Absinta et al. (2019) showed PRLs are associated with more tissue damage and worse clinical outcomes. Haider et al. (2014) demonstrated oxidative damage and iron accumulation in all active MS lesions, with iron released from dying OLs trapped in activated microglia at the lesion edge. This is FELINES' I-layer failure made visible.",
       keyPaper: "Dal-Bianco et al., Acta Neuropathologica, 2017",
     },
   ],
@@ -722,7 +722,7 @@ export const cholinergicSection: CascadeSection = {
       title: "Cross-disease: NBM degenerates early in AD, PD, and DLB",
       body: "NBM involvement is not AD-specific. In Parkinson\u2019s disease, Ch4 (NBM) atrophy precedes and predicts dementia conversion. In Lewy body dementia, prominent cholinergic deficits dominate the clinical picture. The same anatomical vulnerability plays out across diseases.",
       detail:
-        "Pereira et al. (2020) showed a posterior-to-anterior pattern in PD: Ch4 degenerates first, followed by Ch1/Ch2 (medial septum). This cross-disease convergence supports the FELINE interpretation: it\u2019s not about which protein aggregates (A\u03B2, \u03B1-synuclein, tau) but about which regions face the worst iron/clearance dynamics.",
+        "Pereira et al. (2020) showed a posterior-to-anterior pattern in PD: Ch4 degenerates first, followed by Ch1/Ch2 (medial septum). This cross-disease convergence supports the FELINES interpretation: it\u2019s not about which protein aggregates (A\u03B2, \u03B1-synuclein, tau) but about which regions face the worst iron/clearance dynamics.",
       keyPaper: "Pereira et al., Neurobiol Dis, 2020",
     },
     {

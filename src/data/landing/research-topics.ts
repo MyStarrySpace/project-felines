@@ -27,7 +27,7 @@ export const researchTopics: ResearchTopic[] = [
   {
     slug: "defense-systems",
     title: "Defense Systems",
-    description: "Five layers protecting the brain from iron-driven damage",
+    description: "Six layers protecting the brain from iron-driven damage",
     href: "/explore/biology",
   },
   {

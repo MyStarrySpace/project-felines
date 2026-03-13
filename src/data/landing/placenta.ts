@@ -43,7 +43,7 @@ export const placentaHero = {
   kicker: "Placental Parallel",
   title: "The same cascade. A different organ.",
   subtitle:
-    "The placenta and the brain share the same barrier architecture, the same iron transport machinery, and the same failure mode. Preeclampsia runs the full FELINE cascade in weeks, not decades.",
+    "The placenta and the brain share the same barrier architecture, the same iron transport machinery, and the same failure mode. Preeclampsia runs the full FELINES cascade in weeks, not decades.",
 };
 
 export const cellHomology: CellHomologyRow[] = [
@@ -451,6 +451,6 @@ export const keySections: KeySection[] = [
   },
   {
     heading: "The conservation principle",
-    body: "If the NVU and placental villous unit share cellular homology, developmental origin, molecular machinery, and failure cascades, this suggests a conserved barrier biology program deployed wherever the body needs a selective blood-tissue interface. The same pattern appears in the blood-retinal barrier (M\u00fcller glia, retinal microglia) and blood-nerve barrier (Schwann cells, endoneurial macrophages). FELINE may describe a general barrier failure cascade, not a brain-specific disease.",
+    body: "If the NVU and placental villous unit share cellular homology, developmental origin, molecular machinery, and failure cascades, this suggests a conserved barrier biology program deployed wherever the body needs a selective blood-tissue interface. The same pattern appears in the blood-retinal barrier (M\u00fcller glia, retinal microglia) and blood-nerve barrier (Schwann cells, endoneurial macrophages). FELINES may describe a general barrier failure cascade, not a brain-specific disease.",
   },
 ];

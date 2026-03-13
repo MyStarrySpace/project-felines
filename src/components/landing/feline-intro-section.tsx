@@ -700,7 +700,7 @@ export function FelineIntroSection() {
   return (
     <ScrollSection
       id="feline"
-      label="Cat parasite, five defenses"
+      label="Cat parasite, six defenses"
       className="py-0"
       fullWidth
       breakpoints={[0, 0.30, 0.40, 0.45, 0.50, 0.56, 0.61, 0.66, 0.77]}

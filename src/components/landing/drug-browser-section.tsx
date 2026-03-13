@@ -176,7 +176,7 @@ function DrugBrowserFlowing() {
           Deferiprone failed by working.
         </h2>
         <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-[52ch]">
-          72 drugs across six diseases. Deferiprone, the only iron
+          {drugs.length} drugs across six diseases. Deferiprone, the only iron
           chelator trialed in neurodegeneration, reduced brain iron
           exactly as designed. Patients got worse. The problem
           isn&rsquo;t too much iron. It&rsquo;s iron in the wrong places.

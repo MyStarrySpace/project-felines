@@ -4230,7 +4230,7 @@ export const gwasStats = {
   riskLoci: { value: "217", label: "risk loci", description: "identified by GWAS" },
   felineMapping: {
     value: "~90%",
-    label: "map to FELINE",
+    label: "map to FELINES",
     description: "defense layer genes",
   },
 };

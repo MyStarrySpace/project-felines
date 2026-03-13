@@ -180,7 +180,7 @@ function ComparisonSection() {
 
         {/* FELINE layer comparison */}
         <h3 className="text-lg font-bold text-white mb-4">
-          FELINE layers: CNS vs PNS
+          FELINES layers: CNS vs PNS
         </h3>
         <div className="space-y-3 max-w-3xl">
           {felineLayerRows.map((row) => (
@@ -293,7 +293,7 @@ function ResearchSection() {
             </h2>
             <p className="text-gray-400 max-w-2xl">
               Key studies on the BNB, peripheral nerve iron, and why the PNS
-              escapes the FELINE cascade
+              escapes the FELINES cascade
             </p>
           </div>
           <button

@@ -122,7 +122,7 @@ function IntroSection() {
             </div>
 
             <p className="text-xs font-medium uppercase tracking-wide text-teal-400 mb-4">
-              FELINE model: 1 master loop + 2 amplifiers
+              FELINES model: 1 master loop + 2 amplifiers
             </p>
             <div className="flex items-center gap-3 text-sm">
               <span className="bg-teal-400/10 border border-teal-400/30 px-3 py-1.5 text-teal-400 font-medium">
@@ -384,7 +384,7 @@ function AgeWindowSection() {
         </h2>
         <p className="text-gray-400 mb-8 max-w-2xl">
           Shingles, Alzheimer&apos;s, Parkinson&apos;s, and peak basal ganglia
-          iron all converge on the same age window. Under FELINE, this is not
+          iron all converge on the same age window. Under FELINES, this is not
           coincidence.
         </p>
 
@@ -502,7 +502,7 @@ function EpidemiologySection() {
             )}
             <div className="border-t border-white/10 pt-3 mt-3">
               <p className="text-xs font-medium text-teal-400 mb-1">
-                FELINE interpretation
+                FELINES interpretation
               </p>
               <p className="text-xs text-gray-400 leading-relaxed">
                 {cairnsCascade.felineInterpretation}

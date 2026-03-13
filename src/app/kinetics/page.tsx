@@ -89,11 +89,11 @@ export default function KineticsPage() {
             </div>
 
             <Body className="mb-4 max-w-[var(--width-reading)]">
-              The brain manages iron through five overlapping defenses. When one fails, others compensate. When multiple fail simultaneously, iron triggers ferroptosis, a form of cell death that releases more iron and damages neighboring cells. The result is a self-amplifying cascade. We use the acronym <strong>FELINE</strong> to organize these five vulnerabilities: <strong>Fe</strong> (iron homeostasis), <strong>L</strong>ysosome, <strong>I</strong>nsulation, <strong>N</strong>eurovascular, and <strong>E</strong>xport.
+              The brain manages iron through six overlapping defenses. When one fails, others compensate. When multiple fail simultaneously, iron triggers ferroptosis, a form of cell death that releases more iron and damages neighboring cells. The result is a self-amplifying cascade. We use the acronym <strong>FELINES</strong> to organize these six vulnerabilities: <strong>Fe</strong> (iron homeostasis), <strong>L</strong>ysosome, <strong>I</strong>mmune / inflammatory, <strong>N</strong>eurovascular, <strong>E</strong>xport, and <strong>S</strong>heathing.
             </Body>
 
             <Body className="mb-4 max-w-[var(--width-reading)]">
-              These aren&apos;t just brain defenses. Schwann cells in peripheral nerves use the same five layers: iron handling via ceruloplasmin, lysosomal function, myelin insulation, a blood-nerve barrier, and active debris clearance. Peripheral neuropathies like Charcot-Marie-Tooth disease and diabetic neuropathy show the same ferroptosis signatures. The pattern is conserved across the entire nervous system.
+              These aren&apos;t just brain defenses. Schwann cells in peripheral nerves use the same six layers: iron handling via ceruloplasmin, lysosomal function, immune regulation via endoneurial macrophages, a blood-nerve barrier, active debris clearance, and myelin sheathing. Peripheral neuropathies like Charcot-Marie-Tooth disease and diabetic neuropathy show the same ferroptosis signatures. The pattern is conserved across the entire nervous system.
             </Body>
 
             <Body className="mb-4 max-w-[var(--width-reading)]">
@@ -211,11 +211,11 @@ export default function KineticsPage() {
 
             {/* Chart 2: Defense Layer Status — iron's damage to defenses */}
             <ChartSection
-              title="Step 2: Defense Layer Damage (FELINE)"
+              title="Step 2: Defense Layer Damage (FELINES)"
               description={
                 isSpontaneous
                   ? "Age erodes the brain's iron defenses year by year. Export function (the glymphatic drainage system) degrades fastest. As these layers weaken, the brain loses its ability to clear waste, setting the stage for amyloid buildup."
-                  : "Trapped iron and ferroptosis degrade the brain's five defense layers. Each recovers at its own rate, but none fully returns to baseline. The gap between recovery ceiling and 1.0 is permanent capacity loss. This is why repeated insults compound."
+                  : "Trapped iron and ferroptosis degrade the brain's six defense layers. Each recovers at its own rate, but none fully returns to baseline. The gap between recovery ceiling and 1.0 is permanent capacity loss. This is why repeated insults compound."
               }
               above={layersContent[modeKey].above}
               below={layersContent[modeKey].below}

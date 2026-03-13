@@ -133,7 +133,7 @@ export const keyEvidence: EvidenceStudy[] = [
     finding:
       "Peripheral monocyte iron loading signatures predict Long COVID neurological outcomes. Iron dysregulation persists months after infection.",
     significance:
-      "Monocyte iron predicts neurological outcomes in an inflammatory condition. Long COVID may be an accelerated model of FELINE layer failure.",
+      "Monocyte iron predicts neurological outcomes in an inflammatory condition. Long COVID may be an accelerated model of FELINES layer failure.",
   },
   {
     id: "mertens-2025",
@@ -349,7 +349,7 @@ export const predictedOutcomes: PredictedOutcome[] = [
     monocyteIron: "Normal",
     smoc1: "Abnormal",
     interpretation: "Amyloid pathology via non-iron mechanism.",
-    felineStatus: "Challenges FELINE",
+    felineStatus: "Challenges FELINES",
   },
   {
     label: "D",

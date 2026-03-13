@@ -54,7 +54,7 @@ export default function DiseasePage() {
       {entry && (
         <section className="glass-card p-6 mb-8">
           <h2 className="text-sm font-medium uppercase tracking-wide text-gray-500 mb-4">
-            FELINE entry points
+            FELINES entry points
           </h2>
           <div className="space-y-3">
             {entry.layers.map((layer) => (

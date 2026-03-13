@@ -103,8 +103,8 @@ export const tauContent: ChartContentMap = {
 export const layersContent: ChartContentMap = {
   post_injury: {
     above: {
-      title: "The five iron vulnerabilities",
-      text: "Each line tracks one of the FELINE defense layers. 1.0 = fully intact, 0 = completely failed. GPX4 is the enzyme that directly blocks ferroptosis. The other four are structural or functional barriers. When multiple lines drop below 0.3, the brain loses its ability to contain iron-driven damage.",
+      title: "The six iron vulnerabilities",
+      text: "Each line tracks one of the FELINES defense layers. 1.0 = fully intact, 0 = completely failed. GPX4 is the enzyme that directly blocks ferroptosis. The other five are structural or functional barriers. When multiple lines drop below 0.3, the brain loses its ability to contain iron-driven damage.",
       variant: "info",
     },
     below: {
@@ -116,12 +116,12 @@ export const layersContent: ChartContentMap = {
   spontaneous: {
     above: {
       title: "The five iron vulnerabilities",
-      text: "Each line tracks one of the FELINE defense layers. 1.0 = intact, 0 = failed. In spontaneous AD, all layers decline gradually with age. APOE4 slows recovery, accelerating the decline. The question is which layer fails first, because that determines how the cascade unfolds.",
+      text: "Each line tracks one of the FELINES defense layers. 1.0 = intact, 0 = failed. In spontaneous AD, all layers decline gradually with age. APOE4 slows recovery, accelerating the decline. The question is which layer fails first, because that determines how the cascade unfolds.",
       variant: "info",
     },
     below: {
       title: "Single layer failure: compensated. Multiple layer failure: catastrophic.",
-      text: "This is why some people with amyloid plaques never develop dementia: their other layers compensate. It's also why single-target drugs keep failing. Fix one layer, the others are still broken. The iron maldistribution model predicts that combination therapies targeting multiple FELINE layers will outperform any single-target approach.",
+      text: "This is why some people with amyloid plaques never develop dementia: their other layers compensate. It's also why single-target drugs keep failing. Fix one layer, the others are still broken. The iron maldistribution model predicts that combination therapies targeting multiple FELINES layers will outperform any single-target approach.",
       badge: "Swiss cheese model",
     },
   },
@@ -148,7 +148,7 @@ export const windowsContent: ChartContentMap = {
     },
     below: {
       title: "Maintaining defenses beats repairing damage",
-      text: "The lifestyle prevention window spans decades and has the strongest evidence base. Exercise, sleep, and vascular health directly support the FELINE layers that iron attacks. Anti-amyloid drugs target a narrower mid-stage window, after clearance has already declined.",
+      text: "The lifestyle prevention window spans decades and has the strongest evidence base. Exercise, sleep, and vascular health directly support the FELINES layers that iron attacks. Anti-amyloid drugs target a narrower mid-stage window, after clearance has already declined.",
       badge: "Prevention > treatment",
     },
   },
